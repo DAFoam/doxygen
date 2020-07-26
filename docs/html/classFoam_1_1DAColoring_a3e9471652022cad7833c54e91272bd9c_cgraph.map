@@ -1,0 +1,8 @@
+<map id="parallelD2Coloring" name="parallelD2Coloring">
+<area shape="rect" id="node2" href="$classFoam_1_1DAColoring.html#afcd3c9b1f1867321385b1b2bddf2be6f" title="check if there is non&#45;colored columns " alt="" coords="222,5,354,32"/>
+<area shape="rect" id="node3" href="$namespaceFoam.html#a62de6659ba4e4bc466b263d2bc867e60" title="Foam::reduce" alt="" coords="432,56,539,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAColoring.html#ae608c8eff683390bf69430f1e02cdeff" title="find the index of a prescribed value in an array " alt="" coords="245,107,331,133"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DAColoring.html#a905a12ec4a03a89e952f356090da3456" title="number of non&#45;zero elements in a matrix " alt="" coords="223,157,353,184"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DAOption.html#addfcd9ad4a40f19c6a512da80463d149" title="get an option from subDict and key " alt="" coords="192,208,384,235"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DAUtility.html#a0d5ee91324e62c0fcd4be6cded2399f8" title="check whether a value is close to a reference value by a tolerance " alt="" coords="205,259,371,301"/>
+</map>

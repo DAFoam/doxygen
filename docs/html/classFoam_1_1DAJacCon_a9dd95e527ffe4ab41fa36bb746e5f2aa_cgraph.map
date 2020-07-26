@@ -1,0 +1,8 @@
+<map id="addStateConnections" name="addStateConnections">
+<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#aa64c993a0ecb8c97d16142fb38c6ef08" title="add the column index of the (iner&#45;proc) connected states and faces to conMat, given a local face inde..." alt="" coords="213,33,429,60"/>
+<area shape="rect" id="node3" href="$namespaceFoam.html#a459a606a203470b2756be04c4192c695" title="Foam::forAll" alt="" coords="522,54,617,81"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAJacCon.html#a04dcbd6a9e72efa68dc43e69ac6c6505" title="add val to gRow row in conMat, column indice are the faces (given by stateName) for a given cellI ..." alt="" coords="242,84,401,110"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DAIndex.html#a2de02ff2fc2df9f203c213c2d62d512e" title="get global adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="478,127,661,168"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DAJacCon.html#a7920d58d7b500265c10295dae6b82c75" title="add val to gRow row in conMat, column indice are the neighbouring states (given by stateName) for a g..." alt="" coords="226,134,417,161"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DAJacCon.html#a0ae86776476130434ae7ff6ba1bbab51" title="add value 1 for the colume idx to conMat " alt="" coords="261,236,381,262"/>
+</map>

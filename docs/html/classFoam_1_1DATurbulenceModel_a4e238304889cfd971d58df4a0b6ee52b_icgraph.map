@@ -1,0 +1,7 @@
+<map id="nu" name="nu">
+<area shape="rect" id="node2" href="$classFoam_1_1DASpalartAllmaras.html#ac2ac39c3f27873dabee7f910b00fa46a" title="Foam::DASpalartAllmaras::chi" alt="" coords="93,5,299,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASpalartAllmaras.html#a63ea14965271bc8acfcabff0b8954fae" title="Return the effective diffusivity for nuTilda. " alt="" coords="105,57,287,98"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DATurbulenceModel.html#abf894521e7d1d71ee043cf613d581061" title="get alpha field " alt="" coords="157,123,235,149"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DATurbulenceModel.html#a4f5b77e8b8e742a6945ab71e0080d85a" title="return effective viscosity " alt="" coords="169,173,223,200"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DATurbulenceModel.html#a725207c32ef6fba08969f6fbed5e7c74" title="print the min max and mean yPlus to screen " alt="" coords="347,199,432,225"/>
+</map>

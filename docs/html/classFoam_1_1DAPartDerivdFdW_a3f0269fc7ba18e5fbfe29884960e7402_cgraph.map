@@ -1,0 +1,12 @@
+<map id="calcPartDerivMat" name="calcPartDerivMat">
+<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#a09cd2ae603ffc2426916cba35b1386ca" title="calculate the colored column vector " alt="" coords="195,5,405,46"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAOption.html#addfcd9ad4a40f19c6a512da80463d149" title="get an option from subDict and key " alt="" coords="464,41,656,68"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAJacCon.html#a42ca3b7f3b265d439a35e05f4144250f" title="return DAJacCon::jacConColors_ " alt="" coords="198,122,402,163"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DAJacCon.html#a437a1e608daa307edffa451d70463f3e" title="get the number of JacCon colors " alt="" coords="193,187,407,229"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DAOption.html#ac409fa3229028cfa2f14a3a09ac780cd" title="get an dictionary option from subDict and key " alt="" coords="201,253,399,294"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DAObjFunc.html#a5393c6b73f79d670cc02fc71d4ccfed6" title="Foam::DAObjFunc::New" alt="" coords="217,319,383,345"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DAPartDeriv.html#adf92cb2b1d6913b7e394b8fd065eb61c" title="perturb state variables given a color index " alt="" coords="227,370,373,411"/>
+<area shape="rect" id="node9" href="$classFoam_1_1DAPartDeriv.html#aec174241eed03bdc90978bef82cf9666" title="setup the state normalization vector " alt="" coords="211,435,389,477"/>
+<area shape="rect" id="node10" href="$classFoam_1_1DAJacCon.html#a73f6666f65267a63c1dc865118906a24" title="assign values for the objective function vector based on the face and cell value lists ..." alt="" coords="185,501,415,528"/>
+<area shape="rect" id="node11" href="$classFoam_1_1DAPartDeriv.html#a52d52557c081c065fe47f10f282a3766" title="set values for the partial derivative matrix " alt="" coords="227,553,373,594"/>
+</map>

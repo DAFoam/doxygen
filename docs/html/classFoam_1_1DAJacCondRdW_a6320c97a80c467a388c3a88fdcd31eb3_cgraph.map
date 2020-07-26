@@ -1,0 +1,13 @@
+<map id="setupdRdWCon" name="setupdRdWCon">
+<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#a9dd95e527ffe4ab41fa36bb746e5f2aa" title="a high&#45;level function to add connected state column indices to the connectivity matrix ..." alt="" coords="215,173,409,214"/>
+<area shape="rect" id="node3" href="$namespaceFoam.html#a459a606a203470b2756be04c4192c695" title="Foam::forAll" alt="" coords="566,71,661,97"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAIndex.html#a2de02ff2fc2df9f203c213c2d62d512e" title="get global adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="522,147,705,189"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DAJacCon.html#a0ae86776476130434ae7ff6ba1bbab51" title="add value 1 for the colume idx to conMat " alt="" coords="496,213,731,240"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DAJacCondRdW.html#ad689db8802c9bd6e019cce6fdd7ed3ca" title="compute preallocation vectors " alt="" coords="209,289,415,316"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DAJacCon.html#a6aa22bae0912af41d04a6c69eeb2c57a" title="allocate connectedState matrix " alt="" coords="176,340,448,367"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DAJacCon.html#ac8d9c219f4c2d38b0166ff929d3d8207" title="given a local face index, return the local index of the coupled boundary face " alt="" coords="217,5,407,46"/>
+<area shape="rect" id="node9" href="$classFoam_1_1DAOption.html#addfcd9ad4a40f19c6a512da80463d149" title="get an option from subDict and key " alt="" coords="216,391,408,417"/>
+<area shape="rect" id="node10" href="$classFoam_1_1DAJacCon.html#a4e2b26f19cb795cd7276b68addbccb01" title="assign values in connections to a specific row idxI in conMat " alt="" coords="199,442,425,483"/>
+<area shape="rect" id="node11" href="$classFoam_1_1DAUtility.html#a7d5db3b1724c116fd1b12443d914b4cc" title="write petsc matrix in binary format " alt="" coords="217,507,407,549"/>
+<area shape="rect" id="node12" href="$classFoam_1_1DAUtility.html#a4845f297f6868e9edf41f492fff59004" title="write petsc vector in ascii format " alt="" coords="215,573,409,614"/>
+</map>
