@@ -1,0 +1,3 @@
+[submodule "dafoam"]
+	path = dafoam
+	url = https://github.com/mdolab/dafoam
