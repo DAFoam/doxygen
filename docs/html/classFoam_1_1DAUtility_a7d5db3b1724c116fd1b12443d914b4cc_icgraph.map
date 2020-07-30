@@ -4,4 +4,5 @@
 <area shape="rect" id="node4" href="$classFoam_1_1DAJacCondRdW.html#a6320c97a80c467a388c3a88fdcd31eb3" title="Foam::DAJacCondRdW\l::setupdRdWCon" alt="" coords="202,135,371,177"/>
 <area shape="rect" id="node5" href="$classFoam_1_1DAJacCondFdW.html#a38665183153112bc58257039d500089c" title="assign 1 to all non&#45;zero elements for the Jacobian connecitivyt matrix " alt="" coords="203,201,370,242"/>
 <area shape="rect" id="node6" href="$classFoam_1_1DASolver.html#a985af8c5b6d6bf478b8fd1d999865b47" title="solve the adjoint linear equations " alt="" coords="185,267,389,293"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DASolver.html#a7d5db3b1724c116fd1b12443d914b4cc" title="write the matrix in binary format " alt="" coords="188,318,385,359"/>
 </map>

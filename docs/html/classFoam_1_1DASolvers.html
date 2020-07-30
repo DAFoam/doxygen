@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.1</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -150,6 +150,36 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa2dae402a2b11106af15ef10314838a7"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#aa2dae402a2b11106af15ef10314838a7">getPrevPrimalSolTime</a> ()</td></tr>
 <tr class="memdesc:aa2dae402a2b11106af15ef10314838a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the solution time folder for previous primal solution  <a href="#aa2dae402a2b11106af15ef10314838a7">More...</a><br/></td></tr>
 <tr class="separator:aa2dae402a2b11106af15ef10314838a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42965ff610f092150056c3d8bfd4ad98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a42965ff610f092150056c3d8bfd4ad98">pointVec2OFMesh</a> (const Vec xvVec) const </td></tr>
+<tr class="memdesc:a42965ff610f092150056c3d8bfd4ad98"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign the points in fvMesh of OpenFOAM based on the point vector  <a href="#a42965ff610f092150056c3d8bfd4ad98">More...</a><br/></td></tr>
+<tr class="separator:a42965ff610f092150056c3d8bfd4ad98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99d6b93d5ad95d6c7fc36d2ba65483c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a99d6b93d5ad95d6c7fc36d2ba65483c0">ofMesh2PointVec</a> (Vec xvVec) const </td></tr>
+<tr class="memdesc:a99d6b93d5ad95d6c7fc36d2ba65483c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign the point vector based on the points in fvMesh of OpenFOAM  <a href="#a99d6b93d5ad95d6c7fc36d2ba65483c0">More...</a><br/></td></tr>
+<tr class="separator:a99d6b93d5ad95d6c7fc36d2ba65483c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ced72c92425a517e27d1c35e61d8de9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a7ced72c92425a517e27d1c35e61d8de9">resVec2OFResField</a> (const Vec resVec) const </td></tr>
+<tr class="memdesc:a7ced72c92425a517e27d1c35e61d8de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign the OpenFOAM residual fields based on the resVec  <a href="#a7ced72c92425a517e27d1c35e61d8de9">More...</a><br/></td></tr>
+<tr class="separator:a7ced72c92425a517e27d1c35e61d8de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a318441efdbb1aeed4adf8189bb782ceb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a318441efdbb1aeed4adf8189bb782ceb">ofResField2ResVec</a> (Vec resVec) const </td></tr>
+<tr class="memdesc:a318441efdbb1aeed4adf8189bb782ceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign the resVec based on OpenFOAM residual fields  <a href="#a318441efdbb1aeed4adf8189bb782ceb">More...</a><br/></td></tr>
+<tr class="separator:a318441efdbb1aeed4adf8189bb782ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d5db3b1724c116fd1b12443d914b4cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a7d5db3b1724c116fd1b12443d914b4cc">writeMatrixBinary</a> (const <a class="el" href="pyDASolvers_8pyx.html#acba0932e0a5188f6ff0fb87c100abd18">Mat</a> matIn, const word prefix)</td></tr>
+<tr class="memdesc:a7d5db3b1724c116fd1b12443d914b4cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">write the matrix in binary format  <a href="#a7d5db3b1724c116fd1b12443d914b4cc">More...</a><br/></td></tr>
+<tr class="separator:a7d5db3b1724c116fd1b12443d914b4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8436d0e95573cab18a9c7aa2c08e1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#afe8436d0e95573cab18a9c7aa2c08e1a">writeMatrixASCII</a> (const <a class="el" href="pyDASolvers_8pyx.html#acba0932e0a5188f6ff0fb87c100abd18">Mat</a> matIn, const word prefix)</td></tr>
+<tr class="memdesc:afe8436d0e95573cab18a9c7aa2c08e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">write the matrix in ASCII format  <a href="#afe8436d0e95573cab18a9c7aa2c08e1a">More...</a><br/></td></tr>
+<tr class="separator:afe8436d0e95573cab18a9c7aa2c08e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3139f2a3d878490c8e0b664c9502ff48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a3139f2a3d878490c8e0b664c9502ff48">readMatrixBinary</a> (<a class="el" href="pyDASolvers_8pyx.html#acba0932e0a5188f6ff0fb87c100abd18">Mat</a> matIn, const word prefix)</td></tr>
+<tr class="memdesc:a3139f2a3d878490c8e0b664c9502ff48"><td class="mdescLeft">&#160;</td><td class="mdescRight">read petsc matrix in binary format  <a href="#a3139f2a3d878490c8e0b664c9502ff48">More...</a><br/></td></tr>
+<tr class="separator:a3139f2a3d878490c8e0b664c9502ff48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4845f297f6868e9edf41f492fff59004"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a4845f297f6868e9edf41f492fff59004">writeVectorASCII</a> (const Vec vecIn, const word prefix)</td></tr>
+<tr class="memdesc:a4845f297f6868e9edf41f492fff59004"><td class="mdescLeft">&#160;</td><td class="mdescRight">write petsc vector in ascii format  <a href="#a4845f297f6868e9edf41f492fff59004">More...</a><br/></td></tr>
+<tr class="separator:a4845f297f6868e9edf41f492fff59004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818761abc7dfa73f4167db5f630d34c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a818761abc7dfa73f4167db5f630d34c7">readVectorBinary</a> (Vec vecIn, const word prefix)</td></tr>
+<tr class="memdesc:a818761abc7dfa73f4167db5f630d34c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">read petsc vector in binary format  <a href="#a818761abc7dfa73f4167db5f630d34c7">More...</a><br/></td></tr>
+<tr class="separator:a818761abc7dfa73f4167db5f630d34c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaabf5e461685aae1fd388f6fabd43f22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#aaabf5e461685aae1fd388f6fabd43f22">writeVectorBinary</a> (const Vec vecIn, const word prefix)</td></tr>
+<tr class="memdesc:aaabf5e461685aae1fd388f6fabd43f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">write petsc vector in binary format  <a href="#aaabf5e461685aae1fd388f6fabd43f22">More...</a><br/></td></tr>
+<tr class="separator:aaabf5e461685aae1fd388f6fabd43f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -644,7 +674,7 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="DASolvers_8H_source.html#l00142">142</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
-<p>Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00959">PYDAFOAM::calcTotalDeriv()</a>.</p>
+<p>Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00953">PYDAFOAM::calcTotalDeriv()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -709,6 +739,346 @@ Here is the caller graph for this function:</div>
 <p>get the solution time folder for previous primal solution </p>
 
 <p>Definition at line <a class="el" href="DASolvers_8H_source.html#l00154">154</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42965ff610f092150056c3d8bfd4ad98"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pointVec2OFMesh </td>
+          <td>(</td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>xvVec</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>assign the points in fvMesh of OpenFOAM based on the point vector </p>
+
+<p>Definition at line <a class="el" href="DASolvers_8H_source.html#l00160">160</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a99d6b93d5ad95d6c7fc36d2ba65483c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ofMesh2PointVec </td>
+          <td>(</td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>xvVec</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>assign the point vector based on the points in fvMesh of OpenFOAM </p>
+
+<p>Definition at line <a class="el" href="DASolvers_8H_source.html#l00166">166</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ced72c92425a517e27d1c35e61d8de9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void resVec2OFResField </td>
+          <td>(</td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>resVec</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>assign the OpenFOAM residual fields based on the resVec </p>
+
+<p>Definition at line <a class="el" href="DASolvers_8H_source.html#l00172">172</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a318441efdbb1aeed4adf8189bb782ceb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ofResField2ResVec </td>
+          <td>(</td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>resVec</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>assign the resVec based on OpenFOAM residual fields </p>
+
+<p>Definition at line <a class="el" href="DASolvers_8H_source.html#l00178">178</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7d5db3b1724c116fd1b12443d914b4cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeMatrixBinary </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="pyDASolvers_8pyx.html#acba0932e0a5188f6ff0fb87c100abd18">Mat</a>&#160;</td>
+          <td class="paramname"><em>matIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>write the matrix in binary format </p>
+
+<p>Definition at line <a class="el" href="DASolvers_8H_source.html#l00184">184</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe8436d0e95573cab18a9c7aa2c08e1a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeMatrixASCII </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="pyDASolvers_8pyx.html#acba0932e0a5188f6ff0fb87c100abd18">Mat</a>&#160;</td>
+          <td class="paramname"><em>matIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>write the matrix in ASCII format </p>
+
+<p>Definition at line <a class="el" href="DASolvers_8H_source.html#l00192">192</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3139f2a3d878490c8e0b664c9502ff48"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void readMatrixBinary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pyDASolvers_8pyx.html#acba0932e0a5188f6ff0fb87c100abd18">Mat</a>&#160;</td>
+          <td class="paramname"><em>matIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>read petsc matrix in binary format </p>
+
+<p>Definition at line <a class="el" href="DASolvers_8H_source.html#l00200">200</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4845f297f6868e9edf41f492fff59004"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeVectorASCII </td>
+          <td>(</td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>vecIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>write petsc vector in ascii format </p>
+
+<p>Definition at line <a class="el" href="DASolvers_8H_source.html#l00208">208</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a818761abc7dfa73f4167db5f630d34c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void readVectorBinary </td>
+          <td>(</td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>vecIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>read petsc vector in binary format </p>
+
+<p>Definition at line <a class="el" href="DASolvers_8H_source.html#l00216">216</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaabf5e461685aae1fd388f6fabd43f22"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeVectorBinary </td>
+          <td>(</td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>vecIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>write petsc vector in binary format </p>
+
+<p>Definition at line <a class="el" href="DASolvers_8H_source.html#l00224">224</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>

@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.1</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -148,6 +148,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a99d6b93d5ad95d6c7fc36d2ba65483c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a99d6b93d5ad95d6c7fc36d2ba65483c0">ofMesh2PointVec</a> (Vec xvVec) const </td></tr>
 <tr class="memdesc:a99d6b93d5ad95d6c7fc36d2ba65483c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign the point vector based on the points in fvMesh of OpenFOAM  <a href="#a99d6b93d5ad95d6c7fc36d2ba65483c0">More...</a><br/></td></tr>
 <tr class="separator:a99d6b93d5ad95d6c7fc36d2ba65483c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ced72c92425a517e27d1c35e61d8de9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a7ced72c92425a517e27d1c35e61d8de9">resVec2OFResField</a> (const Vec resVec) const </td></tr>
+<tr class="memdesc:a7ced72c92425a517e27d1c35e61d8de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign the OpenFOAM residual fields based on the resVec  <a href="#a7ced72c92425a517e27d1c35e61d8de9">More...</a><br/></td></tr>
+<tr class="separator:a7ced72c92425a517e27d1c35e61d8de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a318441efdbb1aeed4adf8189bb782ceb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a318441efdbb1aeed4adf8189bb782ceb">ofResField2ResVec</a> (Vec resVec) const </td></tr>
+<tr class="memdesc:a318441efdbb1aeed4adf8189bb782ceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign the resVec based on OpenFOAM residual fields  <a href="#a318441efdbb1aeed4adf8189bb782ceb">More...</a><br/></td></tr>
+<tr class="separator:a318441efdbb1aeed4adf8189bb782ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d5db3b1724c116fd1b12443d914b4cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a7d5db3b1724c116fd1b12443d914b4cc">writeMatrixBinary</a> (const <a class="el" href="pyDASolvers_8pyx.html#acba0932e0a5188f6ff0fb87c100abd18">Mat</a> matIn, const word prefix)</td></tr>
+<tr class="memdesc:a7d5db3b1724c116fd1b12443d914b4cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">write the matrix in binary format  <a href="#a7d5db3b1724c116fd1b12443d914b4cc">More...</a><br/></td></tr>
+<tr class="separator:a7d5db3b1724c116fd1b12443d914b4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8436d0e95573cab18a9c7aa2c08e1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#afe8436d0e95573cab18a9c7aa2c08e1a">writeMatrixASCII</a> (const <a class="el" href="pyDASolvers_8pyx.html#acba0932e0a5188f6ff0fb87c100abd18">Mat</a> matIn, const word prefix)</td></tr>
+<tr class="memdesc:afe8436d0e95573cab18a9c7aa2c08e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">write the matrix in ASCII format  <a href="#afe8436d0e95573cab18a9c7aa2c08e1a">More...</a><br/></td></tr>
+<tr class="separator:afe8436d0e95573cab18a9c7aa2c08e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3139f2a3d878490c8e0b664c9502ff48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a3139f2a3d878490c8e0b664c9502ff48">readMatrixBinary</a> (<a class="el" href="pyDASolvers_8pyx.html#acba0932e0a5188f6ff0fb87c100abd18">Mat</a> matIn, const word prefix)</td></tr>
+<tr class="memdesc:a3139f2a3d878490c8e0b664c9502ff48"><td class="mdescLeft">&#160;</td><td class="mdescRight">read petsc matrix in binary format  <a href="#a3139f2a3d878490c8e0b664c9502ff48">More...</a><br/></td></tr>
+<tr class="separator:a3139f2a3d878490c8e0b664c9502ff48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4845f297f6868e9edf41f492fff59004"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a4845f297f6868e9edf41f492fff59004">writeVectorASCII</a> (const Vec vecIn, const word prefix)</td></tr>
+<tr class="memdesc:a4845f297f6868e9edf41f492fff59004"><td class="mdescLeft">&#160;</td><td class="mdescRight">write petsc vector in ascii format  <a href="#a4845f297f6868e9edf41f492fff59004">More...</a><br/></td></tr>
+<tr class="separator:a4845f297f6868e9edf41f492fff59004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818761abc7dfa73f4167db5f630d34c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a818761abc7dfa73f4167db5f630d34c7">readVectorBinary</a> (Vec vecIn, const word prefix)</td></tr>
+<tr class="memdesc:a818761abc7dfa73f4167db5f630d34c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">read petsc vector in binary format  <a href="#a818761abc7dfa73f4167db5f630d34c7">More...</a><br/></td></tr>
+<tr class="separator:a818761abc7dfa73f4167db5f630d34c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaabf5e461685aae1fd388f6fabd43f22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#aaabf5e461685aae1fd388f6fabd43f22">writeVectorBinary</a> (const Vec vecIn, const word prefix)</td></tr>
+<tr class="memdesc:aaabf5e461685aae1fd388f6fabd43f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">write petsc vector in binary format  <a href="#aaabf5e461685aae1fd388f6fabd43f22">More...</a><br/></td></tr>
+<tr class="separator:aaabf5e461685aae1fd388f6fabd43f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dd9c76eae8128830541f9fa01343cee"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a3dd9c76eae8128830541f9fa01343cee">getNLocalAdjointStates</a> () const </td></tr>
 <tr class="memdesc:a3dd9c76eae8128830541f9fa01343cee"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the number of local adjoint states  <a href="#a3dd9c76eae8128830541f9fa01343cee">More...</a><br/></td></tr>
 <tr class="separator:a3dd9c76eae8128830541f9fa01343cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -492,7 +516,7 @@ Here is the caller graph for this function:</div>
 
 <p>setup maximal residual control and print the residual as needed </p>
 
-<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00297">297</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00357">357</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 <p>References <a class="el" href="DASolver_8H_source.html#l00124">DASolver::primalMinRes_</a>.</p>
 
@@ -751,7 +775,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="DASolver_8C_source.html#l00600">600</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
 
-<p>References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="DASolver_8C_source.html#l00411">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DALinearEqn_8C_source.html#l00027">DALinearEqn::createMLRKSP()</a>, <a class="el" href="DASolver_8H_source.html#l00082">DASolver::daFieldPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00079">DASolver::daIndexPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00076">DASolver::daModelPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00070">DASolver::daOptionPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00091">DASolver::daResidualPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00094">DASolver::daStateInfoPtr_</a>, <a class="el" href="DAIndex_8C_source.html#l00044">Foam::forAll()</a>, <a class="el" href="pyDASolvers_8pyx_source.html#l00016">Mat</a>, <a class="el" href="DASolver_8H_source.html#l00067">DASolver::meshPtr_</a>, <a class="el" href="DAObjFunc_8C_source.html#l00062">DAObjFunc::New()</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00047">DAPartDeriv::New()</a>, <a class="el" href="DAJacCon_8C_source.html#l00043">DAJacCon::New()</a>, <a class="el" href="DASolver_8H_source.html#l00100">DASolver::objFuncNames4Adj_</a>, <a class="el" href="DASolver_8H_source.html#l00103">DASolver::psiVecDict_</a>, <a class="el" href="DASolver_8C_source.html#l00280">DASolver::reduceStateResConLevel()</a>, <a class="el" href="DASolver_8H_source.html#l00064">DASolver::runTimePtr_</a>, <a class="el" href="DASolver_8C_source.html#l01632">DASolver::setPsiVecDict()</a>, <a class="el" href="DALinearEqn_8C_source.html#l00294">DALinearEqn::solveLinearEqn()</a>, <a class="el" href="DAUtility_8C_source.html#l00413">DAUtility::writeMatrixBinary()</a>, <a class="el" href="DAUtility_8C_source.html#l00349">DAUtility::writeVectorASCII()</a>, and <a class="el" href="DAUtility_8C_source.html#l00317">DAUtility::writeVectorBinary()</a>.</p>
+<p>References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="DASolver_8C_source.html#l00411">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DALinearEqn_8C_source.html#l00027">DALinearEqn::createMLRKSP()</a>, <a class="el" href="DASolver_8H_source.html#l00082">DASolver::daFieldPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00079">DASolver::daIndexPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00076">DASolver::daModelPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00070">DASolver::daOptionPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00091">DASolver::daResidualPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00094">DASolver::daStateInfoPtr_</a>, <a class="el" href="DAIndex_8C_source.html#l00044">Foam::forAll()</a>, <a class="el" href="pyDASolvers_8pyx_source.html#l00016">Mat</a>, <a class="el" href="DASolver_8H_source.html#l00067">DASolver::meshPtr_</a>, <a class="el" href="DAObjFunc_8C_source.html#l00062">DAObjFunc::New()</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00047">DAPartDeriv::New()</a>, <a class="el" href="DAJacCon_8C_source.html#l00043">DAJacCon::New()</a>, <a class="el" href="DASolver_8H_source.html#l00100">DASolver::objFuncNames4Adj_</a>, <a class="el" href="DASolver_8H_source.html#l00103">DASolver::psiVecDict_</a>, <a class="el" href="DASolver_8C_source.html#l00280">DASolver::reduceStateResConLevel()</a>, <a class="el" href="DASolver_8H_source.html#l00064">DASolver::runTimePtr_</a>, <a class="el" href="DASolver_8C_source.html#l01632">DASolver::setPsiVecDict()</a>, <a class="el" href="DALinearEqn_8C_source.html#l00294">DALinearEqn::solveLinearEqn()</a>, <a class="el" href="DAUtility_8C_source.html#l00354">DAUtility::writeMatrixBinary()</a>, <a class="el" href="DAUtility_8C_source.html#l00290">DAUtility::writeVectorASCII()</a>, and <a class="el" href="DAUtility_8C_source.html#l00258">DAUtility::writeVectorBinary()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -798,7 +822,7 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="DASolver_8C_source.html#l01013">1013</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
 
-<p>References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="DASolver_8C_source.html#l00411">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DASolver_8H_source.html#l00079">DASolver::daIndexPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00076">DASolver::daModelPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00070">DASolver::daOptionPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00091">DASolver::daResidualPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00121">DASolver::dXvdFFDMat_</a>, <a class="el" href="DAIndex_8C_source.html#l00044">Foam::forAll()</a>, <a class="el" href="DASolver_8C_source.html#l01666">DASolver::getPsiVec()</a>, <a class="el" href="pyDASolvers_8pyx_source.html#l00016">Mat</a>, <a class="el" href="DASolver_8H_source.html#l00067">DASolver::meshPtr_</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00047">DAPartDeriv::New()</a>, <a class="el" href="DAJacCon_8C_source.html#l00043">DAJacCon::New()</a>, <a class="el" href="DASolver_8H_source.html#l00100">DASolver::objFuncNames4Adj_</a>, <a class="el" href="DASolver_8C_source.html#l01701">DASolver::setTotalDerivDict()</a>, <a class="el" href="DASolver_8H_source.html#l00106">DASolver::totalDerivDict_</a>, <a class="el" href="DAUtility_8C_source.html#l00445">DAUtility::writeMatrixASCII()</a>, <a class="el" href="DAUtility_8C_source.html#l00413">DAUtility::writeMatrixBinary()</a>, <a class="el" href="DAUtility_8C_source.html#l00349">DAUtility::writeVectorASCII()</a>, and <a class="el" href="DAUtility_8C_source.html#l00317">DAUtility::writeVectorBinary()</a>.</p>
+<p>References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="DASolver_8C_source.html#l00411">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DASolver_8H_source.html#l00079">DASolver::daIndexPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00076">DASolver::daModelPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00070">DASolver::daOptionPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00091">DASolver::daResidualPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00121">DASolver::dXvdFFDMat_</a>, <a class="el" href="DAIndex_8C_source.html#l00044">Foam::forAll()</a>, <a class="el" href="DASolver_8C_source.html#l01666">DASolver::getPsiVec()</a>, <a class="el" href="pyDASolvers_8pyx_source.html#l00016">Mat</a>, <a class="el" href="DASolver_8H_source.html#l00067">DASolver::meshPtr_</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00047">DAPartDeriv::New()</a>, <a class="el" href="DAJacCon_8C_source.html#l00043">DAJacCon::New()</a>, <a class="el" href="DASolver_8H_source.html#l00100">DASolver::objFuncNames4Adj_</a>, <a class="el" href="DASolver_8C_source.html#l01701">DASolver::setTotalDerivDict()</a>, <a class="el" href="DASolver_8H_source.html#l00106">DASolver::totalDerivDict_</a>, <a class="el" href="DAUtility_8C_source.html#l00386">DAUtility::writeMatrixASCII()</a>, <a class="el" href="DAUtility_8C_source.html#l00354">DAUtility::writeMatrixBinary()</a>, <a class="el" href="DAUtility_8C_source.html#l00290">DAUtility::writeVectorASCII()</a>, and <a class="el" href="DAUtility_8C_source.html#l00258">DAUtility::writeVectorBinary()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1026,6 +1050,360 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a7ced72c92425a517e27d1c35e61d8de9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void resVec2OFResField </td>
+          <td>(</td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>resVec</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>assign the OpenFOAM residual fields based on the resVec </p>
+
+<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00230">230</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+
+<p>References <a class="el" href="DASolver_8H_source.html#l00082">DASolver::daFieldPtr_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a318441efdbb1aeed4adf8189bb782ceb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ofResField2ResVec </td>
+          <td>(</td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>resVec</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>assign the resVec based on OpenFOAM residual fields </p>
+
+<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00236">236</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+
+<p>References <a class="el" href="DASolver_8H_source.html#l00082">DASolver::daFieldPtr_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7d5db3b1724c116fd1b12443d914b4cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeMatrixBinary </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="pyDASolvers_8pyx.html#acba0932e0a5188f6ff0fb87c100abd18">Mat</a>&#160;</td>
+          <td class="paramname"><em>matIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>write the matrix in binary format </p>
+
+<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00242">242</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+
+<p>References <a class="el" href="DAUtility_8C_source.html#l00354">DAUtility::writeMatrixBinary()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASolver_a7d5db3b1724c116fd1b12443d914b4cc_cgraph.png" border="0" usemap="#classFoam_1_1DASolver_a7d5db3b1724c116fd1b12443d914b4cc_cgraph" alt=""/></div>
+<map name="classFoam_1_1DASolver_a7d5db3b1724c116fd1b12443d914b4cc_cgraph" id="classFoam_1_1DASolver_a7d5db3b1724c116fd1b12443d914b4cc_cgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAUtility.html#a7d5db3b1724c116fd1b12443d914b4cc" title="write petsc matrix in binary format " alt="" coords="185,5,375,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afe8436d0e95573cab18a9c7aa2c08e1a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeMatrixASCII </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="pyDASolvers_8pyx.html#acba0932e0a5188f6ff0fb87c100abd18">Mat</a>&#160;</td>
+          <td class="paramname"><em>matIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>write the matrix in ASCII format </p>
+
+<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00250">250</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+
+<p>References <a class="el" href="DAUtility_8C_source.html#l00386">DAUtility::writeMatrixASCII()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASolver_afe8436d0e95573cab18a9c7aa2c08e1a_cgraph.png" border="0" usemap="#classFoam_1_1DASolver_afe8436d0e95573cab18a9c7aa2c08e1a_cgraph" alt=""/></div>
+<map name="classFoam_1_1DASolver_afe8436d0e95573cab18a9c7aa2c08e1a_cgraph" id="classFoam_1_1DASolver_afe8436d0e95573cab18a9c7aa2c08e1a_cgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAUtility.html#afe8436d0e95573cab18a9c7aa2c08e1a" title="write petsc matrix in ascii format " alt="" coords="182,5,373,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3139f2a3d878490c8e0b664c9502ff48"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void readMatrixBinary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pyDASolvers_8pyx.html#acba0932e0a5188f6ff0fb87c100abd18">Mat</a>&#160;</td>
+          <td class="paramname"><em>matIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>read petsc matrix in binary format </p>
+
+<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00258">258</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+
+<p>References <a class="el" href="DAUtility_8C_source.html#l00321">DAUtility::readMatrixBinary()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASolver_a3139f2a3d878490c8e0b664c9502ff48_cgraph.png" border="0" usemap="#classFoam_1_1DASolver_a3139f2a3d878490c8e0b664c9502ff48_cgraph" alt=""/></div>
+<map name="classFoam_1_1DASolver_a3139f2a3d878490c8e0b664c9502ff48_cgraph" id="classFoam_1_1DASolver_a3139f2a3d878490c8e0b664c9502ff48_cgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAUtility.html#a3139f2a3d878490c8e0b664c9502ff48" title="read petsc matrix in binary format " alt="" coords="185,5,375,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4845f297f6868e9edf41f492fff59004"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeVectorASCII </td>
+          <td>(</td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>vecIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>write petsc vector in ascii format </p>
+
+<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00266">266</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+
+<p>References <a class="el" href="DAUtility_8C_source.html#l00290">DAUtility::writeVectorASCII()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASolver_a4845f297f6868e9edf41f492fff59004_cgraph.png" border="0" usemap="#classFoam_1_1DASolver_a4845f297f6868e9edf41f492fff59004_cgraph" alt=""/></div>
+<map name="classFoam_1_1DASolver_a4845f297f6868e9edf41f492fff59004_cgraph" id="classFoam_1_1DASolver_a4845f297f6868e9edf41f492fff59004_cgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAUtility.html#a4845f297f6868e9edf41f492fff59004" title="write petsc vector in ascii format " alt="" coords="185,5,378,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a818761abc7dfa73f4167db5f630d34c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void readVectorBinary </td>
+          <td>(</td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>vecIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>read petsc vector in binary format </p>
+
+<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00274">274</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+
+<p>References <a class="el" href="DAUtility_8C_source.html#l00225">DAUtility::readVectorBinary()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASolver_a818761abc7dfa73f4167db5f630d34c7_cgraph.png" border="0" usemap="#classFoam_1_1DASolver_a818761abc7dfa73f4167db5f630d34c7_cgraph" alt=""/></div>
+<map name="classFoam_1_1DASolver_a818761abc7dfa73f4167db5f630d34c7_cgraph" id="classFoam_1_1DASolver_a818761abc7dfa73f4167db5f630d34c7_cgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAUtility.html#a818761abc7dfa73f4167db5f630d34c7" title="read petsc vector in binary format " alt="" coords="187,5,379,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aaabf5e461685aae1fd388f6fabd43f22"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeVectorBinary </td>
+          <td>(</td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>vecIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>write petsc vector in binary format </p>
+
+<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00282">282</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+
+<p>References <a class="el" href="DAUtility_8C_source.html#l00258">DAUtility::writeVectorBinary()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASolver_aaabf5e461685aae1fd388f6fabd43f22_cgraph.png" border="0" usemap="#classFoam_1_1DASolver_aaabf5e461685aae1fd388f6fabd43f22_cgraph" alt=""/></div>
+<map name="classFoam_1_1DASolver_aaabf5e461685aae1fd388f6fabd43f22_cgraph" id="classFoam_1_1DASolver_aaabf5e461685aae1fd388f6fabd43f22_cgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAUtility.html#aaabf5e461685aae1fd388f6fabd43f22" title="write petsc vector in binary format " alt="" coords="187,5,381,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a3dd9c76eae8128830541f9fa01343cee"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1049,7 +1427,7 @@ Here is the caller graph for this function:</div>
 
 <p>return the number of local adjoint states </p>
 
-<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00230">230</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00290">290</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 <p>References <a class="el" href="DASolver_8H_source.html#l00079">DASolver::daIndexPtr_</a>.</p>
 
@@ -1149,7 +1527,7 @@ Here is the caller graph for this function:</div>
 
 <p>check the mesh quality and return meshOK </p>
 
-<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00242">242</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00302">302</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 <p>References <a class="el" href="DASolver_8H_source.html#l00088">DASolver::daCheckMeshPtr_</a>.</p>
 
@@ -1220,7 +1598,7 @@ Here is the call graph for this function:</div>
 
 <p>print all <a class="el" href="classFoam_1_1DAOption.html">DAOption</a> </p>
 
-<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00251">251</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00311">311</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 <p>References <a class="el" href="DASolver_8H_source.html#l00070">DASolver::daOptionPtr_</a>.</p>
 
@@ -1431,7 +1809,7 @@ Here is the caller graph for this function:</div>
 
 <p>References <a class="el" href="DASolver_8H_source.html#l00121">DASolver::dXvdFFDMat_</a>.</p>
 
-<p>Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00959">PYDAFOAM::calcTotalDeriv()</a>.</p>
+<p>Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00953">PYDAFOAM::calcTotalDeriv()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1468,7 +1846,7 @@ Here is the caller graph for this function:</div>
 
 <p>update the allOptions_ dict in <a class="el" href="classFoam_1_1DAOption.html">DAOption</a> based on the pyOptions from pyDAFoam </p>
 
-<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00282">282</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00342">342</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 <p>References <a class="el" href="DASolver_8H_source.html#l00070">DASolver::daOptionPtr_</a>.</p>
 
@@ -1497,7 +1875,7 @@ Here is the caller graph for this function:</div>
 
 <p>get the solution time folder for previous primal solution </p>
 
-<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00288">288</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p>Definition at line <a class="el" href="DASolver_8H_source.html#l00348">348</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 <p>References <a class="el" href="DASolver_8H_source.html#l00127">DASolver::prevPrimalSolTime_</a>.</p>
 
@@ -1652,7 +2030,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="DASolver_8H_source.html#l00070">70</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p>Referenced by <a class="el" href="DASolver_8C_source.html#l01013">DASolver::calcTotalDeriv()</a>, <a class="el" href="DASolver_8C_source.html#l01801">DASolver::checkResidualTol()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00035">DASimpleFoam::initSolver()</a>, <a class="el" href="DASolver_8C_source.html#l00091">DASolver::loop()</a>, <a class="el" href="DASolver_8H_source.html#l00251">DASolver::printAllOptions()</a>, <a class="el" href="DASolver_8C_source.html#l00280">DASolver::reduceStateResConLevel()</a>, <a class="el" href="DASolver_8C_source.html#l00183">DASolver::setDAObjFuncList()</a>, <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00054">DARhoSimpleFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00054">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00064">DASimpleFoam::solvePrimal()</a>, and <a class="el" href="DASolver_8H_source.html#l00282">DASolver::updateDAOption()</a>.</p>
+<p>Referenced by <a class="el" href="DASolver_8C_source.html#l01013">DASolver::calcTotalDeriv()</a>, <a class="el" href="DASolver_8C_source.html#l01801">DASolver::checkResidualTol()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00035">DASimpleFoam::initSolver()</a>, <a class="el" href="DASolver_8C_source.html#l00091">DASolver::loop()</a>, <a class="el" href="DASolver_8H_source.html#l00311">DASolver::printAllOptions()</a>, <a class="el" href="DASolver_8C_source.html#l00280">DASolver::reduceStateResConLevel()</a>, <a class="el" href="DASolver_8C_source.html#l00183">DASolver::setDAObjFuncList()</a>, <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00054">DARhoSimpleFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00054">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00064">DASimpleFoam::solvePrimal()</a>, and <a class="el" href="DASolver_8H_source.html#l00342">DASolver::updateDAOption()</a>.</p>
 
 </div>
 </div>
@@ -1730,7 +2108,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="DASolver_8H_source.html#l00079">79</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p>Referenced by <a class="el" href="DASolver_8C_source.html#l01013">DASolver::calcTotalDeriv()</a>, <a class="el" href="DASolver_8H_source.html#l00198">DASolver::getGlobalXvIndex()</a>, <a class="el" href="DASolver_8H_source.html#l00230">DASolver::getNLocalAdjointStates()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00035">DASimpleFoam::initSolver()</a>, <a class="el" href="DASolver_8C_source.html#l00183">DASolver::setDAObjFuncList()</a>, and <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>.</p>
+<p>Referenced by <a class="el" href="DASolver_8C_source.html#l01013">DASolver::calcTotalDeriv()</a>, <a class="el" href="DASolver_8H_source.html#l00198">DASolver::getGlobalXvIndex()</a>, <a class="el" href="DASolver_8H_source.html#l00290">DASolver::getNLocalAdjointStates()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00035">DASimpleFoam::initSolver()</a>, <a class="el" href="DASolver_8C_source.html#l00183">DASolver::setDAObjFuncList()</a>, and <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>.</p>
 
 </div>
 </div>
@@ -1756,7 +2134,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="DASolver_8H_source.html#l00082">82</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p>Referenced by <a class="el" href="DASolver_8H_source.html#l00206">DASolver::ofField2StateVec()</a>, <a class="el" href="DASolver_8H_source.html#l00224">DASolver::ofMesh2PointVec()</a>, <a class="el" href="DASolver_8H_source.html#l00218">DASolver::pointVec2OFMesh()</a>, <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00054">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00054">DARhoSimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00064">DASimpleFoam::solvePrimal()</a>, and <a class="el" href="DASolver_8H_source.html#l00212">DASolver::stateVec2OFField()</a>.</p>
+<p>Referenced by <a class="el" href="DASolver_8H_source.html#l00206">DASolver::ofField2StateVec()</a>, <a class="el" href="DASolver_8H_source.html#l00224">DASolver::ofMesh2PointVec()</a>, <a class="el" href="DASolver_8H_source.html#l00236">DASolver::ofResField2ResVec()</a>, <a class="el" href="DASolver_8H_source.html#l00218">DASolver::pointVec2OFMesh()</a>, <a class="el" href="DASolver_8H_source.html#l00230">DASolver::resVec2OFResField()</a>, <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00054">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00054">DARhoSimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00064">DASimpleFoam::solvePrimal()</a>, and <a class="el" href="DASolver_8H_source.html#l00212">DASolver::stateVec2OFField()</a>.</p>
 
 </div>
 </div>
@@ -1808,7 +2186,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="DASolver_8H_source.html#l00088">88</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p>Referenced by <a class="el" href="DASolver_8H_source.html#l00242">DASolver::checkMesh()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00036">DARhoSimpleFoam::initSolver()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00036">DARhoSimpleCFoam::initSolver()</a>, and <a class="el" href="DASimpleFoam_8C_source.html#l00035">DASimpleFoam::initSolver()</a>.</p>
+<p>Referenced by <a class="el" href="DASolver_8H_source.html#l00302">DASolver::checkMesh()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00036">DARhoSimpleFoam::initSolver()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00036">DARhoSimpleCFoam::initSolver()</a>, and <a class="el" href="DASimpleFoam_8C_source.html#l00035">DASimpleFoam::initSolver()</a>.</p>
 
 </div>
 </div>
@@ -2016,7 +2394,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="DASolver_8H_source.html#l00124">124</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p>Referenced by <a class="el" href="DASolver_8C_source.html#l01801">DASolver::checkResidualTol()</a>, <a class="el" href="DASolver_8C_source.html#l00091">DASolver::loop()</a>, <a class="el" href="DASolver_8H_source.html#l00297">DASolver::primalResidualControl()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00054">DARhoSimpleFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00054">DARhoSimpleCFoam::solvePrimal()</a>, and <a class="el" href="DASimpleFoam_8C_source.html#l00064">DASimpleFoam::solvePrimal()</a>.</p>
+<p>Referenced by <a class="el" href="DASolver_8C_source.html#l01801">DASolver::checkResidualTol()</a>, <a class="el" href="DASolver_8C_source.html#l00091">DASolver::loop()</a>, <a class="el" href="DASolver_8H_source.html#l00357">DASolver::primalResidualControl()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00054">DARhoSimpleFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00054">DARhoSimpleCFoam::solvePrimal()</a>, and <a class="el" href="DASimpleFoam_8C_source.html#l00064">DASimpleFoam::solvePrimal()</a>.</p>
 
 </div>
 </div>
@@ -2042,7 +2420,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="DASolver_8H_source.html#l00127">127</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p>Referenced by <a class="el" href="DASolver_8H_source.html#l00288">DASolver::getPrevPrimalSolTime()</a>, and <a class="el" href="DASolver_8C_source.html#l00091">DASolver::loop()</a>.</p>
+<p>Referenced by <a class="el" href="DASolver_8H_source.html#l00348">DASolver::getPrevPrimalSolTime()</a>, and <a class="el" href="DASolver_8C_source.html#l00091">DASolver::loop()</a>.</p>
 
 </div>
 </div>

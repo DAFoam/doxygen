@@ -27,7 +27,7 @@ var searchData=
   ['plimited',['pLimited',['../pEqnRhoSimpleC_8H.html#a823608aeb432ca4506db9c945a329898',1,'pLimited():&#160;pEqnRhoSimpleC.H'],['../pEqnRhoSimple_8H.html#a823608aeb432ca4506db9c945a329898',1,'pLimited():&#160;pEqnRhoSimple.H']]],
   ['pointprocaddressing',['pointProcAddressing',['../classFoam_1_1DAIndex.html#a42948a5492fb8b73b845fbe235505dde',1,'Foam::DAIndex']]],
   ['pointsset',['pointsSet',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#af949449b2c19d94e83f9e0012f1d595b',1,'dafoam::pyDAFoam::PYDAFOAM']]],
-  ['pointvec2ofmesh',['pointVec2OFMesh',['../classFoam_1_1DAField.html#a42965ff610f092150056c3d8bfd4ad98',1,'Foam::DAField::pointVec2OFMesh()'],['../classFoam_1_1DASolver.html#a42965ff610f092150056c3d8bfd4ad98',1,'Foam::DASolver::pointVec2OFMesh()']]],
+  ['pointvec2ofmesh',['pointVec2OFMesh',['../classFoam_1_1DAField.html#a42965ff610f092150056c3d8bfd4ad98',1,'Foam::DAField::pointVec2OFMesh()'],['../classFoam_1_1DASolver.html#a42965ff610f092150056c3d8bfd4ad98',1,'Foam::DASolver::pointVec2OFMesh()'],['../classFoam_1_1DASolvers.html#a42965ff610f092150056c3d8bfd4ad98',1,'Foam::DASolvers::pointVec2OFMesh()']]],
   ['pptr_5f',['pPtr_',['../classFoam_1_1DARhoSimpleCFoam.html#a70d281d8eac99027314656c9f489f21b',1,'Foam::DARhoSimpleCFoam::pPtr_()'],['../classFoam_1_1DARhoSimpleFoam.html#a70d281d8eac99027314656c9f489f21b',1,'Foam::DARhoSimpleFoam::pPtr_()'],['../classFoam_1_1DASimpleFoam.html#a70d281d8eac99027314656c9f489f21b',1,'Foam::DASimpleFoam::pPtr_()']]],
   ['pr_5f',['Pr_',['../classFoam_1_1DATurbulenceModel.html#af522d259aaff28ef30fdbf68d498e8c7',1,'Foam::DATurbulenceModel']]],
   ['preallocatedrdw',['preallocatedRdW',['../classFoam_1_1DAJacCon.html#aa1fb7a6c28c06a84e27181caa36eb5a7',1,'Foam::DAJacCon::preallocatedRdW()'],['../classFoam_1_1DAJacCondRdW.html#aa1fb7a6c28c06a84e27181caa36eb5a7',1,'Foam::DAJacCondRdW::preallocatedRdW()']]],
@@ -50,7 +50,6 @@ var searchData=
   ['primalresidualcontrol',['primalResidualControl',['../classFoam_1_1DASolver.html#a30fe379650f8b9ddefdeef85cd5731cd',1,'Foam::DASolver']]],
   ['primalresidualcontrol_3c_20scalar_20_3e',['primalResidualControl&lt; scalar &gt;',['../EEqnRhoSimpleC_8H.html#a2dcb8c94f9174631742454652a8151bd',1,'primalResidualControl&lt; scalar &gt;(solverE, nSolverIters, printInterval,&quot;he&quot;):&#160;EEqnRhoSimpleC.H'],['../EEqnRhoSimple_8H.html#a2dcb8c94f9174631742454652a8151bd',1,'primalResidualControl&lt; scalar &gt;(solverE, nSolverIters, printInterval,&quot;he&quot;):&#160;EEqnRhoSimple.H']]],
   ['primalresidualcontrol_3c_20vector_20_3e',['primalResidualControl&lt; vector &gt;',['../UEqnRhoSimpleC_8H.html#a3e355695cb29a391514449b4b53f6a09',1,'primalResidualControl&lt; vector &gt;(solverU, nSolverIters, printInterval,&quot;U&quot;):&#160;UEqnRhoSimpleC.H'],['../UEqnRhoSimple_8H.html#a3e355695cb29a391514449b4b53f6a09',1,'primalResidualControl&lt; vector &gt;(solverU, nSolverIters, printInterval,&quot;U&quot;):&#160;UEqnRhoSimple.H']]],
-  ['primalsolver',['primalSolver',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6aab4832fd24d1d942db2254db5bfd53',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['primalvarbounds',['primalVarBounds',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a0389b9ca19e1598db51bb04b39eebd3f',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['printallobjfuncs',['printAllObjFuncs',['../classFoam_1_1DASolver.html#afe40e08050edfc54026142d6353aa408',1,'Foam::DASolver']]],
   ['printalloptions',['printAllOptions',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#ab1f66b81007bd92775ac66f05dac72ef',1,'dafoam.pyDAFoam.DAOPTION.printAllOptions()'],['../classFoam_1_1DASolver.html#a967a69a9c61b3b15bc5419be87fcff08',1,'Foam::DASolver::printAllOptions()'],['../classFoam_1_1DASolvers.html#a967a69a9c61b3b15bc5419be87fcff08',1,'Foam::DASolvers::printAllOptions()']]],
@@ -73,6 +72,5 @@ var searchData=
   ['pydafoam_2epy',['pyDAFoam.py',['../pyDAFoam_8py.html',1,'']]],
   ['pydasolvers_2epyx',['pyDASolvers.pyx',['../pyDASolvers_8pyx.html',1,'']]],
   ['pydict2ofdict',['pyDict2OFDict',['../classFoam_1_1DAUtility.html#af306374cb235e020b27d24bd1e9ada1b',1,'Foam::DAUtility']]],
-  ['pyoptions_5f',['pyOptions_',['../classFoam_1_1DASolver.html#a51bf89755448def5b0c3da68a10749f8',1,'Foam::DASolver']]],
-  ['pystrlist2ofwordlist',['pyStrList2OFWordList',['../classFoam_1_1DAUtility.html#acfdbb77cbb8db38b1fbd44bf33e74dd2',1,'Foam::DAUtility']]]
+  ['pyoptions_5f',['pyOptions_',['../classFoam_1_1DASolver.html#a51bf89755448def5b0c3da68a10749f8',1,'Foam::DASolver']]]
 ];

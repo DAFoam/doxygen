@@ -8,7 +8,7 @@ var searchData=
   ['phi',['phi',['../pyColoringCompressible_2createFields_8H.html#aa4bb0c89b397014cbc984c3740e9e458',1,'createFields.H']]],
   ['phid',['phid',['../pEqnRhoSimpleC_8H.html#ae9691ff4d3c43f8cd6f1859582747ee4',1,'pEqnRhoSimpleC.H']]],
   ['phihbya',['phiHbyA',['../pEqnRhoSimpleC_8H.html#a391ae6d8e7ca249f6aa57f47569d8c2f',1,'phiHbyA(&quot;phiHbyA&quot;, fvc::interpolate(rho)*fvc::flux(HbyA)):&#160;pEqnRhoSimpleC.H'],['../pEqnRhoSimple_8H.html#a391ae6d8e7ca249f6aa57f47569d8c2f',1,'phiHbyA(&quot;phiHbyA&quot;, fvc::interpolate(rho)*fvc::flux(HbyA)):&#160;pEqnRhoSimple.H'],['../pEqnSimple_8H.html#a526a8b78452de0d7f324bd956addf143',1,'phiHbyA(&quot;phiHbyA&quot;, fvc::flux(HbyA)):&#160;pEqnSimple.H']]],
-  ['pointvec2ofmesh',['pointVec2OFMesh',['../classFoam_1_1DAField.html#a42965ff610f092150056c3d8bfd4ad98',1,'Foam::DAField::pointVec2OFMesh()'],['../classFoam_1_1DASolver.html#a42965ff610f092150056c3d8bfd4ad98',1,'Foam::DASolver::pointVec2OFMesh()']]],
+  ['pointvec2ofmesh',['pointVec2OFMesh',['../classFoam_1_1DAField.html#a42965ff610f092150056c3d8bfd4ad98',1,'Foam::DAField::pointVec2OFMesh()'],['../classFoam_1_1DASolver.html#a42965ff610f092150056c3d8bfd4ad98',1,'Foam::DASolver::pointVec2OFMesh()'],['../classFoam_1_1DASolvers.html#a42965ff610f092150056c3d8bfd4ad98',1,'Foam::DASolvers::pointVec2OFMesh()']]],
   ['preallocatedrdw',['preallocatedRdW',['../classFoam_1_1DAJacCon.html#aa1fb7a6c28c06a84e27181caa36eb5a7',1,'Foam::DAJacCon::preallocatedRdW()'],['../classFoam_1_1DAJacCondRdW.html#aa1fb7a6c28c06a84e27181caa36eb5a7',1,'Foam::DAJacCondRdW::preallocatedRdW()']]],
   ['preallocatejacobianmatrix',['preallocateJacobianMatrix',['../classFoam_1_1DAJacCondRdW.html#abb960783eb662d75a827c0dfb09d73fa',1,'Foam::DAJacCondRdW']]],
   ['primalresidualcontrol',['primalResidualControl',['../classFoam_1_1DASolver.html#a30fe379650f8b9ddefdeef85cd5731cd',1,'Foam::DASolver']]],
@@ -21,6 +21,5 @@ var searchData=
   ['printmatchars',['printMatChars',['../classFoam_1_1DAIndex.html#a38ac05920671e0f8e4c2982ce14dde56',1,'Foam::DAIndex']]],
   ['printyplus',['printYPlus',['../classFoam_1_1DATurbulenceModel.html#a725207c32ef6fba08969f6fbed5e7c74',1,'Foam::DATurbulenceModel']]],
   ['pthermo',['pThermo',['../pyColoringCompressible_2createFields_8H.html#a90c250feb01fdc9eacec4dccf8ba2265',1,'createFields.H']]],
-  ['pydict2ofdict',['pyDict2OFDict',['../classFoam_1_1DAUtility.html#af306374cb235e020b27d24bd1e9ada1b',1,'Foam::DAUtility']]],
-  ['pystrlist2ofwordlist',['pyStrList2OFWordList',['../classFoam_1_1DAUtility.html#acfdbb77cbb8db38b1fbd44bf33e74dd2',1,'Foam::DAUtility']]]
+  ['pydict2ofdict',['pyDict2OFDict',['../classFoam_1_1DAUtility.html#af306374cb235e020b27d24bd1e9ada1b',1,'Foam::DAUtility']]]
 ];

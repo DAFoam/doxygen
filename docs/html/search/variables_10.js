@@ -36,7 +36,6 @@ var searchData=
   ['primalminres_5f',['primalMinRes_',['../classFoam_1_1DASolver.html#a21a5148ea30de4e7d65c42aed3b78643',1,'Foam::DASolver']]],
   ['primalminrestol',['primalMinResTol',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a144e534d2424109c2d3281d10963b4b1',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['primalminrestoldiff',['primalMinResTolDiff',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#ae5c782ff8156e1ff2a04272df1215f34',1,'dafoam::pyDAFoam::DAOPTION']]],
-  ['primalsolver',['primalSolver',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6aab4832fd24d1d942db2254db5bfd53',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['primalvarbounds',['primalVarBounds',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a0389b9ca19e1598db51bb04b39eebd3f',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['printalloptions',['printAllOptions',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#ab1f66b81007bd92775ac66f05dac72ef',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['printinterval',['printInterval',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a9ff5146359b6e4d978d884d8a83218a4',1,'dafoam::pyDAFoam::DAOPTION']]],
