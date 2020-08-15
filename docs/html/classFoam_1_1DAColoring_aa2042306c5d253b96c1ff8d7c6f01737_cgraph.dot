@@ -1,0 +1,18 @@
+digraph "parallelD2Coloring"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node41 [label="parallelD2Coloring",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node41 -> Node42 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node42 [label="coloringComplete",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAColoring.html#aadb82906897a2a1e3a485300696c2578",tooltip="check if there is non-colored columns "];
+  Node41 -> Node43 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node43 [label="find_index",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAColoring.html#adc05c09e9f68d34f559039d9d150abdb",tooltip="find the index of a prescribed value in an array "];
+  Node41 -> Node44 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node44 [label="getMatNonZeros",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAColoring.html#acd6aa8b9966612ea3cf0d2c0b4e8fb0e",tooltip="number of non-zero elements in a matrix "];
+  Node41 -> Node45 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node45 [label="Foam::DAOption::getOption",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb",tooltip="get an option from subDict and key "];
+  Node41 -> Node46 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node46 [label="Foam::DAUtility::isValue\lCloseToRef",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAUtility.html#a0d5ee91324e62c0fcd4be6cded2399f8",tooltip="check whether a value is close to a reference value by a tolerance "];
+}

@@ -1,0 +1,22 @@
+digraph "~DALinearEqn"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2 [label="~DALinearEqn",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="createMLRKSP",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DALinearEqn.html#a7250190716a5f9544ee2b6f69a9f5ab9",tooltip="create a multi-level, Richardson KSP object "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="myKSPMonitor",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DALinearEqn.html#a9130e830b837864a8cf17d517bf1b9c7",tooltip="ksp monitor function "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="getPrintInterval",height=0.2,width=0.4,color="red",URL="$classFoam_1_1DALinearEqn.html#ab07141822aa5dce75a1b216d8db8eaa0",tooltip="return printInterval from DAOption "];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="getRunTime",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DALinearEqn.html#a9641e50ccc8c39af96c7b124f72f35c5",tooltip="return the runtime for the adjoint solver "];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="solveLinearEqn",height=0.2,width=0.4,color="red",URL="$classFoam_1_1DALinearEqn.html#ad418053a9be461caecbb9109506d2e4e",tooltip="solve the linear euqation given a ksp and right-hand-side vector "];
+  Node8 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

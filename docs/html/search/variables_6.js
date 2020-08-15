@@ -1,14 +1,12 @@
 var searchData=
 [
-  ['faceidx',['faceIdx',['../namespaceFoam.html#ae5e9d0fa0704d801dc65d3978ababb00',1,'Foam']]],
-  ['faceowner',['faceOwner',['../classFoam_1_1DAIndex.html#ad564c55bc1b1dde654fa2f180cf6ceae',1,'Foam::DAIndex']]],
-  ['families',['families',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a012927e6098419ba7e2de2188e069c65',1,'dafoam::pyDAFoam::PYDAFOAM']]],
-  ['flowaxisindex_5f',['flowAxisIndex_',['../classFoam_1_1DAObjFuncForce.html#a6c657c2b640a536f442bef196a5e329d',1,'Foam::DAObjFuncForce']]],
-  ['flowcondition',['flowCondition',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#ac847f72f94d2be295dd6bccdddcd6aeb',1,'dafoam::pyDAFoam::DAOPTION']]],
-  ['forcedir_5f',['forceDir_',['../classFoam_1_1DAObjFuncForce.html#a535a876457dfbb468d813a58bfef2429',1,'Foam::DAObjFuncForce']]],
-  ['fvsource',['fvSource',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a0758d19c311653a16192d9f7f567fcb7',1,'dafoam.pyDAFoam.DAOPTION.fvSource()'],['../createRefsSimple_8H.html#a9a0c1fa985c6e79bb4cdc55fa06b9b50',1,'fvSource():&#160;createRefsSimple.H']]],
-  ['fvsource_5f',['fvSource_',['../classFoam_1_1DAResidualSimpleFoam.html#a25abaa83d72e63dcc9333ecf81108e8c',1,'Foam::DAResidualSimpleFoam']]],
-  ['fvsourcecellindices_5f',['fvSourceCellIndices_',['../classFoam_1_1DAFvSourceActuatorDisk.html#ab50dd8ae9df0ae1a7064bd9e135319eb',1,'Foam::DAFvSourceActuatorDisk']]],
-  ['fvsourceptr_5f',['fvSourcePtr_',['../classFoam_1_1DASimpleFoam.html#aa80d3f2bf46b2f95efc4a4668b1fb914',1,'Foam::DASimpleFoam']]],
-  ['fvsourcesubdict_5f',['fvSourceSubDict_',['../classFoam_1_1DAFvSourceActuatorDisk.html#a479fc8e5212e0e1e73bd9c5db88851e0',1,'Foam::DAFvSourceActuatorDisk']]]
+  ['globaladjointstatenumbering',['globalAdjointStateNumbering',['../classFoam_1_1DAIndex.html#a75df9147e4815d887684542e0c19d737',1,'Foam::DAIndex']]],
+  ['globalcellnumbering',['globalCellNumbering',['../classFoam_1_1DAIndex.html#a612291abb9489486ba4fc8a40bca9b33',1,'Foam::DAIndex']]],
+  ['globalcellvectornumbering',['globalCellVectorNumbering',['../classFoam_1_1DAIndex.html#ae7799bfb308756ace93be315d8ef140a',1,'Foam::DAIndex']]],
+  ['globalconterr',['globalContErr',['../continuityErrsPython_8H.html#ac7810f8530d3395b6469c651a5ed0a18',1,'continuityErrsPython.H']]],
+  ['globalcoupledbfacenumbering',['globalCoupledBFaceNumbering',['../classFoam_1_1DAIndex.html#a7ec03b7e26b49bcefa9e559656ce75d3',1,'Foam::DAIndex']]],
+  ['globalfacenumbering',['globalFaceNumbering',['../classFoam_1_1DAIndex.html#a680862dc7401283f6a16cd22dcf16f5a',1,'Foam::DAIndex']]],
+  ['globalobjfuncgeonumbering',['globalObjFuncGeoNumbering',['../classFoam_1_1DAIndex.html#a176ecb0125349298bf04b735470e2b93',1,'Foam::DAIndex']]],
+  ['globalobjfuncgeonumbering_5f',['globalObjFuncGeoNumbering_',['../classFoam_1_1DAJacCondFdW.html#a31009387223ae1f5ae9b20a6175678bf',1,'Foam::DAJacCondFdW']]],
+  ['globalxvnumbering',['globalXvNumbering',['../classFoam_1_1DAIndex.html#a9e9b66a0fb6b7cb2b0c95e67d581208c',1,'Foam::DAIndex']]]
 ];

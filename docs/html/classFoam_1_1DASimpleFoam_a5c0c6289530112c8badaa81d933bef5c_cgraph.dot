@@ -1,0 +1,22 @@
+digraph "solvePrimal"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node48 [label="solvePrimal",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node48 -> Node49 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node49 [label="Foam::DASolver::calcPrimal\lResidualStatistics",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DASolver.html#a6cec9caca72b22c3e006bd0fbb9c422a",tooltip="calculate the norms of all residuals and print to screen "];
+  Node48 -> Node50 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node50 [label="Foam::DASolver::checkMesh",height=0.2,width=0.4,color="red",URL="$classFoam_1_1DASolver.html#abb3f34f5634fe617414ce256738e40b4",tooltip="check the mesh quality and return meshOK "];
+  Node48 -> Node55 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node55 [label="Foam::DASolver::checkResidualTol",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DASolver.html#aab4e3d9fbdff96d71bcf7635a87107a3",tooltip="check whether the min residual in primal satisfy the prescribed tolerance "];
+  Node48 -> Node56 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node56 [label="Foam::DASolver::loop",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DASolver.html#a132776bede8c2b661f995f2b5397b19f",tooltip="return whether to loop the primal solution, similar to runTime::loop() except we don&#39;t do file IO ..."];
+  Node48 -> Node57 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node57 [label="Foam::DASolver::ofField2\lStateVec",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DASolver.html#a97b2a938b423ad81fcd6982dd375fd01",tooltip="set the state vector based on the latest fields in OpenFOAM "];
+  Node48 -> Node58 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node58 [label="Foam::DASolver::pointVec2\lOFMesh",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DASolver.html#ad11a8b27d61a02a20034c2dedfaa3843",tooltip="assign the points in fvMesh of OpenFOAM based on the point vector "];
+  Node48 -> Node59 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node59 [label="Foam::DASolver::printAll\lObjFuncs",height=0.2,width=0.4,color="red",URL="$classFoam_1_1DASolver.html#afe40e08050edfc54026142d6353aa408",tooltip="calculate the values of all objective functions and print them to screen "];
+}

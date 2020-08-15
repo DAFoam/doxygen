@@ -8,6 +8,10 @@ var searchData=
   ['dadummyturbulencemodel_2eh',['DADummyTurbulenceModel.H',['../DADummyTurbulenceModel_8H.html',1,'']]],
   ['dafield_2ec',['DAField.C',['../DAField_8C.html',1,'']]],
   ['dafield_2eh',['DAField.H',['../DAField_8H.html',1,'']]],
+  ['dafoam_5fmatgetvalues_2epy',['dafoam_matgetvalues.py',['../dafoam__matgetvalues_8py.html',1,'']]],
+  ['dafoam_5fmatreldiff_2epy',['dafoam_matreldiff.py',['../dafoam__matreldiff_8py.html',1,'']]],
+  ['dafoam_5fvecgetvalues_2epy',['dafoam_vecgetvalues.py',['../dafoam__vecgetvalues_8py.html',1,'']]],
+  ['dafoam_5fvecreldiff_2epy',['dafoam_vecreldiff.py',['../dafoam__vecreldiff_8py.html',1,'']]],
   ['dafvsource_2ec',['DAFvSource.C',['../DAFvSource_8C.html',1,'']]],
   ['dafvsource_2eh',['DAFvSource.H',['../DAFvSource_8H.html',1,'']]],
   ['dafvsourceactuatordisk_2ec',['DAFvSourceActuatorDisk.C',['../DAFvSourceActuatorDisk_8C.html',1,'']]],
@@ -99,8 +103,6 @@ var searchData=
   ['daturbulencemodel_2eh',['DATurbulenceModel.H',['../DATurbulenceModel_8H.html',1,'']]],
   ['dautility_2ec',['DAUtility.C',['../DAUtility_8C.html',1,'']]],
   ['dautility_2eh',['DAUtility.H',['../DAUtility_8H.html',1,'']]],
-  ['dummyturbulencemodel_2ec',['dummyTurbulenceModel.C',['../dummyTurbulenceModelCompressible_2dummyTurbulenceModel_8C.html',1,'']]],
-  ['dummyturbulencemodel_2ec',['dummyTurbulenceModel.C',['../dummyTurbulenceModelIncompressible_2dummyTurbulenceModel_8C.html',1,'']]],
-  ['dummyturbulencemodel_2eh',['dummyTurbulenceModel.H',['../dummyTurbulenceModelIncompressible_2dummyTurbulenceModel_8H.html',1,'']]],
-  ['dummyturbulencemodel_2eh',['dummyTurbulenceModel.H',['../dummyTurbulenceModelCompressible_2dummyTurbulenceModel_8H.html',1,'']]]
+  ['dummyturbulencemodel_2ec',['dummyTurbulenceModel.C',['../dummyTurbulenceModelCompressible_2dummyTurbulenceModel_8C.html',1,'(Global Namespace)'],['../dummyTurbulenceModelIncompressible_2dummyTurbulenceModel_8C.html',1,'(Global Namespace)']]],
+  ['dummyturbulencemodel_2eh',['dummyTurbulenceModel.H',['../dummyTurbulenceModelCompressible_2dummyTurbulenceModel_8H.html',1,'(Global Namespace)'],['../dummyTurbulenceModelIncompressible_2dummyTurbulenceModel_8H.html',1,'(Global Namespace)']]]
 ];

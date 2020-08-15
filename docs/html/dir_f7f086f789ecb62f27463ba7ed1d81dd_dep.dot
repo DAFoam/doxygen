@@ -1,0 +1,15 @@
+digraph "dafoam/src/adjoint/DAStateInfo" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_f5514f987767675d2ddbed85ad2de067 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="adjoint" fontname="Helvetica", fontsize="10", URL="dir_f5514f987767675d2ddbed85ad2de067.html"]
+  dir_f7f086f789ecb62f27463ba7ed1d81dd [shape=box, label="DAStateInfo", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_f7f086f789ecb62f27463ba7ed1d81dd.html"];
+  }
+  dir_3e1a3916256641cd890d01e288a238af [shape=box label="DAOption" URL="dir_3e1a3916256641cd890d01e288a238af.html"];
+  dir_0e038532d2d478fb20f067fb4c41f83e [shape=box label="DAModel" color="red" URL="dir_0e038532d2d478fb20f067fb4c41f83e.html"];
+  dir_f7f086f789ecb62f27463ba7ed1d81dd->dir_3e1a3916256641cd890d01e288a238af [headlabel="1", labeldistance=1.5 headhref="dir_000024_000016.html"];
+  dir_f7f086f789ecb62f27463ba7ed1d81dd->dir_0e038532d2d478fb20f067fb4c41f83e [headlabel="1", labeldistance=1.5 headhref="dir_000024_000012.html"];
+  dir_0e038532d2d478fb20f067fb4c41f83e->dir_3e1a3916256641cd890d01e288a238af [headlabel="2", labeldistance=1.5 headhref="dir_000012_000016.html"];
+}
