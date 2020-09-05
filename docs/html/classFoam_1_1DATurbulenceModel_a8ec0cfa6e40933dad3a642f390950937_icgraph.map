@@ -1,0 +1,9 @@
+<map id="nu" name="nu">
+<area shape="rect" id="node2" href="$classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="92,5,307,47"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASpalartAllmaras.html#a12c06ff2531b6460a8bea4cd0efee0e1" title="Foam::DASpalartAllmaras::chi" alt="" coords="100,71,299,98"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DASpalartAllmaras.html#a3db17e0612d3f43dfc21d593b7f7a942" title="Return the effective diffusivity for nuTilda. " alt="" coords="112,123,287,164"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DATurbulenceModel.html#a6ccb345346c8f358d12d90933980a559" title="get alpha field " alt="" coords="163,189,236,215"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DATurbulenceModel.html#add7eb11ed6f6a22df0b6e8ffe53cf2a1" title="get the nut field " alt="" coords="365,227,427,254"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DATurbulenceModel.html#a8ab26f302189e92dac1700b9c30d0b13" title="return effective viscosity " alt="" coords="173,290,226,317"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DATurbulenceModel.html#a45a5b7ae829ea8e200332ce6a19e5a1e" title="print the min max and mean yPlus to screen " alt="" coords="355,303,437,330"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="setConnections" name="setConnections">
+<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#a9dd95e527ffe4ab41fa36bb746e5f2aa" title="a high&#45;level function to add connected state column indices to the connectivity matrix ..." alt="" coords="167,5,313,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAJacCondRdW.html#a6320c97a80c467a388c3a88fdcd31eb3" title="Foam::DAJacCondRdW\l::setupdRdWCon" alt="" coords="361,23,525,65"/>
+</map>

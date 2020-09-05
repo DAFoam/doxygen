@@ -1,0 +1,4 @@
+<map id="printMatChars" name="printMatChars">
+<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a06a1fcb98ee5f377d70e1d04b0e5dd61" title="get global adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="157,5,337,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAIndex.html#a73796d613e64f33a37f72ef83ec95dfa" title="get number of non zeros for a matrix " alt="" coords="188,56,307,83"/>
+</map>

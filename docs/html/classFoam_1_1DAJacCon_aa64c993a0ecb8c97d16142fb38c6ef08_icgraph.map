@@ -1,0 +1,5 @@
+<map id="addBoundaryFaceConnections" name="addBoundaryFaceConnections">
+<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#a9dd95e527ffe4ab41fa36bb746e5f2aa" title="a high&#45;level function to add connected state column indices to the connectivity matrix ..." alt="" coords="255,5,401,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAJacCon.html#ae37be4bb493eee707549a207d43ea97c" title="combine stateBoundaryCon and stateBoundaryConTmp, this is to ensure including all connected states fo..." alt="" coords="253,56,403,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAJacCon.html#aa3634adc32833f151b9489b57320ecd4" title="calculate DAJacCon::stateBoundaryCon_ " alt="" coords="451,81,615,108"/>
+</map>

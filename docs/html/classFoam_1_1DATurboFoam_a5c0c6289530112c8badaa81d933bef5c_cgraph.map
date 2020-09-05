@@ -1,0 +1,10 @@
+<map id="solvePrimal" name="solvePrimal">
+<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#a6cec9caca72b22c3e006bd0fbb9c422a" title="calculate the norms of all residuals and print to screen " alt="" coords="165,5,353,47"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#abb3f34f5634fe617414ce256738e40b4" title="check the mesh quality and return meshOK " alt="" coords="162,71,357,98"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#aab4e3d9fbdff96d71bcf7635a87107a3" title="check whether the min residual in primal satisfy the prescribed tolerance " alt="" coords="144,122,375,149"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DASolver.html#a132776bede8c2b661f995f2b5397b19f" title="return whether to loop the primal solution, similar to runTime::loop() except we don&#39;t do file IO ..." alt="" coords="184,173,335,199"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DASolver.html#a97b2a938b423ad81fcd6982dd375fd01" title="set the state vector based on the latest fields in OpenFOAM " alt="" coords="173,224,346,265"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DASolver.html#ad11a8b27d61a02a20034c2dedfaa3843" title="assign the points in fvMesh of OpenFOAM based on the point vector " alt="" coords="167,289,352,331"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DASolver.html#afe40e08050edfc54026142d6353aa408" title="calculate the values of all objective functions and print them to screen " alt="" coords="176,355,343,396"/>
+<area shape="rect" id="node9" href="$classFoam_1_1DATurboFoam.html#a586f133d36cfa6a6206672c6227cee60" title="set velocity boundary condition for rotating walls " alt="" coords="184,421,335,447"/>
+</map>

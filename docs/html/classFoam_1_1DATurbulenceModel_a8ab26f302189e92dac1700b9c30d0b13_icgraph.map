@@ -1,0 +1,6 @@
+<map id="nuEff" name="nuEff">
+<area shape="rect" id="node2" href="$classFoam_1_1DATurbulenceModel.html#aef94ed444c2b8b4b333665ea4792d692" title="dev terms " alt="" coords="117,5,209,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DATurbulenceModel.html#a4da443a900be70678681adc3cb584741" title="~DATurbulenceModel" alt="" coords="267,56,415,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DATurbulenceModel.html#a0c7033497464f2d4fd1241104e55bc51" title="divDev terms " alt="" coords="107,107,219,133"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DATurbulenceModel.html#a45a5b7ae829ea8e200332ce6a19e5a1e" title="print the min max and mean yPlus to screen " alt="" coords="121,157,204,184"/>
+</map>

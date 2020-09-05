@@ -1,0 +1,7 @@
+<map id="~DASolver" name="~DASolver">
+<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#ae61bd69b450c4e79a7eb089751e0ecde" title="compute the total derivatives " alt="" coords="140,5,247,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#af82bf1550fee8a84516c90c17d105352" title="initialize fields and variables " alt="" coords="155,56,231,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#a132776bede8c2b661f995f2b5397b19f" title="return whether to loop the primal solution, similar to runTime::loop() except we don&#39;t do file IO ..." alt="" coords="170,107,217,133"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DASolver.html#a985af8c5b6d6bf478b8fd1d999865b47" title="solve the adjoint linear equations " alt="" coords="147,157,240,184"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DASolver.html#a9ce2c3a325b52ede4d6dfbd9e6c5b9ac" title="solve the primal equations " alt="" coords="148,208,239,235"/>
+</map>
