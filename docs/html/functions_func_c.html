@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.3</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.4</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -93,6 +93,9 @@ $(function() {
 : <a class="el" href="classFoam_1_1DAObjFunc.html#af91123718135a59ba6b1ed5ddd32235b">DAObjFunc</a>
 , <a class="el" href="classFoam_1_1DAObjFuncForce.html#aff7d67902025442333a1a88cce51695e">DAObjFuncForce</a>
 , <a class="el" href="classFoam_1_1DAObjFuncMoment.html#aff7d67902025442333a1a88cce51695e">DAObjFuncMoment</a>
+, <a class="el" href="classFoam_1_1DAObjFuncTotalPressure.html#aff7d67902025442333a1a88cce51695e">DAObjFuncTotalPressure</a>
+, <a class="el" href="classFoam_1_1DAObjFuncVonMisesStressKS.html#aff7d67902025442333a1a88cce51695e">DAObjFuncVonMisesStressKS</a>
+, <a class="el" href="classFoam_1_1DAObjFuncWallHeatFlux.html#aff7d67902025442333a1a88cce51695e">DAObjFuncWallHeatFlux</a>
 </li>
 <li>calcObjFuncSources()
 : <a class="el" href="classFoam_1_1DAObjFunc.html#a70666f0e99a39d08412c1283e9adb252">DAObjFunc</a>
@@ -118,6 +121,9 @@ $(function() {
 , <a class="el" href="classFoam_1_1DAResidualRhoSimpleCFoam.html#a4b38dbac981107ec6386d78322323535">DAResidualRhoSimpleCFoam</a>
 , <a class="el" href="classFoam_1_1DAResidualRhoSimpleFoam.html#a4b38dbac981107ec6386d78322323535">DAResidualRhoSimpleFoam</a>
 , <a class="el" href="classFoam_1_1DAResidualSimpleFoam.html#a4b38dbac981107ec6386d78322323535">DAResidualSimpleFoam</a>
+, <a class="el" href="classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535">DAResidualSimpleTFoam</a>
+, <a class="el" href="classFoam_1_1DAResidualSolidDisplacementFoam.html#a4b38dbac981107ec6386d78322323535">DAResidualSolidDisplacementFoam</a>
+, <a class="el" href="classFoam_1_1DAResidualTurboFoam.html#a4b38dbac981107ec6386d78322323535">DAResidualTurboFoam</a>
 , <a class="el" href="classFoam_1_1DASpalartAllmaras.html#a4b38dbac981107ec6386d78322323535">DASpalartAllmaras</a>
 , <a class="el" href="classFoam_1_1DATurbulenceModel.html#a5f3483c6db30769568050588ede0ca87">DATurbulenceModel</a>
 </li>
@@ -136,6 +142,10 @@ $(function() {
 <li>checkResidualTol()
 : <a class="el" href="classFoam_1_1DASolver.html#aab4e3d9fbdff96d71bcf7635a87107a3">DASolver</a>
 </li>
+<li>checkSpecialBCs()
+: <a class="el" href="classFoam_1_1DAField.html#ab84b12272957c0b7caa1ecde6c904618">DAField</a>
+, <a class="el" href="classFoam_1_1DAJacCon.html#ab84b12272957c0b7caa1ecde6c904618">DAJacCon</a>
+</li>
 <li>chi()
 : <a class="el" href="classFoam_1_1DASpalartAllmaras.html#a12c06ff2531b6460a8bea4cd0efee0e1">DASpalartAllmaras</a>
 , <a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a12c06ff2531b6460a8bea4cd0efee0e1">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;</a>
@@ -151,9 +161,15 @@ $(function() {
 , <a class="el" href="classFoam_1_1DAResidualRhoSimpleCFoam.html#ac8bb3912a3ce86b15842e79d0b421204">DAResidualRhoSimpleCFoam</a>
 , <a class="el" href="classFoam_1_1DAResidualRhoSimpleFoam.html#ac8bb3912a3ce86b15842e79d0b421204">DAResidualRhoSimpleFoam</a>
 , <a class="el" href="classFoam_1_1DAResidualSimpleFoam.html#ac8bb3912a3ce86b15842e79d0b421204">DAResidualSimpleFoam</a>
+, <a class="el" href="classFoam_1_1DAResidualSimpleTFoam.html#ac8bb3912a3ce86b15842e79d0b421204">DAResidualSimpleTFoam</a>
+, <a class="el" href="classFoam_1_1DAResidualSolidDisplacementFoam.html#ac8bb3912a3ce86b15842e79d0b421204">DAResidualSolidDisplacementFoam</a>
+, <a class="el" href="classFoam_1_1DAResidualTurboFoam.html#ac8bb3912a3ce86b15842e79d0b421204">DAResidualTurboFoam</a>
 </li>
 <li>clearDAJacConMembers()
 : <a class="el" href="classFoam_1_1DAJacCon.html#a4cf46f89e91fea3ef7b601ee1cae3470">DAJacCon</a>
+</li>
+<li>clone()
+: <a class="el" href="classFoam_1_1tractionDisplacementFvPatchVectorField.html#af0f4bc68c73acc08f11adb3a8957d875">tractionDisplacementFvPatchVectorField</a>
 </li>
 <li>coloringComplete()
 : <a class="el" href="classFoam_1_1DAColoring.html#aadb82906897a2a1e3a485300696c2578">DAColoring</a>
@@ -167,6 +183,9 @@ $(function() {
 <li>ColoringIncompressible()
 : <a class="el" href="classFoam_1_1ColoringIncompressible.html#a3abf956db58cc59c05175f839651e70f">ColoringIncompressible</a>
 </li>
+<li>ColoringSolid()
+: <a class="el" href="classFoam_1_1ColoringSolid.html#a0fd7ccaea0a1494dfb98d2a2b1a37d31">ColoringSolid</a>
+</li>
 <li>combineStateBndCon()
 : <a class="el" href="classFoam_1_1DAJacCon.html#ae37be4bb493eee707549a207d43ea97c">DAJacCon</a>
 </li>
@@ -174,7 +193,7 @@ $(function() {
 : <a class="el" href="classFoam_1_1DADummyTurbulenceModel.html#a3ae44b28050c3aa494c1d8e18cf618c1">DADummyTurbulenceModel</a>
 , <a class="el" href="classFoam_1_1DASpalartAllmaras.html#a3ae44b28050c3aa494c1d8e18cf618c1">DASpalartAllmaras</a>
 , <a class="el" href="classFoam_1_1DATurbulenceModel.html#a7e204aa62fa1c1f527e8f1c62dc62061">DATurbulenceModel</a>
-, <a class="el" href="classFoam_1_1RASModels_1_1dummyTurbulenceModel.html#a3ae44b28050c3aa494c1d8e18cf618c1">dummyTurbulenceModel&lt; BasicTurbulenceModel &gt;</a>
+, <a class="el" href="classFoam_1_1RASModels_1_1dummyTurbulenceModel.html#aa40b482ba81fd8de31bdba348c184074">dummyTurbulenceModel&lt; BasicTurbulenceModel &gt;</a>
 , <a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#aa40b482ba81fd8de31bdba348c184074">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;</a>
 </li>
 <li>correctAlphat()
@@ -187,6 +206,9 @@ $(function() {
 , <a class="el" href="classFoam_1_1DAResidualRhoSimpleCFoam.html#acaf6878ef900e593c4b20812f1b567d6">DAResidualRhoSimpleCFoam</a>
 , <a class="el" href="classFoam_1_1DAResidualRhoSimpleFoam.html#acaf6878ef900e593c4b20812f1b567d6">DAResidualRhoSimpleFoam</a>
 , <a class="el" href="classFoam_1_1DAResidualSimpleFoam.html#acaf6878ef900e593c4b20812f1b567d6">DAResidualSimpleFoam</a>
+, <a class="el" href="classFoam_1_1DAResidualSimpleTFoam.html#acaf6878ef900e593c4b20812f1b567d6">DAResidualSimpleTFoam</a>
+, <a class="el" href="classFoam_1_1DAResidualSolidDisplacementFoam.html#acaf6878ef900e593c4b20812f1b567d6">DAResidualSolidDisplacementFoam</a>
+, <a class="el" href="classFoam_1_1DAResidualTurboFoam.html#acaf6878ef900e593c4b20812f1b567d6">DAResidualTurboFoam</a>
 , <a class="el" href="classFoam_1_1DASpalartAllmaras.html#acaf6878ef900e593c4b20812f1b567d6">DASpalartAllmaras</a>
 , <a class="el" href="classFoam_1_1DATurbulenceModel.html#ac5cf193857b59c2fcaa472ac06847a0d">DATurbulenceModel</a>
 </li>
@@ -200,7 +222,7 @@ $(function() {
 : <a class="el" href="classFoam_1_1DADummyTurbulenceModel.html#aaffe89433f18f1ee4137486e19219448">DADummyTurbulenceModel</a>
 , <a class="el" href="classFoam_1_1DASpalartAllmaras.html#aaffe89433f18f1ee4137486e19219448">DASpalartAllmaras</a>
 , <a class="el" href="classFoam_1_1DATurbulenceModel.html#a9c4c709ed37715b872b8011bd1ead80c">DATurbulenceModel</a>
-, <a class="el" href="classFoam_1_1RASModels_1_1dummyTurbulenceModel.html#aaffe89433f18f1ee4137486e19219448">dummyTurbulenceModel&lt; BasicTurbulenceModel &gt;</a>
+, <a class="el" href="classFoam_1_1RASModels_1_1dummyTurbulenceModel.html#a1e1ac29865af6a6554a63cf0e1cb1fa7">dummyTurbulenceModel&lt; BasicTurbulenceModel &gt;</a>
 , <a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a1e1ac29865af6a6554a63cf0e1cb1fa7">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;</a>
 </li>
 <li>correctStateResidualModelCon()

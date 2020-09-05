@@ -1,5 +1,0 @@
-<map id="calcPartDerivMat" name="calcPartDerivMat">
-<area shape="rect" id="node2" href="$classFoam_1_1DAOption.html#addfcd9ad4a40f19c6a512da80463d149" title="get an option from subDict and key " alt="" coords="187,5,379,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAOption.html#ac409fa3229028cfa2f14a3a09ac780cd" title="get an dictionary option from subDict and key " alt="" coords="184,57,381,98"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAObjFunc.html#a5393c6b73f79d670cc02fc71d4ccfed6" title="Foam::DAObjFunc::New" alt="" coords="199,123,366,149"/>
-</map>

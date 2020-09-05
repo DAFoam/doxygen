@@ -1,0 +1,31 @@
+digraph "calcPartDerivMat"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node44 [label="calcPartDerivMat",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node44 -> Node45 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node45 [label="Foam::DAJacCon::calcColored\lColumns",height=0.2,width=0.4,color="red",URL="$classFoam_1_1DAJacCon.html#aceaf246b1a6b4ebcddc01690045c640c",tooltip="calculate the colored column vector "];
+  Node45 -> Node46 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node46 [label="Foam::DAOption::getOption",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb",tooltip="get an option from subDict and key "];
+  Node44 -> Node48 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node48 [label="Foam::DAJacCon::getJacCon\lColor",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAJacCon.html#acdcc428b5638159b1f963cccf59361ab",tooltip="return DAJacCon::jacConColors_ "];
+  Node48 -> Node45 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node48 -> Node49 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node49 [label="Foam::DAJacCon::setObjFuncVec",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAJacCon.html#a46b31838a7186ee8bb6fffb21d03b3ba",tooltip="assign values for the objective function vector based on the face and cell value lists ..."];
+  Node44 -> Node50 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node50 [label="Foam::DAJacCon::getNJacCon\lColors",height=0.2,width=0.4,color="red",URL="$classFoam_1_1DAJacCon.html#ae20a1e7e533aa3328f3e187938233356",tooltip="get the number of JacCon colors "];
+  Node44 -> Node46 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node44 -> Node62 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node62 [label="Foam::DAOption::getSubDict\lOption",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAOption.html#a04e1a06e3ade0e60b8e3a82ad37be74c",tooltip="get an dictionary option from subDict and key "];
+  Node44 -> Node63 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node63 [label="Foam::DAObjFunc::New",height=0.2,width=0.4,color="red",URL="$classFoam_1_1DAObjFunc.html#a5393c6b73f79d670cc02fc71d4ccfed6"];
+  Node44 -> Node73 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node73 [label="Foam::DAPartDeriv::\lperturbStates",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAPartDeriv.html#adf92cb2b1d6913b7e394b8fd065eb61c",tooltip="perturb state variables given a color index "];
+  Node44 -> Node74 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node74 [label="Foam::DAPartDeriv::\lsetNormStatePerturbVec",height=0.2,width=0.4,color="red",URL="$classFoam_1_1DAPartDeriv.html#aec174241eed03bdc90978bef82cf9666",tooltip="setup the state normalization vector "];
+  Node44 -> Node49 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node44 -> Node77 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node77 [label="Foam::DAPartDeriv::\lsetPartDerivMat",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAPartDeriv.html#a6cbafd7a71858b14d34116e89407c999",tooltip="set values for the partial derivative matrix "];
+}

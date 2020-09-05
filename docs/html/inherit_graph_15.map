@@ -1,6 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classFoam_1_1DASolver.html" title="DASolver" alt="" coords="6,56,87,83"/>
-<area shape="rect" id="node2" href="$classFoam_1_1DARhoSimpleCFoam.html" title="DARhoSimpleCFoam" alt="" coords="136,5,291,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DARhoSimpleFoam.html" title="DARhoSimpleFoam" alt="" coords="141,56,285,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DASimpleFoam.html" title="DASimpleFoam" alt="" coords="154,107,273,133"/>
-</map>

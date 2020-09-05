@@ -1,5 +1,0 @@
-<map id="printMatChars" name="printMatChars">
-<area shape="rect" id="node2" href="$namespaceFoam.html#a459a606a203470b2756be04c4192c695" title="Foam::forAll" alt="" coords="215,5,310,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAIndex.html#a2de02ff2fc2df9f203c213c2d62d512e" title="get global adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="166,56,359,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAIndex.html#a2e1ed0ce9b75101c387265313d3a3912" title="get number of non zeros for a matrix " alt="" coords="198,107,327,133"/>
-</map>

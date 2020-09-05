@@ -1,7 +1,0 @@
-<map id="daStateInfo" name="daStateInfo">
-<area shape="rect" id="node2" href="$classFoam_1_1DAField.html#a1b6a78eba46a386b079616fc33a30f9a" title="Constructors. " alt="" coords="185,5,351,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAJacCon.html#afe0acf55b826f3deebdc4e8bbe013ccf" title="Foam::DAJacCon::DAJacCon" alt="" coords="167,56,369,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAPartDeriv.html#a924e381605ad653129202eb329072391" title="Foam::DAPartDeriv::\lDAPartDeriv" alt="" coords="195,107,341,149"/>
-<area shape="rect" id="node5" href="$classFoam_1_1ColoringCompressible.html#a13a43e6d814de94978c515cb084873b1" title="run " alt="" coords="155,173,381,200"/>
-<area shape="rect" id="node6" href="$classFoam_1_1ColoringIncompressible.html#a13a43e6d814de94978c515cb084873b1" title="run " alt="" coords="150,224,386,251"/>
-</map>

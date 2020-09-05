@@ -1,9 +1,0 @@
-<map id="dafoam/src/adjoint/DASolver/DASimpleFoam/DASimpleFoam.C" name="dafoam/src/adjoint/DASolver/DASimpleFoam/DASimpleFoam.C">
-<area shape="rect" id="node2" href="$DASimpleFoam_8H.html" title="DASimpleFoam.H" alt="" coords="5,109,135,136"/>
-<area shape="rect" id="node3" href="$createSimpleControlPython_8H.html" title="createSimpleControlPython.H" alt="" coords="161,109,367,136"/>
-<area shape="rect" id="node4" href="$createFieldsSimple_8H.html" title="createFieldsSimple.H" alt="" coords="392,109,545,136"/>
-<area shape="rect" id="node5" href="$createAdjointIncompressible_8H.html" title="createAdjointIncompressible.H" alt="" coords="570,109,781,136"/>
-<area shape="rect" id="node6" href="$createRefsSimple_8H.html" title="createRefsSimple.H" alt="" coords="807,109,953,136"/>
-<area shape="rect" id="node7" href="$UEqnSimple_8H.html" title="UEqnSimple.H" alt="" coords="977,109,1088,136"/>
-<area shape="rect" id="node8" href="$pEqnSimple_8H.html" title="pEqnSimple.H" alt="" coords="1114,109,1224,136"/>
-</map>

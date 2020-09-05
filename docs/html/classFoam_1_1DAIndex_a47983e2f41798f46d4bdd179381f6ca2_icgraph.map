@@ -1,8 +1,0 @@
-<map id="getLocalAdjointStateIndex" name="getLocalAdjointStateIndex">
-<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#ad2f0164351902998d2deae2f8e1cf34b" title="compute local lists such as adjStateName4LocalAdjIdx and cellIFaceI4LocalAdjIdx; " alt="" coords="289,5,418,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAIndex.html#a2de02ff2fc2df9f203c213c2d62d512e" title="get global adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="257,56,450,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAField.html#ae13e080045d0456d9f9fd121920ac12c" title="set the state vector based on the latest fields in OpenFOAM " alt="" coords="241,107,466,133"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAField.html#a318441efdbb1aeed4adf8189bb782ceb" title="assign the residual vector based on the residual field in OpenFOAM " alt="" coords="257,158,450,199"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DAField.html#a7ced72c92425a517e27d1c35e61d8de9" title="assign the residual field in OpenFOAM based on the residual vector " alt="" coords="246,223,461,265"/>
-<area shape="rect" id="node7" href="$classFoam_1_1DAField.html#aecc7b36285eafbaad7a8de68f0811972" title="assign the fields in OpenFOAM based on the state vector " alt="" coords="263,289,444,330"/>
-</map>

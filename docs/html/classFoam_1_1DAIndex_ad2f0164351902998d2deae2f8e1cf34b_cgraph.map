@@ -1,4 +1,0 @@
-<map id="calcLocalIdxLists" name="calcLocalIdxLists">
-<area shape="rect" id="node2" href="$namespaceFoam.html#a459a606a203470b2756be04c4192c695" title="Foam::forAll" alt="" coords="419,5,514,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAIndex.html#a47983e2f41798f46d4bdd179381f6ca2" title="get local adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="184,31,371,57"/>
-</map>

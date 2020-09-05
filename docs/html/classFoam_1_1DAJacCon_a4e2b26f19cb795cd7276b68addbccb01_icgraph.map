@@ -1,4 +1,0 @@
-<map id="setupJacobianConnections" name="setupJacobianConnections">
-<area shape="rect" id="node2" href="$classFoam_1_1DAJacCondRdW.html#a6320c97a80c467a388c3a88fdcd31eb3" title="Foam::DAJacCondRdW\l::setupdRdWCon" alt="" coords="246,5,415,46"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAJacCondFdW.html#a38665183153112bc58257039d500089c" title="assign 1 to all non&#45;zero elements for the Jacobian connecitivyt matrix " alt="" coords="247,70,414,111"/>
-</map>

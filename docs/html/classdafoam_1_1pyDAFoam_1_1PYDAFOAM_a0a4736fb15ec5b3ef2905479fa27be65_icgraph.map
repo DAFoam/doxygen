@@ -1,7 +1,0 @@
-<map id="getOption" name="getOption">
-<area shape="rect" id="node2" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#aa053bc68c8065c52986c371c97bee3bb" title="calcTotalDeriv" alt="" coords="315,29,427,56"/>
-<area shape="rect" id="node3" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab6936cb2a99bd88d09fc45f05468c6a9" title="runColoring" alt="" coords="155,29,250,56"/>
-<area shape="rect" id="node4" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a0bd85016791d3b9fa8552761928f91d5" title="setdXvdFFDMat" alt="" coords="141,80,264,106"/>
-<area shape="rect" id="node5" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#aedf516b7943f38ae1990d0e7d27978a9" title="setEvalFuncs" alt="" coords="150,130,255,157"/>
-<area shape="rect" id="node6" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a9faf9913665839b95e3d9f7e428db2a9" title="updateDAOption" alt="" coords="139,181,266,208"/>
-</map>

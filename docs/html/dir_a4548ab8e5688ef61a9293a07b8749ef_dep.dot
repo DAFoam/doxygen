@@ -1,0 +1,16 @@
+digraph "dafoam/src/adjoint/DASolver/DASimpleTFoam" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_82b8d670e5d73625e2f96195d8dae3dd {
+    graph [ bgcolor="#ddddee", pencolor="black", label="DASolver" fontname="Helvetica", fontsize="10", URL="dir_82b8d670e5d73625e2f96195d8dae3dd.html"]
+  dir_a4548ab8e5688ef61a9293a07b8749ef [shape=box, label="DASimpleTFoam", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_a4548ab8e5688ef61a9293a07b8749ef.html"];
+  }
+  dir_7df341fe0193531049da9f2466a34806 [shape=box label="include" URL="dir_7df341fe0193531049da9f2466a34806.html"];
+  dir_7f5514a39c79bf07c6260b1d89aae56a [shape=box label="DARegDb" URL="dir_7f5514a39c79bf07c6260b1d89aae56a.html"];
+  dir_37d4c00e14491e2cf0156f920735ce15 [shape=box label="DAFvSource" URL="dir_37d4c00e14491e2cf0156f920735ce15.html"];
+  dir_a4548ab8e5688ef61a9293a07b8749ef->dir_7df341fe0193531049da9f2466a34806 [headlabel="4", labeldistance=1.5 headhref="dir_000024_000030.html"];
+  dir_a4548ab8e5688ef61a9293a07b8749ef->dir_7f5514a39c79bf07c6260b1d89aae56a [headlabel="2", labeldistance=1.5 headhref="dir_000024_000018.html"];
+  dir_a4548ab8e5688ef61a9293a07b8749ef->dir_37d4c00e14491e2cf0156f920735ce15 [headlabel="1", labeldistance=1.5 headhref="dir_000024_000008.html"];
+}

@@ -8,5 +8,8 @@ var searchData=
   ['globalfacenumbering',['globalFaceNumbering',['../classFoam_1_1DAIndex.html#a680862dc7401283f6a16cd22dcf16f5a',1,'Foam::DAIndex']]],
   ['globalobjfuncgeonumbering',['globalObjFuncGeoNumbering',['../classFoam_1_1DAIndex.html#a176ecb0125349298bf04b735470e2b93',1,'Foam::DAIndex']]],
   ['globalobjfuncgeonumbering_5f',['globalObjFuncGeoNumbering_',['../classFoam_1_1DAJacCondFdW.html#a31009387223ae1f5ae9b20a6175678bf',1,'Foam::DAJacCondFdW']]],
-  ['globalxvnumbering',['globalXvNumbering',['../classFoam_1_1DAIndex.html#a9e9b66a0fb6b7cb2b0c95e67d581208c',1,'Foam::DAIndex']]]
+  ['globalxvnumbering',['globalXvNumbering',['../classFoam_1_1DAIndex.html#a9e9b66a0fb6b7cb2b0c95e67d581208c',1,'Foam::DAIndex']]],
+  ['gradd',['gradD',['../createRefsSolidDisplacement_8H.html#acea08d463c4f8dd333033bebb7ececbf',1,'createRefsSolidDisplacement.H']]],
+  ['gradd_5f',['gradD_',['../classFoam_1_1DAResidualSolidDisplacementFoam.html#a2611974b022f17080ac6dd27394a99c8',1,'Foam::DAResidualSolidDisplacementFoam']]],
+  ['graddptr_5f',['gradDPtr_',['../classFoam_1_1DASolidDisplacementFoam.html#a71981041f9883a98309c9bc15a25b137',1,'Foam::DASolidDisplacementFoam']]]
 ];

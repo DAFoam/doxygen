@@ -4,20 +4,7 @@ digraph "clearDAJacConMembers"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node187 [label="clearDAJacConMembers",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node187 -> Node188 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node188 [label="daIndex",height=0.2,width=0.4,color="black",URL="$pyColoringCompressible_2createAdjoint_8H.html#aa36f358f32c8a00956e7ca31e30c906c"];
-  Node187 -> Node189 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node189 [label="daModel",height=0.2,width=0.4,color="black",URL="$pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49"];
-  Node187 -> Node190 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node190 [label="daOption",height=0.2,width=0.4,color="black",URL="$pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311"];
-  Node187 -> Node191 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node191 [label="declareRunTimeSelectionTable",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAJacCon.html#a2545d2d704edc2c14a5d7b50fcc23f0c"];
-  Node187 -> Node192 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node192 [label="New",height=0.2,width=0.4,color="red",URL="$classFoam_1_1DAJacCon.html#a4315cb29266f8e2dda76cd6e57ffb966"];
-  Node192 -> Node190 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node192 -> Node189 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node192 -> Node188 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node187 -> Node201 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node201 [label="TypeName",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAJacCon.html#a397baa5089cd337d56871fa1cd6bf528",tooltip="Runtime type information. "];
+  Node192 [label="clearDAJacConMembers",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node192 -> Node193 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node193 [label="checkSpecialBCs",height=0.2,width=0.4,color="red",URL="$classFoam_1_1DAJacCon.html#ab84b12272957c0b7caa1ecde6c904618",tooltip="check if there is special boundary conditions that need special treatment in jacCon_ ..."];
 }

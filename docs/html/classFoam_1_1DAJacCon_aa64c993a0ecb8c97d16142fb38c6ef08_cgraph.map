@@ -1,4 +1,0 @@
-<map id="addBoundaryFaceConnections" name="addBoundaryFaceConnections">
-<area shape="rect" id="node2" href="$namespaceFoam.html#a459a606a203470b2756be04c4192c695" title="Foam::forAll" alt="" coords="521,5,615,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAJacCon.html#ac8d9c219f4c2d38b0166ff929d3d8207" title="given a local face index, return the local index of the coupled boundary face " alt="" coords="269,31,472,57"/>
-</map>

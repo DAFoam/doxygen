@@ -1,9 +1,0 @@
-<map id="setupJacCon" name="setupJacCon">
-<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#a9dd95e527ffe4ab41fa36bb746e5f2aa" title="a high&#45;level function to add connected state column indices to the connectivity matrix ..." alt="" coords="197,5,390,46"/>
-<area shape="rect" id="node3" href="$namespaceFoam.html#a459a606a203470b2756be04c4192c695" title="Foam::forAll" alt="" coords="478,41,573,68"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAJacCon.html#a6aa22bae0912af41d04a6c69eeb2c57a" title="allocate connectedState matrix " alt="" coords="157,121,429,148"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAJacCondFdW.html#a452fc16821501d13ef7b0abef30650d7" title="get the global index of geometry element for objective " alt="" coords="196,172,391,199"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DAOption.html#addfcd9ad4a40f19c6a512da80463d149" title="get an option from subDict and key " alt="" coords="197,223,389,249"/>
-<area shape="rect" id="node7" href="$classFoam_1_1DAJacCon.html#a4e2b26f19cb795cd7276b68addbccb01" title="assign values in connections to a specific row idxI in conMat " alt="" coords="180,274,407,315"/>
-<area shape="rect" id="node8" href="$classFoam_1_1DAUtility.html#a7d5db3b1724c116fd1b12443d914b4cc" title="write petsc matrix in binary format " alt="" coords="198,339,389,381"/>
-</map>

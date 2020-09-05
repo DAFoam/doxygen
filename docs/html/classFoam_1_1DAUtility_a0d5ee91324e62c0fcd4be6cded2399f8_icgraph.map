@@ -1,7 +1,0 @@
-<map id="isValueCloseToRef" name="isValueCloseToRef">
-<area shape="rect" id="node2" href="$classFoam_1_1DAJacCondRdW.html#ad689db8802c9bd6e019cce6fdd7ed3ca" title="compute preallocation vectors " alt="" coords="198,5,410,46"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAJacCon.html#a09cd2ae603ffc2426916cba35b1386ca" title="calculate the colored column vector " alt="" coords="199,70,409,111"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAColoring.html#a3e9471652022cad7833c54e91272bd9c" title="a parallel distance&#45;2 graph coloring function " alt="" coords="211,135,397,177"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAJacCon.html#a68317e286c7c8af7ff7f5a380f8aa0da" title="calculate DAJacCon::stateBoundaryConID_ " alt="" coords="203,201,405,242"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DAColoring.html#a36677d552843c363d373629c29e2865b" title="validate if there is coloring conflict " alt="" coords="209,266,399,307"/>
-</map>

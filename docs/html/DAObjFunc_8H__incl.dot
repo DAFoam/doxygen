@@ -1,0 +1,41 @@
+digraph "dafoam/src/adjoint/DAObjFunc/DAObjFunc.H"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="dafoam/src/adjoint\l/DAObjFunc/DAObjFunc.H",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="runTimeSelectionTables.H",height=0.2,width=0.4,color="grey75"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="fvOptions.H",height=0.2,width=0.4,color="grey75"];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="DAOption.H",height=0.2,width=0.4,color="red",URL="$DAOption_8H.html"];
+  Node3 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="DAModel.H",height=0.2,width=0.4,color="red",URL="$DAModel_8H.html"];
+  Node8 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="DAIndex.H",height=0.2,width=0.4,color="red",URL="$DAIndex_8H.html"];
+  Node22 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node24 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="topoSetSource.H",height=0.2,width=0.4,color="grey75"];
+  Node0 -> Node25 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node25 [label="topoSet.H",height=0.2,width=0.4,color="grey75"];
+  Node0 -> Node26 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 [label="DAField.H",height=0.2,width=0.4,color="red",URL="$DAField_8H.html"];
+  Node26 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node31 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="DAResidual.H",height=0.2,width=0.4,color="red",URL="$DAResidual_8H.html"];
+  Node31 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 -> Node26 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

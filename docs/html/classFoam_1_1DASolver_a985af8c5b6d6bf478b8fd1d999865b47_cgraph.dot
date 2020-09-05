@@ -1,0 +1,30 @@
+digraph "solveAdjoint"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node75 [label="solveAdjoint",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node75 -> Node76 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node76 [label="calcPrimalResidualStatistics",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DASolver.html#a6cec9caca72b22c3e006bd0fbb9c422a",tooltip="calculate the norms of all residuals and print to screen "];
+  Node75 -> Node77 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node77 [label="Foam::DALinearEqn::\lcreateMLRKSP",height=0.2,width=0.4,color="red",URL="$classFoam_1_1DALinearEqn.html#a7250190716a5f9544ee2b6f69a9f5ab9",tooltip="create a multi-level, Richardson KSP object "];
+  Node75 -> Node82 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node82 [label="Foam::DAObjFunc::New",height=0.2,width=0.4,color="red",URL="$classFoam_1_1DAObjFunc.html#a5393c6b73f79d670cc02fc71d4ccfed6"];
+  Node75 -> Node93 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node93 [label="Foam::DAPartDeriv::New",height=0.2,width=0.4,color="red",URL="$classFoam_1_1DAPartDeriv.html#a50d8a6cc4f58027f78fa3c3d7f000a83"];
+  Node75 -> Node94 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node94 [label="Foam::DAJacCon::New",height=0.2,width=0.4,color="red",URL="$classFoam_1_1DAJacCon.html#a4315cb29266f8e2dda76cd6e57ffb966"];
+  Node75 -> Node95 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node95 [label="reduceStateResConLevel",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DASolver.html#ad4aa41b7d245695cdf5071de2e4a823d",tooltip="reduce the connectivity level for Jacobian connectivity mat "];
+  Node75 -> Node96 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node96 [label="setPsiVecDict",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DASolver.html#a13ab457a9f24cb2d0a561338ca36c323",tooltip="assign the psiVec to psiVecArray_ "];
+  Node75 -> Node97 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node97 [label="Foam::DALinearEqn::\lsolveLinearEqn",height=0.2,width=0.4,color="red",URL="$classFoam_1_1DALinearEqn.html#ad418053a9be461caecbb9109506d2e4e",tooltip="solve the linear euqation given a ksp and right-hand-side vector "];
+  Node75 -> Node98 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node98 [label="Foam::DAUtility::writeMatrix\lBinary",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAUtility.html#a7d5db3b1724c116fd1b12443d914b4cc",tooltip="write petsc matrix in binary format "];
+  Node75 -> Node99 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node99 [label="Foam::DAUtility::writeVector\lASCII",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAUtility.html#a4845f297f6868e9edf41f492fff59004",tooltip="write petsc vector in ascii format "];
+  Node75 -> Node100 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node100 [label="Foam::DAUtility::writeVector\lBinary",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAUtility.html#aaabf5e461685aae1fd388f6fabd43f22",tooltip="write petsc vector in binary format "];
+}

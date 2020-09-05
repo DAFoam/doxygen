@@ -1,9 +1,0 @@
-<map id="calcResiduals" name="calcResiduals">
-<area shape="rect" id="node2" href="$classFoam_1_1DAUtility.html#ad838c82d10a83876d98ad1921e7c6b5d" title="bound a volScalar variable based on parametes defined in DAOption::allOptions_ " alt="" coords="163,5,346,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DASpalartAllmaras.html#ac2ac39c3f27873dabee7f910b00fa46a" title="chi" alt="" coords="396,81,436,108"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DASpalartAllmaras.html#aaffe89433f18f1ee4137486e19219448" title="update nut based on other turbulence variables and update the BCs " alt="" coords="211,107,298,133"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DASpalartAllmaras.html#adac3b2d202b6b222dfbeca2e612c5ed2" title="fv1" alt="" coords="395,144,437,171"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DASpalartAllmaras.html#a63ea14965271bc8acfcabff0b8954fae" title="Return the effective diffusivity for nuTilda. " alt="" coords="207,208,302,235"/>
-<area shape="rect" id="node7" href="$classFoam_1_1DASpalartAllmaras.html#a83454217bbe83e3672b3b4e8804a8dd2" title="fw" alt="" coords="235,259,274,285"/>
-<area shape="rect" id="node8" href="$classFoam_1_1DASpalartAllmaras.html#a98e641d02212ed9a1b80cbb8c96f9cec" title="Stilda" alt="" coords="226,309,283,336"/>
-</map>

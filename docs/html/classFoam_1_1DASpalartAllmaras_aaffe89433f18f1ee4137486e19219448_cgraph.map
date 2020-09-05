@@ -1,5 +1,0 @@
-<map id="correctNut" name="correctNut">
-<area shape="rect" id="node2" href="$classFoam_1_1DASpalartAllmaras.html#ac2ac39c3f27873dabee7f910b00fa46a" title="chi" alt="" coords="217,5,257,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DATurbulenceModel.html#a5e8a2c41e3241f18628b18b4aede66ab" title="update alphat " alt="" coords="142,57,333,98"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DASpalartAllmaras.html#adac3b2d202b6b222dfbeca2e612c5ed2" title="fv1" alt="" coords="217,123,258,149"/>
-</map>

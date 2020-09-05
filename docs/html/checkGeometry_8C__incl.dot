@@ -1,0 +1,33 @@
+digraph "dafoam/src/adjoint/DACheckMesh/checkGeometry.C"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="dafoam/src/adjoint\l/DACheckMesh/checkGeometry.C",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="PatchTools.H",height=0.2,width=0.4,color="grey75"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="checkGeometry.H",height=0.2,width=0.4,color="red",URL="$checkGeometry_8H.html"];
+  Node0 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="polyMesh.H",height=0.2,width=0.4,color="grey75"];
+  Node0 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="cellSet.H",height=0.2,width=0.4,color="grey75"];
+  Node0 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="faceSet.H",height=0.2,width=0.4,color="grey75"];
+  Node0 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="pointSet.H",height=0.2,width=0.4,color="grey75"];
+  Node0 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="edgeHashes.H",height=0.2,width=0.4,color="grey75"];
+  Node0 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="wedgePolyPatch.H",height=0.2,width=0.4,color="grey75"];
+  Node0 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="unitConversion.H",height=0.2,width=0.4,color="grey75"];
+  Node0 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="polyMeshTetDecomposition.H",height=0.2,width=0.4,color="grey75"];
+  Node0 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="functionObject.H",height=0.2,width=0.4,color="grey75"];
+  Node0 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="cyclicACMIPolyPatch.H",height=0.2,width=0.4,color="grey75"];
+  Node0 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="Time.H",height=0.2,width=0.4,color="grey75"];
+}

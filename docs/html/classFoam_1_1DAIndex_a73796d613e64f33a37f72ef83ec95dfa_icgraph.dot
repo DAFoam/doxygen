@@ -4,10 +4,10 @@ digraph "getMatNonZeros"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node171 [label="getMatNonZeros",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node171 -> Node172 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node172 [label="printIndices",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAIndex.html#a092b2338b6c6bd5055b5768080bf66a4",tooltip="print all the sizes and indices "];
-  Node171 -> Node173 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node173 [label="printMatChars",height=0.2,width=0.4,color="red",URL="$classFoam_1_1DAIndex.html#a0aa276cc85800b41a2125bcd95032e86",tooltip="print petsc matrix statistics such as the max on/off diagonral ratio "];
-  Node173 -> Node172 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node184 [label="getMatNonZeros",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node184 -> Node185 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node185 [label="printIndices",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAIndex.html#a092b2338b6c6bd5055b5768080bf66a4",tooltip="print all the sizes and indices "];
+  Node184 -> Node186 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node186 [label="printMatChars",height=0.2,width=0.4,color="red",URL="$classFoam_1_1DAIndex.html#a0aa276cc85800b41a2125bcd95032e86",tooltip="print petsc matrix statistics such as the max on/off diagonral ratio "];
+  Node186 -> Node185 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

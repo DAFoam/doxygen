@@ -4,7 +4,7 @@ digraph "getGlobalXvIndex"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node120 [label="getGlobalXvIndex",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node120 -> Node121 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node121 [label="getLocalXvIndex",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAIndex.html#a54f0942227984b5683264bdc6e53dd8e",tooltip="get local Xv index for a given point index and coordinate component (x, y, or z) "];
+  Node133 [label="getGlobalXvIndex",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node133 -> Node134 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node134 [label="getLocalXvIndex",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DAIndex.html#a54f0942227984b5683264bdc6e53dd8e",tooltip="get local Xv index for a given point index and coordinate component (x, y, or z) "];
 }

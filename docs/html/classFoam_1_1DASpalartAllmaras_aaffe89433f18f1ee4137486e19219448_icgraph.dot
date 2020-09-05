@@ -1,0 +1,16 @@
+digraph "correctNut"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node81 [label="correctNut",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node81 -> Node82 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node82 [label="calcResiduals",height=0.2,width=0.4,color="red",URL="$classFoam_1_1DASpalartAllmaras.html#a4b38dbac981107ec6386d78322323535",tooltip="compute the turbulence residuals "];
+  Node82 -> Node84 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node84 [label="~DASpalartAllmaras",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DASpalartAllmaras.html#ad8896b591084b5add2954f10e022e4d3"];
+  Node81 -> Node85 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node85 [label="updateIntermediateVariables",height=0.2,width=0.4,color="black",URL="$classFoam_1_1DASpalartAllmaras.html#a1de233c7b2a8f92ffe239b5dc36ae2a3",tooltip="update any intermediate variables that are dependent on state variables and are used in calcResiduals..."];
+  Node85 -> Node84 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node81 -> Node84 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

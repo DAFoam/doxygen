@@ -1,5 +1,0 @@
-<map id="DAField" name="DAField">
-<area shape="rect" id="node2" href="$namespaceFoam.html#a58960b7316c941ab61d6237d75a38d04" title="Foam::daStateInfo" alt="" coords="153,5,289,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAOption.html#addfcd9ad4a40f19c6a512da80463d149" title="get an option from subDict and key " alt="" coords="125,56,317,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAStateInfo.html#a437855c825edfcbd543fa18c6be0a095" title="Foam::DAStateInfo::New" alt="" coords="135,107,308,133"/>
-</map>

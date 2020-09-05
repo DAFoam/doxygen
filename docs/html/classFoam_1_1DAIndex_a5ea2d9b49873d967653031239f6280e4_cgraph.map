@@ -1,5 +1,0 @@
-<map id="writeAdjointIndexing" name="writeAdjointIndexing">
-<area shape="rect" id="node2" href="$namespaceFoam.html#a459a606a203470b2756be04c4192c695" title="Foam::forAll" alt="" coords="253,5,347,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAIndex.html#a2de02ff2fc2df9f203c213c2d62d512e" title="get global adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="203,56,397,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAIndex.html#a11f0a6996ea79ea44598b8a440020c58" title="get global Xv index for a given point index and coordinate component (x, y, or z) ..." alt="" coords="233,107,367,133"/>
-</map>

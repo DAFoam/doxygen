@@ -1,5 +1,0 @@
-<map id="DAStateInfoSimpleFoam" name="DAStateInfoSimpleFoam">
-<area shape="rect" id="node2" href="$classFoam_1_1DAModel.html#ae92374de18b8f7f9ae167bff1c585736" title="add the model residual connectivity to stateCon " alt="" coords="230,5,501,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAModel.html#a590fb1c1086d139ada07769280325707" title="update the name in modelStates based on the selected physical model at runtime " alt="" coords="260,57,471,98"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAModel.html#a4086c30cda9598246f39e862f4cf27e3" title="update the original variable connectivity for the adjoint state residuals in stateCon ..." alt="" coords="263,122,467,163"/>
-</map>

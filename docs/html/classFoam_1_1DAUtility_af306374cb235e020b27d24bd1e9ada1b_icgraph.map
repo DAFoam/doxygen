@@ -1,5 +1,0 @@
-<map id="pyDict2OFDict" name="pyDict2OFDict">
-<area shape="rect" id="node2" href="$classFoam_1_1DAOption.html#a03d348cf66b03a3caba54c1ca7b01a29" title="Constructors. " alt="" coords="187,5,378,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#a7e87d9619f10e438bf19ec434d092fb0" title="Foam::DASolver::New" alt="" coords="205,56,361,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAOption.html#ae53aae7a251b16cb44331956cbfc2d2e" title="update the allOptions_ dict in DAOption based on the pyOptions from pyDAFoam " alt="" coords="165,107,400,133"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="setNormStatePerturbVec" name="setNormStatePerturbVec">
-<area shape="rect" id="node2" href="$namespaceFoam.html#a459a606a203470b2756be04c4192c695" title="Foam::forAll" alt="" coords="277,5,371,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAIndex.html#a2de02ff2fc2df9f203c213c2d62d512e" title="get global adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="233,57,415,98"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="printYPlus" name="printYPlus">
-<area shape="rect" id="node2" href="$namespaceFoam.html#a459a606a203470b2756be04c4192c695" title="Foam::forAll" alt="" coords="139,5,234,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DATurbulenceModel.html#a4e238304889cfd971d58df4a0b6ee52b" title="get the nu field " alt="" coords="283,81,322,108"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DATurbulenceModel.html#a4f5b77e8b8e742a6945ab71e0080d85a" title="return effective viscosity " alt="" coords="159,107,214,133"/>
-</map>

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['name',['name',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab74e6bf80237ddc4109968cedc58c151',1,'dafoam::pyDAFoam::PYDAFOAM']]],
+  ['ncorr_5f',['nCorr_',['../classFoam_1_1DASolidDisplacementFoam.html#aae0733e6c7406c506a352489b525a139',1,'Foam::DASolidDisplacementFoam::nCorr_()'],['../createControlsSolidDisplacement_8H.html#ab4a1ddbc0c5231b368a104756ebbbcff',1,'nCorr_():&#160;createControlsSolidDisplacement.H']]],
   ['neibfaceglobalcompact_5f',['neiBFaceGlobalCompact_',['../classFoam_1_1DAJacCon.html#a2ca82d9cc5c3c4f6dccef90ddeb46981',1,'Foam::DAJacCon']]],
   ['neighbours',['neighbours',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a8502656ee723f29acd42f57402efaf70',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['new',['New',['../classFoam_1_1DAFvSource.html#a879bf5d03630b9bda04dafc80cc03701',1,'Foam::DAFvSource::New()'],['../classFoam_1_1DAJacCon.html#a4315cb29266f8e2dda76cd6e57ffb966',1,'Foam::DAJacCon::New()'],['../classFoam_1_1DARadiationModel.html#a7a13c0006404eb763a74286e703e7e66',1,'Foam::DARadiationModel::New()'],['../classFoam_1_1DATurbulenceModel.html#afc567272043189c3e8a59470135bdab2',1,'Foam::DATurbulenceModel::New()'],['../classFoam_1_1DAObjFunc.html#a5393c6b73f79d670cc02fc71d4ccfed6',1,'Foam::DAObjFunc::New()'],['../classFoam_1_1DAPartDeriv.html#a50d8a6cc4f58027f78fa3c3d7f000a83',1,'Foam::DAPartDeriv::New()'],['../classFoam_1_1DAResidual.html#ab931799d01a7cee2d4fb26a894906616',1,'Foam::DAResidual::New()'],['../classFoam_1_1DASolver.html#a7e87d9619f10e438bf19ec434d092fb0',1,'Foam::DASolver::New()'],['../classFoam_1_1DAStateInfo.html#a437855c825edfcbd543fa18c6be0a095',1,'Foam::DAStateInfo::New()']]],
@@ -31,9 +32,10 @@ var searchData=
   ['nsolveadjoints',['nSolveAdjoints',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a2f3d1cac79a13858160a2423802c389b',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['nsolveprimals',['nSolvePrimals',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ac60897a294ad9fa81dccabf291af2167',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['nsurfacescalarstates',['nSurfaceScalarStates',['../classFoam_1_1DAIndex.html#a6c58675e8d548e3dab691b19a0a0e94e',1,'Foam::DAIndex']]],
-  ['nu',['nu',['../classFoam_1_1DATurbulenceModel.html#a8ec0cfa6e40933dad3a642f390950937',1,'Foam::DATurbulenceModel']]],
+  ['nu',['nu',['../classFoam_1_1DATurbulenceModel.html#a8ec0cfa6e40933dad3a642f390950937',1,'Foam::DATurbulenceModel::nu()'],['../pyColoringSolid_2createFields_8H.html#a37b037b9b4f6b01a53178fb5fa0fc213',1,'nu():&#160;createFields.H']]],
   ['nueff',['nuEff',['../classFoam_1_1DATurbulenceModel.html#a8ab26f302189e92dac1700b9c30d0b13',1,'Foam::DATurbulenceModel']]],
   ['nundecomposedpoints',['nUndecomposedPoints',['../classFoam_1_1DAIndex.html#a0d8be0ff4b4181fb029bee046f552ca0',1,'Foam::DAIndex']]],
+  ['nuptr_5f',['nuPtr_',['../classFoam_1_1DASolidDisplacementFoam.html#af0b4b5c51d217d23091e688f025f9549',1,'Foam::DASolidDisplacementFoam']]],
   ['nut_5f',['nut_',['../classFoam_1_1DATurbulenceModel.html#a845aac3d059ed35779305c1c422b306f',1,'Foam::DATurbulenceModel']]],
   ['nutilda_5f',['nuTilda_',['../classFoam_1_1DASpalartAllmaras.html#ab5a8f9620a6d4ee9f315142b8ce11f34',1,'Foam::DASpalartAllmaras::nuTilda_()'],['../classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a5875b01397b21ec3761cb61e4de6d590',1,'Foam::RASModels::SpalartAllmarasFv3::nuTilda_()']]],
   ['nutildamin_5f',['nuTildaMin_',['../classFoam_1_1DATurbulenceModel.html#a4e8775fbaa982bf68314b474606ad4b5',1,'Foam::DATurbulenceModel::nuTildaMin_()'],['../classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a4e8775fbaa982bf68314b474606ad4b5',1,'Foam::RASModels::SpalartAllmarasFv3::nuTildaMin_()']]],

@@ -1,5 +1,0 @@
-<map id="calcPartDerivMat" name="calcPartDerivMat">
-<area shape="rect" id="node2" href="$classFoam_1_1DAOption.html#ac409fa3229028cfa2f14a3a09ac780cd" title="get an dictionary option from subDict and key " alt="" coords="184,5,381,46"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAResidual.html#a08d199cacb841a03735df4c9280864c1" title="the master function that compute the residual vector given the state and point vectors ..." alt="" coords="190,70,375,111"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAPartDeriv.html#a4526debde1206c4b3d910acba799d67c" title="perturb the values in the boundary condition " alt="" coords="209,135,356,177"/>
-</map>

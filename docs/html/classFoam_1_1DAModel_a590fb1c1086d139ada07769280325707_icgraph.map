@@ -1,7 +1,0 @@
-<map id="correctModelStates" name="correctModelStates">
-<area shape="rect" id="node2" href="$classFoam_1_1DAObjFuncForce.html#ade85dd28830b977e8576edb2ee02c44a" title="Foam::DAObjFuncForce\l::DAObjFuncForce" alt="" coords="247,5,417,46"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAObjFuncMoment.html#a188963e48abe46484d97378e4c08333b" title="Foam::DAObjFuncMoment\l::DAObjFuncMoment" alt="" coords="240,70,424,111"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAStateInfoRhoSimpleCFoam.html#a9512daa2a2d9992ba1a46869a11cfea7" title="Foam::DAStateInfoRhoSimple\lCFoam::DAStateInfoRhoSimpleCFoam" alt="" coords="201,135,463,177"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAStateInfoRhoSimpleFoam.html#aab346fca59d238062d4b0d40c8c1532e" title="Foam::DAStateInfoRhoSimple\lFoam::DAStateInfoRhoSimpleFoam" alt="" coords="211,201,453,242"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DAStateInfoSimpleFoam.html#a4e13edf4eb32d522e67a77351ae96159" title="Foam::DAStateInfoSimpleFoam\l::DAStateInfoSimpleFoam" alt="" coords="224,266,440,307"/>
-</map>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.3</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.4</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -67,6 +67,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classFoam_1_1DAField-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -78,15 +79,12 @@ Collaboration diagram for DAField:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAField__coll__graph.png" border="0" usemap="#DAField_coll__map" alt="Collaboration graph"/></div>
 <map name="DAField_coll__map" id="DAField_coll__map">
-<area shape="rect" id="node2" href="classFoam_1_1DAIndex.html" title="DAIndex" alt="" coords="115,96,191,123"/>
-<area shape="rect" id="node3" href="classFoam_1_1DAOption.html" title="DAOption" alt="" coords="5,5,87,32"/>
-<area shape="rect" id="node4" href="classFoam_1_1DAModel.html" title="DAModel" alt="" coords="132,5,211,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1b6a78eba46a386b079616fc33a30f9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAField.html#a1b6a78eba46a386b079616fc33a30f9a">DAField</a> (const fvMesh &amp;<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, const <a class="el" href="classFoam_1_1DAOption.html">DAOption</a> &amp;<a class="el" href="pyColoringIncompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>, const <a class="el" href="classFoam_1_1DAModel.html">DAModel</a> &amp;<a class="el" href="pyColoringIncompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel</a>, const <a class="el" href="classFoam_1_1DAIndex.html">DAIndex</a> &amp;<a class="el" href="pyColoringIncompressible_2createAdjoint_8H.html#aa36f358f32c8a00956e7ca31e30c906c">daIndex</a>)</td></tr>
+<tr class="memitem:a1b6a78eba46a386b079616fc33a30f9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAField.html#a1b6a78eba46a386b079616fc33a30f9a">DAField</a> (const fvMesh &amp;<a class="el" href="pyColoringSolid_2createFields_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, const <a class="el" href="classFoam_1_1DAOption.html">DAOption</a> &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>, const <a class="el" href="classFoam_1_1DAModel.html">DAModel</a> &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel</a>, const <a class="el" href="classFoam_1_1DAIndex.html">DAIndex</a> &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#aa36f358f32c8a00956e7ca31e30c906c">daIndex</a>)</td></tr>
 <tr class="memdesc:a1b6a78eba46a386b079616fc33a30f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructors.  <a href="#a1b6a78eba46a386b079616fc33a30f9a">More...</a><br /></td></tr>
 <tr class="separator:a1b6a78eba46a386b079616fc33a30f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abec07ea34bf947452d61d12f02d3c354"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAField.html#abec07ea34bf947452d61d12f02d3c354">~DAField</a> ()</td></tr>
@@ -113,6 +111,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae542daf160fbb16e53e2406cdf21ab27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAField.html#ae542daf160fbb16e53e2406cdf21ab27">setPrimalBoundaryConditions</a> ()</td></tr>
 <tr class="memdesc:ae542daf160fbb16e53e2406cdf21ab27"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the boundary conditions based on parameters defined in <a class="el" href="classFoam_1_1DAOption.html">DAOption</a>  <a href="#ae542daf160fbb16e53e2406cdf21ab27">More...</a><br /></td></tr>
 <tr class="separator:ae542daf160fbb16e53e2406cdf21ab27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e700d9bf7e49927027f36a29ee856de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAField.html#a2e700d9bf7e49927027f36a29ee856de">specialBCTreatment</a> ()</td></tr>
+<tr class="memdesc:a2e700d9bf7e49927027f36a29ee856de"><td class="mdescLeft">&#160;</td><td class="mdescRight">apply special treatment for boundary conditions  <a href="#a2e700d9bf7e49927027f36a29ee856de">More...</a><br /></td></tr>
+<tr class="separator:a2e700d9bf7e49927027f36a29ee856de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab84b12272957c0b7caa1ecde6c904618"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAField.html#ab84b12272957c0b7caa1ecde6c904618">checkSpecialBCs</a> ()</td></tr>
+<tr class="memdesc:ab84b12272957c0b7caa1ecde6c904618"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if we need to do special treatment for boundary conditions  <a href="#ab84b12272957c0b7caa1ecde6c904618">More...</a><br /></td></tr>
+<tr class="separator:ab84b12272957c0b7caa1ecde6c904618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ae0452f73d8986645f2def414e598cbee"><td class="memItemLeft" align="right" valign="top">wordList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAField.html#ae0452f73d8986645f2def414e598cbee">specialBCs</a></td></tr>
+<tr class="memdesc:ae0452f73d8986645f2def414e598cbee"><td class="mdescLeft">&#160;</td><td class="mdescRight">a list that contains the names of detected special boundary conditions  <a href="#ae0452f73d8986645f2def414e598cbee">More...</a><br /></td></tr>
+<tr class="separator:ae0452f73d8986645f2def414e598cbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -178,15 +188,12 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DAField_8C_source.html#l00017">17</a> of file <a class="el" href="DAField_8C_source.html">DAField.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAOption_8H_source.html#l00092">DAOption::getOption()</a>, <a class="el" href="DAStateInfo_8C_source.html#l00043">DAStateInfo::New()</a>, <a class="el" href="createAdjointCompressible_8H_source.html#l00015">solverName</a>, and <a class="el" href="DAField_8H_source.html#l00060">DAField::stateInfo_</a>.</p>
+<p class="reference">References <a class="el" href="DAField_8C_source.html#l00481">DAField::checkSpecialBCs()</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption::getOption()</a>, <a class="el" href="DAStateInfo_8C_source.html#l00043">DAStateInfo::New()</a>, <a class="el" href="createAdjointCompressible_8H_source.html#l00015">solverName</a>, and <a class="el" href="DAField_8H_source.html#l00060">DAField::stateInfo_</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAField_a1b6a78eba46a386b079616fc33a30f9a_cgraph.png" border="0" usemap="#classFoam_1_1DAField_a1b6a78eba46a386b079616fc33a30f9a_cgraph" alt=""/></div>
 <map name="classFoam_1_1DAField_a1b6a78eba46a386b079616fc33a30f9a_cgraph" id="classFoam_1_1DAField_a1b6a78eba46a386b079616fc33a30f9a_cgraph">
-<area shape="rect" id="node2" href="namespaceFoam.html#a58960b7316c941ab61d6237d75a38d04" title="Foam::daStateInfo" alt="" coords="153,5,289,32"/>
-<area shape="rect" id="node3" href="classFoam_1_1DAOption.html#addfcd9ad4a40f19c6a512da80463d149" title="get an option from subDict and key " alt="" coords="125,56,317,83"/>
-<area shape="rect" id="node4" href="classFoam_1_1DAStateInfo.html#a437855c825edfcbd543fa18c6be0a095" title="Foam::DAStateInfo::New" alt="" coords="135,107,308,133"/>
 </map>
 </div>
 
@@ -219,7 +226,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAField_8H_source.html#l00071">71</a> of file <a class="el" href="DAField_8H_source.html">DAField.H</a>.</p>
 
-<p class="reference">References <a class="el" href="DAField_8C_source.html#l00033">DAField::ofField2StateVec()</a>, <a class="el" href="DAField_8C_source.html#l00258">DAField::ofMesh2PointVec()</a>, <a class="el" href="DAField_8C_source.html#l00297">DAField::ofResField2ResVec()</a>, <a class="el" href="DAField_8C_source.html#l00213">DAField::pointVec2OFMesh()</a>, <a class="el" href="DAField_8C_source.html#l00388">DAField::resVec2OFResField()</a>, <a class="el" href="DAField_8C_source.html#l00478">DAField::setPrimalBoundaryConditions()</a>, and <a class="el" href="DAField_8C_source.html#l00123">DAField::stateVec2OFField()</a>.</p>
+<p class="reference">References <a class="el" href="DAField_8C_source.html#l00481">DAField::checkSpecialBCs()</a>, <a class="el" href="DAField_8C_source.html#l00036">DAField::ofField2StateVec()</a>, <a class="el" href="DAField_8C_source.html#l00261">DAField::ofMesh2PointVec()</a>, <a class="el" href="DAField_8C_source.html#l00300">DAField::ofResField2ResVec()</a>, <a class="el" href="DAField_8C_source.html#l00216">DAField::pointVec2OFMesh()</a>, <a class="el" href="DAField_8C_source.html#l00391">DAField::resVec2OFResField()</a>, <a class="el" href="DAField_8C_source.html#l00546">DAField::setPrimalBoundaryConditions()</a>, <a class="el" href="DAField_8C_source.html#l00521">DAField::specialBCTreatment()</a>, and <a class="el" href="DAField_8C_source.html#l00126">DAField::stateVec2OFField()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -249,7 +256,7 @@ Here is the call graph for this function:</div>
 
 <p>set the state vector based on the latest fields in OpenFOAM </p>
 
-<p class="definition">Definition at line <a class="el" href="DAField_8C_source.html#l00033">33</a> of file <a class="el" href="DAField_8C_source.html">DAField.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAField_8C_source.html#l00036">36</a> of file <a class="el" href="DAField_8C_source.html">DAField.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DAIndex_8H_source.html#l00116">DAIndex::bFaceFaceI</a>, <a class="el" href="DAIndex_8H_source.html#l00110">DAIndex::bFacePatchI</a>, <a class="el" href="DAField_8H_source.html#l00057">DAField::daIndex_</a>, <a class="el" href="DAIndex_8C_source.html#l00495">DAIndex::getLocalAdjointStateIndex()</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00015">makeState</a>, <a class="el" href="DAField_8H_source.html#l00048">DAField::mesh_</a>, <a class="el" href="DAIndex_8H_source.html#l00098">DAIndex::nLocalInternalFaces</a>, and <a class="el" href="DAField_8H_source.html#l00060">DAField::stateInfo_</a>.</p>
 
@@ -289,7 +296,7 @@ Here is the caller graph for this function:</div>
 
 <p>assign the fields in OpenFOAM based on the state vector </p>
 
-<p class="definition">Definition at line <a class="el" href="DAField_8C_source.html#l00123">123</a> of file <a class="el" href="DAField_8C_source.html">DAField.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAField_8C_source.html#l00126">126</a> of file <a class="el" href="DAField_8C_source.html">DAField.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DAIndex_8H_source.html#l00116">DAIndex::bFaceFaceI</a>, <a class="el" href="DAIndex_8H_source.html#l00110">DAIndex::bFacePatchI</a>, <a class="el" href="DAField_8H_source.html#l00057">DAField::daIndex_</a>, <a class="el" href="DAIndex_8C_source.html#l00495">DAIndex::getLocalAdjointStateIndex()</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00015">makeState</a>, <a class="el" href="DAField_8H_source.html#l00048">DAField::mesh_</a>, <a class="el" href="DAIndex_8H_source.html#l00098">DAIndex::nLocalInternalFaces</a>, and <a class="el" href="DAField_8H_source.html#l00060">DAField::stateInfo_</a>.</p>
 
@@ -329,7 +336,7 @@ Here is the caller graph for this function:</div>
 
 <p>assign the points in fvMesh of OpenFOAM based on the point vector </p>
 
-<p class="definition">Definition at line <a class="el" href="DAField_8C_source.html#l00213">213</a> of file <a class="el" href="DAField_8C_source.html">DAField.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAField_8C_source.html#l00216">216</a> of file <a class="el" href="DAField_8C_source.html">DAField.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DAField_8H_source.html#l00057">DAField::daIndex_</a>, <a class="el" href="DAIndex_8C_source.html#l00712">DAIndex::getLocalXvIndex()</a>, <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00004">mesh</a>, and <a class="el" href="DAField_8H_source.html#l00048">DAField::mesh_</a>.</p>
 
@@ -369,7 +376,7 @@ Here is the caller graph for this function:</div>
 
 <p>assign the point vector based on the points in fvMesh of OpenFOAM </p>
 
-<p class="definition">Definition at line <a class="el" href="DAField_8C_source.html#l00258">258</a> of file <a class="el" href="DAField_8C_source.html">DAField.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAField_8C_source.html#l00261">261</a> of file <a class="el" href="DAField_8C_source.html">DAField.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DAField_8H_source.html#l00057">DAField::daIndex_</a>, <a class="el" href="DAIndex_8C_source.html#l00712">DAIndex::getLocalXvIndex()</a>, and <a class="el" href="DAField_8H_source.html#l00048">DAField::mesh_</a>.</p>
 
@@ -409,7 +416,7 @@ Here is the caller graph for this function:</div>
 
 <p>assign the residual field in OpenFOAM based on the residual vector </p>
 
-<p class="definition">Definition at line <a class="el" href="DAField_8C_source.html#l00388">388</a> of file <a class="el" href="DAField_8C_source.html">DAField.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAField_8C_source.html#l00391">391</a> of file <a class="el" href="DAField_8C_source.html">DAField.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DAIndex_8H_source.html#l00116">DAIndex::bFaceFaceI</a>, <a class="el" href="DAIndex_8H_source.html#l00110">DAIndex::bFacePatchI</a>, <a class="el" href="DAField_8H_source.html#l00057">DAField::daIndex_</a>, <a class="el" href="DAIndex_8C_source.html#l00495">DAIndex::getLocalAdjointStateIndex()</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00021">makeStateRes</a>, <a class="el" href="DAField_8H_source.html#l00048">DAField::mesh_</a>, <a class="el" href="DAIndex_8H_source.html#l00098">DAIndex::nLocalInternalFaces</a>, and <a class="el" href="DAField_8H_source.html#l00060">DAField::stateInfo_</a>.</p>
 
@@ -449,7 +456,7 @@ Here is the caller graph for this function:</div>
 
 <p>assign the residual vector based on the residual field in OpenFOAM </p>
 
-<p class="definition">Definition at line <a class="el" href="DAField_8C_source.html#l00297">297</a> of file <a class="el" href="DAField_8C_source.html">DAField.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAField_8C_source.html#l00300">300</a> of file <a class="el" href="DAField_8C_source.html">DAField.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DAIndex_8H_source.html#l00116">DAIndex::bFaceFaceI</a>, <a class="el" href="DAIndex_8H_source.html#l00110">DAIndex::bFacePatchI</a>, <a class="el" href="DAField_8H_source.html#l00057">DAField::daIndex_</a>, <a class="el" href="DAIndex_8C_source.html#l00495">DAIndex::getLocalAdjointStateIndex()</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00021">makeStateRes</a>, <a class="el" href="DAField_8H_source.html#l00048">DAField::mesh_</a>, <a class="el" href="DAIndex_8H_source.html#l00098">DAIndex::nLocalInternalFaces</a>, and <a class="el" href="DAField_8H_source.html#l00060">DAField::stateInfo_</a>.</p>
 
@@ -488,7 +495,7 @@ Here is the caller graph for this function:</div>
 
 <p>set the boundary conditions based on parameters defined in <a class="el" href="classFoam_1_1DAOption.html">DAOption</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="DAField_8C_source.html#l00478">478</a> of file <a class="el" href="DAField_8C_source.html">DAField.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAField_8C_source.html#l00546">546</a> of file <a class="el" href="DAField_8C_source.html">DAField.C</a>.</p>
 
 <p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="DAField_8H_source.html#l00051">DAField::daOption_</a>, <a class="el" href="DAOption_8H_source.html#l00056">DAOption::getAllOptions()</a>, and <a class="el" href="DAField_8H_source.html#l00048">DAField::mesh_</a>.</p>
 
@@ -498,8 +505,6 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAField_ae542daf160fbb16e53e2406cdf21ab27_cgraph.png" border="0" usemap="#classFoam_1_1DAField_ae542daf160fbb16e53e2406cdf21ab27_cgraph" alt=""/></div>
 <map name="classFoam_1_1DAField_ae542daf160fbb16e53e2406cdf21ab27_cgraph" id="classFoam_1_1DAField_ae542daf160fbb16e53e2406cdf21ab27_cgraph">
-<area shape="rect" id="node2" href="namespaceFoam.html#a459a606a203470b2756be04c4192c695" title="Foam::forAll" alt="" coords="322,5,417,32"/>
-<area shape="rect" id="node3" href="classFoam_1_1DAOption.html#a62bfbb8765add45a8325088154131c14" title="return a reference of allOptions_ dictionary " alt="" coords="262,56,477,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -507,6 +512,70 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAField_ae542daf160fbb16e53e2406cdf21ab27_icgraph.png" border="0" usemap="#classFoam_1_1DAField_ae542daf160fbb16e53e2406cdf21ab27_icgraph" alt=""/></div>
 <map name="classFoam_1_1DAField_ae542daf160fbb16e53e2406cdf21ab27_icgraph" id="classFoam_1_1DAField_ae542daf160fbb16e53e2406cdf21ab27_icgraph">
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2e700d9bf7e49927027f36a29ee856de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e700d9bf7e49927027f36a29ee856de">&#9670;&nbsp;</a></span>specialBCTreatment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void specialBCTreatment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>apply special treatment for boundary conditions </p>
+
+<p class="definition">Definition at line <a class="el" href="DAField_8C_source.html#l00521">521</a> of file <a class="el" href="DAField_8C_source.html">DAField.C</a>.</p>
+
+<p class="reference">References <a class="el" href="DAField_8H_source.html#l00048">DAField::mesh_</a>, <a class="el" href="DAField_8H_source.html#l00105">DAField::specialBCs</a>, and <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00009">U</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DAResidual_8C_source.html#l00081">DAResidual::masterFunction()</a>, <a class="el" href="DAObjFunc_8C_source.html#l00228">DAObjFunc::masterFunction()</a>, and <a class="el" href="DAField_8H_source.html#l00071">DAField::~DAField()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAField_a2e700d9bf7e49927027f36a29ee856de_icgraph.png" border="0" usemap="#classFoam_1_1DAField_a2e700d9bf7e49927027f36a29ee856de_icgraph" alt=""/></div>
+<map name="classFoam_1_1DAField_a2e700d9bf7e49927027f36a29ee856de_icgraph" id="classFoam_1_1DAField_a2e700d9bf7e49927027f36a29ee856de_icgraph">
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab84b12272957c0b7caa1ecde6c904618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab84b12272957c0b7caa1ecde6c904618">&#9670;&nbsp;</a></span>checkSpecialBCs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void checkSpecialBCs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>check if we need to do special treatment for boundary conditions </p>
+
+<p class="definition">Definition at line <a class="el" href="DAField_8C_source.html#l00481">481</a> of file <a class="el" href="DAField_8C_source.html">DAField.C</a>.</p>
+
+<p class="reference">References <a class="el" href="DAField_8H_source.html#l00048">DAField::mesh_</a>, <a class="el" href="DAField_8H_source.html#l00105">DAField::specialBCs</a>, and <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00009">U</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DAField_8C_source.html#l00017">DAField::DAField()</a>, and <a class="el" href="DAField_8H_source.html#l00071">DAField::~DAField()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAField_ab84b12272957c0b7caa1ecde6c904618_icgraph.png" border="0" usemap="#classFoam_1_1DAField_ab84b12272957c0b7caa1ecde6c904618_icgraph" alt=""/></div>
+<map name="classFoam_1_1DAField_ab84b12272957c0b7caa1ecde6c904618_icgraph" id="classFoam_1_1DAField_ab84b12272957c0b7caa1ecde6c904618_icgraph">
 </map>
 </div>
 
@@ -537,7 +606,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAField_8H_source.html#l00048">48</a> of file <a class="el" href="DAField_8H_source.html">DAField.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAField_8C_source.html#l00033">DAField::ofField2StateVec()</a>, <a class="el" href="DAField_8C_source.html#l00258">DAField::ofMesh2PointVec()</a>, <a class="el" href="DAField_8C_source.html#l00297">DAField::ofResField2ResVec()</a>, <a class="el" href="DAField_8C_source.html#l00213">DAField::pointVec2OFMesh()</a>, <a class="el" href="DAField_8C_source.html#l00388">DAField::resVec2OFResField()</a>, <a class="el" href="DAField_8C_source.html#l00478">DAField::setPrimalBoundaryConditions()</a>, and <a class="el" href="DAField_8C_source.html#l00123">DAField::stateVec2OFField()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAField_8C_source.html#l00481">DAField::checkSpecialBCs()</a>, <a class="el" href="DAField_8C_source.html#l00036">DAField::ofField2StateVec()</a>, <a class="el" href="DAField_8C_source.html#l00261">DAField::ofMesh2PointVec()</a>, <a class="el" href="DAField_8C_source.html#l00300">DAField::ofResField2ResVec()</a>, <a class="el" href="DAField_8C_source.html#l00216">DAField::pointVec2OFMesh()</a>, <a class="el" href="DAField_8C_source.html#l00391">DAField::resVec2OFResField()</a>, <a class="el" href="DAField_8C_source.html#l00546">DAField::setPrimalBoundaryConditions()</a>, <a class="el" href="DAField_8C_source.html#l00521">DAField::specialBCTreatment()</a>, and <a class="el" href="DAField_8C_source.html#l00126">DAField::stateVec2OFField()</a>.</p>
 
 </div>
 </div>
@@ -565,7 +634,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAField_8H_source.html#l00051">51</a> of file <a class="el" href="DAField_8H_source.html">DAField.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAField_8C_source.html#l00478">DAField::setPrimalBoundaryConditions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAField_8C_source.html#l00546">DAField::setPrimalBoundaryConditions()</a>.</p>
 
 </div>
 </div>
@@ -619,7 +688,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAField_8H_source.html#l00057">57</a> of file <a class="el" href="DAField_8H_source.html">DAField.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAField_8C_source.html#l00033">DAField::ofField2StateVec()</a>, <a class="el" href="DAField_8C_source.html#l00258">DAField::ofMesh2PointVec()</a>, <a class="el" href="DAField_8C_source.html#l00297">DAField::ofResField2ResVec()</a>, <a class="el" href="DAField_8C_source.html#l00213">DAField::pointVec2OFMesh()</a>, <a class="el" href="DAField_8C_source.html#l00388">DAField::resVec2OFResField()</a>, and <a class="el" href="DAField_8C_source.html#l00123">DAField::stateVec2OFField()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAField_8C_source.html#l00036">DAField::ofField2StateVec()</a>, <a class="el" href="DAField_8C_source.html#l00261">DAField::ofMesh2PointVec()</a>, <a class="el" href="DAField_8C_source.html#l00300">DAField::ofResField2ResVec()</a>, <a class="el" href="DAField_8C_source.html#l00216">DAField::pointVec2OFMesh()</a>, <a class="el" href="DAField_8C_source.html#l00391">DAField::resVec2OFResField()</a>, and <a class="el" href="DAField_8C_source.html#l00126">DAField::stateVec2OFField()</a>.</p>
 
 </div>
 </div>
@@ -647,7 +716,27 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAField_8H_source.html#l00060">60</a> of file <a class="el" href="DAField_8H_source.html">DAField.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAField_8C_source.html#l00017">DAField::DAField()</a>, <a class="el" href="DAField_8C_source.html#l00033">DAField::ofField2StateVec()</a>, <a class="el" href="DAField_8C_source.html#l00297">DAField::ofResField2ResVec()</a>, <a class="el" href="DAField_8C_source.html#l00388">DAField::resVec2OFResField()</a>, and <a class="el" href="DAField_8C_source.html#l00123">DAField::stateVec2OFField()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAField_8C_source.html#l00017">DAField::DAField()</a>, <a class="el" href="DAField_8C_source.html#l00036">DAField::ofField2StateVec()</a>, <a class="el" href="DAField_8C_source.html#l00300">DAField::ofResField2ResVec()</a>, <a class="el" href="DAField_8C_source.html#l00391">DAField::resVec2OFResField()</a>, and <a class="el" href="DAField_8C_source.html#l00126">DAField::stateVec2OFField()</a>.</p>
+
+</div>
+</div>
+<a id="ae0452f73d8986645f2def414e598cbee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0452f73d8986645f2def414e598cbee">&#9670;&nbsp;</a></span>specialBCs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wordList specialBCs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>a list that contains the names of detected special boundary conditions </p>
+
+<p class="definition">Definition at line <a class="el" href="DAField_8H_source.html#l00105">105</a> of file <a class="el" href="DAField_8H_source.html">DAField.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DAField_8C_source.html#l00481">DAField::checkSpecialBCs()</a>, <a class="el" href="DAJacCon_8C_source.html#l02081">DAJacCon::checkSpecialBCs()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, and <a class="el" href="DAField_8C_source.html#l00521">DAField::specialBCTreatment()</a>.</p>
 
 </div>
 </div>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.3</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.4</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -72,20 +72,23 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classFoam_1_1DAField.html">DAField</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a1b6a78eba46a386b079616fc33a30f9a">DAField</a>(const fvMesh &amp;mesh, const DAOption &amp;daOption, const DAModel &amp;daModel, const DAIndex &amp;daIndex)</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a7d024d56257a6d34c00ff904bc9d1072">daIndex_</a></td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a7ddf2d8a4282a392c658aa5558d54fdd">daModel_</a></td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a807bf71abc1e195369a402a601a3a9a4">daOption_</a></td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a23edeeeecebcef11921a33dd5d990570">mesh_</a></td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a97b2a938b423ad81fcd6982dd375fd01">ofField2StateVec</a>(Vec stateVec) const</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classFoam_1_1DAField.html#af220727751be888d7b23368cafb2a56a">ofMesh2PointVec</a>(Vec xvVec) const</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a2dd70a3b26e373d7be42312f97738217">ofResField2ResVec</a>(Vec resVec) const</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classFoam_1_1DAField.html#ad11a8b27d61a02a20034c2dedfaa3843">pointVec2OFMesh</a>(const Vec xvVec) const</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classFoam_1_1DAField.html#af7aaed216b5c25dcad88ba7ed75d82ce">resVec2OFResField</a>(const Vec resVec) const</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classFoam_1_1DAField.html#ae542daf160fbb16e53e2406cdf21ab27">setPrimalBoundaryConditions</a>()</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a339de4c9f10c46fd0f4deaa85dea6f67">stateInfo_</a></td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a7381e81276f834f59b9502061c4bab28">stateVec2OFField</a>(const Vec stateVec) const</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classFoam_1_1DAField.html#abec07ea34bf947452d61d12f02d3c354">~DAField</a>()</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classFoam_1_1DAField.html#ab84b12272957c0b7caa1ecde6c904618">checkSpecialBCs</a>()</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a1b6a78eba46a386b079616fc33a30f9a">DAField</a>(const fvMesh &amp;mesh, const DAOption &amp;daOption, const DAModel &amp;daModel, const DAIndex &amp;daIndex)</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a7d024d56257a6d34c00ff904bc9d1072">daIndex_</a></td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a7ddf2d8a4282a392c658aa5558d54fdd">daModel_</a></td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a807bf71abc1e195369a402a601a3a9a4">daOption_</a></td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a23edeeeecebcef11921a33dd5d990570">mesh_</a></td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a97b2a938b423ad81fcd6982dd375fd01">ofField2StateVec</a>(Vec stateVec) const</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classFoam_1_1DAField.html#af220727751be888d7b23368cafb2a56a">ofMesh2PointVec</a>(Vec xvVec) const</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a2dd70a3b26e373d7be42312f97738217">ofResField2ResVec</a>(Vec resVec) const</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classFoam_1_1DAField.html#ad11a8b27d61a02a20034c2dedfaa3843">pointVec2OFMesh</a>(const Vec xvVec) const</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classFoam_1_1DAField.html#af7aaed216b5c25dcad88ba7ed75d82ce">resVec2OFResField</a>(const Vec resVec) const</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classFoam_1_1DAField.html#ae542daf160fbb16e53e2406cdf21ab27">setPrimalBoundaryConditions</a>()</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classFoam_1_1DAField.html#ae0452f73d8986645f2def414e598cbee">specialBCs</a></td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a2e700d9bf7e49927027f36a29ee856de">specialBCTreatment</a>()</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a339de4c9f10c46fd0f4deaa85dea6f67">stateInfo_</a></td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classFoam_1_1DAField.html#a7381e81276f834f59b9502061c4bab28">stateVec2OFField</a>(const Vec stateVec) const</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classFoam_1_1DAField.html#abec07ea34bf947452d61d12f02d3c354">~DAField</a>()</td><td class="entry"><a class="el" href="classFoam_1_1DAField.html">DAField</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.11-->
 <!-- start footer part -->
