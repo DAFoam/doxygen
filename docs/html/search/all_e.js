@@ -32,7 +32,7 @@ var searchData=
   ['nsolveadjoints',['nSolveAdjoints',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a2f3d1cac79a13858160a2423802c389b',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['nsolveprimals',['nSolvePrimals',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ac60897a294ad9fa81dccabf291af2167',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['nsurfacescalarstates',['nSurfaceScalarStates',['../classFoam_1_1DAIndex.html#a6c58675e8d548e3dab691b19a0a0e94e',1,'Foam::DAIndex']]],
-  ['nu',['nu',['../classFoam_1_1DATurbulenceModel.html#a8ec0cfa6e40933dad3a642f390950937',1,'Foam::DATurbulenceModel::nu()'],['../pyColoringSolid_2createFields_8H.html#a37b037b9b4f6b01a53178fb5fa0fc213',1,'nu():&#160;createFields.H']]],
+  ['nu',['nu',['../classFoam_1_1DATurbulenceModel.html#a8ec0cfa6e40933dad3a642f390950937',1,'Foam::DATurbulenceModel']]],
   ['nueff',['nuEff',['../classFoam_1_1DATurbulenceModel.html#a8ab26f302189e92dac1700b9c30d0b13',1,'Foam::DATurbulenceModel']]],
   ['nundecomposedpoints',['nUndecomposedPoints',['../classFoam_1_1DAIndex.html#a0d8be0ff4b4181fb029bee046f552ca0',1,'Foam::DAIndex']]],
   ['nuptr_5f',['nuPtr_',['../classFoam_1_1DASolidDisplacementFoam.html#af0b4b5c51d217d23091e688f025f9549',1,'Foam::DASolidDisplacementFoam']]],

@@ -1,5 +1,0 @@
-<map id="nu" name="nu">
-<area shape="rect" id="node2" href="$classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a12c06ff2531b6460a8bea4cd0efee0e1" title="Foam::RASModels::Spalart\lAllmarasFv3::chi" alt="" coords="112,5,295,47"/>
-<area shape="rect" id="node3" href="$classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3db17e0612d3f43dfc21d593b7f7a942" title="Foam::RASModels::Spalart\lAllmarasFv3::DnuTildaEff" alt="" coords="112,71,295,112"/>
-<area shape="rect" id="node4" href="$classFoam_1_1tractionDisplacementFvPatchVectorField.html#a7e24eafac629d3733181cd942d4c902f" title="Foam::tractionDisplacement\lFvPatchVectorField::updateCoeffs" alt="" coords="92,136,315,177"/>
-</map>

@@ -34,7 +34,7 @@ var searchData=
   ['setupstateboundarycon',['setupStateBoundaryCon',['../classFoam_1_1DAJacCon.html#aa3634adc32833f151b9489b57320ecd4',1,'Foam::DAJacCon']]],
   ['setupstateboundaryconid',['setupStateBoundaryConID',['../classFoam_1_1DAJacCon.html#a68317e286c7c8af7ff7f5a380f8aa0da',1,'Foam::DAJacCon']]],
   ['sigma',['sigma',['../calculateStressSolidDisplacement_8H.html#a29d8738e14fbcf1453b4aee7990ab991',1,'calculateStressSolidDisplacement.H']]],
-  ['sigmad',['sigmaD',['../createRefsSolidDisplacement_8H.html#ae0e75a2981d60a2c4c7619ff7b20cb1c',1,'sigmaD():&#160;createRefsSolidDisplacement.H'],['../pyColoringSolid_2createFields_8H.html#ad2dea3badc3815caa745a1640dc19176',1,'sigmaD(IOobject(&quot;sigmaD&quot;, mesh.time().timeName(), mesh, IOobject::NO_READ, IOobject::NO_WRITE), mu *twoSymm(fvc::grad(D))+lambda *(I *tr(fvc::grad(D)))):&#160;createFields.H']]],
+  ['sigmad',['sigmaD',['../createRefsSolidDisplacement_8H.html#ae0e75a2981d60a2c4c7619ff7b20cb1c',1,'createRefsSolidDisplacement.H']]],
   ['sigmad_5f',['sigmaD_',['../classFoam_1_1DAResidualSolidDisplacementFoam.html#ad00fa6b228a252d1408d5c22a4092708',1,'Foam::DAResidualSolidDisplacementFoam']]],
   ['sigmadptr_5f',['sigmaDPtr_',['../classFoam_1_1DASolidDisplacementFoam.html#a67abeb2b5797c453d390310e0969d986',1,'Foam::DASolidDisplacementFoam']]],
   ['sigmaeq',['sigmaEq',['../calculateStressSolidDisplacement_8H.html#a9e391c256506e6d420c75d972164619d',1,'calculateStressSolidDisplacement.H']]],

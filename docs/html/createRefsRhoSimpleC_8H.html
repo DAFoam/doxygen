@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.4</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.5</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -112,7 +112,7 @@ Variables</h2></td></tr>
 <tr class="separator:a3372f40cbfde67c4788246a354e9dcfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd37d1d292a50e4395f46ebfa8186e02"><td class="memItemLeft" align="right" valign="top">pressureControl &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="createRefsRhoSimpleC_8H.html#afd37d1d292a50e4395f46ebfa8186e02">pressureControl</a> = pressureControlPtr_()</td></tr>
 <tr class="separator:afd37d1d292a50e4395f46ebfa8186e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a314c00905651b613232846307a4cc3aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="createRefsRhoSimpleC_8H.html#a314c00905651b613232846307a4cc3aa">initialMass_</a> = fvc::domainIntegrate(<a class="el" href="pyColoringSolid_2createFields_8H.html#afeadb7c621cad6e63f5d5bc4a3336edd">rho</a>)</td></tr>
+<tr class="memitem:a314c00905651b613232846307a4cc3aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="createRefsRhoSimpleC_8H.html#a314c00905651b613232846307a4cc3aa">initialMass_</a> = fvc::domainIntegrate(<a class="el" href="pyColoringCompressible_2createFields_8H.html#a5c94c90bde43f26b8fb11b35115482c6">rho</a>)</td></tr>
 <tr class="separator:a314c00905651b613232846307a4cc3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba679271c41582099c8ccf4827fdf217"><td class="memItemLeft" align="right" valign="top">const volScalarField &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="createRefsRhoSimpleC_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a> = thermo.psi()</td></tr>
 <tr class="separator:aba679271c41582099c8ccf4827fdf217"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,7 +252,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00007">7</a> of file <a class="el" href="createRefsRhoSimpleC_8H_source.html">createRefsRhoSimpleC.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAObjFuncMoment_8C_source.html#l00096">DAObjFuncMoment::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalPressure_8C_source.html#l00053">DAObjFuncTotalPressure::calcObjFunc()</a>, <a class="el" href="DAObjFuncForce_8C_source.html#l00120">DAObjFuncForce::calcObjFunc()</a>, <a class="el" href="checkGeometry_8C_source.html#l00087">Foam::checkCoupledPoints()</a>, <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00059">if()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00055">DARhoSimpleFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, and <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00033">while()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAObjFuncMoment_8C_source.html#l00096">DAObjFuncMoment::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalPressure_8C_source.html#l00053">DAObjFuncTotalPressure::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalPressureRatio_8C_source.html#l00070">DAObjFuncTotalPressureRatio::calcObjFunc()</a>, <a class="el" href="DAObjFuncForce_8C_source.html#l00120">DAObjFuncForce::calcObjFunc()</a>, <a class="el" href="checkGeometry_8C_source.html#l00087">Foam::checkCoupledPoints()</a>, <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00059">if()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00055">DARhoSimpleFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, and <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00033">while()</a>.</p>
 
 </div>
 </div>
@@ -288,7 +288,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00009">9</a> of file <a class="el" href="createRefsRhoSimpleC_8H_source.html">createRefsRhoSimpleC.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAObjFuncTotalPressure_8C_source.html#l00053">DAObjFuncTotalPressure::calcObjFunc()</a>, <a class="el" href="DAField_8C_source.html#l00481">DAField::checkSpecialBCs()</a>, <a class="el" href="DAJacCon_8C_source.html#l02081">DAJacCon::checkSpecialBCs()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00153">DATurboFoam::setRotingWallVelocity()</a>, <a class="el" href="DAField_8C_source.html#l00521">DAField::specialBCTreatment()</a>, <a class="el" href="DAObjFuncForce_8C_source.html#l00193">DAObjFuncForce::updateForceDir()</a>, and <a class="el" href="DATurbulenceModel_8H_source.html#l00178">DATurbulenceModel::~DATurbulenceModel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAObjFuncMassFlowRate_8C_source.html#l00056">DAObjFuncMassFlowRate::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalPressure_8C_source.html#l00053">DAObjFuncTotalPressure::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalPressureRatio_8C_source.html#l00070">DAObjFuncTotalPressureRatio::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalTemperatureRatio_8C_source.html#l00065">DAObjFuncTotalTemperatureRatio::calcObjFunc()</a>, <a class="el" href="DAField_8C_source.html#l00481">DAField::checkSpecialBCs()</a>, <a class="el" href="DAJacCon_8C_source.html#l02081">DAJacCon::checkSpecialBCs()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00153">DATurboFoam::setRotingWallVelocity()</a>, <a class="el" href="DAField_8C_source.html#l00521">DAField::specialBCTreatment()</a>, <a class="el" href="DAObjFuncForce_8C_source.html#l00193">DAObjFuncForce::updateForceDir()</a>, and <a class="el" href="DATurbulenceModel_8H_source.html#l00178">DATurbulenceModel::~DATurbulenceModel()</a>.</p>
 
 </div>
 </div>
@@ -351,7 +351,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">initialMass_ = fvc::domainIntegrate(<a class="el" href="pyColoringSolid_2createFields_8H.html#afeadb7c621cad6e63f5d5bc4a3336edd">rho</a>)</td>
+          <td class="memname">initialMass_ = fvc::domainIntegrate(<a class="el" href="pyColoringCompressible_2createFields_8H.html#a5c94c90bde43f26b8fb11b35115482c6">rho</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">

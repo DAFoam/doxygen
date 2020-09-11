@@ -16,5 +16,6 @@ var searchData=
   ['objfuncvalue_5f',['objFuncValue_',['../classFoam_1_1DAObjFunc.html#a550f1a35e3f803a23b57fdf16bb50699',1,'Foam::DAObjFunc']]],
   ['objfuncvaluepreviter',['objFuncValuePrevIter',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a9178ee6389a3cbd6f55e164b01c5ba5d',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['omegamin_5f',['omegaMin_',['../classFoam_1_1DATurbulenceModel.html#a57d8cf27ff6c75c9f71fdc7d66740e7b',1,'Foam::DATurbulenceModel']]],
-  ['options',['options',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a02eacfd40be9042ceb0f07547365203d',1,'dafoam::pyDAFoam::PYDAFOAM']]]
+  ['options',['options',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a02eacfd40be9042ceb0f07547365203d',1,'dafoam::pyDAFoam::PYDAFOAM']]],
+  ['outletpatches_5f',['outletPatches_',['../classFoam_1_1DAObjFuncTotalPressureRatio.html#a7a1c18ab6cf353a1697e9c6ab2b8d125',1,'Foam::DAObjFuncTotalPressureRatio::outletPatches_()'],['../classFoam_1_1DAObjFuncTotalTemperatureRatio.html#a7a1c18ab6cf353a1697e9c6ab2b8d125',1,'Foam::DAObjFuncTotalTemperatureRatio::outletPatches_()']]]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['gamma_5f',['gamma_',['../classFoam_1_1DAObjFuncTotalPressureRatio.html#a2e320ab4d16ef59322581c061edc1d36',1,'Foam::DAObjFuncTotalPressureRatio::gamma_()'],['../classFoam_1_1DAObjFuncTotalTemperatureRatio.html#a2e320ab4d16ef59322581c061edc1d36',1,'Foam::DAObjFuncTotalTemperatureRatio::gamma_()']]],
   ['globaladjointstatenumbering',['globalAdjointStateNumbering',['../classFoam_1_1DAIndex.html#a75df9147e4815d887684542e0c19d737',1,'Foam::DAIndex']]],
   ['globalcellnumbering',['globalCellNumbering',['../classFoam_1_1DAIndex.html#a612291abb9489486ba4fc8a40bca9b33',1,'Foam::DAIndex']]],
   ['globalcellvectornumbering',['globalCellVectorNumbering',['../classFoam_1_1DAIndex.html#ae7799bfb308756ace93be315d8ef140a',1,'Foam::DAIndex']]],

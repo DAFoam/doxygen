@@ -28,7 +28,6 @@ var searchData=
   ['setupstateboundarycon',['setupStateBoundaryCon',['../classFoam_1_1DAJacCon.html#aa3634adc32833f151b9489b57320ecd4',1,'Foam::DAJacCon']]],
   ['setupstateboundaryconid',['setupStateBoundaryConID',['../classFoam_1_1DAJacCon.html#a68317e286c7c8af7ff7f5a380f8aa0da',1,'Foam::DAJacCon']]],
   ['sigma',['sigma',['../calculateStressSolidDisplacement_8H.html#a29d8738e14fbcf1453b4aee7990ab991',1,'calculateStressSolidDisplacement.H']]],
-  ['sigmad',['sigmaD',['../pyColoringSolid_2createFields_8H.html#ad2dea3badc3815caa745a1640dc19176',1,'createFields.H']]],
   ['sigmaeq',['sigmaEq',['../calculateStressSolidDisplacement_8H.html#a9e391c256506e6d420c75d972164619d',1,'calculateStressSolidDisplacement.H']]],
   ['solveadjoint',['solveAdjoint',['../classFoam_1_1DASolver.html#a985af8c5b6d6bf478b8fd1d999865b47',1,'Foam::DASolver::solveAdjoint()'],['../classFoam_1_1DASolvers.html#a985af8c5b6d6bf478b8fd1d999865b47',1,'Foam::DASolvers::solveAdjoint()'],['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8',1,'dafoam.pyDAFoam.PYDAFOAM.solveAdjoint()']]],
   ['solvecl',['solveCL',['../namespacedafoam_1_1optFuncs.html#a287b79374641f629b659009f0da4d59c',1,'dafoam::optFuncs']]],

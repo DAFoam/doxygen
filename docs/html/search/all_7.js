@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['gamma_5f',['gamma_',['../classFoam_1_1DAObjFuncTotalPressureRatio.html#a2e320ab4d16ef59322581c061edc1d36',1,'Foam::DAObjFuncTotalPressureRatio::gamma_()'],['../classFoam_1_1DAObjFuncTotalTemperatureRatio.html#a2e320ab4d16ef59322581c061edc1d36',1,'Foam::DAObjFuncTotalTemperatureRatio::gamma_()']]],
   ['genglobalindex',['genGlobalIndex',['../classFoam_1_1DAUtility.html#a60de1987fa392ee6e3780759505035c4',1,'Foam::DAUtility']]],
   ['getalloptions',['getAllOptions',['../classFoam_1_1DAOption.html#aac22cd38f3d4adc69a4e35329c6abf92',1,'Foam::DAOption']]],
   ['getalpha',['getAlpha',['../classFoam_1_1DATurbulenceModel.html#a6ccb345346c8f358d12d90933980a559',1,'Foam::DATurbulenceModel']]],
@@ -53,7 +54,7 @@ var searchData=
   ['globalobjfuncgeonumbering',['globalObjFuncGeoNumbering',['../classFoam_1_1DAIndex.html#a176ecb0125349298bf04b735470e2b93',1,'Foam::DAIndex']]],
   ['globalobjfuncgeonumbering_5f',['globalObjFuncGeoNumbering_',['../classFoam_1_1DAJacCondFdW.html#a31009387223ae1f5ae9b20a6175678bf',1,'Foam::DAJacCondFdW']]],
   ['globalxvnumbering',['globalXvNumbering',['../classFoam_1_1DAIndex.html#a9e9b66a0fb6b7cb2b0c95e67d581208c',1,'Foam::DAIndex']]],
-  ['gradd',['gradD',['../createRefsSolidDisplacement_8H.html#acea08d463c4f8dd333033bebb7ececbf',1,'gradD():&#160;createRefsSolidDisplacement.H'],['../pyColoringSolid_2createFields_8H.html#a72262e5f22ebd22c3db6a22afa259ab9',1,'gradD(IOobject(&quot;gradD&quot;, mesh.time().timeName(), mesh, IOobject::NO_READ, IOobject::NO_WRITE), fvc::grad(D)):&#160;createFields.H']]],
+  ['gradd',['gradD',['../createRefsSolidDisplacement_8H.html#acea08d463c4f8dd333033bebb7ececbf',1,'createRefsSolidDisplacement.H']]],
   ['gradd_5f',['gradD_',['../classFoam_1_1DAResidualSolidDisplacementFoam.html#a2611974b022f17080ac6dd27394a99c8',1,'Foam::DAResidualSolidDisplacementFoam']]],
   ['graddptr_5f',['gradDPtr_',['../classFoam_1_1DASolidDisplacementFoam.html#a71981041f9883a98309c9bc15a25b137',1,'Foam::DASolidDisplacementFoam']]]
 ];

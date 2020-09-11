@@ -43,6 +43,5 @@ var searchData=
   ['getsurfaceconnectivity',['getSurfaceConnectivity',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a8e43a4f1a3f9f54d2ee880c45c639a9b',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['getsurfacecoordinates',['getSurfaceCoordinates',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a0df62fe3472c26745359c34ac02663db',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['gettotalderivval',['getTotalDerivVal',['../classFoam_1_1DASolver.html#a5cb5e8d8b4babc32d6c225c1b0796ba7',1,'Foam::DASolver::getTotalDerivVal()'],['../classFoam_1_1DASolvers.html#a5cb5e8d8b4babc32d6c225c1b0796ba7',1,'Foam::DASolvers::getTotalDerivVal()']]],
-  ['gettriangulatedmeshsurface',['getTriangulatedMeshSurface',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ad26ac7f00b7a0b4cd441a7a8086ab9e7',1,'dafoam::pyDAFoam::PYDAFOAM']]],
-  ['gradd',['gradD',['../pyColoringSolid_2createFields_8H.html#a72262e5f22ebd22c3db6a22afa259ab9',1,'createFields.H']]]
+  ['gettriangulatedmeshsurface',['getTriangulatedMeshSurface',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ad26ac7f00b7a0b4cd441a7a8086ab9e7',1,'dafoam::pyDAFoam::PYDAFOAM']]]
 ];

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.4</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.5</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -176,7 +176,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:ac9a7b2d7815941c4dd49597dc15e1612"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#ac9a7b2d7815941c4dd49597dc15e1612">maxTractionBCIters</a> = 100</td></tr>
 <tr class="memdesc:ac9a7b2d7815941c4dd49597dc15e1612"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximal iterations of tractionDisplacement boundary conditions.  <a href="#ac9a7b2d7815941c4dd49597dc15e1612">More...</a><br /></td></tr>
 <tr class="separator:ac9a7b2d7815941c4dd49597dc15e1612"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f26f4425eb93738159189da1622d25a"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a5f26f4425eb93738159189da1622d25a">decomposeParDict</a> = {&quot;method&quot;: &quot;scotch&quot;, &quot;simpleCoeffs&quot;: {&quot;n&quot;: [2, 2, 1], &quot;delta&quot;: 0.001}, &quot;preservePatches&quot;: [&quot;None&quot;]}</td></tr>
+<tr class="memitem:a5f26f4425eb93738159189da1622d25a"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a5f26f4425eb93738159189da1622d25a">decomposeParDict</a></td></tr>
 <tr class="memdesc:a5f26f4425eb93738159189da1622d25a"><td class="mdescLeft">&#160;</td><td class="mdescRight">decomposeParDict option.  <a href="#a5f26f4425eb93738159189da1622d25a">More...</a><br /></td></tr>
 <tr class="separator:a5f26f4425eb93738159189da1622d25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f427f8dbdcc02d1d30314b17f61d7b4"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a5f427f8dbdcc02d1d30314b17f61d7b4">adjStateOrdering</a> = &quot;state&quot;</td></tr>
@@ -226,7 +226,7 @@ NOTE: We group these options into three categories.
 </div><div class="memdoc">
 <pre class="fragment">Nothing needs to be done for initializing DAOPTION
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00312">312</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00316">316</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -961,7 +961,7 @@ NOTE: We group these options into three categories.
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">dictionary decomposeParDict = {&quot;method&quot;: &quot;scotch&quot;, &quot;simpleCoeffs&quot;: {&quot;n&quot;: [2, 2, 1], &quot;delta&quot;: 0.001}, &quot;preservePatches&quot;: [&quot;None&quot;]}</td>
+          <td class="memname">dictionary decomposeParDict</td>
         </tr>
       </table>
   </td>
@@ -970,7 +970,7 @@ NOTE: We group these options into three categories.
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">=  {</div><div class="line">        <span class="stringliteral">&quot;method&quot;</span>: <span class="stringliteral">&quot;scotch&quot;</span>,</div><div class="line">        <span class="stringliteral">&quot;simpleCoeffs&quot;</span>: {<span class="stringliteral">&quot;n&quot;</span>: [2, 2, 1], <span class="stringliteral">&quot;delta&quot;</span>: 0.001},</div><div class="line">        <span class="stringliteral">&quot;preservePatches&quot;</span>: [<span class="stringliteral">&quot;None&quot;</span>],</div><div class="line">    }</div></div><!-- fragment -->
 <p>decomposeParDict option. </p>
 <p>This file will be automatically written such that users can run optimization with any number of CPU cores without the need to manually change decomposeParDict </p>
 
@@ -1001,7 +1001,7 @@ NOTE: We group these options into three categories.
 <p>The ordering of state variable. </p>
 <p>Options are: state or cell. Most of the case, the state odering is the best choice. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00304">304</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00308">308</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -1028,7 +1028,7 @@ NOTE: We group these options into three categories.
 <p>Default name for the mesh surface family. </p>
 <p>Users typically don't need to change </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00307">307</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00311">311</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -1055,7 +1055,7 @@ NOTE: We group these options into three categories.
 <p>Default name for the design surface family. </p>
 <p>Users typically don't need to change </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00310">310</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00314">314</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
