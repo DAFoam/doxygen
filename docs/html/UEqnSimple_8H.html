@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.5</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -85,6 +85,8 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a09a97cbb46f9091a4ffdbfdaed5cc998"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnSimple_8H.html#a09a97cbb46f9091a4ffdbfdaed5cc998">if</a> (hasFvSource_)</td></tr>
+<tr class="separator:a09a97cbb46f9091a4ffdbfdaed5cc998"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b8c1b8fce58b7b247990da627c8efa9"><td class="memItemLeft" align="right" valign="top">tmp&lt; fvVectorMatrix &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnSimple_8H.html#a3b8c1b8fce58b7b247990da627c8efa9">tUEqn</a> (fvm::div(<a class="el" href="pyColoringCompressible_2createFields_8H.html#a6a231aded4fb2c165cab36375ba435b7">phi</a>, <a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>)+turbulencePtr_-&gt;divDevReff(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>) - <a class="el" href="createRefsSimple_8H.html#a9a0c1fa985c6e79bb4cdc55fa06b9b50">fvSource</a>)</td></tr>
 <tr class="separator:a3b8c1b8fce58b7b247990da627c8efa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a717d2a556132c73a6bb389a9de48bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="UEqnTurbo_8H.html#aeeb518d883492fb109c93a7959833ffb">UEqn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnSimple_8H.html#a9a717d2a556132c73a6bb389a9de48bf">relax</a> ()</td></tr>
@@ -98,6 +100,36 @@ Variables</h2></td></tr>
 <tr class="separator:aeeb518d883492fb109c93a7959833ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a09a97cbb46f9091a4ffdbfdaed5cc998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09a97cbb46f9091a4ffdbfdaed5cc998">&#9670;&nbsp;</a></span>if() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">hasFvSource_&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="UEqnSimple_8H_source.html#l00003">3</a> of file <a class="el" href="UEqnSimple_8H_source.html">UEqnSimple.H</a>.</p>
+
+<p class="reference">References <a class="el" href="createRefsRhoSimple_8H_source.html#l00016">fvSource</a>, <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00010">phi</a>, <a class="el" href="UEqnSimple_8H.html#a3b8c1b8fce58b7b247990da627c8efa9">tUEqn()</a>, and <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00009">U</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="UEqnSimple_8H_a09a97cbb46f9091a4ffdbfdaed5cc998_cgraph.png" border="0" usemap="#UEqnSimple_8H_a09a97cbb46f9091a4ffdbfdaed5cc998_cgraph" alt=""/></div>
+<map name="UEqnSimple_8H_a09a97cbb46f9091a4ffdbfdaed5cc998_cgraph" id="UEqnSimple_8H_a09a97cbb46f9091a4ffdbfdaed5cc998_cgraph">
+<area shape="rect" id="node2" href="UEqnSimple_8H.html#a3b8c1b8fce58b7b247990da627c8efa9" title="tUEqn" alt="" coords="92,5,151,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a3b8c1b8fce58b7b247990da627c8efa9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b8c1b8fce58b7b247990da627c8efa9">&#9670;&nbsp;</a></span>tUEqn()</h2>
 
@@ -113,6 +145,16 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="UEqnSimple_8H_source.html#l00003">if()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="UEqnSimple_8H_a3b8c1b8fce58b7b247990da627c8efa9_icgraph.png" border="0" usemap="#UEqnSimple_8H_a3b8c1b8fce58b7b247990da627c8efa9_icgraph" alt=""/></div>
+<map name="UEqnSimple_8H_a3b8c1b8fce58b7b247990da627c8efa9_icgraph" id="UEqnSimple_8H_a3b8c1b8fce58b7b247990da627c8efa9_icgraph">
+<area shape="rect" id="node2" href="UEqnSimple_8H.html#a09a97cbb46f9091a4ffdbfdaed5cc998" title="if" alt="" coords="112,5,151,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -134,7 +176,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a41384e852288dac0c8a1fa700fa872c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41384e852288dac0c8a1fa700fa872c9">&#9670;&nbsp;</a></span>if()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a41384e852288dac0c8a1fa700fa872c9">&#9670;&nbsp;</a></span>if() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,7 +191,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UEqnSimple_8H_source.html#l00011">11</a> of file <a class="el" href="UEqnSimple_8H_source.html">UEqnSimple.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="UEqnSimple_8H_source.html#l00016">16</a> of file <a class="el" href="UEqnSimple_8H_source.html">UEqnSimple.H</a>.</p>
 
 <p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00007">p</a>, <a class="el" href="UEqnRhoSimpleC_8H.html#ab03da5eb035bcd35dbc32d1045d0f908">primalResidualControl&lt; vector &gt;()</a>, and <a class="el" href="UEqnRhoSimpleC_8H_source.html#l00012">solverU</a>.</p>
 <div class="dynheader">
@@ -176,7 +218,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UEqnSimple_8H_source.html#l00007">7</a> of file <a class="el" href="UEqnSimple_8H_source.html">UEqnSimple.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="UEqnSimple_8H_source.html#l00012">12</a> of file <a class="el" href="UEqnSimple_8H_source.html">UEqnSimple.H</a>.</p>
 
 </div>
 </div>

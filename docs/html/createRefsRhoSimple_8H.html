@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.5</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -118,6 +118,10 @@ Variables</h2></td></tr>
 <tr class="separator:aba679271c41582099c8ccf4827fdf217"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dda3394a2d970c17cbed23a149ebab2"><td class="memItemLeft" align="right" valign="top">const dictionary &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="createRefsRhoSimple_8H.html#a5dda3394a2d970c17cbed23a149ebab2">allOptions</a> = daOptionPtr_-&gt;getAllOptions()</td></tr>
 <tr class="separator:a5dda3394a2d970c17cbed23a149ebab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a0c1fa985c6e79bb4cdc55fa06b9b50"><td class="memItemLeft" align="right" valign="top">volVectorField &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="createRefsRhoSimple_8H.html#a9a0c1fa985c6e79bb4cdc55fa06b9b50">fvSource</a> = fvSourcePtr_()</td></tr>
+<tr class="separator:a9a0c1fa985c6e79bb4cdc55fa06b9b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c1a4a50db24a25015b039540f0baae"><td class="memItemLeft" align="right" valign="top">volScalarField &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="createRefsRhoSimple_8H.html#a67c1a4a50db24a25015b039540f0baae">fvSourceEnergy</a> = fvSourceEnergyPtr_()</td></tr>
+<tr class="separator:a67c1a4a50db24a25015b039540f0baae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a5dab848a7cf6b8fec1700b20296715a3"></a>
@@ -371,6 +375,40 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="createRefsRhoSimple_8H_source.html#l00015">15</a> of file <a class="el" href="createRefsRhoSimple_8H_source.html">createRefsRhoSimple.H</a>.</p>
+
+</div>
+</div>
+<a id="a9a0c1fa985c6e79bb4cdc55fa06b9b50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a0c1fa985c6e79bb4cdc55fa06b9b50">&#9670;&nbsp;</a></span>fvSource</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volVectorField&amp; fvSource = fvSourcePtr_()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="createRefsRhoSimple_8H_source.html#l00016">16</a> of file <a class="el" href="createRefsRhoSimple_8H_source.html">createRefsRhoSimple.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="UEqnRhoSimple_8H_source.html#l00003">if()</a>, <a class="el" href="DAFvSource_8H_source.html#l00097">DAFvSource::~DAFvSource()</a>, and <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00057">DAFvSourceActuatorDisk::~DAFvSourceActuatorDisk()</a>.</p>
+
+</div>
+</div>
+<a id="a67c1a4a50db24a25015b039540f0baae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67c1a4a50db24a25015b039540f0baae">&#9670;&nbsp;</a></span>fvSourceEnergy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volScalarField&amp; fvSourceEnergy = fvSourceEnergyPtr_()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="createRefsRhoSimple_8H_source.html#l00017">17</a> of file <a class="el" href="createRefsRhoSimple_8H_source.html">createRefsRhoSimple.H</a>.</p>
 
 </div>
 </div>

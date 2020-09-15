@@ -2,6 +2,6 @@
 <area shape="rect" id="node2" href="$classFoam_1_1DAObjFuncWallHeatFlux.html#aff7d67902025442333a1a88cce51695e" title="calculate the value of objective function " alt="" coords="126,5,337,47"/>
 <area shape="rect" id="node3" href="$classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="124,71,339,112"/>
 <area shape="rect" id="node4" href="$classFoam_1_1DAResidualRhoSimpleCFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="133,136,330,177"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAResidualRhoSimpleFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="133,201,330,243"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DAResidualTurboFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="132,267,331,308"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DAResidualTurboFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="132,201,331,243"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DAResidualRhoSimpleFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="133,267,330,308"/>
 </map>

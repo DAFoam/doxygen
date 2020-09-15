@@ -18,6 +18,7 @@ var searchData=
   ['_7edamodel',['~DAModel',['../classFoam_1_1DAModel.html#af48a80824287c228520e70a8a7e3d9d4',1,'Foam::DAModel']]],
   ['_7edaobjfunc',['~DAObjFunc',['../classFoam_1_1DAObjFunc.html#ad011152562dd3bdf33dbf635b2b6e854',1,'Foam::DAObjFunc']]],
   ['_7edaobjfuncforce',['~DAObjFuncForce',['../classFoam_1_1DAObjFuncForce.html#af9cc4c03ec8d850a64c4940dec74f657',1,'Foam::DAObjFuncForce']]],
+  ['_7edaobjfuncmass',['~DAObjFuncMass',['../classFoam_1_1DAObjFuncMass.html#a4d534ad95162703d3033119521604910',1,'Foam::DAObjFuncMass']]],
   ['_7edaobjfuncmassflowrate',['~DAObjFuncMassFlowRate',['../classFoam_1_1DAObjFuncMassFlowRate.html#a68a92becc00b2f801a4927dd835bbc87',1,'Foam::DAObjFuncMassFlowRate']]],
   ['_7edaobjfuncmoment',['~DAObjFuncMoment',['../classFoam_1_1DAObjFuncMoment.html#ae115b064f84ab922a882b657d9636597',1,'Foam::DAObjFuncMoment']]],
   ['_7edaobjfunctotalpressure',['~DAObjFuncTotalPressure',['../classFoam_1_1DAObjFuncTotalPressure.html#a5da31bf74937978a1a774648840aaacf',1,'Foam::DAObjFuncTotalPressure']]],
