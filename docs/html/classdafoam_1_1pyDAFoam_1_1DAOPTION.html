@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.6</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.0</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -98,12 +98,6 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:abb1c0f49077467d61f08ca018e680a3b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#abb1c0f49077467d61f08ca018e680a3b">solverName</a> = &quot;DASimpleFoam&quot;</td></tr>
 <tr class="memdesc:abb1c0f49077467d61f08ca018e680a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the DASolver to use for primal and adjoint computation.  <a href="#abb1c0f49077467d61f08ca018e680a3b">More...</a><br /></td></tr>
 <tr class="separator:abb1c0f49077467d61f08ca018e680a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac847f72f94d2be295dd6bccdddcd6aeb"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#ac847f72f94d2be295dd6bccdddcd6aeb">flowCondition</a> = &quot;Incompressible&quot;</td></tr>
-<tr class="memdesc:ac847f72f94d2be295dd6bccdddcd6aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The flow condition, which needs to be consistant with the "solverName".  <a href="#ac847f72f94d2be295dd6bccdddcd6aeb">More...</a><br /></td></tr>
-<tr class="separator:ac847f72f94d2be295dd6bccdddcd6aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08aa85a12a345703bd03065d86c118cc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a08aa85a12a345703bd03065d86c118cc">turbulenceModel</a> = &quot;SpalartAllmaras&quot;</td></tr>
-<tr class="memdesc:a08aa85a12a345703bd03065d86c118cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of turbulene model to use.  <a href="#a08aa85a12a345703bd03065d86c118cc">More...</a><br /></td></tr>
-<tr class="separator:a08aa85a12a345703bd03065d86c118cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a144e534d2424109c2d3281d10963b4b1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a144e534d2424109c2d3281d10963b4b1">primalMinResTol</a> = 1.0e-8</td></tr>
 <tr class="memdesc:a144e534d2424109c2d3281d10963b4b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The convergence tolerance for the primal solver.  <a href="#a144e534d2424109c2d3281d10963b4b1">More...</a><br /></td></tr>
 <tr class="separator:a144e534d2424109c2d3281d10963b4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,16 +117,16 @@ Static Public Attributes</h2></td></tr>
 <tr class="memdesc:a04f9bc34ea8e77fddff91a1ce8c8c793"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of patch names for the design surface.  <a href="#a04f9bc34ea8e77fddff91a1ce8c8c793">More...</a><br /></td></tr>
 <tr class="separator:a04f9bc34ea8e77fddff91a1ce8c8c793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0758d19c311653a16192d9f7f567fcb7"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a0758d19c311653a16192d9f7f567fcb7">fvSource</a> = {}</td></tr>
-<tr class="memdesc:a0758d19c311653a16192d9f7f567fcb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information for the finite volume source term, which will be added in the momentum equation We support multiple soure terms Example "fvSource": { "disk1": { "type": "actuatorDisk", # Actuator disk source.  <a href="#a0758d19c311653a16192d9f7f567fcb7">More...</a><br /></td></tr>
+<tr class="memdesc:a0758d19c311653a16192d9f7f567fcb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information for the finite volume source term, which will be added in the momentum equation We support multiple source terms Example "fvSource": { "disk1": { "type": "actuatorDisk", # Actuator disk source.  <a href="#a0758d19c311653a16192d9f7f567fcb7">More...</a><br /></td></tr>
 <tr class="separator:a0758d19c311653a16192d9f7f567fcb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0389b9ca19e1598db51bb04b39eebd3f"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a0389b9ca19e1598db51bb04b39eebd3f">primalVarBounds</a> = {}</td></tr>
+<tr class="memitem:a0389b9ca19e1598db51bb04b39eebd3f"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a0389b9ca19e1598db51bb04b39eebd3f">primalVarBounds</a></td></tr>
 <tr class="memdesc:a0389b9ca19e1598db51bb04b39eebd3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The variable upper and lower bounds for primal solution.  <a href="#a0389b9ca19e1598db51bb04b39eebd3f">More...</a><br /></td></tr>
 <tr class="separator:a0389b9ca19e1598db51bb04b39eebd3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a150baf55bd83331cb8512ae8302090b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a150baf55bd83331cb8512ae8302090b2">multiPoint</a> = False</td></tr>
 <tr class="memdesc:a150baf55bd83331cb8512ae8302090b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to perform multipoint optimization.  <a href="#a150baf55bd83331cb8512ae8302090b2">More...</a><br /></td></tr>
 <tr class="separator:a150baf55bd83331cb8512ae8302090b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2562f81d99fa575a43bf058b7d50284a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a2562f81d99fa575a43bf058b7d50284a">nMultiPoints</a> = 1</td></tr>
-<tr class="memdesc:a2562f81d99fa575a43bf058b7d50284a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If multiPoint = True, how many primal configuartions for the multipoint optimization.  <a href="#a2562f81d99fa575a43bf058b7d50284a">More...</a><br /></td></tr>
+<tr class="memdesc:a2562f81d99fa575a43bf058b7d50284a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If multiPoint = True, how many primal configurations for the multipoint optimization.  <a href="#a2562f81d99fa575a43bf058b7d50284a">More...</a><br /></td></tr>
 <tr class="separator:a2562f81d99fa575a43bf058b7d50284a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d213d605750e92554f5656509114091"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a6d213d605750e92554f5656509114091">adjPartDerivFDStep</a> = {&quot;State&quot;: 1.0e-6, &quot;FFD&quot;: 1.0e-3, &quot;BC&quot;: 1.0e-2, &quot;AOA&quot;: 1.0e-3}</td></tr>
 <tr class="memdesc:a6d213d605750e92554f5656509114091"><td class="mdescLeft">&#160;</td><td class="mdescRight">The step size for finite-difference computation of partial derivatives.  <a href="#a6d213d605750e92554f5656509114091">More...</a><br /></td></tr>
@@ -140,6 +134,9 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:aa4cc5b4d3f9c004f2c3a894da0233b94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#aa4cc5b4d3f9c004f2c3a894da0233b94">transonicPCOption</a> = -1</td></tr>
 <tr class="memdesc:aa4cc5b4d3f9c004f2c3a894da0233b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which options to use to improve the adjoint equation convergence of transonic conditions This is used only for transonic solvers such as DARhoSimpleCFoam.  <a href="#aa4cc5b4d3f9c004f2c3a894da0233b94">More...</a><br /></td></tr>
 <tr class="separator:aa4cc5b4d3f9c004f2c3a894da0233b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af56d736e522ae65ca8fd57b51dbb4f54"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#af56d736e522ae65ca8fd57b51dbb4f54">hybridAdjoint</a> = {&quot;active&quot;: False, &quot;nTimeInstances&quot;: -1, &quot;periodicity&quot;: -1.0}</td></tr>
+<tr class="memdesc:af56d736e522ae65ca8fd57b51dbb4f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options for hybrid adjoint.  <a href="#af56d736e522ae65ca8fd57b51dbb4f54">More...</a><br /></td></tr>
+<tr class="separator:af56d736e522ae65ca8fd57b51dbb4f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab43369caca2efa9c97ad78d1546add6e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#ab43369caca2efa9c97ad78d1546add6e">rootDir</a> = &quot;./&quot;</td></tr>
 <tr class="memdesc:ab43369caca2efa9c97ad78d1546add6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The root directory is usually .  <a href="#ab43369caca2efa9c97ad78d1546add6e">More...</a><br /></td></tr>
 <tr class="separator:ab43369caca2efa9c97ad78d1546add6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,6 +155,9 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a9ff5146359b6e4d978d884d8a83218a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a9ff5146359b6e4d978d884d8a83218a4">printInterval</a> = 100</td></tr>
 <tr class="memdesc:a9ff5146359b6e4d978d884d8a83218a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The print interval of primal and adjoint solution, e.g., how frequent to print the primal solution steps, how frequent to print the dRdWT partial derivative computation.  <a href="#a9ff5146359b6e4d978d884d8a83218a4">More...</a><br /></td></tr>
 <tr class="separator:a9ff5146359b6e4d978d884d8a83218a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d56a58aed1810e2547fb93f1eed6757"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a6d56a58aed1810e2547fb93f1eed6757">printIntervalUnsteady</a> = 500</td></tr>
+<tr class="memdesc:a6d56a58aed1810e2547fb93f1eed6757"><td class="mdescLeft">&#160;</td><td class="mdescRight">The print interval of unsteady primal solvers, e.g., for DAPisoFoam.  <a href="#a6d56a58aed1810e2547fb93f1eed6757">More...</a><br /></td></tr>
+<tr class="separator:a6d56a58aed1810e2547fb93f1eed6757"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5c782ff8156e1ff2a04272df1215f34"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#ae5c782ff8156e1ff2a04272df1215f34">primalMinResTolDiff</a> = 1.0e2</td></tr>
 <tr class="memdesc:ae5c782ff8156e1ff2a04272df1215f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Users can adjust primalMinResTolDiff to tweak how much difference between primalMinResTol and the actual primal convergence is consider to be fail=True for the primal solution.  <a href="#ae5c782ff8156e1ff2a04272df1215f34">More...</a><br /></td></tr>
 <tr class="separator:ae5c782ff8156e1ff2a04272df1215f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,7 +167,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:aa2abab9dfb63a60be2eaa9ea8e9392d3"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#aa2abab9dfb63a60be2eaa9ea8e9392d3">adjEqnOption</a></td></tr>
 <tr class="memdesc:aa2abab9dfb63a60be2eaa9ea8e9392d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Petsc options for solving the adjoint linear equation.  <a href="#aa2abab9dfb63a60be2eaa9ea8e9392d3">More...</a><br /></td></tr>
 <tr class="separator:aa2abab9dfb63a60be2eaa9ea8e9392d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecfe561132ce0812baf0c4774d5b47de"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#aecfe561132ce0812baf0c4774d5b47de">normalizeResiduals</a> = [&quot;URes&quot;, &quot;pRes&quot;, &quot;nuTildaRes&quot;, &quot;phiRes&quot;, &quot;TRes&quot;]</td></tr>
+<tr class="memitem:aecfe561132ce0812baf0c4774d5b47de"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#aecfe561132ce0812baf0c4774d5b47de">normalizeResiduals</a></td></tr>
 <tr class="memdesc:aecfe561132ce0812baf0c4774d5b47de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalization for residuals.  <a href="#aecfe561132ce0812baf0c4774d5b47de">More...</a><br /></td></tr>
 <tr class="separator:aecfe561132ce0812baf0c4774d5b47de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addfae3166090300466e2d45670750447"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#addfae3166090300466e2d45670750447">maxResConLv4JacPCMat</a></td></tr>
@@ -196,7 +196,7 @@ Static Public Attributes</h2></td></tr>
 <div class="textblock"><pre class="fragment">Define a set of options to use in PYDAFOAM and set their initial values.
 This class will be used by PYDAFOAM._getDefOptions()
 
-NOTE: Give an initial value for a new option, this help PYDAFOAM determine the type of this 
+NOTE: Give an initial value for a new option, this help PYDAFOAM determine the type of this
 option. If it is a list, give at least one default value. If it is a dict, you can leave it
 blank, e.g., {}. Also, use ## to add comments before the new option such that these comments
 will be  picked up by Doxygen. If possible, give examples.
@@ -229,7 +229,7 @@ NOTE: We group these options into three categories.
 </div><div class="memdoc">
 <pre class="fragment">Nothing needs to be done for initializing DAOPTION
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00320">320</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00453">453</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -255,61 +255,15 @@ NOTE: We group these options into three categories.
 </div><div class="memdoc">
 
 <p>The name of the DASolver to use for primal and adjoint computation. </p>
-<p>See dafoam/src/adjoint/DASolver for all avaiable solvers </p>
-
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00054">54</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
-
-</div>
-</div>
-<a id="ac847f72f94d2be295dd6bccdddcd6aeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac847f72f94d2be295dd6bccdddcd6aeb">&#9670;&nbsp;</a></span>flowCondition</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string flowCondition = &quot;Incompressible&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The flow condition, which needs to be consistant with the "solverName". </p>
-<p>For example, DASimpleFoam &lt;-&gt; Incompressible, DARhoSimpleFoam &lt;-&gt; Compressible </p>
-
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00058">58</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
-
-</div>
-</div>
-<a id="a08aa85a12a345703bd03065d86c118cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08aa85a12a345703bd03065d86c118cc">&#9670;&nbsp;</a></span>turbulenceModel</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string turbulenceModel = &quot;SpalartAllmaras&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The name of turbulene model to use. </p>
-<p>This needs to be consistant with the value in constant/turbulenceProperties </p>
+<p>See dafoam/src/adjoint/DASolver for more details Currently support:</p><ul>
+<li>DASimpleFoam: Incompressible steady-state flow solver for Navier-Stokes equations</li>
+<li>DASimpleTFoam: Incompressible steady-state flow solver for Navier-Stokes equations with temperature</li>
+<li>DAPisoFoam: Incompressible transient flow solver for Navier-Stokes equations</li>
+<li>DARhoSimpleFoam: Compressible steady-state flow solver for Navier-Stokes equations (subsonic)</li>
+<li>DARhoSimpleCFoam: Compressible steady-state flow solver for Navier-Stokes equations (transonic)</li>
+<li>DATurboFoam: Compressible steady-state flow solver for Navier-Stokes equations (turbomachinery)</li>
+<li>DASolidDisplacementFoam: Steady-state structural solver for linear elastic equations </li>
+</ul>
 
 <p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00062">62</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
@@ -390,7 +344,7 @@ NOTE: We group these options into three categories.
 </div><div class="memdoc">
 
 <p>State normalization for dRdWT computation. </p>
-<p>Typically, we set far field value for each state variable. NOTE: If you forget to set normalization value for a state variable, the adjoint may not converge! For "phi", use 1.0 to normalization Example normalizeStates = {"U": 10.0, "p": 101325.0, "phi": 1.0, "nuTilda": 1.e-4} </p>
+<p>Typically, we set far field value for each state variable. NOTE: If you forget to set normalization value for a state variable, the adjoint may not converge or it may be inaccurate! For "phi", use 1.0 to normalization Example normalizeStates = {"U": 10.0, "p": 101325.0, "phi": 1.0, "nuTilda": 1.e-4} </p>
 
 <p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00086">86</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
@@ -417,9 +371,9 @@ NOTE: We group these options into three categories.
 </div><div class="memdoc">
 
 <p>Information on objective function. </p>
-<p>Each objective function requries a different input forma But for all objectives, we need to give a name to the objective function, e.g., CD or any other prefered name, and the information for each part of the objective function. Most of the time, the objective has only one part (in this case part1), but one can also combine two parts of objectives, e.g., we can define a new objective that is the sum of force and moment. For each part, we need to define the type of obejective (e.g., force, moment; we need to use the reserved type names), how to select the discrete mesh faces to compute the objective (e.g., we select them from the name of a patch patchToFace), the name of the patch (wing) for patchToFace, the scaling factor "scale", and whether to compute adjoint for this objective "addToAdjoint". For force objectives, we need to project the force vector to a specific direction. The following example defines that CD is the force that is parallel to flow (parallelToFlow). Alternative, we can also use fixedDirection and provide a direction key for force, i.e., "directionMode": "fixedDirection", "direction": [1.0, 0.0, 0.0]. Since we select parallelToFlow, we need to prescribe the name of angle of attack design variable to determine the flow direction. Here alpha will be defined in runScript.py: DVGeo.addGeoDVGlobal("alpha", [alpha0], alpha, lower=-10.0, upper=10.0, scale=1.0). NOTE: if no alpha is added in DVGeo.addGeoDVGlobal, we can NOT use parallelToFlow. For this case, we have to use "directionMode": "fixedDirection". Example "objFunc": { "CD": { "part1": { "type": "force", "source": "patchToFace", "patches": ["wing"], "directionMode": "parallelToFlow", "alphaName": "alpha", "scale": 1.0 / (0.5 * UmagIn * UmagIn * ARef), "addToAdjoint": True, } }, "CL": { "part1": { "type": "force", "source": "patchToFace", "patches": ["wing"], "directionMode": "normalToFlow", "alphaName": "alpha", "scale": 1.0 / (0.5 * UmagIn * UmagIn * ARef), "addToAdjoint": True, } }, "CMZ": { "part1": { "type": "moment", "source": "patchToFace", "patches": ["wing"], "axis": [0.0, 0.0, 1.0], "center": [0.25, 0.0, 0.05], "scale": 1.0 / (0.5 * UmagIn * UmagIn * ARef * LRef), "addToAdjoint": True, } }, }, </p>
+<p>Each objective function requires a different input forma But for all objectives, we need to give a name to the objective function, e.g., CD or any other preferred name, and the information for each part of the objective function. Most of the time, the objective has only one part (in this case part1), but one can also combine two parts of objectives, e.g., we can define a new objective that is the sum of force and moment. For each part, we need to define the type of objective (e.g., force, moment; we need to use the reserved type names), how to select the discrete mesh faces to compute the objective (e.g., we select them from the name of a patch patchToFace), the name of the patch (wing) for patchToFace, the scaling factor "scale", and whether to compute adjoint for this objective "addToAdjoint". For force objectives, we need to project the force vector to a specific direction. The following example defines that CD is the force that is parallel to flow (parallelToFlow). Alternative, we can also use fixedDirection and provide a direction key for force, i.e., "directionMode": "fixedDirection", "direction": [1.0, 0.0, 0.0]. Since we select parallelToFlow, we need to prescribe the name of angle of attack design variable to determine the flow direction. Here alpha will be defined in runScript.py: DVGeo.addGeoDVGlobal("alpha", [alpha0], alpha, lower=-10.0, upper=10.0, scale=1.0). NOTE: if no alpha is added in DVGeo.addGeoDVGlobal, we can NOT use parallelToFlow. For this case, we have to use "directionMode": "fixedDirection". Example "objFunc": { "CD": { "part1": { "type": "force", "source": "patchToFace", "patches": ["wing"], "directionMode": "parallelToFlow", "alphaName": "alpha", "scale": 1.0 / (0.5 * UmagIn * UmagIn * ARef), "addToAdjoint": True, } }, "CL": { "part1": { "type": "force", "source": "patchToFace", "patches": ["wing"], "directionMode": "normalToFlow", "alphaName": "alpha", "scale": 1.0 / (0.5 * UmagIn * UmagIn * ARef), "addToAdjoint": True, } }, "CMZ": { "part1": { "type": "moment", "source": "patchToFace", "patches": ["wing"], "axis": [0.0, 0.0, 1.0], "center": [0.25, 0.0, 0.05], "scale": 1.0 / (0.5 * UmagIn * UmagIn * ARef * LRef), "addToAdjoint": True, } }, "TPR": { "part1": { "type": "totalPressureRatio", "source": "patchToFace", "patches": ["inlet", "outlet"], "inletPatches": ["inlet"], "outletPatches": ["outlet"], "scale": 1.0, "addToAdjoint": True, } }, "TTR": { "part1": { "type": "totalTemperatureRatio", "source": "patchToFace", "patches": ["inlet", "outlet"], "inletPatches": ["inlet"], "outletPatches": ["outlet"], "scale": 1.0, "addToAdjoint": False, } }, "MFR": { "part1": { "type": "massFlowRate", "source": "patchToFace", "patches": ["inlet"], "scale": -1.0, "addToAdjoint": True, } }, "PL": { "part1": { "type": "totalPressure", "source": "patchToFace", "patches": ["inlet"], "scale": 1.0 / (0.5 * U0 * U0), "addToAdjoint": True, }, "part2": { "type": "totalPressure", "source": "patchToFace", "patches": ["outlet"], "scale": -1.0 / (0.5 * U0 * U0), "addToAdjoint": True, } }, "NU": { "part1": { "type": "wallHeatFlux", "source": "patchToFace", "patches": ["ubend"], "scale": 1.0, "addToAdjoint": True, } }, "VMS": { "part1": { "type": "vonMisesStressKS", "source": "boxToCell", "min": [-10.0, -10.0, -10.0], "max": [10.0, 10.0, 10.0], "scale": 1.0, "coeffKS": 2.0e-3, "addToAdjoint": True, } }, "M": { "part1": { "type": "mass", "source": "boxToCell", "min": [-10.0, -10.0, -10.0], "max": [10.0, 10.0, 10.0], "scale": 1.0, "addToAdjoint": True, } }, }, </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00142">142</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00219">219</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -446,7 +400,7 @@ NOTE: We group these options into three categories.
 <p>Design variable information. </p>
 <p>Different type of design variables require different keys For alpha, we need to prescribe a list of far field patch names from which the angle of attack is computed, this is usually a far field patch. Also, we need to prescribe flow and normal axies, and alpha = atan( U_normal / U_flow ) at patches Example designVar = { "shapey" : {"designVarType": "FFD"}, "twist": {"designVarType": "FFD"}, "alpha" = { "designVarType": "AOA", "patches": ["farField"], "flowAxis": "x", "normalAxis": "y" }, "ux0" = { "designVarType": "BC", "patches": ["inlet"], "variable": "U", "comp": 0 }, } </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00165">165</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00242">242</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -473,7 +427,7 @@ NOTE: We group these options into three categories.
 <p>List of patch names for the design surface. </p>
 <p>These patch names need to be of wall type and shows up in the constant/polyMesh/boundary file </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00169">169</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00246">246</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -497,10 +451,10 @@ NOTE: We group these options into three categories.
 </table>
 </div><div class="memdoc">
 
-<p>Information for the finite volume source term, which will be added in the momentum equation We support multiple soure terms Example "fvSource": { "disk1": { "type": "actuatorDisk", # Actuator disk source. </p>
-<p>This is a child class in DAFvSource "source": "cylinderAnnulusToCell", # Define a volume to add the fvSource term "p1": [-0.4, -0.1, 0.05], # p1 and p2 define the axis and width "p2": [-0.1, -0.1, 0.05], # p2-p1 should be streamwise "innerRadius": 0.01, "outerRadius": 0.5, "rotDir": "left", "scale": 50.0, "POD": 0.7, # pitch/diameter }, "disk2": { "type": "actuatorDisk", "source": "cylinderAnnulusToCell", "p1": [-0.4, 0.1, 0.05], "p2": [-0.1, 0.1, 0.05], "innerRadius": 0.01, "outerRadius": 0.5, "rotDir": "right", "scale": 25.0, "POD": 1.0, }, }, </p>
+<p>Information for the finite volume source term, which will be added in the momentum equation We support multiple source terms Example "fvSource": { "disk1": { "type": "actuatorDisk", # Actuator disk source. </p>
+<p>This is a child class in DAFvSource "source": "cylinderAnnulusToCell", # Define a volume to add the fvSource term "p1": [-0.4, -0.1, 0.05], # p1 and p2 define the axis and width "p2": [-0.1, -0.1, 0.05], # p2-p1 should be streamwise "innerRadius": 0.01, "outerRadius": 0.5, "rotDir": "left", "scale": 50.0, "POD": 0.7, # pitch/diameter }, "disk2": { "type": "actuatorDisk", "source": "cylinderAnnulusToCell", "p1": [-0.4, 0.1, 0.05], "p2": [-0.1, 0.1, 0.05], "innerRadius": 0.01, "outerRadius": 0.5, "rotDir": "right", "scale": 25.0, # scale the source such the integral equals desired thrust "POD": 1.0, }, "line1": { "type": "actuatorPoint", "smoothFunction": "hyperbolic", # or gaussian "center": [-0.55, 0.0, 0.05], # center and size define a rectangular "size": [0.2, 0.2, 0.1], "amplitude": [0.0, 0.2, 0.0], "thrustDirIdx": 0, "periodicity": 0.1, "eps": 10.0, "scale": 10.0 # scale the source such the integral equals desired thrust }, }, </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00202">202</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00291">291</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -514,7 +468,7 @@ NOTE: We group these options into three categories.
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">dictionary primalVarBounds = {}</td>
+          <td class="memname">dictionary primalVarBounds</td>
         </tr>
       </table>
   </td>
@@ -523,11 +477,11 @@ NOTE: We group these options into three categories.
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">=  {</div><div class="line">        <span class="stringliteral">&quot;UMax&quot;</span>: 1e16,</div><div class="line">        <span class="stringliteral">&quot;UMin&quot;</span>: -1e16,</div><div class="line">        <span class="stringliteral">&quot;pMax&quot;</span>: 1e16,</div><div class="line">        <span class="stringliteral">&quot;pMin&quot;</span>: -1e16,</div><div class="line">        <span class="stringliteral">&quot;p_rghMax&quot;</span>: 1e16,</div><div class="line">        <span class="stringliteral">&quot;p_rghMin&quot;</span>: -1e16,</div><div class="line">        <span class="stringliteral">&quot;eMax&quot;</span>: 1e16,</div><div class="line">        <span class="stringliteral">&quot;eMin&quot;</span>: -1e16,</div><div class="line">        <span class="stringliteral">&quot;TMax&quot;</span>: 1e16,</div><div class="line">        <span class="stringliteral">&quot;TMin&quot;</span>: -1e16,</div><div class="line">        <span class="stringliteral">&quot;hMax&quot;</span>: 1e16,</div><div class="line">        <span class="stringliteral">&quot;hMin&quot;</span>: -1e16,</div><div class="line">        <span class="stringliteral">&quot;DMax&quot;</span>: 1e16,</div><div class="line">        <span class="stringliteral">&quot;DMin&quot;</span>: -1e16,</div><div class="line">        <span class="stringliteral">&quot;rhoMax&quot;</span>: 1e16,</div><div class="line">        <span class="stringliteral">&quot;rhoMin&quot;</span>: -1e16,</div><div class="line">        <span class="stringliteral">&quot;nuTildaMax&quot;</span>: 1e16,</div><div class="line">        <span class="stringliteral">&quot;nuTildaMin&quot;</span>: 1e-16,</div><div class="line">        <span class="stringliteral">&quot;kMax&quot;</span>: 1e16,</div><div class="line">        <span class="stringliteral">&quot;kMin&quot;</span>: 1e-16,</div><div class="line">        <span class="stringliteral">&quot;omegaMax&quot;</span>: 1e16,</div><div class="line">        <span class="stringliteral">&quot;omegaMin&quot;</span>: 1e-16,</div><div class="line">        <span class="stringliteral">&quot;epsilonMax&quot;</span>: 1e16,</div><div class="line">        <span class="stringliteral">&quot;epsilonMin&quot;</span>: 1e-16,</div><div class="line">    }</div></div><!-- fragment -->
 <p>The variable upper and lower bounds for primal solution. </p>
-<p>The key is variable+"UpperBound". Setting the bounds increases the robustness of primal solution for compressible solvers. Example primalValBounds = {"UUpperBound": 1000, "ULowerBound": -1000, "pUpperBound": 1000000} </p>
+<p>The key is variable+"Max/Min". Setting the bounds increases the robustness of primal solution for compressible solvers. Also, we set lower bounds for turbulence variables to ensure they are physical Example primalValBounds = {"UMax": 1000, "UMin": -1000, "pMax": 1000000} </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00208">208</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00298">298</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -553,7 +507,7 @@ NOTE: We group these options into three categories.
 
 <p>Whether to perform multipoint optimization. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00211">211</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00326">326</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -577,9 +531,9 @@ NOTE: We group these options into three categories.
 </table>
 </div><div class="memdoc">
 
-<p>If multiPoint = True, how many primal configuartions for the multipoint optimization. </p>
+<p>If multiPoint = True, how many primal configurations for the multipoint optimization. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00214">214</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00329">329</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -606,7 +560,7 @@ NOTE: We group these options into three categories.
 <p>The step size for finite-difference computation of partial derivatives. </p>
 <p>The default values will work for most of the case. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00218">218</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00333">333</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -632,7 +586,34 @@ NOTE: We group these options into three categories.
 
 <p>Which options to use to improve the adjoint equation convergence of transonic conditions This is used only for transonic solvers such as DARhoSimpleCFoam. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00222">222</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00337">337</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+
+</div>
+</div>
+<a id="af56d736e522ae65ca8fd57b51dbb4f54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af56d736e522ae65ca8fd57b51dbb4f54">&#9670;&nbsp;</a></span>hybridAdjoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dictionary hybridAdjoint = {&quot;active&quot;: False, &quot;nTimeInstances&quot;: -1, &quot;periodicity&quot;: -1.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Options for hybrid adjoint. </p>
+<p>Here nTimeInstances is the number of time instances periodicity is the periodicity of flow oscillation </p>
+
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00341">341</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -659,7 +640,7 @@ NOTE: We group these options into three categories.
 <p>The root directory is usually . </p>
 <p>/ </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00229">229</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00348">348</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -686,7 +667,7 @@ NOTE: We group these options into three categories.
 <p>The run status which can be solvePrimal, solveAdjoint, or calcTotalDeriv. </p>
 <p>This parameter is used internally, so users should never change this option in the Python layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00233">233</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00352">352</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -713,7 +694,7 @@ NOTE: We group these options into three categories.
 <p>Whether to print all options to screen before optimization. </p>
 <p>Needed only for debugging. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00236">236</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00355">355</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -739,7 +720,7 @@ NOTE: We group these options into three categories.
 
 <p>Whether running the optimization in the debug mode, which prints extra information. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00239">239</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00358">358</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -765,7 +746,7 @@ NOTE: We group these options into three categories.
 
 <p>Whether to write all the Jacobian matrices to file for debugging. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00242">242</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00361">361</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -791,7 +772,33 @@ NOTE: We group these options into three categories.
 
 <p>The print interval of primal and adjoint solution, e.g., how frequent to print the primal solution steps, how frequent to print the dRdWT partial derivative computation. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00246">246</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00365">365</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+
+</div>
+</div>
+<a id="a6d56a58aed1810e2547fb93f1eed6757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d56a58aed1810e2547fb93f1eed6757">&#9670;&nbsp;</a></span>printIntervalUnsteady</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int printIntervalUnsteady = 500</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The print interval of unsteady primal solvers, e.g., for DAPisoFoam. </p>
+
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00368">368</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -817,7 +824,7 @@ NOTE: We group these options into three categories.
 
 <p>Users can adjust primalMinResTolDiff to tweak how much difference between primalMinResTol and the actual primal convergence is consider to be fail=True for the primal solution. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00250">250</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00372">372</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -844,7 +851,7 @@ NOTE: We group these options into three categories.
 <p>Whether to use graph coloring to accelerate partial derivative computation. </p>
 <p>Unless you are debugging the accuracy of partial computation, always set it to True </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00254">254</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00376">376</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -871,7 +878,7 @@ NOTE: We group these options into three categories.
 <p>The Petsc options for solving the adjoint linear equation. </p>
 <p>These options should work for most of the case. If the adjoint does not converge, try to increase pcFillLevel to 2, or try "jacMatReOrdering": "nd" </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00259">259</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00381">381</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -885,7 +892,7 @@ NOTE: We group these options into three categories.
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">list normalizeResiduals = [&quot;URes&quot;, &quot;pRes&quot;, &quot;nuTildaRes&quot;, &quot;phiRes&quot;, &quot;TRes&quot;]</td>
+          <td class="memname">list normalizeResiduals</td>
         </tr>
       </table>
   </td>
@@ -894,11 +901,11 @@ NOTE: We group these options into three categories.
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">=  [</div><div class="line">        <span class="stringliteral">&quot;URes&quot;</span>,</div><div class="line">        <span class="stringliteral">&quot;pRes&quot;</span>,</div><div class="line">        <span class="stringliteral">&quot;p_rghRes&quot;</span>,</div><div class="line">        <span class="stringliteral">&quot;nuTildaRes&quot;</span>,</div><div class="line">        <span class="stringliteral">&quot;phiRes&quot;</span>,</div><div class="line">        <span class="stringliteral">&quot;TRes&quot;</span>,</div><div class="line">        <span class="stringliteral">&quot;DRes&quot;</span>,</div><div class="line">        <span class="stringliteral">&quot;kRes&quot;</span>,</div><div class="line">        <span class="stringliteral">&quot;omegaRes&quot;</span>,</div><div class="line">        <span class="stringliteral">&quot;epsilonRes&quot;</span>,</div><div class="line">    ]</div></div><!-- fragment -->
 <p>Normalization for residuals. </p>
 <p>We should normalize all residuals! </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00273">273</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00395">395</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -925,7 +932,7 @@ NOTE: We group these options into three categories.
 <p>The maximal connectivity level for the dRdWTPC matrix. </p>
 <p>Reducing the connectivity level reduce the memory usage, however, it may slow down the adjoint equation convergence. The default value should have the best convergence speed but not optimal memory usage. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00278">278</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00411">411</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -951,7 +958,7 @@ NOTE: We group these options into three categories.
 <b>Initial value:</b><div class="fragment"><div class="line">=  {</div><div class="line">        <span class="stringliteral">&quot;dRdW&quot;</span>: 1.0e-30,</div><div class="line">        <span class="stringliteral">&quot;dRdWPC&quot;</span>: 1.0e-30,</div><div class="line">    }</div></div><!-- fragment -->
 <p>The min bound for Jacobians, any value that is smaller than the bound will be set to 0 Setting a large lower bound for preconditioner (PC) can help to reduce memory. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00293">293</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00426">426</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -977,7 +984,7 @@ NOTE: We group these options into three categories.
 
 <p>The maximal iterations of tractionDisplacement boundary conditions. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00299">299</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00432">432</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -1004,7 +1011,7 @@ NOTE: We group these options into three categories.
 <p>decomposeParDict option. </p>
 <p>This file will be automatically written such that users can run optimization with any number of CPU cores without the need to manually change decomposeParDict </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00304">304</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00437">437</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -1031,7 +1038,7 @@ NOTE: We group these options into three categories.
 <p>The ordering of state variable. </p>
 <p>Options are: state or cell. Most of the case, the state odering is the best choice. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00312">312</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00445">445</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -1058,7 +1065,7 @@ NOTE: We group these options into three categories.
 <p>Default name for the mesh surface family. </p>
 <p>Users typically don't need to change </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00315">315</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00448">448</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -1085,7 +1092,7 @@ NOTE: We group these options into three categories.
 <p>Default name for the design surface family. </p>
 <p>Users typically don't need to change </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00318">318</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00451">451</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>

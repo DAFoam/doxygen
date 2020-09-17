@@ -1,8 +1,6 @@
 <map id="~SpalartAllmarasFv3" name="~SpalartAllmarasFv3">
-<area shape="rect" id="node2" href="$classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a651877cab924009dde4903794ff93639" title="bound the turbulence vars " alt="" coords="315,5,392,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3ae44b28050c3aa494c1d8e18cf618c1" title="correct" alt="" coords="197,31,260,57"/>
-<area shape="rect" id="node4" href="$classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3db17e0612d3f43dfc21d593b7f7a942" title="DnuTildaEff" alt="" coords="308,56,399,83"/>
-<area shape="rect" id="node5" href="$classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a7593db4148b0ba5155861a0292ec9c32" title="epsilon" alt="" coords="197,132,260,159"/>
-<area shape="rect" id="node6" href="$classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a2e01d66cd4db498fd5e869ea66925978" title="k" alt="" coords="209,183,248,209"/>
-<area shape="rect" id="node7" href="$classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#af816873151ddb0126e98bb2f914d8ed5" title="read" alt="" coords="205,233,252,260"/>
+<area shape="rect" id="node2" href="$classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3ae44b28050c3aa494c1d8e18cf618c1" title="correct" alt="" coords="197,5,260,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a7593db4148b0ba5155861a0292ec9c32" title="epsilon" alt="" coords="197,56,260,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a2e01d66cd4db498fd5e869ea66925978" title="k" alt="" coords="209,107,248,133"/>
+<area shape="rect" id="node5" href="$classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#af816873151ddb0126e98bb2f914d8ed5" title="read" alt="" coords="205,157,252,184"/>
 </map>

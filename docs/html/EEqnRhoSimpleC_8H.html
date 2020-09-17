@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.6</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.0</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -87,10 +87,10 @@ This graph shows which files directly or indirectly include this file:</div>
 Functions</h2></td></tr>
 <tr class="memitem:ad6fb53c980fcf1747064d331735299bc"><td class="memItemLeft" align="right" valign="top">fvScalarMatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EEqnRhoSimpleC_8H.html#ad6fb53c980fcf1747064d331735299bc">EEqn</a> (fvm::div(<a class="el" href="pyColoringCompressible_2createFields_8H.html#a6a231aded4fb2c165cab36375ba435b7">phi</a>, he)+(he.name()==&quot;e&quot; ? fvc::div(<a class="el" href="pyColoringCompressible_2createFields_8H.html#a6a231aded4fb2c165cab36375ba435b7">phi</a>, volScalarField(&quot;Ekp&quot;, 0.5 *magSqr(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>)+<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>/<a class="el" href="pyColoringCompressible_2createFields_8H.html#a5c94c90bde43f26b8fb11b35115482c6">rho</a>)) :fvc::div(<a class="el" href="pyColoringCompressible_2createFields_8H.html#a6a231aded4fb2c165cab36375ba435b7">phi</a>, volScalarField(&quot;K&quot;, 0.5 *magSqr(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>)))) - fvm::laplacian(turbulencePtr_-&gt;<a class="el" href="TEqnSimpleT_8H.html#ad145252fff6dd3b727ad3f1641750383">alphaEff</a>(), he))</td></tr>
 <tr class="separator:ad6fb53c980fcf1747064d331735299bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ecae8247fc703d8dcb2196094fc3aa4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="EEqnTurbo_8H.html#a68eadeab1dd227b276c927fd363de962">EEqn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EEqnRhoSimpleC_8H.html#a8ecae8247fc703d8dcb2196094fc3aa4">relax</a> ()</td></tr>
-<tr class="separator:a8ecae8247fc703d8dcb2196094fc3aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa695851e81a1b03c9630923a5639f7cd"><td class="memItemLeft" align="right" valign="top">this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EEqnRhoSimpleC_8H.html#aa695851e81a1b03c9630923a5639f7cd">primalResidualControl&lt; scalar &gt;</a> (<a class="el" href="EEqnTurbo_8H.html#a5e9344929be7181ddc4bf48c83790225">solverE</a>, nSolverIters, printInterval, &quot;he&quot;)</td></tr>
-<tr class="separator:aa695851e81a1b03c9630923a5639f7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b1e3cf7921c1d57830a6970779f3d24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="EEqnTurbo_8H.html#a68eadeab1dd227b276c927fd363de962">EEqn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EEqnRhoSimpleC_8H.html#a9b1e3cf7921c1d57830a6970779f3d24">relax</a> ()</td></tr>
+<tr class="separator:a9b1e3cf7921c1d57830a6970779f3d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a1c818fefcc4555ddd5afb77ed69c2"><td class="memItemLeft" align="right" valign="top">this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EEqnRhoSimpleC_8H.html#a78a1c818fefcc4555ddd5afb77ed69c2">primalResidualControl&lt; scalar &gt;</a> (<a class="el" href="EEqnTurbo_8H.html#a5e9344929be7181ddc4bf48c83790225">solverE</a>, printToScreen, printInterval, &quot;he&quot;)</td></tr>
+<tr class="separator:a78a1c818fefcc4555ddd5afb77ed69c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a2458f7f54158be848527a3fdedd5dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pyColoringCompressible_2createFields_8H.html#aa5e3ff4fac3be479f0aef5960e14f55a">thermo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EEqnRhoSimpleC_8H.html#a3a2458f7f54158be848527a3fdedd5dd">correct</a> ()</td></tr>
 <tr class="separator:a3a2458f7f54158be848527a3fdedd5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -130,14 +130,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a8ecae8247fc703d8dcb2196094fc3aa4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ecae8247fc703d8dcb2196094fc3aa4">&#9670;&nbsp;</a></span>relax()</h2>
+<a id="a9b1e3cf7921c1d57830a6970779f3d24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b1e3cf7921c1d57830a6970779f3d24">&#9670;&nbsp;</a></span>relax()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="pyColoringCompressible_2createFields_8H.html#a5c94c90bde43f26b8fb11b35115482c6">rho</a> relax </td>
+          <td class="memname"><a class="el" href="EEqnTurbo_8H.html#a68eadeab1dd227b276c927fd363de962">EEqn</a> relax </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -147,8 +147,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aa695851e81a1b03c9630923a5639f7cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa695851e81a1b03c9630923a5639f7cd">&#9670;&nbsp;</a></span>primalResidualControl< scalar >()</h2>
+<a id="a78a1c818fefcc4555ddd5afb77ed69c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a1c818fefcc4555ddd5afb77ed69c2">&#9670;&nbsp;</a></span>primalResidualControl< scalar >()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,7 +162,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">nSolverIters&#160;</td>
+          <td class="paramtype">printToScreen&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -185,14 +185,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="pEqnTurbo_8H_source.html#l00022">if()</a>, and <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00033">while()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pEqnTurbo_8H_source.html#l00022">if()</a>, and <a class="el" href="pEqnPiso_8H_source.html#l00008">while()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="EEqnRhoSimpleC_8H_aa695851e81a1b03c9630923a5639f7cd_icgraph.png" border="0" usemap="#EEqnRhoSimpleC_8H_aa695851e81a1b03c9630923a5639f7cd_icgraph" alt=""/></div>
-<map name="EEqnRhoSimpleC_8H_aa695851e81a1b03c9630923a5639f7cd_icgraph" id="EEqnRhoSimpleC_8H_aa695851e81a1b03c9630923a5639f7cd_icgraph">
+<div class="center"><img src="EEqnRhoSimpleC_8H_a78a1c818fefcc4555ddd5afb77ed69c2_icgraph.png" border="0" usemap="#EEqnRhoSimpleC_8H_a78a1c818fefcc4555ddd5afb77ed69c2_icgraph" alt=""/></div>
+<map name="EEqnRhoSimpleC_8H_a78a1c818fefcc4555ddd5afb77ed69c2_icgraph" id="EEqnRhoSimpleC_8H_a78a1c818fefcc4555ddd5afb77ed69c2_icgraph">
 <area shape="rect" id="node2" href="pEqnTurbo_8H.html#ae89c52693c4c26f24fd327b88d3d696a" title="if" alt="" coords="211,5,249,32"/>
-<area shape="rect" id="node3" href="pEqnRhoSimpleC_8H.html#a80a1a15f423dbb405b1a80b4354d5793" title="while" alt="" coords="204,56,256,83"/>
+<area shape="rect" id="node3" href="pEqnPiso_8H.html#aaaa72f220d04393911bfb42f0e8b6bb6" title="while" alt="" coords="204,56,256,83"/>
 </map>
 </div>
 

@@ -1,5 +1,6 @@
 <map id="getPrt" name="getPrt">
-<area shape="rect" id="node2" href="$classFoam_1_1DATurbulenceModel.html#a101918f89fb941242b3b1d1dadcec0b4" title="get mu " alt="" coords="123,5,181,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DATurbulenceModel.html#a45a5b7ae829ea8e200332ce6a19e5a1e" title="print the min max and mean yPlus to screen " alt="" coords="111,56,193,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DATurbulenceModel.html#a4c658e15d7e8f5819cdc0eedbbbeb85e" title="this is a virtual function for regIOobject " alt="" coords="113,107,191,133"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DATurbulenceModel.html#a101918f89fb941242b3b1d1dadcec0b4" title="get mu " alt="" coords="125,5,184,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DATurbulenceModel.html#adba061b34197deb555c03c4e3ca27ac0" title="isPrintTime" alt="" coords="111,56,199,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DATurbulenceModel.html#a45a5b7ae829ea8e200332ce6a19e5a1e" title="print the min max and mean yPlus to screen " alt="" coords="113,107,196,133"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DATurbulenceModel.html#a4c658e15d7e8f5819cdc0eedbbbeb85e" title="this is a virtual function for regIOobject " alt="" coords="115,157,194,184"/>
 </map>

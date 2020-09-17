@@ -1,5 +1,3 @@
 <map id="calcObjFuncValues" name="calcObjFuncValues">
-<area shape="rect" id="node2" href="$namespacedafoam_1_1optFuncs.html#a212dde2effacc1f2d4687e1b5792075e" title="run" alt="" coords="223,5,263,32"/>
-<area shape="rect" id="node3" href="$namespacedafoam_1_1optFuncs.html#a287b79374641f629b659009f0da4d59c" title="solveCL" alt="" coords="208,56,279,83"/>
-<area shape="rect" id="node4" href="$namespacedafoam_1_1optFuncs.html#adface870012785c36cfb7fcabd079dc6" title="testSensShape" alt="" coords="188,107,299,133"/>
+<area shape="rect" id="node2" href="$namespacedafoam_1_1optFuncs.html#a287b79374641f629b659009f0da4d59c" title="solveCL" alt="" coords="188,5,259,32"/>
 </map>

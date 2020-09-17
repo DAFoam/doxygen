@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['a1_5f',['a1_',['../classFoam_1_1DAkOmegaSST.html#a92c4906beae60c7c54f7e299a9d064de',1,'Foam::DAkOmegaSST']]],
   ['adjeqnoption',['adjEqnOption',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#aa2abab9dfb63a60be2eaa9ea8e9392d3',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['adjointfail',['adjointFail',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#affbdc8ed2a0c4a8430570feff7aaaf1f',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['adjpartderivfdstep',['adjPartDerivFDStep',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a6d213d605750e92554f5656509114091',1,'dafoam::pyDAFoam::DAOPTION']]],
@@ -13,6 +14,10 @@ var searchData=
   ['alloptions',['allOptions',['../createRefsRhoSimpleC_8H.html#a5dda3394a2d970c17cbed23a149ebab2',1,'allOptions():&#160;createRefsRhoSimpleC.H'],['../createRefsRhoSimple_8H.html#a5dda3394a2d970c17cbed23a149ebab2',1,'allOptions():&#160;createRefsRhoSimple.H'],['../createRefsTurbo_8H.html#a5dda3394a2d970c17cbed23a149ebab2',1,'allOptions():&#160;createRefsTurbo.H']]],
   ['alloptions_5f',['allOptions_',['../classFoam_1_1DATurbulenceModel.html#a8fa41d725808cf3b15117c2d48991655',1,'Foam::DATurbulenceModel::allOptions_()'],['../classFoam_1_1DAPartDeriv.html#a8fa41d725808cf3b15117c2d48991655',1,'Foam::DAPartDeriv::allOptions_()']]],
   ['allwallsgroup',['allWallsGroup',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#aa368bbcf303c6eabc3e1ff3793300020',1,'dafoam::pyDAFoam::PYDAFOAM']]],
+  ['alphak1_5f',['alphaK1_',['../classFoam_1_1DAkOmegaSST.html#aa0a97130354c5051d11eea50256cd36d',1,'Foam::DAkOmegaSST']]],
+  ['alphak2_5f',['alphaK2_',['../classFoam_1_1DAkOmegaSST.html#a8fdbfaee1d8f60cddc8a582e2eab7de9',1,'Foam::DAkOmegaSST']]],
+  ['alphaomega1_5f',['alphaOmega1_',['../classFoam_1_1DAkOmegaSST.html#ac13f0f71b9a971cd8ad564c514e55a5c',1,'Foam::DAkOmegaSST']]],
+  ['alphaomega2_5f',['alphaOmega2_',['../classFoam_1_1DAkOmegaSST.html#a3aca6b2b207c9f22f950ed2cceee30c4',1,'Foam::DAkOmegaSST']]],
   ['alphat',['alphat',['../createRefsSimpleT_8H.html#abdcf0c0691d6d9f9aefafb8834c3fbe4',1,'createRefsSimpleT.H']]],
   ['alphat_5f',['alphat_',['../classFoam_1_1DAResidualRhoSimpleCFoam.html#ac059867c372a4cabe10bced3632adebf',1,'Foam::DAResidualRhoSimpleCFoam::alphat_()'],['../classFoam_1_1DAResidualRhoSimpleFoam.html#ac059867c372a4cabe10bced3632adebf',1,'Foam::DAResidualRhoSimpleFoam::alphat_()'],['../classFoam_1_1DAResidualSimpleTFoam.html#ac059867c372a4cabe10bced3632adebf',1,'Foam::DAResidualSimpleTFoam::alphat_()'],['../classFoam_1_1DAResidualTurboFoam.html#ac059867c372a4cabe10bced3632adebf',1,'Foam::DAResidualTurboFoam::alphat_()']]],
   ['alphatptr_5f',['alphatPtr_',['../classFoam_1_1DASimpleTFoam.html#ab6fbf6c23c7b0560bebc841cd9a548cf',1,'Foam::DASimpleTFoam']]],

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.6</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.0</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -85,16 +85,24 @@ Functions</h2></td></tr>
 <tr class="separator:a45a34455439fc2923988270f3f678c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0022a2e35dc7a9ab3034db08da11f49"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#ab0022a2e35dc7a9ab3034db08da11f49">calcObjFuncValuesMP</a> (xDV)</td></tr>
 <tr class="separator:ab0022a2e35dc7a9ab3034db08da11f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02c77ac50178dee8714d7243eb502613"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a02c77ac50178dee8714d7243eb502613">calcObjFuncValuesHybridAdjoint</a> (xDV)</td></tr>
+<tr class="separator:a02c77ac50178dee8714d7243eb502613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81c04796dd89d23d15b639a87672f557"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a81c04796dd89d23d15b639a87672f557">calcObjFuncSens</a> (xDV, funcs)</td></tr>
 <tr class="separator:a81c04796dd89d23d15b639a87672f557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6781a08588116ed705c951740c90d6ef"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a6781a08588116ed705c951740c90d6ef">calcObjFuncSensMP</a> (xDV, funcs)</td></tr>
 <tr class="separator:a6781a08588116ed705c951740c90d6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a212dde2effacc1f2d4687e1b5792075e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a212dde2effacc1f2d4687e1b5792075e">run</a> ()</td></tr>
-<tr class="separator:a212dde2effacc1f2d4687e1b5792075e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad8320f65cd31bd01e50fb6378f8eb4e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#aad8320f65cd31bd01e50fb6378f8eb4e">calcObjFuncSensHybridAdjoint</a> (xDV, funcs)</td></tr>
+<tr class="separator:aad8320f65cd31bd01e50fb6378f8eb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be0f9dcf5cbcd94dc5ee16c7e5df7ab"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a9be0f9dcf5cbcd94dc5ee16c7e5df7ab">runPrimal</a> (objFun=<a class="el" href="namespacedafoam_1_1optFuncs.html#a45a34455439fc2923988270f3f678c65">calcObjFuncValues</a>)</td></tr>
+<tr class="separator:a9be0f9dcf5cbcd94dc5ee16c7e5df7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d0818de9ad3ccabf027264507dfdd09"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a0d0818de9ad3ccabf027264507dfdd09">runAdjoint</a> (objFun=<a class="el" href="namespacedafoam_1_1optFuncs.html#a45a34455439fc2923988270f3f678c65">calcObjFuncValues</a>, sensFun=<a class="el" href="namespacedafoam_1_1optFuncs.html#a81c04796dd89d23d15b639a87672f557">calcObjFuncSens</a>, fileName=None)</td></tr>
+<tr class="separator:a0d0818de9ad3ccabf027264507dfdd09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a287b79374641f629b659009f0da4d59c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a287b79374641f629b659009f0da4d59c">solveCL</a> (CL_star, alphaName, liftName)</td></tr>
 <tr class="separator:a287b79374641f629b659009f0da4d59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adface870012785c36cfb7fcabd079dc6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#adface870012785c36cfb7fcabd079dc6">testSensShape</a> ()</td></tr>
-<tr class="separator:adface870012785c36cfb7fcabd079dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f43014c275c1c01974c8e3fe2da036a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a9f43014c275c1c01974c8e3fe2da036a">verifySens</a> (objFun=<a class="el" href="namespacedafoam_1_1optFuncs.html#a45a34455439fc2923988270f3f678c65">calcObjFuncValues</a>, sensFun=<a class="el" href="namespacedafoam_1_1optFuncs.html#a81c04796dd89d23d15b639a87672f557">calcObjFuncSens</a>)</td></tr>
+<tr class="separator:a9f43014c275c1c01974c8e3fe2da036a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dadc87e51da949dcb736586822d2bda"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a1dadc87e51da949dcb736586822d2bda">calcFDSens</a> (objFun=<a class="el" href="namespacedafoam_1_1optFuncs.html#a45a34455439fc2923988270f3f678c65">calcObjFuncValues</a>, fileName=None)</td></tr>
+<tr class="separator:a1dadc87e51da949dcb736586822d2bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -126,17 +134,15 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <pre class="fragment">Update the design surface and run the primal solver to get objective function values.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00025">25</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00026">26</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="optFuncs_8py_source.html#l00244">dafoam.optFuncs.run()</a>, <a class="el" href="optFuncs_8py_source.html#l00257">dafoam.optFuncs.solveCL()</a>, and <a class="el" href="optFuncs_8py_source.html#l00285">dafoam.optFuncs.testSensShape()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="optFuncs_8py_source.html#l00395">dafoam.optFuncs.solveCL()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespacedafoam_1_1optFuncs_a45a34455439fc2923988270f3f678c65_icgraph.png" border="0" usemap="#namespacedafoam_1_1optFuncs_a45a34455439fc2923988270f3f678c65_icgraph" alt=""/></div>
 <map name="namespacedafoam_1_1optFuncs_a45a34455439fc2923988270f3f678c65_icgraph" id="namespacedafoam_1_1optFuncs_a45a34455439fc2923988270f3f678c65_icgraph">
-<area shape="rect" id="node2" href="namespacedafoam_1_1optFuncs.html#a212dde2effacc1f2d4687e1b5792075e" title="run" alt="" coords="223,5,263,32"/>
-<area shape="rect" id="node3" href="namespacedafoam_1_1optFuncs.html#a287b79374641f629b659009f0da4d59c" title="solveCL" alt="" coords="208,56,279,83"/>
-<area shape="rect" id="node4" href="namespacedafoam_1_1optFuncs.html#adface870012785c36cfb7fcabd079dc6" title="testSensShape" alt="" coords="188,107,299,133"/>
+<area shape="rect" id="node2" href="namespacedafoam_1_1optFuncs.html#a287b79374641f629b659009f0da4d59c" title="solveCL" alt="" coords="188,5,259,32"/>
 </map>
 </div>
 
@@ -160,7 +166,29 @@ Here is the caller graph for this function:</div>
 <pre class="fragment">Update the design surface and run the primal solver to get objective function values.
 This is the multipoint version of calcObjFuncValues
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00067">67</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00068">68</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+
+</div>
+</div>
+<a id="a02c77ac50178dee8714d7243eb502613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02c77ac50178dee8714d7243eb502613">&#9670;&nbsp;</a></span>calcObjFuncValuesHybridAdjoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def dafoam.optFuncs.calcObjFuncValuesHybridAdjoint </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>xDV</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Update the design surface and run the primal solver to get objective function values.
+This is the hybrid adjoint version of calcObjFuncValues
+</pre> 
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00139">139</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -191,18 +219,7 @@ This is the multipoint version of calcObjFuncValues
 </div><div class="memdoc">
 <pre class="fragment">Run the adjoint solver and get objective function sensitivities.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00138">138</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="optFuncs_8py_source.html#l00244">dafoam.optFuncs.run()</a>, and <a class="el" href="optFuncs_8py_source.html#l00285">dafoam.optFuncs.testSensShape()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacedafoam_1_1optFuncs_a81c04796dd89d23d15b639a87672f557_icgraph.png" border="0" usemap="#namespacedafoam_1_1optFuncs_a81c04796dd89d23d15b639a87672f557_icgraph" alt=""/></div>
-<map name="namespacedafoam_1_1optFuncs_a81c04796dd89d23d15b639a87672f557_icgraph" id="namespacedafoam_1_1optFuncs_a81c04796dd89d23d15b639a87672f557_icgraph">
-<area shape="rect" id="node2" href="namespacedafoam_1_1optFuncs.html#a212dde2effacc1f2d4687e1b5792075e" title="run" alt="" coords="214,5,254,32"/>
-<area shape="rect" id="node3" href="namespacedafoam_1_1optFuncs.html#adface870012785c36cfb7fcabd079dc6" title="testSensShape" alt="" coords="179,56,289,83"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00183">183</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -234,36 +251,105 @@ Here is the caller graph for this function:</div>
 <pre class="fragment">Run the adjoint solver and get objective function sensitivities.
 This is the multipoint version of calcObjFuncSens
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00176">176</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00221">221</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
-<a id="a212dde2effacc1f2d4687e1b5792075e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a212dde2effacc1f2d4687e1b5792075e">&#9670;&nbsp;</a></span>run()</h2>
+<a id="aad8320f65cd31bd01e50fb6378f8eb4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad8320f65cd31bd01e50fb6378f8eb4e">&#9670;&nbsp;</a></span>calcObjFuncSensHybridAdjoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def dafoam.optFuncs.run </td>
+          <td class="memname">def dafoam.optFuncs.calcObjFuncSensHybridAdjoint </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>xDV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>funcs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Run the adjoint solver and get objective function sensitivities.
+This is the hybrid adjoint version of calcObjFuncSens
+</pre> 
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00289">289</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+
+</div>
+</div>
+<a id="a9be0f9dcf5cbcd94dc5ee16c7e5df7ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9be0f9dcf5cbcd94dc5ee16c7e5df7ab">&#9670;&nbsp;</a></span>runPrimal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def dafoam.optFuncs.runPrimal </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>objFun</em> = <code><a class="el" href="namespacedafoam_1_1optFuncs.html#a45a34455439fc2923988270f3f678c65">calcObjFuncValues</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Just run the primal
+</pre> 
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00355">355</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+
+</div>
+</div>
+<a id="a0d0818de9ad3ccabf027264507dfdd09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d0818de9ad3ccabf027264507dfdd09">&#9670;&nbsp;</a></span>runAdjoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def dafoam.optFuncs.runAdjoint </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>objFun</em> = <code><a class="el" href="namespacedafoam_1_1optFuncs.html#a45a34455439fc2923988270f3f678c65">calcObjFuncValues</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>sensFun</em> = <code><a class="el" href="namespacedafoam_1_1optFuncs.html#a81c04796dd89d23d15b639a87672f557">calcObjFuncSens</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>fileName</em> = <code>None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Just run the primal and adjoint
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00244">244</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00365">365</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
-<p class="reference">References <a class="el" href="optFuncs_8py_source.html#l00138">dafoam.optFuncs.calcObjFuncSens()</a>, and <a class="el" href="optFuncs_8py_source.html#l00025">dafoam.optFuncs.calcObjFuncValues()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="optFuncs_8py_source.html#l00423">dafoam.optFuncs.verifySens()</a>.</p>
 <div class="dynheader">
-Here is the call graph for this function:</div>
+Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespacedafoam_1_1optFuncs_a212dde2effacc1f2d4687e1b5792075e_cgraph.png" border="0" usemap="#namespacedafoam_1_1optFuncs_a212dde2effacc1f2d4687e1b5792075e_cgraph" alt=""/></div>
-<map name="namespacedafoam_1_1optFuncs_a212dde2effacc1f2d4687e1b5792075e_cgraph" id="namespacedafoam_1_1optFuncs_a212dde2effacc1f2d4687e1b5792075e_cgraph">
-<area shape="rect" id="node2" href="namespacedafoam_1_1optFuncs.html#a81c04796dd89d23d15b639a87672f557" title="calcObjFuncSens" alt="" coords="98,5,223,32"/>
-<area shape="rect" id="node3" href="namespacedafoam_1_1optFuncs.html#a45a34455439fc2923988270f3f678c65" title="calcObjFuncValues" alt="" coords="93,56,228,83"/>
+<div class="center"><img src="namespacedafoam_1_1optFuncs_a0d0818de9ad3ccabf027264507dfdd09_icgraph.png" border="0" usemap="#namespacedafoam_1_1optFuncs_a0d0818de9ad3ccabf027264507dfdd09_icgraph" alt=""/></div>
+<map name="namespacedafoam_1_1optFuncs_a0d0818de9ad3ccabf027264507dfdd09_icgraph" id="namespacedafoam_1_1optFuncs_a0d0818de9ad3ccabf027264507dfdd09_icgraph">
+<area shape="rect" id="node2" href="namespacedafoam_1_1optFuncs.html#a9f43014c275c1c01974c8e3fe2da036a" title="verifySens" alt="" coords="133,5,217,32"/>
 </map>
 </div>
 
@@ -301,9 +387,9 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00257">257</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00395">395</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
-<p class="reference">References <a class="el" href="optFuncs_8py_source.html#l00025">dafoam.optFuncs.calcObjFuncValues()</a>.</p>
+<p class="reference">References <a class="el" href="optFuncs_8py_source.html#l00026">dafoam.optFuncs.calcObjFuncValues()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -315,32 +401,84 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="adface870012785c36cfb7fcabd079dc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adface870012785c36cfb7fcabd079dc6">&#9670;&nbsp;</a></span>testSensShape()</h2>
+<a id="a9f43014c275c1c01974c8e3fe2da036a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f43014c275c1c01974c8e3fe2da036a">&#9670;&nbsp;</a></span>verifySens()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def dafoam.optFuncs.testSensShape </td>
+          <td class="memname">def dafoam.optFuncs.verifySens </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>objFun</em> = <code><a class="el" href="namespacedafoam_1_1optFuncs.html#a45a34455439fc2923988270f3f678c65">calcObjFuncValues</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>sensFun</em> = <code><a class="el" href="namespacedafoam_1_1optFuncs.html#a81c04796dd89d23d15b639a87672f557">calcObjFuncSens</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Verify the FFD sensitivity against finite-difference references
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00285">285</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00423">423</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
-<p class="reference">References <a class="el" href="optFuncs_8py_source.html#l00138">dafoam.optFuncs.calcObjFuncSens()</a>, and <a class="el" href="optFuncs_8py_source.html#l00025">dafoam.optFuncs.calcObjFuncValues()</a>.</p>
+<p class="reference">References <a class="el" href="optFuncs_8py_source.html#l00432">dafoam.optFuncs.calcFDSens()</a>, and <a class="el" href="optFuncs_8py_source.html#l00365">dafoam.optFuncs.runAdjoint()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespacedafoam_1_1optFuncs_adface870012785c36cfb7fcabd079dc6_cgraph.png" border="0" usemap="#namespacedafoam_1_1optFuncs_adface870012785c36cfb7fcabd079dc6_cgraph" alt=""/></div>
-<map name="namespacedafoam_1_1optFuncs_adface870012785c36cfb7fcabd079dc6_cgraph" id="namespacedafoam_1_1optFuncs_adface870012785c36cfb7fcabd079dc6_cgraph">
-<area shape="rect" id="node2" href="namespacedafoam_1_1optFuncs.html#a81c04796dd89d23d15b639a87672f557" title="calcObjFuncSens" alt="" coords="169,5,294,32"/>
-<area shape="rect" id="node3" href="namespacedafoam_1_1optFuncs.html#a45a34455439fc2923988270f3f678c65" title="calcObjFuncValues" alt="" coords="164,56,299,83"/>
+<div class="center"><img src="namespacedafoam_1_1optFuncs_a9f43014c275c1c01974c8e3fe2da036a_cgraph.png" border="0" usemap="#namespacedafoam_1_1optFuncs_a9f43014c275c1c01974c8e3fe2da036a_cgraph" alt=""/></div>
+<map name="namespacedafoam_1_1optFuncs_a9f43014c275c1c01974c8e3fe2da036a_cgraph" id="namespacedafoam_1_1optFuncs_a9f43014c275c1c01974c8e3fe2da036a_cgraph">
+<area shape="rect" id="node2" href="namespacedafoam_1_1optFuncs.html#a1dadc87e51da949dcb736586822d2bda" title="calcFDSens" alt="" coords="137,5,232,32"/>
+<area shape="rect" id="node3" href="namespacedafoam_1_1optFuncs.html#a0d0818de9ad3ccabf027264507dfdd09" title="runAdjoint" alt="" coords="145,56,225,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1dadc87e51da949dcb736586822d2bda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dadc87e51da949dcb736586822d2bda">&#9670;&nbsp;</a></span>calcFDSens()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def dafoam.optFuncs.calcFDSens </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>objFun</em> = <code><a class="el" href="namespacedafoam_1_1optFuncs.html#a45a34455439fc2923988270f3f678c65">calcObjFuncValues</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>fileName</em> = <code>None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Compute finite-difference sensitivity
+</pre> 
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00432">432</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="optFuncs_8py_source.html#l00423">dafoam.optFuncs.verifySens()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacedafoam_1_1optFuncs_a1dadc87e51da949dcb736586822d2bda_icgraph.png" border="0" usemap="#namespacedafoam_1_1optFuncs_a1dadc87e51da949dcb736586822d2bda_icgraph" alt=""/></div>
+<map name="namespacedafoam_1_1optFuncs_a1dadc87e51da949dcb736586822d2bda_icgraph" id="namespacedafoam_1_1optFuncs_a1dadc87e51da949dcb736586822d2bda_icgraph">
+<area shape="rect" id="node2" href="namespacedafoam_1_1optFuncs.html#a9f43014c275c1c01974c8e3fe2da036a" title="verifySens" alt="" coords="148,5,232,32"/>
 </map>
 </div>
 
@@ -359,7 +497,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00022">22</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00023">23</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -375,7 +513,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00022">22</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00023">23</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>

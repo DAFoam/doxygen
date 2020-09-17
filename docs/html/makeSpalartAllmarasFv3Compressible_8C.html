@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>DAFoam: dafoam/src/models/SpalartAllmarasFv3Compressible/makeSpalartAllmarasFv3Compressible.C File Reference</title>
+<title>DAFoam: dafoam/src/adjoint/models/SpalartAllmarasFv3/makeSpalartAllmarasFv3Compressible.C File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.6</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.0</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -61,13 +61,14 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_93c4051ecc7fd546f0d93d2c06c733d4.html">dafoam</a></li><li class="navelem"><a class="el" href="dir_627fd991f2d271afc2835b9eae3d66f7.html">src</a></li><li class="navelem"><a class="el" href="dir_9a830395f6b06fac7b3f45e38a4dabcd.html">models</a></li><li class="navelem"><a class="el" href="dir_11cf35804045379437d66af33fac8197.html">SpalartAllmarasFv3Compressible</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_93c4051ecc7fd546f0d93d2c06c733d4.html">dafoam</a></li><li class="navelem"><a class="el" href="dir_627fd991f2d271afc2835b9eae3d66f7.html">src</a></li><li class="navelem"><a class="el" href="dir_f5514f987767675d2ddbed85ad2de067.html">adjoint</a></li><li class="navelem"><a class="el" href="dir_823563b04cbce4bff190b1a6c1d499ea.html">models</a></li><li class="navelem"><a class="el" href="dir_870188139dc2bdf627e9435db4b75187.html">SpalartAllmarasFv3</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">makeSpalartAllmarasFv3Compressible.C File Reference</div>  </div>
@@ -76,9 +77,9 @@ $(function() {
 <div class="textblock"><div class="dynheader">
 Include dependency graph for makeSpalartAllmarasFv3Compressible.C:</div>
 <div class="dyncontent">
-<div class="center"><img src="makeSpalartAllmarasFv3Compressible_8C__incl.png" border="0" usemap="#dafoam_2src_2models_2SpalartAllmarasFv3Compressible_2makeSpalartAllmarasFv3Compressible_8C" alt=""/></div>
-<map name="dafoam_2src_2models_2SpalartAllmarasFv3Compressible_2makeSpalartAllmarasFv3Compressible_8C" id="dafoam_2src_2models_2SpalartAllmarasFv3Compressible_2makeSpalartAllmarasFv3Compressible_8C">
-<area shape="rect" id="node11" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H.html" title="SpalartAllmarasFv3.H" alt="" coords="1512,109,1663,136"/>
+<div class="center"><img src="makeSpalartAllmarasFv3Compressible_8C__incl.png" border="0" usemap="#dafoam_2src_2adjoint_2models_2SpalartAllmarasFv3_2makeSpalartAllmarasFv3Compressible_8C" alt=""/></div>
+<map name="dafoam_2src_2adjoint_2models_2SpalartAllmarasFv3_2makeSpalartAllmarasFv3Compressible_8C" id="dafoam_2src_2adjoint_2models_2SpalartAllmarasFv3_2makeSpalartAllmarasFv3Compressible_8C">
+<area shape="rect" id="node11" href="SpalartAllmarasFv3_8H.html" title="SpalartAllmarasFv3.H" alt="" coords="1512,109,1663,136"/>
 </map>
 </div>
 </div>
@@ -97,6 +98,11 @@ Macros</h2></td></tr>
 <tr class="separator:a774964b9c69e7eb4c950bf8899fabe10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0d95159f8968bae1e71a9f29ab8359f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="makeSpalartAllmarasFv3Compressible_8C.html#af0d95159f8968bae1e71a9f29ab8359f">makeLESModel</a>(Type)&#160;&#160;&#160;<a class="el" href="makeSpalartAllmarasFv3Incompressible_8C.html#ada3cb5272c9e596f5d8fd3f7b223555e">makeTemplatedTurbulenceModel</a>(fluidThermoCompressibleTurbulenceModel, LES, Type)</td></tr>
 <tr class="separator:af0d95159f8968bae1e71a9f29ab8359f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ae4925888c41b5858b6521e9c6645c39d"><td class="memItemLeft" align="right" valign="top">typedef LESModel&lt; EddyDiffusivity&lt; fluidThermoCompressibleTurbulenceModel &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#ae4925888c41b5858b6521e9c6645c39d">LESfluidThermoCompressibleTurbulenceModel</a></td></tr>
+<tr class="separator:ae4925888c41b5858b6521e9c6645c39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -153,7 +159,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">\</div><div class="line">    namespace <a class="code" href="namespaceFoam.html">Foam</a>                                          \</div><div class="line">    {                                                       \</div><div class="line">    typedef TDModel&lt;BaseModel&lt;Transport&gt;&gt;                   \</div><div class="line">        Transport##BaseModel;                               \</div><div class="line">    typedef RASModel&lt;EddyDiffusivity&lt;Transport##BaseModel&gt;&gt; \</div><div class="line">        RAS##Transport##BaseModel;                          \</div><div class="line">    typedef LESModel&lt;EddyDiffusivity&lt;Transport##BaseModel&gt;&gt; \</div><div class="line">        LES##Transport##BaseModel;                          \</div><div class="line">    }</div><div class="ttc" id="namespaceFoam_html"><div class="ttname"><a href="namespaceFoam.html">Foam</a></div><div class="ttdef"><b>Definition:</b> <a href="checkGeometry_8C_source.html#l00023">checkGeometry.C:23</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">\</div><div class="line">    namespace <a class="code" href="namespaceFoam.html">Foam</a>                                          \</div><div class="line">    {                                                       \</div><div class="line">    typedef TDModel&lt;BaseModel&lt;Transport&gt;&gt;                   \</div><div class="line">        Transport##BaseModel;                               \</div><div class="line">    typedef RASModel&lt;EddyDiffusivity&lt;Transport##BaseModel&gt;&gt; \</div><div class="line">        RAS##Transport##BaseModel;                          \</div><div class="line">    typedef LESModel&lt;EddyDiffusivity&lt;Transport##BaseModel&gt;&gt; \</div><div class="line">        LES##Transport##BaseModel;                          \</div><div class="line">    }</div><div class="ttc" id="namespaceFoam_html"><div class="ttname"><a href="namespaceFoam.html">Foam</a></div><div class="ttdef"><b>Definition:</b> <a href="multiFreqScalarFvPatchField_8C_source.html#l00122">multiFreqScalarFvPatchField.C:122</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="makeSpalartAllmarasFv3Compressible_8C_source.html#l00021">21</a> of file <a class="el" href="makeSpalartAllmarasFv3Compressible_8C_source.html">makeSpalartAllmarasFv3Compressible.C</a>.</p>
 

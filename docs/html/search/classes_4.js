@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['pydafoam',['PYDAFOAM',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html',1,'dafoam::pyDAFoam']]]
+  ['multifreqscalarfvpatchfield',['multiFreqScalarFvPatchField',['../classFoam_1_1multiFreqScalarFvPatchField.html',1,'Foam']]],
+  ['multifreqvectorfvpatchfield',['multiFreqVectorFvPatchField',['../classFoam_1_1multiFreqVectorFvPatchField.html',1,'Foam']]]
 ];

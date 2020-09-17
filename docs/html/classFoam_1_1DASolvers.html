@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.6</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.0</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -156,6 +156,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaabf5e461685aae1fd388f6fabd43f22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#aaabf5e461685aae1fd388f6fabd43f22">writeVectorBinary</a> (const Vec vecIn, const word prefix)</td></tr>
 <tr class="memdesc:aaabf5e461685aae1fd388f6fabd43f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">write petsc vector in binary format  <a href="#aaabf5e461685aae1fd388f6fabd43f22">More...</a><br /></td></tr>
 <tr class="separator:aaabf5e461685aae1fd388f6fabd43f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa745d6a3eab8763c2c930abdb3990bca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#aa745d6a3eab8763c2c930abdb3990bca">setTimeInstanceField</a> (const label instanceI)</td></tr>
+<tr class="memdesc:aa745d6a3eab8763c2c930abdb3990bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign primal variables based on the current time instance  <a href="#aa745d6a3eab8763c2c930abdb3990bca">More...</a><br /></td></tr>
+<tr class="separator:aa745d6a3eab8763c2c930abdb3990bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12e97365d8b5f9419986732e7fb1beb3"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a12e97365d8b5f9419986732e7fb1beb3">getTimeInstanceObjFunc</a> (const label instanceI, const word objFuncName)</td></tr>
+<tr class="memdesc:a12e97365d8b5f9419986732e7fb1beb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the value of objective function at the given time instance and name  <a href="#a12e97365d8b5f9419986732e7fb1beb3">More...</a><br /></td></tr>
+<tr class="separator:a12e97365d8b5f9419986732e7fb1beb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -191,7 +197,7 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DASolvers_8C_source.html#l00015">15</a> of file <a class="el" href="DASolvers_8C_source.html">DASolvers.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DASolver_8C_source.html#l00047">DASolver::New()</a>.</p>
+<p class="reference">References <a class="el" href="DASolver_8C_source.html#l00048">DASolver::New()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -679,7 +685,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00142">142</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00987">PYDAFOAM::calcTotalDeriv()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01154">PYDAFOAM::calcTotalDeriv()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1107,6 +1113,76 @@ Here is the caller graph for this function:</div>
 <p>write petsc vector in binary format </p>
 
 <p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00224">224</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
+<a id="aa745d6a3eab8763c2c930abdb3990bca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa745d6a3eab8763c2c930abdb3990bca">&#9670;&nbsp;</a></span>setTimeInstanceField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setTimeInstanceField </td>
+          <td>(</td>
+          <td class="paramtype">const label&#160;</td>
+          <td class="paramname"><em>instanceI</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>assign primal variables based on the current time instance </p>
+
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00232">232</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
+<a id="a12e97365d8b5f9419986732e7fb1beb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12e97365d8b5f9419986732e7fb1beb3">&#9670;&nbsp;</a></span>getTimeInstanceObjFunc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scalar getTimeInstanceObjFunc </td>
+          <td>(</td>
+          <td class="paramtype">const label&#160;</td>
+          <td class="paramname"><em>instanceI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>objFuncName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>return the value of objective function at the given time instance and name </p>
+
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00238">238</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>

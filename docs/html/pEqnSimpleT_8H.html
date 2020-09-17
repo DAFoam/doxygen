@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.6</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.0</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -107,8 +107,8 @@ Functions</h2></td></tr>
 <tr class="separator:a0d972f1186e0939b42675a2df621c10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80a1a15f423dbb405b1a80b4354d5793"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnSimpleT_8H.html#a80a1a15f423dbb405b1a80b4354d5793">while</a> (simple.correctNonOrthogonal())</td></tr>
 <tr class="separator:a80a1a15f423dbb405b1a80b4354d5793"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3f395e83e7f94878ee51bc60fa04f30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnSimpleT_8H.html#ac3f395e83e7f94878ee51bc60fa04f30">if</a> (nSolverIters % printInterval==0||nSolverIters==1)</td></tr>
-<tr class="separator:ac3f395e83e7f94878ee51bc60fa04f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86bf2fd23592bddebbb0cca8c5bbef1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnSimpleT_8H.html#a86bf2fd23592bddebbb0cca8c5bbef1f">if</a> (printToScreen)</td></tr>
+<tr class="separator:a86bf2fd23592bddebbb0cca8c5bbef1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15bfa901ef14c7146d67360f3c63addc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnSimpleT_8H.html#a15bfa901ef14c7146d67360f3c63addc">relax</a> ()</td></tr>
 <tr class="separator:a15bfa901ef14c7146d67360f3c63addc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00a7f09fddd305c7a7977494b2a6a952"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnSimpleT_8H.html#a00a7f09fddd305c7a7977494b2a6a952">correctBoundaryConditions</a> ()</td></tr>
@@ -270,7 +270,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="pEqnSimpleT_8H_source.html#l00016">16</a> of file <a class="el" href="pEqnSimpleT_8H_source.html">pEqnSimpleT.H</a>.</p>
 
-<p class="reference">References <a class="el" href="pEqnSimpleT_8H_source.html#l00010">HbyA</a>, <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00004">mesh</a>, <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00007">p</a>, <a class="el" href="pEqnSimpleT_8H.html#a526a8b78452de0d7f324bd956addf143">phiHbyA()</a>, <a class="el" href="pEqnSimpleT_8H.html#afe01da774d03b179d1e22adc75a3c2fe">rAtU()</a>, <a class="el" href="pEqnRhoSimpleC_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d">rAU()</a>, <a class="el" href="UEqnRhoSimpleC_8H.html#a9049e0a4ec4ba05187c2c500ad21958a">tUEqn()</a>, and <a class="el" href="UEqnRhoSimpleC_8H_source.html#l00006">UEqn</a>.</p>
+<p class="reference">References <a class="el" href="pEqnSimpleT_8H_source.html#l00010">HbyA</a>, <a class="el" href="createRefsPiso_8H_source.html#l00004">mesh</a>, <a class="el" href="createRefsPiso_8H_source.html#l00006">p</a>, <a class="el" href="pEqnSimpleT_8H.html#a526a8b78452de0d7f324bd956addf143">phiHbyA()</a>, <a class="el" href="pEqnSimpleT_8H.html#afe01da774d03b179d1e22adc75a3c2fe">rAtU()</a>, <a class="el" href="pEqnPiso_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d">rAU()</a>, <a class="el" href="UEqnRhoSimpleC_8H.html#a9049e0a4ec4ba05187c2c500ad21958a">tUEqn()</a>, and <a class="el" href="UEqnRhoSimpleC_8H_source.html#l00006">UEqn</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -278,7 +278,7 @@ Here is the call graph for this function:</div>
 <map name="pEqnSimpleT_8H_a6e1e214e9166a088ad3248bdc8d6f57c_cgraph" id="pEqnSimpleT_8H_a6e1e214e9166a088ad3248bdc8d6f57c_cgraph">
 <area shape="rect" id="node2" href="pEqnSimpleT_8H.html#a526a8b78452de0d7f324bd956addf143" title="phiHbyA" alt="" coords="92,5,164,32"/>
 <area shape="rect" id="node3" href="pEqnSimpleT_8H.html#afe01da774d03b179d1e22adc75a3c2fe" title="rAtU" alt="" coords="103,56,153,83"/>
-<area shape="rect" id="node4" href="pEqnRhoSimpleC_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d" title="rAU" alt="" coords="105,107,151,133"/>
+<area shape="rect" id="node4" href="pEqnPiso_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d" title="rAU" alt="" coords="105,107,151,133"/>
 <area shape="rect" id="node5" href="UEqnRhoSimpleC_8H.html#a9049e0a4ec4ba05187c2c500ad21958a" title="tUEqn" alt="" coords="99,157,157,184"/>
 </map>
 </div>
@@ -320,22 +320,22 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="pEqnSimpleT_8H_source.html#l00030">30</a> of file <a class="el" href="pEqnSimpleT_8H_source.html">pEqnSimpleT.H</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00007">p</a>, <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00010">phi</a>, <a class="el" href="pEqnSimpleT_8H.html#a526a8b78452de0d7f324bd956addf143">phiHbyA()</a>, <a class="el" href="createRefsSimple_8H_source.html#l00011">pRefCell</a>, <a class="el" href="createRefsSimple_8H_source.html#l00012">pRefValue</a>, <a class="el" href="EEqnRhoSimpleC_8H.html#aa695851e81a1b03c9630923a5639f7cd">primalResidualControl&lt; scalar &gt;()</a>, <a class="el" href="pEqnSimpleT_8H.html#afe01da774d03b179d1e22adc75a3c2fe">rAtU()</a>, and <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00005">simple</a>.</p>
+<p class="reference">References <a class="el" href="createRefsPiso_8H_source.html#l00006">p</a>, <a class="el" href="createRefsPiso_8H_source.html#l00008">phi</a>, <a class="el" href="pEqnSimpleT_8H.html#a526a8b78452de0d7f324bd956addf143">phiHbyA()</a>, <a class="el" href="createRefsPiso_8H_source.html#l00011">pRefCell</a>, <a class="el" href="createRefsPiso_8H_source.html#l00012">pRefValue</a>, <a class="el" href="EEqnRhoSimpleC_8H.html#a78a1c818fefcc4555ddd5afb77ed69c2">primalResidualControl&lt; scalar &gt;()</a>, <a class="el" href="pEqnSimpleT_8H.html#afe01da774d03b179d1e22adc75a3c2fe">rAtU()</a>, and <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00005">simple</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pEqnSimpleT_8H_a80a1a15f423dbb405b1a80b4354d5793_cgraph.png" border="0" usemap="#pEqnSimpleT_8H_a80a1a15f423dbb405b1a80b4354d5793_cgraph" alt=""/></div>
 <map name="pEqnSimpleT_8H_a80a1a15f423dbb405b1a80b4354d5793_cgraph" id="pEqnSimpleT_8H_a80a1a15f423dbb405b1a80b4354d5793_cgraph">
 <area shape="rect" id="node2" href="pEqnSimpleT_8H.html#a526a8b78452de0d7f324bd956addf143" title="phiHbyA" alt="" coords="145,5,217,32"/>
-<area shape="rect" id="node3" href="EEqnRhoSimpleC_8H.html#aa695851e81a1b03c9630923a5639f7cd" title="primalResidualControl\l\&lt; scalar \&gt;" alt="" coords="105,57,256,98"/>
+<area shape="rect" id="node3" href="EEqnRhoSimpleC_8H.html#a78a1c818fefcc4555ddd5afb77ed69c2" title="primalResidualControl\l\&lt; scalar \&gt;" alt="" coords="105,57,256,98"/>
 <area shape="rect" id="node4" href="pEqnSimpleT_8H.html#afe01da774d03b179d1e22adc75a3c2fe" title="rAtU" alt="" coords="156,123,205,149"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ac3f395e83e7f94878ee51bc60fa04f30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3f395e83e7f94878ee51bc60fa04f30">&#9670;&nbsp;</a></span>if() <span class="overload">[2/2]</span></h2>
+<a id="a86bf2fd23592bddebbb0cca8c5bbef1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86bf2fd23592bddebbb0cca8c5bbef1f">&#9670;&nbsp;</a></span>if() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -343,8 +343,8 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">if </td>
           <td>(</td>
-          <td class="paramtype">nSolverIters %&#160;</td>
-          <td class="paramname"><em>printInterval</em> = <code>=&#160;0&#160;||&#160;nSolverIters&#160;==&#160;1</code></td><td>)</td>
+          <td class="paramtype">printToScreen&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -352,7 +352,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="pEqnSimpleT_8H_source.html#l00049">49</a> of file <a class="el" href="pEqnSimpleT_8H_source.html">pEqnSimpleT.H</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00007">p</a>.</p>
+<p class="reference">References <a class="el" href="createRefsPiso_8H_source.html#l00006">p</a>.</p>
 
 </div>
 </div>

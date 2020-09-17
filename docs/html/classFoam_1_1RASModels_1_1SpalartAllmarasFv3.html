@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.6</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.0</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -98,12 +98,6 @@ Public Types</h2></td></tr>
 <tr class="separator:a1dda906cfc9022335f0782a632302cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0a5dc3c45a2d1c61a649bc435a1a48a"><td class="memItemLeft" align="right" valign="top">typedef BasicTurbulenceModel::transportModel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#ac0a5dc3c45a2d1c61a649bc435a1a48a">transportModel</a></td></tr>
 <tr class="separator:ac0a5dc3c45a2d1c61a649bc435a1a48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06a66094f33d6817d19225445c5ea874"><td class="memItemLeft" align="right" valign="top">typedef BasicTurbulenceModel::alphaField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a06a66094f33d6817d19225445c5ea874">alphaField</a></td></tr>
-<tr class="separator:a06a66094f33d6817d19225445c5ea874"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dda906cfc9022335f0782a632302cd8"><td class="memItemLeft" align="right" valign="top">typedef BasicTurbulenceModel::rhoField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a1dda906cfc9022335f0782a632302cd8">rhoField</a></td></tr>
-<tr class="separator:a1dda906cfc9022335f0782a632302cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0a5dc3c45a2d1c61a649bc435a1a48a"><td class="memItemLeft" align="right" valign="top">typedef BasicTurbulenceModel::transportModel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#ac0a5dc3c45a2d1c61a649bc435a1a48a">transportModel</a></td></tr>
-<tr class="separator:ac0a5dc3c45a2d1c61a649bc435a1a48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -115,104 +109,34 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aed84eae22f801be2b50956478dae34f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af816873151ddb0126e98bb2f914d8ed5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#af816873151ddb0126e98bb2f914d8ed5">read</a> ()</td></tr>
 <tr class="separator:af816873151ddb0126e98bb2f914d8ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3db17e0612d3f43dfc21d593b7f7a942"><td class="memItemLeft" align="right" valign="top">tmp&lt; volScalarField &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3db17e0612d3f43dfc21d593b7f7a942">DnuTildaEff</a> () const</td></tr>
-<tr class="separator:a3db17e0612d3f43dfc21d593b7f7a942"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e01d66cd4db498fd5e869ea66925978"><td class="memItemLeft" align="right" valign="top">virtual tmp&lt; volScalarField &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a2e01d66cd4db498fd5e869ea66925978">k</a> () const</td></tr>
 <tr class="separator:a2e01d66cd4db498fd5e869ea66925978"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7593db4148b0ba5155861a0292ec9c32"><td class="memItemLeft" align="right" valign="top">virtual tmp&lt; volScalarField &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a7593db4148b0ba5155861a0292ec9c32">epsilon</a> () const</td></tr>
 <tr class="separator:a7593db4148b0ba5155861a0292ec9c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ae44b28050c3aa494c1d8e18cf618c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3ae44b28050c3aa494c1d8e18cf618c1">correct</a> ()</td></tr>
 <tr class="separator:a3ae44b28050c3aa494c1d8e18cf618c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a651877cab924009dde4903794ff93639"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a651877cab924009dde4903794ff93639">boundVar</a> (volScalarField &amp;var)</td></tr>
-<tr class="memdesc:a651877cab924009dde4903794ff93639"><td class="mdescLeft">&#160;</td><td class="mdescRight">bound the turbulence vars  <a href="#a651877cab924009dde4903794ff93639">More...</a><br /></td></tr>
-<tr class="separator:a651877cab924009dde4903794ff93639"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b1a2fc23aa68efa29285113e774ede7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a7b1a2fc23aa68efa29285113e774ede7">TypeName</a> (&quot;SpalartAllmarasFv3&quot;)</td></tr>
-<tr class="separator:a7b1a2fc23aa68efa29285113e774ede7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23a3433eaa4dcc7c17c4ac79df4d54e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a23a3433eaa4dcc7c17c4ac79df4d54e6">SpalartAllmarasFv3</a> (const <a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a06a66094f33d6817d19225445c5ea874">alphaField</a> &amp;alpha, const <a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a1dda906cfc9022335f0782a632302cd8">rhoField</a> &amp;<a class="el" href="pyColoringCompressible_2createFields_8H.html#a5c94c90bde43f26b8fb11b35115482c6">rho</a>, const volVectorField &amp;<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>, const surfaceScalarField &amp;alphaRhoPhi, const surfaceScalarField &amp;<a class="el" href="pyColoringCompressible_2createFields_8H.html#a6a231aded4fb2c165cab36375ba435b7">phi</a>, const <a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#ac0a5dc3c45a2d1c61a649bc435a1a48a">transportModel</a> &amp;transport, const word &amp;propertiesName=turbulenceModel::propertiesName, const word &amp;type=typeName)</td></tr>
-<tr class="separator:a23a3433eaa4dcc7c17c4ac79df4d54e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed84eae22f801be2b50956478dae34f9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#aed84eae22f801be2b50956478dae34f9">~SpalartAllmarasFv3</a> ()</td></tr>
-<tr class="separator:aed84eae22f801be2b50956478dae34f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcf7aafd601a940195284bc91610bb08"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#abcf7aafd601a940195284bc91610bb08">read</a> ()</td></tr>
-<tr class="separator:abcf7aafd601a940195284bc91610bb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefa005d9a47469aab3d0c142302ad06b"><td class="memItemLeft" align="right" valign="top">tmp&lt; volScalarField &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#aefa005d9a47469aab3d0c142302ad06b">DnuTildaEff</a> () const</td></tr>
-<tr class="separator:aefa005d9a47469aab3d0c142302ad06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cc3daa68147a9052c2b37e9ac37eca4"><td class="memItemLeft" align="right" valign="top">virtual tmp&lt; volScalarField &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a2cc3daa68147a9052c2b37e9ac37eca4">k</a> () const</td></tr>
-<tr class="separator:a2cc3daa68147a9052c2b37e9ac37eca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad79e047917669fbb490d351478651e20"><td class="memItemLeft" align="right" valign="top">virtual tmp&lt; volScalarField &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#ad79e047917669fbb490d351478651e20">epsilon</a> () const</td></tr>
-<tr class="separator:ad79e047917669fbb490d351478651e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa40b482ba81fd8de31bdba348c184074"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#aa40b482ba81fd8de31bdba348c184074">correct</a> ()</td></tr>
-<tr class="separator:aa40b482ba81fd8de31bdba348c184074"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a651877cab924009dde4903794ff93639"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a651877cab924009dde4903794ff93639">boundVar</a> (volScalarField &amp;var)</td></tr>
-<tr class="memdesc:a651877cab924009dde4903794ff93639"><td class="mdescLeft">&#160;</td><td class="mdescRight">bound the turbulence vars  <a href="#a651877cab924009dde4903794ff93639">More...</a><br /></td></tr>
-<tr class="separator:a651877cab924009dde4903794ff93639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a12c06ff2531b6460a8bea4cd0efee0e1"><td class="memItemLeft" align="right" valign="top">tmp&lt; volScalarField &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a12c06ff2531b6460a8bea4cd0efee0e1">chi</a> () const</td></tr>
-<tr class="separator:a12c06ff2531b6460a8bea4cd0efee0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6019fba94a532ff3113b408f9c0bd685"><td class="memItemLeft" align="right" valign="top">tmp&lt; volScalarField &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a6019fba94a532ff3113b408f9c0bd685">fv1</a> (const volScalarField &amp;<a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a12c06ff2531b6460a8bea4cd0efee0e1">chi</a>) const</td></tr>
-<tr class="separator:a6019fba94a532ff3113b408f9c0bd685"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace33ecb2edd6dad7cd44fa1ac058a582"><td class="memItemLeft" align="right" valign="top">tmp&lt; volScalarField &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#ace33ecb2edd6dad7cd44fa1ac058a582">fv2</a> (const volScalarField &amp;<a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a12c06ff2531b6460a8bea4cd0efee0e1">chi</a>, const volScalarField &amp;<a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a6019fba94a532ff3113b408f9c0bd685">fv1</a>) const</td></tr>
-<tr class="separator:ace33ecb2edd6dad7cd44fa1ac058a582"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad98800930a0bbe7b918b105dbd07158c"><td class="memItemLeft" align="right" valign="top">tmp&lt; volScalarField &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#ad98800930a0bbe7b918b105dbd07158c">fv3</a> (const volScalarField &amp;<a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a12c06ff2531b6460a8bea4cd0efee0e1">chi</a>, const volScalarField &amp;<a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a6019fba94a532ff3113b408f9c0bd685">fv1</a>) const</td></tr>
-<tr class="separator:ad98800930a0bbe7b918b105dbd07158c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a89e202067cd2b71d9036eb74f49a65"><td class="memItemLeft" align="right" valign="top">tmp&lt; volScalarField &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a1a89e202067cd2b71d9036eb74f49a65">fw</a> (const volScalarField &amp;Stilda) const</td></tr>
-<tr class="separator:a1a89e202067cd2b71d9036eb74f49a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dcc60a41344ed6b9925cafa52312ae2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a2dcc60a41344ed6b9925cafa52312ae2">correctNut</a> (const volScalarField &amp;<a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a6019fba94a532ff3113b408f9c0bd685">fv1</a>)</td></tr>
-<tr class="separator:a2dcc60a41344ed6b9925cafa52312ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaffe89433f18f1ee4137486e19219448"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#aaffe89433f18f1ee4137486e19219448">correctNut</a> ()</td></tr>
 <tr class="separator:aaffe89433f18f1ee4137486e19219448"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae71685619617c1dd15cd56dc189cf872"><td class="memItemLeft" align="right" valign="top">tmp&lt; volScalarField &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#ae71685619617c1dd15cd56dc189cf872">chi</a> () const</td></tr>
-<tr class="separator:ae71685619617c1dd15cd56dc189cf872"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c7cedde7299b89598fca53e7253ac52"><td class="memItemLeft" align="right" valign="top">tmp&lt; volScalarField &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a5c7cedde7299b89598fca53e7253ac52">fv1</a> (const volScalarField &amp;<a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a12c06ff2531b6460a8bea4cd0efee0e1">chi</a>) const</td></tr>
-<tr class="separator:a5c7cedde7299b89598fca53e7253ac52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8937b6c7b7380f7dab7390c8fbf27de5"><td class="memItemLeft" align="right" valign="top">tmp&lt; volScalarField &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a8937b6c7b7380f7dab7390c8fbf27de5">fv2</a> (const volScalarField &amp;<a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a12c06ff2531b6460a8bea4cd0efee0e1">chi</a>, const volScalarField &amp;<a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a6019fba94a532ff3113b408f9c0bd685">fv1</a>) const</td></tr>
-<tr class="separator:a8937b6c7b7380f7dab7390c8fbf27de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4676562fba31b966b3fb96ffbab6505e"><td class="memItemLeft" align="right" valign="top">tmp&lt; volScalarField &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a4676562fba31b966b3fb96ffbab6505e">fv3</a> (const volScalarField &amp;<a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a12c06ff2531b6460a8bea4cd0efee0e1">chi</a>, const volScalarField &amp;<a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a6019fba94a532ff3113b408f9c0bd685">fv1</a>) const</td></tr>
-<tr class="separator:a4676562fba31b966b3fb96ffbab6505e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acad2a6616cd4aeb04c2770ee532f7fbd"><td class="memItemLeft" align="right" valign="top">tmp&lt; volScalarField &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#acad2a6616cd4aeb04c2770ee532f7fbd">fw</a> (const volScalarField &amp;Stilda) const</td></tr>
-<tr class="separator:acad2a6616cd4aeb04c2770ee532f7fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dcc60a41344ed6b9925cafa52312ae2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a2dcc60a41344ed6b9925cafa52312ae2">correctNut</a> (const volScalarField &amp;<a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a6019fba94a532ff3113b408f9c0bd685">fv1</a>)</td></tr>
-<tr class="separator:a2dcc60a41344ed6b9925cafa52312ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e1ac29865af6a6554a63cf0e1cb1fa7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a1e1ac29865af6a6554a63cf0e1cb1fa7">correctNut</a> ()</td></tr>
-<tr class="separator:a1e1ac29865af6a6554a63cf0e1cb1fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aa8372eaafe5ae1f5354808ef3cd56a9d"><td class="memItemLeft" align="right" valign="top">dimensionedScalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#aa8372eaafe5ae1f5354808ef3cd56a9d">sigmaNut_</a></td></tr>
-<tr class="separator:aa8372eaafe5ae1f5354808ef3cd56a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ddd9bd801f70201f884bfb2e2840544"><td class="memItemLeft" align="right" valign="top">dimensionedScalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a4ddd9bd801f70201f884bfb2e2840544">kappa_</a></td></tr>
-<tr class="separator:a4ddd9bd801f70201f884bfb2e2840544"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a260883a942604d24eb8d87179d424271"><td class="memItemLeft" align="right" valign="top">dimensionedScalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a260883a942604d24eb8d87179d424271">Cb1_</a></td></tr>
-<tr class="separator:a260883a942604d24eb8d87179d424271"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d600ce4cf826b108bb1434364419d3d"><td class="memItemLeft" align="right" valign="top">dimensionedScalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a1d600ce4cf826b108bb1434364419d3d">Cb2_</a></td></tr>
-<tr class="separator:a1d600ce4cf826b108bb1434364419d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b5863d7438b3df4f496976fa3e02d90"><td class="memItemLeft" align="right" valign="top">dimensionedScalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a4b5863d7438b3df4f496976fa3e02d90">Cw1_</a></td></tr>
-<tr class="separator:a4b5863d7438b3df4f496976fa3e02d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89bd6764223091de90cd0a85d40ac446"><td class="memItemLeft" align="right" valign="top">dimensionedScalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a89bd6764223091de90cd0a85d40ac446">Cw2_</a></td></tr>
-<tr class="separator:a89bd6764223091de90cd0a85d40ac446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0761a5b6b1cdbe3bb89ab6d07e7220d4"><td class="memItemLeft" align="right" valign="top">dimensionedScalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a0761a5b6b1cdbe3bb89ab6d07e7220d4">Cw3_</a></td></tr>
-<tr class="separator:a0761a5b6b1cdbe3bb89ab6d07e7220d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d28c7bfd8dd69bdd5bf513103dbed6c"><td class="memItemLeft" align="right" valign="top">dimensionedScalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a7d28c7bfd8dd69bdd5bf513103dbed6c">Cv1_</a></td></tr>
-<tr class="separator:a7d28c7bfd8dd69bdd5bf513103dbed6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96e434f2c2e25ea8c692086a2eb2a0a3"><td class="memItemLeft" align="right" valign="top">dimensionedScalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a96e434f2c2e25ea8c692086a2eb2a0a3">Cv2_</a></td></tr>
-<tr class="separator:a96e434f2c2e25ea8c692086a2eb2a0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e8775fbaa982bf68314b474606ad4b5"><td class="memItemLeft" align="right" valign="top">dimensionedScalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a4e8775fbaa982bf68314b474606ad4b5">nuTildaMin_</a></td></tr>
-<tr class="separator:a4e8775fbaa982bf68314b474606ad4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5875b01397b21ec3761cb61e4de6d590"><td class="memItemLeft" align="right" valign="top">volScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a5875b01397b21ec3761cb61e4de6d590">nuTilda_</a></td></tr>
 <tr class="separator:a5875b01397b21ec3761cb61e4de6d590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4309f79e491c5f2d084c62ff7a3046be"><td class="memItemLeft" align="right" valign="top">const volScalarField &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a4309f79e491c5f2d084c62ff7a3046be">y_</a></td></tr>
-<tr class="separator:a4309f79e491c5f2d084c62ff7a3046be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90fbd39fc2752645786d3b9e2b51dd40"><td class="memItemLeft" align="right" valign="top">const volScalarField &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a90fbd39fc2752645786d3b9e2b51dd40">y_</a></td></tr>
+<tr class="separator:a90fbd39fc2752645786d3b9e2b51dd40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class BasicTurbulenceModel&gt;<br />
 class Foam::RASModels::SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00030">30</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3_8H_source.html#l00032">32</a> of file <a class="el" href="SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a06a66094f33d6817d19225445c5ea874"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06a66094f33d6817d19225445c5ea874">&#9670;&nbsp;</a></span>alphaField <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a06a66094f33d6817d19225445c5ea874">&#9670;&nbsp;</a></span>alphaField</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,12 +147,12 @@ class Foam::RASModels::SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00085">85</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3_8H_source.html#l00056">56</a> of file <a class="el" href="SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
 
 </div>
 </div>
 <a id="a1dda906cfc9022335f0782a632302cd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1dda906cfc9022335f0782a632302cd8">&#9670;&nbsp;</a></span>rhoField <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dda906cfc9022335f0782a632302cd8">&#9670;&nbsp;</a></span>rhoField</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,12 +163,12 @@ class Foam::RASModels::SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00086">86</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3_8H_source.html#l00057">57</a> of file <a class="el" href="SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
 
 </div>
 </div>
 <a id="ac0a5dc3c45a2d1c61a649bc435a1a48a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0a5dc3c45a2d1c61a649bc435a1a48a">&#9670;&nbsp;</a></span>transportModel <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0a5dc3c45a2d1c61a649bc435a1a48a">&#9670;&nbsp;</a></span>transportModel</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,61 +179,13 @@ class Foam::RASModels::SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00087">87</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
-
-</div>
-</div>
-<a id="a06a66094f33d6817d19225445c5ea874"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06a66094f33d6817d19225445c5ea874">&#9670;&nbsp;</a></span>alphaField <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef BasicTurbulenceModel::alphaField <a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a06a66094f33d6817d19225445c5ea874">alphaField</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Incompressible_2SpalartAllmarasFv3_8H_source.html#l00085">85</a> of file <a class="el" href="SpalartAllmarasFv3Incompressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
-
-</div>
-</div>
-<a id="a1dda906cfc9022335f0782a632302cd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1dda906cfc9022335f0782a632302cd8">&#9670;&nbsp;</a></span>rhoField <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef BasicTurbulenceModel::rhoField <a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a1dda906cfc9022335f0782a632302cd8">rhoField</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Incompressible_2SpalartAllmarasFv3_8H_source.html#l00086">86</a> of file <a class="el" href="SpalartAllmarasFv3Incompressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
-
-</div>
-</div>
-<a id="ac0a5dc3c45a2d1c61a649bc435a1a48a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0a5dc3c45a2d1c61a649bc435a1a48a">&#9670;&nbsp;</a></span>transportModel <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef BasicTurbulenceModel::transportModel <a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#ac0a5dc3c45a2d1c61a649bc435a1a48a">transportModel</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Incompressible_2SpalartAllmarasFv3_8H_source.html#l00087">87</a> of file <a class="el" href="SpalartAllmarasFv3Incompressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3_8H_source.html#l00058">58</a> of file <a class="el" href="SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a23a3433eaa4dcc7c17c4ac79df4d54e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23a3433eaa4dcc7c17c4ac79df4d54e6">&#9670;&nbsp;</a></span>SpalartAllmarasFv3() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a23a3433eaa4dcc7c17c4ac79df4d54e6">&#9670;&nbsp;</a></span>SpalartAllmarasFv3()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -370,12 +246,12 @@ class Foam::RASModels::SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00097">97</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3_8C_source.html#l00030">30</a> of file <a class="el" href="SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
 
 </div>
 </div>
 <a id="aed84eae22f801be2b50956478dae34f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed84eae22f801be2b50956478dae34f9">&#9670;&nbsp;</a></span>~SpalartAllmarasFv3() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aed84eae22f801be2b50956478dae34f9">&#9670;&nbsp;</a></span>~SpalartAllmarasFv3()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -397,371 +273,26 @@ class Foam::RASModels::SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00106">106</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3_8H_source.html#l00077">77</a> of file <a class="el" href="SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
 
-<p class="reference">References <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00253">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::boundVar()</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00208">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::DnuTildaEff()</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00234">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::epsilon()</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00215">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::k()</a>, and <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00184">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::read()</a>.</p>
+<p class="reference">References <a class="el" href="SpalartAllmarasFv3_8C_source.html#l00083">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>, <a class="el" href="SpalartAllmarasFv3_8C_source.html#l00076">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::epsilon()</a>, <a class="el" href="SpalartAllmarasFv3_8C_source.html#l00070">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::k()</a>, and <a class="el" href="SpalartAllmarasFv3_8C_source.html#l00064">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::read()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_aed84eae22f801be2b50956478dae34f9_cgraph.png" border="0" usemap="#classFoam_1_1RASModels_1_1SpalartAllmarasFv3_aed84eae22f801be2b50956478dae34f9_cgraph" alt=""/></div>
 <map name="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_aed84eae22f801be2b50956478dae34f9_cgraph" id="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_aed84eae22f801be2b50956478dae34f9_cgraph">
-<area shape="rect" id="node2" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a651877cab924009dde4903794ff93639" title="bound the turbulence vars " alt="" coords="315,5,392,32"/>
-<area shape="rect" id="node3" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3ae44b28050c3aa494c1d8e18cf618c1" title="correct" alt="" coords="197,31,260,57"/>
-<area shape="rect" id="node4" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3db17e0612d3f43dfc21d593b7f7a942" title="DnuTildaEff" alt="" coords="308,56,399,83"/>
-<area shape="rect" id="node5" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a7593db4148b0ba5155861a0292ec9c32" title="epsilon" alt="" coords="197,132,260,159"/>
-<area shape="rect" id="node6" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a2e01d66cd4db498fd5e869ea66925978" title="k" alt="" coords="209,183,248,209"/>
-<area shape="rect" id="node7" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#af816873151ddb0126e98bb2f914d8ed5" title="read" alt="" coords="205,233,252,260"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a23a3433eaa4dcc7c17c4ac79df4d54e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23a3433eaa4dcc7c17c4ac79df4d54e6">&#9670;&nbsp;</a></span>SpalartAllmarasFv3() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html">SpalartAllmarasFv3</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a06a66094f33d6817d19225445c5ea874">alphaField</a> &amp;&#160;</td>
-          <td class="paramname"><em>alpha</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a1dda906cfc9022335f0782a632302cd8">rhoField</a> &amp;&#160;</td>
-          <td class="paramname"><em>rho</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const volVectorField &amp;&#160;</td>
-          <td class="paramname"><em>U</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const surfaceScalarField &amp;&#160;</td>
-          <td class="paramname"><em>alphaRhoPhi</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const surfaceScalarField &amp;&#160;</td>
-          <td class="paramname"><em>phi</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#ac0a5dc3c45a2d1c61a649bc435a1a48a">transportModel</a> &amp;&#160;</td>
-          <td class="paramname"><em>transport</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const word &amp;&#160;</td>
-          <td class="paramname"><em>propertiesName</em> = <code>turbulenceModel::propertiesName</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const word &amp;&#160;</td>
-          <td class="paramname"><em>type</em> = <code>typeName</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aed84eae22f801be2b50956478dae34f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed84eae22f801be2b50956478dae34f9">&#9670;&nbsp;</a></span>~SpalartAllmarasFv3() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual ~<a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html">SpalartAllmarasFv3</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Incompressible_2SpalartAllmarasFv3_8H_source.html#l00106">106</a> of file <a class="el" href="SpalartAllmarasFv3Incompressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
-
-<p class="reference">References <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00253">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::boundVar()</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00208">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::DnuTildaEff()</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00234">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::epsilon()</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00215">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::k()</a>, and <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00184">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::read()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_aed84eae22f801be2b50956478dae34f9_cgraph.png" border="0" usemap="#classFoam_1_1RASModels_1_1SpalartAllmarasFv3_aed84eae22f801be2b50956478dae34f9_cgraph" alt=""/></div>
-<map name="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_aed84eae22f801be2b50956478dae34f9_cgraph" id="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_aed84eae22f801be2b50956478dae34f9_cgraph">
-<area shape="rect" id="node2" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a651877cab924009dde4903794ff93639" title="bound the turbulence vars " alt="" coords="315,5,392,32"/>
-<area shape="rect" id="node3" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3ae44b28050c3aa494c1d8e18cf618c1" title="correct" alt="" coords="197,31,260,57"/>
-<area shape="rect" id="node4" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3db17e0612d3f43dfc21d593b7f7a942" title="DnuTildaEff" alt="" coords="308,56,399,83"/>
-<area shape="rect" id="node5" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a7593db4148b0ba5155861a0292ec9c32" title="epsilon" alt="" coords="197,132,260,159"/>
-<area shape="rect" id="node6" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a2e01d66cd4db498fd5e869ea66925978" title="k" alt="" coords="209,183,248,209"/>
-<area shape="rect" id="node7" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#af816873151ddb0126e98bb2f914d8ed5" title="read" alt="" coords="205,233,252,260"/>
+<area shape="rect" id="node2" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3ae44b28050c3aa494c1d8e18cf618c1" title="correct" alt="" coords="197,5,260,32"/>
+<area shape="rect" id="node3" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a7593db4148b0ba5155861a0292ec9c32" title="epsilon" alt="" coords="197,56,260,83"/>
+<area shape="rect" id="node4" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a2e01d66cd4db498fd5e869ea66925978" title="k" alt="" coords="209,107,248,133"/>
+<area shape="rect" id="node5" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#af816873151ddb0126e98bb2f914d8ed5" title="read" alt="" coords="205,157,252,184"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a12c06ff2531b6460a8bea4cd0efee0e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12c06ff2531b6460a8bea4cd0efee0e1">&#9670;&nbsp;</a></span>chi() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">tmp&lt; volScalarField &gt; chi </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00023">23</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a12c06ff2531b6460a8bea4cd0efee0e1_icgraph.png" border="0" usemap="#classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a12c06ff2531b6460a8bea4cd0efee0e1_icgraph" alt=""/></div>
-<map name="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a12c06ff2531b6460a8bea4cd0efee0e1_icgraph" id="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a12c06ff2531b6460a8bea4cd0efee0e1_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3ae44b28050c3aa494c1d8e18cf618c1" title="correct" alt="" coords="92,5,155,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a6019fba94a532ff3113b408f9c0bd685"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6019fba94a532ff3113b408f9c0bd685">&#9670;&nbsp;</a></span>fv1() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">tmp&lt; volScalarField &gt; fv1 </td>
-          <td>(</td>
-          <td class="paramtype">const volScalarField &amp;&#160;</td>
-          <td class="paramname"><em>chi</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00029">29</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a6019fba94a532ff3113b408f9c0bd685_icgraph.png" border="0" usemap="#classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a6019fba94a532ff3113b408f9c0bd685_icgraph" alt=""/></div>
-<map name="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a6019fba94a532ff3113b408f9c0bd685_icgraph" id="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a6019fba94a532ff3113b408f9c0bd685_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3ae44b28050c3aa494c1d8e18cf618c1" title="correct" alt="" coords="93,5,156,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ace33ecb2edd6dad7cd44fa1ac058a582"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace33ecb2edd6dad7cd44fa1ac058a582">&#9670;&nbsp;</a></span>fv2() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">tmp&lt; volScalarField &gt; fv2 </td>
-          <td>(</td>
-          <td class="paramtype">const volScalarField &amp;&#160;</td>
-          <td class="paramname"><em>chi</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const volScalarField &amp;&#160;</td>
-          <td class="paramname"><em>fv1</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00037">37</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_ace33ecb2edd6dad7cd44fa1ac058a582_icgraph.png" border="0" usemap="#classFoam_1_1RASModels_1_1SpalartAllmarasFv3_ace33ecb2edd6dad7cd44fa1ac058a582_icgraph" alt=""/></div>
-<map name="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_ace33ecb2edd6dad7cd44fa1ac058a582_icgraph" id="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_ace33ecb2edd6dad7cd44fa1ac058a582_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3ae44b28050c3aa494c1d8e18cf618c1" title="correct" alt="" coords="93,5,156,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ad98800930a0bbe7b918b105dbd07158c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad98800930a0bbe7b918b105dbd07158c">&#9670;&nbsp;</a></span>fv3() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">tmp&lt; volScalarField &gt; fv3 </td>
-          <td>(</td>
-          <td class="paramtype">const volScalarField &amp;&#160;</td>
-          <td class="paramname"><em>chi</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const volScalarField &amp;&#160;</td>
-          <td class="paramname"><em>fv1</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00045">45</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_ad98800930a0bbe7b918b105dbd07158c_icgraph.png" border="0" usemap="#classFoam_1_1RASModels_1_1SpalartAllmarasFv3_ad98800930a0bbe7b918b105dbd07158c_icgraph" alt=""/></div>
-<map name="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_ad98800930a0bbe7b918b105dbd07158c_icgraph" id="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_ad98800930a0bbe7b918b105dbd07158c_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3ae44b28050c3aa494c1d8e18cf618c1" title="correct" alt="" coords="93,5,156,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a1a89e202067cd2b71d9036eb74f49a65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a89e202067cd2b71d9036eb74f49a65">&#9670;&nbsp;</a></span>fw() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">tmp&lt; volScalarField &gt; fw </td>
-          <td>(</td>
-          <td class="paramtype">const volScalarField &amp;&#160;</td>
-          <td class="paramname"><em>Stilda</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00059">59</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a1a89e202067cd2b71d9036eb74f49a65_icgraph.png" border="0" usemap="#classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a1a89e202067cd2b71d9036eb74f49a65_icgraph" alt=""/></div>
-<map name="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a1a89e202067cd2b71d9036eb74f49a65_icgraph" id="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a1a89e202067cd2b71d9036eb74f49a65_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3ae44b28050c3aa494c1d8e18cf618c1" title="correct" alt="" coords="92,5,155,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a2dcc60a41344ed6b9925cafa52312ae2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dcc60a41344ed6b9925cafa52312ae2">&#9670;&nbsp;</a></span>correctNut() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void correctNut </td>
-          <td>(</td>
-          <td class="paramtype">const volScalarField &amp;&#160;</td>
-          <td class="paramname"><em>fv1</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00078">78</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
-
-</div>
-</div>
 <a id="aaffe89433f18f1ee4137486e19219448"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaffe89433f18f1ee4137486e19219448">&#9670;&nbsp;</a></span>correctNut() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaffe89433f18f1ee4137486e19219448">&#9670;&nbsp;</a></span>correctNut()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -783,22 +314,12 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00089">89</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_aaffe89433f18f1ee4137486e19219448_icgraph.png" border="0" usemap="#classFoam_1_1RASModels_1_1SpalartAllmarasFv3_aaffe89433f18f1ee4137486e19219448_icgraph" alt=""/></div>
-<map name="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_aaffe89433f18f1ee4137486e19219448_icgraph" id="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_aaffe89433f18f1ee4137486e19219448_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3ae44b28050c3aa494c1d8e18cf618c1" title="correct" alt="" coords="136,5,199,32"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3_8C_source.html#l00023">23</a> of file <a class="el" href="SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
 
 </div>
 </div>
 <a id="a7b1a2fc23aa68efa29285113e774ede7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b1a2fc23aa68efa29285113e774ede7">&#9670;&nbsp;</a></span>TypeName() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b1a2fc23aa68efa29285113e774ede7">&#9670;&nbsp;</a></span>TypeName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -816,7 +337,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <a id="af816873151ddb0126e98bb2f914d8ed5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af816873151ddb0126e98bb2f914d8ed5">&#9670;&nbsp;</a></span>read() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af816873151ddb0126e98bb2f914d8ed5">&#9670;&nbsp;</a></span>read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -838,11 +359,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00184">184</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3_8C_source.html#l00064">64</a> of file <a class="el" href="SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
 
-<p class="reference">References <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00047">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::Cb1_</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00048">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::Cb2_</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00052">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::Cv1_</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00053">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::Cv2_</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00049">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::Cw1_</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00050">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::Cw2_</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00051">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::Cw3_</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00045">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::kappa_</a>, and <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00044">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::sigmaNut_</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00106">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::~SpalartAllmarasFv3()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3_8H_source.html#l00077">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::~SpalartAllmarasFv3()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -854,40 +373,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a3db17e0612d3f43dfc21d593b7f7a942"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3db17e0612d3f43dfc21d593b7f7a942">&#9670;&nbsp;</a></span>DnuTildaEff() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">tmp&lt; volScalarField &gt; DnuTildaEff </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00208">208</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
-
-<p class="reference">References <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00058">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::nuTilda_</a>, and <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00044">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::sigmaNut_</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>, and <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00106">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::~SpalartAllmarasFv3()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a3db17e0612d3f43dfc21d593b7f7a942_icgraph.png" border="0" usemap="#classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a3db17e0612d3f43dfc21d593b7f7a942_icgraph" alt=""/></div>
-<map name="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a3db17e0612d3f43dfc21d593b7f7a942_icgraph" id="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a3db17e0612d3f43dfc21d593b7f7a942_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3ae44b28050c3aa494c1d8e18cf618c1" title="correct" alt="" coords="144,5,207,32"/>
-<area shape="rect" id="node3" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#aed84eae22f801be2b50956478dae34f9" title="~SpalartAllmarasFv3" alt="" coords="255,31,399,57"/>
-</map>
-</div>
-
-</div>
-</div>
 <a id="a2e01d66cd4db498fd5e869ea66925978"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e01d66cd4db498fd5e869ea66925978">&#9670;&nbsp;</a></span>k() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e01d66cd4db498fd5e869ea66925978">&#9670;&nbsp;</a></span>k()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -909,9 +396,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00215">215</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3_8C_source.html#l00070">70</a> of file <a class="el" href="SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00106">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::~SpalartAllmarasFv3()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3_8H_source.html#l00077">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::~SpalartAllmarasFv3()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -924,7 +411,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <a id="a7593db4148b0ba5155861a0292ec9c32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7593db4148b0ba5155861a0292ec9c32">&#9670;&nbsp;</a></span>epsilon() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7593db4148b0ba5155861a0292ec9c32">&#9670;&nbsp;</a></span>epsilon()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -946,9 +433,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00234">234</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3_8C_source.html#l00076">76</a> of file <a class="el" href="SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00106">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::~SpalartAllmarasFv3()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3_8H_source.html#l00077">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::~SpalartAllmarasFv3()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -961,7 +448,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <a id="a3ae44b28050c3aa494c1d8e18cf618c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ae44b28050c3aa494c1d8e18cf618c1">&#9670;&nbsp;</a></span>correct() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ae44b28050c3aa494c1d8e18cf618c1">&#9670;&nbsp;</a></span>correct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -983,26 +470,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">286</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3_8C_source.html#l00083">83</a> of file <a class="el" href="SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
 
-<p class="reference">References <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00253">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::boundVar()</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00047">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::Cb1_</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00048">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::Cb2_</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00023">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::chi()</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00089">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correctNut()</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00049">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::Cw1_</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00208">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::DnuTildaEff()</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00029">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::fv1()</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00037">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::fv2()</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00045">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::fv3()</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00059">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::fw()</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00045">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::kappa_</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00058">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::nuTilda_</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00054">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::nuTildaMin_</a>, <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00008">rho</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00044">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::sigmaNut_</a>, and <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00063">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::y_</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00106">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::~SpalartAllmarasFv3()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a3ae44b28050c3aa494c1d8e18cf618c1_cgraph.png" border="0" usemap="#classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a3ae44b28050c3aa494c1d8e18cf618c1_cgraph" alt=""/></div>
-<map name="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a3ae44b28050c3aa494c1d8e18cf618c1_cgraph" id="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a3ae44b28050c3aa494c1d8e18cf618c1_cgraph">
-<area shape="rect" id="node2" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a651877cab924009dde4903794ff93639" title="bound the turbulence vars " alt="" coords="123,5,200,32"/>
-<area shape="rect" id="node3" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a12c06ff2531b6460a8bea4cd0efee0e1" title="chi" alt="" coords="142,56,181,83"/>
-<area shape="rect" id="node4" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#aaffe89433f18f1ee4137486e19219448" title="correctNut" alt="" coords="120,107,203,133"/>
-<area shape="rect" id="node5" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3db17e0612d3f43dfc21d593b7f7a942" title="DnuTildaEff" alt="" coords="116,157,207,184"/>
-<area shape="rect" id="node6" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a6019fba94a532ff3113b408f9c0bd685" title="fv1" alt="" coords="141,208,181,235"/>
-<area shape="rect" id="node7" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#ace33ecb2edd6dad7cd44fa1ac058a582" title="fv2" alt="" coords="141,259,181,285"/>
-<area shape="rect" id="node8" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#ad98800930a0bbe7b918b105dbd07158c" title="fv3" alt="" coords="141,309,181,336"/>
-<area shape="rect" id="node9" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a1a89e202067cd2b71d9036eb74f49a65" title="fw" alt="" coords="142,360,181,387"/>
-</map>
-</div>
+<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3_8H_source.html#l00077">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::~SpalartAllmarasFv3()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1014,657 +484,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a651877cab924009dde4903794ff93639"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a651877cab924009dde4903794ff93639">&#9670;&nbsp;</a></span>boundVar() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void boundVar </td>
-          <td>(</td>
-          <td class="paramtype">volScalarField &amp;&#160;</td>
-          <td class="paramname"><em>var</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>bound the turbulence vars </p>
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00253">253</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a>.</p>
-
-<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00005">simple</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>, and <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00106">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::~SpalartAllmarasFv3()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a651877cab924009dde4903794ff93639_icgraph.png" border="0" usemap="#classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a651877cab924009dde4903794ff93639_icgraph" alt=""/></div>
-<map name="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a651877cab924009dde4903794ff93639_icgraph" id="classFoam_1_1RASModels_1_1SpalartAllmarasFv3_a651877cab924009dde4903794ff93639_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a3ae44b28050c3aa494c1d8e18cf618c1" title="correct" alt="" coords="131,5,193,32"/>
-<area shape="rect" id="node3" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#aed84eae22f801be2b50956478dae34f9" title="~SpalartAllmarasFv3" alt="" coords="241,31,385,57"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ae71685619617c1dd15cd56dc189cf872"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae71685619617c1dd15cd56dc189cf872">&#9670;&nbsp;</a></span>chi() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">tmp&lt;volScalarField&gt; chi </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5c7cedde7299b89598fca53e7253ac52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c7cedde7299b89598fca53e7253ac52">&#9670;&nbsp;</a></span>fv1() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">tmp&lt;volScalarField&gt; fv1 </td>
-          <td>(</td>
-          <td class="paramtype">const volScalarField &amp;&#160;</td>
-          <td class="paramname"><em>chi</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8937b6c7b7380f7dab7390c8fbf27de5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8937b6c7b7380f7dab7390c8fbf27de5">&#9670;&nbsp;</a></span>fv2() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">tmp&lt;volScalarField&gt; fv2 </td>
-          <td>(</td>
-          <td class="paramtype">const volScalarField &amp;&#160;</td>
-          <td class="paramname"><em>chi</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const volScalarField &amp;&#160;</td>
-          <td class="paramname"><em>fv1</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4676562fba31b966b3fb96ffbab6505e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4676562fba31b966b3fb96ffbab6505e">&#9670;&nbsp;</a></span>fv3() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">tmp&lt;volScalarField&gt; fv3 </td>
-          <td>(</td>
-          <td class="paramtype">const volScalarField &amp;&#160;</td>
-          <td class="paramname"><em>chi</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const volScalarField &amp;&#160;</td>
-          <td class="paramname"><em>fv1</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acad2a6616cd4aeb04c2770ee532f7fbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acad2a6616cd4aeb04c2770ee532f7fbd">&#9670;&nbsp;</a></span>fw() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">tmp&lt;volScalarField&gt; fw </td>
-          <td>(</td>
-          <td class="paramtype">const volScalarField &amp;&#160;</td>
-          <td class="paramname"><em>Stilda</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2dcc60a41344ed6b9925cafa52312ae2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dcc60a41344ed6b9925cafa52312ae2">&#9670;&nbsp;</a></span>correctNut() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void correctNut </td>
-          <td>(</td>
-          <td class="paramtype">const volScalarField &amp;&#160;</td>
-          <td class="paramname"><em>fv1</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1e1ac29865af6a6554a63cf0e1cb1fa7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e1ac29865af6a6554a63cf0e1cb1fa7">&#9670;&nbsp;</a></span>correctNut() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void correctNut </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7b1a2fc23aa68efa29285113e774ede7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b1a2fc23aa68efa29285113e774ede7">&#9670;&nbsp;</a></span>TypeName() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TypeName </td>
-          <td>(</td>
-          <td class="paramtype">&quot;SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;&quot;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abcf7aafd601a940195284bc91610bb08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcf7aafd601a940195284bc91610bb08">&#9670;&nbsp;</a></span>read() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool read </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aefa005d9a47469aab3d0c142302ad06b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefa005d9a47469aab3d0c142302ad06b">&#9670;&nbsp;</a></span>DnuTildaEff() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">tmp&lt;volScalarField&gt; DnuTildaEff </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2cc3daa68147a9052c2b37e9ac37eca4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cc3daa68147a9052c2b37e9ac37eca4">&#9670;&nbsp;</a></span>k() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual tmp&lt;volScalarField&gt; k </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad79e047917669fbb490d351478651e20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad79e047917669fbb490d351478651e20">&#9670;&nbsp;</a></span>epsilon() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual tmp&lt;volScalarField&gt; epsilon </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa40b482ba81fd8de31bdba348c184074"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa40b482ba81fd8de31bdba348c184074">&#9670;&nbsp;</a></span>correct() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void correct </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a651877cab924009dde4903794ff93639"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a651877cab924009dde4903794ff93639">&#9670;&nbsp;</a></span>boundVar() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void boundVar </td>
-          <td>(</td>
-          <td class="paramtype">volScalarField &amp;&#160;</td>
-          <td class="paramname"><em>var</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>bound the turbulence vars </p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="aa8372eaafe5ae1f5354808ef3cd56a9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8372eaafe5ae1f5354808ef3cd56a9d">&#9670;&nbsp;</a></span>sigmaNut_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">dimensionedScalar sigmaNut_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00044">44</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>, <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00208">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::DnuTildaEff()</a>, and <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00184">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::read()</a>.</p>
-
-</div>
-</div>
-<a id="a4ddd9bd801f70201f884bfb2e2840544"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ddd9bd801f70201f884bfb2e2840544">&#9670;&nbsp;</a></span>kappa_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">dimensionedScalar kappa_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00045">45</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>, and <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00184">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::read()</a>.</p>
-
-</div>
-</div>
-<a id="a260883a942604d24eb8d87179d424271"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a260883a942604d24eb8d87179d424271">&#9670;&nbsp;</a></span>Cb1_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">dimensionedScalar Cb1_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00047">47</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>, and <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00184">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::read()</a>.</p>
-
-</div>
-</div>
-<a id="a1d600ce4cf826b108bb1434364419d3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d600ce4cf826b108bb1434364419d3d">&#9670;&nbsp;</a></span>Cb2_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">dimensionedScalar Cb2_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00048">48</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>, and <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00184">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::read()</a>.</p>
-
-</div>
-</div>
-<a id="a4b5863d7438b3df4f496976fa3e02d90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b5863d7438b3df4f496976fa3e02d90">&#9670;&nbsp;</a></span>Cw1_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">dimensionedScalar Cw1_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00049">49</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>, and <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00184">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::read()</a>.</p>
-
-</div>
-</div>
-<a id="a89bd6764223091de90cd0a85d40ac446"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89bd6764223091de90cd0a85d40ac446">&#9670;&nbsp;</a></span>Cw2_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">dimensionedScalar Cw2_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00050">50</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00184">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::read()</a>.</p>
-
-</div>
-</div>
-<a id="a0761a5b6b1cdbe3bb89ab6d07e7220d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0761a5b6b1cdbe3bb89ab6d07e7220d4">&#9670;&nbsp;</a></span>Cw3_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">dimensionedScalar Cw3_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00051">51</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00184">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::read()</a>.</p>
-
-</div>
-</div>
-<a id="a7d28c7bfd8dd69bdd5bf513103dbed6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d28c7bfd8dd69bdd5bf513103dbed6c">&#9670;&nbsp;</a></span>Cv1_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">dimensionedScalar Cv1_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00052">52</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00184">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::read()</a>.</p>
-
-</div>
-</div>
-<a id="a96e434f2c2e25ea8c692086a2eb2a0a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96e434f2c2e25ea8c692086a2eb2a0a3">&#9670;&nbsp;</a></span>Cv2_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">dimensionedScalar Cv2_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00053">53</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00184">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::read()</a>.</p>
-
-</div>
-</div>
-<a id="a4e8775fbaa982bf68314b474606ad4b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e8775fbaa982bf68314b474606ad4b5">&#9670;&nbsp;</a></span>nuTildaMin_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">dimensionedScalar nuTildaMin_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00054">54</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>.</p>
-
-</div>
-</div>
 <a id="a5875b01397b21ec3761cb61e4de6d590"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5875b01397b21ec3761cb61e4de6d590">&#9670;&nbsp;</a></span>nuTilda_</h2>
 
@@ -1685,14 +505,12 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00058">58</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>, and <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00208">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::DnuTildaEff()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3_8H_source.html#l00046">46</a> of file <a class="el" href="SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
 
 </div>
 </div>
-<a id="a4309f79e491c5f2d084c62ff7a3046be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4309f79e491c5f2d084c62ff7a3046be">&#9670;&nbsp;</a></span>y_</h2>
+<a id="a90fbd39fc2752645786d3b9e2b51dd40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90fbd39fc2752645786d3b9e2b51dd40">&#9670;&nbsp;</a></span>y_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1701,7 +519,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const volScalarField &amp; y_</td>
+          <td class="memname">const volScalarField&amp; y_</td>
         </tr>
       </table>
   </td>
@@ -1711,15 +529,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html#l00063">63</a> of file <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html#l00286">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;::correct()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SpalartAllmarasFv3_8H_source.html#l00051">51</a> of file <a class="el" href="SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>dafoam/src/models/SpalartAllmarasFv3Compressible/<a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a></li>
-<li>dafoam/src/models/SpalartAllmarasFv3Compressible/<a class="el" href="SpalartAllmarasFv3Compressible_2SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a></li>
+<li>dafoam/src/adjoint/models/SpalartAllmarasFv3/<a class="el" href="SpalartAllmarasFv3_8H_source.html">SpalartAllmarasFv3.H</a></li>
+<li>dafoam/src/adjoint/models/SpalartAllmarasFv3/<a class="el" href="SpalartAllmarasFv3_8C_source.html">SpalartAllmarasFv3.C</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.11-->

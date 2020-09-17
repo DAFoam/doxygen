@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.6</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.0</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -87,16 +87,16 @@ This graph shows which files directly or indirectly include this file:</div>
 Functions</h2></td></tr>
 <tr class="memitem:a9049e0a4ec4ba05187c2c500ad21958a"><td class="memItemLeft" align="right" valign="top">tmp&lt; fvVectorMatrix &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnRhoSimpleC_8H.html#a9049e0a4ec4ba05187c2c500ad21958a">tUEqn</a> (fvm::div(<a class="el" href="pyColoringCompressible_2createFields_8H.html#a6a231aded4fb2c165cab36375ba435b7">phi</a>, <a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>)+turbulencePtr_-&gt;divDevRhoReff(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>))</td></tr>
 <tr class="separator:a9049e0a4ec4ba05187c2c500ad21958a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a717d2a556132c73a6bb389a9de48bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="UEqnTurbo_8H.html#aeeb518d883492fb109c93a7959833ffb">UEqn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnRhoSimpleC_8H.html#a9a717d2a556132c73a6bb389a9de48bf">relax</a> ()</td></tr>
+<tr class="memitem:a9a717d2a556132c73a6bb389a9de48bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="UEqnPiso_8H.html#a365ee7492f2b66108e5621187d82542a">UEqn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnRhoSimpleC_8H.html#a9a717d2a556132c73a6bb389a9de48bf">relax</a> ()</td></tr>
 <tr class="separator:a9a717d2a556132c73a6bb389a9de48bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab03da5eb035bcd35dbc32d1045d0f908"><td class="memItemLeft" align="right" valign="top">this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnRhoSimpleC_8H.html#ab03da5eb035bcd35dbc32d1045d0f908">primalResidualControl&lt; vector &gt;</a> (<a class="el" href="UEqnTurbo_8H.html#a9eca2e2fd635ad2c06910b502c347b5c">solverU</a>, nSolverIters, printInterval, &quot;U&quot;)</td></tr>
-<tr class="separator:ab03da5eb035bcd35dbc32d1045d0f908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63bda711251083d54394a9ca435ab0be"><td class="memItemLeft" align="right" valign="top">this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnRhoSimpleC_8H.html#a63bda711251083d54394a9ca435ab0be">primalResidualControl&lt; vector &gt;</a> (<a class="el" href="UEqnTurbo_8H.html#a9eca2e2fd635ad2c06910b502c347b5c">solverU</a>, printToScreen, printInterval, &quot;U&quot;)</td></tr>
+<tr class="separator:a63bda711251083d54394a9ca435ab0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:aeeb518d883492fb109c93a7959833ffb"><td class="memItemLeft" align="right" valign="top">fvVectorMatrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnRhoSimpleC_8H.html#aeeb518d883492fb109c93a7959833ffb">UEqn</a> = tUEqn.ref()</td></tr>
 <tr class="separator:aeeb518d883492fb109c93a7959833ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9eca2e2fd635ad2c06910b502c347b5c"><td class="memItemLeft" align="right" valign="top">SolverPerformance&lt; vector &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnRhoSimpleC_8H.html#a9eca2e2fd635ad2c06910b502c347b5c">solverU</a> = solve(<a class="el" href="UEqnTurbo_8H.html#aeeb518d883492fb109c93a7959833ffb">UEqn</a> == -fvc::grad(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>))</td></tr>
+<tr class="memitem:a9eca2e2fd635ad2c06910b502c347b5c"><td class="memItemLeft" align="right" valign="top">SolverPerformance&lt; vector &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnRhoSimpleC_8H.html#a9eca2e2fd635ad2c06910b502c347b5c">solverU</a> = solve(<a class="el" href="UEqnPiso_8H.html#a365ee7492f2b66108e5621187d82542a">UEqn</a> == -fvc::grad(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>))</td></tr>
 <tr class="separator:a9eca2e2fd635ad2c06910b502c347b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -140,7 +140,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="UEqnTurbo_8H.html#aeeb518d883492fb109c93a7959833ffb">UEqn</a> relax </td>
+          <td class="memname"><a class="el" href="UEqnPiso_8H.html#a365ee7492f2b66108e5621187d82542a">UEqn</a> relax </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -150,8 +150,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ab03da5eb035bcd35dbc32d1045d0f908"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab03da5eb035bcd35dbc32d1045d0f908">&#9670;&nbsp;</a></span>primalResidualControl< vector >()</h2>
+<a id="a63bda711251083d54394a9ca435ab0be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63bda711251083d54394a9ca435ab0be">&#9670;&nbsp;</a></span>primalResidualControl< vector >()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,7 +165,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">nSolverIters&#160;</td>
+          <td class="paramtype">printToScreen&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -188,13 +188,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="UEqnSimple_8H_source.html#l00016">if()</a>, and <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="UEqnPiso_8H_source.html#l00017">if()</a>, and <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="UEqnRhoSimpleC_8H_ab03da5eb035bcd35dbc32d1045d0f908_icgraph.png" border="0" usemap="#UEqnRhoSimpleC_8H_ab03da5eb035bcd35dbc32d1045d0f908_icgraph" alt=""/></div>
-<map name="UEqnRhoSimpleC_8H_ab03da5eb035bcd35dbc32d1045d0f908_icgraph" id="UEqnRhoSimpleC_8H_ab03da5eb035bcd35dbc32d1045d0f908_icgraph">
-<area shape="rect" id="node2" href="UEqnSimple_8H.html#a41384e852288dac0c8a1fa700fa872c9" title="if" alt="" coords="280,5,319,32"/>
+<div class="center"><img src="UEqnRhoSimpleC_8H_a63bda711251083d54394a9ca435ab0be_icgraph.png" border="0" usemap="#UEqnRhoSimpleC_8H_a63bda711251083d54394a9ca435ab0be_icgraph" alt=""/></div>
+<map name="UEqnRhoSimpleC_8H_a63bda711251083d54394a9ca435ab0be_icgraph" id="UEqnRhoSimpleC_8H_a63bda711251083d54394a9ca435ab0be_icgraph">
+<area shape="rect" id="node2" href="UEqnPiso_8H.html#ab179a895c15fc91eea4286e36725e688" title="if" alt="" coords="280,5,319,32"/>
 <area shape="rect" id="node3" href="classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="204,57,395,98"/>
 </map>
 </div>
@@ -216,7 +216,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="UEqnRhoSimpleC_8H_source.html#l00006">6</a> of file <a class="el" href="UEqnRhoSimpleC_8H_source.html">UEqnRhoSimpleC.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00068">DAResidualSimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00070">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00079">DAResidualRhoSimpleCFoam::calcResiduals()</a>, <a class="el" href="DAResidualTurboFoam_8C_source.html#l00082">DAResidualTurboFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleFoam_8C_source.html#l00096">DAResidualRhoSimpleFoam::calcResiduals()</a>, and <a class="el" href="pEqnSimple_8H_source.html#l00017">if()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00068">DAResidualSimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualPisoFoam_8C_source.html#l00068">DAResidualPisoFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00070">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00079">DAResidualRhoSimpleCFoam::calcResiduals()</a>, <a class="el" href="DAResidualTurboFoam_8C_source.html#l00082">DAResidualTurboFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleFoam_8C_source.html#l00096">DAResidualRhoSimpleFoam::calcResiduals()</a>, and <a class="el" href="pEqnSimple_8H_source.html#l00017">if()</a>.</p>
 
 </div>
 </div>
@@ -227,14 +227,14 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SolverPerformance&lt;vector&gt; solverU = solve(<a class="el" href="UEqnTurbo_8H.html#aeeb518d883492fb109c93a7959833ffb">UEqn</a> == -fvc::grad(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>))</td>
+          <td class="memname">SolverPerformance&lt;vector&gt; solverU = solve(<a class="el" href="UEqnPiso_8H.html#a365ee7492f2b66108e5621187d82542a">UEqn</a> == -fvc::grad(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="UEqnRhoSimpleC_8H_source.html#l00012">12</a> of file <a class="el" href="UEqnRhoSimpleC_8H_source.html">UEqnRhoSimpleC.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="UEqnSimple_8H_source.html#l00016">if()</a>, and <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="UEqnPiso_8H_source.html#l00017">if()</a>, and <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>.</p>
 
 </div>
 </div>

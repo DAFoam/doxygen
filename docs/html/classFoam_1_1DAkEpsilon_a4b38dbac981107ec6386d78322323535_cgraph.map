@@ -1,0 +1,11 @@
+<map id="calcResiduals" name="calcResiduals">
+<area shape="rect" id="node2" href="$classFoam_1_1DAUtility.html#a33a755d4b9029ec00bb1969fc0a193e3" title="bound a volScalar variable based on parametes defined in DAOption::allOptions_ " alt="" coords="179,5,358,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAkEpsilon.html#a8e247d1c21f6459befff71af66bb744e" title="specially treatment to correct epsilon BC " alt="" coords="157,56,380,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAkEpsilon.html#aa4327d4eb9c9e68c2d720fef8feb52f5" title="set epsilonNearWall_ to near wall epsilon values " alt="" coords="428,81,565,108"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DAkEpsilon.html#aaffe89433f18f1ee4137486e19219448" title="update nut based on other turbulence variables and update the BCs " alt="" coords="227,157,310,184"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DAkEpsilon.html#a7985d7c6a12298c40d68503c22e97780" title="DepsilonEff" alt="" coords="223,208,314,235"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DAkEpsilon.html#afa968c8e26ddbc10cb14bff5ee93a069" title="DkEff" alt="" coords="241,259,297,285"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DAkEpsilon.html#a11abcc44df285cf748c77aa0a7cac6b8" title="epsilonSource" alt="" coords="217,309,321,336"/>
+<area shape="rect" id="node9" href="$classFoam_1_1DATurbulenceModel.html#adba061b34197deb555c03c4e3ca27ac0" title="Foam::DATurbulenceModel\l::isPrintTime" alt="" coords="178,361,359,402"/>
+<area shape="rect" id="node10" href="$classFoam_1_1DAkEpsilon.html#abd7aa1bd65c38f9773745c8d98a2fed0" title="kSource" alt="" coords="233,427,304,453"/>
+</map>

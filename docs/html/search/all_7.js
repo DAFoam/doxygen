@@ -1,6 +1,10 @@
 var searchData=
 [
+  ['gamma',['gamma',['../classFoam_1_1DAkOmegaSST.html#a1a2499a88cd4108564c13f7623765df7',1,'Foam::DAkOmegaSST']]],
+  ['gamma1_5f',['gamma1_',['../classFoam_1_1DAkOmegaSST.html#ace7411dd5448cafde7a8eadef4ad2568',1,'Foam::DAkOmegaSST']]],
+  ['gamma2_5f',['gamma2_',['../classFoam_1_1DAkOmegaSST.html#a3cf387c1666852af6073f74c9c59e178',1,'Foam::DAkOmegaSST']]],
   ['gamma_5f',['gamma_',['../classFoam_1_1DAObjFuncTotalPressureRatio.html#a2e320ab4d16ef59322581c061edc1d36',1,'Foam::DAObjFuncTotalPressureRatio::gamma_()'],['../classFoam_1_1DAObjFuncTotalTemperatureRatio.html#a2e320ab4d16ef59322581c061edc1d36',1,'Foam::DAObjFuncTotalTemperatureRatio::gamma_()']]],
+  ['gbynu',['GbyNu',['../classFoam_1_1DAkOmegaSST.html#a87cefbf14a13e5463aeb7ab314497135',1,'Foam::DAkOmegaSST']]],
   ['genglobalindex',['genGlobalIndex',['../classFoam_1_1DAUtility.html#a60de1987fa392ee6e3780759505035c4',1,'Foam::DAUtility']]],
   ['getalloptions',['getAllOptions',['../classFoam_1_1DAOption.html#aac22cd38f3d4adc69a4e35329c6abf92',1,'Foam::DAOption']]],
   ['getalpha',['getAlpha',['../classFoam_1_1DATurbulenceModel.html#a6ccb345346c8f358d12d90933980a559',1,'Foam::DATurbulenceModel']]],
@@ -43,6 +47,7 @@ var searchData=
   ['getsubdictoption',['getSubDictOption',['../classFoam_1_1DAOption.html#a04e1a06e3ade0e60b8e3a82ad37be74c',1,'Foam::DAOption']]],
   ['getsurfaceconnectivity',['getSurfaceConnectivity',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a8e43a4f1a3f9f54d2ee880c45c639a9b',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['getsurfacecoordinates',['getSurfaceCoordinates',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a0df62fe3472c26745359c34ac02663db',1,'dafoam::pyDAFoam::PYDAFOAM']]],
+  ['gettimeinstanceobjfunc',['getTimeInstanceObjFunc',['../classFoam_1_1DAPisoFoam.html#a12e97365d8b5f9419986732e7fb1beb3',1,'Foam::DAPisoFoam::getTimeInstanceObjFunc()'],['../classFoam_1_1DASolver.html#a12e97365d8b5f9419986732e7fb1beb3',1,'Foam::DASolver::getTimeInstanceObjFunc()'],['../classFoam_1_1DASolvers.html#a12e97365d8b5f9419986732e7fb1beb3',1,'Foam::DASolvers::getTimeInstanceObjFunc()'],['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a40dd706daa3bf0c4620b783a38be23a4',1,'dafoam.pyDAFoam.PYDAFOAM.getTimeInstanceObjFunc()']]],
   ['gettotalderivval',['getTotalDerivVal',['../classFoam_1_1DASolver.html#a5cb5e8d8b4babc32d6c225c1b0796ba7',1,'Foam::DASolver::getTotalDerivVal()'],['../classFoam_1_1DASolvers.html#a5cb5e8d8b4babc32d6c225c1b0796ba7',1,'Foam::DASolvers::getTotalDerivVal()']]],
   ['gettriangulatedmeshsurface',['getTriangulatedMeshSurface',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ad26ac7f00b7a0b4cd441a7a8086ab9e7',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['globaladjointstatenumbering',['globalAdjointStateNumbering',['../classFoam_1_1DAIndex.html#a75df9147e4815d887684542e0c19d737',1,'Foam::DAIndex']]],

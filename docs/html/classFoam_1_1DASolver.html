@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.6</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.0</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -80,12 +80,13 @@ Inheritance diagram for DASolver:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DASolver__inherit__graph.png" border="0" usemap="#DASolver_inherit__map" alt="Inheritance graph"/></div>
 <map name="DASolver_inherit__map" id="DASolver_inherit__map">
-<area shape="rect" id="node2" href="classFoam_1_1DARhoSimpleCFoam.html" title="DARhoSimpleCFoam" alt="" coords="149,5,297,32"/>
-<area shape="rect" id="node3" href="classFoam_1_1DARhoSimpleFoam.html" title="DARhoSimpleFoam" alt="" coords="154,56,293,83"/>
-<area shape="rect" id="node4" href="classFoam_1_1DASimpleFoam.html" title="DASimpleFoam" alt="" coords="166,107,281,133"/>
-<area shape="rect" id="node5" href="classFoam_1_1DASimpleTFoam.html" title="DASimpleTFoam" alt="" coords="162,157,285,184"/>
-<area shape="rect" id="node6" href="classFoam_1_1DASolidDisplacementFoam.html" title="DASolidDisplacementFoam" alt="" coords="132,208,315,235"/>
-<area shape="rect" id="node7" href="classFoam_1_1DATurboFoam.html" title="DATurboFoam" alt="" coords="170,259,277,285"/>
+<area shape="rect" id="node2" href="classFoam_1_1DAPisoFoam.html" title="DAPisoFoam" alt="" coords="173,5,273,32"/>
+<area shape="rect" id="node3" href="classFoam_1_1DARhoSimpleCFoam.html" title="DARhoSimpleCFoam" alt="" coords="149,56,297,83"/>
+<area shape="rect" id="node4" href="classFoam_1_1DARhoSimpleFoam.html" title="DARhoSimpleFoam" alt="" coords="154,107,293,133"/>
+<area shape="rect" id="node5" href="classFoam_1_1DASimpleFoam.html" title="DASimpleFoam" alt="" coords="166,157,281,184"/>
+<area shape="rect" id="node6" href="classFoam_1_1DASimpleTFoam.html" title="DASimpleTFoam" alt="" coords="162,208,285,235"/>
+<area shape="rect" id="node7" href="classFoam_1_1DASolidDisplacementFoam.html" title="DASolidDisplacementFoam" alt="" coords="132,259,315,285"/>
+<area shape="rect" id="node8" href="classFoam_1_1DATurboFoam.html" title="DATurboFoam" alt="" coords="170,309,277,336"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -106,6 +107,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ce2c3a325b52ede4d6dfbd9e6c5b9ac"><td class="memItemLeft" align="right" valign="top">virtual label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a9ce2c3a325b52ede4d6dfbd9e6c5b9ac">solvePrimal</a> (const Vec xvVec, Vec wVec)=0</td></tr>
 <tr class="memdesc:a9ce2c3a325b52ede4d6dfbd9e6c5b9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">solve the primal equations  <a href="#a9ce2c3a325b52ede4d6dfbd9e6c5b9ac">More...</a><br /></td></tr>
 <tr class="separator:a9ce2c3a325b52ede4d6dfbd9e6c5b9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa745d6a3eab8763c2c930abdb3990bca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#aa745d6a3eab8763c2c930abdb3990bca">setTimeInstanceField</a> (const label instanceI)</td></tr>
+<tr class="memdesc:aa745d6a3eab8763c2c930abdb3990bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign primal variables based on the current time instance  <a href="#aa745d6a3eab8763c2c930abdb3990bca">More...</a><br /></td></tr>
+<tr class="separator:aa745d6a3eab8763c2c930abdb3990bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12e97365d8b5f9419986732e7fb1beb3"><td class="memItemLeft" align="right" valign="top">virtual scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a12e97365d8b5f9419986732e7fb1beb3">getTimeInstanceObjFunc</a> (const label instanceI, const word objFuncName)</td></tr>
+<tr class="memdesc:a12e97365d8b5f9419986732e7fb1beb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the value of objective function at the given time instance and name  <a href="#a12e97365d8b5f9419986732e7fb1beb3">More...</a><br /></td></tr>
+<tr class="separator:a12e97365d8b5f9419986732e7fb1beb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a985af8c5b6d6bf478b8fd1d999865b47"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a985af8c5b6d6bf478b8fd1d999865b47">solveAdjoint</a> (const Vec xvVec, const Vec wVec)</td></tr>
 <tr class="memdesc:a985af8c5b6d6bf478b8fd1d999865b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">solve the adjoint linear equations  <a href="#a985af8c5b6d6bf478b8fd1d999865b47">More...</a><br /></td></tr>
 <tr class="separator:a985af8c5b6d6bf478b8fd1d999865b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,9 +179,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a967a69a9c61b3b15bc5419be87fcff08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a967a69a9c61b3b15bc5419be87fcff08">printAllOptions</a> ()</td></tr>
 <tr class="memdesc:a967a69a9c61b3b15bc5419be87fcff08"><td class="mdescLeft">&#160;</td><td class="mdescRight">print all <a class="el" href="classFoam_1_1DAOption.html">DAOption</a>  <a href="#a967a69a9c61b3b15bc5419be87fcff08">More...</a><br /></td></tr>
 <tr class="separator:a967a69a9c61b3b15bc5419be87fcff08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4aa41b7d245695cdf5071de2e4a823d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#ad4aa41b7d245695cdf5071de2e4a823d">reduceStateResConLevel</a> (const dictionary &amp;maxResConLv4JacPCMat, HashTable&lt; List&lt; List&lt; word &gt;&gt;&gt; &amp;stateResConInfo) const</td></tr>
-<tr class="memdesc:ad4aa41b7d245695cdf5071de2e4a823d"><td class="mdescLeft">&#160;</td><td class="mdescRight">reduce the connectivity level for Jacobian connectivity mat  <a href="#ad4aa41b7d245695cdf5071de2e4a823d">More...</a><br /></td></tr>
-<tr class="separator:ad4aa41b7d245695cdf5071de2e4a823d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cec9caca72b22c3e006bd0fbb9c422a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a6cec9caca72b22c3e006bd0fbb9c422a">calcPrimalResidualStatistics</a> (const word mode, const label writeRes=0)</td></tr>
 <tr class="memdesc:a6cec9caca72b22c3e006bd0fbb9c422a"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate the norms of all residuals and print to screen  <a href="#a6cec9caca72b22c3e006bd0fbb9c422a">More...</a><br /></td></tr>
 <tr class="separator:a6cec9caca72b22c3e006bd0fbb9c422a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,13 +210,24 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a13ab457a9f24cb2d0a561338ca36c323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4c89ba6507a68faa212ef055bd3c7d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#ae4c89ba6507a68faa212ef055bd3c7d1">setTotalDerivDict</a> (const word objFuncName, const word designVarName, const Vec totalDerivVec, dictionary &amp;totalDerivDict)</td></tr>
 <tr class="separator:ae4c89ba6507a68faa212ef055bd3c7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30fe379650f8b9ddefdeef85cd5731cd"><td class="memTemplParams" colspan="2">template&lt;class classType &gt; </td></tr>
-<tr class="memitem:a30fe379650f8b9ddefdeef85cd5731cd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a30fe379650f8b9ddefdeef85cd5731cd">primalResidualControl</a> (const SolverPerformance&lt; classType &gt; &amp;solverP, const label nSolverIters, const label printInterval, const word varName)</td></tr>
-<tr class="memdesc:a30fe379650f8b9ddefdeef85cd5731cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">setup maximal residual control and print the residual as needed  <a href="#a30fe379650f8b9ddefdeef85cd5731cd">More...</a><br /></td></tr>
-<tr class="separator:a30fe379650f8b9ddefdeef85cd5731cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79192bfd72e04929b30de193c8a0989f"><td class="memTemplParams" colspan="2">template&lt;class classType &gt; </td></tr>
+<tr class="memitem:a79192bfd72e04929b30de193c8a0989f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a79192bfd72e04929b30de193c8a0989f">primalResidualControl</a> (const SolverPerformance&lt; classType &gt; &amp;solverP, const label printToScreen, const label printInterval, const word varName)</td></tr>
+<tr class="memdesc:a79192bfd72e04929b30de193c8a0989f"><td class="mdescLeft">&#160;</td><td class="mdescRight">setup maximal residual control and print the residual as needed  <a href="#a79192bfd72e04929b30de193c8a0989f">More...</a><br /></td></tr>
+<tr class="separator:a79192bfd72e04929b30de193c8a0989f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba061b34197deb555c03c4e3ca27ac0"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#adba061b34197deb555c03c4e3ca27ac0">isPrintTime</a> (const Time &amp;<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>, const label printInterval) const</td></tr>
+<tr class="separator:adba061b34197deb555c03c4e3ca27ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab4e3d9fbdff96d71bcf7635a87107a3"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#aab4e3d9fbdff96d71bcf7635a87107a3">checkResidualTol</a> ()</td></tr>
 <tr class="memdesc:aab4e3d9fbdff96d71bcf7635a87107a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">check whether the min residual in primal satisfy the prescribed tolerance  <a href="#aab4e3d9fbdff96d71bcf7635a87107a3">More...</a><br /></td></tr>
 <tr class="separator:aab4e3d9fbdff96d71bcf7635a87107a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4aa41b7d245695cdf5071de2e4a823d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#ad4aa41b7d245695cdf5071de2e4a823d">reduceStateResConLevel</a> (const dictionary &amp;maxResConLv4JacPCMat, HashTable&lt; List&lt; List&lt; word &gt;&gt;&gt; &amp;stateResConInfo) const</td></tr>
+<tr class="memdesc:ad4aa41b7d245695cdf5071de2e4a823d"><td class="mdescLeft">&#160;</td><td class="mdescRight">reduce the connectivity level for Jacobian connectivity mat  <a href="#ad4aa41b7d245695cdf5071de2e4a823d">More...</a><br /></td></tr>
+<tr class="separator:ad4aa41b7d245695cdf5071de2e4a823d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f3dde6ebafed85d050245b75654146e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a3f3dde6ebafed85d050245b75654146e">initializeObjFuncHistFilePtr</a> (const word fileName)</td></tr>
+<tr class="memdesc:a3f3dde6ebafed85d050245b75654146e"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize objFuncHistFilePtr_  <a href="#a3f3dde6ebafed85d050245b75654146e">More...</a><br /></td></tr>
+<tr class="separator:a3f3dde6ebafed85d050245b75654146e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2faeca0f2ffcfed4f15f97080127bf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#aa2faeca0f2ffcfed4f15f97080127bf1">writeObjFuncHistFile</a> ()</td></tr>
+<tr class="memdesc:aa2faeca0f2ffcfed4f15f97080127bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">write objective functions values to the objFuncHistFile  <a href="#aa2faeca0f2ffcfed4f15f97080127bf1">More...</a><br /></td></tr>
+<tr class="separator:aa2faeca0f2ffcfed4f15f97080127bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -267,10 +282,13 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a789a632c43f990c60a2a645d4621c30c"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a789a632c43f990c60a2a645d4621c30c">totalDerivDict_</a></td></tr>
 <tr class="memdesc:a789a632c43f990c60a2a645d4621c30c"><td class="mdescLeft">&#160;</td><td class="mdescRight">the dictionary that stores the total derivatives reduced from processors  <a href="#a789a632c43f990c60a2a645d4621c30c">More...</a><br /></td></tr>
 <tr class="separator:a789a632c43f990c60a2a645d4621c30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8dd2d197004f7273675e90266d647ce"><td class="memItemLeft" align="right" valign="top">autoPtr&lt; OFstream &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#ae8dd2d197004f7273675e90266d647ce">objFuncHistFilePtr_</a></td></tr>
+<tr class="memdesc:ae8dd2d197004f7273675e90266d647ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to the objective function file used in unsteady primal solvers  <a href="#ae8dd2d197004f7273675e90266d647ce">More...</a><br /></td></tr>
+<tr class="separator:ae8dd2d197004f7273675e90266d647ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82f81280ea1d0d4c3ef5729fcaad6d2b"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a82f81280ea1d0d4c3ef5729fcaad6d2b">dXvdFFDMat_</a></td></tr>
 <tr class="memdesc:a82f81280ea1d0d4c3ef5729fcaad6d2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">the matrix that stores the partials dXv/dFFD computed from the idwarp and pygeo in the <a class="el" href="pyDAFoam_8py.html">pyDAFoam.py</a>  <a href="#a82f81280ea1d0d4c3ef5729fcaad6d2b">More...</a><br /></td></tr>
 <tr class="separator:a82f81280ea1d0d4c3ef5729fcaad6d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21a5148ea30de4e7d65c42aed3b78643"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a21a5148ea30de4e7d65c42aed3b78643">primalMinRes_</a></td></tr>
+<tr class="memitem:a21a5148ea30de4e7d65c42aed3b78643"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a21a5148ea30de4e7d65c42aed3b78643">primalMinRes_</a> = 1e10</td></tr>
 <tr class="memdesc:a21a5148ea30de4e7d65c42aed3b78643"><td class="mdescLeft">&#160;</td><td class="mdescRight">the maximal residual for primal solution  <a href="#a21a5148ea30de4e7d65c42aed3b78643">More...</a><br /></td></tr>
 <tr class="separator:a21a5148ea30de4e7d65c42aed3b78643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf707fcd9a9470de00bbb5bd56c7d7b9"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#acf707fcd9a9470de00bbb5bd56c7d7b9">prevPrimalSolTime_</a> = -1e10</td></tr>
@@ -279,7 +297,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00042">42</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00043">43</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a848f4d8f14373bbbc5729d33cfb685db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a848f4d8f14373bbbc5729d33cfb685db">&#9670;&nbsp;</a></span>DASolver()</h2>
@@ -334,19 +352,21 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00165">165</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00184">184</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">References <a class="el" href="DASolver_8C_source.html#l01017">DASolver::calcTotalDeriv()</a>, <a class="el" href="classFoam_1_1DASolver.html#af82bf1550fee8a84516c90c17d105352">DASolver::initSolver()</a>, <a class="el" href="DASolver_8C_source.html#l00090">DASolver::loop()</a>, <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00001">runTime</a>, <a class="el" href="DASolver_8C_source.html#l00599">DASolver::solveAdjoint()</a>, and <a class="el" href="classFoam_1_1DASolver.html#a9ce2c3a325b52ede4d6dfbd9e6c5b9ac">DASolver::solvePrimal()</a>.</p>
+<p class="reference">References <a class="el" href="DASolver_8C_source.html#l01014">DASolver::calcTotalDeriv()</a>, <a class="el" href="DASolver_8C_source.html#l01895">DASolver::getTimeInstanceObjFunc()</a>, <a class="el" href="classFoam_1_1DASolver.html#af82bf1550fee8a84516c90c17d105352">DASolver::initSolver()</a>, <a class="el" href="DASolver_8C_source.html#l00091">DASolver::loop()</a>, <a class="el" href="createRefsPiso_8H_source.html#l00001">runTime</a>, <a class="el" href="DASolver_8C_source.html#l01884">DASolver::setTimeInstanceField()</a>, <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>, and <a class="el" href="classFoam_1_1DASolver.html#a9ce2c3a325b52ede4d6dfbd9e6c5b9ac">DASolver::solvePrimal()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DASolver_a12ec2b74f32a1640660356872d86a0aa_cgraph.png" border="0" usemap="#classFoam_1_1DASolver_a12ec2b74f32a1640660356872d86a0aa_cgraph" alt=""/></div>
 <map name="classFoam_1_1DASolver_a12ec2b74f32a1640660356872d86a0aa_cgraph" id="classFoam_1_1DASolver_a12ec2b74f32a1640660356872d86a0aa_cgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DASolver.html#ae61bd69b450c4e79a7eb089751e0ecde" title="compute the total derivatives " alt="" coords="140,5,247,32"/>
-<area shape="rect" id="node3" href="classFoam_1_1DASolver.html#af82bf1550fee8a84516c90c17d105352" title="initialize fields and variables " alt="" coords="155,56,231,83"/>
-<area shape="rect" id="node4" href="classFoam_1_1DASolver.html#a132776bede8c2b661f995f2b5397b19f" title="return whether to loop the primal solution, similar to runTime::loop() except we don&#39;t do file IO ..." alt="" coords="170,107,217,133"/>
-<area shape="rect" id="node5" href="classFoam_1_1DASolver.html#a985af8c5b6d6bf478b8fd1d999865b47" title="solve the adjoint linear equations " alt="" coords="147,157,240,184"/>
-<area shape="rect" id="node6" href="classFoam_1_1DASolver.html#a9ce2c3a325b52ede4d6dfbd9e6c5b9ac" title="solve the primal equations " alt="" coords="148,208,239,235"/>
+<area shape="rect" id="node2" href="classFoam_1_1DASolver.html#ae61bd69b450c4e79a7eb089751e0ecde" title="compute the total derivatives " alt="" coords="171,5,277,32"/>
+<area shape="rect" id="node3" href="classFoam_1_1DASolver.html#a12e97365d8b5f9419986732e7fb1beb3" title="return the value of objective function at the given time instance and name " alt="" coords="140,56,308,83"/>
+<area shape="rect" id="node4" href="classFoam_1_1DASolver.html#af82bf1550fee8a84516c90c17d105352" title="initialize fields and variables " alt="" coords="186,107,262,133"/>
+<area shape="rect" id="node5" href="classFoam_1_1DASolver.html#a132776bede8c2b661f995f2b5397b19f" title="return whether to loop the primal solution, similar to runTime::loop() except we don&#39;t do file IO ..." alt="" coords="201,157,247,184"/>
+<area shape="rect" id="node6" href="classFoam_1_1DASolver.html#aa745d6a3eab8763c2c930abdb3990bca" title="assign primal variables based on the current time instance " alt="" coords="151,208,297,235"/>
+<area shape="rect" id="node7" href="classFoam_1_1DASolver.html#a985af8c5b6d6bf478b8fd1d999865b47" title="solve the adjoint linear equations " alt="" coords="177,259,271,285"/>
+<area shape="rect" id="node8" href="classFoam_1_1DASolver.html#a9ce2c3a325b52ede4d6dfbd9e6c5b9ac" title="solve the primal equations " alt="" coords="179,309,269,336"/>
 </map>
 </div>
 
@@ -395,9 +415,9 @@ Here is the call graph for this function:</div>
 
 <p>assign the psiVec to psiVecArray_ </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01641">1641</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01638">1638</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l00599">DASolver::solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -455,9 +475,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01710">1710</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01707">1707</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01017">DASolver::calcTotalDeriv()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01014">DASolver::calcTotalDeriv()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -469,8 +489,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a30fe379650f8b9ddefdeef85cd5731cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30fe379650f8b9ddefdeef85cd5731cd">&#9670;&nbsp;</a></span>primalResidualControl()</h2>
+<a id="a79192bfd72e04929b30de193c8a0989f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79192bfd72e04929b30de193c8a0989f">&#9670;&nbsp;</a></span>primalResidualControl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -488,7 +508,7 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const label&#160;</td>
-          <td class="paramname"><em>nSolverIters</em>, </td>
+          <td class="paramname"><em>printToScreen</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -517,7 +537,61 @@ Here is the caller graph for this function:</div>
 
 <p>setup maximal residual control and print the residual as needed </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00353">353</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00375">375</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+
+</div>
+</div>
+<a id="adba061b34197deb555c03c4e3ca27ac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adba061b34197deb555c03c4e3ca27ac0">&#9670;&nbsp;</a></span>isPrintTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">label isPrintTime </td>
+          <td>(</td>
+          <td class="paramtype">const Time &amp;&#160;</td>
+          <td class="paramname"><em>runTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const label&#160;</td>
+          <td class="paramname"><em>printInterval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01909">1909</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>, and <a class="el" href="DAPisoFoam_8C_source.html#l00103">DAPisoFoam::solvePrimal()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASolver_adba061b34197deb555c03c4e3ca27ac0_icgraph.png" border="0" usemap="#classFoam_1_1DASolver_adba061b34197deb555c03c4e3ca27ac0_icgraph" alt=""/></div>
+<map name="classFoam_1_1DASolver_adba061b34197deb555c03c4e3ca27ac0_icgraph" id="classFoam_1_1DASolver_adba061b34197deb555c03c4e3ca27ac0_icgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DARhoSimpleCFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="155,5,345,47"/>
+<area shape="rect" id="node3" href="classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="155,71,345,112"/>
+<area shape="rect" id="node4" href="classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="173,136,327,177"/>
+<area shape="rect" id="node5" href="classFoam_1_1DASimpleTFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="169,201,331,243"/>
+<area shape="rect" id="node6" href="classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="172,267,328,308"/>
+<area shape="rect" id="node7" href="classFoam_1_1DARhoSimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="161,332,339,373"/>
+<area shape="rect" id="node8" href="classFoam_1_1DAPisoFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="141,398,359,425"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -546,9 +620,9 @@ Here is the caller graph for this function:</div>
 
 <p>check whether the min residual in primal satisfy the prescribed tolerance </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01810">1810</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01807">1807</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00069">DASolver::daOptionPtr_</a>, and <a class="el" href="DASolver_8H_source.html#l00120">DASolver::primalMinRes_</a>.</p>
+<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00070">DASolver::daOptionPtr_</a>, and <a class="el" href="DASolver_8H_source.html#l00124">DASolver::primalMinRes_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, and <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>.</p>
 <div class="dynheader">
@@ -562,6 +636,149 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node5" href="classFoam_1_1DASimpleTFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="194,201,357,243"/>
 <area shape="rect" id="node6" href="classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="197,267,353,308"/>
 <area shape="rect" id="node7" href="classFoam_1_1DARhoSimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="186,332,365,373"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad4aa41b7d245695cdf5071de2e4a823d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4aa41b7d245695cdf5071de2e4a823d">&#9670;&nbsp;</a></span>reduceStateResConLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reduceStateResConLevel </td>
+          <td>(</td>
+          <td class="paramtype">const dictionary &amp;&#160;</td>
+          <td class="paramname"><em>maxResConLv4JacPCMat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HashTable&lt; List&lt; List&lt; word &gt;&gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>stateResConInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>reduce the connectivity level for Jacobian connectivity mat </p>
+
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l00280">280</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+
+<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00070">DASolver::daOptionPtr_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASolver_ad4aa41b7d245695cdf5071de2e4a823d_icgraph.png" border="0" usemap="#classFoam_1_1DASolver_ad4aa41b7d245695cdf5071de2e4a823d_icgraph" alt=""/></div>
+<map name="classFoam_1_1DASolver_ad4aa41b7d245695cdf5071de2e4a823d_icgraph" id="classFoam_1_1DASolver_ad4aa41b7d245695cdf5071de2e4a823d_icgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DASolver.html#a985af8c5b6d6bf478b8fd1d999865b47" title="solve the adjoint linear equations " alt="" coords="224,5,317,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3f3dde6ebafed85d050245b75654146e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f3dde6ebafed85d050245b75654146e">&#9670;&nbsp;</a></span>initializeObjFuncHistFilePtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initializeObjFuncHistFilePtr </td>
+          <td>(</td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>initialize objFuncHistFilePtr_ </p>
+
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01835">1835</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+
+<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00106">DASolver::objFuncHistFilePtr_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DAPisoFoam_8C_source.html#l00103">DAPisoFoam::solvePrimal()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASolver_a3f3dde6ebafed85d050245b75654146e_icgraph.png" border="0" usemap="#classFoam_1_1DASolver_a3f3dde6ebafed85d050245b75654146e_icgraph" alt=""/></div>
+<map name="classFoam_1_1DASolver_a3f3dde6ebafed85d050245b75654146e_icgraph" id="classFoam_1_1DASolver_a3f3dde6ebafed85d050245b75654146e_icgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAPisoFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="233,5,451,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa2faeca0f2ffcfed4f15f97080127bf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2faeca0f2ffcfed4f15f97080127bf1">&#9670;&nbsp;</a></span>writeObjFuncHistFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeObjFuncHistFile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>write objective functions values to the objFuncHistFile </p>
+
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01852">1852</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+
+<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00070">DASolver::daOptionPtr_</a>, <a class="el" href="DASolver_8C_source.html#l00148">DASolver::getObjFuncValue()</a>, <a class="el" href="DASolver_8H_source.html#l00106">DASolver::objFuncHistFilePtr_</a>, and <a class="el" href="DASolver_8H_source.html#l00064">DASolver::runTimePtr_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DAPisoFoam_8C_source.html#l00103">DAPisoFoam::solvePrimal()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASolver_aa2faeca0f2ffcfed4f15f97080127bf1_cgraph.png" border="0" usemap="#classFoam_1_1DASolver_aa2faeca0f2ffcfed4f15f97080127bf1_cgraph" alt=""/></div>
+<map name="classFoam_1_1DASolver_aa2faeca0f2ffcfed4f15f97080127bf1_cgraph" id="classFoam_1_1DASolver_aa2faeca0f2ffcfed4f15f97080127bf1_cgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DASolver.html#a22bdd2a534a166b3a21496f6e45bf409" title="return the value of the objective function " alt="" coords="197,5,320,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASolver_aa2faeca0f2ffcfed4f15f97080127bf1_icgraph.png" border="0" usemap="#classFoam_1_1DASolver_aa2faeca0f2ffcfed4f15f97080127bf1_icgraph" alt=""/></div>
+<map name="classFoam_1_1DASolver_aa2faeca0f2ffcfed4f15f97080127bf1_icgraph" id="classFoam_1_1DASolver_aa2faeca0f2ffcfed4f15f97080127bf1_icgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAPisoFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="197,5,415,32"/>
 </map>
 </div>
 
@@ -667,7 +884,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l00047">47</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l00048">48</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
 
 <p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, and <a class="el" href="DAUtility_8C_source.html#l00024">DAUtility::pyDict2OFDict()</a>.</p>
 
@@ -716,9 +933,9 @@ Here is the caller graph for this function:</div>
 
 <p>initialize fields and variables </p>
 
-<p>Implemented in <a class="el" href="classFoam_1_1DARhoSimpleFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6">DARhoSimpleFoam</a>, <a class="el" href="classFoam_1_1DATurboFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6">DATurboFoam</a>, <a class="el" href="classFoam_1_1DASimpleTFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6">DASimpleTFoam</a>, <a class="el" href="classFoam_1_1DASimpleFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6">DASimpleFoam</a>, <a class="el" href="classFoam_1_1DASolidDisplacementFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6">DASolidDisplacementFoam</a>, and <a class="el" href="classFoam_1_1DARhoSimpleCFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6">DARhoSimpleCFoam</a>.</p>
+<p>Implemented in <a class="el" href="classFoam_1_1DAPisoFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6">DAPisoFoam</a>, <a class="el" href="classFoam_1_1DARhoSimpleFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6">DARhoSimpleFoam</a>, <a class="el" href="classFoam_1_1DATurboFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6">DATurboFoam</a>, <a class="el" href="classFoam_1_1DASimpleTFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6">DASimpleTFoam</a>, <a class="el" href="classFoam_1_1DASimpleFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6">DASimpleFoam</a>, <a class="el" href="classFoam_1_1DASolidDisplacementFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6">DASolidDisplacementFoam</a>, and <a class="el" href="classFoam_1_1DARhoSimpleCFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6">DARhoSimpleCFoam</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00165">DASolver::~DASolver()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00184">DASolver::~DASolver()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -766,15 +983,109 @@ Here is the caller graph for this function:</div>
 
 <p>solve the primal equations </p>
 
-<p>Implemented in <a class="el" href="classFoam_1_1DARhoSimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c">DARhoSimpleFoam</a>, <a class="el" href="classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c">DATurboFoam</a>, <a class="el" href="classFoam_1_1DASimpleTFoam.html#a5c0c6289530112c8badaa81d933bef5c">DASimpleTFoam</a>, <a class="el" href="classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c">DASimpleFoam</a>, <a class="el" href="classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c">DASolidDisplacementFoam</a>, and <a class="el" href="classFoam_1_1DARhoSimpleCFoam.html#a5c0c6289530112c8badaa81d933bef5c">DARhoSimpleCFoam</a>.</p>
+<p>Implemented in <a class="el" href="classFoam_1_1DAPisoFoam.html#a5c0c6289530112c8badaa81d933bef5c">DAPisoFoam</a>, <a class="el" href="classFoam_1_1DARhoSimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c">DARhoSimpleFoam</a>, <a class="el" href="classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c">DATurboFoam</a>, <a class="el" href="classFoam_1_1DASimpleTFoam.html#a5c0c6289530112c8badaa81d933bef5c">DASimpleTFoam</a>, <a class="el" href="classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c">DASimpleFoam</a>, <a class="el" href="classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c">DASolidDisplacementFoam</a>, and <a class="el" href="classFoam_1_1DARhoSimpleCFoam.html#a5c0c6289530112c8badaa81d933bef5c">DARhoSimpleCFoam</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00165">DASolver::~DASolver()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00184">DASolver::~DASolver()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DASolver_a9ce2c3a325b52ede4d6dfbd9e6c5b9ac_icgraph.png" border="0" usemap="#classFoam_1_1DASolver_a9ce2c3a325b52ede4d6dfbd9e6c5b9ac_icgraph" alt=""/></div>
 <map name="classFoam_1_1DASolver_a9ce2c3a325b52ede4d6dfbd9e6c5b9ac_icgraph" id="classFoam_1_1DASolver_a9ce2c3a325b52ede4d6dfbd9e6c5b9ac_icgraph">
 <area shape="rect" id="node2" href="classFoam_1_1DASolver.html#a12ec2b74f32a1640660356872d86a0aa" title="~DASolver" alt="" coords="144,5,231,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa745d6a3eab8763c2c930abdb3990bca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa745d6a3eab8763c2c930abdb3990bca">&#9670;&nbsp;</a></span>setTimeInstanceField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setTimeInstanceField </td>
+          <td>(</td>
+          <td class="paramtype">const label&#160;</td>
+          <td class="paramname"><em>instanceI</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>assign primal variables based on the current time instance </p>
+
+<p>Reimplemented in <a class="el" href="classFoam_1_1DAPisoFoam.html#aa745d6a3eab8763c2c930abdb3990bca">DAPisoFoam</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01884">1884</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00184">DASolver::~DASolver()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASolver_aa745d6a3eab8763c2c930abdb3990bca_icgraph.png" border="0" usemap="#classFoam_1_1DASolver_aa745d6a3eab8763c2c930abdb3990bca_icgraph" alt=""/></div>
+<map name="classFoam_1_1DASolver_aa745d6a3eab8763c2c930abdb3990bca_icgraph" id="classFoam_1_1DASolver_aa745d6a3eab8763c2c930abdb3990bca_icgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DASolver.html#a12ec2b74f32a1640660356872d86a0aa" title="~DASolver" alt="" coords="200,5,287,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a12e97365d8b5f9419986732e7fb1beb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12e97365d8b5f9419986732e7fb1beb3">&#9670;&nbsp;</a></span>getTimeInstanceObjFunc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scalar getTimeInstanceObjFunc </td>
+          <td>(</td>
+          <td class="paramtype">const label&#160;</td>
+          <td class="paramname"><em>instanceI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>objFuncName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>return the value of objective function at the given time instance and name </p>
+
+<p>Reimplemented in <a class="el" href="classFoam_1_1DAPisoFoam.html#a12e97365d8b5f9419986732e7fb1beb3">DAPisoFoam</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01895">1895</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00184">DASolver::~DASolver()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASolver_a12e97365d8b5f9419986732e7fb1beb3_icgraph.png" border="0" usemap="#classFoam_1_1DASolver_a12e97365d8b5f9419986732e7fb1beb3_icgraph" alt=""/></div>
+<map name="classFoam_1_1DASolver_a12e97365d8b5f9419986732e7fb1beb3_icgraph" id="classFoam_1_1DASolver_a12e97365d8b5f9419986732e7fb1beb3_icgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DASolver.html#a12ec2b74f32a1640660356872d86a0aa" title="~DASolver" alt="" coords="221,5,308,32"/>
 </map>
 </div>
 
@@ -808,11 +1119,11 @@ Here is the caller graph for this function:</div>
 
 <p>solve the adjoint linear equations </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l00599">599</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l00600">600</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="DASolver_8C_source.html#l00410">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DALinearEqn_8C_source.html#l00027">DALinearEqn::createMLRKSP()</a>, <a class="el" href="DASolver_8H_source.html#l00078">DASolver::daFieldPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00075">DASolver::daIndexPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00072">DASolver::daModelPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00069">DASolver::daOptionPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00087">DASolver::daResidualPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00090">DASolver::daStateInfoPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00066">DASolver::meshPtr_</a>, <a class="el" href="DAObjFunc_8C_source.html#l00062">DAObjFunc::New()</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00047">DAPartDeriv::New()</a>, <a class="el" href="DAJacCon_8C_source.html#l00047">DAJacCon::New()</a>, <a class="el" href="DASolver_8H_source.html#l00096">DASolver::objFuncNames4Adj_</a>, <a class="el" href="DASolver_8H_source.html#l00099">DASolver::psiVecDict_</a>, <a class="el" href="DASolver_8C_source.html#l00279">DASolver::reduceStateResConLevel()</a>, <a class="el" href="DASolver_8H_source.html#l00063">DASolver::runTimePtr_</a>, <a class="el" href="DASolver_8C_source.html#l01641">DASolver::setPsiVecDict()</a>, <a class="el" href="DALinearEqn_8C_source.html#l00294">DALinearEqn::solveLinearEqn()</a>, <a class="el" href="DAUtility_8C_source.html#l00354">DAUtility::writeMatrixBinary()</a>, <a class="el" href="DAUtility_8C_source.html#l00290">DAUtility::writeVectorASCII()</a>, and <a class="el" href="DAUtility_8C_source.html#l00258">DAUtility::writeVectorBinary()</a>.</p>
+<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="DASolver_8C_source.html#l00411">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DALinearEqn_8C_source.html#l00027">DALinearEqn::createMLRKSP()</a>, <a class="el" href="DASolver_8H_source.html#l00079">DASolver::daFieldPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00076">DASolver::daIndexPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00073">DASolver::daModelPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00070">DASolver::daOptionPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00088">DASolver::daResidualPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00091">DASolver::daStateInfoPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00067">DASolver::meshPtr_</a>, <a class="el" href="DAObjFunc_8C_source.html#l00062">DAObjFunc::New()</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00047">DAPartDeriv::New()</a>, <a class="el" href="DAJacCon_8C_source.html#l00047">DAJacCon::New()</a>, <a class="el" href="DASolver_8H_source.html#l00097">DASolver::objFuncNames4Adj_</a>, <a class="el" href="DASolver_8H_source.html#l00100">DASolver::psiVecDict_</a>, <a class="el" href="DASolver_8C_source.html#l00280">DASolver::reduceStateResConLevel()</a>, <a class="el" href="DASolver_8H_source.html#l00064">DASolver::runTimePtr_</a>, <a class="el" href="DASolver_8C_source.html#l01638">DASolver::setPsiVecDict()</a>, <a class="el" href="DALinearEqn_8C_source.html#l00294">DALinearEqn::solveLinearEqn()</a>, <a class="el" href="DAUtility_8C_source.html#l00354">DAUtility::writeMatrixBinary()</a>, <a class="el" href="DAUtility_8C_source.html#l00290">DAUtility::writeVectorASCII()</a>, and <a class="el" href="DAUtility_8C_source.html#l00258">DAUtility::writeVectorBinary()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00165">DASolver::~DASolver()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00184">DASolver::~DASolver()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -876,11 +1187,11 @@ Here is the caller graph for this function:</div>
 
 <p>compute the total derivatives </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01017">1017</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01014">1014</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="DASolver_8C_source.html#l00410">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DASolver_8H_source.html#l00075">DASolver::daIndexPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00072">DASolver::daModelPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00069">DASolver::daOptionPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00087">DASolver::daResidualPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00117">DASolver::dXvdFFDMat_</a>, <a class="el" href="DASolver_8C_source.html#l01675">DASolver::getPsiVec()</a>, <a class="el" href="DASolver_8H_source.html#l00066">DASolver::meshPtr_</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00047">DAPartDeriv::New()</a>, <a class="el" href="DAJacCon_8C_source.html#l00047">DAJacCon::New()</a>, <a class="el" href="DASolver_8H_source.html#l00096">DASolver::objFuncNames4Adj_</a>, <a class="el" href="DASolver_8C_source.html#l01710">DASolver::setTotalDerivDict()</a>, <a class="el" href="DASolver_8H_source.html#l00102">DASolver::totalDerivDict_</a>, <a class="el" href="DAUtility_8C_source.html#l00386">DAUtility::writeMatrixASCII()</a>, <a class="el" href="DAUtility_8C_source.html#l00354">DAUtility::writeMatrixBinary()</a>, <a class="el" href="DAUtility_8C_source.html#l00290">DAUtility::writeVectorASCII()</a>, and <a class="el" href="DAUtility_8C_source.html#l00258">DAUtility::writeVectorBinary()</a>.</p>
+<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="DASolver_8C_source.html#l00411">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DASolver_8H_source.html#l00076">DASolver::daIndexPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00073">DASolver::daModelPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00070">DASolver::daOptionPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00088">DASolver::daResidualPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00121">DASolver::dXvdFFDMat_</a>, <a class="el" href="DASolver_8C_source.html#l01672">DASolver::getPsiVec()</a>, <a class="el" href="DASolver_8H_source.html#l00067">DASolver::meshPtr_</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00047">DAPartDeriv::New()</a>, <a class="el" href="DAJacCon_8C_source.html#l00047">DAJacCon::New()</a>, <a class="el" href="DASolver_8H_source.html#l00097">DASolver::objFuncNames4Adj_</a>, <a class="el" href="DASolver_8C_source.html#l01707">DASolver::setTotalDerivDict()</a>, <a class="el" href="DASolver_8H_source.html#l00103">DASolver::totalDerivDict_</a>, <a class="el" href="DAUtility_8C_source.html#l00386">DAUtility::writeMatrixASCII()</a>, <a class="el" href="DAUtility_8C_source.html#l00354">DAUtility::writeMatrixBinary()</a>, <a class="el" href="DAUtility_8C_source.html#l00290">DAUtility::writeVectorASCII()</a>, and <a class="el" href="DAUtility_8C_source.html#l00258">DAUtility::writeVectorBinary()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00165">DASolver::~DASolver()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00184">DASolver::~DASolver()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -926,23 +1237,24 @@ Here is the caller graph for this function:</div>
 
 <p>return whether to loop the primal solution, similar to runTime::loop() except we don't do file IO </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l00090">90</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l00091">91</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00069">DASolver::daOptionPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00123">DASolver::prevPrimalSolTime_</a>, <a class="el" href="DASolver_8H_source.html#l00120">DASolver::primalMinRes_</a>, and <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00001">runTime</a>.</p>
+<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00070">DASolver::daOptionPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00127">DASolver::prevPrimalSolTime_</a>, <a class="el" href="DASolver_8H_source.html#l00124">DASolver::primalMinRes_</a>, and <a class="el" href="createRefsPiso_8H_source.html#l00001">runTime</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>, and <a class="el" href="DASolver_8H_source.html#l00165">DASolver::~DASolver()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>, <a class="el" href="DAPisoFoam_8C_source.html#l00103">DAPisoFoam::solvePrimal()</a>, and <a class="el" href="DASolver_8H_source.html#l00184">DASolver::~DASolver()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DASolver_a132776bede8c2b661f995f2b5397b19f_icgraph.png" border="0" usemap="#classFoam_1_1DASolver_a132776bede8c2b661f995f2b5397b19f_icgraph" alt=""/></div>
 <map name="classFoam_1_1DASolver_a132776bede8c2b661f995f2b5397b19f_icgraph" id="classFoam_1_1DASolver_a132776bede8c2b661f995f2b5397b19f_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DARhoSimpleCFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="101,5,290,47"/>
-<area shape="rect" id="node3" href="classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="100,71,291,112"/>
-<area shape="rect" id="node4" href="classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="118,136,273,177"/>
-<area shape="rect" id="node5" href="classFoam_1_1DASimpleTFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="114,201,277,243"/>
-<area shape="rect" id="node6" href="classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="117,267,273,308"/>
-<area shape="rect" id="node7" href="classFoam_1_1DARhoSimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="106,332,285,373"/>
-<area shape="rect" id="node8" href="classFoam_1_1DASolver.html#a12ec2b74f32a1640660356872d86a0aa" title="~DASolver" alt="" coords="152,398,239,425"/>
+<area shape="rect" id="node2" href="classFoam_1_1DARhoSimpleCFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="114,5,303,47"/>
+<area shape="rect" id="node3" href="classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="113,71,304,112"/>
+<area shape="rect" id="node4" href="classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="131,136,286,177"/>
+<area shape="rect" id="node5" href="classFoam_1_1DASimpleTFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="127,201,290,243"/>
+<area shape="rect" id="node6" href="classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="131,267,287,308"/>
+<area shape="rect" id="node7" href="classFoam_1_1DARhoSimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="119,332,298,373"/>
+<area shape="rect" id="node8" href="classFoam_1_1DAPisoFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="100,398,317,425"/>
+<area shape="rect" id="node9" href="classFoam_1_1DASolver.html#a12ec2b74f32a1640660356872d86a0aa" title="~DASolver" alt="" coords="165,449,252,475"/>
 </map>
 </div>
 
@@ -984,7 +1296,7 @@ Here is the caller graph for this function:</div>
 
 <p>basically, we call <a class="el" href="classFoam_1_1DAIndex.html#ac9bf3fd02c9cf18a391d088fa6dee4f8" title="get global Xv index for a given point index and coordinate component (x, y, or z) ...">DAIndex::getGlobalXvIndex</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00194">194</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00221">221</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 </div>
 </div>
@@ -1014,20 +1326,21 @@ Here is the caller graph for this function:</div>
 
 <p>set the state vector based on the latest fields in OpenFOAM </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00202">202</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00229">229</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, and <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>, and <a class="el" href="DAPisoFoam_8C_source.html#l00103">DAPisoFoam::solvePrimal()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DASolver_a97b2a938b423ad81fcd6982dd375fd01_icgraph.png" border="0" usemap="#classFoam_1_1DASolver_a97b2a938b423ad81fcd6982dd375fd01_icgraph" alt=""/></div>
 <map name="classFoam_1_1DASolver_a97b2a938b423ad81fcd6982dd375fd01_icgraph" id="classFoam_1_1DASolver_a97b2a938b423ad81fcd6982dd375fd01_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DARhoSimpleCFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="177,5,366,47"/>
-<area shape="rect" id="node3" href="classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="176,71,367,112"/>
-<area shape="rect" id="node4" href="classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="194,136,349,177"/>
-<area shape="rect" id="node5" href="classFoam_1_1DASimpleTFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="190,201,353,243"/>
-<area shape="rect" id="node6" href="classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="193,267,349,308"/>
-<area shape="rect" id="node7" href="classFoam_1_1DARhoSimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="182,332,361,373"/>
+<area shape="rect" id="node2" href="classFoam_1_1DARhoSimpleCFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="190,5,379,47"/>
+<area shape="rect" id="node3" href="classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="189,71,380,112"/>
+<area shape="rect" id="node4" href="classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="207,136,362,177"/>
+<area shape="rect" id="node5" href="classFoam_1_1DASimpleTFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="203,201,366,243"/>
+<area shape="rect" id="node6" href="classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="207,267,363,308"/>
+<area shape="rect" id="node7" href="classFoam_1_1DARhoSimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="195,332,374,373"/>
+<area shape="rect" id="node8" href="classFoam_1_1DAPisoFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="176,398,393,425"/>
 </map>
 </div>
 
@@ -1059,7 +1372,7 @@ Here is the caller graph for this function:</div>
 
 <p>assign the fields in OpenFOAM based on the state vector </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00208">208</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00235">235</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 </div>
 </div>
@@ -1089,20 +1402,21 @@ Here is the caller graph for this function:</div>
 
 <p>assign the points in fvMesh of OpenFOAM based on the point vector </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00214">214</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00241">241</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, and <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>, and <a class="el" href="DAPisoFoam_8C_source.html#l00103">DAPisoFoam::solvePrimal()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DASolver_ad11a8b27d61a02a20034c2dedfaa3843_icgraph.png" border="0" usemap="#classFoam_1_1DASolver_ad11a8b27d61a02a20034c2dedfaa3843_icgraph" alt=""/></div>
 <map name="classFoam_1_1DASolver_ad11a8b27d61a02a20034c2dedfaa3843_icgraph" id="classFoam_1_1DASolver_ad11a8b27d61a02a20034c2dedfaa3843_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DARhoSimpleCFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="185,5,374,47"/>
-<area shape="rect" id="node3" href="classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="184,71,375,112"/>
-<area shape="rect" id="node4" href="classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="202,136,357,177"/>
-<area shape="rect" id="node5" href="classFoam_1_1DASimpleTFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="198,201,361,243"/>
-<area shape="rect" id="node6" href="classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="201,267,357,308"/>
-<area shape="rect" id="node7" href="classFoam_1_1DARhoSimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="190,332,369,373"/>
+<area shape="rect" id="node2" href="classFoam_1_1DARhoSimpleCFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="198,5,387,47"/>
+<area shape="rect" id="node3" href="classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="197,71,388,112"/>
+<area shape="rect" id="node4" href="classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="215,136,370,177"/>
+<area shape="rect" id="node5" href="classFoam_1_1DASimpleTFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="211,201,374,243"/>
+<area shape="rect" id="node6" href="classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="215,267,371,308"/>
+<area shape="rect" id="node7" href="classFoam_1_1DARhoSimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="203,332,382,373"/>
+<area shape="rect" id="node8" href="classFoam_1_1DAPisoFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="184,398,401,425"/>
 </map>
 </div>
 
@@ -1134,7 +1448,7 @@ Here is the caller graph for this function:</div>
 
 <p>assign the point vector based on the points in fvMesh of OpenFOAM </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00220">220</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00247">247</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 </div>
 </div>
@@ -1164,7 +1478,7 @@ Here is the caller graph for this function:</div>
 
 <p>assign the OpenFOAM residual fields based on the resVec </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00226">226</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00253">253</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 </div>
 </div>
@@ -1194,7 +1508,7 @@ Here is the caller graph for this function:</div>
 
 <p>assign the resVec based on OpenFOAM residual fields </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00232">232</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00259">259</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 </div>
 </div>
@@ -1234,7 +1548,7 @@ Here is the caller graph for this function:</div>
 
 <p>write the matrix in binary format </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00238">238</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00265">265</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 <p class="reference">References <a class="el" href="DAUtility_8C_source.html#l00354">DAUtility::writeMatrixBinary()</a>.</p>
 <div class="dynheader">
@@ -1284,7 +1598,7 @@ Here is the call graph for this function:</div>
 
 <p>write the matrix in ASCII format </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00246">246</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00273">273</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 <p class="reference">References <a class="el" href="DAUtility_8C_source.html#l00386">DAUtility::writeMatrixASCII()</a>.</p>
 <div class="dynheader">
@@ -1334,7 +1648,7 @@ Here is the call graph for this function:</div>
 
 <p>read petsc matrix in binary format </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00254">254</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00281">281</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 <p class="reference">References <a class="el" href="DAUtility_8C_source.html#l00321">DAUtility::readMatrixBinary()</a>.</p>
 <div class="dynheader">
@@ -1384,7 +1698,7 @@ Here is the call graph for this function:</div>
 
 <p>write petsc vector in ascii format </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00262">262</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00289">289</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 <p class="reference">References <a class="el" href="DAUtility_8C_source.html#l00290">DAUtility::writeVectorASCII()</a>.</p>
 <div class="dynheader">
@@ -1434,7 +1748,7 @@ Here is the call graph for this function:</div>
 
 <p>read petsc vector in binary format </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00270">270</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00297">297</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 <p class="reference">References <a class="el" href="DAUtility_8C_source.html#l00225">DAUtility::readVectorBinary()</a>.</p>
 <div class="dynheader">
@@ -1484,7 +1798,7 @@ Here is the call graph for this function:</div>
 
 <p>write petsc vector in binary format </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00278">278</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00305">305</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 <p class="reference">References <a class="el" href="DAUtility_8C_source.html#l00258">DAUtility::writeVectorBinary()</a>.</p>
 <div class="dynheader">
@@ -1523,9 +1837,9 @@ Here is the call graph for this function:</div>
 
 <p>return the number of local adjoint states </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00286">286</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00313">313</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">References <a class="el" href="DASolver_8C_source.html#l00122">DASolver::printAllObjFuncs()</a>, and <a class="el" href="DASolver_8C_source.html#l00182">DASolver::setDAObjFuncList()</a>.</p>
+<p class="reference">References <a class="el" href="DASolver_8C_source.html#l00123">DASolver::printAllObjFuncs()</a>, and <a class="el" href="DASolver_8C_source.html#l00183">DASolver::setDAObjFuncList()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1555,11 +1869,11 @@ Here is the call graph for this function:</div>
 
 <p>initialize <a class="el" href="classFoam_1_1DASolver.html#a9ca5cc51f76ca984bdfc62af8760e2b6" title="a list of DAObjFunc pointers ">DASolver::daObjFuncPtrList_</a> one needs to call this before calling printAllObjFuncs </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l00182">182</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l00183">183</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="DASolver_8H_source.html#l00075">DASolver::daIndexPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00072">DASolver::daModelPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00081">DASolver::daObjFuncPtrList_</a>, <a class="el" href="DASolver_8H_source.html#l00069">DASolver::daOptionPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00087">DASolver::daResidualPtr_</a>, <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00004">mesh</a>, <a class="el" href="DASolver_8H_source.html#l00066">DASolver::meshPtr_</a>, and <a class="el" href="DAObjFunc_8C_source.html#l00062">DAObjFunc::New()</a>.</p>
+<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="DASolver_8H_source.html#l00076">DASolver::daIndexPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00073">DASolver::daModelPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00082">DASolver::daObjFuncPtrList_</a>, <a class="el" href="DASolver_8H_source.html#l00070">DASolver::daOptionPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00088">DASolver::daResidualPtr_</a>, <a class="el" href="createRefsPiso_8H_source.html#l00004">mesh</a>, <a class="el" href="DASolver_8H_source.html#l00067">DASolver::meshPtr_</a>, and <a class="el" href="DAObjFunc_8C_source.html#l00062">DAObjFunc::New()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00286">DASolver::getNLocalAdjointStates()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00313">DASolver::getNLocalAdjointStates()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1596,11 +1910,11 @@ Here is the caller graph for this function:</div>
 
 <p>calculate the values of all objective functions and print them to screen </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l00122">122</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l00123">123</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00081">DASolver::daObjFuncPtrList_</a>, <a class="el" href="DAObjFunc_8H_source.html#l00187">DAObjFunc::getObjFuncName()</a>, <a class="el" href="DAObjFunc_8H_source.html#l00193">DAObjFunc::getObjFuncPart()</a>, <a class="el" href="DAObjFunc_8H_source.html#l00199">DAObjFunc::getObjFuncType()</a>, and <a class="el" href="DAObjFunc_8C_source.html#l00291">DAObjFunc::getObjFuncValue()</a>.</p>
+<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00082">DASolver::daObjFuncPtrList_</a>, <a class="el" href="DAObjFunc_8H_source.html#l00187">DAObjFunc::getObjFuncName()</a>, <a class="el" href="DAObjFunc_8H_source.html#l00193">DAObjFunc::getObjFuncPart()</a>, <a class="el" href="DAObjFunc_8H_source.html#l00199">DAObjFunc::getObjFuncType()</a>, and <a class="el" href="DAObjFunc_8C_source.html#l00291">DAObjFunc::getObjFuncValue()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00286">DASolver::getNLocalAdjointStates()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, and <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00313">DASolver::getNLocalAdjointStates()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>, and <a class="el" href="DAPisoFoam_8C_source.html#l00103">DAPisoFoam::solvePrimal()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1617,13 +1931,14 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DASolver_afe40e08050edfc54026142d6353aa408_icgraph.png" border="0" usemap="#classFoam_1_1DASolver_afe40e08050edfc54026142d6353aa408_icgraph" alt=""/></div>
 <map name="classFoam_1_1DASolver_afe40e08050edfc54026142d6353aa408_icgraph" id="classFoam_1_1DASolver_afe40e08050edfc54026142d6353aa408_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DASolver.html#a34b0d0c110b85e4cde38b7a56168e8b0" title="return the number of local adjoint states " alt="" coords="188,5,347,32"/>
-<area shape="rect" id="node3" href="classFoam_1_1DARhoSimpleCFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="173,57,362,98"/>
-<area shape="rect" id="node4" href="classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="172,122,363,163"/>
-<area shape="rect" id="node5" href="classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="190,187,345,229"/>
-<area shape="rect" id="node6" href="classFoam_1_1DASimpleTFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="186,253,349,294"/>
-<area shape="rect" id="node7" href="classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="189,318,345,359"/>
-<area shape="rect" id="node8" href="classFoam_1_1DARhoSimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="178,383,357,425"/>
+<area shape="rect" id="node2" href="classFoam_1_1DASolver.html#a34b0d0c110b85e4cde38b7a56168e8b0" title="return the number of local adjoint states " alt="" coords="201,5,360,32"/>
+<area shape="rect" id="node3" href="classFoam_1_1DARhoSimpleCFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="186,57,375,98"/>
+<area shape="rect" id="node4" href="classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="185,122,376,163"/>
+<area shape="rect" id="node5" href="classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="203,187,358,229"/>
+<area shape="rect" id="node6" href="classFoam_1_1DASimpleTFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="199,253,362,294"/>
+<area shape="rect" id="node7" href="classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="203,318,359,359"/>
+<area shape="rect" id="node8" href="classFoam_1_1DARhoSimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="191,383,370,425"/>
+<area shape="rect" id="node9" href="classFoam_1_1DAPisoFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="172,449,389,476"/>
 </map>
 </div>
 
@@ -1654,11 +1969,11 @@ Here is the caller graph for this function:</div>
 
 <p>check the mesh quality and return meshOK </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00298">298</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00325">325</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">References <a class="el" href="DASolver_8C_source.html#l00147">DASolver::getObjFuncValue()</a>.</p>
+<p class="reference">References <a class="el" href="DASolver_8C_source.html#l00148">DASolver::getObjFuncValue()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, and <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>, and <a class="el" href="DAPisoFoam_8C_source.html#l00103">DAPisoFoam::solvePrimal()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1672,12 +1987,13 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DASolver_abb3f34f5634fe617414ce256738e40b4_icgraph.png" border="0" usemap="#classFoam_1_1DASolver_abb3f34f5634fe617414ce256738e40b4_icgraph" alt=""/></div>
 <map name="classFoam_1_1DASolver_abb3f34f5634fe617414ce256738e40b4_icgraph" id="classFoam_1_1DASolver_abb3f34f5634fe617414ce256738e40b4_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DARhoSimpleCFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="143,5,333,47"/>
-<area shape="rect" id="node3" href="classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="143,71,333,112"/>
-<area shape="rect" id="node4" href="classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="161,136,315,177"/>
-<area shape="rect" id="node5" href="classFoam_1_1DASimpleTFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="157,201,319,243"/>
-<area shape="rect" id="node6" href="classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="160,267,316,308"/>
-<area shape="rect" id="node7" href="classFoam_1_1DARhoSimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="149,332,327,373"/>
+<area shape="rect" id="node2" href="classFoam_1_1DARhoSimpleCFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="157,5,346,47"/>
+<area shape="rect" id="node3" href="classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="156,71,347,112"/>
+<area shape="rect" id="node4" href="classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="174,136,329,177"/>
+<area shape="rect" id="node5" href="classFoam_1_1DASimpleTFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="170,201,333,243"/>
+<area shape="rect" id="node6" href="classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="173,267,329,308"/>
+<area shape="rect" id="node7" href="classFoam_1_1DARhoSimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="162,332,341,373"/>
+<area shape="rect" id="node8" href="classFoam_1_1DAPisoFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="143,398,360,425"/>
 </map>
 </div>
 
@@ -1701,11 +2017,11 @@ Here is the caller graph for this function:</div>
 
 <p>return the value of the objective function </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l00147">147</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l00148">148</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00081">DASolver::daObjFuncPtrList_</a>, <a class="el" href="DAObjFunc_8H_source.html#l00187">DAObjFunc::getObjFuncName()</a>, and <a class="el" href="DAObjFunc_8C_source.html#l00291">DAObjFunc::getObjFuncValue()</a>.</p>
+<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00082">DASolver::daObjFuncPtrList_</a>, <a class="el" href="DAObjFunc_8H_source.html#l00187">DAObjFunc::getObjFuncName()</a>, and <a class="el" href="DAObjFunc_8C_source.html#l00291">DAObjFunc::getObjFuncValue()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00298">DASolver::checkMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00325">DASolver::checkMesh()</a>, <a class="el" href="DAPisoFoam_8C_source.html#l00220">DAPisoFoam::saveTimeInstanceField()</a>, and <a class="el" href="DASolver_8C_source.html#l01852">DASolver::writeObjFuncHistFile()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1720,7 +2036,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DASolver_a22bdd2a534a166b3a21496f6e45bf409_icgraph.png" border="0" usemap="#classFoam_1_1DASolver_a22bdd2a534a166b3a21496f6e45bf409_icgraph" alt=""/></div>
 <map name="classFoam_1_1DASolver_a22bdd2a534a166b3a21496f6e45bf409_icgraph" id="classFoam_1_1DASolver_a22bdd2a534a166b3a21496f6e45bf409_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DASolver.html#abb3f34f5634fe617414ce256738e40b4" title="check the mesh quality and return meshOK " alt="" coords="176,5,265,32"/>
+<area shape="rect" id="node2" href="classFoam_1_1DASolver.html#abb3f34f5634fe617414ce256738e40b4" title="check the mesh quality and return meshOK " alt="" coords="235,5,324,32"/>
+<area shape="rect" id="node3" href="classFoam_1_1DAPisoFoam.html#a1d85955d0f246a5be34578e9fa7e9b5f" title="save primal variable to time instance list for unsteady adjoint " alt="" coords="176,57,383,98"/>
+<area shape="rect" id="node4" href="classFoam_1_1DASolver.html#aa2faeca0f2ffcfed4f15f97080127bf1" title="write objective functions values to the objFuncHistFile " alt="" coords="207,123,351,149"/>
 </map>
 </div>
 
@@ -1751,9 +2069,9 @@ Here is the caller graph for this function:</div>
 
 <p>print all <a class="el" href="classFoam_1_1DAOption.html">DAOption</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00307">307</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00334">334</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">References <a class="el" href="DASolver_8C_source.html#l00410">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DASolver_8C_source.html#l01675">DASolver::getPsiVec()</a>, <a class="el" href="DASolver_8C_source.html#l01771">DASolver::getTotalDerivVal()</a>, <a class="el" href="DASolver_8C_source.html#l00279">DASolver::reduceStateResConLevel()</a>, and <a class="el" href="DASolver_8C_source.html#l01798">DASolver::setdXvdFFDMat()</a>.</p>
+<p class="reference">References <a class="el" href="DASolver_8C_source.html#l00411">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DASolver_8C_source.html#l01672">DASolver::getPsiVec()</a>, <a class="el" href="DASolver_8C_source.html#l01768">DASolver::getTotalDerivVal()</a>, and <a class="el" href="DASolver_8C_source.html#l01795">DASolver::setdXvdFFDMat()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1762,53 +2080,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node2" href="classFoam_1_1DASolver.html#a6cec9caca72b22c3e006bd0fbb9c422a" title="calculate the norms of all residuals and print to screen " alt="" coords="160,5,349,32"/>
 <area shape="rect" id="node3" href="classFoam_1_1DASolver.html#a1b7b930ccecf145fff2167041980f094" title="assign the psiVecDict_ to psiVec " alt="" coords="213,56,296,83"/>
 <area shape="rect" id="node4" href="classFoam_1_1DASolver.html#a5cb5e8d8b4babc32d6c225c1b0796ba7" title="get the value of totoal derivative that is stored in DASolver::totalDerivDict_ " alt="" coords="195,107,314,133"/>
-<area shape="rect" id="node5" href="classFoam_1_1DASolver.html#ad4aa41b7d245695cdf5071de2e4a823d" title="reduce the connectivity level for Jacobian connectivity mat " alt="" coords="169,157,340,184"/>
-<area shape="rect" id="node6" href="classFoam_1_1DASolver.html#a6ea8ab812cb9b4cb4179c90fa55af27b" title="set the value for DASolver::dXvdFFDMat_ " alt="" coords="195,208,314,235"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ad4aa41b7d245695cdf5071de2e4a823d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4aa41b7d245695cdf5071de2e4a823d">&#9670;&nbsp;</a></span>reduceStateResConLevel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reduceStateResConLevel </td>
-          <td>(</td>
-          <td class="paramtype">const dictionary &amp;&#160;</td>
-          <td class="paramname"><em>maxResConLv4JacPCMat</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">HashTable&lt; List&lt; List&lt; word &gt;&gt;&gt; &amp;&#160;</td>
-          <td class="paramname"><em>stateResConInfo</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>reduce the connectivity level for Jacobian connectivity mat </p>
-
-<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l00279">279</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
-
-<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00069">DASolver::daOptionPtr_</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00307">DASolver::printAllOptions()</a>, and <a class="el" href="DASolver_8C_source.html#l00599">DASolver::solveAdjoint()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classFoam_1_1DASolver_ad4aa41b7d245695cdf5071de2e4a823d_icgraph.png" border="0" usemap="#classFoam_1_1DASolver_ad4aa41b7d245695cdf5071de2e4a823d_icgraph" alt=""/></div>
-<map name="classFoam_1_1DASolver_ad4aa41b7d245695cdf5071de2e4a823d_icgraph" id="classFoam_1_1DASolver_ad4aa41b7d245695cdf5071de2e4a823d_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DASolver.html#a967a69a9c61b3b15bc5419be87fcff08" title="print all DAOption " alt="" coords="224,5,331,32"/>
-<area shape="rect" id="node3" href="classFoam_1_1DASolver.html#a985af8c5b6d6bf478b8fd1d999865b47" title="solve the adjoint linear equations " alt="" coords="231,56,324,83"/>
+<area shape="rect" id="node5" href="classFoam_1_1DASolver.html#a6ea8ab812cb9b4cb4179c90fa55af27b" title="set the value for DASolver::dXvdFFDMat_ " alt="" coords="195,157,314,184"/>
 </map>
 </div>
 
@@ -1842,25 +2114,27 @@ Here is the caller graph for this function:</div>
 
 <p>calculate the norms of all residuals and print to screen </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l00410">410</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l00411">411</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00072">DASolver::daModelPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00087">DASolver::daResidualPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00066">DASolver::meshPtr_</a>, and <a class="el" href="DASolver_8H_source.html#l00093">DASolver::stateInfo_</a>.</p>
+<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00073">DASolver::daModelPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00088">DASolver::daResidualPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00067">DASolver::meshPtr_</a>, and <a class="el" href="DASolver_8H_source.html#l00094">DASolver::stateInfo_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01017">DASolver::calcTotalDeriv()</a>, <a class="el" href="DASolver_8H_source.html#l00307">DASolver::printAllOptions()</a>, <a class="el" href="DASolver_8C_source.html#l00599">DASolver::solveAdjoint()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, and <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01014">DASolver::calcTotalDeriv()</a>, <a class="el" href="DASolver_8H_source.html#l00334">DASolver::printAllOptions()</a>, <a class="el" href="DAPisoFoam_8C_source.html#l00220">DAPisoFoam::saveTimeInstanceField()</a>, <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>, and <a class="el" href="DAPisoFoam_8C_source.html#l00103">DAPisoFoam::solvePrimal()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DASolver_a6cec9caca72b22c3e006bd0fbb9c422a_icgraph.png" border="0" usemap="#classFoam_1_1DASolver_a6cec9caca72b22c3e006bd0fbb9c422a_icgraph" alt=""/></div>
 <map name="classFoam_1_1DASolver_a6cec9caca72b22c3e006bd0fbb9c422a_icgraph" id="classFoam_1_1DASolver_a6cec9caca72b22c3e006bd0fbb9c422a_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DASolver.html#ae61bd69b450c4e79a7eb089751e0ecde" title="compute the total derivatives " alt="" coords="285,5,391,32"/>
-<area shape="rect" id="node3" href="classFoam_1_1DASolver.html#a967a69a9c61b3b15bc5419be87fcff08" title="print all DAOption " alt="" coords="285,56,391,83"/>
-<area shape="rect" id="node4" href="classFoam_1_1DASolver.html#a985af8c5b6d6bf478b8fd1d999865b47" title="solve the adjoint linear equations " alt="" coords="291,107,385,133"/>
-<area shape="rect" id="node5" href="classFoam_1_1DARhoSimpleCFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="243,158,433,199"/>
-<area shape="rect" id="node6" href="classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="243,223,433,265"/>
-<area shape="rect" id="node7" href="classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="261,289,415,330"/>
-<area shape="rect" id="node8" href="classFoam_1_1DASimpleTFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="257,354,419,395"/>
-<area shape="rect" id="node9" href="classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="260,419,416,461"/>
-<area shape="rect" id="node10" href="classFoam_1_1DARhoSimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="249,485,427,526"/>
+<area shape="rect" id="node2" href="classFoam_1_1DASolver.html#ae61bd69b450c4e79a7eb089751e0ecde" title="compute the total derivatives " alt="" coords="293,5,399,32"/>
+<area shape="rect" id="node3" href="classFoam_1_1DASolver.html#a967a69a9c61b3b15bc5419be87fcff08" title="print all DAOption " alt="" coords="293,56,399,83"/>
+<area shape="rect" id="node4" href="classFoam_1_1DAPisoFoam.html#a1d85955d0f246a5be34578e9fa7e9b5f" title="save primal variable to time instance list for unsteady adjoint " alt="" coords="243,107,449,149"/>
+<area shape="rect" id="node5" href="classFoam_1_1DAPisoFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="497,144,715,171"/>
+<area shape="rect" id="node6" href="classFoam_1_1DASolver.html#a985af8c5b6d6bf478b8fd1d999865b47" title="solve the adjoint linear equations " alt="" coords="299,224,393,251"/>
+<area shape="rect" id="node7" href="classFoam_1_1DARhoSimpleCFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="251,275,441,317"/>
+<area shape="rect" id="node8" href="classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="251,341,441,382"/>
+<area shape="rect" id="node9" href="classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="269,406,423,447"/>
+<area shape="rect" id="node10" href="classFoam_1_1DASimpleTFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="265,471,427,513"/>
+<area shape="rect" id="node11" href="classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="268,537,424,578"/>
+<area shape="rect" id="node12" href="classFoam_1_1DARhoSimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="257,602,435,643"/>
 </map>
 </div>
 
@@ -1894,11 +2168,11 @@ Here is the caller graph for this function:</div>
 
 <p>assign the psiVecDict_ to psiVec </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01675">1675</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01672">1672</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00099">DASolver::psiVecDict_</a>.</p>
+<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00100">DASolver::psiVecDict_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01017">DASolver::calcTotalDeriv()</a>, and <a class="el" href="DASolver_8H_source.html#l00307">DASolver::printAllOptions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01014">DASolver::calcTotalDeriv()</a>, and <a class="el" href="DASolver_8H_source.html#l00334">DASolver::printAllOptions()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1945,11 +2219,11 @@ Here is the caller graph for this function:</div>
 
 <p>get the value of totoal derivative that is stored in <a class="el" href="classFoam_1_1DASolver.html#a789a632c43f990c60a2a645d4621c30c" title="the dictionary that stores the total derivatives reduced from processors ">DASolver::totalDerivDict_</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01771">1771</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01768">1768</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00102">DASolver::totalDerivDict_</a>.</p>
+<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00103">DASolver::totalDerivDict_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00307">DASolver::printAllOptions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00334">DASolver::printAllOptions()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1979,11 +2253,11 @@ Here is the caller graph for this function:</div>
 
 <p>set the value for <a class="el" href="classFoam_1_1DASolver.html#a82f81280ea1d0d4c3ef5729fcaad6d2b" title="the matrix that stores the partials dXv/dFFD computed from the idwarp and pygeo in the pyDAFoam...">DASolver::dXvdFFDMat_</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01798">1798</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8C_source.html#l01795">1795</a> of file <a class="el" href="DASolver_8C_source.html">DASolver.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00117">DASolver::dXvdFFDMat_</a>.</p>
+<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00121">DASolver::dXvdFFDMat_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00987">PYDAFOAM::calcTotalDeriv()</a>, and <a class="el" href="DASolver_8H_source.html#l00307">DASolver::printAllOptions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01154">PYDAFOAM::calcTotalDeriv()</a>, and <a class="el" href="DASolver_8H_source.html#l00334">DASolver::printAllOptions()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -2022,7 +2296,7 @@ Here is the caller graph for this function:</div>
 
 <p>update the allOptions_ dict in <a class="el" href="classFoam_1_1DAOption.html">DAOption</a> based on the pyOptions from pyDAFoam </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00338">338</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00360">360</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 </div>
 </div>
@@ -2051,9 +2325,9 @@ Here is the caller graph for this function:</div>
 
 <p>get the solution time folder for previous primal solution </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00344">344</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00366">366</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00123">DASolver::prevPrimalSolTime_</a>.</p>
+<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00127">DASolver::prevPrimalSolTime_</a>.</p>
 
 </div>
 </div>
@@ -2080,7 +2354,7 @@ Here is the caller graph for this function:</div>
 
 <p>all the arguments </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00054">54</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00055">55</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 </div>
 </div>
@@ -2106,7 +2380,7 @@ Here is the caller graph for this function:</div>
 
 <p>all options in DAFoam </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00057">57</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00058">58</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 </div>
 </div>
@@ -2132,7 +2406,7 @@ Here is the caller graph for this function:</div>
 
 <p>args pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00060">60</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00061">61</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00037">DARhoSimpleCFoam::initSolver()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00039">DATurboFoam::initSolver()</a>, and <a class="el" href="DARhoSimpleFoam_8C_source.html#l00040">DARhoSimpleFoam::initSolver()</a>.</p>
 
@@ -2160,9 +2434,9 @@ Here is the caller graph for this function:</div>
 
 <p>runTime pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00063">63</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00064">64</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00037">DARhoSimpleCFoam::initSolver()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00037">DASolidDisplacementFoam::initSolver()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00036">DASimpleFoam::initSolver()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00038">DASimpleTFoam::initSolver()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00039">DATurboFoam::initSolver()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00040">DARhoSimpleFoam::initSolver()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00156">DATurboFoam::setRotingWallVelocity()</a>, and <a class="el" href="DASolver_8C_source.html#l00599">DASolver::solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00037">DARhoSimpleCFoam::initSolver()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00037">DASolidDisplacementFoam::initSolver()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00036">DASimpleFoam::initSolver()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00038">DASimpleTFoam::initSolver()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00039">DATurboFoam::initSolver()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00040">DARhoSimpleFoam::initSolver()</a>, <a class="el" href="DAPisoFoam_8C_source.html#l00036">DAPisoFoam::initSolver()</a>, <a class="el" href="DAPisoFoam_8C_source.html#l00220">DAPisoFoam::saveTimeInstanceField()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00159">DATurboFoam::setRotingWallVelocity()</a>, <a class="el" href="DAPisoFoam_8C_source.html#l00265">DAPisoFoam::setTimeInstanceField()</a>, <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>, and <a class="el" href="DASolver_8C_source.html#l01852">DASolver::writeObjFuncHistFile()</a>.</p>
 
 </div>
 </div>
@@ -2188,9 +2462,9 @@ Here is the caller graph for this function:</div>
 
 <p>fvMesh pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00066">66</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00067">67</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l00410">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DASolver_8C_source.html#l01017">DASolver::calcTotalDeriv()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00037">DARhoSimpleCFoam::initSolver()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00037">DASolidDisplacementFoam::initSolver()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00036">DASimpleFoam::initSolver()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00038">DASimpleTFoam::initSolver()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00039">DATurboFoam::initSolver()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00040">DARhoSimpleFoam::initSolver()</a>, <a class="el" href="DASolver_8C_source.html#l00182">DASolver::setDAObjFuncList()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00156">DATurboFoam::setRotingWallVelocity()</a>, and <a class="el" href="DASolver_8C_source.html#l00599">DASolver::solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l00411">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DASolver_8C_source.html#l01014">DASolver::calcTotalDeriv()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00037">DARhoSimpleCFoam::initSolver()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00037">DASolidDisplacementFoam::initSolver()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00036">DASimpleFoam::initSolver()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00038">DASimpleTFoam::initSolver()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00039">DATurboFoam::initSolver()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00040">DARhoSimpleFoam::initSolver()</a>, <a class="el" href="DAPisoFoam_8C_source.html#l00036">DAPisoFoam::initSolver()</a>, <a class="el" href="DASolver_8C_source.html#l00183">DASolver::setDAObjFuncList()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00159">DATurboFoam::setRotingWallVelocity()</a>, and <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>.</p>
 
 </div>
 </div>
@@ -2216,9 +2490,9 @@ Here is the caller graph for this function:</div>
 
 <p><a class="el" href="classFoam_1_1DAOption.html">DAOption</a> pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00069">69</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00070">70</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01017">DASolver::calcTotalDeriv()</a>, <a class="el" href="DASolver_8C_source.html#l01810">DASolver::checkResidualTol()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00036">DASimpleFoam::initSolver()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00040">DARhoSimpleFoam::initSolver()</a>, <a class="el" href="DASolver_8C_source.html#l00090">DASolver::loop()</a>, <a class="el" href="DASolver_8C_source.html#l00279">DASolver::reduceStateResConLevel()</a>, <a class="el" href="DASolver_8C_source.html#l00182">DASolver::setDAObjFuncList()</a>, <a class="el" href="DASolver_8C_source.html#l00599">DASolver::solveAdjoint()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, and <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01014">DASolver::calcTotalDeriv()</a>, <a class="el" href="DASolver_8C_source.html#l01807">DASolver::checkResidualTol()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00036">DASimpleFoam::initSolver()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00040">DARhoSimpleFoam::initSolver()</a>, <a class="el" href="DAPisoFoam_8C_source.html#l00036">DAPisoFoam::initSolver()</a>, <a class="el" href="DASolver_8C_source.html#l00091">DASolver::loop()</a>, <a class="el" href="DASolver_8C_source.html#l00280">DASolver::reduceStateResConLevel()</a>, <a class="el" href="DAPisoFoam_8C_source.html#l00220">DAPisoFoam::saveTimeInstanceField()</a>, <a class="el" href="DASolver_8C_source.html#l00183">DASolver::setDAObjFuncList()</a>, <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>, <a class="el" href="DAPisoFoam_8C_source.html#l00103">DAPisoFoam::solvePrimal()</a>, and <a class="el" href="DASolver_8C_source.html#l01852">DASolver::writeObjFuncHistFile()</a>.</p>
 
 </div>
 </div>
@@ -2244,9 +2518,9 @@ Here is the caller graph for this function:</div>
 
 <p><a class="el" href="classFoam_1_1DAModel.html">DAModel</a> pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00072">72</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00073">73</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l00410">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DASolver_8C_source.html#l01017">DASolver::calcTotalDeriv()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00036">DASimpleFoam::initSolver()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00040">DARhoSimpleFoam::initSolver()</a>, <a class="el" href="DASolver_8C_source.html#l00182">DASolver::setDAObjFuncList()</a>, and <a class="el" href="DASolver_8C_source.html#l00599">DASolver::solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l00411">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DASolver_8C_source.html#l01014">DASolver::calcTotalDeriv()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00036">DASimpleFoam::initSolver()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00040">DARhoSimpleFoam::initSolver()</a>, <a class="el" href="DAPisoFoam_8C_source.html#l00036">DAPisoFoam::initSolver()</a>, <a class="el" href="DASolver_8C_source.html#l00183">DASolver::setDAObjFuncList()</a>, <a class="el" href="DAPisoFoam_8C_source.html#l00265">DAPisoFoam::setTimeInstanceField()</a>, and <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>.</p>
 
 </div>
 </div>
@@ -2272,9 +2546,9 @@ Here is the caller graph for this function:</div>
 
 <p><a class="el" href="classFoam_1_1DAIndex.html">DAIndex</a> pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00075">75</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00076">76</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01017">DASolver::calcTotalDeriv()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00036">DASimpleFoam::initSolver()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00040">DARhoSimpleFoam::initSolver()</a>, <a class="el" href="DASolver_8C_source.html#l00182">DASolver::setDAObjFuncList()</a>, and <a class="el" href="DASolver_8C_source.html#l00599">DASolver::solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01014">DASolver::calcTotalDeriv()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00036">DASimpleFoam::initSolver()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00040">DARhoSimpleFoam::initSolver()</a>, <a class="el" href="DAPisoFoam_8C_source.html#l00036">DAPisoFoam::initSolver()</a>, <a class="el" href="DASolver_8C_source.html#l00183">DASolver::setDAObjFuncList()</a>, and <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>.</p>
 
 </div>
 </div>
@@ -2300,9 +2574,9 @@ Here is the caller graph for this function:</div>
 
 <p><a class="el" href="classFoam_1_1DAField.html">DAField</a> pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00078">78</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00079">79</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l00599">DASolver::solveAdjoint()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, and <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAPisoFoam_8C_source.html#l00220">DAPisoFoam::saveTimeInstanceField()</a>, <a class="el" href="DAPisoFoam_8C_source.html#l00265">DAPisoFoam::setTimeInstanceField()</a>, <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>, and <a class="el" href="DAPisoFoam_8C_source.html#l00103">DAPisoFoam::solvePrimal()</a>.</p>
 
 </div>
 </div>
@@ -2328,9 +2602,9 @@ Here is the caller graph for this function:</div>
 
 <p>a list of <a class="el" href="classFoam_1_1DAObjFunc.html">DAObjFunc</a> pointers </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00081">81</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00082">82</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l00147">DASolver::getObjFuncValue()</a>, <a class="el" href="DASolver_8C_source.html#l00122">DASolver::printAllObjFuncs()</a>, and <a class="el" href="DASolver_8C_source.html#l00182">DASolver::setDAObjFuncList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l00148">DASolver::getObjFuncValue()</a>, <a class="el" href="DASolver_8C_source.html#l00123">DASolver::printAllObjFuncs()</a>, and <a class="el" href="DASolver_8C_source.html#l00183">DASolver::setDAObjFuncList()</a>.</p>
 
 </div>
 </div>
@@ -2356,9 +2630,9 @@ Here is the caller graph for this function:</div>
 
 <p><a class="el" href="classFoam_1_1DACheckMesh.html">DACheckMesh</a> object pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00084">84</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00085">85</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00037">DARhoSimpleCFoam::initSolver()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00037">DASolidDisplacementFoam::initSolver()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00036">DASimpleFoam::initSolver()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00038">DASimpleTFoam::initSolver()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00039">DATurboFoam::initSolver()</a>, and <a class="el" href="DARhoSimpleFoam_8C_source.html#l00040">DARhoSimpleFoam::initSolver()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00037">DARhoSimpleCFoam::initSolver()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00037">DASolidDisplacementFoam::initSolver()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00036">DASimpleFoam::initSolver()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00038">DASimpleTFoam::initSolver()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00039">DATurboFoam::initSolver()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00040">DARhoSimpleFoam::initSolver()</a>, and <a class="el" href="DAPisoFoam_8C_source.html#l00036">DAPisoFoam::initSolver()</a>.</p>
 
 </div>
 </div>
@@ -2384,9 +2658,9 @@ Here is the caller graph for this function:</div>
 
 <p><a class="el" href="classFoam_1_1DAResidual.html">DAResidual</a> pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00087">87</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00088">88</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l00410">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DASolver_8C_source.html#l01017">DASolver::calcTotalDeriv()</a>, <a class="el" href="DASolver_8C_source.html#l00182">DASolver::setDAObjFuncList()</a>, and <a class="el" href="DASolver_8C_source.html#l00599">DASolver::solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l00411">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DASolver_8C_source.html#l01014">DASolver::calcTotalDeriv()</a>, <a class="el" href="DASolver_8C_source.html#l00183">DASolver::setDAObjFuncList()</a>, <a class="el" href="DAPisoFoam_8C_source.html#l00265">DAPisoFoam::setTimeInstanceField()</a>, and <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>.</p>
 
 </div>
 </div>
@@ -2412,9 +2686,9 @@ Here is the caller graph for this function:</div>
 
 <p><a class="el" href="classFoam_1_1DAStateInfo.html">DAStateInfo</a> pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00090">90</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00091">91</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l00599">DASolver::solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>.</p>
 
 </div>
 </div>
@@ -2440,9 +2714,9 @@ Here is the caller graph for this function:</div>
 
 <p>the stateInfo_ list from <a class="el" href="classFoam_1_1DAStateInfo.html">DAStateInfo</a> object </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00093">93</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00094">94</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l00410">DASolver::calcPrimalResidualStatistics()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l00411">DASolver::calcPrimalResidualStatistics()</a>.</p>
 
 </div>
 </div>
@@ -2468,9 +2742,9 @@ Here is the caller graph for this function:</div>
 
 <p>the list of objective function names that requires adjoint solution </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00096">96</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00097">97</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01017">DASolver::calcTotalDeriv()</a>, and <a class="el" href="DASolver_8C_source.html#l00599">DASolver::solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01014">DASolver::calcTotalDeriv()</a>, and <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>.</p>
 
 </div>
 </div>
@@ -2496,9 +2770,9 @@ Here is the caller graph for this function:</div>
 
 <p>the dictionary of adjoint vector (psi) values for all objectives </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00099">99</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00100">100</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01675">DASolver::getPsiVec()</a>, and <a class="el" href="DASolver_8C_source.html#l00599">DASolver::solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01672">DASolver::getPsiVec()</a>, and <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>.</p>
 
 </div>
 </div>
@@ -2524,9 +2798,37 @@ Here is the caller graph for this function:</div>
 
 <p>the dictionary that stores the total derivatives reduced from processors </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00102">102</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00103">103</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01017">DASolver::calcTotalDeriv()</a>, and <a class="el" href="DASolver_8C_source.html#l01771">DASolver::getTotalDerivVal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01014">DASolver::calcTotalDeriv()</a>, and <a class="el" href="DASolver_8C_source.html#l01768">DASolver::getTotalDerivVal()</a>.</p>
+
+</div>
+</div>
+<a id="ae8dd2d197004f7273675e90266d647ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8dd2d197004f7273675e90266d647ce">&#9670;&nbsp;</a></span>objFuncHistFilePtr_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">autoPtr&lt;OFstream&gt; objFuncHistFilePtr_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>pointer to the objective function file used in unsteady primal solvers </p>
+
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00106">106</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01835">DASolver::initializeObjFuncHistFilePtr()</a>, and <a class="el" href="DASolver_8C_source.html#l01852">DASolver::writeObjFuncHistFile()</a>.</p>
 
 </div>
 </div>
@@ -2552,9 +2854,9 @@ Here is the caller graph for this function:</div>
 
 <p>the matrix that stores the partials dXv/dFFD computed from the idwarp and pygeo in the <a class="el" href="pyDAFoam_8py.html">pyDAFoam.py</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00117">117</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00121">121</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01017">DASolver::calcTotalDeriv()</a>, and <a class="el" href="DASolver_8C_source.html#l01798">DASolver::setdXvdFFDMat()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01014">DASolver::calcTotalDeriv()</a>, and <a class="el" href="DASolver_8C_source.html#l01795">DASolver::setdXvdFFDMat()</a>.</p>
 
 </div>
 </div>
@@ -2568,7 +2870,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">scalar primalMinRes_</td>
+          <td class="memname">scalar primalMinRes_ = 1e10</td>
         </tr>
       </table>
   </td>
@@ -2580,9 +2882,9 @@ Here is the caller graph for this function:</div>
 
 <p>the maximal residual for primal solution </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00120">120</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00124">124</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01810">DASolver::checkResidualTol()</a>, <a class="el" href="DASolver_8C_source.html#l00090">DASolver::loop()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, and <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01807">DASolver::checkResidualTol()</a>, <a class="el" href="DASolver_8C_source.html#l00091">DASolver::loop()</a>, <a class="el" href="DARhoSimpleCFoam_8C_source.html#l00055">DARhoSimpleCFoam::solvePrimal()</a>, <a class="el" href="DASolidDisplacementFoam_8C_source.html#l00054">DASolidDisplacementFoam::solvePrimal()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00065">DASimpleFoam::solvePrimal()</a>, <a class="el" href="DASimpleTFoam_8C_source.html#l00056">DASimpleTFoam::solvePrimal()</a>, <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00070">DARhoSimpleFoam::solvePrimal()</a>, and <a class="el" href="DAPisoFoam_8C_source.html#l00103">DAPisoFoam::solvePrimal()</a>.</p>
 
 </div>
 </div>
@@ -2608,9 +2910,9 @@ Here is the caller graph for this function:</div>
 
 <p>the solution time for the previous primal solution </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00123">123</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolver_8H_source.html#l00127">127</a> of file <a class="el" href="DASolver_8H_source.html">DASolver.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00344">DASolver::getPrevPrimalSolTime()</a>, and <a class="el" href="DASolver_8C_source.html#l00090">DASolver::loop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00366">DASolver::getPrevPrimalSolTime()</a>, and <a class="el" href="DASolver_8C_source.html#l00091">DASolver::loop()</a>.</p>
 
 </div>
 </div>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.6</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.0</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -91,7 +91,9 @@ Functions</h2></td></tr>
 <tr class="separator:a0c06ac2d4365e232cafb5197bc79ea7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a042f7e7ab19e93bf53b1124eee725509"><td class="memItemLeft" align="right" valign="top">DARegDbTurbulenceModelCompressible&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#a042f7e7ab19e93bf53b1124eee725509">regDbTurbulence</a> (<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, <a class="el" href="pyColoringIncompressible_2createFields_8H.html#a155352cb9e93911ec5673f1c497a00e6">turbulence</a>())</td></tr>
 <tr class="separator:a042f7e7ab19e93bf53b1124eee725509"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4e05772a4fee20e9da89c9fbe0376e4"><td class="memItemLeft" align="right" valign="top">autoPtr&lt; DATurbulenceModel &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#ac4e05772a4fee20e9da89c9fbe0376e4">daTurbulenceModel</a> (DATurbulenceModel::New(<a class="el" href="pyColoringIncompressible_2createAdjoint_8H.html#a542785bf97f1b5022629925308586ed7">turbModelName</a>, <a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, <a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>))</td></tr>
+<tr class="memitem:ad5e831b01359274145c117c8803ffb87"><td class="memItemLeft" align="right" valign="top">const word&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#ad5e831b01359274145c117c8803ffb87">turbModelName</a> (IOdictionary(IOobject(&quot;turbulenceProperties&quot;, mesh.time().constant(), <a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, IOobject::MUST_READ, IOobject::NO_WRITE, false)) .subDict(&quot;RAS&quot;) .lookup(&quot;RASModel&quot;))</td></tr>
+<tr class="separator:ad5e831b01359274145c117c8803ffb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4e05772a4fee20e9da89c9fbe0376e4"><td class="memItemLeft" align="right" valign="top">autoPtr&lt; DATurbulenceModel &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#ac4e05772a4fee20e9da89c9fbe0376e4">daTurbulenceModel</a> (DATurbulenceModel::New(<a class="el" href="pyColoringIncompressible_2createAdjoint_8H.html#ad5e831b01359274145c117c8803ffb87">turbModelName</a>, <a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, <a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>))</td></tr>
 <tr class="separator:ac4e05772a4fee20e9da89c9fbe0376e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc28e15eebd1fcd331c1edad4145dc49"><td class="memItemLeft" align="right" valign="top">DAModel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel</a> (<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, <a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>)</td></tr>
 <tr class="separator:adc28e15eebd1fcd331c1edad4145dc49"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -102,8 +104,6 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a3864570893471dd51b2dfd3526c8f8bb"><td class="memItemLeft" align="right" valign="top">DAUtility&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#a3864570893471dd51b2dfd3526c8f8bb">daUtil</a></td></tr>
 <tr class="separator:a3864570893471dd51b2dfd3526c8f8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a542785bf97f1b5022629925308586ed7"><td class="memItemLeft" align="right" valign="top">word&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#a542785bf97f1b5022629925308586ed7">turbModelName</a> = daOption.getOption&lt;word&gt;(&quot;turbulenceModel&quot;)</td></tr>
-<tr class="separator:a542785bf97f1b5022629925308586ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a75fa363c8e8a3229461183017dd17311"></a>
@@ -211,6 +211,24 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="ad5e831b01359274145c117c8803ffb87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5e831b01359274145c117c8803ffb87">&#9670;&nbsp;</a></span>turbModelName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const word turbModelName </td>
+          <td>(</td>
+          <td class="paramtype">IOdictionary(IOobject(&quot;turbulenceProperties&quot;, mesh.time().constant(), <a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, IOobject::MUST_READ, IOobject::NO_WRITE, false)) .subDict(&quot;RAS&quot;) .lookup(&quot;RASModel&quot;)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac4e05772a4fee20e9da89c9fbe0376e4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac4e05772a4fee20e9da89c9fbe0376e4">&#9670;&nbsp;</a></span>daTurbulenceModel()</h2>
 
@@ -220,7 +238,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">autoPtr&lt;DATurbulenceModel&gt; daTurbulenceModel </td>
           <td>(</td>
-          <td class="paramtype">DATurbulenceModel::New(<a class="el" href="pyColoringIncompressible_2createAdjoint_8H.html#a542785bf97f1b5022629925308586ed7">turbModelName</a>, <a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, <a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>)&#160;</td>
+          <td class="paramtype">DATurbulenceModel::New(<a class="el" href="pyColoringIncompressible_2createAdjoint_8H.html#ad5e831b01359274145c117c8803ffb87">turbModelName</a>, <a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, <a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>)&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -343,22 +361,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="pyColoringCompressible_2createAdjoint_8H_source.html#l00003">3</a> of file <a class="el" href="pyColoringCompressible_2createAdjoint_8H_source.html">createAdjoint.H</a>.</p>
-
-</div>
-</div>
-<a id="a542785bf97f1b5022629925308586ed7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a542785bf97f1b5022629925308586ed7">&#9670;&nbsp;</a></span>turbModelName</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">word turbModelName = daOption.getOption&lt;word&gt;(&quot;turbulenceModel&quot;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="pyColoringCompressible_2createAdjoint_8H_source.html#l00012">12</a> of file <a class="el" href="pyColoringCompressible_2createAdjoint_8H_source.html">createAdjoint.H</a>.</p>
 
 </div>
 </div>

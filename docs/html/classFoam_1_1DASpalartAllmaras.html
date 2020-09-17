@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.0.6</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.0</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -182,6 +182,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a45a5b7ae829ea8e200332ce6a19e5a1e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#a45a5b7ae829ea8e200332ce6a19e5a1e">printYPlus</a> () const</td></tr>
 <tr class="memdesc:a45a5b7ae829ea8e200332ce6a19e5a1e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">print the min max and mean yPlus to screen  <a href="classFoam_1_1DATurbulenceModel.html#a45a5b7ae829ea8e200332ce6a19e5a1e">More...</a><br /></td></tr>
 <tr class="separator:a45a5b7ae829ea8e200332ce6a19e5a1e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba061b34197deb555c03c4e3ca27ac0 inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#adba061b34197deb555c03c4e3ca27ac0">isPrintTime</a> (const Time &amp;<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>, const label printInterval) const</td></tr>
+<tr class="separator:adba061b34197deb555c03c4e3ca27ac0 inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -328,7 +330,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00019">19</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAOption_8H_source.html#l00056">DAOption::getAllOptions()</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00076">DASpalartAllmaras::printInterval_</a>.</p>
+<p class="reference">References <a class="el" href="DAOption_8H_source.html#l00056">DAOption::getAllOptions()</a>, <a class="el" href="createRefsPiso_8H_source.html#l00004">mesh</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00076">DASpalartAllmaras::printInterval_</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -365,7 +367,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8H_source.html#l00089">89</a> of file <a class="el" href="DASpalartAllmaras_8H_source.html">DASpalartAllmaras.H</a>.</p>
 
-<p class="reference">References <a class="el" href="DASpalartAllmaras_8C_source.html#l00278">DASpalartAllmaras::addModelResidualCon()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::calcResiduals()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00356">DASpalartAllmaras::correct()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00206">DASpalartAllmaras::correctBoundaryConditions()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00152">DASpalartAllmaras::correctModelStates()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00186">DASpalartAllmaras::correctNut()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00228">DASpalartAllmaras::correctStateResidualModelCon()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00145">DASpalartAllmaras::DnuTildaEff()</a>, and <a class="el" href="DASpalartAllmaras_8C_source.html#l00217">DASpalartAllmaras::updateIntermediateVariables()</a>.</p>
+<p class="reference">References <a class="el" href="DASpalartAllmaras_8C_source.html#l00298">DASpalartAllmaras::addModelResidualCon()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">DASpalartAllmaras::calcResiduals()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::correct()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00226">DASpalartAllmaras::correctBoundaryConditions()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00172">DASpalartAllmaras::correctModelStates()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00206">DASpalartAllmaras::correctNut()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00248">DASpalartAllmaras::correctStateResidualModelCon()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00165">DASpalartAllmaras::DnuTildaEff()</a>, and <a class="el" href="DASpalartAllmaras_8C_source.html#l00237">DASpalartAllmaras::updateIntermediateVariables()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -409,11 +411,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00095">95</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00115">115</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DATurbulenceModel_8C_source.html#l00262">DATurbulenceModel::nu()</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00064">DASpalartAllmaras::nuTilda_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::calcResiduals()</a>, and <a class="el" href="DASpalartAllmaras_8C_source.html#l00186">DASpalartAllmaras::correctNut()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">DASpalartAllmaras::calcResiduals()</a>, and <a class="el" href="DASpalartAllmaras_8C_source.html#l00206">DASpalartAllmaras::correctNut()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -458,11 +460,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00100">100</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00120">120</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DASpalartAllmaras_8H_source.html#l00040">DASpalartAllmaras::Cv1_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::calcResiduals()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00186">DASpalartAllmaras::correctNut()</a>, and <a class="el" href="DASpalartAllmaras_8C_source.html#l00107">DASpalartAllmaras::fv2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">DASpalartAllmaras::calcResiduals()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00206">DASpalartAllmaras::correctNut()</a>, and <a class="el" href="DASpalartAllmaras_8C_source.html#l00127">DASpalartAllmaras::fv2()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -510,11 +512,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00107">107</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00127">127</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DASpalartAllmaras_8C_source.html#l00100">DASpalartAllmaras::fv1()</a>.</p>
+<p class="reference">References <a class="el" href="DASpalartAllmaras_8C_source.html#l00120">DASpalartAllmaras::fv1()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00114">DASpalartAllmaras::Stilda()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00134">DASpalartAllmaras::Stilda()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -568,11 +570,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00114">114</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00134">134</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DASpalartAllmaras_8H_source.html#l00041">DASpalartAllmaras::Cs_</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00107">DASpalartAllmaras::fv2()</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00034">DASpalartAllmaras::kappa_</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00064">DASpalartAllmaras::nuTilda_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00086">DATurbulenceModel::U_</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00070">DASpalartAllmaras::y_</a>.</p>
+<p class="reference">References <a class="el" href="DASpalartAllmaras_8H_source.html#l00041">DASpalartAllmaras::Cs_</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00127">DASpalartAllmaras::fv2()</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00034">DASpalartAllmaras::kappa_</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00064">DASpalartAllmaras::nuTilda_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00086">DATurbulenceModel::U_</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00070">DASpalartAllmaras::y_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">DASpalartAllmaras::calcResiduals()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -616,11 +618,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00127">127</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00147">147</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DASpalartAllmaras_8H_source.html#l00038">DASpalartAllmaras::Cw2_</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00039">DASpalartAllmaras::Cw3_</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00034">DASpalartAllmaras::kappa_</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00064">DASpalartAllmaras::nuTilda_</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00070">DASpalartAllmaras::y_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">DASpalartAllmaras::calcResiduals()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -667,11 +669,11 @@ Here is the caller graph for this function:</div>
 
 <p>Return the effective diffusivity for nuTilda. </p>
 
-<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00145">145</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00165">165</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DATurbulenceModel_8C_source.html#l00262">DATurbulenceModel::nu()</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00064">DASpalartAllmaras::nuTilda_</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00033">DASpalartAllmaras::sigmaNut_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::calcResiduals()</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00089">DASpalartAllmaras::~DASpalartAllmaras()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">DASpalartAllmaras::calcResiduals()</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00089">DASpalartAllmaras::~DASpalartAllmaras()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -720,7 +722,7 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DATurbulenceModel.html#a2d6fa8c2a7c6ca1a3fd7573de3dbc60b">DATurbulenceModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00152">152</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00172">172</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8H_source.html#l00089">DASpalartAllmaras::~DASpalartAllmaras()</a>.</p>
 <div class="dynheader">
@@ -761,11 +763,11 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DATurbulenceModel.html#a9c4c709ed37715b872b8011bd1ead80c">DATurbulenceModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00186">186</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00206">206</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DASpalartAllmaras_8C_source.html#l00095">DASpalartAllmaras::chi()</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00206">DATurbulenceModel::correctAlphat()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00100">DASpalartAllmaras::fv1()</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00083">DATurbulenceModel::nut_</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00064">DASpalartAllmaras::nuTilda_</a>.</p>
+<p class="reference">References <a class="el" href="DASpalartAllmaras_8C_source.html#l00115">DASpalartAllmaras::chi()</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00206">DATurbulenceModel::correctAlphat()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00120">DASpalartAllmaras::fv1()</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00083">DATurbulenceModel::nut_</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00064">DASpalartAllmaras::nuTilda_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::calcResiduals()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00217">DASpalartAllmaras::updateIntermediateVariables()</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00089">DASpalartAllmaras::~DASpalartAllmaras()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">DASpalartAllmaras::calcResiduals()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00237">DASpalartAllmaras::updateIntermediateVariables()</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00089">DASpalartAllmaras::~DASpalartAllmaras()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -816,7 +818,7 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DATurbulenceModel.html#ac5cf193857b59c2fcaa472ac06847a0d">DATurbulenceModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00206">206</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00226">226</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DASpalartAllmaras_8H_source.html#l00064">DASpalartAllmaras::nuTilda_</a>.</p>
 
@@ -859,9 +861,9 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DATurbulenceModel.html#a207d7ee6903c709a6306dd883239028b">DATurbulenceModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00217">217</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00237">237</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DASpalartAllmaras_8C_source.html#l00186">DASpalartAllmaras::correctNut()</a>.</p>
+<p class="reference">References <a class="el" href="DASpalartAllmaras_8C_source.html#l00206">DASpalartAllmaras::correctNut()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8H_source.html#l00089">DASpalartAllmaras::~DASpalartAllmaras()</a>.</p>
 <div class="dynheader">
@@ -911,7 +913,7 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DATurbulenceModel.html#a0878ae196c9a0dcc497b0e0da7c7af62">DATurbulenceModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00228">228</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00248">248</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8H_source.html#l00089">DASpalartAllmaras::~DASpalartAllmaras()</a>.</p>
 <div class="dynheader">
@@ -953,7 +955,7 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DATurbulenceModel.html#a582cd36c7470ee61350f126866919b45">DATurbulenceModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00278">278</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00298">298</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>.</p>
 
@@ -997,23 +999,24 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DATurbulenceModel.html#a5f3483c6db30769568050588ede0ca87">DATurbulenceModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">376</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">396</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DATurbulenceModel_8H_source.html#l00080">DATurbulenceModel::allOptions_</a>, <a class="el" href="DAUtility_8C_source.html#l00418">DAUtility::boundVar()</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00035">DASpalartAllmaras::Cb1_</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00036">DASpalartAllmaras::Cb2_</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00095">DASpalartAllmaras::chi()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00186">DASpalartAllmaras::correctNut()</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00037">DASpalartAllmaras::Cw1_</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00145">DASpalartAllmaras::DnuTildaEff()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00100">DASpalartAllmaras::fv1()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00127">DASpalartAllmaras::fw()</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00035">normalizeResiduals</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00064">DASpalartAllmaras::nuTilda_</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00065">DASpalartAllmaras::nuTildaRes_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00092">DATurbulenceModel::phase_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00095">DATurbulenceModel::phaseRhoPhi_</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00076">DASpalartAllmaras::printInterval_</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00033">DASpalartAllmaras::sigmaNut_</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00073">DASpalartAllmaras::solveTurbState_</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00114">DASpalartAllmaras::Stilda()</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00070">DASpalartAllmaras::y_</a>.</p>
+<p class="reference">References <a class="el" href="DATurbulenceModel_8H_source.html#l00080">DATurbulenceModel::allOptions_</a>, <a class="el" href="DAUtility_8C_source.html#l00418">DAUtility::boundVar()</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00035">DASpalartAllmaras::Cb1_</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00036">DASpalartAllmaras::Cb2_</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00115">DASpalartAllmaras::chi()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00206">DASpalartAllmaras::correctNut()</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00037">DASpalartAllmaras::Cw1_</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00165">DASpalartAllmaras::DnuTildaEff()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00120">DASpalartAllmaras::fv1()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00147">DASpalartAllmaras::fw()</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00464">DATurbulenceModel::isPrintTime()</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00035">normalizeResiduals</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00064">DASpalartAllmaras::nuTilda_</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00065">DASpalartAllmaras::nuTildaRes_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00092">DATurbulenceModel::phase_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00095">DATurbulenceModel::phaseRhoPhi_</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00076">DASpalartAllmaras::printInterval_</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00033">DASpalartAllmaras::sigmaNut_</a>, <a class="el" href="DASpalartAllmaras_8H_source.html#l00073">DASpalartAllmaras::solveTurbState_</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00134">DASpalartAllmaras::Stilda()</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00070">DASpalartAllmaras::y_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00356">DASpalartAllmaras::correct()</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00089">DASpalartAllmaras::~DASpalartAllmaras()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::correct()</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00089">DASpalartAllmaras::~DASpalartAllmaras()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DASpalartAllmaras_a4b38dbac981107ec6386d78322323535_cgraph.png" border="0" usemap="#classFoam_1_1DASpalartAllmaras_a4b38dbac981107ec6386d78322323535_cgraph" alt=""/></div>
 <map name="classFoam_1_1DASpalartAllmaras_a4b38dbac981107ec6386d78322323535_cgraph" id="classFoam_1_1DASpalartAllmaras_a4b38dbac981107ec6386d78322323535_cgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DAUtility.html#ad838c82d10a83876d98ad1921e7c6b5d" title="bound a volScalar variable based on parametes defined in DAOption::allOptions_ " alt="" coords="157,5,336,32"/>
-<area shape="rect" id="node3" href="classFoam_1_1DASpalartAllmaras.html#a12c06ff2531b6460a8bea4cd0efee0e1" title="chi" alt="" coords="385,81,423,108"/>
-<area shape="rect" id="node4" href="classFoam_1_1DASpalartAllmaras.html#aaffe89433f18f1ee4137486e19219448" title="update nut based on other turbulence variables and update the BCs " alt="" coords="205,107,288,133"/>
-<area shape="rect" id="node5" href="classFoam_1_1DASpalartAllmaras.html#a6019fba94a532ff3113b408f9c0bd685" title="fv1" alt="" coords="384,132,424,159"/>
-<area shape="rect" id="node6" href="classFoam_1_1DASpalartAllmaras.html#a3db17e0612d3f43dfc21d593b7f7a942" title="Return the effective diffusivity for nuTilda. " alt="" coords="201,208,292,235"/>
-<area shape="rect" id="node7" href="classFoam_1_1DASpalartAllmaras.html#a1a89e202067cd2b71d9036eb74f49a65" title="fw" alt="" coords="227,259,266,285"/>
-<area shape="rect" id="node8" href="classFoam_1_1DASpalartAllmaras.html#a701cc6e9458859b5c35e4b2b52fe1e3e" title="Stilda" alt="" coords="219,309,274,336"/>
+<area shape="rect" id="node2" href="classFoam_1_1DAUtility.html#a33a755d4b9029ec00bb1969fc0a193e3" title="bound a volScalar variable based on parametes defined in DAOption::allOptions_ " alt="" coords="159,5,337,32"/>
+<area shape="rect" id="node3" href="classFoam_1_1DASpalartAllmaras.html#a12c06ff2531b6460a8bea4cd0efee0e1" title="chi" alt="" coords="387,69,426,96"/>
+<area shape="rect" id="node4" href="classFoam_1_1DASpalartAllmaras.html#aaffe89433f18f1ee4137486e19219448" title="update nut based on other turbulence variables and update the BCs " alt="" coords="207,107,289,133"/>
+<area shape="rect" id="node5" href="classFoam_1_1DASpalartAllmaras.html#a6019fba94a532ff3113b408f9c0bd685" title="fv1" alt="" coords="387,132,427,159"/>
+<area shape="rect" id="node6" href="classFoam_1_1DASpalartAllmaras.html#a3db17e0612d3f43dfc21d593b7f7a942" title="Return the effective diffusivity for nuTilda. " alt="" coords="203,208,293,235"/>
+<area shape="rect" id="node7" href="classFoam_1_1DASpalartAllmaras.html#a1a89e202067cd2b71d9036eb74f49a65" title="fw" alt="" coords="229,259,267,285"/>
+<area shape="rect" id="node8" href="classFoam_1_1DATurbulenceModel.html#adba061b34197deb555c03c4e3ca27ac0" title="Foam::DATurbulenceModel\l::isPrintTime" alt="" coords="157,310,339,351"/>
+<area shape="rect" id="node9" href="classFoam_1_1DASpalartAllmaras.html#a701cc6e9458859b5c35e4b2b52fe1e3e" title="Stilda" alt="" coords="221,376,275,403"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1055,9 +1058,9 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DATurbulenceModel.html#a7e204aa62fa1c1f527e8f1c62dc62061">DATurbulenceModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00356">356</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">376</a> of file <a class="el" href="DASpalartAllmaras_8C_source.html">DASpalartAllmaras.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::calcResiduals()</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00073">DASpalartAllmaras::solveTurbState_</a>.</p>
+<p class="reference">References <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">DASpalartAllmaras::calcResiduals()</a>, and <a class="el" href="DASpalartAllmaras_8H_source.html#l00073">DASpalartAllmaras::solveTurbState_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8H_source.html#l00089">DASpalartAllmaras::~DASpalartAllmaras()</a>.</p>
 <div class="dynheader">
@@ -1102,7 +1105,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8H_source.html#l00033">33</a> of file <a class="el" href="DASpalartAllmaras_8H_source.html">DASpalartAllmaras.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::calcResiduals()</a>, and <a class="el" href="DASpalartAllmaras_8C_source.html#l00145">DASpalartAllmaras::DnuTildaEff()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">DASpalartAllmaras::calcResiduals()</a>, and <a class="el" href="DASpalartAllmaras_8C_source.html#l00165">DASpalartAllmaras::DnuTildaEff()</a>.</p>
 
 </div>
 </div>
@@ -1128,7 +1131,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8H_source.html#l00034">34</a> of file <a class="el" href="DASpalartAllmaras_8H_source.html">DASpalartAllmaras.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00127">DASpalartAllmaras::fw()</a>, and <a class="el" href="DASpalartAllmaras_8C_source.html#l00114">DASpalartAllmaras::Stilda()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00147">DASpalartAllmaras::fw()</a>, and <a class="el" href="DASpalartAllmaras_8C_source.html#l00134">DASpalartAllmaras::Stilda()</a>.</p>
 
 </div>
 </div>
@@ -1154,7 +1157,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8H_source.html#l00035">35</a> of file <a class="el" href="DASpalartAllmaras_8H_source.html">DASpalartAllmaras.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">DASpalartAllmaras::calcResiduals()</a>.</p>
 
 </div>
 </div>
@@ -1180,7 +1183,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8H_source.html#l00036">36</a> of file <a class="el" href="DASpalartAllmaras_8H_source.html">DASpalartAllmaras.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">DASpalartAllmaras::calcResiduals()</a>.</p>
 
 </div>
 </div>
@@ -1206,7 +1209,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8H_source.html#l00037">37</a> of file <a class="el" href="DASpalartAllmaras_8H_source.html">DASpalartAllmaras.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">DASpalartAllmaras::calcResiduals()</a>.</p>
 
 </div>
 </div>
@@ -1232,7 +1235,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8H_source.html#l00038">38</a> of file <a class="el" href="DASpalartAllmaras_8H_source.html">DASpalartAllmaras.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00127">DASpalartAllmaras::fw()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00147">DASpalartAllmaras::fw()</a>.</p>
 
 </div>
 </div>
@@ -1258,7 +1261,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8H_source.html#l00039">39</a> of file <a class="el" href="DASpalartAllmaras_8H_source.html">DASpalartAllmaras.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00127">DASpalartAllmaras::fw()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00147">DASpalartAllmaras::fw()</a>.</p>
 
 </div>
 </div>
@@ -1284,7 +1287,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8H_source.html#l00040">40</a> of file <a class="el" href="DASpalartAllmaras_8H_source.html">DASpalartAllmaras.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00100">DASpalartAllmaras::fv1()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00120">DASpalartAllmaras::fv1()</a>.</p>
 
 </div>
 </div>
@@ -1310,7 +1313,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8H_source.html#l00041">41</a> of file <a class="el" href="DASpalartAllmaras_8H_source.html">DASpalartAllmaras.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00114">DASpalartAllmaras::Stilda()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00134">DASpalartAllmaras::Stilda()</a>.</p>
 
 </div>
 </div>
@@ -1336,7 +1339,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8H_source.html#l00064">64</a> of file <a class="el" href="DASpalartAllmaras_8H_source.html">DASpalartAllmaras.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::calcResiduals()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00095">DASpalartAllmaras::chi()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00206">DASpalartAllmaras::correctBoundaryConditions()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00186">DASpalartAllmaras::correctNut()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00145">DASpalartAllmaras::DnuTildaEff()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00127">DASpalartAllmaras::fw()</a>, and <a class="el" href="DASpalartAllmaras_8C_source.html#l00114">DASpalartAllmaras::Stilda()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">DASpalartAllmaras::calcResiduals()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00115">DASpalartAllmaras::chi()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00226">DASpalartAllmaras::correctBoundaryConditions()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00206">DASpalartAllmaras::correctNut()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00165">DASpalartAllmaras::DnuTildaEff()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00147">DASpalartAllmaras::fw()</a>, and <a class="el" href="DASpalartAllmaras_8C_source.html#l00134">DASpalartAllmaras::Stilda()</a>.</p>
 
 </div>
 </div>
@@ -1362,7 +1365,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8H_source.html#l00065">65</a> of file <a class="el" href="DASpalartAllmaras_8H_source.html">DASpalartAllmaras.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">DASpalartAllmaras::calcResiduals()</a>.</p>
 
 </div>
 </div>
@@ -1414,7 +1417,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8H_source.html#l00070">70</a> of file <a class="el" href="DASpalartAllmaras_8H_source.html">DASpalartAllmaras.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::calcResiduals()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00127">DASpalartAllmaras::fw()</a>, and <a class="el" href="DASpalartAllmaras_8C_source.html#l00114">DASpalartAllmaras::Stilda()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">DASpalartAllmaras::calcResiduals()</a>, <a class="el" href="DASpalartAllmaras_8C_source.html#l00147">DASpalartAllmaras::fw()</a>, and <a class="el" href="DASpalartAllmaras_8C_source.html#l00134">DASpalartAllmaras::Stilda()</a>.</p>
 
 </div>
 </div>
@@ -1442,7 +1445,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8H_source.html#l00073">73</a> of file <a class="el" href="DASpalartAllmaras_8H_source.html">DASpalartAllmaras.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::calcResiduals()</a>, and <a class="el" href="DASpalartAllmaras_8C_source.html#l00356">DASpalartAllmaras::correct()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">DASpalartAllmaras::calcResiduals()</a>, and <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::correct()</a>.</p>
 
 </div>
 </div>
@@ -1470,7 +1473,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASpalartAllmaras_8H_source.html#l00076">76</a> of file <a class="el" href="DASpalartAllmaras_8H_source.html">DASpalartAllmaras.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00376">DASpalartAllmaras::calcResiduals()</a>, and <a class="el" href="DASpalartAllmaras_8C_source.html#l00019">DASpalartAllmaras::DASpalartAllmaras()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">DASpalartAllmaras::calcResiduals()</a>, and <a class="el" href="DASpalartAllmaras_8C_source.html#l00019">DASpalartAllmaras::DASpalartAllmaras()</a>.</p>
 
 </div>
 </div>

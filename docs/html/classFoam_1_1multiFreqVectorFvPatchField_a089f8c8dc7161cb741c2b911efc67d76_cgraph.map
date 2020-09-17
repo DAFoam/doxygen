@@ -1,0 +1,5 @@
+<map id="clone" name="clone">
+<area shape="rect" id="node2" href="$classFoam_1_1multiFreqVectorFvPatchField.html#a3262e715e4c67046d00b145e53ef3b7c" title="multiFreqVectorFvPatchField" alt="" coords="107,5,297,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1multiFreqVectorFvPatchField.html#a7e24eafac629d3733181cd942d4c902f" title="updateCoeffs" alt="" coords="152,56,252,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1multiFreqVectorFvPatchField.html#a293fdfec8bdfbd5c3913ab4c9f3454ff" title="write" alt="" coords="177,107,227,133"/>
+</map>
