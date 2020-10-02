@@ -4,6 +4,7 @@ var searchData=
   ['adjeqnoption',['adjEqnOption',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#aa2abab9dfb63a60be2eaa9ea8e9392d3',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['adjointfail',['adjointFail',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#affbdc8ed2a0c4a8430570feff7aaaf1f',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['adjpartderivfdstep',['adjPartDerivFDStep',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a6d213d605750e92554f5656509114091',1,'dafoam::pyDAFoam::DAOPTION']]],
+  ['adjpclag',['adjPCLag',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a20522966aed8eefda1d54e5b591b420b',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['adjstateid',['adjStateID',['../classFoam_1_1DAIndex.html#a79f5e3502c6e588be202d78477c7d8bb',1,'Foam::DAIndex']]],
   ['adjstatename4localadjidx',['adjStateName4LocalAdjIdx',['../classFoam_1_1DAIndex.html#af73bedb1248748dc23a2ed990d5d146a',1,'Foam::DAIndex']]],
   ['adjstatenames',['adjStateNames',['../classFoam_1_1DAIndex.html#aa04bf8210573136c507d41db48a6bebc',1,'Foam::DAIndex']]],
@@ -29,5 +30,6 @@ var searchData=
   ['argsall_5f',['argsAll_',['../classFoam_1_1DASolver.html#a078ba18bdeda17746e9cee13c6116f88',1,'Foam::DASolver']]],
   ['argsptr_5f',['argsPtr_',['../classFoam_1_1DASolver.html#a637fe81ead61828a3e66d61524f9094e',1,'Foam::DASolver']]],
   ['argv',['argv',['../setArgs_8H.html#af2efa898e9eed6fe6715279cb1ec35b0',1,'setArgs.H']]],
-  ['argvlist',['argvList',['../setArgs_8H.html#adab9b3744f984ea1a4dd169e7faba4dc',1,'setArgs.H']]]
+  ['argvlist',['argvList',['../setArgs_8H.html#adab9b3744f984ea1a4dd169e7faba4dc',1,'setArgs.H']]],
+  ['avgobjfuncvalues_5f',['avgObjFuncValues_',['../classFoam_1_1DASolver.html#a37f7e488b2a1d7638c43ea2648d338ca',1,'Foam::DASolver']]]
 ];

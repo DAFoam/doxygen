@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.2</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -112,6 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa7957851046ed239a494b03996ce9e84 inherit pub_methods_classFoam_1_1DAFvSource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40967f2927ac37eedf465bbc5e312822 inherit pub_methods_classFoam_1_1DAFvSource"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAFvSource.html#a40967f2927ac37eedf465bbc5e312822">~DAFvSource</a> ()</td></tr>
 <tr class="separator:a40967f2927ac37eedf465bbc5e312822 inherit pub_methods_classFoam_1_1DAFvSource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c658e15d7e8f5819cdc0eedbbbeb85e inherit pub_methods_classFoam_1_1DAFvSource"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAFvSource.html#a4c658e15d7e8f5819cdc0eedbbbeb85e">writeData</a> (Ostream &amp;os) const</td></tr>
+<tr class="memdesc:a4c658e15d7e8f5819cdc0eedbbbeb85e inherit pub_methods_classFoam_1_1DAFvSource"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual function for regIOobject  <a href="classFoam_1_1DAFvSource.html#a4c658e15d7e8f5819cdc0eedbbbeb85e">More...</a><br /></td></tr>
+<tr class="separator:a4c658e15d7e8f5819cdc0eedbbbeb85e inherit pub_methods_classFoam_1_1DAFvSource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -124,9 +127,6 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ab50dd8ae9df0ae1a7064bd9e135319eb"><td class="memItemLeft" align="right" valign="top">HashTable&lt; labelList &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAFvSourceActuatorDisk.html#ab50dd8ae9df0ae1a7064bd9e135319eb">fvSourceCellIndices_</a></td></tr>
 <tr class="memdesc:ab50dd8ae9df0ae1a7064bd9e135319eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">HashTable that contains lists of cell indices that are within the actuator disk space.  <a href="#ab50dd8ae9df0ae1a7064bd9e135319eb">More...</a><br /></td></tr>
 <tr class="separator:ab50dd8ae9df0ae1a7064bd9e135319eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a479fc8e5212e0e1e73bd9c5db88851e0"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAFvSourceActuatorDisk.html#a479fc8e5212e0e1e73bd9c5db88851e0">fvSourceSubDict_</a></td></tr>
-<tr class="memdesc:a479fc8e5212e0e1e73bd9c5db88851e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">the subDict of fvSource in <a class="el" href="classFoam_1_1DAOption.html">DAOption</a>  <a href="#a479fc8e5212e0e1e73bd9c5db88851e0">More...</a><br /></td></tr>
-<tr class="separator:a479fc8e5212e0e1e73bd9c5db88851e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a534c81c18b282df8a4814b99093f493a"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAFvSourceActuatorDisk.html#a534c81c18b282df8a4814b99093f493a">printInterval_</a></td></tr>
 <tr class="memdesc:a534c81c18b282df8a4814b99093f493a"><td class="mdescLeft">&#160;</td><td class="mdescRight">print interval for primal and adjoint  <a href="#a534c81c18b282df8a4814b99093f493a">More...</a><br /></td></tr>
 <tr class="separator:a534c81c18b282df8a4814b99093f493a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,15 +203,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00019">19</a> of file <a class="el" href="DAFvSourceActuatorDisk_8C_source.html">DAFvSourceActuatorDisk.C</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00191">DAFvSourceActuatorDisk::calcFvSourceCellIndices()</a>, <a class="el" href="DAFvSource_8H_source.html#l00052">DAFvSource::daOption_</a>, <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00033">DAFvSourceActuatorDisk::fvSourceCellIndices_</a>, <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00039">DAFvSourceActuatorDisk::fvSourceSubDict_</a>, <a class="el" href="DAOption_8H_source.html#l00056">DAOption::getAllOptions()</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption::getOption()</a>, and <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00042">DAFvSourceActuatorDisk::printInterval_</a>.</p>
+<p class="reference">References <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00345">DAFvSourceActuatorDisk::calcFvSourceCellIndices()</a>, <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00033">DAFvSourceActuatorDisk::fvSourceCellIndices_</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption::getOption()</a>, and <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00039">DAFvSourceActuatorDisk::printInterval_</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAFvSourceActuatorDisk_a07a01584d0226f1149c3d78f02a97b19_cgraph.png" border="0" usemap="#classFoam_1_1DAFvSourceActuatorDisk_a07a01584d0226f1149c3d78f02a97b19_cgraph" alt=""/></div>
 <map name="classFoam_1_1DAFvSourceActuatorDisk_a07a01584d0226f1149c3d78f02a97b19_cgraph" id="classFoam_1_1DAFvSourceActuatorDisk_a07a01584d0226f1149c3d78f02a97b19_cgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DAFvSourceActuatorDisk.html#ae05a75147fe62875ea8ad9b5a4c22cd5" title="calculate DAFvSourceActuatorDisk::fvSourceCellIndices_ " alt="" coords="247,5,413,32"/>
-<area shape="rect" id="node3" href="classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key " alt="" coords="481,56,665,83"/>
-<area shape="rect" id="node4" href="classFoam_1_1DAOption.html#aac22cd38f3d4adc69a4e35329c6abf92" title="return a reference of allOptions_ dictionary " alt="" coords="227,107,433,133"/>
+<area shape="rect" id="node2" href="classFoam_1_1DAFvSourceActuatorDisk.html#ae05a75147fe62875ea8ad9b5a4c22cd5" title="calculate DAFvSourceActuatorDisk::fvSourceCellIndices_ " alt="" coords="227,5,393,32"/>
+<area shape="rect" id="node3" href="classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key " alt="" coords="441,31,625,57"/>
 </map>
 </div>
 
@@ -240,9 +239,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00057">57</a> of file <a class="el" href="DAFvSourceActuatorDisk_8H_source.html">DAFvSourceActuatorDisk.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00054">54</a> of file <a class="el" href="DAFvSourceActuatorDisk_8H_source.html">DAFvSourceActuatorDisk.H</a>.</p>
 
-<p class="reference">References <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00035">DAFvSourceActuatorDisk::calcFvSource()</a>, and <a class="el" href="createRefsPiso_8H_source.html#l00013">fvSource</a>.</p>
+<p class="reference">References <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00033">DAFvSourceActuatorDisk::calcFvSource()</a>, and <a class="el" href="createRefsPiso_8H_source.html#l00013">fvSource</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -281,9 +280,9 @@ Here is the call graph for this function:</div>
 
 <p>calculate <a class="el" href="classFoam_1_1DAFvSourceActuatorDisk.html#ab50dd8ae9df0ae1a7064bd9e135319eb" title="HashTable that contains lists of cell indices that are within the actuator disk space. ">DAFvSourceActuatorDisk::fvSourceCellIndices_</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00191">191</a> of file <a class="el" href="DAFvSourceActuatorDisk_8C_source.html">DAFvSourceActuatorDisk.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00345">345</a> of file <a class="el" href="DAFvSourceActuatorDisk_8C_source.html">DAFvSourceActuatorDisk.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAFvSource_8H_source.html#l00052">DAFvSource::daOption_</a>, <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00039">DAFvSourceActuatorDisk::fvSourceSubDict_</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption::getOption()</a>, and <a class="el" href="DAFvSource_8H_source.html#l00049">DAFvSource::mesh_</a>.</p>
+<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="DAFvSource_8H_source.html#l00055">DAFvSource::daOption_</a>, <a class="el" href="DAOption_8H_source.html#l00056">DAOption::getAllOptions()</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption::getOption()</a>, and <a class="el" href="DAFvSource_8H_source.html#l00052">DAFvSource::mesh_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00019">DAFvSourceActuatorDisk::DAFvSourceActuatorDisk()</a>.</p>
 <div class="dynheader">
@@ -291,7 +290,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAFvSourceActuatorDisk_ae05a75147fe62875ea8ad9b5a4c22cd5_cgraph.png" border="0" usemap="#classFoam_1_1DAFvSourceActuatorDisk_ae05a75147fe62875ea8ad9b5a4c22cd5_cgraph" alt=""/></div>
 <map name="classFoam_1_1DAFvSourceActuatorDisk_ae05a75147fe62875ea8ad9b5a4c22cd5_cgraph" id="classFoam_1_1DAFvSourceActuatorDisk_ae05a75147fe62875ea8ad9b5a4c22cd5_cgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key " alt="" coords="220,5,404,32"/>
+<area shape="rect" id="node2" href="classFoam_1_1DAOption.html#aac22cd38f3d4adc69a4e35329c6abf92" title="return a reference of allOptions_ dictionary " alt="" coords="220,5,427,32"/>
+<area shape="rect" id="node3" href="classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key " alt="" coords="475,31,659,57"/>
 </map>
 </div>
 <div class="dynheader">
@@ -351,17 +351,18 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classFoam_1_1DAFvSource.html#a3fa0b2668e6daf1d45bee2783e52cd56">DAFvSource</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00035">35</a> of file <a class="el" href="DAFvSourceActuatorDisk_8C_source.html">DAFvSourceActuatorDisk.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00033">33</a> of file <a class="el" href="DAFvSourceActuatorDisk_8C_source.html">DAFvSourceActuatorDisk.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAFvSource_8H_source.html#l00052">DAFvSource::daOption_</a>, <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00033">DAFvSourceActuatorDisk::fvSourceCellIndices_</a>, <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00039">DAFvSourceActuatorDisk::fvSourceSubDict_</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption::getOption()</a>, <a class="el" href="DAFvSource_8H_source.html#l00049">DAFvSource::mesh_</a>, and <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00042">DAFvSourceActuatorDisk::printInterval_</a>.</p>
+<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="DAFvSource_8H_source.html#l00055">DAFvSource::daOption_</a>, <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00033">DAFvSourceActuatorDisk::fvSourceCellIndices_</a>, <a class="el" href="DAOption_8H_source.html#l00056">DAOption::getAllOptions()</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption::getOption()</a>, <a class="el" href="DAFvSource_8H_source.html#l00052">DAFvSource::mesh_</a>, and <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00039">DAFvSourceActuatorDisk::printInterval_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00057">DAFvSourceActuatorDisk::~DAFvSourceActuatorDisk()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00054">DAFvSourceActuatorDisk::~DAFvSourceActuatorDisk()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAFvSourceActuatorDisk_a3fa0b2668e6daf1d45bee2783e52cd56_cgraph.png" border="0" usemap="#classFoam_1_1DAFvSourceActuatorDisk_a3fa0b2668e6daf1d45bee2783e52cd56_cgraph" alt=""/></div>
 <map name="classFoam_1_1DAFvSourceActuatorDisk_a3fa0b2668e6daf1d45bee2783e52cd56_cgraph" id="classFoam_1_1DAFvSourceActuatorDisk_a3fa0b2668e6daf1d45bee2783e52cd56_cgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key " alt="" coords="156,5,340,32"/>
+<area shape="rect" id="node2" href="classFoam_1_1DAOption.html#aac22cd38f3d4adc69a4e35329c6abf92" title="return a reference of allOptions_ dictionary " alt="" coords="156,5,363,32"/>
+<area shape="rect" id="node3" href="classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key " alt="" coords="411,31,595,57"/>
 </map>
 </div>
 <div class="dynheader">
@@ -400,35 +401,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00033">33</a> of file <a class="el" href="DAFvSourceActuatorDisk_8H_source.html">DAFvSourceActuatorDisk.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00035">DAFvSourceActuatorDisk::calcFvSource()</a>, and <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00019">DAFvSourceActuatorDisk::DAFvSourceActuatorDisk()</a>.</p>
-
-</div>
-</div>
-<a id="a479fc8e5212e0e1e73bd9c5db88851e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a479fc8e5212e0e1e73bd9c5db88851e0">&#9670;&nbsp;</a></span>fvSourceSubDict_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">dictionary fvSourceSubDict_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>the subDict of fvSource in <a class="el" href="classFoam_1_1DAOption.html">DAOption</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00039">39</a> of file <a class="el" href="DAFvSourceActuatorDisk_8H_source.html">DAFvSourceActuatorDisk.H</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00035">DAFvSourceActuatorDisk::calcFvSource()</a>, <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00191">DAFvSourceActuatorDisk::calcFvSourceCellIndices()</a>, and <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00019">DAFvSourceActuatorDisk::DAFvSourceActuatorDisk()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00033">DAFvSourceActuatorDisk::calcFvSource()</a>, and <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00019">DAFvSourceActuatorDisk::DAFvSourceActuatorDisk()</a>.</p>
 
 </div>
 </div>
@@ -454,9 +427,9 @@ Here is the caller graph for this function:</div>
 
 <p>print interval for primal and adjoint </p>
 
-<p class="definition">Definition at line <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00042">42</a> of file <a class="el" href="DAFvSourceActuatorDisk_8H_source.html">DAFvSourceActuatorDisk.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAFvSourceActuatorDisk_8H_source.html#l00039">39</a> of file <a class="el" href="DAFvSourceActuatorDisk_8H_source.html">DAFvSourceActuatorDisk.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00035">DAFvSourceActuatorDisk::calcFvSource()</a>, and <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00019">DAFvSourceActuatorDisk::DAFvSourceActuatorDisk()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00033">DAFvSourceActuatorDisk::calcFvSource()</a>, and <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00019">DAFvSourceActuatorDisk::DAFvSourceActuatorDisk()</a>.</p>
 
 </div>
 </div>

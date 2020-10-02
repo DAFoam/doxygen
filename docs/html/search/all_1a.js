@@ -36,6 +36,8 @@ var searchData=
   ['_7edapartderivdfdbc',['~DAPartDerivdFdBC',['../classFoam_1_1DAPartDerivdFdBC.html#af14191ac0cdbf859fe010b11a18e67fa',1,'Foam::DAPartDerivdFdBC']]],
   ['_7edapartderivdfdffd',['~DAPartDerivdFdFFD',['../classFoam_1_1DAPartDerivdFdFFD.html#a2b3bea3e43e6e455af8c53c990ef6117',1,'Foam::DAPartDerivdFdFFD']]],
   ['_7edapartderivdfdw',['~DAPartDerivdFdW',['../classFoam_1_1DAPartDerivdFdW.html#abd736daaf9249559997615651fb6115a',1,'Foam::DAPartDerivdFdW']]],
+  ['_7edapartderivdrdactd',['~DAPartDerivdRdACTD',['../classFoam_1_1DAPartDerivdRdACTD.html#a9f8ab92c6bbba5e2631554eb64eb1869',1,'Foam::DAPartDerivdRdACTD']]],
+  ['_7edapartderivdrdactp',['~DAPartDerivdRdACTP',['../classFoam_1_1DAPartDerivdRdACTP.html#af8ce1c0d877783770a23ba38a317454a',1,'Foam::DAPartDerivdRdACTP']]],
   ['_7edapartderivdrdaoa',['~DAPartDerivdRdAOA',['../classFoam_1_1DAPartDerivdRdAOA.html#aa2c7f7f04f5e486280dc151f58e79ef1',1,'Foam::DAPartDerivdRdAOA']]],
   ['_7edapartderivdrdbc',['~DAPartDerivdRdBC',['../classFoam_1_1DAPartDerivdRdBC.html#ae833dafbe70bfe08cbc8baec9cce7c32',1,'Foam::DAPartDerivdRdBC']]],
   ['_7edapartderivdrdffd',['~DAPartDerivdRdFFD',['../classFoam_1_1DAPartDerivdRdFFD.html#a7fcd929d3457e3a45665f574f9db5311',1,'Foam::DAPartDerivdRdFFD']]],

@@ -1,6 +1,8 @@
 var searchData=
 [
   ['objfunc',['objFunc',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a501106ebb82cbad872f3aaa0bc7dfc43',1,'dafoam::pyDAFoam::DAOPTION']]],
+  ['objfuncavghistfileptr_5f',['objFuncAvgHistFilePtr_',['../classFoam_1_1DASolver.html#aadbf1d6f2311b2e794abf08d6e46cd9a',1,'Foam::DASolver']]],
+  ['objfuncavgstart',['objFuncAvgStart',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a78a28d09967dc102128f0b9da3725593',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['objfunccellsize_5f',['objFuncCellSize_',['../classFoam_1_1DAJacCondFdW.html#abaaac56c2e23c6d390311daebc6105d7',1,'Foam::DAJacCondFdW']]],
   ['objfunccellsources_5f',['objFuncCellSources_',['../classFoam_1_1DAObjFunc.html#aefb1b3bfc80ad1b7be5a7e52e88718d2',1,'Foam::DAObjFunc']]],
   ['objfunccellvalues_5f',['objFuncCellValues_',['../classFoam_1_1DAObjFunc.html#a6eec715741091ffe68fa6b745abbb442',1,'Foam::DAObjFunc']]],

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.2</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -87,6 +87,8 @@ This graph shows which files directly or indirectly include this file:</div>
 Functions</h2></td></tr>
 <tr class="memitem:a5dab848a7cf6b8fec1700b20296715a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pyColoringIncompressible_2createFields_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="createRefsRhoSimpleC_8H.html#a5dab848a7cf6b8fec1700b20296715a3">setTime</a> (0.0, 0)</td></tr>
 <tr class="separator:a5dab848a7cf6b8fec1700b20296715a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a188300f4dc6253c04113e21ea0232d9e"><td class="memItemLeft" align="right" valign="top">this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="createRefsRhoSimpleC_8H.html#a188300f4dc6253c04113e21ea0232d9e">initializeObjFuncHistFilePtr</a> (&quot;objFuncHist&quot;)</td></tr>
+<tr class="separator:a188300f4dc6253c04113e21ea0232d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa35405f14b4403f4ee57faaa545f8cd4"><td class="memItemLeft" align="right" valign="top">this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="createRefsRhoSimpleC_8H.html#aa35405f14b4403f4ee57faaa545f8cd4">setDAObjFuncList</a> ()</td></tr>
 <tr class="separator:aa35405f14b4403f4ee57faaa545f8cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -142,6 +144,24 @@ Variables</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a188300f4dc6253c04113e21ea0232d9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a188300f4dc6253c04113e21ea0232d9e">&#9670;&nbsp;</a></span>initializeObjFuncHistFilePtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">this initializeObjFuncHistFilePtr </td>
+          <td>(</td>
+          <td class="paramtype">&quot;objFuncHist&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -384,7 +404,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">15</a> of file <a class="el" href="createRefsRhoSimpleC_8H_source.html">createRefsRhoSimpleC.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01014">DASolver::calcTotalDeriv()</a>, <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00019">DAFvSourceActuatorDisk::DAFvSourceActuatorDisk()</a>, <a class="el" href="DAFvSourceActuatorPoint_8C_source.html#l00019">DAFvSourceActuatorPoint::DAFvSourceActuatorPoint()</a>, <a class="el" href="DAResidualPisoFoam_8C_source.html#l00019">DAResidualPisoFoam::DAResidualPisoFoam()</a>, <a class="el" href="DAResidualRhoSimpleFoam_8C_source.html#l00019">DAResidualRhoSimpleFoam::DAResidualRhoSimpleFoam()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00019">DAResidualSimpleFoam::DAResidualSimpleFoam()</a>, <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00059">if()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00036">DASimpleFoam::initSolver()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00040">DARhoSimpleFoam::initSolver()</a>, <a class="el" href="DAPisoFoam_8C_source.html#l00036">DAPisoFoam::initSolver()</a>, <a class="el" href="DASolver_8C_source.html#l00048">DASolver::New()</a>, <a class="el" href="ColoringSolid_8C_source.html#l00031">ColoringSolid::run()</a>, <a class="el" href="ColoringCompressible_8C_source.html#l00031">ColoringCompressible::run()</a>, <a class="el" href="ColoringIncompressible_8C_source.html#l00031">ColoringIncompressible::run()</a>, <a class="el" href="DASolver_8C_source.html#l00183">DASolver::setDAObjFuncList()</a>, <a class="el" href="DAField_8C_source.html#l00546">DAField::setPrimalBoundaryConditions()</a>, and <a class="el" href="DASolver_8C_source.html#l00600">DASolver::solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00033">DAFvSourceActuatorDisk::calcFvSource()</a>, <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00345">DAFvSourceActuatorDisk::calcFvSourceCellIndices()</a>, <a class="el" href="DASolver_8C_source.html#l01027">DASolver::calcTotalDeriv()</a>, <a class="el" href="DAResidualPisoFoam_8C_source.html#l00019">DAResidualPisoFoam::DAResidualPisoFoam()</a>, <a class="el" href="DAResidualRhoSimpleFoam_8C_source.html#l00019">DAResidualRhoSimpleFoam::DAResidualRhoSimpleFoam()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00019">DAResidualSimpleFoam::DAResidualSimpleFoam()</a>, <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00059">if()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00036">DASimpleFoam::initSolver()</a>, <a class="el" href="DARhoSimpleFoam_8C_source.html#l00040">DARhoSimpleFoam::initSolver()</a>, <a class="el" href="DAPisoFoam_8C_source.html#l00036">DAPisoFoam::initSolver()</a>, <a class="el" href="DASolver_8C_source.html#l00048">DASolver::New()</a>, <a class="el" href="ColoringSolid_8C_source.html#l00031">ColoringSolid::run()</a>, <a class="el" href="ColoringCompressible_8C_source.html#l00031">ColoringCompressible::run()</a>, <a class="el" href="ColoringIncompressible_8C_source.html#l00031">ColoringIncompressible::run()</a>, <a class="el" href="DASolver_8C_source.html#l00187">DASolver::setDAObjFuncList()</a>, <a class="el" href="DAField_8C_source.html#l00546">DAField::setPrimalBoundaryConditions()</a>, and <a class="el" href="DASolver_8C_source.html#l00604">DASolver::solveAdjoint()</a>.</p>
 
 </div>
 </div>

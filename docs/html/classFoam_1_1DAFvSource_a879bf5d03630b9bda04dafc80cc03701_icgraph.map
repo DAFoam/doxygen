@@ -1,8 +1,5 @@
 <map id="New" name="New">
-<area shape="rect" id="node2" href="$classFoam_1_1DAResidualPisoFoam.html#a1340b4b09cd2f3752a13c6994fe4f538" title="Foam::DAResidualPisoFoam\l::DAResidualPisoFoam" alt="" coords="122,5,314,47"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAResidualRhoSimpleFoam.html#a22de1b2c9bccc10945c854513c61f214" title="Foam::DAResidualRhoSimple\lFoam::DAResidualRhoSimpleFoam" alt="" coords="103,71,333,112"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAResidualSimpleFoam.html#a35f772a5151cf4e1faed9b3e8bb90b09" title="Foam::DAResidualSimpleFoam\l::DAResidualSimpleFoam" alt="" coords="115,136,321,177"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DASimpleFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables " alt="" coords="141,201,295,243"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DARhoSimpleFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables " alt="" coords="129,267,307,308"/>
-<area shape="rect" id="node7" href="$classFoam_1_1DAPisoFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables " alt="" coords="117,333,319,359"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASimpleFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables " alt="" coords="127,5,281,47"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DARhoSimpleFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables " alt="" coords="115,71,293,112"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAPisoFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables " alt="" coords="103,137,305,163"/>
 </map>

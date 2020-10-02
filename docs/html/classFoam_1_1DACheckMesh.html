@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.2</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -75,9 +75,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9a836b2507e2110d91f63fc2e9fa6dec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DACheckMesh.html#a9a836b2507e2110d91f63fc2e9fa6dec">DACheckMesh</a> (const Time &amp;runTime1, const fvMesh &amp;mesh1)</td></tr>
-<tr class="memdesc:a9a836b2507e2110d91f63fc2e9fa6dec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from components.  <a href="#a9a836b2507e2110d91f63fc2e9fa6dec">More...</a><br /></td></tr>
-<tr class="separator:a9a836b2507e2110d91f63fc2e9fa6dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19fdaa79f66cd3b21edc82bc184102f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DACheckMesh.html#a19fdaa79f66cd3b21edc82bc184102f6">DACheckMesh</a> (const <a class="el" href="classFoam_1_1DAOption.html">DAOption</a> &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>, const Time &amp;runTime1, const fvMesh &amp;mesh1)</td></tr>
+<tr class="memdesc:a19fdaa79f66cd3b21edc82bc184102f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from components.  <a href="#a19fdaa79f66cd3b21edc82bc184102f6">More...</a><br /></td></tr>
+<tr class="separator:a19fdaa79f66cd3b21edc82bc184102f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88c8a058b6a2c1b01501aee1fc75bafe"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DACheckMesh.html#a88c8a058b6a2c1b01501aee1fc75bafe">~DACheckMesh</a> ()</td></tr>
 <tr class="memdesc:a88c8a058b6a2c1b01501aee1fc75bafe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a88c8a058b6a2c1b01501aee1fc75bafe">More...</a><br /></td></tr>
 <tr class="separator:a88c8a058b6a2c1b01501aee1fc75bafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -87,10 +87,10 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="DACheckMesh_8H_source.html#l00028">28</a> of file <a class="el" href="DACheckMesh_8H_source.html">DACheckMesh.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DACheckMesh_8H_source.html#l00029">29</a> of file <a class="el" href="DACheckMesh_8H_source.html">DACheckMesh.H</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9a836b2507e2110d91f63fc2e9fa6dec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a836b2507e2110d91f63fc2e9fa6dec">&#9670;&nbsp;</a></span>DACheckMesh()</h2>
+<a id="a19fdaa79f66cd3b21edc82bc184102f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19fdaa79f66cd3b21edc82bc184102f6">&#9670;&nbsp;</a></span>DACheckMesh()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -98,6 +98,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classFoam_1_1DACheckMesh.html">DACheckMesh</a> </td>
           <td>(</td>
+          <td class="paramtype">const <a class="el" href="classFoam_1_1DAOption.html">DAOption</a> &amp;&#160;</td>
+          <td class="paramname"><em>daOption</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const Time &amp;&#160;</td>
           <td class="paramname"><em>runTime1</em>, </td>
         </tr>
@@ -118,6 +124,16 @@ Public Member Functions</h2></td></tr>
 <p>Construct from components. </p>
 
 <p class="definition">Definition at line <a class="el" href="DACheckMesh_8C_source.html#l00016">16</a> of file <a class="el" href="DACheckMesh_8C_source.html">DACheckMesh.C</a>.</p>
+
+<p class="reference">References <a class="el" href="DAOption_8H_source.html#l00165">DAOption::getSubDictOption()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DACheckMesh_a19fdaa79f66cd3b21edc82bc184102f6_cgraph.png" border="0" usemap="#classFoam_1_1DACheckMesh_a19fdaa79f66cd3b21edc82bc184102f6_cgraph" alt=""/></div>
+<map name="classFoam_1_1DACheckMesh_a19fdaa79f66cd3b21edc82bc184102f6_cgraph" id="classFoam_1_1DACheckMesh_a19fdaa79f66cd3b21edc82bc184102f6_cgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAOption.html#a04e1a06e3ade0e60b8e3a82ad37be74c" title="get an dictionary option from subDict and key " alt="" coords="164,5,357,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -146,7 +162,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="DACheckMesh_8C_source.html#l00024">24</a> of file <a class="el" href="DACheckMesh_8C_source.html">DACheckMesh.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DACheckMesh_8C_source.html#l00039">39</a> of file <a class="el" href="DACheckMesh_8C_source.html">DACheckMesh.C</a>.</p>
 
 </div>
 </div>
@@ -168,7 +184,7 @@ Public Member Functions</h2></td></tr>
 
 <p>run meshCheck and return meshOK </p>
 
-<p class="definition">Definition at line <a class="el" href="DACheckMesh_8C_source.html#l00028">28</a> of file <a class="el" href="DACheckMesh_8C_source.html">DACheckMesh.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DACheckMesh_8C_source.html#l00043">43</a> of file <a class="el" href="DACheckMesh_8C_source.html">DACheckMesh.C</a>.</p>
 
 <p class="reference">References <a class="el" href="checkGeometry_8C_source.html#l00224">Foam::checkGeometry()</a>.</p>
 <div class="dynheader">

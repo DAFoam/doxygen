@@ -33,6 +33,8 @@ var searchData=
   ['dapartderivdfdbc',['DAPartDerivdFdBC',['../classFoam_1_1DAPartDerivdFdBC.html',1,'Foam']]],
   ['dapartderivdfdffd',['DAPartDerivdFdFFD',['../classFoam_1_1DAPartDerivdFdFFD.html',1,'Foam']]],
   ['dapartderivdfdw',['DAPartDerivdFdW',['../classFoam_1_1DAPartDerivdFdW.html',1,'Foam']]],
+  ['dapartderivdrdactd',['DAPartDerivdRdACTD',['../classFoam_1_1DAPartDerivdRdACTD.html',1,'Foam']]],
+  ['dapartderivdrdactp',['DAPartDerivdRdACTP',['../classFoam_1_1DAPartDerivdRdACTP.html',1,'Foam']]],
   ['dapartderivdrdaoa',['DAPartDerivdRdAOA',['../classFoam_1_1DAPartDerivdRdAOA.html',1,'Foam']]],
   ['dapartderivdrdbc',['DAPartDerivdRdBC',['../classFoam_1_1DAPartDerivdRdBC.html',1,'Foam']]],
   ['dapartderivdrdffd',['DAPartDerivdRdFFD',['../classFoam_1_1DAPartDerivdRdFFD.html',1,'Foam']]],

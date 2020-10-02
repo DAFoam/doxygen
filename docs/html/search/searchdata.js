@@ -5,7 +5,7 @@ var indexSectionsWithContent =
   2: "df",
   3: "_cdemnoprstu",
   4: "_abcdefghiklmnopqrstuvwxy~",
-  5: "abcdefghijklmnoprstuwxy",
+  5: "abcdefghijklmnoprstuvwxy",
   6: "aflrt",
   7: "cmns"
 };

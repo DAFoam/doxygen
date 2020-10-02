@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['nactdvs_5f',['nActDVs_',['../classFoam_1_1DAPartDerivdRdACTD.html#ae328023ae285bbce223ac28d1f52ba51',1,'Foam::DAPartDerivdRdACTD']]],
+  ['nactpointdvs_5f',['nActPointDVs_',['../classFoam_1_1DAPartDerivdRdACTP.html#a485e74d1e7e3cd84a5375101e0c3902f',1,'Foam::DAPartDerivdRdACTP']]],
   ['name',['name',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab74e6bf80237ddc4109968cedc58c151',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['ncorr_5f',['nCorr_',['../classFoam_1_1DASolidDisplacementFoam.html#aae0733e6c7406c506a352489b525a139',1,'Foam::DASolidDisplacementFoam::nCorr_()'],['../createControlsSolidDisplacement_8H.html#ab4a1ddbc0c5231b368a104756ebbbcff',1,'nCorr_():&#160;createControlsSolidDisplacement.H']]],
   ['neibfaceglobalcompact_5f',['neiBFaceGlobalCompact_',['../classFoam_1_1DAJacCon.html#a2ca82d9cc5c3c4f6dccef90ddeb46981',1,'Foam::DAJacCon']]],
@@ -10,6 +12,7 @@ var searchData=
   ['nglobalfaces',['nGlobalFaces',['../classFoam_1_1DAIndex.html#a4f8c9220fb2e4d813747f263dc1c21fa',1,'Foam::DAIndex']]],
   ['nglobalobjfuncfaces',['nGlobalObjFuncFaces',['../classFoam_1_1DAIndex.html#a827492eff99f2e424bd09845179e8ec1',1,'Foam::DAIndex']]],
   ['nglobalxv',['nGlobalXv',['../classFoam_1_1DAIndex.html#a061fa3d391b570facdb9911791e64ffc',1,'Foam::DAIndex']]],
+  ['nitersobjfuncavg_5f',['nItersObjFuncAvg_',['../classFoam_1_1DASolver.html#a3c3d713ba782f64276c1f0f34e5bfb82',1,'Foam::DASolver']]],
   ['njacconcolors_5f',['nJacConColors_',['../classFoam_1_1DAJacCon.html#a3609501fd55f56ae2761a8f8a255eca5',1,'Foam::DAJacCon']]],
   ['nlocaladjointboundarystates',['nLocalAdjointBoundaryStates',['../classFoam_1_1DAIndex.html#a2d1c1967415d085bb076c7883417b5ab',1,'Foam::DAIndex']]],
   ['nlocaladjointstates',['nLocalAdjointStates',['../classFoam_1_1DAIndex.html#abe71c922fe23bfe24a69104cb9470f29',1,'Foam::DAIndex']]],
@@ -28,6 +31,7 @@ var searchData=
   ['normalizeresiduals',['normalizeResiduals',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#aecfe561132ce0812baf0c4774d5b47de',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['normalizestates',['normalizeStates',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#aea27ab635f338d4fd479b4f93c420c99',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['nprocs',['nProcs',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#aec6eb85c133ee5f39b4f21793cd5fc1f',1,'dafoam::pyDAFoam::PYDAFOAM']]],
+  ['nsolveadjointcalls_5f',['nSolveAdjointCalls_',['../classFoam_1_1DASolver.html#a23f5d3056f1bef0df28cbc626cb32f59',1,'Foam::DASolver']]],
   ['nsolveadjoints',['nSolveAdjoints',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a2f3d1cac79a13858160a2423802c389b',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['nsolveprimals',['nSolvePrimals',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ac60897a294ad9fa81dccabf291af2167',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['nsurfacescalarstates',['nSurfaceScalarStates',['../classFoam_1_1DAIndex.html#a6c58675e8d548e3dab691b19a0a0e94e',1,'Foam::DAIndex']]],
