@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.2</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.3</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -67,7 +67,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classFoam_1_1DATurboFoam-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -206,36 +205,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa2dae402a2b11106af15ef10314838a7 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the solution time folder for previous primal solution  <a href="classFoam_1_1DASolver.html#aa2dae402a2b11106af15ef10314838a7">More...</a><br /></td></tr>
 <tr class="separator:aa2dae402a2b11106af15ef10314838a7 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a586f133d36cfa6a6206672c6227cee60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurboFoam.html#a586f133d36cfa6a6206672c6227cee60">setRotingWallVelocity</a> ()</td></tr>
-<tr class="memdesc:a586f133d36cfa6a6206672c6227cee60"><td class="mdescLeft">&#160;</td><td class="mdescRight">set velocity boundary condition for rotating walls  <a href="#a586f133d36cfa6a6206672c6227cee60">More...</a><br /></td></tr>
-<tr class="separator:a586f133d36cfa6a6206672c6227cee60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classFoam_1_1DASolver"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classFoam_1_1DASolver')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classFoam_1_1DASolver.html">DASolver</a></td></tr>
-<tr class="memitem:a13ab457a9f24cb2d0a561338ca36c323 inherit pro_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a13ab457a9f24cb2d0a561338ca36c323">setPsiVecDict</a> (const word objFuncName, const Vec psiVec, dictionary &amp;psiVecDict)</td></tr>
-<tr class="memdesc:a13ab457a9f24cb2d0a561338ca36c323 inherit pro_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign the psiVec to psiVecArray_  <a href="classFoam_1_1DASolver.html#a13ab457a9f24cb2d0a561338ca36c323">More...</a><br /></td></tr>
-<tr class="separator:a13ab457a9f24cb2d0a561338ca36c323 inherit pro_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4c89ba6507a68faa212ef055bd3c7d1 inherit pro_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#ae4c89ba6507a68faa212ef055bd3c7d1">setTotalDerivDict</a> (const word objFuncName, const word designVarName, const Vec totalDerivVec, dictionary &amp;totalDerivDict)</td></tr>
-<tr class="separator:ae4c89ba6507a68faa212ef055bd3c7d1 inherit pro_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79192bfd72e04929b30de193c8a0989f inherit pro_methods_classFoam_1_1DASolver"><td class="memTemplParams" colspan="2">template&lt;class classType &gt; </td></tr>
-<tr class="memitem:a79192bfd72e04929b30de193c8a0989f inherit pro_methods_classFoam_1_1DASolver"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a79192bfd72e04929b30de193c8a0989f">primalResidualControl</a> (const SolverPerformance&lt; classType &gt; &amp;solverP, const label printToScreen, const label printInterval, const word varName)</td></tr>
-<tr class="memdesc:a79192bfd72e04929b30de193c8a0989f inherit pro_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">setup maximal residual control and print the residual as needed  <a href="classFoam_1_1DASolver.html#a79192bfd72e04929b30de193c8a0989f">More...</a><br /></td></tr>
-<tr class="separator:a79192bfd72e04929b30de193c8a0989f inherit pro_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adba061b34197deb555c03c4e3ca27ac0 inherit pro_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#adba061b34197deb555c03c4e3ca27ac0">isPrintTime</a> (const Time &amp;<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>, const label printInterval) const</td></tr>
-<tr class="separator:adba061b34197deb555c03c4e3ca27ac0 inherit pro_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab4e3d9fbdff96d71bcf7635a87107a3 inherit pro_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#aab4e3d9fbdff96d71bcf7635a87107a3">checkResidualTol</a> ()</td></tr>
-<tr class="memdesc:aab4e3d9fbdff96d71bcf7635a87107a3 inherit pro_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">check whether the min residual in primal satisfy the prescribed tolerance  <a href="classFoam_1_1DASolver.html#aab4e3d9fbdff96d71bcf7635a87107a3">More...</a><br /></td></tr>
-<tr class="separator:aab4e3d9fbdff96d71bcf7635a87107a3 inherit pro_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4aa41b7d245695cdf5071de2e4a823d inherit pro_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#ad4aa41b7d245695cdf5071de2e4a823d">reduceStateResConLevel</a> (const dictionary &amp;maxResConLv4JacPCMat, HashTable&lt; List&lt; List&lt; word &gt;&gt;&gt; &amp;stateResConInfo) const</td></tr>
-<tr class="memdesc:ad4aa41b7d245695cdf5071de2e4a823d inherit pro_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">reduce the connectivity level for Jacobian connectivity mat  <a href="classFoam_1_1DASolver.html#ad4aa41b7d245695cdf5071de2e4a823d">More...</a><br /></td></tr>
-<tr class="separator:ad4aa41b7d245695cdf5071de2e4a823d inherit pro_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f3dde6ebafed85d050245b75654146e inherit pro_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a3f3dde6ebafed85d050245b75654146e">initializeObjFuncHistFilePtr</a> (const word fileName)</td></tr>
-<tr class="memdesc:a3f3dde6ebafed85d050245b75654146e inherit pro_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize objFuncHistFilePtr_  <a href="classFoam_1_1DASolver.html#a3f3dde6ebafed85d050245b75654146e">More...</a><br /></td></tr>
-<tr class="separator:a3f3dde6ebafed85d050245b75654146e inherit pro_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2faeca0f2ffcfed4f15f97080127bf1 inherit pro_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#aa2faeca0f2ffcfed4f15f97080127bf1">writeObjFuncHistFile</a> ()</td></tr>
-<tr class="memdesc:aa2faeca0f2ffcfed4f15f97080127bf1 inherit pro_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">write objective functions values to the objFuncHistFile  <a href="classFoam_1_1DASolver.html#aa2faeca0f2ffcfed4f15f97080127bf1">More...</a><br /></td></tr>
-<tr class="separator:aa2faeca0f2ffcfed4f15f97080127bf1 inherit pro_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a2e1ff2e87472d1b76d86348f4fe02a97"><td class="memItemLeft" align="right" valign="top">autoPtr&lt; simpleControl &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurboFoam.html#a2e1ff2e87472d1b76d86348f4fe02a97">simplePtr_</a></td></tr>
@@ -362,6 +331,36 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_classFoam_1_1DASolver"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classFoam_1_1DASolver')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classFoam_1_1DASolver.html">DASolver</a></td></tr>
 <tr class="memitem:a7e87d9619f10e438bf19ec434d092fb0 inherit pub_static_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">static autoPtr&lt; <a class="el" href="classFoam_1_1DASolver.html">DASolver</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a7e87d9619f10e438bf19ec434d092fb0">New</a> (char *argsAll, PyObject *pyOptions)</td></tr>
 <tr class="separator:a7e87d9619f10e438bf19ec434d092fb0 inherit pub_static_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classFoam_1_1DASolver"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classFoam_1_1DASolver')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classFoam_1_1DASolver.html">DASolver</a></td></tr>
+<tr class="memitem:a13ab457a9f24cb2d0a561338ca36c323 inherit pro_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a13ab457a9f24cb2d0a561338ca36c323">setPsiVecDict</a> (const word objFuncName, const Vec psiVec, dictionary &amp;psiVecDict)</td></tr>
+<tr class="memdesc:a13ab457a9f24cb2d0a561338ca36c323 inherit pro_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign the psiVec to psiVecArray_  <a href="classFoam_1_1DASolver.html#a13ab457a9f24cb2d0a561338ca36c323">More...</a><br /></td></tr>
+<tr class="separator:a13ab457a9f24cb2d0a561338ca36c323 inherit pro_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4c89ba6507a68faa212ef055bd3c7d1 inherit pro_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#ae4c89ba6507a68faa212ef055bd3c7d1">setTotalDerivDict</a> (const word objFuncName, const word designVarName, const Vec totalDerivVec, dictionary &amp;totalDerivDict)</td></tr>
+<tr class="separator:ae4c89ba6507a68faa212ef055bd3c7d1 inherit pro_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79192bfd72e04929b30de193c8a0989f inherit pro_methods_classFoam_1_1DASolver"><td class="memTemplParams" colspan="2">template&lt;class classType &gt; </td></tr>
+<tr class="memitem:a79192bfd72e04929b30de193c8a0989f inherit pro_methods_classFoam_1_1DASolver"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a79192bfd72e04929b30de193c8a0989f">primalResidualControl</a> (const SolverPerformance&lt; classType &gt; &amp;solverP, const label printToScreen, const label printInterval, const word varName)</td></tr>
+<tr class="memdesc:a79192bfd72e04929b30de193c8a0989f inherit pro_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">setup maximal residual control and print the residual as needed  <a href="classFoam_1_1DASolver.html#a79192bfd72e04929b30de193c8a0989f">More...</a><br /></td></tr>
+<tr class="separator:a79192bfd72e04929b30de193c8a0989f inherit pro_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba061b34197deb555c03c4e3ca27ac0 inherit pro_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#adba061b34197deb555c03c4e3ca27ac0">isPrintTime</a> (const Time &amp;<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>, const label printInterval) const</td></tr>
+<tr class="separator:adba061b34197deb555c03c4e3ca27ac0 inherit pro_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab4e3d9fbdff96d71bcf7635a87107a3 inherit pro_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#aab4e3d9fbdff96d71bcf7635a87107a3">checkResidualTol</a> ()</td></tr>
+<tr class="memdesc:aab4e3d9fbdff96d71bcf7635a87107a3 inherit pro_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">check whether the min residual in primal satisfy the prescribed tolerance  <a href="classFoam_1_1DASolver.html#aab4e3d9fbdff96d71bcf7635a87107a3">More...</a><br /></td></tr>
+<tr class="separator:aab4e3d9fbdff96d71bcf7635a87107a3 inherit pro_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4aa41b7d245695cdf5071de2e4a823d inherit pro_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#ad4aa41b7d245695cdf5071de2e4a823d">reduceStateResConLevel</a> (const dictionary &amp;maxResConLv4JacPCMat, HashTable&lt; List&lt; List&lt; word &gt;&gt;&gt; &amp;stateResConInfo) const</td></tr>
+<tr class="memdesc:ad4aa41b7d245695cdf5071de2e4a823d inherit pro_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">reduce the connectivity level for Jacobian connectivity mat  <a href="classFoam_1_1DASolver.html#ad4aa41b7d245695cdf5071de2e4a823d">More...</a><br /></td></tr>
+<tr class="separator:ad4aa41b7d245695cdf5071de2e4a823d inherit pro_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f3dde6ebafed85d050245b75654146e inherit pro_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a3f3dde6ebafed85d050245b75654146e">initializeObjFuncHistFilePtr</a> (const word fileName)</td></tr>
+<tr class="memdesc:a3f3dde6ebafed85d050245b75654146e inherit pro_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize objFuncHistFilePtr_  <a href="classFoam_1_1DASolver.html#a3f3dde6ebafed85d050245b75654146e">More...</a><br /></td></tr>
+<tr class="separator:a3f3dde6ebafed85d050245b75654146e inherit pro_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2faeca0f2ffcfed4f15f97080127bf1 inherit pro_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#aa2faeca0f2ffcfed4f15f97080127bf1">writeObjFuncHistFile</a> ()</td></tr>
+<tr class="memdesc:aa2faeca0f2ffcfed4f15f97080127bf1 inherit pro_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">write objective functions values to the objFuncHistFile  <a href="classFoam_1_1DASolver.html#aa2faeca0f2ffcfed4f15f97080127bf1">More...</a><br /></td></tr>
+<tr class="separator:aa2faeca0f2ffcfed4f15f97080127bf1 inherit pro_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a586f133d36cfa6a6206672c6227cee60 inherit pro_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a586f133d36cfa6a6206672c6227cee60">setRotingWallVelocity</a> ()</td></tr>
+<tr class="memdesc:a586f133d36cfa6a6206672c6227cee60 inherit pro_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">set velocity boundary condition for rotating walls  <a href="classFoam_1_1DASolver.html#a586f133d36cfa6a6206672c6227cee60">More...</a><br /></td></tr>
+<tr class="separator:a586f133d36cfa6a6206672c6227cee60 inherit pro_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92272a42a157b775ffa7d17b84f3718f inherit pro_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a92272a42a157b775ffa7d17b84f3718f">writeAssociatedFields</a> ()</td></tr>
+<tr class="memdesc:a92272a42a157b775ffa7d17b84f3718f inherit pro_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">write associated fields such as relative velocity  <a href="classFoam_1_1DASolver.html#a92272a42a157b775ffa7d17b84f3718f">More...</a><br /></td></tr>
+<tr class="separator:a92272a42a157b775ffa7d17b84f3718f inherit pro_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -420,7 +419,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00092">92</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00088">88</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
 
 <p class="reference">References <a class="el" href="DATurboFoam_8C_source.html#l00039">DATurboFoam::initSolver()</a>, and <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>.</p>
 <div class="dynheader">
@@ -436,47 +435,6 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a586f133d36cfa6a6206672c6227cee60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a586f133d36cfa6a6206672c6227cee60">&#9670;&nbsp;</a></span>setRotingWallVelocity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void setRotingWallVelocity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>set velocity boundary condition for rotating walls </p>
-
-<p class="definition">Definition at line <a class="el" href="DATurboFoam_8C_source.html#l00159">159</a> of file <a class="el" href="DATurboFoam_8C_source.html">DATurboFoam.C</a>.</p>
-
-<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00067">DASolver::meshPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00064">DASolver::runTimePtr_</a>, and <a class="el" href="createRefsPiso_8H_source.html#l00007">U</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classFoam_1_1DATurboFoam_a586f133d36cfa6a6206672c6227cee60_icgraph.png" border="0" usemap="#classFoam_1_1DATurboFoam_a586f133d36cfa6a6206672c6227cee60_icgraph" alt=""/></div>
-<map name="classFoam_1_1DATurboFoam_a586f133d36cfa6a6206672c6227cee60_icgraph" id="classFoam_1_1DATurboFoam_a586f133d36cfa6a6206672c6227cee60_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="204,5,295,32"/>
-</map>
-</div>
-
-</div>
-</div>
 <a id="ae9f8c6b3edd4d724ad1da9e69b9b4ca1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae9f8c6b3edd4d724ad1da9e69b9b4ca1">&#9670;&nbsp;</a></span>TypeName()</h2>
 
@@ -526,7 +484,7 @@ Here is the caller graph for this function:</div>
 
 <p class="reference">References <a class="el" href="setRootCasePython_8H_source.html#l00020">args</a>, <a class="el" href="DASolver_8H_source.html#l00061">DASolver::argsPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00085">DASolver::daCheckMeshPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00070">DASolver::daOptionPtr_</a>, <a class="el" href="createRefsPiso_8H_source.html#l00004">mesh</a>, <a class="el" href="DASolver_8H_source.html#l00067">DASolver::meshPtr_</a>, <a class="el" href="createRefsPiso_8H_source.html#l00001">runTime</a>, and <a class="el" href="DASolver_8H_source.html#l00064">DASolver::runTimePtr_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DATurboFoam_8H_source.html#l00092">DATurboFoam::~DATurboFoam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DATurboFoam_8H_source.html#l00088">DATurboFoam::~DATurboFoam()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -578,9 +536,9 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DATurboFoam_8C_source.html#l00057">57</a> of file <a class="el" href="DATurboFoam_8C_source.html">DATurboFoam.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DASolver_8C_source.html#l00415">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DASolver_8H_source.html#l00340">DASolver::checkMesh()</a>, <a class="el" href="DASolver_8C_source.html#l02043">DASolver::checkResidualTol()</a>, <a class="el" href="DASolver_8H_source.html#l00079">DASolver::daFieldPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00070">DASolver::daOptionPtr_</a>, <a class="el" href="DATurboFoam_8H_source.html#l00068">DATurboFoam::daTurbulenceModelPtr_</a>, <a class="el" href="DASolver_8C_source.html#l02192">DASolver::isPrintTime()</a>, <a class="el" href="DASolver_8C_source.html#l00091">DASolver::loop()</a>, <a class="el" href="createRefsPiso_8H_source.html#l00004">mesh</a>, <a class="el" href="DASolver_8H_source.html#l00244">DASolver::ofField2StateVec()</a>, <a class="el" href="createRefsPiso_8H_source.html#l00006">p</a>, <a class="el" href="DASolver_8H_source.html#l00256">DASolver::pointVec2OFMesh()</a>, <a class="el" href="DASolver_8H_source.html#l00139">DASolver::primalMinRes_</a>, <a class="el" href="DASolver_8C_source.html#l00127">DASolver::printAllObjFuncs()</a>, <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00008">rho</a>, <a class="el" href="createRefsPiso_8H_source.html#l00001">runTime</a>, and <a class="el" href="DATurboFoam_8C_source.html#l00159">DATurboFoam::setRotingWallVelocity()</a>.</p>
+<p class="reference">References <a class="el" href="DASolver_8C_source.html#l00415">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DASolver_8H_source.html#l00346">DASolver::checkMesh()</a>, <a class="el" href="DASolver_8C_source.html#l01934">DASolver::checkResidualTol()</a>, <a class="el" href="DASolver_8H_source.html#l00079">DASolver::daFieldPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00070">DASolver::daOptionPtr_</a>, <a class="el" href="DATurboFoam_8H_source.html#l00067">DATurboFoam::daTurbulenceModelPtr_</a>, <a class="el" href="DASolver_8C_source.html#l02083">DASolver::isPrintTime()</a>, <a class="el" href="DASolver_8C_source.html#l00091">DASolver::loop()</a>, <a class="el" href="createRefsPiso_8H_source.html#l00004">mesh</a>, <a class="el" href="DASolver_8H_source.html#l00250">DASolver::ofField2StateVec()</a>, <a class="el" href="createRefsPiso_8H_source.html#l00006">p</a>, <a class="el" href="DASolver_8H_source.html#l00262">DASolver::pointVec2OFMesh()</a>, <a class="el" href="DASolver_8H_source.html#l00139">DASolver::primalMinRes_</a>, <a class="el" href="DASolver_8C_source.html#l00127">DASolver::printAllObjFuncs()</a>, <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00008">rho</a>, <a class="el" href="createRefsPiso_8H_source.html#l00001">runTime</a>, and <a class="el" href="DASolver_8C_source.html#l02101">DASolver::setRotingWallVelocity()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DATurboFoam_8H_source.html#l00092">DATurboFoam::~DATurboFoam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DATurboFoam_8H_source.html#l00088">DATurboFoam::~DATurboFoam()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -594,7 +552,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node7" href="classFoam_1_1DASolver.html#a97b2a938b423ad81fcd6982dd375fd01" title="set the state vector based on the latest fields in OpenFOAM " alt="" coords="173,275,346,316"/>
 <area shape="rect" id="node8" href="classFoam_1_1DASolver.html#ad11a8b27d61a02a20034c2dedfaa3843" title="assign the points in fvMesh of OpenFOAM based on the point vector " alt="" coords="167,340,352,381"/>
 <area shape="rect" id="node9" href="classFoam_1_1DASolver.html#afe40e08050edfc54026142d6353aa408" title="calculate the values of all objective functions and print them to screen " alt="" coords="176,405,343,447"/>
-<area shape="rect" id="node10" href="classFoam_1_1DATurboFoam.html#a586f133d36cfa6a6206672c6227cee60" title="set velocity boundary condition for rotating walls " alt="" coords="184,471,335,498"/>
+<area shape="rect" id="node10" href="classFoam_1_1DASolver.html#a586f133d36cfa6a6206672c6227cee60" title="set velocity boundary condition for rotating walls " alt="" coords="168,471,351,512"/>
 </map>
 </div>
 <div class="dynheader">
@@ -631,7 +589,7 @@ Here is the caller graph for this function:</div>
 
 <p>simple pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00041">41</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00040">40</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
 
 </div>
 </div>
@@ -657,7 +615,7 @@ Here is the caller graph for this function:</div>
 
 <p>thermal model </p>
 
-<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00044">44</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00043">43</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
 
 </div>
 </div>
@@ -683,7 +641,7 @@ Here is the caller graph for this function:</div>
 
 <p>pressure field pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00047">47</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00046">46</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
 
 </div>
 </div>
@@ -709,7 +667,7 @@ Here is the caller graph for this function:</div>
 
 <p>density field pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00050">50</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00049">49</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
 
 </div>
 </div>
@@ -735,7 +693,7 @@ Here is the caller graph for this function:</div>
 
 <p>velocity field pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00053">53</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00052">52</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
 
 </div>
 </div>
@@ -761,7 +719,7 @@ Here is the caller graph for this function:</div>
 
 <p>relative velocity field pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00056">56</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00055">55</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
 
 </div>
 </div>
@@ -787,7 +745,7 @@ Here is the caller graph for this function:</div>
 
 <p>surface flux field pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00059">59</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00058">58</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
 
 </div>
 </div>
@@ -813,7 +771,7 @@ Here is the caller graph for this function:</div>
 
 <p>pressure control pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00062">62</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00061">61</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
 
 </div>
 </div>
@@ -839,7 +797,7 @@ Here is the caller graph for this function:</div>
 
 <p>turbulence pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00065">65</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00064">64</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
 
 </div>
 </div>
@@ -865,7 +823,7 @@ Here is the caller graph for this function:</div>
 
 <p><a class="el" href="classFoam_1_1DATurbulenceModel.html">DATurbulenceModel</a> pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00068">68</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00067">67</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DATurboFoam_8C_source.html#l00057">DATurboFoam::solvePrimal()</a>.</p>
 
@@ -893,7 +851,7 @@ Here is the caller graph for this function:</div>
 
 <p>MRF pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00071">71</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00070">70</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
 
 </div>
 </div>
@@ -919,7 +877,7 @@ Here is the caller graph for this function:</div>
 
 <p>initial mass </p>
 
-<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00074">74</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00073">73</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
 
 </div>
 </div>
@@ -945,7 +903,7 @@ Here is the caller graph for this function:</div>
 
 <p>continuity error </p>
 
-<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00077">77</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DATurboFoam_8H_source.html#l00076">76</a> of file <a class="el" href="DATurboFoam_8H_source.html">DATurboFoam.H</a>.</p>
 
 </div>
 </div>

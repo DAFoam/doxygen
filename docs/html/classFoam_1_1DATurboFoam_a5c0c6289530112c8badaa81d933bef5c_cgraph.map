@@ -7,5 +7,5 @@
 <area shape="rect" id="node7" href="$classFoam_1_1DASolver.html#a97b2a938b423ad81fcd6982dd375fd01" title="set the state vector based on the latest fields in OpenFOAM " alt="" coords="173,275,346,316"/>
 <area shape="rect" id="node8" href="$classFoam_1_1DASolver.html#ad11a8b27d61a02a20034c2dedfaa3843" title="assign the points in fvMesh of OpenFOAM based on the point vector " alt="" coords="167,340,352,381"/>
 <area shape="rect" id="node9" href="$classFoam_1_1DASolver.html#afe40e08050edfc54026142d6353aa408" title="calculate the values of all objective functions and print them to screen " alt="" coords="176,405,343,447"/>
-<area shape="rect" id="node10" href="$classFoam_1_1DATurboFoam.html#a586f133d36cfa6a6206672c6227cee60" title="set velocity boundary condition for rotating walls " alt="" coords="184,471,335,498"/>
+<area shape="rect" id="node10" href="$classFoam_1_1DASolver.html#a586f133d36cfa6a6206672c6227cee60" title="set velocity boundary condition for rotating walls " alt="" coords="168,471,351,512"/>
 </map>
