@@ -13,6 +13,7 @@ var searchData=
   ['objfuncfacevalues_5f',['objFuncFaceValues_',['../classFoam_1_1DAObjFunc.html#a4792e091e4f5c4ee6f8b99b42326e30e',1,'Foam::DAObjFunc']]],
   ['objfunchistfileptr_5f',['objFuncHistFilePtr_',['../classFoam_1_1DASolver.html#ae8dd2d197004f7273675e90266d647ce',1,'Foam::DASolver']]],
   ['objfuncname_5f',['objFuncName_',['../classFoam_1_1DAObjFunc.html#a74eebdac8678d8a2c05df3635d45b081',1,'Foam::DAObjFunc']]],
+  ['objfuncnames4adj',['objFuncNames4Adj',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a33befd1a6c921f1fd958e7fe15008bb8',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['objfuncnames4adj_5f',['objFuncNames4Adj_',['../classFoam_1_1DASolver.html#a6568058fbe79f69b526371cb5936490a',1,'Foam::DASolver']]],
   ['objfuncpart_5f',['objFuncPart_',['../classFoam_1_1DAObjFunc.html#a3c2d9497f16befcc3524537e0150cd47',1,'Foam::DAObjFunc']]],
   ['objfuncsallinstances_5f',['objFuncsAllInstances_',['../classFoam_1_1DAPisoFoam.html#adc0b1437ae8de5dd3cf1278760b587cb',1,'Foam::DAPisoFoam']]],

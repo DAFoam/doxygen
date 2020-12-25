@@ -4,6 +4,7 @@ var searchData=
   ['gamma2_5f',['gamma2_',['../classFoam_1_1DAkOmegaSST.html#a3cf387c1666852af6073f74c9c59e178',1,'Foam::DAkOmegaSST']]],
   ['gamma_5f',['gamma_',['../classFoam_1_1DAObjFuncTotalPressureRatio.html#a2e320ab4d16ef59322581c061edc1d36',1,'Foam::DAObjFuncTotalPressureRatio::gamma_()'],['../classFoam_1_1DAObjFuncTotalTemperatureRatio.html#a2e320ab4d16ef59322581c061edc1d36',1,'Foam::DAObjFuncTotalTemperatureRatio::gamma_()']]],
   ['globaladjointstatenumbering',['globalAdjointStateNumbering',['../classFoam_1_1DAIndex.html#a75df9147e4815d887684542e0c19d737',1,'Foam::DAIndex']]],
+  ['globaladtape4drdwtinitialized',['globalADTape4dRdWTInitialized',['../classFoam_1_1DASolver.html#a37781b9c85ae1feccd485ccc2e2b6c69',1,'Foam::DASolver']]],
   ['globalcellnumbering',['globalCellNumbering',['../classFoam_1_1DAIndex.html#a612291abb9489486ba4fc8a40bca9b33',1,'Foam::DAIndex']]],
   ['globalcellvectornumbering',['globalCellVectorNumbering',['../classFoam_1_1DAIndex.html#ae7799bfb308756ace93be315d8ef140a',1,'Foam::DAIndex']]],
   ['globalconterr',['globalContErr',['../continuityErrsPython_8H.html#ac7810f8530d3395b6469c651a5ed0a18',1,'continuityErrsPython.H']]],

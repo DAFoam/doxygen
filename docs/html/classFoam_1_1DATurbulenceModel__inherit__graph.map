@@ -1,7 +1,8 @@
 <map id="DATurbulenceModel" name="DATurbulenceModel">
-<area shape="rect" id="node3" href="$classFoam_1_1DADummyTurbulenceModel.html" title="DADummyTurbulenceModel" alt="" coords="5,155,192,181"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAkEpsilon.html" title="DAkEpsilon" alt="" coords="216,155,307,181"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAkOmegaSST.html" title="DAkOmegaSST" alt="" coords="331,155,447,181"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DASpalartAllmaras.html" title="DASpalartAllmaras" alt="" coords="472,155,605,181"/>
-<area shape="rect" id="node7" href="$classFoam_1_1DASpalartAllmarasFv3.html" title="DASpalartAllmarasFv3" alt="" coords="629,155,784,181"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DADummyTurbulenceModel.html" title="DADummyTurbulenceModel" alt="" coords="331,5,517,32"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAkEpsilon.html" title="DAkEpsilon" alt="" coords="379,56,469,83"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DAkOmegaSST.html" title="DAkOmegaSST" alt="" coords="366,107,482,133"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DASpalartAllmaras.html" title="DASpalartAllmaras" alt="" coords="357,157,491,184"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DASpalartAllmarasFv3.html" title="DASpalartAllmarasFv3" alt="" coords="347,208,501,235"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DASpalartAllmarasFv3Beta.html" title="DASpalartAllmarasFv3Beta" alt="" coords="333,259,515,285"/>
 </map>

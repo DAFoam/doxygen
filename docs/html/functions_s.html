@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.3</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.0</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -78,6 +78,7 @@ $(function() {
 </li>
 <li>scale_
 : <a class="el" href="classFoam_1_1DAObjFunc.html#a58558aa4a61007a76f0078816b2c69c0">DAObjFunc</a>
+, <a class="el" href="classFoam_1_1DAObjFuncStateErrorNorm.html#a58558aa4a61007a76f0078816b2c69c0">DAObjFuncStateErrorNorm</a>
 </li>
 <li>setConnections()
 : <a class="el" href="classFoam_1_1DAJacCon.html#ad2122e911a7e639cf065cf4c102f2f9d">DAJacCon</a>
@@ -102,6 +103,11 @@ $(function() {
 </li>
 <li>setEvalFuncs()
 : <a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#afaf983faece233b240fa94f0acb8e7d1">PYDAFOAM</a>
+</li>
+<li>setFieldValue4GlobalCellI()
+: <a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a69f63c42b82956eea6a2e5c11ae80a1d">PYDAFOAM</a>
+, <a class="el" href="classFoam_1_1DASolver.html#a5d441dcc885643d362ffc6c49c784d3a">DASolver</a>
+, <a class="el" href="classFoam_1_1DASolvers.html#a5d441dcc885643d362ffc6c49c784d3a">DASolvers</a>
 </li>
 <li>setMesh()
 : <a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a9a37af332c46ce5d38b00e0073632e9c">PYDAFOAM</a>
@@ -132,9 +138,6 @@ $(function() {
 <li>setPrimalBoundaryConditions()
 : <a class="el" href="classFoam_1_1DAField.html#ae542daf160fbb16e53e2406cdf21ab27">DAField</a>
 </li>
-<li>setPsiVecDict()
-: <a class="el" href="classFoam_1_1DASolver.html#a13ab457a9f24cb2d0a561338ca36c323">DASolver</a>
-</li>
 <li>setRotingWallVelocity()
 : <a class="el" href="classFoam_1_1DASolver.html#a586f133d36cfa6a6206672c6227cee60">DASolver</a>
 </li>
@@ -149,9 +152,6 @@ $(function() {
 , <a class="el" href="classFoam_1_1DAPisoFoam.html#aa745d6a3eab8763c2c930abdb3990bca">DAPisoFoam</a>
 , <a class="el" href="classFoam_1_1DASolver.html#aa745d6a3eab8763c2c930abdb3990bca">DASolver</a>
 , <a class="el" href="classFoam_1_1DASolvers.html#aa745d6a3eab8763c2c930abdb3990bca">DASolvers</a>
-</li>
-<li>setTotalDerivDict()
-: <a class="el" href="classFoam_1_1DASolver.html#ae4c89ba6507a68faa212ef055bd3c7d1">DASolver</a>
 </li>
 <li>setupdRdWCon()
 : <a class="el" href="classFoam_1_1DAJacCondRdW.html#a6320c97a80c467a388c3a88fdcd31eb3">DAJacCondRdW</a>
@@ -190,6 +190,7 @@ $(function() {
 <li>sigmaNut_
 : <a class="el" href="classFoam_1_1DASpalartAllmaras.html#aa8372eaafe5ae1f5354808ef3cd56a9d">DASpalartAllmaras</a>
 , <a class="el" href="classFoam_1_1DASpalartAllmarasFv3.html#aa8372eaafe5ae1f5354808ef3cd56a9d">DASpalartAllmarasFv3</a>
+, <a class="el" href="classFoam_1_1DASpalartAllmarasFv3Beta.html#aa8372eaafe5ae1f5354808ef3cd56a9d">DASpalartAllmarasFv3Beta</a>
 </li>
 <li>simple_
 : <a class="el" href="classFoam_1_1DAResidualRhoSimpleCFoam.html#ae799c2a78d84e54948e0203eca74fc45">DAResidualRhoSimpleCFoam</a>
@@ -207,11 +208,11 @@ $(function() {
 </li>
 <li>solveAdjoint()
 : <a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8">PYDAFOAM</a>
-, <a class="el" href="classFoam_1_1DASolver.html#a985af8c5b6d6bf478b8fd1d999865b47">DASolver</a>
-, <a class="el" href="classFoam_1_1DASolvers.html#a985af8c5b6d6bf478b8fd1d999865b47">DASolvers</a>
 </li>
 <li>solveLinearEqn()
 : <a class="el" href="classFoam_1_1DALinearEqn.html#ad418053a9be461caecbb9109506d2e4e">DALinearEqn</a>
+, <a class="el" href="classFoam_1_1DASolver.html#ad418053a9be461caecbb9109506d2e4e">DASolver</a>
+, <a class="el" href="classFoam_1_1DASolvers.html#ab1afb25c3f4670cdebc0c18eec153b80">DASolvers</a>
 </li>
 <li>solvePrimal()
 : <a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ade6feb15f81bb189b6f25e08be7773b7">PYDAFOAM</a>
@@ -228,6 +229,9 @@ $(function() {
 <li>solver
 : <a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a2debe316c6874c013213554b33d598bf">PYDAFOAM</a>
 </li>
+<li>solverAD
+: <a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a88a6b0561bc529294feea30cb4dcbf8e">PYDAFOAM</a>
+</li>
 <li>solverInitialized
 : <a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ad8a4a3a9214f941cc966090d699d53c2">PYDAFOAM</a>
 </li>
@@ -242,9 +246,13 @@ $(function() {
 , <a class="el" href="classFoam_1_1DAkOmegaSST.html#a2d18707b18fab3a309b89e280f367a6a">DAkOmegaSST</a>
 , <a class="el" href="classFoam_1_1DASpalartAllmaras.html#a2d18707b18fab3a309b89e280f367a6a">DASpalartAllmaras</a>
 , <a class="el" href="classFoam_1_1DASpalartAllmarasFv3.html#a2d18707b18fab3a309b89e280f367a6a">DASpalartAllmarasFv3</a>
+, <a class="el" href="classFoam_1_1DASpalartAllmarasFv3Beta.html#a2d18707b18fab3a309b89e280f367a6a">DASpalartAllmarasFv3Beta</a>
 </li>
 <li>SpalartAllmarasFv3()
 : <a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a23a3433eaa4dcc7c17c4ac79df4d54e6">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;</a>
+</li>
+<li>SpalartAllmarasFv3Beta()
+: <a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3Beta.html#ac9bfe1a5911223cd29f7731fb4b21aff">SpalartAllmarasFv3Beta&lt; BasicTurbulenceModel &gt;</a>
 </li>
 <li>specialBCs
 : <a class="el" href="classFoam_1_1DAField.html#ae0452f73d8986645f2def414e598cbee">DAField</a>
@@ -275,8 +283,17 @@ $(function() {
 <li>stateLocalIndexOffset
 : <a class="el" href="classFoam_1_1DAIndex.html#a6eae9ffd651d1590c205d30f25f83669">DAIndex</a>
 </li>
+<li>stateName_
+: <a class="el" href="classFoam_1_1DAObjFuncStateErrorNorm.html#ab08319242b3ddba475fe1e2b3df397e1">DAObjFuncStateErrorNorm</a>
+</li>
+<li>stateRefName_
+: <a class="el" href="classFoam_1_1DAObjFuncStateErrorNorm.html#ab58806dde3a0b640857aef3652119b22">DAObjFuncStateErrorNorm</a>
+</li>
 <li>stateResConInfo_
 : <a class="el" href="classFoam_1_1DAStateInfo.html#aef8d8d2ec093cdc3a126072ce079f7d0">DAStateInfo</a>
+</li>
+<li>stateType_
+: <a class="el" href="classFoam_1_1DAObjFuncStateErrorNorm.html#aedacface32ab848cd8cbdea171f0282c">DAObjFuncStateErrorNorm</a>
 </li>
 <li>stateVec2OFField()
 : <a class="el" href="classFoam_1_1DAField.html#a7381e81276f834f59b9502061c4bab28">DAField</a>

@@ -1,9 +1,36 @@
 <map id="~DASolver" name="~DASolver">
-<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#ae61bd69b450c4e79a7eb089751e0ecde" title="compute the total derivatives " alt="" coords="171,5,277,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#a12e97365d8b5f9419986732e7fb1beb3" title="return the value of objective function at the given time instance and name " alt="" coords="140,56,308,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#af82bf1550fee8a84516c90c17d105352" title="initialize fields and variables " alt="" coords="186,107,262,133"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DASolver.html#a132776bede8c2b661f995f2b5397b19f" title="return whether to loop the primal solution, similar to runTime::loop() except we don&#39;t do file IO ..." alt="" coords="201,157,247,184"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DASolver.html#aa745d6a3eab8763c2c930abdb3990bca" title="assign primal variables based on the current time instance " alt="" coords="151,208,297,235"/>
-<area shape="rect" id="node7" href="$classFoam_1_1DASolver.html#a985af8c5b6d6bf478b8fd1d999865b47" title="solve the adjoint linear equations " alt="" coords="177,259,271,285"/>
-<area shape="rect" id="node8" href="$classFoam_1_1DASolver.html#a9ce2c3a325b52ede4d6dfbd9e6c5b9ac" title="solve the primal equations " alt="" coords="179,309,269,336"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#a277016019539e22524dea671d8c579f0" title="set the reverse&#45;mode AD derivatives from the state variables in OpenFOAM to vecY " alt="" coords="409,56,579,83"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#a653f246e12168912ade302efc8c6155e" title="assign the reverse&#45;mode AD input seeds from vecX to the residuals in OpenFOAM " alt="" coords="399,398,589,424"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#a05d01f66a396018762a09b5a4f037c15" title="compute dFdAOA " alt="" coords="195,94,291,120"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DASolver.html#a9d25310a6c06d94f2f5ca30bd78a9f41" title="compute dFdBC " alt="" coords="200,144,287,171"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DASolver.html#abc9360718886616d9c869968b48faed5" title="compute dFdFFD " alt="" coords="196,195,291,222"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DASolver.html#ab360e6bdbcdaf37ae39fd17b440d45c0" title="compute dFdState " alt="" coords="194,246,293,272"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DASolver.html#ac468e16ab0351c4fc493b320fdbe4e2a" title="compute dFdW " alt="" coords="203,296,284,323"/>
+<area shape="rect" id="node9" href="$classFoam_1_1DASolver.html#a2ee033358cb8925351994d6881a05042" title="compute dFdW using AD " alt="" coords="193,448,293,475"/>
+<area shape="rect" id="node10" href="$classFoam_1_1DASolver.html#a70bbc5360b9de5931a46681648082387" title="Update the OpenFOAM field values (including both internal and boundary fields) based on the state vec..." alt="" coords="441,499,547,526"/>
+<area shape="rect" id="node11" href="$classFoam_1_1DASolver.html#ad2cd4059650064ffe8599777743e9701" title="Update the OpenFoam mesh point coordinates based on the point vector xvVec. " alt="" coords="439,550,549,576"/>
+<area shape="rect" id="node12" href="$classFoam_1_1DASolver.html#ab1e183dc1a310fb93abfb35d65acd389" title="register all state variables as the input for reverse&#45;mode AD " alt="" coords="395,1006,593,1032"/>
+<area shape="rect" id="node13" href="$classFoam_1_1DASolver.html#a1c41aebdabd484a1b5fb5ca7f50417ff" title="normalize the reverse&#45;mode AD derivatives stored in vecY " alt="" coords="419,170,569,196"/>
+<area shape="rect" id="node14" href="$classFoam_1_1DASolver.html#a681db2bd5ba6c81fe049988ad319343c" title="compute dFdXv AD " alt="" coords="192,499,295,526"/>
+<area shape="rect" id="node15" href="$classFoam_1_1DASolver.html#a391eb6d5b8f55ad7df7e9e94b5e0e995" title="compute dRdACT " alt="" coords="195,651,292,678"/>
+<area shape="rect" id="node16" href="$classFoam_1_1DASolver.html#a166ce247adae9e98add900803c60399d" title="compute dRdAOA " alt="" coords="194,702,293,728"/>
+<area shape="rect" id="node17" href="$classFoam_1_1DASolver.html#a87ce51418f77f253885c95b81c7c1d9d" title="compute dRdBC " alt="" coords="199,752,288,779"/>
+<area shape="rect" id="node18" href="$classFoam_1_1DASolver.html#aed9173f587b2b2aba91ab200f900e7b1" title="compute dRdFFD " alt="" coords="195,803,291,830"/>
+<area shape="rect" id="node19" href="$classFoam_1_1DASolver.html#a8d7ce6abc4e4a374dc01569c87a86d50" title="compute dRdState " alt="" coords="193,854,294,880"/>
+<area shape="rect" id="node20" href="$classFoam_1_1DASolver.html#afa0f66c9f760e901fccd79800b7621bb" title="compute dRdWT " alt="" coords="198,904,289,931"/>
+<area shape="rect" id="node21" href="$classFoam_1_1DASolver.html#a9efc63b2cbf192eea8a3dc667e112d1b" title="compute dRdXv^T*Psi " alt="" coords="177,550,309,576"/>
+<area shape="rect" id="node22" href="$classFoam_1_1DASolver.html#a32dc88eaf93946ee0561bae17d5fa9d0" title="register all residuals as the output for reverse&#45;mode AD " alt="" coords="403,1259,585,1286"/>
+<area shape="rect" id="node23" href="$classFoam_1_1DASolver.html#aa4be21178a1a28b820cdf47165942f7b" title="convert the mpi vec to a seq vec " alt="" coords="161,1056,326,1083"/>
+<area shape="rect" id="node24" href="$classFoam_1_1DASolver.html#ae89d42ca90d6cb8303862fa6d701d303" title="create a multi&#45;level, Richardson KSP object " alt="" coords="187,1107,300,1134"/>
+<area shape="rect" id="node25" href="$classFoam_1_1DASolver.html#a0c9e87bea8ad41ff2280c3dca8a05a13" title="create a multi&#45;level, Richardson KSP object with matrix&#45;free Jacobians " alt="" coords="156,1158,331,1184"/>
+<area shape="rect" id="node26" href="$classFoam_1_1DASolver.html#a9299d3b13776632afdd14e6b87b88215" title="destroy the matrix free dRdWT " alt="" coords="157,1208,329,1235"/>
+<area shape="rect" id="node27" href="$classFoam_1_1DASolver.html#a0977ff1950bbbf2d5f0778434928cea4" title="matrix free matrix&#45;vector product function to compute vecY=dRdWT*vecX " alt="" coords="401,1360,587,1387"/>
+<area shape="rect" id="node28" href="$classFoam_1_1DASolver.html#a12e97365d8b5f9419986732e7fb1beb3" title="return the value of objective function at the given time instance and name " alt="" coords="159,1310,327,1336"/>
+<area shape="rect" id="node29" href="$classFoam_1_1DASolver.html#aa7ce1e2622846db0a54e4db5b50e64b4" title="initialize matrix free dRdWT " alt="" coords="155,600,331,627"/>
+<area shape="rect" id="node30" href="$classFoam_1_1DASolver.html#a868507568cda82fb8d471c6584851b72" title="initialize the CoDiPack reverse&#45;mode AD global tape for computing dRdWT*psi " alt="" coords="140,1259,347,1286"/>
+<area shape="rect" id="node31" href="$classFoam_1_1DASolver.html#af82bf1550fee8a84516c90c17d105352" title="initialize fields and variables " alt="" coords="205,1462,281,1488"/>
+<area shape="rect" id="node32" href="$classFoam_1_1DASolver.html#a132776bede8c2b661f995f2b5397b19f" title="return whether to loop the primal solution, similar to runTime::loop() except we don&#39;t do file IO ..." alt="" coords="220,1512,267,1539"/>
+<area shape="rect" id="node33" href="$classFoam_1_1DASolver.html#aa745d6a3eab8763c2c930abdb3990bca" title="assign primal variables based on the current time instance " alt="" coords="170,1563,317,1590"/>
+<area shape="rect" id="node34" href="$classFoam_1_1DASolver.html#ad418053a9be461caecbb9109506d2e4e" title="solve the linear equation given a ksp and right&#45;hand&#45;side vector " alt="" coords="188,1614,299,1640"/>
+<area shape="rect" id="node35" href="$classFoam_1_1DASolver.html#a9ce2c3a325b52ede4d6dfbd9e6c5b9ac" title="solve the primal equations " alt="" coords="198,1664,289,1691"/>
 </map>

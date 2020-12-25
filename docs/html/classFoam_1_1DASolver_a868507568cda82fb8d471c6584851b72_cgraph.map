@@ -1,0 +1,4 @@
+<map id="initializeGlobalADTape4dRdWT" name="initializeGlobalADTape4dRdWT">
+<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#a32dc88eaf93946ee0561bae17d5fa9d0" title="register all residuals as the output for reverse&#45;mode AD " alt="" coords="269,5,450,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#ab1e183dc1a310fb93abfb35d65acd389" title="register all state variables as the input for reverse&#45;mode AD " alt="" coords="260,56,459,83"/>
+</map>

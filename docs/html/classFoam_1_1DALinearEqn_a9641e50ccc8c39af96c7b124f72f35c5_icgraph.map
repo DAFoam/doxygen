@@ -1,5 +1,5 @@
 <map id="getRunTime" name="getRunTime">
 <area shape="rect" id="node2" href="$classFoam_1_1DALinearEqn.html#a9130e830b837864a8cf17d517bf1b9c7" title="ksp monitor function " alt="" coords="147,5,257,32"/>
 <area shape="rect" id="node3" href="$classFoam_1_1DALinearEqn.html#a6d05df4f45d76502d1f4726e7d09f043" title="Destructor. " alt="" coords="305,56,412,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DALinearEqn.html#ad418053a9be461caecbb9109506d2e4e" title="solve the linear euqation given a ksp and right&#45;hand&#45;side vector " alt="" coords="147,107,257,133"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DALinearEqn.html#ad418053a9be461caecbb9109506d2e4e" title="solve the linear equation given a ksp and right&#45;hand&#45;side vector " alt="" coords="147,107,257,133"/>
 </map>

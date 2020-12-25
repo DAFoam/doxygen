@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.3</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.0</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -71,13 +71,13 @@ $(function() {
 : <a class="el" href="classFoam_1_1DAJacCon.html#aa64c993a0ecb8c97d16142fb38c6ef08">DAJacCon</a>
 </li>
 <li>addConMatCell()
-: <a class="el" href="classFoam_1_1DAJacCon.html#a91fc2ef8d15a3108b5d703a3b3013a0b">DAJacCon</a>
+: <a class="el" href="classFoam_1_1DAJacCon.html#ad4f0d48b1ed91abb9bf482207a0cbc8a">DAJacCon</a>
 </li>
 <li>addConMatCellFaces()
-: <a class="el" href="classFoam_1_1DAJacCon.html#a04dcbd6a9e72efa68dc43e69ac6c6505">DAJacCon</a>
+: <a class="el" href="classFoam_1_1DAJacCon.html#a2998eb38bf1268a09c5da012b7b98c3e">DAJacCon</a>
 </li>
 <li>addConMatNeighbourCells()
-: <a class="el" href="classFoam_1_1DAJacCon.html#a7920d58d7b500265c10295dae6b82c75">DAJacCon</a>
+: <a class="el" href="classFoam_1_1DAJacCon.html#a2738d49373edd2aef4b9af3ac7565286">DAJacCon</a>
 </li>
 <li>addFamilyGroup()
 : <a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a4302bdb3a98c6c1485163bf60952602f">PYDAFOAM</a>
@@ -91,6 +91,7 @@ $(function() {
 , <a class="el" href="classFoam_1_1DARadiationModel.html#a582cd36c7470ee61350f126866919b45">DARadiationModel</a>
 , <a class="el" href="classFoam_1_1DASpalartAllmaras.html#af4c2bb10de993ad1332df7bd213bc7ab">DASpalartAllmaras</a>
 , <a class="el" href="classFoam_1_1DASpalartAllmarasFv3.html#af4c2bb10de993ad1332df7bd213bc7ab">DASpalartAllmarasFv3</a>
+, <a class="el" href="classFoam_1_1DASpalartAllmarasFv3Beta.html#af4c2bb10de993ad1332df7bd213bc7ab">DASpalartAllmarasFv3Beta</a>
 , <a class="el" href="classFoam_1_1DATurbulenceModel.html#a582cd36c7470ee61350f126866919b45">DATurbulenceModel</a>
 </li>
 <li>addPhi4PIV()
@@ -101,6 +102,9 @@ $(function() {
 </li>
 <li>adjEqnOption
 : <a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#aa2abab9dfb63a60be2eaa9ea8e9392d3">DAOPTION</a>
+</li>
+<li>adjJacobianOption
+: <a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a8ada8cb8c5574d2b852a912de5b519f3">DAOPTION</a>
 </li>
 <li>adjointFail
 : <a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#affbdc8ed2a0c4a8430570feff7aaaf1f">PYDAFOAM</a>
@@ -126,6 +130,9 @@ $(function() {
 <li>adjStateType
 : <a class="el" href="classFoam_1_1DAIndex.html#af7821463aad31a74cc8389dc6c6f083e">DAIndex</a>
 </li>
+<li>adjTotalDeriv
+: <a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#aa5f290498a518f21f7010c1182bc4f48">PYDAFOAM</a>
+</li>
 <li>adjUseColoring
 : <a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#aa3d72d1e4413c3cb19a70a81de44fa55">DAOPTION</a>
 </li>
@@ -148,6 +155,7 @@ $(function() {
 <li>alphaField
 : <a class="el" href="classFoam_1_1RASModels_1_1dummyTurbulenceModel.html#a06a66094f33d6817d19225445c5ea874">dummyTurbulenceModel&lt; BasicTurbulenceModel &gt;</a>
 , <a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3.html#a06a66094f33d6817d19225445c5ea874">SpalartAllmarasFv3&lt; BasicTurbulenceModel &gt;</a>
+, <a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3Beta.html#a06a66094f33d6817d19225445c5ea874">SpalartAllmarasFv3Beta&lt; BasicTurbulenceModel &gt;</a>
 </li>
 <li>alphaK()
 : <a class="el" href="classFoam_1_1DAkOmegaSST.html#ad99bde65aa790cf1dbb6d56b2246dd04">DAkOmegaSST</a>
@@ -194,6 +202,12 @@ $(function() {
 </li>
 <li>argsPtr_
 : <a class="el" href="classFoam_1_1DASolver.html#a637fe81ead61828a3e66d61524f9094e">DASolver</a>
+</li>
+<li>assignStateGradient2Vec()
+: <a class="el" href="classFoam_1_1DASolver.html#a277016019539e22524dea671d8c579f0">DASolver</a>
+</li>
+<li>assignVec2ResidualGradient()
+: <a class="el" href="classFoam_1_1DASolver.html#a653f246e12168912ade302efc8c6155e">DASolver</a>
 </li>
 <li>autoMap()
 : <a class="el" href="classFoam_1_1tractionDisplacementFvPatchVectorField.html#a0ab0c43ce90d756c88dd81e3d0a9eef5">tractionDisplacementFvPatchVectorField</a>

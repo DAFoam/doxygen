@@ -2,6 +2,7 @@ var searchData=
 [
   ['a1_5f',['a1_',['../classFoam_1_1DAkOmegaSST.html#a92c4906beae60c7c54f7e299a9d064de',1,'Foam::DAkOmegaSST']]],
   ['adjeqnoption',['adjEqnOption',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#aa2abab9dfb63a60be2eaa9ea8e9392d3',1,'dafoam::pyDAFoam::DAOPTION']]],
+  ['adjjacobianoption',['adjJacobianOption',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a8ada8cb8c5574d2b852a912de5b519f3',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['adjointfail',['adjointFail',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#affbdc8ed2a0c4a8430570feff7aaaf1f',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['adjpartderivfdstep',['adjPartDerivFDStep',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a6d213d605750e92554f5656509114091',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['adjpclag',['adjPCLag',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a20522966aed8eefda1d54e5b591b420b',1,'dafoam::pyDAFoam::DAOPTION']]],
@@ -10,6 +11,7 @@ var searchData=
   ['adjstatenames',['adjStateNames',['../classFoam_1_1DAIndex.html#aa04bf8210573136c507d41db48a6bebc',1,'Foam::DAIndex']]],
   ['adjstateordering',['adjStateOrdering',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a5f427f8dbdcc02d1d30314b17f61d7b4',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['adjstatetype',['adjStateType',['../classFoam_1_1DAIndex.html#af7821463aad31a74cc8389dc6c6f083e',1,'Foam::DAIndex']]],
+  ['adjtotalderiv',['adjTotalDeriv',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#aa5f290498a518f21f7010c1182bc4f48',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['adjusecoloring',['adjUseColoring',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#aa3d72d1e4413c3cb19a70a81de44fa55',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['allfamilies',['allFamilies',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#aff325d26b899b46c38f402ce10e9593c',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['alloptions',['allOptions',['../createRefsRhoSimpleC_8H.html#a5dda3394a2d970c17cbed23a149ebab2',1,'allOptions():&#160;createRefsRhoSimpleC.H'],['../createRefsRhoSimple_8H.html#a5dda3394a2d970c17cbed23a149ebab2',1,'allOptions():&#160;createRefsRhoSimple.H'],['../createRefsTurbo_8H.html#a5dda3394a2d970c17cbed23a149ebab2',1,'allOptions():&#160;createRefsTurbo.H']]],

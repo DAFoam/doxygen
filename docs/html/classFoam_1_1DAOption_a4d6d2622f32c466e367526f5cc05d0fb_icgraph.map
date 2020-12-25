@@ -1,44 +1,45 @@
 <map id="getOption" name="getOption">
-<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#aceaf246b1a6b4ebcddc01690045c640c" title="calculate the colored column vector " alt="" coords="161,83,365,124"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAPartDerivdRdW.html#a3f0269fc7ba18e5fbfe29884960e7402" title="compute the partial derivative matrix " alt="" coords="477,31,651,72"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAPartDerivdFdW.html#a3f0269fc7ba18e5fbfe29884960e7402" title="compute the partial derivative matrix " alt="" coords="478,102,650,143"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAFvSourceActuatorLine.html#a3fa0b2668e6daf1d45bee2783e52cd56" title="compute the FvSource term " alt="" coords="471,178,657,219"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DAFvSourceActuatorPoint.html#a3fa0b2668e6daf1d45bee2783e52cd56" title="compute the FvSource term " alt="" coords="471,243,657,284"/>
-<area shape="rect" id="node7" href="$classFoam_1_1DAFvSourceActuatorDisk.html#a3fa0b2668e6daf1d45bee2783e52cd56" title="compute the FvSource term " alt="" coords="471,308,657,350"/>
-<area shape="rect" id="node8" href="$classFoam_1_1DAFvSourceActuatorDisk.html#ae05a75147fe62875ea8ad9b5a4c22cd5" title="calculate DAFvSourceActuatorDisk::fvSourceCellIndices_ " alt="" coords="463,374,665,415"/>
-<area shape="rect" id="node9" href="$classFoam_1_1DAFvSourceActuatorDisk.html#a07a01584d0226f1149c3d78f02a97b19" title="Foam::DAFvSourceActuator\lDisk::DAFvSourceActuatorDisk" alt="" coords="733,436,941,478"/>
-<area shape="rect" id="node10" href="$classFoam_1_1DAJacCon.html#a3b9b543bfab2dbda82af01317a9f2ab8" title="compute graph coloring for Jacobian connectivity matrix " alt="" coords="462,582,666,623"/>
-<area shape="rect" id="node11" href="$classFoam_1_1DAPartDerivdFdFFD.html#a3f0269fc7ba18e5fbfe29884960e7402" title="compute the partial derivative matrix " alt="" coords="171,671,356,712"/>
-<area shape="rect" id="node12" href="$classFoam_1_1DAPartDerivdRdFFD.html#a3f0269fc7ba18e5fbfe29884960e7402" title="compute the partial derivative matrix " alt="" coords="170,736,357,778"/>
-<area shape="rect" id="node13" href="$classFoam_1_1DAPartDerivdFdBC.html#a3f0269fc7ba18e5fbfe29884960e7402" title="compute the partial derivative matrix " alt="" coords="174,802,353,843"/>
-<area shape="rect" id="node14" href="$classFoam_1_1DAPartDerivdFdAOA.html#a3f0269fc7ba18e5fbfe29884960e7402" title="compute the partial derivative matrix " alt="" coords="170,867,357,908"/>
-<area shape="rect" id="node15" href="$classFoam_1_1DAResidualRhoSimpleCFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="165,932,362,974"/>
-<area shape="rect" id="node16" href="$classFoam_1_1DAResidualTurboFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="164,998,363,1039"/>
-<area shape="rect" id="node17" href="$classFoam_1_1DAIndex.html#aeef25af8d5a3bd21e402a5e6c864748b" title="calculate stateLocalIndexOffset " alt="" coords="175,1115,352,1156"/>
-<area shape="rect" id="node18" href="$classFoam_1_1DAIndex.html#ae976ad3cf6b6f6febaa932366199fc8c" title="Constructors. " alt="" coords="477,1093,651,1120"/>
-<area shape="rect" id="node19" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a87ac3616deeb9e7ab603c808d249d2d7" title="dafoam.pyDAFoam.PYDAFOAM.calc\lTotalDeriv" alt="" coords="443,1203,685,1244"/>
-<area shape="rect" id="node20" href="$classFoam_1_1DAJacCon.html#ab84b12272957c0b7caa1ecde6c904618" title="check if there is special boundary conditions that need special treatment in jacCon_ ..." alt="" coords="144,1349,383,1376"/>
-<area shape="rect" id="node21" href="$classFoam_1_1DAJacCon.html#afe0acf55b826f3deebdc4e8bbe013ccf" title="Foam::DAJacCon::DAJacCon" alt="" coords="465,1324,663,1350"/>
-<area shape="rect" id="node22" href="$classFoam_1_1DAField.html#a1b6a78eba46a386b079616fc33a30f9a" title="Constructors. " alt="" coords="181,1400,346,1426"/>
-<area shape="rect" id="node23" href="$classFoam_1_1DAFvSourceActuatorLine.html#ae95691cf7fe257b74225b1be11a2c191" title="Foam::DAFvSourceActuator\lLine::DAFvSourceActuatorLine" alt="" coords="162,1451,365,1492"/>
-<area shape="rect" id="node24" href="$classFoam_1_1DAFvSourceActuatorPoint.html#aebd547cae99f7c341bebd0a90a214a0f" title="Foam::DAFvSourceActuator\lPoint::DAFvSourceActuatorPoint" alt="" coords="156,1516,371,1558"/>
-<area shape="rect" id="node25" href="$classFoam_1_1DAObjFuncTotalPressureRatio.html#a397f9b94f366043b4fce233d8df77b80" title="Foam::DAObjFuncTotalPressure\lRatio::DAObjFuncTotalPressureRatio" alt="" coords="143,1582,384,1623"/>
-<area shape="rect" id="node26" href="$classFoam_1_1DAObjFuncTotalTemperatureRatio.html#ae2f2ea3c8833d3c76e90bd5045ba64e3" title="Foam::DAObjFuncTotalTemperature\lRatio::DAObjFuncTotalTemperatureRatio" alt="" coords="132,1647,395,1688"/>
-<area shape="rect" id="node27" href="$classFoam_1_1DAPartDeriv.html#a924e381605ad653129202eb329072391" title="Foam::DAPartDeriv::\lDAPartDeriv" alt="" coords="191,1712,336,1754"/>
-<area shape="rect" id="node28" href="$classFoam_1_1DAResidualRhoSimpleCFoam.html#a648bc091d263757ea304ddc2e57e8d70" title="Foam::DAResidualRhoSimple\lCFoam::DAResidualRhoSimpleCFoam" alt="" coords="138,1778,389,1819"/>
-<area shape="rect" id="node29" href="$classFoam_1_1DAResidualRhoSimpleFoam.html#a22de1b2c9bccc10945c854513c61f214" title="Foam::DAResidualRhoSimple\lFoam::DAResidualRhoSimpleFoam" alt="" coords="449,439,679,480"/>
-<area shape="rect" id="node30" href="$classFoam_1_1DAResidualTurboFoam.html#aea549ec1a886d320ad0af3fce97f2206" title="Foam::DAResidualTurboFoam\l::DAResidualTurboFoam" alt="" coords="164,1843,363,1884"/>
-<area shape="rect" id="node31" href="$classFoam_1_1DAOption.html#aac22cd38f3d4adc69a4e35329c6abf92" title="return a reference of allOptions_ dictionary " alt="" coords="213,301,313,328"/>
-<area shape="rect" id="node32" href="$classFoam_1_1DAIndex.html#a91f26f905486092d25af1c1150e695de" title="get local adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="158,1908,369,1950"/>
-<area shape="rect" id="node33" href="$classFoam_1_1DALinearEqn.html#ab07141822aa5dce75a1b216d8db8eaa0" title="return printInterval from DAOption " alt="" coords="189,1974,337,2015"/>
-<area shape="rect" id="node34" href="$classFoam_1_1DAJacCondRdW.html#a0d689ecbe7e63c7fdc9926b21df7d6b6" title="initialize the state Jacobian connectivity matrix " alt="" coords="181,2039,345,2080"/>
-<area shape="rect" id="node35" href="$classFoam_1_1DAJacCon.html#ac2798cb77fc5621a0a8067b960f2e9d8" title="initialize state boundary connection " alt="" coords="172,2104,355,2146"/>
-<area shape="rect" id="node36" href="$classFoam_1_1DAColoring.html#aa2042306c5d253b96c1ff8d7c6f01737" title="a parallel distance&#45;2 graph coloring function " alt="" coords="174,606,353,647"/>
-<area shape="rect" id="node37" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ae25f7847fa3d79b54c8f75ea2c5f3cfa" title="dafoam.pyDAFoam.PYDAFOAM.run\lColoring" alt="" coords="145,2170,381,2211"/>
-<area shape="rect" id="node38" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a68f7c03d00f03013c856d57d9e6f207e" title="dafoam.pyDAFoam.PYDAFOAM.setd\lXvdFFDMat" alt="" coords="142,1232,385,1274"/>
-<area shape="rect" id="node39" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#afaf983faece233b240fa94f0acb8e7d1" title="dafoam.pyDAFoam.PYDAFOAM.set\lEvalFuncs" alt="" coords="145,2235,381,2276"/>
-<area shape="rect" id="node40" href="$classFoam_1_1DAJacCondRdW.html#a6320c97a80c467a388c3a88fdcd31eb3" title="Foam::DAJacCondRdW\l::setupdRdWCon" alt="" coords="181,2300,345,2342"/>
-<area shape="rect" id="node41" href="$classFoam_1_1DAJacCondFdW.html#a38665183153112bc58257039d500089c" title="assign 1 to all non&#45;zero elements for the Jacobian connecitivyt matrix " alt="" coords="182,2366,345,2407"/>
-<area shape="rect" id="node42" href="$classFoam_1_1DAResidualSolidDisplacementFoam.html#a8b98309ac56ef2d611330c0ef0443d1d" title="Foam::DAResidualSolidDisplacement\lFoam::updateDAndGradD" alt="" coords="142,2431,385,2472"/>
-<area shape="rect" id="node43" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a5134e15b0ef2c043d575c5496ea4b298" title="dafoam.pyDAFoam.PYDAFOAM.update\lDAOption" alt="" coords="135,2496,392,2538"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#aceaf246b1a6b4ebcddc01690045c640c" title="calculate the colored column vector " alt="" coords="161,83,365,125"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAPartDerivdRdW.html#a3f0269fc7ba18e5fbfe29884960e7402" title="compute the partial derivative matrix " alt="" coords="480,31,655,73"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAPartDerivdFdW.html#a3f0269fc7ba18e5fbfe29884960e7402" title="compute the partial derivative matrix " alt="" coords="481,102,653,143"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DAFvSourceActuatorLine.html#a3fa0b2668e6daf1d45bee2783e52cd56" title="compute the FvSource term " alt="" coords="474,178,661,219"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DAFvSourceActuatorPoint.html#a3fa0b2668e6daf1d45bee2783e52cd56" title="compute the FvSource term " alt="" coords="474,243,661,285"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DAFvSourceActuatorDisk.html#a3fa0b2668e6daf1d45bee2783e52cd56" title="compute the FvSource term " alt="" coords="474,309,661,350"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DAFvSourceActuatorDisk.html#ae05a75147fe62875ea8ad9b5a4c22cd5" title="calculate DAFvSourceActuatorDisk::fvSourceCellIndices_ " alt="" coords="466,374,669,415"/>
+<area shape="rect" id="node9" href="$classFoam_1_1DAFvSourceActuatorDisk.html#a07a01584d0226f1149c3d78f02a97b19" title="Foam::DAFvSourceActuator\lDisk::DAFvSourceActuatorDisk" alt="" coords="740,437,948,478"/>
+<area shape="rect" id="node10" href="$classFoam_1_1DAJacCon.html#a3b9b543bfab2dbda82af01317a9f2ab8" title="compute graph coloring for Jacobian connectivity matrix " alt="" coords="465,586,669,627"/>
+<area shape="rect" id="node11" href="$classFoam_1_1DAPartDerivdFdFFD.html#a3f0269fc7ba18e5fbfe29884960e7402" title="compute the partial derivative matrix " alt="" coords="171,673,356,714"/>
+<area shape="rect" id="node12" href="$classFoam_1_1DAPartDerivdRdFFD.html#a3f0269fc7ba18e5fbfe29884960e7402" title="compute the partial derivative matrix " alt="" coords="170,738,357,779"/>
+<area shape="rect" id="node13" href="$classFoam_1_1DAPartDerivdFdAOA.html#a3f0269fc7ba18e5fbfe29884960e7402" title="compute the partial derivative matrix " alt="" coords="170,803,357,845"/>
+<area shape="rect" id="node14" href="$classFoam_1_1DAPartDerivdFdBC.html#a3f0269fc7ba18e5fbfe29884960e7402" title="compute the partial derivative matrix " alt="" coords="174,869,353,910"/>
+<area shape="rect" id="node15" href="$classFoam_1_1DAResidualRhoSimpleCFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="165,934,362,975"/>
+<area shape="rect" id="node16" href="$classFoam_1_1DAResidualTurboFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="164,999,363,1041"/>
+<area shape="rect" id="node17" href="$classFoam_1_1DAIndex.html#aeef25af8d5a3bd21e402a5e6c864748b" title="calculate stateLocalIndexOffset " alt="" coords="175,1065,352,1106"/>
+<area shape="rect" id="node18" href="$classFoam_1_1DAIndex.html#ae976ad3cf6b6f6febaa932366199fc8c" title="Constructors. " alt="" coords="481,1101,654,1128"/>
+<area shape="rect" id="node19" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a275c2b4245d183287961ee13c1ca7b7b" title="dafoam.pyDAFoam.PYDAFOAM.calc\lTotalDeriv" alt="" coords="142,1299,385,1341"/>
+<area shape="rect" id="node20" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8" title="dafoam.pyDAFoam.PYDAFOAM.solve\lAdjoint" alt="" coords="443,1270,692,1311"/>
+<area shape="rect" id="node21" href="$classFoam_1_1DAJacCon.html#ab84b12272957c0b7caa1ecde6c904618" title="check if there is special boundary conditions that need special treatment in jacCon_ ..." alt="" coords="144,1431,383,1457"/>
+<area shape="rect" id="node22" href="$classFoam_1_1DAJacCon.html#afe0acf55b826f3deebdc4e8bbe013ccf" title="Foam::DAJacCon::DAJacCon" alt="" coords="468,1456,667,1483"/>
+<area shape="rect" id="node23" href="$classFoam_1_1DAField.html#a1b6a78eba46a386b079616fc33a30f9a" title="Constructors. " alt="" coords="181,1532,346,1559"/>
+<area shape="rect" id="node24" href="$classFoam_1_1DAFvSourceActuatorLine.html#ae95691cf7fe257b74225b1be11a2c191" title="Foam::DAFvSourceActuator\lLine::DAFvSourceActuatorLine" alt="" coords="162,1583,365,1625"/>
+<area shape="rect" id="node25" href="$classFoam_1_1DAFvSourceActuatorPoint.html#aebd547cae99f7c341bebd0a90a214a0f" title="Foam::DAFvSourceActuator\lPoint::DAFvSourceActuatorPoint" alt="" coords="156,1649,371,1690"/>
+<area shape="rect" id="node26" href="$classFoam_1_1DAObjFuncTotalPressureRatio.html#a397f9b94f366043b4fce233d8df77b80" title="Foam::DAObjFuncTotalPressure\lRatio::DAObjFuncTotalPressureRatio" alt="" coords="143,1714,384,1755"/>
+<area shape="rect" id="node27" href="$classFoam_1_1DAObjFuncTotalTemperatureRatio.html#ae2f2ea3c8833d3c76e90bd5045ba64e3" title="Foam::DAObjFuncTotalTemperature\lRatio::DAObjFuncTotalTemperatureRatio" alt="" coords="132,1779,395,1821"/>
+<area shape="rect" id="node28" href="$classFoam_1_1DAPartDeriv.html#a924e381605ad653129202eb329072391" title="Foam::DAPartDeriv::\lDAPartDeriv" alt="" coords="191,1845,336,1886"/>
+<area shape="rect" id="node29" href="$classFoam_1_1DAResidualRhoSimpleCFoam.html#a648bc091d263757ea304ddc2e57e8d70" title="Foam::DAResidualRhoSimple\lCFoam::DAResidualRhoSimpleCFoam" alt="" coords="138,1910,389,1951"/>
+<area shape="rect" id="node30" href="$classFoam_1_1DAResidualRhoSimpleFoam.html#a22de1b2c9bccc10945c854513c61f214" title="Foam::DAResidualRhoSimple\lFoam::DAResidualRhoSimpleFoam" alt="" coords="452,439,683,481"/>
+<area shape="rect" id="node31" href="$classFoam_1_1DAResidualTurboFoam.html#aea549ec1a886d320ad0af3fce97f2206" title="Foam::DAResidualTurboFoam\l::DAResidualTurboFoam" alt="" coords="164,1975,363,2017"/>
+<area shape="rect" id="node32" href="$classFoam_1_1DAOption.html#aac22cd38f3d4adc69a4e35329c6abf92" title="return a reference of allOptions_ dictionary " alt="" coords="213,352,313,379"/>
+<area shape="rect" id="node33" href="$classFoam_1_1DAIndex.html#a91f26f905486092d25af1c1150e695de" title="get local adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="158,2041,369,2082"/>
+<area shape="rect" id="node34" href="$classFoam_1_1DALinearEqn.html#ab07141822aa5dce75a1b216d8db8eaa0" title="return printInterval from DAOption " alt="" coords="189,2106,337,2147"/>
+<area shape="rect" id="node35" href="$classFoam_1_1DAJacCondRdW.html#a0d689ecbe7e63c7fdc9926b21df7d6b6" title="initialize the state Jacobian connectivity matrix " alt="" coords="181,2171,345,2213"/>
+<area shape="rect" id="node36" href="$classFoam_1_1DAJacCon.html#ac2798cb77fc5621a0a8067b960f2e9d8" title="initialize state boundary connection " alt="" coords="172,2237,355,2278"/>
+<area shape="rect" id="node37" href="$classFoam_1_1DAColoring.html#aa2042306c5d253b96c1ff8d7c6f01737" title="a parallel distance&#45;2 graph coloring function " alt="" coords="174,555,353,597"/>
+<area shape="rect" id="node38" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ae25f7847fa3d79b54c8f75ea2c5f3cfa" title="dafoam.pyDAFoam.PYDAFOAM.run\lColoring" alt="" coords="145,2302,381,2343"/>
+<area shape="rect" id="node39" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a68f7c03d00f03013c856d57d9e6f207e" title="dafoam.pyDAFoam.PYDAFOAM.setd\lXvdFFDMat" alt="" coords="142,1365,385,1406"/>
+<area shape="rect" id="node40" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#afaf983faece233b240fa94f0acb8e7d1" title="dafoam.pyDAFoam.PYDAFOAM.set\lEvalFuncs" alt="" coords="145,2367,381,2409"/>
+<area shape="rect" id="node41" href="$classFoam_1_1DAJacCondRdW.html#a6320c97a80c467a388c3a88fdcd31eb3" title="Foam::DAJacCondRdW\l::setupdRdWCon" alt="" coords="181,2433,345,2474"/>
+<area shape="rect" id="node42" href="$classFoam_1_1DAJacCondFdW.html#a38665183153112bc58257039d500089c" title="assign 1 to all non&#45;zero elements for the Jacobian connecitivyt matrix " alt="" coords="182,2498,345,2539"/>
+<area shape="rect" id="node43" href="$classFoam_1_1DAResidualSolidDisplacementFoam.html#a8b98309ac56ef2d611330c0ef0443d1d" title="Foam::DAResidualSolidDisplacement\lFoam::updateDAndGradD" alt="" coords="142,2563,385,2605"/>
+<area shape="rect" id="node44" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a5134e15b0ef2c043d575c5496ea4b298" title="dafoam.pyDAFoam.PYDAFOAM.update\lDAOption" alt="" coords="135,1182,392,1223"/>
 </map>

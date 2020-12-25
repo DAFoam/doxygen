@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.1.3</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.0</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -183,15 +183,15 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae37be4bb493eee707549a207d43ea97c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAJacCon.html#ae37be4bb493eee707549a207d43ea97c">combineStateBndCon</a> (Mat *stateBoundaryCon, Mat *stateBoundaryConTmp)</td></tr>
 <tr class="memdesc:ae37be4bb493eee707549a207d43ea97c"><td class="mdescLeft">&#160;</td><td class="mdescRight">combine stateBoundaryCon and stateBoundaryConTmp, this is to ensure including all connected states for parallel cases  <a href="#ae37be4bb493eee707549a207d43ea97c">More...</a><br /></td></tr>
 <tr class="separator:ae37be4bb493eee707549a207d43ea97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91fc2ef8d15a3108b5d703a3b3013a0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAJacCon.html#a91fc2ef8d15a3108b5d703a3b3013a0b">addConMatCell</a> (Mat conMat, const label gRow, const label cellI, const word stateName, const scalar val)</td></tr>
-<tr class="memdesc:a91fc2ef8d15a3108b5d703a3b3013a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">add val to the gRow row in conMat, the column indice are the state (given by stateName) for a given cellI  <a href="#a91fc2ef8d15a3108b5d703a3b3013a0b">More...</a><br /></td></tr>
-<tr class="separator:a91fc2ef8d15a3108b5d703a3b3013a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7920d58d7b500265c10295dae6b82c75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAJacCon.html#a7920d58d7b500265c10295dae6b82c75">addConMatNeighbourCells</a> (Mat conMat, const label gRow, const label cellI, const word stateName, const scalar val)</td></tr>
-<tr class="memdesc:a7920d58d7b500265c10295dae6b82c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">add val to gRow row in conMat, column indice are the neighbouring states (given by stateName) for a given cellI  <a href="#a7920d58d7b500265c10295dae6b82c75">More...</a><br /></td></tr>
-<tr class="separator:a7920d58d7b500265c10295dae6b82c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04dcbd6a9e72efa68dc43e69ac6c6505"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAJacCon.html#a04dcbd6a9e72efa68dc43e69ac6c6505">addConMatCellFaces</a> (Mat conMat, const label gRow, const label cellI, const word stateName, const scalar val)</td></tr>
-<tr class="memdesc:a04dcbd6a9e72efa68dc43e69ac6c6505"><td class="mdescLeft">&#160;</td><td class="mdescRight">add val to gRow row in conMat, column indice are the faces (given by stateName) for a given cellI  <a href="#a04dcbd6a9e72efa68dc43e69ac6c6505">More...</a><br /></td></tr>
-<tr class="separator:a04dcbd6a9e72efa68dc43e69ac6c6505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f0d48b1ed91abb9bf482207a0cbc8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAJacCon.html#ad4f0d48b1ed91abb9bf482207a0cbc8a">addConMatCell</a> (Mat conMat, const label gRow, const label cellI, const word stateName, const PetscScalar val)</td></tr>
+<tr class="memdesc:ad4f0d48b1ed91abb9bf482207a0cbc8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">add val to the gRow row in conMat, the column indice are the state (given by stateName) for a given cellI  <a href="#ad4f0d48b1ed91abb9bf482207a0cbc8a">More...</a><br /></td></tr>
+<tr class="separator:ad4f0d48b1ed91abb9bf482207a0cbc8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2738d49373edd2aef4b9af3ac7565286"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAJacCon.html#a2738d49373edd2aef4b9af3ac7565286">addConMatNeighbourCells</a> (Mat conMat, const label gRow, const label cellI, const word stateName, const PetscScalar val)</td></tr>
+<tr class="memdesc:a2738d49373edd2aef4b9af3ac7565286"><td class="mdescLeft">&#160;</td><td class="mdescRight">add val to gRow row in conMat, column indice are the neighbouring states (given by stateName) for a given cellI  <a href="#a2738d49373edd2aef4b9af3ac7565286">More...</a><br /></td></tr>
+<tr class="separator:a2738d49373edd2aef4b9af3ac7565286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2998eb38bf1268a09c5da012b7b98c3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAJacCon.html#a2998eb38bf1268a09c5da012b7b98c3e">addConMatCellFaces</a> (Mat conMat, const label gRow, const label cellI, const word stateName, const PetscScalar val)</td></tr>
+<tr class="memdesc:a2998eb38bf1268a09c5da012b7b98c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">add val to gRow row in conMat, column indice are the faces (given by stateName) for a given cellI  <a href="#a2998eb38bf1268a09c5da012b7b98c3e">More...</a><br /></td></tr>
+<tr class="separator:a2998eb38bf1268a09c5da012b7b98c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa64c993a0ecb8c97d16142fb38c6ef08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAJacCon.html#aa64c993a0ecb8c97d16142fb38c6ef08">addBoundaryFaceConnections</a> (Mat conMat, const label gRow, const label cellI, const labelList v, const List&lt; List&lt; word &gt;&gt; connectedStates, const label addFaces)</td></tr>
 <tr class="memdesc:aa64c993a0ecb8c97d16142fb38c6ef08"><td class="mdescLeft">&#160;</td><td class="mdescRight">add the column index of the (iner-proc) connected states and faces to conMat, given a local face index  <a href="#aa64c993a0ecb8c97d16142fb38c6ef08">More...</a><br /></td></tr>
 <tr class="separator:aa64c993a0ecb8c97d16142fb38c6ef08"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -537,9 +537,9 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classFoam_1_1DAJacCon_aa3634adc32833f151b9489b57320ecd4_cgraph.png" border="0" usemap="#classFoam_1_1DAJacCon_aa3634adc32833f151b9489b57320ecd4_cgraph" alt=""/></div>
 <map name="classFoam_1_1DAJacCon_aa3634adc32833f151b9489b57320ecd4_cgraph" id="classFoam_1_1DAJacCon_aa3634adc32833f151b9489b57320ecd4_cgraph">
 <area shape="rect" id="node2" href="classFoam_1_1DAJacCon.html#aa64c993a0ecb8c97d16142fb38c6ef08" title="add the column index of the (iner&#45;proc) connected states and faces to conMat, given a local face inde..." alt="" coords="444,83,644,110"/>
-<area shape="rect" id="node3" href="classFoam_1_1DAJacCon.html#a91fc2ef8d15a3108b5d703a3b3013a0b" title="add val to the gRow row in conMat, the column indice are the state (given by stateName) for a given c..." alt="" coords="251,32,363,59"/>
-<area shape="rect" id="node4" href="classFoam_1_1DAJacCon.html#a04dcbd6a9e72efa68dc43e69ac6c6505" title="add val to gRow row in conMat, column indice are the faces (given by stateName) for a given cellI ..." alt="" coords="233,83,381,110"/>
-<area shape="rect" id="node5" href="classFoam_1_1DAJacCon.html#a7920d58d7b500265c10295dae6b82c75" title="add val to gRow row in conMat, column indice are the neighbouring states (given by stateName) for a g..." alt="" coords="217,134,396,160"/>
+<area shape="rect" id="node3" href="classFoam_1_1DAJacCon.html#ad4f0d48b1ed91abb9bf482207a0cbc8a" title="add val to the gRow row in conMat, the column indice are the state (given by stateName) for a given c..." alt="" coords="251,32,363,59"/>
+<area shape="rect" id="node4" href="classFoam_1_1DAJacCon.html#a2998eb38bf1268a09c5da012b7b98c3e" title="add val to gRow row in conMat, column indice are the faces (given by stateName) for a given cellI ..." alt="" coords="233,83,381,110"/>
+<area shape="rect" id="node5" href="classFoam_1_1DAJacCon.html#a2738d49373edd2aef4b9af3ac7565286" title="add val to gRow row in conMat, column indice are the neighbouring states (given by stateName) for a g..." alt="" coords="217,134,396,160"/>
 <area shape="rect" id="node6" href="classFoam_1_1DAJacCon.html#ae37be4bb493eee707549a207d43ea97c" title="combine stateBoundaryCon and stateBoundaryConTmp, this is to ensure including all connected states fo..." alt="" coords="232,184,381,211"/>
 </map>
 </div>
@@ -582,7 +582,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAJacCon_8C_source.html#l01325">1325</a> of file <a class="el" href="DAJacCon_8C_source.html">DAJacCon.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAIndex_8C_source.html#l00743">DAIndex::calcAdjStateID4GlobalAdjIdx()</a>, <a class="el" href="DAJacCon_8H_source.html#l00058">DAJacCon::daIndex_</a>, <a class="el" href="DAUtility_8C_source.html#l00650">DAUtility::isValueCloseToRef()</a>, <a class="el" href="DAIndex_8H_source.html#l00148">DAIndex::nGlobalAdjointStates</a>, <a class="el" href="DAIndex_8H_source.html#l00145">DAIndex::nLocalAdjointStates</a>, <a class="el" href="DAIndex_8H_source.html#l00104">DAIndex::nLocalCoupledBFaces</a>, and <a class="el" href="DAJacCon_8H_source.html#l00070">DAJacCon::stateBoundaryCon_</a>.</p>
+<p class="reference">References <a class="el" href="DAIndex_8C_source.html#l00768">DAIndex::calcAdjStateID4GlobalAdjIdx()</a>, <a class="el" href="DAJacCon_8H_source.html#l00058">DAJacCon::daIndex_</a>, <a class="el" href="DAUtility_8C_source.html#l00650">DAUtility::isValueCloseToRef()</a>, <a class="el" href="DAIndex_8H_source.html#l00148">DAIndex::nGlobalAdjointStates</a>, <a class="el" href="DAIndex_8H_source.html#l00145">DAIndex::nLocalAdjointStates</a>, <a class="el" href="DAIndex_8H_source.html#l00104">DAIndex::nLocalCoupledBFaces</a>, and <a class="el" href="DAJacCon_8H_source.html#l00070">DAJacCon::stateBoundaryCon_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAJacCon_8C_source.html#l00088">DAJacCon::initializeStateBoundaryCon()</a>.</p>
 <div class="dynheader">
@@ -719,9 +719,9 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classFoam_1_1DAJacCon_a9dd95e527ffe4ab41fa36bb746e5f2aa_cgraph.png" border="0" usemap="#classFoam_1_1DAJacCon_a9dd95e527ffe4ab41fa36bb746e5f2aa_cgraph" alt=""/></div>
 <map name="classFoam_1_1DAJacCon_a9dd95e527ffe4ab41fa36bb746e5f2aa_cgraph" id="classFoam_1_1DAJacCon_a9dd95e527ffe4ab41fa36bb746e5f2aa_cgraph">
 <area shape="rect" id="node2" href="classFoam_1_1DAJacCon.html#aa64c993a0ecb8c97d16142fb38c6ef08" title="add the column index of the (iner&#45;proc) connected states and faces to conMat, given a local face inde..." alt="" coords="200,5,400,32"/>
-<area shape="rect" id="node3" href="classFoam_1_1DAJacCon.html#a04dcbd6a9e72efa68dc43e69ac6c6505" title="add val to gRow row in conMat, column indice are the faces (given by stateName) for a given cellI ..." alt="" coords="226,56,374,83"/>
+<area shape="rect" id="node3" href="classFoam_1_1DAJacCon.html#a2998eb38bf1268a09c5da012b7b98c3e" title="add val to gRow row in conMat, column indice are the faces (given by stateName) for a given cellI ..." alt="" coords="226,56,374,83"/>
 <area shape="rect" id="node4" href="classFoam_1_1DAIndex.html#a06a1fcb98ee5f377d70e1d04b0e5dd61" title="get global adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="448,99,625,141"/>
-<area shape="rect" id="node5" href="classFoam_1_1DAJacCon.html#a7920d58d7b500265c10295dae6b82c75" title="add val to gRow row in conMat, column indice are the neighbouring states (given by stateName) for a g..." alt="" coords="211,157,389,184"/>
+<area shape="rect" id="node5" href="classFoam_1_1DAJacCon.html#a2738d49373edd2aef4b9af3ac7565286" title="add val to gRow row in conMat, column indice are the neighbouring states (given by stateName) for a g..." alt="" coords="211,157,389,184"/>
 <area shape="rect" id="node6" href="classFoam_1_1DAJacCon.html#ad2122e911a7e639cf065cf4c102f2f9d" title="add value 1 for the colume idx to conMat " alt="" coords="243,208,357,235"/>
 </map>
 </div>
@@ -905,8 +905,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a91fc2ef8d15a3108b5d703a3b3013a0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91fc2ef8d15a3108b5d703a3b3013a0b">&#9670;&nbsp;</a></span>addConMatCell()</h2>
+<a id="ad4f0d48b1ed91abb9bf482207a0cbc8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f0d48b1ed91abb9bf482207a0cbc8a">&#9670;&nbsp;</a></span>addConMatCell()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -941,7 +941,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const scalar&#160;</td>
+          <td class="paramtype">const PetscScalar&#160;</td>
           <td class="paramname"><em>val</em>&#160;</td>
         </tr>
         <tr>
@@ -967,24 +967,24 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classFoam_1_1DAJacCon_a91fc2ef8d15a3108b5d703a3b3013a0b_cgraph.png" border="0" usemap="#classFoam_1_1DAJacCon_a91fc2ef8d15a3108b5d703a3b3013a0b_cgraph" alt=""/></div>
-<map name="classFoam_1_1DAJacCon_a91fc2ef8d15a3108b5d703a3b3013a0b_cgraph" id="classFoam_1_1DAJacCon_a91fc2ef8d15a3108b5d703a3b3013a0b_cgraph">
+<div class="center"><img src="classFoam_1_1DAJacCon_ad4f0d48b1ed91abb9bf482207a0cbc8a_cgraph.png" border="0" usemap="#classFoam_1_1DAJacCon_ad4f0d48b1ed91abb9bf482207a0cbc8a_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAJacCon_ad4f0d48b1ed91abb9bf482207a0cbc8a_cgraph" id="classFoam_1_1DAJacCon_ad4f0d48b1ed91abb9bf482207a0cbc8a_cgraph">
 <area shape="rect" id="node2" href="classFoam_1_1DAIndex.html#a06a1fcb98ee5f377d70e1d04b0e5dd61" title="get global adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="165,5,343,47"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classFoam_1_1DAJacCon_a91fc2ef8d15a3108b5d703a3b3013a0b_icgraph.png" border="0" usemap="#classFoam_1_1DAJacCon_a91fc2ef8d15a3108b5d703a3b3013a0b_icgraph" alt=""/></div>
-<map name="classFoam_1_1DAJacCon_a91fc2ef8d15a3108b5d703a3b3013a0b_icgraph" id="classFoam_1_1DAJacCon_a91fc2ef8d15a3108b5d703a3b3013a0b_icgraph">
+<div class="center"><img src="classFoam_1_1DAJacCon_ad4f0d48b1ed91abb9bf482207a0cbc8a_icgraph.png" border="0" usemap="#classFoam_1_1DAJacCon_ad4f0d48b1ed91abb9bf482207a0cbc8a_icgraph" alt=""/></div>
+<map name="classFoam_1_1DAJacCon_ad4f0d48b1ed91abb9bf482207a0cbc8a_icgraph" id="classFoam_1_1DAJacCon_ad4f0d48b1ed91abb9bf482207a0cbc8a_icgraph">
 <area shape="rect" id="node2" href="classFoam_1_1DAJacCon.html#aa3634adc32833f151b9489b57320ecd4" title="calculate DAJacCon::stateBoundaryCon_ " alt="" coords="165,5,329,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a7920d58d7b500265c10295dae6b82c75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7920d58d7b500265c10295dae6b82c75">&#9670;&nbsp;</a></span>addConMatNeighbourCells()</h2>
+<a id="a2738d49373edd2aef4b9af3ac7565286"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2738d49373edd2aef4b9af3ac7565286">&#9670;&nbsp;</a></span>addConMatNeighbourCells()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1019,7 +1019,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const scalar&#160;</td>
+          <td class="paramtype">const PetscScalar&#160;</td>
           <td class="paramname"><em>val</em>&#160;</td>
         </tr>
         <tr>
@@ -1045,16 +1045,16 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classFoam_1_1DAJacCon_a7920d58d7b500265c10295dae6b82c75_cgraph.png" border="0" usemap="#classFoam_1_1DAJacCon_a7920d58d7b500265c10295dae6b82c75_cgraph" alt=""/></div>
-<map name="classFoam_1_1DAJacCon_a7920d58d7b500265c10295dae6b82c75_cgraph" id="classFoam_1_1DAJacCon_a7920d58d7b500265c10295dae6b82c75_cgraph">
+<div class="center"><img src="classFoam_1_1DAJacCon_a2738d49373edd2aef4b9af3ac7565286_cgraph.png" border="0" usemap="#classFoam_1_1DAJacCon_a2738d49373edd2aef4b9af3ac7565286_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAJacCon_a2738d49373edd2aef4b9af3ac7565286_cgraph" id="classFoam_1_1DAJacCon_a2738d49373edd2aef4b9af3ac7565286_cgraph">
 <area shape="rect" id="node2" href="classFoam_1_1DAIndex.html#a06a1fcb98ee5f377d70e1d04b0e5dd61" title="get global adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="232,5,409,47"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classFoam_1_1DAJacCon_a7920d58d7b500265c10295dae6b82c75_icgraph.png" border="0" usemap="#classFoam_1_1DAJacCon_a7920d58d7b500265c10295dae6b82c75_icgraph" alt=""/></div>
-<map name="classFoam_1_1DAJacCon_a7920d58d7b500265c10295dae6b82c75_icgraph" id="classFoam_1_1DAJacCon_a7920d58d7b500265c10295dae6b82c75_icgraph">
+<div class="center"><img src="classFoam_1_1DAJacCon_a2738d49373edd2aef4b9af3ac7565286_icgraph.png" border="0" usemap="#classFoam_1_1DAJacCon_a2738d49373edd2aef4b9af3ac7565286_icgraph" alt=""/></div>
+<map name="classFoam_1_1DAJacCon_a2738d49373edd2aef4b9af3ac7565286_icgraph" id="classFoam_1_1DAJacCon_a2738d49373edd2aef4b9af3ac7565286_icgraph">
 <area shape="rect" id="node2" href="classFoam_1_1DAJacCon.html#a9dd95e527ffe4ab41fa36bb746e5f2aa" title="a high&#45;level function to add connected state column indices to the connectivity matrix ..." alt="" coords="241,5,387,32"/>
 <area shape="rect" id="node3" href="classFoam_1_1DAJacCon.html#aa3634adc32833f151b9489b57320ecd4" title="calculate DAJacCon::stateBoundaryCon_ " alt="" coords="232,56,396,83"/>
 </map>
@@ -1062,8 +1062,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a04dcbd6a9e72efa68dc43e69ac6c6505"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04dcbd6a9e72efa68dc43e69ac6c6505">&#9670;&nbsp;</a></span>addConMatCellFaces()</h2>
+<a id="a2998eb38bf1268a09c5da012b7b98c3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2998eb38bf1268a09c5da012b7b98c3e">&#9670;&nbsp;</a></span>addConMatCellFaces()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1098,7 +1098,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const scalar&#160;</td>
+          <td class="paramtype">const PetscScalar&#160;</td>
           <td class="paramname"><em>val</em>&#160;</td>
         </tr>
         <tr>
@@ -1124,16 +1124,16 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classFoam_1_1DAJacCon_a04dcbd6a9e72efa68dc43e69ac6c6505_cgraph.png" border="0" usemap="#classFoam_1_1DAJacCon_a04dcbd6a9e72efa68dc43e69ac6c6505_cgraph" alt=""/></div>
-<map name="classFoam_1_1DAJacCon_a04dcbd6a9e72efa68dc43e69ac6c6505_cgraph" id="classFoam_1_1DAJacCon_a04dcbd6a9e72efa68dc43e69ac6c6505_cgraph">
+<div class="center"><img src="classFoam_1_1DAJacCon_a2998eb38bf1268a09c5da012b7b98c3e_cgraph.png" border="0" usemap="#classFoam_1_1DAJacCon_a2998eb38bf1268a09c5da012b7b98c3e_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAJacCon_a2998eb38bf1268a09c5da012b7b98c3e_cgraph" id="classFoam_1_1DAJacCon_a2998eb38bf1268a09c5da012b7b98c3e_cgraph">
 <area shape="rect" id="node2" href="classFoam_1_1DAIndex.html#a06a1fcb98ee5f377d70e1d04b0e5dd61" title="get global adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="201,5,379,47"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classFoam_1_1DAJacCon_a04dcbd6a9e72efa68dc43e69ac6c6505_icgraph.png" border="0" usemap="#classFoam_1_1DAJacCon_a04dcbd6a9e72efa68dc43e69ac6c6505_icgraph" alt=""/></div>
-<map name="classFoam_1_1DAJacCon_a04dcbd6a9e72efa68dc43e69ac6c6505_icgraph" id="classFoam_1_1DAJacCon_a04dcbd6a9e72efa68dc43e69ac6c6505_icgraph">
+<div class="center"><img src="classFoam_1_1DAJacCon_a2998eb38bf1268a09c5da012b7b98c3e_icgraph.png" border="0" usemap="#classFoam_1_1DAJacCon_a2998eb38bf1268a09c5da012b7b98c3e_icgraph" alt=""/></div>
+<map name="classFoam_1_1DAJacCon_a2998eb38bf1268a09c5da012b7b98c3e_icgraph" id="classFoam_1_1DAJacCon_a2998eb38bf1268a09c5da012b7b98c3e_icgraph">
 <area shape="rect" id="node2" href="classFoam_1_1DAJacCon.html#a9dd95e527ffe4ab41fa36bb746e5f2aa" title="a high&#45;level function to add connected state column indices to the connectivity matrix ..." alt="" coords="210,5,357,32"/>
 <area shape="rect" id="node3" href="classFoam_1_1DAJacCon.html#aa3634adc32833f151b9489b57320ecd4" title="calculate DAJacCon::stateBoundaryCon_ " alt="" coords="201,56,365,83"/>
 </map>
@@ -1568,7 +1568,7 @@ Here is the call graph for this function:</div>
 
 <p class="reference">References <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#aa36f358f32c8a00956e7ca31e30c906c">daIndex()</a>, <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel()</a>, <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption()</a>, <a class="el" href="DAOption_8H_source.html#l00056">DAOption::getAllOptions()</a>, and <a class="el" href="createRefsPiso_8H_source.html#l00004">mesh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01027">DASolver::calcTotalDeriv()</a>, <a class="el" href="ColoringSolid_8C_source.html#l00031">ColoringSolid::run()</a>, <a class="el" href="ColoringIncompressible_8C_source.html#l00031">ColoringIncompressible::run()</a>, <a class="el" href="ColoringCompressible_8C_source.html#l00031">ColoringCompressible::run()</a>, and <a class="el" href="DASolver_8C_source.html#l00604">DASolver::solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l01180">DASolver::calcdFdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l00974">DASolver::calcdFdBC()</a>, <a class="el" href="DASolver_8C_source.html#l01382">DASolver::calcdFdFFD()</a>, <a class="el" href="DASolver_8C_source.html#l01648">DASolver::calcdFdState()</a>, <a class="el" href="DASolver_8C_source.html#l00741">DASolver::calcdFdW()</a>, <a class="el" href="DASolver_8C_source.html#l01505">DASolver::calcdRdACT()</a>, <a class="el" href="DASolver_8C_source.html#l01096">DASolver::calcdRdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l00889">DASolver::calcdRdBC()</a>, <a class="el" href="DASolver_8C_source.html#l01302">DASolver::calcdRdFFD()</a>, <a class="el" href="DASolver_8C_source.html#l01579">DASolver::calcdRdState()</a>, <a class="el" href="DASolver_8C_source.html#l00609">DASolver::calcdRdWT()</a>, <a class="el" href="ColoringSolid_8C_source.html#l00031">ColoringSolid::run()</a>, <a class="el" href="ColoringIncompressible_8C_source.html#l00031">ColoringIncompressible::run()</a>, and <a class="el" href="ColoringCompressible_8C_source.html#l00031">ColoringCompressible::run()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1585,11 +1585,20 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAJacCon_a4315cb29266f8e2dda76cd6e57ffb966_icgraph.png" border="0" usemap="#classFoam_1_1DAJacCon_a4315cb29266f8e2dda76cd6e57ffb966_icgraph" alt=""/></div>
 <map name="classFoam_1_1DAJacCon_a4315cb29266f8e2dda76cd6e57ffb966_icgraph" id="classFoam_1_1DAJacCon_a4315cb29266f8e2dda76cd6e57ffb966_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DASolver.html#ae61bd69b450c4e79a7eb089751e0ecde" title="compute the total derivatives " alt="" coords="125,5,305,47"/>
-<area shape="rect" id="node3" href="classFoam_1_1ColoringSolid.html#a13a43e6d814de94978c515cb084873b1" title="run " alt="" coords="132,71,299,98"/>
-<area shape="rect" id="node4" href="classFoam_1_1ColoringIncompressible.html#a13a43e6d814de94978c515cb084873b1" title="run " alt="" coords="103,122,328,149"/>
-<area shape="rect" id="node5" href="classFoam_1_1ColoringCompressible.html#a13a43e6d814de94978c515cb084873b1" title="run " alt="" coords="107,173,324,199"/>
-<area shape="rect" id="node6" href="classFoam_1_1DASolver.html#a985af8c5b6d6bf478b8fd1d999865b47" title="solve the adjoint linear equations " alt="" coords="116,223,315,250"/>
+<area shape="rect" id="node2" href="classFoam_1_1DASolver.html#a05d01f66a396018762a09b5a4f037c15" title="compute dFdAOA " alt="" coords="115,5,316,32"/>
+<area shape="rect" id="node3" href="classFoam_1_1DASolver.html#a9d25310a6c06d94f2f5ca30bd78a9f41" title="compute dFdBC " alt="" coords="119,56,311,83"/>
+<area shape="rect" id="node4" href="classFoam_1_1DASolver.html#abc9360718886616d9c869968b48faed5" title="compute dFdFFD " alt="" coords="116,107,315,133"/>
+<area shape="rect" id="node5" href="classFoam_1_1DASolver.html#ab360e6bdbcdaf37ae39fd17b440d45c0" title="compute dFdState " alt="" coords="113,157,317,184"/>
+<area shape="rect" id="node6" href="classFoam_1_1DASolver.html#ac468e16ab0351c4fc493b320fdbe4e2a" title="compute dFdW " alt="" coords="122,208,309,235"/>
+<area shape="rect" id="node7" href="classFoam_1_1DASolver.html#a391eb6d5b8f55ad7df7e9e94b5e0e995" title="compute dRdACT " alt="" coords="114,259,317,285"/>
+<area shape="rect" id="node8" href="classFoam_1_1DASolver.html#a166ce247adae9e98add900803c60399d" title="compute dRdAOA " alt="" coords="114,309,317,336"/>
+<area shape="rect" id="node9" href="classFoam_1_1DASolver.html#a87ce51418f77f253885c95b81c7c1d9d" title="compute dRdBC " alt="" coords="118,360,313,387"/>
+<area shape="rect" id="node10" href="classFoam_1_1DASolver.html#aed9173f587b2b2aba91ab200f900e7b1" title="compute dRdFFD " alt="" coords="115,411,316,437"/>
+<area shape="rect" id="node11" href="classFoam_1_1DASolver.html#a8d7ce6abc4e4a374dc01569c87a86d50" title="compute dRdState " alt="" coords="112,461,319,488"/>
+<area shape="rect" id="node12" href="classFoam_1_1DASolver.html#afa0f66c9f760e901fccd79800b7621bb" title="compute dRdWT " alt="" coords="117,512,313,539"/>
+<area shape="rect" id="node13" href="classFoam_1_1ColoringSolid.html#a13a43e6d814de94978c515cb084873b1" title="run " alt="" coords="132,563,299,589"/>
+<area shape="rect" id="node14" href="classFoam_1_1ColoringIncompressible.html#a13a43e6d814de94978c515cb084873b1" title="run " alt="" coords="103,613,328,640"/>
+<area shape="rect" id="node15" href="classFoam_1_1ColoringCompressible.html#a13a43e6d814de94978c515cb084873b1" title="run " alt="" coords="107,664,324,691"/>
 </map>
 </div>
 
@@ -1860,7 +1869,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classFoam_1_1DAJacCon_a23e1ec311a5493e171f57460550bc5f3_icgraph.png" border="0" usemap="#classFoam_1_1DAJacCon_a23e1ec311a5493e171f57460550bc5f3_icgraph" alt=""/></div>
 <map name="classFoam_1_1DAJacCon_a23e1ec311a5493e171f57460550bc5f3_icgraph" id="classFoam_1_1DAJacCon_a23e1ec311a5493e171f57460550bc5f3_icgraph">
 <area shape="rect" id="node2" href="classFoam_1_1DAJacCon.html#ae20a1e7e533aa3328f3e187938233356" title="get the number of JacCon colors " alt="" coords="197,5,330,32"/>
-<area shape="rect" id="node3" href="classFoam_1_1DAPartDerivdRdW.html#ad0fc03f5435f36411cd5554caa9e21e4" title="initialize partial derivative matrix " alt="" coords="176,57,351,98"/>
+<area shape="rect" id="node3" href="classFoam_1_1DAPartDerivdRdW.html#a9959481399053ea13c06dd0d494bce66" title="initialize partial derivative matrix " alt="" coords="176,57,351,98"/>
 </map>
 </div>
 

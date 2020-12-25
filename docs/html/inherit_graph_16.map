@@ -1,10 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classFoam_1_1DASolver.html" title="DASolver" alt="" coords="5,157,84,184"/>
-<area shape="rect" id="node2" href="$classFoam_1_1DAPisoFoam.html" title="DAPisoFoam" alt="" coords="173,5,273,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DARhoSimpleCFoam.html" title="DARhoSimpleCFoam" alt="" coords="149,56,297,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DARhoSimpleFoam.html" title="DARhoSimpleFoam" alt="" coords="154,107,293,133"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DASimpleFoam.html" title="DASimpleFoam" alt="" coords="166,157,281,184"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DASimpleTFoam.html" title="DASimpleTFoam" alt="" coords="162,208,285,235"/>
-<area shape="rect" id="node7" href="$classFoam_1_1DASolidDisplacementFoam.html" title="DASolidDisplacementFoam" alt="" coords="132,259,315,285"/>
-<area shape="rect" id="node8" href="$classFoam_1_1DATurboFoam.html" title="DATurboFoam" alt="" coords="170,309,277,336"/>
+<area shape="rect" id="node1" href="$classFoam_1_1DAResidual.html" title="DAResidual" alt="" coords="5,183,97,209"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAResidualDummy.html" title="DAResidualDummy" alt="" coords="193,5,332,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAResidualPisoFoam.html" title="DAResidualPisoFoam" alt="" coords="187,56,338,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAResidualRhoSimpleCFoam.html" title="DAResidualRhoSimpleCFoam" alt="" coords="163,107,362,133"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DAResidualRhoSimpleFoam.html" title="DAResidualRhoSimpleFoam" alt="" coords="168,157,357,184"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DAResidualSimpleFoam.html" title="DAResidualSimpleFoam" alt="" coords="180,208,345,235"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DAResidualSimpleTFoam.html" title="DAResidualSimpleTFoam" alt="" coords="176,259,349,285"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DAResidualSolidDisplacementFoam.html" title="DAResidualSolidDisplacementFoam" alt="" coords="145,309,380,336"/>
+<area shape="rect" id="node9" href="$classFoam_1_1DAResidualTurboFoam.html" title="DAResidualTurboFoam" alt="" coords="183,360,342,387"/>
 </map>

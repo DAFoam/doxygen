@@ -2,6 +2,7 @@
 <area shape="rect" id="node2" href="$classFoam_1_1DASpalartAllmaras.html#aaffe89433f18f1ee4137486e19219448" title="update nut based on other turbulence variables and update the BCs " alt="" coords="165,5,340,47"/>
 <area shape="rect" id="node3" href="$classFoam_1_1DASpalartAllmarasFv3.html#aaffe89433f18f1ee4137486e19219448" title="update nut based on other turbulence variables and update the BCs " alt="" coords="155,71,351,112"/>
 <area shape="rect" id="node4" href="$classFoam_1_1DAkEpsilon.html#aaffe89433f18f1ee4137486e19219448" title="update nut based on other turbulence variables and update the BCs " alt="" coords="152,137,353,163"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAkOmegaSST.html#aaffe89433f18f1ee4137486e19219448" title="update nut based on other turbulence variables and update the BCs " alt="" coords="170,188,335,229"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DATurbulenceModel.html#a4da443a900be70678681adc3cb584741" title="~DATurbulenceModel" alt="" coords="179,254,327,281"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DASpalartAllmarasFv3Beta.html#aaffe89433f18f1ee4137486e19219448" title="update nut based on other turbulence variables and update the BCs " alt="" coords="155,188,351,229"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DAkOmegaSST.html#aaffe89433f18f1ee4137486e19219448" title="update nut based on other turbulence variables and update the BCs " alt="" coords="170,253,335,295"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DATurbulenceModel.html#a4da443a900be70678681adc3cb584741" title="~DATurbulenceModel" alt="" coords="179,319,327,346"/>
 </map>

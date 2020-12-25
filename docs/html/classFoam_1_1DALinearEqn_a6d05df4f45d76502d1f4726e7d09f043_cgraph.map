@@ -1,7 +1,7 @@
 <map id="~DALinearEqn" name="~DALinearEqn">
-<area shape="rect" id="node2" href="$classFoam_1_1DALinearEqn.html#a7250190716a5f9544ee2b6f69a9f5ab9" title="create a multi&#45;level, Richardson KSP object " alt="" coords="160,36,273,63"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DALinearEqn.html#ae89d42ca90d6cb8303862fa6d701d303" title="create a multi&#45;level, Richardson KSP object " alt="" coords="160,36,273,63"/>
 <area shape="rect" id="node3" href="$classFoam_1_1DALinearEqn.html#a9130e830b837864a8cf17d517bf1b9c7" title="ksp monitor function " alt="" coords="321,62,432,88"/>
 <area shape="rect" id="node4" href="$classFoam_1_1DALinearEqn.html#ab07141822aa5dce75a1b216d8db8eaa0" title="return printInterval from DAOption " alt="" coords="480,36,591,63"/>
 <area shape="rect" id="node5" href="$classFoam_1_1DALinearEqn.html#a9641e50ccc8c39af96c7b124f72f35c5" title="return the runtime for the adjoint solver " alt="" coords="489,138,582,164"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DALinearEqn.html#ad418053a9be461caecbb9109506d2e4e" title="solve the linear euqation given a ksp and right&#45;hand&#45;side vector " alt="" coords="321,188,432,215"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DALinearEqn.html#ad418053a9be461caecbb9109506d2e4e" title="solve the linear equation given a ksp and right&#45;hand&#45;side vector " alt="" coords="321,188,432,215"/>
 </map>

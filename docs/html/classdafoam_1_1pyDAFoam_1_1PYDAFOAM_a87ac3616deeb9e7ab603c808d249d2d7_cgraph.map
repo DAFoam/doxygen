@@ -1,8 +1,0 @@
-<map id="calcTotalDeriv" name="calcTotalDeriv">
-<area shape="rect" id="node2" href="$classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key " alt="" coords="431,22,615,49"/>
-<area shape="rect" id="node3" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6b17301eac258f3e9309107a42eac008" title="getOption" alt="" coords="483,163,562,190"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DASolvers.html#a6ea8ab812cb9b4cb4179c90fa55af27b" title="set values for dXvdFFDMat " alt="" coords="180,99,363,140"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAPartDeriv.html#a6ea8ab812cb9b4cb4179c90fa55af27b" title="setup dXvdFFD matrix " alt="" coords="199,164,344,205"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DASolver.html#a6ea8ab812cb9b4cb4179c90fa55af27b" title="set the value for DASolver::dXvdFFDMat_ " alt="" coords="160,230,383,257"/>
-<area shape="rect" id="node7" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a68f7c03d00f03013c856d57d9e6f207e" title="setdXvdFFDMat" alt="" coords="212,47,331,74"/>
-</map>
