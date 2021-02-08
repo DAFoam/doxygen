@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.3</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -89,8 +89,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3d8a3fae539731d0068343d8b35d062c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09a97cbb46f9091a4ffdbfdaed5cc998"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnSimple_8H.html#a09a97cbb46f9091a4ffdbfdaed5cc998">if</a> (hasFvSource_)</td></tr>
 <tr class="separator:a09a97cbb46f9091a4ffdbfdaed5cc998"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3992916206b805bc6e0ce5815697cb8c"><td class="memItemLeft" align="right" valign="top">tmp&lt; fvVectorMatrix &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnSimple_8H.html#a3992916206b805bc6e0ce5815697cb8c">tUEqn</a> (fvm::div(<a class="el" href="pyColoringCompressible_2createFields_8H.html#a6a231aded4fb2c165cab36375ba435b7">phi</a>, <a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>)+MRF.DDt(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>)+turbulencePtr_-&gt;divDevReff(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>) - <a class="el" href="createRefsSimple_8H.html#a9a0c1fa985c6e79bb4cdc55fa06b9b50">fvSource</a>)</td></tr>
-<tr class="separator:a3992916206b805bc6e0ce5815697cb8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad792635a66dab2fb8f33a9f519af8097"><td class="memItemLeft" align="right" valign="top">tmp&lt; fvVectorMatrix &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnSimple_8H.html#ad792635a66dab2fb8f33a9f519af8097">tUEqn</a> (fvm::div(<a class="el" href="pyColoringCompressible_2createFields_8H.html#a6a231aded4fb2c165cab36375ba435b7">phi</a>, <a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>)+fvm::Sp(<a class="el" href="createRefsSimple_8H.html#a704f39798ea3228ecacdf7ecd7933fe1">alphaPorosity</a>, <a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>)+MRF.DDt(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>)+turbulencePtr_-&gt;divDevReff(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>) - <a class="el" href="createRefsSimple_8H.html#a9a0c1fa985c6e79bb4cdc55fa06b9b50">fvSource</a>)</td></tr>
+<tr class="separator:ad792635a66dab2fb8f33a9f519af8097"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a717d2a556132c73a6bb389a9de48bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="UEqnPiso_8H.html#a365ee7492f2b66108e5621187d82542a">UEqn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnSimple_8H.html#a9a717d2a556132c73a6bb389a9de48bf">relax</a> ()</td></tr>
 <tr class="separator:a9a717d2a556132c73a6bb389a9de48bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41384e852288dac0c8a1fa700fa872c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnSimple_8H.html#a41384e852288dac0c8a1fa700fa872c9">if</a> (simple.momentumPredictor())</td></tr>
@@ -138,20 +138,20 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="UEqnSimple_8H_source.html#l00005">5</a> of file <a class="el" href="UEqnSimple_8H_source.html">UEqnSimple.H</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsPiso_8H_source.html#l00013">fvSource</a>, <a class="el" href="createRefsRhoSimple_8H_source.html#l00018">MRF</a>, <a class="el" href="createRefsPiso_8H_source.html#l00008">phi</a>, <a class="el" href="UEqnSimple_8H.html#a3992916206b805bc6e0ce5815697cb8c">tUEqn()</a>, and <a class="el" href="createRefsPiso_8H_source.html#l00007">U</a>.</p>
+<p class="reference">References <a class="el" href="createRefsSimple_8H_source.html#l00009">alphaPorosity</a>, <a class="el" href="createRefsPiso_8H_source.html#l00013">fvSource</a>, <a class="el" href="createRefsRhoSimple_8H_source.html#l00018">MRF</a>, <a class="el" href="createRefsPiso_8H_source.html#l00008">phi</a>, <a class="el" href="UEqnSimple_8H.html#ad792635a66dab2fb8f33a9f519af8097">tUEqn()</a>, and <a class="el" href="createRefsPiso_8H_source.html#l00007">U</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="UEqnSimple_8H_a09a97cbb46f9091a4ffdbfdaed5cc998_cgraph.png" border="0" usemap="#UEqnSimple_8H_a09a97cbb46f9091a4ffdbfdaed5cc998_cgraph" alt=""/></div>
 <map name="UEqnSimple_8H_a09a97cbb46f9091a4ffdbfdaed5cc998_cgraph" id="UEqnSimple_8H_a09a97cbb46f9091a4ffdbfdaed5cc998_cgraph">
-<area shape="rect" id="node2" href="UEqnSimple_8H.html#a3992916206b805bc6e0ce5815697cb8c" title="tUEqn" alt="" coords="92,5,151,32"/>
+<area shape="rect" id="node2" href="UEqnSimple_8H.html#ad792635a66dab2fb8f33a9f519af8097" title="tUEqn" alt="" coords="92,5,151,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a3992916206b805bc6e0ce5815697cb8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3992916206b805bc6e0ce5815697cb8c">&#9670;&nbsp;</a></span>tUEqn()</h2>
+<a id="ad792635a66dab2fb8f33a9f519af8097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad792635a66dab2fb8f33a9f519af8097">&#9670;&nbsp;</a></span>tUEqn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,7 +159,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">tmp&lt;fvVectorMatrix&gt; tUEqn </td>
           <td>(</td>
-          <td class="paramtype">fvm::div(<a class="el" href="pyColoringCompressible_2createFields_8H.html#a6a231aded4fb2c165cab36375ba435b7">phi</a>, <a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>)+MRF.DDt(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>)+turbulencePtr_-&gt;divDevReff(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>) -&#160;</td>
+          <td class="paramtype">fvm::div(<a class="el" href="pyColoringCompressible_2createFields_8H.html#a6a231aded4fb2c165cab36375ba435b7">phi</a>, <a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>)+fvm::Sp(<a class="el" href="createRefsSimple_8H.html#a704f39798ea3228ecacdf7ecd7933fe1">alphaPorosity</a>, <a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>)+MRF.DDt(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>)+turbulencePtr_-&gt;divDevReff(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>) -&#160;</td>
           <td class="paramname"><em>fvSource</em></td><td>)</td>
           <td></td>
         </tr>
@@ -170,8 +170,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="UEqnSimple_8H_a3992916206b805bc6e0ce5815697cb8c_icgraph.png" border="0" usemap="#UEqnSimple_8H_a3992916206b805bc6e0ce5815697cb8c_icgraph" alt=""/></div>
-<map name="UEqnSimple_8H_a3992916206b805bc6e0ce5815697cb8c_icgraph" id="UEqnSimple_8H_a3992916206b805bc6e0ce5815697cb8c_icgraph">
+<div class="center"><img src="UEqnSimple_8H_ad792635a66dab2fb8f33a9f519af8097_icgraph.png" border="0" usemap="#UEqnSimple_8H_ad792635a66dab2fb8f33a9f519af8097_icgraph" alt=""/></div>
+<map name="UEqnSimple_8H_ad792635a66dab2fb8f33a9f519af8097_icgraph" id="UEqnSimple_8H_ad792635a66dab2fb8f33a9f519af8097_icgraph">
 <area shape="rect" id="node2" href="UEqnSimple_8H.html#a09a97cbb46f9091a4ffdbfdaed5cc998" title="if" alt="" coords="112,5,151,32"/>
 </map>
 </div>
@@ -211,7 +211,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UEqnSimple_8H_source.html#l00019">19</a> of file <a class="el" href="UEqnSimple_8H_source.html">UEqnSimple.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="UEqnSimple_8H_source.html#l00020">20</a> of file <a class="el" href="UEqnSimple_8H_source.html">UEqnSimple.H</a>.</p>
 
 <p class="reference">References <a class="el" href="createRefsPiso_8H_source.html#l00006">p</a>, <a class="el" href="UEqnRhoSimpleC_8H.html#a63bda711251083d54394a9ca435ab0be">primalResidualControl&lt; vector &gt;()</a>, and <a class="el" href="UEqnRhoSimpleC_8H_source.html#l00012">solverU</a>.</p>
 <div class="dynheader">
@@ -238,7 +238,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UEqnSimple_8H_source.html#l00015">15</a> of file <a class="el" href="UEqnSimple_8H_source.html">UEqnSimple.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="UEqnSimple_8H_source.html#l00016">16</a> of file <a class="el" href="UEqnSimple_8H_source.html">UEqnSimple.H</a>.</p>
 
 </div>
 </div>

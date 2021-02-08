@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.3</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -244,7 +244,7 @@ NOTE: We group these options into three categories.
 </div><div class="memdoc">
 <pre class="fragment">Nothing needs to be done for initializing DAOPTION
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00541">541</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00542">542</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -970,7 +970,7 @@ NOTE: We group these options into three categories.
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=  {</div><div class="line">        <span class="stringliteral">&quot;globalPCIters&quot;</span>: 0,</div><div class="line">        <span class="stringliteral">&quot;asmOverlap&quot;</span>: 1,</div><div class="line">        <span class="stringliteral">&quot;localPCIters&quot;</span>: 1,</div><div class="line">        <span class="stringliteral">&quot;jacMatReOrdering&quot;</span>: <span class="stringliteral">&quot;rcm&quot;</span>,</div><div class="line">        <span class="stringliteral">&quot;pcFillLevel&quot;</span>: 1,</div><div class="line">        <span class="stringliteral">&quot;gmresMaxIters&quot;</span>: 1000,</div><div class="line">        <span class="stringliteral">&quot;gmresRestart&quot;</span>: 1000,</div><div class="line">        <span class="stringliteral">&quot;gmresRelTol&quot;</span>: 1.0e-6,</div><div class="line">        <span class="stringliteral">&quot;gmresAbsTol&quot;</span>: 1.0e-14,</div><div class="line">        <span class="stringliteral">&quot;gmresTolDiff&quot;</span>: 1.0e2,</div><div class="line">    }</div></div><!-- fragment -->
+<b>Initial value:</b><div class="fragment"><div class="line">=  {</div><div class="line">        <span class="stringliteral">&quot;globalPCIters&quot;</span>: 0,</div><div class="line">        <span class="stringliteral">&quot;asmOverlap&quot;</span>: 1,</div><div class="line">        <span class="stringliteral">&quot;localPCIters&quot;</span>: 1,</div><div class="line">        <span class="stringliteral">&quot;jacMatReOrdering&quot;</span>: <span class="stringliteral">&quot;rcm&quot;</span>,</div><div class="line">        <span class="stringliteral">&quot;pcFillLevel&quot;</span>: 1,</div><div class="line">        <span class="stringliteral">&quot;gmresMaxIters&quot;</span>: 1000,</div><div class="line">        <span class="stringliteral">&quot;gmresRestart&quot;</span>: 1000,</div><div class="line">        <span class="stringliteral">&quot;gmresRelTol&quot;</span>: 1.0e-6,</div><div class="line">        <span class="stringliteral">&quot;gmresAbsTol&quot;</span>: 1.0e-14,</div><div class="line">        <span class="stringliteral">&quot;gmresTolDiff&quot;</span>: 1.0e2,</div><div class="line">        <span class="stringliteral">&quot;useNonZeroInitGuess&quot;</span>: <span class="keyword">False</span>,</div><div class="line">    }</div></div><!-- fragment -->
 <p>The Petsc options for solving the adjoint linear equation. </p>
 <p>These options should work for most of the case. If the adjoint does not converge, try to increase pcFillLevel to 2, or try "jacMatReOrdering": "nd" </p>
 
@@ -1001,7 +1001,7 @@ NOTE: We group these options into three categories.
 <p>Normalization for residuals. </p>
 <p>We should normalize all residuals! </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00464">464</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00465">465</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -1028,7 +1028,7 @@ NOTE: We group these options into three categories.
 <p>The maximal connectivity level for the dRdWTPC matrix. </p>
 <p>Reducing the connectivity level reduce the memory usage, however, it may slow down the adjoint equation convergence. The default value should have the best convergence speed but not optimal memory usage. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00480">480</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00481">481</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -1054,7 +1054,7 @@ NOTE: We group these options into three categories.
 <b>Initial value:</b><div class="fragment"><div class="line">=  {</div><div class="line">        <span class="stringliteral">&quot;dRdW&quot;</span>: 1.0e-30,</div><div class="line">        <span class="stringliteral">&quot;dRdWPC&quot;</span>: 1.0e-30,</div><div class="line">    }</div></div><!-- fragment -->
 <p>The min bound for Jacobians, any value that is smaller than the bound will be set to 0 Setting a large lower bound for preconditioner (PC) can help to reduce memory. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00495">495</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00496">496</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -1080,7 +1080,7 @@ NOTE: We group these options into three categories.
 
 <p>The maximal iterations of tractionDisplacement boundary conditions. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00501">501</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00502">502</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -1107,7 +1107,7 @@ NOTE: We group these options into three categories.
 <p>decomposeParDict option. </p>
 <p>This file will be automatically written such that users can run optimization with any number of CPU cores without the need to manually change decomposeParDict </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00506">506</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00507">507</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -1134,7 +1134,7 @@ NOTE: We group these options into three categories.
 <p>The ordering of state variable. </p>
 <p>Options are: state or cell. Most of the case, the state odering is the best choice. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00514">514</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00515">515</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -1161,7 +1161,7 @@ NOTE: We group these options into three categories.
 <p>Default name for the mesh surface family. </p>
 <p>Users typically don't need to change </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00517">517</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00518">518</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -1188,7 +1188,7 @@ NOTE: We group these options into three categories.
 <p>Default name for the design surface family. </p>
 <p>Users typically don't need to change </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00520">520</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00521">521</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -1214,7 +1214,7 @@ NOTE: We group these options into three categories.
 <b>Initial value:</b><div class="fragment"><div class="line">=  {</div><div class="line">        <span class="stringliteral">&quot;maxAspectRatio&quot;</span>: 1000.0,</div><div class="line">        <span class="stringliteral">&quot;maxNonOrth&quot;</span>: 70.0,</div><div class="line">        <span class="stringliteral">&quot;maxSkewness&quot;</span>: 4.0,</div><div class="line">    }</div></div><!-- fragment -->
 <p>The threshold for check mesh call. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00523">523</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00524">524</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -1240,7 +1240,7 @@ NOTE: We group these options into three categories.
 
 <p>Compute intermediate variables such as the mean fields Example: "intmdVar" : { "UMean" : { "operation": "Mean", "fieldType": "volVectorField", "baseField": "U", "restartSteps": 1000 } }. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00539">539</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00540">540</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>

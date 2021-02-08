@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.3</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -127,6 +127,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:adbe6dc09beec02c11b70ff3ecc0d100e"><td class="memItemLeft" align="right" valign="top">volScalarField &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAResidualSimpleFoam.html#adbe6dc09beec02c11b70ff3ecc0d100e">alphaPorosity_</a></td></tr>
+<tr class="memdesc:adbe6dc09beec02c11b70ff3ecc0d100e"><td class="mdescLeft">&#160;</td><td class="mdescRight">alpha porosity term  <a href="#adbe6dc09beec02c11b70ff3ecc0d100e">More...</a><br /></td></tr>
+<tr class="separator:adbe6dc09beec02c11b70ff3ecc0d100e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25abaa83d72e63dcc9333ecf81108e8c"><td class="memItemLeft" align="right" valign="top">volVectorField &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAResidualSimpleFoam.html#a25abaa83d72e63dcc9333ecf81108e8c">fvSource_</a></td></tr>
 <tr class="memdesc:a25abaa83d72e63dcc9333ecf81108e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">fvSource term  <a href="#a25abaa83d72e63dcc9333ecf81108e8c">More...</a><br /></td></tr>
 <tr class="separator:a25abaa83d72e63dcc9333ecf81108e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,7 +237,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00019">19</a> of file <a class="el" href="DAResidualSimpleFoam_8C_source.html">DAResidualSimpleFoam.C</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="DAOption_8H_source.html#l00056">DAOption::getAllOptions()</a>, and <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00062">DAResidualSimpleFoam::hasFvSource_</a>.</p>
+<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="DAOption_8H_source.html#l00056">DAOption::getAllOptions()</a>, and <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00065">DAResidualSimpleFoam::hasFvSource_</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -269,9 +272,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00077">77</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00080">80</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
 
-<p class="reference">References <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00063">DAResidualSimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00047">DAResidualSimpleFoam::clear()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00174">DAResidualSimpleFoam::correctBoundaryConditions()</a>, and <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00164">DAResidualSimpleFoam::updateIntermediateVariables()</a>.</p>
+<p class="reference">References <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">DAResidualSimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00049">DAResidualSimpleFoam::clear()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00177">DAResidualSimpleFoam::correctBoundaryConditions()</a>, and <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00167">DAResidualSimpleFoam::updateIntermediateVariables()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -332,11 +335,11 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DAResidual.html#a5eeb94d22b8366d1b68d0614384802fe">DAResidual</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00047">47</a> of file <a class="el" href="DAResidualSimpleFoam_8C_source.html">DAResidualSimpleFoam.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00049">49</a> of file <a class="el" href="DAResidualSimpleFoam_8C_source.html">DAResidualSimpleFoam.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00045">DAResidualSimpleFoam::phiRes_</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00046">DAResidualSimpleFoam::phiResPartDeriv_</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00041">DAResidualSimpleFoam::pRes_</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00042">DAResidualSimpleFoam::pResPartDeriv_</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00037">DAResidualSimpleFoam::URes_</a>, and <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00038">DAResidualSimpleFoam::UResPartDeriv_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00077">DAResidualSimpleFoam::~DAResidualSimpleFoam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00080">DAResidualSimpleFoam::~DAResidualSimpleFoam()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -376,11 +379,11 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DAResidual.html#a5f3483c6db30769568050588ede0ca87">DAResidual</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00063">63</a> of file <a class="el" href="DAResidualSimpleFoam_8C_source.html">DAResidualSimpleFoam.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">65</a> of file <a class="el" href="DAResidualSimpleFoam_8C_source.html">DAResidualSimpleFoam.C</a>.</p>
 
-<p class="reference">References <a class="el" href="pEqnPiso_8H.html#a2763a4e809e5ae1f9caf5fb4bc42a66e">adjustPhi()</a>, <a class="el" href="DAFvSource_8C_source.html#l00090">DAFvSource::calcFvSource()</a>, <a class="el" href="pEqnRhoSimple_8H.html#a99a17e3e05078559ff760b2a0b61b285">constrainPressure()</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00053">DAResidualSimpleFoam::daTurb_</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00347">DATurbulenceModel::divDevReff()</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00050">DAResidualSimpleFoam::fvSource_</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00062">DAResidualSimpleFoam::hasFvSource_</a>, <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00012">HbyA</a>, <a class="el" href="DAResidual_8H_source.html#l00046">DAResidual::mesh_</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00059">DAResidualSimpleFoam::MRF_</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00044">normalizePhiResiduals</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00035">normalizeResiduals</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00040">DAResidualSimpleFoam::p_</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00044">DAResidualSimpleFoam::phi_</a>, <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00027">phiHbyA</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00045">DAResidualSimpleFoam::phiRes_</a>, <a class="el" href="createRefsPiso_8H_source.html#l00011">pRefCell</a>, <a class="el" href="createRefsPiso_8H_source.html#l00012">pRefValue</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00041">DAResidualSimpleFoam::pRes_</a>, <a class="el" href="pEqnRhoSimpleC_8H.html#af0ca220b579a630d505b444580d37b50">rAtU()</a>, <a class="el" href="pEqnPiso_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d">rAU()</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00056">DAResidualSimpleFoam::simple_</a>, <a class="el" href="UEqnRhoSimpleC_8H.html#a9049e0a4ec4ba05187c2c500ad21958a">tUEqn()</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00036">DAResidualSimpleFoam::U_</a>, <a class="el" href="UEqnRhoSimpleC_8H_source.html#l00006">UEqn</a>, and <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00037">DAResidualSimpleFoam::URes_</a>.</p>
+<p class="reference">References <a class="el" href="pEqnPiso_8H.html#a2763a4e809e5ae1f9caf5fb4bc42a66e">adjustPhi()</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00050">DAResidualSimpleFoam::alphaPorosity_</a>, <a class="el" href="DAFvSource_8C_source.html#l00090">DAFvSource::calcFvSource()</a>, <a class="el" href="pEqnRhoSimple_8H.html#a99a17e3e05078559ff760b2a0b61b285">constrainPressure()</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00056">DAResidualSimpleFoam::daTurb_</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00347">DATurbulenceModel::divDevReff()</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00053">DAResidualSimpleFoam::fvSource_</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00065">DAResidualSimpleFoam::hasFvSource_</a>, <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00012">HbyA</a>, <a class="el" href="DAResidual_8H_source.html#l00046">DAResidual::mesh_</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00062">DAResidualSimpleFoam::MRF_</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00044">normalizePhiResiduals</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00035">normalizeResiduals</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00040">DAResidualSimpleFoam::p_</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00044">DAResidualSimpleFoam::phi_</a>, <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00027">phiHbyA</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00045">DAResidualSimpleFoam::phiRes_</a>, <a class="el" href="createRefsPiso_8H_source.html#l00011">pRefCell</a>, <a class="el" href="createRefsPiso_8H_source.html#l00012">pRefValue</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00041">DAResidualSimpleFoam::pRes_</a>, <a class="el" href="pEqnRhoSimpleC_8H.html#af0ca220b579a630d505b444580d37b50">rAtU()</a>, <a class="el" href="pEqnPiso_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d">rAU()</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00059">DAResidualSimpleFoam::simple_</a>, <a class="el" href="UEqnRhoSimpleC_8H.html#a9049e0a4ec4ba05187c2c500ad21958a">tUEqn()</a>, <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00036">DAResidualSimpleFoam::U_</a>, <a class="el" href="UEqnRhoSimpleC_8H_source.html#l00006">UEqn</a>, and <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00037">DAResidualSimpleFoam::URes_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00077">DAResidualSimpleFoam::~DAResidualSimpleFoam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00080">DAResidualSimpleFoam::~DAResidualSimpleFoam()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -433,11 +436,11 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DAResidual.html#a207d7ee6903c709a6306dd883239028b">DAResidual</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00164">164</a> of file <a class="el" href="DAResidualSimpleFoam_8C_source.html">DAResidualSimpleFoam.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00167">167</a> of file <a class="el" href="DAResidualSimpleFoam_8C_source.html">DAResidualSimpleFoam.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00059">DAResidualSimpleFoam::MRF_</a>, and <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00036">DAResidualSimpleFoam::U_</a>.</p>
+<p class="reference">References <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00062">DAResidualSimpleFoam::MRF_</a>, and <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00036">DAResidualSimpleFoam::U_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00077">DAResidualSimpleFoam::~DAResidualSimpleFoam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00080">DAResidualSimpleFoam::~DAResidualSimpleFoam()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -476,11 +479,11 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DAResidual.html#ac5cf193857b59c2fcaa472ac06847a0d">DAResidual</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00174">174</a> of file <a class="el" href="DAResidualSimpleFoam_8C_source.html">DAResidualSimpleFoam.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00177">177</a> of file <a class="el" href="DAResidualSimpleFoam_8C_source.html">DAResidualSimpleFoam.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00040">DAResidualSimpleFoam::p_</a>, and <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00036">DAResidualSimpleFoam::U_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00077">DAResidualSimpleFoam::~DAResidualSimpleFoam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00080">DAResidualSimpleFoam::~DAResidualSimpleFoam()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -515,7 +518,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00036">36</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00063">DAResidualSimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00174">DAResidualSimpleFoam::correctBoundaryConditions()</a>, and <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00164">DAResidualSimpleFoam::updateIntermediateVariables()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">DAResidualSimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00177">DAResidualSimpleFoam::correctBoundaryConditions()</a>, and <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00167">DAResidualSimpleFoam::updateIntermediateVariables()</a>.</p>
 
 </div>
 </div>
@@ -541,7 +544,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00037">37</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00063">DAResidualSimpleFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00047">DAResidualSimpleFoam::clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">DAResidualSimpleFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00049">DAResidualSimpleFoam::clear()</a>.</p>
 
 </div>
 </div>
@@ -567,7 +570,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00038">38</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00047">DAResidualSimpleFoam::clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00049">DAResidualSimpleFoam::clear()</a>.</p>
 
 </div>
 </div>
@@ -593,7 +596,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00040">40</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00063">DAResidualSimpleFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00174">DAResidualSimpleFoam::correctBoundaryConditions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">DAResidualSimpleFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00177">DAResidualSimpleFoam::correctBoundaryConditions()</a>.</p>
 
 </div>
 </div>
@@ -619,7 +622,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00041">41</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00063">DAResidualSimpleFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00047">DAResidualSimpleFoam::clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">DAResidualSimpleFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00049">DAResidualSimpleFoam::clear()</a>.</p>
 
 </div>
 </div>
@@ -645,7 +648,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00042">42</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00047">DAResidualSimpleFoam::clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00049">DAResidualSimpleFoam::clear()</a>.</p>
 
 </div>
 </div>
@@ -671,7 +674,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00044">44</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00063">DAResidualSimpleFoam::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">DAResidualSimpleFoam::calcResiduals()</a>.</p>
 
 </div>
 </div>
@@ -697,7 +700,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00045">45</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00063">DAResidualSimpleFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00047">DAResidualSimpleFoam::clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">DAResidualSimpleFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00049">DAResidualSimpleFoam::clear()</a>.</p>
 
 </div>
 </div>
@@ -723,7 +726,35 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00046">46</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00047">DAResidualSimpleFoam::clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00049">DAResidualSimpleFoam::clear()</a>.</p>
+
+</div>
+</div>
+<a id="adbe6dc09beec02c11b70ff3ecc0d100e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbe6dc09beec02c11b70ff3ecc0d100e">&#9670;&nbsp;</a></span>alphaPorosity_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volScalarField&amp; alphaPorosity_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>alpha porosity term </p>
+
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00050">50</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">DAResidualSimpleFoam::calcResiduals()</a>.</p>
 
 </div>
 </div>
@@ -749,9 +780,9 @@ Here is the caller graph for this function:</div>
 
 <p>fvSource term </p>
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00050">50</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00053">53</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00063">DAResidualSimpleFoam::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">DAResidualSimpleFoam::calcResiduals()</a>.</p>
 
 </div>
 </div>
@@ -777,9 +808,9 @@ Here is the caller graph for this function:</div>
 
 <p><a class="el" href="classFoam_1_1DATurbulenceModel.html">DATurbulenceModel</a> object. </p>
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00053">53</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00056">56</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00063">DAResidualSimpleFoam::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">DAResidualSimpleFoam::calcResiduals()</a>.</p>
 
 </div>
 </div>
@@ -805,9 +836,9 @@ Here is the caller graph for this function:</div>
 
 <p>simpleControl object which will be initialized in this class </p>
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00056">56</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00059">59</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00063">DAResidualSimpleFoam::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">DAResidualSimpleFoam::calcResiduals()</a>.</p>
 
 </div>
 </div>
@@ -833,9 +864,9 @@ Here is the caller graph for this function:</div>
 
 <p>Multiple Reference Frame. </p>
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00059">59</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00062">62</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00063">DAResidualSimpleFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00164">DAResidualSimpleFoam::updateIntermediateVariables()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">DAResidualSimpleFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00167">DAResidualSimpleFoam::updateIntermediateVariables()</a>.</p>
 
 </div>
 </div>
@@ -861,9 +892,9 @@ Here is the caller graph for this function:</div>
 
 <p>whether to have fvSource term </p>
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00062">62</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleFoam_8H_source.html#l00065">65</a> of file <a class="el" href="DAResidualSimpleFoam_8H_source.html">DAResidualSimpleFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00063">DAResidualSimpleFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00019">DAResidualSimpleFoam::DAResidualSimpleFoam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">DAResidualSimpleFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00019">DAResidualSimpleFoam::DAResidualSimpleFoam()</a>.</p>
 
 </div>
 </div>

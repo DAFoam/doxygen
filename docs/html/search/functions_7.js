@@ -33,7 +33,7 @@ var searchData=
   ['getobjfuncvalue',['getObjFuncValue',['../classFoam_1_1DAObjFunc.html#a8e844075cdac7c480f1667a1781a38ad',1,'Foam::DAObjFunc::getObjFuncValue()'],['../classFoam_1_1DASolver.html#a22bdd2a534a166b3a21496f6e45bf409',1,'Foam::DASolver::getObjFuncValue()'],['../classFoam_1_1DASolvers.html#a398f2ca2f9784d14ce88af6ec6c3fa20',1,'Foam::DASolvers::getObjFuncValue()']]],
   ['getoption',['getOption',['../classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb',1,'Foam::DAOption::getOption()'],['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6b17301eac258f3e9309107a42eac008',1,'dafoam.pyDAFoam.PYDAFOAM.getOption()']]],
   ['getphase',['getPhase',['../classFoam_1_1DATurbulenceModel.html#a3f99a580c39edccaebb3537c0258a48b',1,'Foam::DATurbulenceModel']]],
-  ['getpointsetname',['getPointSetName',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a81bef7b36e979214c68f5f4b3978ef94',1,'dafoam::pyDAFoam::PYDAFOAM']]],
+  ['getpointsetname',['getPointSetName',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a83b32159ee797efe81f50f3cbb3187f9',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['getprevprimalsoltime',['getPrevPrimalSolTime',['../classFoam_1_1DASolver.html#aa2dae402a2b11106af15ef10314838a7',1,'Foam::DASolver::getPrevPrimalSolTime()'],['../classFoam_1_1DASolvers.html#a41d7995947dc6b53601ec1ed4f95af3d',1,'Foam::DASolvers::getPrevPrimalSolTime()']]],
   ['getprintinterval',['getPrintInterval',['../classFoam_1_1DALinearEqn.html#ab07141822aa5dce75a1b216d8db8eaa0',1,'Foam::DALinearEqn']]],
   ['getprt',['getPrt',['../classFoam_1_1DATurbulenceModel.html#af667c27925e0f8ac4fe7c986b37d6387',1,'Foam::DATurbulenceModel']]],

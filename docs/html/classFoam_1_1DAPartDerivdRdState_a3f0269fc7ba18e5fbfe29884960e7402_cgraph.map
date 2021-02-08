@@ -1,5 +1,0 @@
-<map id="calcPartDerivMat" name="calcPartDerivMat">
-<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a06a1fcb98ee5f377d70e1d04b0e5dd61" title="get global adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="201,5,378,47"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAIndex.html#a22fa09f8df59f5dc7ffe9f0d6785d786" title="get global cell index for a local cell index " alt="" coords="201,71,378,112"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAModel.html#acb7f31fc24f75cd3e11915048dd34959" title="return the value of the production term from the turbulence model " alt="" coords="176,137,403,163"/>
-</map>

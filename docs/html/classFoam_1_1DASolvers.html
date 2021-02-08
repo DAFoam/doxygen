@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.3</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -102,6 +102,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9efc63b2cbf192eea8a3dc667e112d1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a9efc63b2cbf192eea8a3dc667e112d1b">calcdRdXvTPsiAD</a> (const Vec xvVec, const Vec wVec, const Vec <a class="el" href="createRefsTurbo_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a>, Vec dRdXvTPsi)</td></tr>
 <tr class="memdesc:a9efc63b2cbf192eea8a3dc667e112d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dRdXv^T*Psi  <a href="#a9efc63b2cbf192eea8a3dc667e112d1b">More...</a><br /></td></tr>
 <tr class="separator:a9efc63b2cbf192eea8a3dc667e112d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5943a019ae6564e7c9ed14c63f98f1a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a5943a019ae6564e7c9ed14c63f98f1a4">calcdFdAOAAD</a> (const Vec xvVec, const Vec wVec, const word objFuncName, const word designVarName, Vec dFdAOA)</td></tr>
+<tr class="memdesc:a5943a019ae6564e7c9ed14c63f98f1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dFdAOA using reverse-mode AD  <a href="#a5943a019ae6564e7c9ed14c63f98f1a4">More...</a><br /></td></tr>
+<tr class="separator:a5943a019ae6564e7c9ed14c63f98f1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b44a5f49d078df981e84b554470f540"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a9b44a5f49d078df981e84b554470f540">calcdRdAOATPsiAD</a> (const Vec xvVec, const Vec wVec, const Vec <a class="el" href="createRefsTurbo_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a>, const word designVarName, Vec dRdAOATPsi)</td></tr>
+<tr class="memdesc:a9b44a5f49d078df981e84b554470f540"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dRdAOA^T*Psi  <a href="#a9b44a5f49d078df981e84b554470f540">More...</a><br /></td></tr>
+<tr class="separator:a9b44a5f49d078df981e84b554470f540"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae89d42ca90d6cb8303862fa6d701d303"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#ae89d42ca90d6cb8303862fa6d701d303">createMLRKSP</a> (const Mat jacMat, const Mat jacPCMat, KSP ksp)</td></tr>
 <tr class="memdesc:ae89d42ca90d6cb8303862fa6d701d303"><td class="mdescLeft">&#160;</td><td class="mdescRight">create the multi-level Richardson KSP for solving linear equation  <a href="#ae89d42ca90d6cb8303862fa6d701d303">More...</a><br /></td></tr>
 <tr class="separator:ae89d42ca90d6cb8303862fa6d701d303"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,6 +132,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9d25310a6c06d94f2f5ca30bd78a9f41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a9d25310a6c06d94f2f5ca30bd78a9f41">calcdFdBC</a> (const Vec xvVec, const Vec wVec, const word objFuncName, const word designVarName, Vec dFdBC)</td></tr>
 <tr class="memdesc:a9d25310a6c06d94f2f5ca30bd78a9f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dFdBC  <a href="#a9d25310a6c06d94f2f5ca30bd78a9f41">More...</a><br /></td></tr>
 <tr class="separator:a9d25310a6c06d94f2f5ca30bd78a9f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e85c177ce33f95ed43599dd74b3bb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a61e85c177ce33f95ed43599dd74b3bb0">calcdFdBCAD</a> (const Vec xvVec, const Vec wVec, const word objFuncName, const word designVarName, Vec dFdBC)</td></tr>
+<tr class="memdesc:a61e85c177ce33f95ed43599dd74b3bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dFdBC using reverse-mode AD  <a href="#a61e85c177ce33f95ed43599dd74b3bb0">More...</a><br /></td></tr>
+<tr class="separator:a61e85c177ce33f95ed43599dd74b3bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e708c0e138fbccc62a96909d10d6d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a47e708c0e138fbccc62a96909d10d6d5">calcdRdBCTPsiAD</a> (const Vec xvVec, const Vec wVec, const Vec <a class="el" href="createRefsTurbo_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a>, const word designVarName, Vec dRdBCTPsi)</td></tr>
+<tr class="memdesc:a47e708c0e138fbccc62a96909d10d6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dRdBC^T*Psi  <a href="#a47e708c0e138fbccc62a96909d10d6d5">More...</a><br /></td></tr>
+<tr class="separator:a47e708c0e138fbccc62a96909d10d6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a166ce247adae9e98add900803c60399d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a166ce247adae9e98add900803c60399d">calcdRdAOA</a> (const Vec xvVec, const Vec wVec, const word designVarName, Mat dRdAOA)</td></tr>
 <tr class="memdesc:a166ce247adae9e98add900803c60399d"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dRdAOA  <a href="#a166ce247adae9e98add900803c60399d">More...</a><br /></td></tr>
 <tr class="separator:a166ce247adae9e98add900803c60399d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,12 +153,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a391eb6d5b8f55ad7df7e9e94b5e0e995"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a391eb6d5b8f55ad7df7e9e94b5e0e995">calcdRdACT</a> (const Vec xvVec, const Vec wVec, const word designVarName, const word designVarType, Mat dRdACT)</td></tr>
 <tr class="memdesc:a391eb6d5b8f55ad7df7e9e94b5e0e995"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dRdACT  <a href="#a391eb6d5b8f55ad7df7e9e94b5e0e995">More...</a><br /></td></tr>
 <tr class="separator:a391eb6d5b8f55ad7df7e9e94b5e0e995"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d7ce6abc4e4a374dc01569c87a86d50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a8d7ce6abc4e4a374dc01569c87a86d50">calcdRdState</a> (const Vec xvVec, const Vec wVec, const word designVarName, Mat dRdState)</td></tr>
-<tr class="memdesc:a8d7ce6abc4e4a374dc01569c87a86d50"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dRdState  <a href="#a8d7ce6abc4e4a374dc01569c87a86d50">More...</a><br /></td></tr>
-<tr class="separator:a8d7ce6abc4e4a374dc01569c87a86d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab360e6bdbcdaf37ae39fd17b440d45c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#ab360e6bdbcdaf37ae39fd17b440d45c0">calcdFdState</a> (const Vec xvVec, const Vec wVec, const word objFuncName, const word designVarName, Vec dFdState)</td></tr>
-<tr class="memdesc:ab360e6bdbcdaf37ae39fd17b440d45c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dFdState  <a href="#ab360e6bdbcdaf37ae39fd17b440d45c0">More...</a><br /></td></tr>
-<tr class="separator:ab360e6bdbcdaf37ae39fd17b440d45c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63fb766651888601cbefe9dbe7416b3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a63fb766651888601cbefe9dbe7416b3c">calcdRdFieldTPsiAD</a> (const Vec xvVec, const Vec wVec, const Vec <a class="el" href="createRefsTurbo_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a>, const word designVarName, Vec dRdFieldTPsi)</td></tr>
+<tr class="memdesc:a63fb766651888601cbefe9dbe7416b3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dRdField  <a href="#a63fb766651888601cbefe9dbe7416b3c">More...</a><br /></td></tr>
+<tr class="separator:a63fb766651888601cbefe9dbe7416b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4932ba452c4dc4f9fcd10dfc4b7fdedc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a4932ba452c4dc4f9fcd10dfc4b7fdedc">calcdFdFieldAD</a> (const Vec xvVec, const Vec wVec, const word objFuncName, const word designVarName, Vec dFdField)</td></tr>
+<tr class="memdesc:a4932ba452c4dc4f9fcd10dfc4b7fdedc"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dFdField  <a href="#a4932ba452c4dc4f9fcd10dfc4b7fdedc">More...</a><br /></td></tr>
+<tr class="separator:a4932ba452c4dc4f9fcd10dfc4b7fdedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70bbc5360b9de5931a46681648082387"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a70bbc5360b9de5931a46681648082387">updateOFField</a> (const Vec wVec)</td></tr>
 <tr class="memdesc:a70bbc5360b9de5931a46681648082387"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the OpenFOAM field values (including both internal and boundary fields) based on the state vector wVec.  <a href="#a70bbc5360b9de5931a46681648082387">More...</a><br /></td></tr>
 <tr class="separator:a70bbc5360b9de5931a46681648082387"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,6 +237,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5d441dcc885643d362ffc6c49c784d3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a5d441dcc885643d362ffc6c49c784d3a">setFieldValue4GlobalCellI</a> (const word fieldName, const scalar val, const label globalCellI, const label compI=0)</td></tr>
 <tr class="memdesc:a5d441dcc885643d362ffc6c49c784d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the field value  <a href="#a5d441dcc885643d362ffc6c49c784d3a">More...</a><br /></td></tr>
 <tr class="separator:a5d441dcc885643d362ffc6c49c784d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab16fce6c3740102b5dbc28cf34f9193"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#aab16fce6c3740102b5dbc28cf34f9193">updateBoundaryConditions</a> (const word fieldName, const word fieldType)</td></tr>
+<tr class="memdesc:aab16fce6c3740102b5dbc28cf34f9193"><td class="mdescLeft">&#160;</td><td class="mdescRight">update the boundary condition for a field  <a href="#aab16fce6c3740102b5dbc28cf34f9193">More...</a><br /></td></tr>
+<tr class="separator:aab16fce6c3740102b5dbc28cf34f9193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -637,6 +652,122 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a5943a019ae6564e7c9ed14c63f98f1a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5943a019ae6564e7c9ed14c63f98f1a4">&#9670;&nbsp;</a></span>calcdFdAOAAD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calcdFdAOAAD </td>
+          <td>(</td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>xvVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>wVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>objFuncName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>designVarName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>dFdAOA</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>compute dFdAOA using reverse-mode AD </p>
+
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00123">123</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
+<a id="a9b44a5f49d078df981e84b554470f540"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b44a5f49d078df981e84b554470f540">&#9670;&nbsp;</a></span>calcdRdAOATPsiAD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calcdRdAOATPsiAD </td>
+          <td>(</td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>xvVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>wVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>psi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>designVarName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>dRdAOATPsi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>compute dRdAOA^T*Psi </p>
+
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00134">134</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
 <a id="ae89d42ca90d6cb8303862fa6d701d303"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae89d42ca90d6cb8303862fa6d701d303">&#9670;&nbsp;</a></span>createMLRKSP()</h2>
 
@@ -679,7 +810,7 @@ Here is the call graph for this function:</div>
 
 <p>create the multi-level Richardson KSP for solving linear equation </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00123">123</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00145">145</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -719,7 +850,7 @@ Here is the call graph for this function:</div>
 
 <p>create a multi-level, Richardson KSP object with matrix-free Jacobians </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00132">132</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00154">154</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -759,7 +890,7 @@ Here is the call graph for this function:</div>
 
 <p>initialize matrix free dRdWT </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00140">140</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00162">162</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -788,7 +919,7 @@ Here is the call graph for this function:</div>
 
 <p>destroy matrix free dRdWT </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00148">148</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00170">170</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -834,7 +965,7 @@ Here is the call graph for this function:</div>
 
 <p>solve the linear equation </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00154">154</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00176">176</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -874,7 +1005,7 @@ Here is the call graph for this function:</div>
 
 <p>convert the mpi vec to a seq vec </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00163">163</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00185">185</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -926,7 +1057,7 @@ Here is the call graph for this function:</div>
 
 <p>compute dRdBC </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00171">171</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00193">193</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -984,7 +1115,123 @@ Here is the call graph for this function:</div>
 
 <p>compute dFdBC </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00181">181</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00203">203</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
+<a id="a61e85c177ce33f95ed43599dd74b3bb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61e85c177ce33f95ed43599dd74b3bb0">&#9670;&nbsp;</a></span>calcdFdBCAD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calcdFdBCAD </td>
+          <td>(</td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>xvVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>wVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>objFuncName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>designVarName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>dFdBC</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>compute dFdBC using reverse-mode AD </p>
+
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00214">214</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
+<a id="a47e708c0e138fbccc62a96909d10d6d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47e708c0e138fbccc62a96909d10d6d5">&#9670;&nbsp;</a></span>calcdRdBCTPsiAD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calcdRdBCTPsiAD </td>
+          <td>(</td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>xvVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>wVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>psi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>designVarName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>dRdBCTPsi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>compute dRdBC^T*Psi </p>
+
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00225">225</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1036,7 +1283,7 @@ Here is the call graph for this function:</div>
 
 <p>compute dRdAOA </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00192">192</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00236">236</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1094,7 +1341,7 @@ Here is the call graph for this function:</div>
 
 <p>compute dFdAOA </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00202">202</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00246">246</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1146,7 +1393,7 @@ Here is the call graph for this function:</div>
 
 <p>compute dRdFFD </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00213">213</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00257">257</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1204,7 +1451,7 @@ Here is the call graph for this function:</div>
 
 <p>compute dFdFFD </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00223">223</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00267">267</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1262,12 +1509,12 @@ Here is the call graph for this function:</div>
 
 <p>compute dRdACT </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00234">234</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00278">278</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
-<a id="a8d7ce6abc4e4a374dc01569c87a86d50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d7ce6abc4e4a374dc01569c87a86d50">&#9670;&nbsp;</a></span>calcdRdState()</h2>
+<a id="a63fb766651888601cbefe9dbe7416b3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63fb766651888601cbefe9dbe7416b3c">&#9670;&nbsp;</a></span>calcdRdFieldTPsiAD()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1276,7 +1523,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void calcdRdState </td>
+          <td class="memname">void calcdRdFieldTPsiAD </td>
           <td>(</td>
           <td class="paramtype">const Vec&#160;</td>
           <td class="paramname"><em>xvVec</em>, </td>
@@ -1290,14 +1537,20 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>psi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const word&#160;</td>
           <td class="paramname"><em>designVarName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Mat&#160;</td>
-          <td class="paramname"><em>dRdState</em>&#160;</td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>dRdFieldTPsi</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1312,14 +1565,14 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>compute dRdState </p>
+<p>compute dRdField </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00245">245</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00289">289</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
-<a id="ab360e6bdbcdaf37ae39fd17b440d45c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab360e6bdbcdaf37ae39fd17b440d45c0">&#9670;&nbsp;</a></span>calcdFdState()</h2>
+<a id="a4932ba452c4dc4f9fcd10dfc4b7fdedc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4932ba452c4dc4f9fcd10dfc4b7fdedc">&#9670;&nbsp;</a></span>calcdFdFieldAD()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1328,7 +1581,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void calcdFdState </td>
+          <td class="memname">void calcdFdFieldAD </td>
           <td>(</td>
           <td class="paramtype">const Vec&#160;</td>
           <td class="paramname"><em>xvVec</em>, </td>
@@ -1355,7 +1608,7 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">Vec&#160;</td>
-          <td class="paramname"><em>dFdState</em>&#160;</td>
+          <td class="paramname"><em>dFdField</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1370,9 +1623,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>compute dFdState </p>
+<p>compute dFdField </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00255">255</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00300">300</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1402,7 +1655,7 @@ Here is the call graph for this function:</div>
 
 <p>Update the OpenFOAM field values (including both internal and boundary fields) based on the state vector wVec. </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00266">266</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00311">311</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1432,7 +1685,7 @@ Here is the call graph for this function:</div>
 
 <p>Update the OpenFoam mesh point coordinates based on the point vector xvVec. </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00272">272</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00317">317</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1472,7 +1725,7 @@ Here is the call graph for this function:</div>
 
 <p>basically, we call <a class="el" href="classFoam_1_1DAIndex.html#ac9bf3fd02c9cf18a391d088fa6dee4f8" title="get global Xv index for a given point index and coordinate component (x, y, or z) ...">DAIndex::getGlobalXvIndex</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00278">278</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00323">323</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1502,7 +1755,7 @@ Here is the call graph for this function:</div>
 
 <p>basically, we call <a class="el" href="classFoam_1_1DASolver.html#a97b2a938b423ad81fcd6982dd375fd01" title="set the state vector based on the latest fields in OpenFOAM ">DASolver::ofField2StateVec</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00286">286</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00331">331</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1532,7 +1785,7 @@ Here is the call graph for this function:</div>
 
 <p>basically, we call <a class="el" href="classFoam_1_1DASolver.html#a7381e81276f834f59b9502061c4bab28" title="assign the fields in OpenFOAM based on the state vector ">DASolver::stateVec2OFField</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00292">292</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00337">337</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1561,7 +1814,7 @@ Here is the call graph for this function:</div>
 
 <p>basically, we call <a class="el" href="classFoam_1_1DASolver.html#abb3f34f5634fe617414ce256738e40b4" title="check the mesh quality and return meshOK ">DASolver::checkMesh</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00298">298</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00343">343</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1590,7 +1843,7 @@ Here is the call graph for this function:</div>
 
 <p>return the number of local adjoint states </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00304">304</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00349">349</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1619,7 +1872,7 @@ Here is the call graph for this function:</div>
 
 <p>return the number of local cells </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00310">310</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00355">355</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1649,7 +1902,7 @@ Here is the call graph for this function:</div>
 
 <p>return the value of objective </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00316">316</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00361">361</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 <p class="reference">References <a class="el" href="DAMacroFunctions_8H_source.html#l00134">assignValueCheckAD</a>.</p>
 
@@ -1680,7 +1933,7 @@ Here is the call graph for this function:</div>
 
 <p>call <a class="el" href="classFoam_1_1DASolver.html#a967a69a9c61b3b15bc5419be87fcff08" title="print all DAOption ">DASolver::printAllOptions</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00324">324</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00369">369</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1710,9 +1963,9 @@ Here is the call graph for this function:</div>
 
 <p>set values for dXvdFFDMat </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00330">330</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00375">375</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01269">PYDAFOAM::solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM::solveAdjoint()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1750,9 +2003,9 @@ Here is the caller graph for this function:</div>
 
 <p>update the allOptions_ dict in <a class="el" href="classFoam_1_1DAOption.html">DAOption</a> based on the pyOptions from pyDAFoam </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00336">336</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00381">381</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01269">PYDAFOAM::solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM::solveAdjoint()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1789,7 +2042,7 @@ Here is the caller graph for this function:</div>
 
 <p>get the solution time folder for previous primal solution </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00342">342</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00387">387</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 <p class="reference">References <a class="el" href="DAMacroFunctions_8H_source.html#l00134">assignValueCheckAD</a>.</p>
 
@@ -1821,7 +2074,7 @@ Here is the caller graph for this function:</div>
 
 <p>assign the points in fvMesh of OpenFOAM based on the point vector </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00350">350</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00395">395</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1851,7 +2104,7 @@ Here is the caller graph for this function:</div>
 
 <p>assign the point vector based on the points in fvMesh of OpenFOAM </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00356">356</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00401">401</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1881,7 +2134,7 @@ Here is the caller graph for this function:</div>
 
 <p>assign the OpenFOAM residual fields based on the resVec </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00362">362</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00407">407</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1911,7 +2164,7 @@ Here is the caller graph for this function:</div>
 
 <p>assign the resVec based on OpenFOAM residual fields </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00368">368</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00413">413</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1951,7 +2204,7 @@ Here is the caller graph for this function:</div>
 
 <p>write the matrix in binary format </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00374">374</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00419">419</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -1991,7 +2244,7 @@ Here is the caller graph for this function:</div>
 
 <p>write the matrix in ASCII format </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00382">382</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00427">427</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -2031,7 +2284,7 @@ Here is the caller graph for this function:</div>
 
 <p>read petsc matrix in binary format </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00390">390</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00435">435</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -2071,7 +2324,7 @@ Here is the caller graph for this function:</div>
 
 <p>write petsc vector in ascii format </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00398">398</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00443">443</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -2111,7 +2364,7 @@ Here is the caller graph for this function:</div>
 
 <p>read petsc vector in binary format </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00406">406</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00451">451</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -2151,7 +2404,7 @@ Here is the caller graph for this function:</div>
 
 <p>write petsc vector in binary format </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00414">414</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00459">459</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -2181,7 +2434,7 @@ Here is the caller graph for this function:</div>
 
 <p>assign primal variables based on the current time instance </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00422">422</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00467">467</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>
@@ -2221,7 +2474,7 @@ Here is the caller graph for this function:</div>
 
 <p>return the value of objective function at the given time instance and name </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00428">428</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00473">473</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 <p class="reference">References <a class="el" href="DAMacroFunctions_8H_source.html#l00134">assignValueCheckAD</a>.</p>
 
@@ -2275,7 +2528,47 @@ Here is the caller graph for this function:</div>
 
 <p>set the field value </p>
 
-<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00438">438</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00483">483</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
+<a id="aab16fce6c3740102b5dbc28cf34f9193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab16fce6c3740102b5dbc28cf34f9193">&#9670;&nbsp;</a></span>updateBoundaryConditions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateBoundaryConditions </td>
+          <td>(</td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>fieldName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>fieldType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>update the boundary condition for a field </p>
+
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00493">493</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
 </div>
 </div>

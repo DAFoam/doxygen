@@ -20,7 +20,7 @@ var searchData=
   ['setoption',['setOption',['../classFoam_1_1DAOption.html#ab24402e6f97ddad5939394dccb53e846',1,'Foam::DAOption::setOption()'],['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a9114df2b434217a24b6cb1a29c7e35b2',1,'dafoam.pyDAFoam.PYDAFOAM.setOption()']]],
   ['setpartderivmat',['setPartDerivMat',['../classFoam_1_1DAPartDeriv.html#a6cbafd7a71858b14d34116e89407c999',1,'Foam::DAPartDeriv']]],
   ['setpivvec',['setPIVVec',['../classFoam_1_1DAJacCon.html#ad4b03b78021f45b91ad5bd3fcd935b92',1,'Foam::DAJacCon']]],
-  ['setprimalboundaryconditions',['setPrimalBoundaryConditions',['../classFoam_1_1DAField.html#ae542daf160fbb16e53e2406cdf21ab27',1,'Foam::DAField']]],
+  ['setprimalboundaryconditions',['setPrimalBoundaryConditions',['../classFoam_1_1DAField.html#a063273142c31f59245a45b50390221a8',1,'Foam::DAField']]],
   ['setrotingwallvelocity',['setRotingWallVelocity',['../classFoam_1_1DASolver.html#a586f133d36cfa6a6206672c6227cee60',1,'Foam::DASolver']]],
   ['setsubdictoption',['setSubDictOption',['../classFoam_1_1DAOption.html#a99427f88992525f781b7ecf0c03acf81',1,'Foam::DAOption']]],
   ['setsurfacecoordinates',['setSurfaceCoordinates',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6850fa33c4c3d8412a9d9297146b21be',1,'dafoam::pyDAFoam::PYDAFOAM']]],
