@@ -1,0 +1,4 @@
+<map id="correctOmegaBoundaryConditions" name="correctOmegaBoundaryConditions">
+<area shape="rect" id="node2" href="$classFoam_1_1DAkOmega.html#a0d0a248baa9dcea7ca4626c497a61def" title="save near wall omega values to omegaNearWall_ " alt="" coords="275,5,421,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAkOmega.html#a7b80937e7907094acf3a9e07947c205f" title="set omegaNearWall_ to near wall omega values " alt="" coords="280,56,416,83"/>
+</map>

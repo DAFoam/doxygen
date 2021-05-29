@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.3</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.5</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -114,9 +114,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a54f0942227984b5683264bdc6e53dd8e"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAIndex.html#a54f0942227984b5683264bdc6e53dd8e">getLocalXvIndex</a> (const label idxPoint, const label idxCoord) const</td></tr>
 <tr class="memdesc:a54f0942227984b5683264bdc6e53dd8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">get local Xv index for a given point index and coordinate component (x, y, or z)  <a href="#a54f0942227984b5683264bdc6e53dd8e">More...</a><br /></td></tr>
 <tr class="separator:a54f0942227984b5683264bdc6e53dd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77488f97ca081e117dd6bc563d7141be"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAIndex.html#a77488f97ca081e117dd6bc563d7141be">getLocalCellIndex</a> (const label cellI) const</td></tr>
+<tr class="memdesc:a77488f97ca081e117dd6bc563d7141be"><td class="mdescLeft">&#160;</td><td class="mdescRight">get local cell index for a local cell index  <a href="#a77488f97ca081e117dd6bc563d7141be">More...</a><br /></td></tr>
+<tr class="separator:a77488f97ca081e117dd6bc563d7141be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22fa09f8df59f5dc7ffe9f0d6785d786"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAIndex.html#a22fa09f8df59f5dc7ffe9f0d6785d786">getGlobalCellIndex</a> (const label cellI) const</td></tr>
 <tr class="memdesc:a22fa09f8df59f5dc7ffe9f0d6785d786"><td class="mdescLeft">&#160;</td><td class="mdescRight">get global cell index for a local cell index  <a href="#a22fa09f8df59f5dc7ffe9f0d6785d786">More...</a><br /></td></tr>
 <tr class="separator:a22fa09f8df59f5dc7ffe9f0d6785d786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77d9149feb9cd07504682b2696afb3fd"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAIndex.html#a77d9149feb9cd07504682b2696afb3fd">getLocalCellVectorIndex</a> (const label cellI, const label comp) const</td></tr>
+<tr class="memdesc:a77d9149feb9cd07504682b2696afb3fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">get local cell index for a local cell vector index  <a href="#a77d9149feb9cd07504682b2696afb3fd">More...</a><br /></td></tr>
+<tr class="separator:a77d9149feb9cd07504682b2696afb3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5268dae7152a104612f2af710c3c088"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAIndex.html#ac5268dae7152a104612f2af710c3c088">getGlobalCellVectorIndex</a> (const label cellI, const label comp) const</td></tr>
+<tr class="memdesc:ac5268dae7152a104612f2af710c3c088"><td class="mdescLeft">&#160;</td><td class="mdescRight">get global cell index for a local cell vector index  <a href="#ac5268dae7152a104612f2af710c3c088">More...</a><br /></td></tr>
+<tr class="separator:ac5268dae7152a104612f2af710c3c088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20729ac1e00a226a76402958aeabb882"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAIndex.html#a20729ac1e00a226a76402958aeabb882">getLocalFaceIndex</a> (const label faceI) const</td></tr>
+<tr class="memdesc:a20729ac1e00a226a76402958aeabb882"><td class="mdescLeft">&#160;</td><td class="mdescRight">get local face index for a local face index  <a href="#a20729ac1e00a226a76402958aeabb882">More...</a><br /></td></tr>
+<tr class="separator:a20729ac1e00a226a76402958aeabb882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73225f7f7dd1b12c9bc572b41250e11a"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAIndex.html#a73225f7f7dd1b12c9bc572b41250e11a">getGlobalFaceIndex</a> (const label faceI) const</td></tr>
+<tr class="memdesc:a73225f7f7dd1b12c9bc572b41250e11a"><td class="mdescLeft">&#160;</td><td class="mdescRight">get global face index for a local face index  <a href="#a73225f7f7dd1b12c9bc572b41250e11a">More...</a><br /></td></tr>
+<tr class="separator:a73225f7f7dd1b12c9bc572b41250e11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d418608cdff359a52e2a01ffe70b95c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAIndex.html#a7d418608cdff359a52e2a01ffe70b95c">calcAdjStateID4GlobalAdjIdx</a> (labelList &amp;adjStateID4GlobalAdjIdx) const</td></tr>
 <tr class="memdesc:a7d418608cdff359a52e2a01ffe70b95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute global list adjStateID4GlobalAdjIdx that stores the stateID for a given globalAdjIndx  <a href="#a7d418608cdff359a52e2a01ffe70b95c">More...</a><br /></td></tr>
 <tr class="separator:a7d418608cdff359a52e2a01ffe70b95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,6 +261,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a176ecb0125349298bf04b735470e2b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e9b66a0fb6b7cb2b0c95e67d581208c"><td class="memItemLeft" align="right" valign="top">globalIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAIndex.html#a9e9b66a0fb6b7cb2b0c95e67d581208c">globalXvNumbering</a></td></tr>
 <tr class="separator:a9e9b66a0fb6b7cb2b0c95e67d581208c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57078ac3862648f836e8745821719e7c"><td class="memItemLeft" align="right" valign="top">globalIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAIndex.html#a57078ac3862648f836e8745821719e7c">globalVolScalarFieldNumbering</a></td></tr>
+<tr class="separator:a57078ac3862648f836e8745821719e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78b87ab5a7fea9579522f9fd3370196c"><td class="memItemLeft" align="right" valign="top">globalIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAIndex.html#a78b87ab5a7fea9579522f9fd3370196c">globalVolVectorFieldNumbering</a></td></tr>
+<tr class="separator:a78b87ab5a7fea9579522f9fd3370196c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6179057c8115f3d5d2f2ad9c9d2b875d"><td class="memItemLeft" align="right" valign="top">globalIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAIndex.html#a6179057c8115f3d5d2f2ad9c9d2b875d">globalSurfaceScalarFieldNumbering</a></td></tr>
+<tr class="separator:a6179057c8115f3d5d2f2ad9c9d2b875d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -308,7 +329,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DAIndex_8C_source.html#l00017">17</a> of file <a class="el" href="DAIndex_8C_source.html">DAIndex.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAIndex_8H_source.html#l00125">DAIndex::adjStateID</a>, <a class="el" href="DAIndex_8H_source.html#l00186">DAIndex::adjStateName4LocalAdjIdx</a>, <a class="el" href="DAIndex_8H_source.html#l00074">DAIndex::adjStateNames</a>, <a class="el" href="DAIndex_8H_source.html#l00077">DAIndex::adjStateType</a>, <a class="el" href="DAIndex_8H_source.html#l00116">DAIndex::bFaceFaceI</a>, <a class="el" href="DAIndex_8H_source.html#l00110">DAIndex::bFacePatchI</a>, <a class="el" href="DAIndex_8C_source.html#l00380">DAIndex::calcAdjStateID()</a>, <a class="el" href="DAIndex_8C_source.html#l00424">DAIndex::calcLocalIdxLists()</a>, <a class="el" href="DAIndex_8C_source.html#l00187">DAIndex::calcStateLocalIndexOffset()</a>, <a class="el" href="DAIndex_8H_source.html#l00189">DAIndex::cellIFaceI4LocalAdjIdx</a>, <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel()</a>, <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption()</a>, <a class="el" href="DAIndex_8H_source.html#l00047">DAIndex::daOption_</a>, <a class="el" href="DAUtility_8C_source.html#l00598">DAUtility::genGlobalIndex()</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption::getOption()</a>, <a class="el" href="DAIndex_8H_source.html#l00167">DAIndex::globalAdjointStateNumbering</a>, <a class="el" href="DAIndex_8H_source.html#l00168">DAIndex::globalCellNumbering</a>, <a class="el" href="DAIndex_8H_source.html#l00169">DAIndex::globalCellVectorNumbering</a>, <a class="el" href="DAIndex_8H_source.html#l00171">DAIndex::globalCoupledBFaceNumbering</a>, <a class="el" href="DAIndex_8H_source.html#l00170">DAIndex::globalFaceNumbering</a>, <a class="el" href="DAIndex_8H_source.html#l00173">DAIndex::globalXvNumbering</a>, <a class="el" href="DAIndex_8H_source.html#l00183">DAIndex::isCoupledFace</a>, <a class="el" href="createRefsPiso_8H_source.html#l00004">mesh</a>, <a class="el" href="DAIndex_8H_source.html#l00044">DAIndex::mesh_</a>, <a class="el" href="DAStateInfo_8C_source.html#l00043">DAStateInfo::New()</a>, <a class="el" href="DAIndex_8H_source.html#l00148">DAIndex::nGlobalAdjointStates</a>, <a class="el" href="DAIndex_8H_source.html#l00129">DAIndex::nGlobalCells</a>, <a class="el" href="DAIndex_8H_source.html#l00141">DAIndex::nGlobalCoupledBFaces</a>, <a class="el" href="DAIndex_8H_source.html#l00132">DAIndex::nGlobalFaces</a>, <a class="el" href="DAIndex_8H_source.html#l00135">DAIndex::nGlobalXv</a>, <a class="el" href="DAIndex_8H_source.html#l00151">DAIndex::nLocalAdjointBoundaryStates</a>, <a class="el" href="DAIndex_8H_source.html#l00145">DAIndex::nLocalAdjointStates</a>, <a class="el" href="DAIndex_8H_source.html#l00095">DAIndex::nLocalBoundaryFaces</a>, <a class="el" href="DAIndex_8H_source.html#l00101">DAIndex::nLocalBoundaryPatches</a>, <a class="el" href="DAIndex_8H_source.html#l00083">DAIndex::nLocalCells</a>, <a class="el" href="DAIndex_8H_source.html#l00104">DAIndex::nLocalCoupledBFaces</a>, <a class="el" href="DAIndex_8H_source.html#l00086">DAIndex::nLocalFaces</a>, <a class="el" href="DAIndex_8H_source.html#l00098">DAIndex::nLocalInternalFaces</a>, <a class="el" href="DAIndex_8H_source.html#l00089">DAIndex::nLocalPoints</a>, <a class="el" href="DAIndex_8H_source.html#l00092">DAIndex::nLocalXv</a>, <a class="el" href="DAIndex_8H_source.html#l00163">DAIndex::nModelStates</a>, <a class="el" href="DAIndex_8H_source.html#l00160">DAIndex::nSurfaceScalarStates</a>, <a class="el" href="DAIndex_8H_source.html#l00180">DAIndex::nUndecomposedPoints</a>, <a class="el" href="DAIndex_8H_source.html#l00154">DAIndex::nVolScalarStates</a>, <a class="el" href="DAIndex_8H_source.html#l00157">DAIndex::nVolVectorStates</a>, <a class="el" href="DAIndex_8H_source.html#l00177">DAIndex::pointProcAddressing</a>, <a class="el" href="createAdjointCompressible_8H_source.html#l00026">solverName</a>, <a class="el" href="DAIndex_8H_source.html#l00053">DAIndex::stateInfo_</a>, <a class="el" href="DAIndex_8H_source.html#l00122">DAIndex::stateLocalIndexOffset</a>, and <a class="el" href="DAIndex_8C_source.html#l01139">DAIndex::writeAdjointIndexing()</a>.</p>
+<p class="reference">References <a class="el" href="DAIndex_8H_source.html#l00125">DAIndex::adjStateID</a>, <a class="el" href="DAIndex_8H_source.html#l00189">DAIndex::adjStateName4LocalAdjIdx</a>, <a class="el" href="DAIndex_8H_source.html#l00074">DAIndex::adjStateNames</a>, <a class="el" href="DAIndex_8H_source.html#l00077">DAIndex::adjStateType</a>, <a class="el" href="DAIndex_8H_source.html#l00116">DAIndex::bFaceFaceI</a>, <a class="el" href="DAIndex_8H_source.html#l00110">DAIndex::bFacePatchI</a>, <a class="el" href="DAIndex_8C_source.html#l00380">DAIndex::calcAdjStateID()</a>, <a class="el" href="DAIndex_8C_source.html#l00424">DAIndex::calcLocalIdxLists()</a>, <a class="el" href="DAIndex_8C_source.html#l00187">DAIndex::calcStateLocalIndexOffset()</a>, <a class="el" href="DAIndex_8H_source.html#l00192">DAIndex::cellIFaceI4LocalAdjIdx</a>, <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel()</a>, <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption()</a>, <a class="el" href="DAIndex_8H_source.html#l00047">DAIndex::daOption_</a>, <a class="el" href="DAUtility_8C_source.html#l00598">DAUtility::genGlobalIndex()</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption::getOption()</a>, <a class="el" href="DAIndex_8H_source.html#l00167">DAIndex::globalAdjointStateNumbering</a>, <a class="el" href="DAIndex_8H_source.html#l00168">DAIndex::globalCellNumbering</a>, <a class="el" href="DAIndex_8H_source.html#l00169">DAIndex::globalCellVectorNumbering</a>, <a class="el" href="DAIndex_8H_source.html#l00171">DAIndex::globalCoupledBFaceNumbering</a>, <a class="el" href="DAIndex_8H_source.html#l00170">DAIndex::globalFaceNumbering</a>, <a class="el" href="DAIndex_8H_source.html#l00173">DAIndex::globalXvNumbering</a>, <a class="el" href="DAIndex_8H_source.html#l00186">DAIndex::isCoupledFace</a>, <a class="el" href="createRefsPiso_8H_source.html#l00004">mesh</a>, <a class="el" href="DAIndex_8H_source.html#l00044">DAIndex::mesh_</a>, <a class="el" href="DAStateInfo_8C_source.html#l00043">DAStateInfo::New()</a>, <a class="el" href="DAIndex_8H_source.html#l00148">DAIndex::nGlobalAdjointStates</a>, <a class="el" href="DAIndex_8H_source.html#l00129">DAIndex::nGlobalCells</a>, <a class="el" href="DAIndex_8H_source.html#l00141">DAIndex::nGlobalCoupledBFaces</a>, <a class="el" href="DAIndex_8H_source.html#l00132">DAIndex::nGlobalFaces</a>, <a class="el" href="DAIndex_8H_source.html#l00135">DAIndex::nGlobalXv</a>, <a class="el" href="DAIndex_8H_source.html#l00151">DAIndex::nLocalAdjointBoundaryStates</a>, <a class="el" href="DAIndex_8H_source.html#l00145">DAIndex::nLocalAdjointStates</a>, <a class="el" href="DAIndex_8H_source.html#l00095">DAIndex::nLocalBoundaryFaces</a>, <a class="el" href="DAIndex_8H_source.html#l00101">DAIndex::nLocalBoundaryPatches</a>, <a class="el" href="DAIndex_8H_source.html#l00083">DAIndex::nLocalCells</a>, <a class="el" href="DAIndex_8H_source.html#l00104">DAIndex::nLocalCoupledBFaces</a>, <a class="el" href="DAIndex_8H_source.html#l00086">DAIndex::nLocalFaces</a>, <a class="el" href="DAIndex_8H_source.html#l00098">DAIndex::nLocalInternalFaces</a>, <a class="el" href="DAIndex_8H_source.html#l00089">DAIndex::nLocalPoints</a>, <a class="el" href="DAIndex_8H_source.html#l00092">DAIndex::nLocalXv</a>, <a class="el" href="DAIndex_8H_source.html#l00163">DAIndex::nModelStates</a>, <a class="el" href="DAIndex_8H_source.html#l00160">DAIndex::nSurfaceScalarStates</a>, <a class="el" href="DAIndex_8H_source.html#l00183">DAIndex::nUndecomposedPoints</a>, <a class="el" href="DAIndex_8H_source.html#l00154">DAIndex::nVolScalarStates</a>, <a class="el" href="DAIndex_8H_source.html#l00157">DAIndex::nVolVectorStates</a>, <a class="el" href="DAIndex_8H_source.html#l00180">DAIndex::pointProcAddressing</a>, <a class="el" href="createAdjointCompressible_8H_source.html#l00026">solverName</a>, <a class="el" href="DAIndex_8H_source.html#l00053">DAIndex::stateInfo_</a>, <a class="el" href="DAIndex_8H_source.html#l00122">DAIndex::stateLocalIndexOffset</a>, and <a class="el" href="DAIndex_8C_source.html#l01266">DAIndex::writeAdjointIndexing()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -383,7 +404,7 @@ Here is the call graph for this function:</div>
 
 <p>write the adjoint indexing for debugging </p>
 
-<p class="definition">Definition at line <a class="el" href="DAIndex_8C_source.html#l01139">1139</a> of file <a class="el" href="DAIndex_8C_source.html">DAIndex.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAIndex_8C_source.html#l01266">1266</a> of file <a class="el" href="DAIndex_8C_source.html">DAIndex.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DAIndex_8H_source.html#l00116">DAIndex::bFaceFaceI</a>, <a class="el" href="DAIndex_8H_source.html#l00110">DAIndex::bFacePatchI</a>, <a class="el" href="DAIndex_8C_source.html#l00644">DAIndex::getGlobalAdjointStateIndex()</a>, <a class="el" href="DAIndex_8C_source.html#l00685">DAIndex::getGlobalXvIndex()</a>, <a class="el" href="DAIndex_8H_source.html#l00044">DAIndex::mesh_</a>, <a class="el" href="DAIndex_8H_source.html#l00098">DAIndex::nLocalInternalFaces</a>, and <a class="el" href="DAIndex_8H_source.html#l00053">DAIndex::stateInfo_</a>.</p>
 
@@ -428,7 +449,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAIndex_8C_source.html#l00187">187</a> of file <a class="el" href="DAIndex_8C_source.html">DAIndex.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAIndex_8H_source.html#l00074">DAIndex::adjStateNames</a>, <a class="el" href="DAIndex_8H_source.html#l00116">DAIndex::bFaceFaceI</a>, <a class="el" href="DAIndex_8H_source.html#l00110">DAIndex::bFacePatchI</a>, <a class="el" href="DAIndex_8H_source.html#l00047">DAIndex::daOption_</a>, <a class="el" href="DAIndex_8H_source.html#l00192">DAIndex::faceOwner</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption::getOption()</a>, <a class="el" href="DAIndex_8H_source.html#l00044">DAIndex::mesh_</a>, <a class="el" href="DAIndex_8H_source.html#l00083">DAIndex::nLocalCells</a>, <a class="el" href="DAIndex_8H_source.html#l00086">DAIndex::nLocalFaces</a>, <a class="el" href="DAIndex_8H_source.html#l00098">DAIndex::nLocalInternalFaces</a>, <a class="el" href="DAIndex_8H_source.html#l00195">DAIndex::phiAccumulatdOffset</a>, <a class="el" href="DAIndex_8H_source.html#l00198">DAIndex::phiLocalOffset</a>, and <a class="el" href="DAIndex_8H_source.html#l00053">DAIndex::stateInfo_</a>.</p>
+<p class="reference">References <a class="el" href="DAIndex_8H_source.html#l00074">DAIndex::adjStateNames</a>, <a class="el" href="DAIndex_8H_source.html#l00116">DAIndex::bFaceFaceI</a>, <a class="el" href="DAIndex_8H_source.html#l00110">DAIndex::bFacePatchI</a>, <a class="el" href="DAIndex_8H_source.html#l00047">DAIndex::daOption_</a>, <a class="el" href="DAIndex_8H_source.html#l00195">DAIndex::faceOwner</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption::getOption()</a>, <a class="el" href="DAIndex_8H_source.html#l00044">DAIndex::mesh_</a>, <a class="el" href="DAIndex_8H_source.html#l00083">DAIndex::nLocalCells</a>, <a class="el" href="DAIndex_8H_source.html#l00086">DAIndex::nLocalFaces</a>, <a class="el" href="DAIndex_8H_source.html#l00098">DAIndex::nLocalInternalFaces</a>, <a class="el" href="DAIndex_8H_source.html#l00198">DAIndex::phiAccumulatdOffset</a>, <a class="el" href="DAIndex_8H_source.html#l00201">DAIndex::phiLocalOffset</a>, and <a class="el" href="DAIndex_8H_source.html#l00053">DAIndex::stateInfo_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>.</p>
 <div class="dynheader">
@@ -572,7 +593,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAIndex_8C_source.html#l00499">499</a> of file <a class="el" href="DAIndex_8C_source.html">DAIndex.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAIndex_8H_source.html#l00074">DAIndex::adjStateNames</a>, <a class="el" href="DAIndex_8H_source.html#l00077">DAIndex::adjStateType</a>, <a class="el" href="DAIndex_8H_source.html#l00047">DAIndex::daOption_</a>, <a class="el" href="DAIndex_8H_source.html#l00192">DAIndex::faceOwner</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption::getOption()</a>, <a class="el" href="DAIndex_8H_source.html#l00163">DAIndex::nModelStates</a>, <a class="el" href="DAIndex_8H_source.html#l00154">DAIndex::nVolScalarStates</a>, <a class="el" href="DAIndex_8H_source.html#l00157">DAIndex::nVolVectorStates</a>, <a class="el" href="DAIndex_8H_source.html#l00195">DAIndex::phiAccumulatdOffset</a>, <a class="el" href="DAIndex_8H_source.html#l00198">DAIndex::phiLocalOffset</a>, and <a class="el" href="DAIndex_8H_source.html#l00122">DAIndex::stateLocalIndexOffset</a>.</p>
+<p class="reference">References <a class="el" href="DAIndex_8H_source.html#l00074">DAIndex::adjStateNames</a>, <a class="el" href="DAIndex_8H_source.html#l00077">DAIndex::adjStateType</a>, <a class="el" href="DAIndex_8H_source.html#l00047">DAIndex::daOption_</a>, <a class="el" href="DAIndex_8H_source.html#l00195">DAIndex::faceOwner</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption::getOption()</a>, <a class="el" href="DAIndex_8H_source.html#l00163">DAIndex::nModelStates</a>, <a class="el" href="DAIndex_8H_source.html#l00154">DAIndex::nVolScalarStates</a>, <a class="el" href="DAIndex_8H_source.html#l00157">DAIndex::nVolVectorStates</a>, <a class="el" href="DAIndex_8H_source.html#l00198">DAIndex::phiAccumulatdOffset</a>, <a class="el" href="DAIndex_8H_source.html#l00201">DAIndex::phiLocalOffset</a>, and <a class="el" href="DAIndex_8H_source.html#l00122">DAIndex::stateLocalIndexOffset</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAJacCon_8C_source.html#l02197">DAJacCon::addPhi4PIV()</a>, <a class="el" href="DAIndex_8C_source.html#l00424">DAIndex::calcLocalIdxLists()</a>, <a class="el" href="DAIndex_8C_source.html#l00644">DAIndex::getGlobalAdjointStateIndex()</a>, <a class="el" href="DAField_8C_source.html#l01162">DAField::list2OFField()</a>, <a class="el" href="DAField_8C_source.html#l01030">DAField::ofField2List()</a>, <a class="el" href="DAField_8C_source.html#l00036">DAField::ofField2StateVec()</a>, <a class="el" href="DAField_8C_source.html#l00300">DAField::ofResField2ResVec()</a>, <a class="el" href="DAField_8C_source.html#l00391">DAField::resVec2OFResField()</a>, and <a class="el" href="DAField_8C_source.html#l00126">DAField::stateVec2OFField()</a>.</p>
 <div class="dynheader">
@@ -640,7 +661,7 @@ Here is the caller graph for this function:</div>
 
 <p class="reference">References <a class="el" href="DAIndex_8C_source.html#l00499">DAIndex::getLocalAdjointStateIndex()</a>, and <a class="el" href="DAIndex_8H_source.html#l00167">DAIndex::globalAdjointStateNumbering</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAJacCon_8C_source.html#l01391">DAJacCon::addConMatCell()</a>, <a class="el" href="DAJacCon_8C_source.html#l01519">DAJacCon::addConMatCellFaces()</a>, <a class="el" href="DAJacCon_8C_source.html#l01450">DAJacCon::addConMatNeighbourCells()</a>, <a class="el" href="DAJacCon_8C_source.html#l00186">DAJacCon::addStateConnections()</a>, <a class="el" href="DAIndex_8C_source.html#l00768">DAIndex::calcAdjStateID4GlobalAdjIdx()</a>, <a class="el" href="DAIndex_8C_source.html#l00866">DAIndex::printMatChars()</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00511">DAPartDeriv::setNormStatePerturbVec()</a>, <a class="el" href="DAJacCon_8C_source.html#l02160">DAJacCon::setPIVVec()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, and <a class="el" href="DAIndex_8C_source.html#l01139">DAIndex::writeAdjointIndexing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAJacCon_8C_source.html#l01391">DAJacCon::addConMatCell()</a>, <a class="el" href="DAJacCon_8C_source.html#l01519">DAJacCon::addConMatCellFaces()</a>, <a class="el" href="DAJacCon_8C_source.html#l01450">DAJacCon::addConMatNeighbourCells()</a>, <a class="el" href="DAJacCon_8C_source.html#l00186">DAJacCon::addStateConnections()</a>, <a class="el" href="DAIndex_8C_source.html#l00895">DAIndex::calcAdjStateID4GlobalAdjIdx()</a>, <a class="el" href="DAIndex_8C_source.html#l00993">DAIndex::printMatChars()</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00511">DAPartDeriv::setNormStatePerturbVec()</a>, <a class="el" href="DAJacCon_8C_source.html#l02160">DAJacCon::setPIVVec()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, and <a class="el" href="DAIndex_8C_source.html#l01266">DAIndex::writeAdjointIndexing()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -701,7 +722,7 @@ Here is the caller graph for this function:</div>
 
 <p class="reference">References <a class="el" href="DAIndex_8C_source.html#l00716">DAIndex::getLocalXvIndex()</a>, and <a class="el" href="DAIndex_8H_source.html#l00173">DAIndex::globalXvNumbering</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l01139">DAIndex::writeAdjointIndexing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l01266">DAIndex::writeAdjointIndexing()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -765,6 +786,38 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a77488f97ca081e117dd6bc563d7141be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77488f97ca081e117dd6bc563d7141be">&#9670;&nbsp;</a></span>getLocalCellIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">label getLocalCellIndex </td>
+          <td>(</td>
+          <td class="paramtype">const label&#160;</td>
+          <td class="paramname"><em>cellI</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get local cell index for a local cell index </p>
+
+<p class="definition">Definition at line <a class="el" href="DAIndex_8C_source.html#l00743">743</a> of file <a class="el" href="DAIndex_8C_source.html">DAIndex.C</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00765">DAIndex::getGlobalCellIndex()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAIndex_a77488f97ca081e117dd6bc563d7141be_icgraph.png" border="0" usemap="#classFoam_1_1DAIndex_a77488f97ca081e117dd6bc563d7141be_icgraph" alt=""/></div>
+<map name="classFoam_1_1DAIndex_a77488f97ca081e117dd6bc563d7141be_icgraph" id="classFoam_1_1DAIndex_a77488f97ca081e117dd6bc563d7141be_icgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAIndex.html#a22fa09f8df59f5dc7ffe9f0d6785d786" title="get global cell index for a local cell index " alt="" coords="180,5,312,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a22fa09f8df59f5dc7ffe9f0d6785d786"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22fa09f8df59f5dc7ffe9f0d6785d786">&#9670;&nbsp;</a></span>getGlobalCellIndex()</h2>
 
@@ -783,9 +836,165 @@ Here is the caller graph for this function:</div>
 
 <p>get global cell index for a local cell index </p>
 
-<p class="definition">Definition at line <a class="el" href="DAIndex_8C_source.html#l00743">743</a> of file <a class="el" href="DAIndex_8C_source.html">DAIndex.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAIndex_8C_source.html#l00765">765</a> of file <a class="el" href="DAIndex_8C_source.html">DAIndex.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAIndex_8H_source.html#l00168">DAIndex::globalCellNumbering</a>.</p>
+<p class="reference">References <a class="el" href="DAIndex_8C_source.html#l00743">DAIndex::getLocalCellIndex()</a>, and <a class="el" href="DAIndex_8H_source.html#l00168">DAIndex::globalCellNumbering</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAIndex_a22fa09f8df59f5dc7ffe9f0d6785d786_cgraph.png" border="0" usemap="#classFoam_1_1DAIndex_a22fa09f8df59f5dc7ffe9f0d6785d786_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAIndex_a22fa09f8df59f5dc7ffe9f0d6785d786_cgraph" id="classFoam_1_1DAIndex_a22fa09f8df59f5dc7ffe9f0d6785d786_cgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAIndex.html#a77488f97ca081e117dd6bc563d7141be" title="get local cell index for a local cell index " alt="" coords="185,5,312,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a77d9149feb9cd07504682b2696afb3fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77d9149feb9cd07504682b2696afb3fd">&#9670;&nbsp;</a></span>getLocalCellVectorIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">label getLocalCellVectorIndex </td>
+          <td>(</td>
+          <td class="paramtype">const label&#160;</td>
+          <td class="paramname"><em>cellI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const label&#160;</td>
+          <td class="paramname"><em>comp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get local cell index for a local cell vector index </p>
+
+<p class="definition">Definition at line <a class="el" href="DAIndex_8C_source.html#l00791">791</a> of file <a class="el" href="DAIndex_8C_source.html">DAIndex.C</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00817">DAIndex::getGlobalCellVectorIndex()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAIndex_a77d9149feb9cd07504682b2696afb3fd_icgraph.png" border="0" usemap="#classFoam_1_1DAIndex_a77d9149feb9cd07504682b2696afb3fd_icgraph" alt=""/></div>
+<map name="classFoam_1_1DAIndex_a77d9149feb9cd07504682b2696afb3fd_icgraph" id="classFoam_1_1DAIndex_a77d9149feb9cd07504682b2696afb3fd_icgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAIndex.html#ac5268dae7152a104612f2af710c3c088" title="get global cell index for a local cell vector index " alt="" coords="217,5,388,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac5268dae7152a104612f2af710c3c088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5268dae7152a104612f2af710c3c088">&#9670;&nbsp;</a></span>getGlobalCellVectorIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">label getGlobalCellVectorIndex </td>
+          <td>(</td>
+          <td class="paramtype">const label&#160;</td>
+          <td class="paramname"><em>cellI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const label&#160;</td>
+          <td class="paramname"><em>comp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get global cell index for a local cell vector index </p>
+
+<p class="definition">Definition at line <a class="el" href="DAIndex_8C_source.html#l00817">817</a> of file <a class="el" href="DAIndex_8C_source.html">DAIndex.C</a>.</p>
+
+<p class="reference">References <a class="el" href="DAIndex_8C_source.html#l00791">DAIndex::getLocalCellVectorIndex()</a>, and <a class="el" href="DAIndex_8H_source.html#l00169">DAIndex::globalCellVectorNumbering</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAIndex_ac5268dae7152a104612f2af710c3c088_cgraph.png" border="0" usemap="#classFoam_1_1DAIndex_ac5268dae7152a104612f2af710c3c088_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAIndex_ac5268dae7152a104612f2af710c3c088_cgraph" id="classFoam_1_1DAIndex_ac5268dae7152a104612f2af710c3c088_cgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAIndex.html#a77d9149feb9cd07504682b2696afb3fd" title="get local cell index for a local cell vector index " alt="" coords="224,5,388,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a20729ac1e00a226a76402958aeabb882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20729ac1e00a226a76402958aeabb882">&#9670;&nbsp;</a></span>getLocalFaceIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">label getLocalFaceIndex </td>
+          <td>(</td>
+          <td class="paramtype">const label&#160;</td>
+          <td class="paramname"><em>faceI</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get local face index for a local face index </p>
+
+<p class="definition">Definition at line <a class="el" href="DAIndex_8C_source.html#l00847">847</a> of file <a class="el" href="DAIndex_8C_source.html">DAIndex.C</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00869">DAIndex::getGlobalFaceIndex()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAIndex_a20729ac1e00a226a76402958aeabb882_icgraph.png" border="0" usemap="#classFoam_1_1DAIndex_a20729ac1e00a226a76402958aeabb882_icgraph" alt=""/></div>
+<map name="classFoam_1_1DAIndex_a20729ac1e00a226a76402958aeabb882_icgraph" id="classFoam_1_1DAIndex_a20729ac1e00a226a76402958aeabb882_icgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAIndex.html#a73225f7f7dd1b12c9bc572b41250e11a" title="get global face index for a local face index " alt="" coords="185,5,324,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a73225f7f7dd1b12c9bc572b41250e11a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73225f7f7dd1b12c9bc572b41250e11a">&#9670;&nbsp;</a></span>getGlobalFaceIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">label getGlobalFaceIndex </td>
+          <td>(</td>
+          <td class="paramtype">const label&#160;</td>
+          <td class="paramname"><em>faceI</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get global face index for a local face index </p>
+
+<p class="definition">Definition at line <a class="el" href="DAIndex_8C_source.html#l00869">869</a> of file <a class="el" href="DAIndex_8C_source.html">DAIndex.C</a>.</p>
+
+<p class="reference">References <a class="el" href="DAIndex_8C_source.html#l00847">DAIndex::getLocalFaceIndex()</a>, and <a class="el" href="DAIndex_8H_source.html#l00170">DAIndex::globalFaceNumbering</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAIndex_a73225f7f7dd1b12c9bc572b41250e11a_cgraph.png" border="0" usemap="#classFoam_1_1DAIndex_a73225f7f7dd1b12c9bc572b41250e11a_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAIndex_a73225f7f7dd1b12c9bc572b41250e11a_cgraph" id="classFoam_1_1DAIndex_a73225f7f7dd1b12c9bc572b41250e11a_cgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAIndex.html#a20729ac1e00a226a76402958aeabb882" title="get local face index for a local face index " alt="" coords="192,5,324,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -807,7 +1016,7 @@ Here is the caller graph for this function:</div>
 
 <p>compute global list adjStateID4GlobalAdjIdx that stores the stateID for a given globalAdjIndx </p>
 
-<p class="definition">Definition at line <a class="el" href="DAIndex_8C_source.html#l00768">768</a> of file <a class="el" href="DAIndex_8C_source.html">DAIndex.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAIndex_8C_source.html#l00895">895</a> of file <a class="el" href="DAIndex_8C_source.html">DAIndex.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DAIndex_8H_source.html#l00125">DAIndex::adjStateID</a>, <a class="el" href="DAIndex_8C_source.html#l00644">DAIndex::getGlobalAdjointStateIndex()</a>, <a class="el" href="DAIndex_8H_source.html#l00044">DAIndex::mesh_</a>, <a class="el" href="DAIndex_8H_source.html#l00148">DAIndex::nGlobalAdjointStates</a>, <a class="el" href="DAIndex_8H_source.html#l00145">DAIndex::nLocalAdjointStates</a>, and <a class="el" href="DAIndex_8H_source.html#l00053">DAIndex::stateInfo_</a>.</p>
 
@@ -856,9 +1065,9 @@ Here is the caller graph for this function:</div>
 
 <p>print all the sizes and indices </p>
 
-<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00242">242</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00264">264</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
-<p class="reference">References <a class="el" href="DAIndex_8C_source.html#l01092">DAIndex::getMatNonZeros()</a>, and <a class="el" href="DAIndex_8C_source.html#l00866">DAIndex::printMatChars()</a>.</p>
+<p class="reference">References <a class="el" href="DAIndex_8C_source.html#l01219">DAIndex::getMatNonZeros()</a>, and <a class="el" href="DAIndex_8C_source.html#l00993">DAIndex::printMatChars()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -889,11 +1098,11 @@ Here is the call graph for this function:</div>
 
 <p>print petsc matrix statistics such as the max on/off diagonral ratio </p>
 
-<p class="definition">Definition at line <a class="el" href="DAIndex_8C_source.html#l00866">866</a> of file <a class="el" href="DAIndex_8C_source.html">DAIndex.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAIndex_8C_source.html#l00993">993</a> of file <a class="el" href="DAIndex_8C_source.html">DAIndex.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAIndex_8H_source.html#l00125">DAIndex::adjStateID</a>, <a class="el" href="DAIndex_8H_source.html#l00116">DAIndex::bFaceFaceI</a>, <a class="el" href="DAIndex_8H_source.html#l00110">DAIndex::bFacePatchI</a>, <a class="el" href="DAIndex_8C_source.html#l00644">DAIndex::getGlobalAdjointStateIndex()</a>, <a class="el" href="DAIndex_8C_source.html#l01092">DAIndex::getMatNonZeros()</a>, <a class="el" href="DAIndex_8H_source.html#l00044">DAIndex::mesh_</a>, <a class="el" href="DAIndex_8H_source.html#l00098">DAIndex::nLocalInternalFaces</a>, and <a class="el" href="DAIndex_8H_source.html#l00053">DAIndex::stateInfo_</a>.</p>
+<p class="reference">References <a class="el" href="DAIndex_8H_source.html#l00125">DAIndex::adjStateID</a>, <a class="el" href="DAIndex_8H_source.html#l00116">DAIndex::bFaceFaceI</a>, <a class="el" href="DAIndex_8H_source.html#l00110">DAIndex::bFacePatchI</a>, <a class="el" href="DAIndex_8C_source.html#l00644">DAIndex::getGlobalAdjointStateIndex()</a>, <a class="el" href="DAIndex_8C_source.html#l01219">DAIndex::getMatNonZeros()</a>, <a class="el" href="DAIndex_8H_source.html#l00044">DAIndex::mesh_</a>, <a class="el" href="DAIndex_8H_source.html#l00098">DAIndex::nLocalInternalFaces</a>, <a class="el" href="DAIndex_8H_source.html#l00053">DAIndex::stateInfo_</a>, and <a class="el" href="dafoam__plot3dtransform_8py_source.html#l00039">dafoam_plot3dtransform::vals</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAPartDerivdRdW_8C_source.html#l00073">DAPartDerivdRdW::calcPartDerivMat()</a>, and <a class="el" href="DAIndex_8H_source.html#l00242">DAIndex::printIndices()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAPartDerivdRdW_8C_source.html#l00073">DAPartDerivdRdW::calcPartDerivMat()</a>, and <a class="el" href="DAIndex_8H_source.html#l00264">DAIndex::printIndices()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -949,9 +1158,11 @@ Here is the caller graph for this function:</div>
 
 <p>get number of non zeros for a matrix </p>
 
-<p class="definition">Definition at line <a class="el" href="DAIndex_8C_source.html#l01092">1092</a> of file <a class="el" href="DAIndex_8C_source.html">DAIndex.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAIndex_8C_source.html#l01219">1219</a> of file <a class="el" href="DAIndex_8C_source.html">DAIndex.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAIndex_8H_source.html#l00242">DAIndex::printIndices()</a>, and <a class="el" href="DAIndex_8C_source.html#l00866">DAIndex::printMatChars()</a>.</p>
+<p class="reference">References <a class="el" href="dafoam__plot3dtransform_8py_source.html#l00039">dafoam_plot3dtransform::vals</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DAIndex_8H_source.html#l00264">DAIndex::printIndices()</a>, and <a class="el" href="DAIndex_8C_source.html#l00993">DAIndex::printMatChars()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -989,7 +1200,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00044">44</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00768">DAIndex::calcAdjStateID4GlobalAdjIdx()</a>, <a class="el" href="DAIndex_8C_source.html#l00424">DAIndex::calcLocalIdxLists()</a>, <a class="el" href="DAIndex_8C_source.html#l00187">DAIndex::calcStateLocalIndexOffset()</a>, <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, <a class="el" href="DAIndex_8C_source.html#l00866">DAIndex::printMatChars()</a>, and <a class="el" href="DAIndex_8C_source.html#l01139">DAIndex::writeAdjointIndexing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00895">DAIndex::calcAdjStateID4GlobalAdjIdx()</a>, <a class="el" href="DAIndex_8C_source.html#l00424">DAIndex::calcLocalIdxLists()</a>, <a class="el" href="DAIndex_8C_source.html#l00187">DAIndex::calcStateLocalIndexOffset()</a>, <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, <a class="el" href="DAIndex_8C_source.html#l00993">DAIndex::printMatChars()</a>, and <a class="el" href="DAIndex_8C_source.html#l01266">DAIndex::writeAdjointIndexing()</a>.</p>
 
 </div>
 </div>
@@ -1071,7 +1282,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00053">53</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00380">DAIndex::calcAdjStateID()</a>, <a class="el" href="DAIndex_8C_source.html#l00768">DAIndex::calcAdjStateID4GlobalAdjIdx()</a>, <a class="el" href="DAIndex_8C_source.html#l00424">DAIndex::calcLocalIdxLists()</a>, <a class="el" href="DAIndex_8C_source.html#l00187">DAIndex::calcStateLocalIndexOffset()</a>, <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, <a class="el" href="DAIndex_8C_source.html#l00866">DAIndex::printMatChars()</a>, and <a class="el" href="DAIndex_8C_source.html#l01139">DAIndex::writeAdjointIndexing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00380">DAIndex::calcAdjStateID()</a>, <a class="el" href="DAIndex_8C_source.html#l00895">DAIndex::calcAdjStateID4GlobalAdjIdx()</a>, <a class="el" href="DAIndex_8C_source.html#l00424">DAIndex::calcLocalIdxLists()</a>, <a class="el" href="DAIndex_8C_source.html#l00187">DAIndex::calcStateLocalIndexOffset()</a>, <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, <a class="el" href="DAIndex_8C_source.html#l00993">DAIndex::printMatChars()</a>, and <a class="el" href="DAIndex_8C_source.html#l01266">DAIndex::writeAdjointIndexing()</a>.</p>
 
 </div>
 </div>
@@ -1091,7 +1302,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00074">74</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00187">DAIndex::calcStateLocalIndexOffset()</a>, <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, <a class="el" href="DAObjFuncStateErrorNorm_8C_source.html#l00019">DAObjFuncStateErrorNorm::DAObjFuncStateErrorNorm()</a>, <a class="el" href="DAIndex_8C_source.html#l00499">DAIndex::getLocalAdjointStateIndex()</a>, <a class="el" href="DAJacCon_8C_source.html#l02160">DAJacCon::setPIVVec()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, and <a class="el" href="DAJacCon_8C_source.html#l00682">DAJacCon::setupStateBoundaryCon()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00187">DAIndex::calcStateLocalIndexOffset()</a>, <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, <a class="el" href="DAObjFuncStateErrorNorm_8C_source.html#l00019">DAObjFuncStateErrorNorm::DAObjFuncStateErrorNorm()</a>, <a class="el" href="DAObjFuncVariableVolSum_8C_source.html#l00019">DAObjFuncVariableVolSum::DAObjFuncVariableVolSum()</a>, <a class="el" href="DAIndex_8C_source.html#l00499">DAIndex::getLocalAdjointStateIndex()</a>, <a class="el" href="DAJacCon_8C_source.html#l02160">DAJacCon::setPIVVec()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, and <a class="el" href="DAJacCon_8C_source.html#l00682">DAJacCon::setupStateBoundaryCon()</a>.</p>
 
 </div>
 </div>
@@ -1231,7 +1442,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00098">98</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAJacCon_8C_source.html#l00568">DAJacCon::calcNeiBFaceGlobalCompact()</a>, <a class="el" href="DAObjFuncMoment_8C_source.html#l00096">DAObjFuncMoment::calcObjFunc()</a>, <a class="el" href="DAObjFuncMassFlowRate_8C_source.html#l00056">DAObjFuncMassFlowRate::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalPressure_8C_source.html#l00062">DAObjFuncTotalPressure::calcObjFunc()</a>, <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00086">DAObjFuncWallHeatFlux::calcObjFunc()</a>, <a class="el" href="DAObjFuncForce_8C_source.html#l00120">DAObjFuncForce::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalTemperatureRatio_8C_source.html#l00065">DAObjFuncTotalTemperatureRatio::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalPressureRatio_8C_source.html#l00070">DAObjFuncTotalPressureRatio::calcObjFunc()</a>, <a class="el" href="DAIndex_8C_source.html#l00187">DAIndex::calcStateLocalIndexOffset()</a>, <a class="el" href="DAJacCon_8C_source.html#l01089">DAJacCon::combineStateBndCon()</a>, <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, <a class="el" href="DAField_8C_source.html#l01162">DAField::list2OFField()</a>, <a class="el" href="DAField_8C_source.html#l01030">DAField::ofField2List()</a>, <a class="el" href="DAField_8C_source.html#l00036">DAField::ofField2StateVec()</a>, <a class="el" href="DAField_8C_source.html#l00300">DAField::ofResField2ResVec()</a>, <a class="el" href="DAIndex_8C_source.html#l00866">DAIndex::printMatChars()</a>, <a class="el" href="DAField_8C_source.html#l00391">DAField::resVec2OFResField()</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00511">DAPartDeriv::setNormStatePerturbVec()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, <a class="el" href="DAJacCondFdW_8C_source.html#l00115">DAJacCondFdW::setupJacCon()</a>, <a class="el" href="DAJacCon_8C_source.html#l00682">DAJacCon::setupStateBoundaryCon()</a>, <a class="el" href="DAField_8C_source.html#l00126">DAField::stateVec2OFField()</a>, and <a class="el" href="DAIndex_8C_source.html#l01139">DAIndex::writeAdjointIndexing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAJacCon_8C_source.html#l00568">DAJacCon::calcNeiBFaceGlobalCompact()</a>, <a class="el" href="DAObjFuncMoment_8C_source.html#l00096">DAObjFuncMoment::calcObjFunc()</a>, <a class="el" href="DAObjFuncMassFlowRate_8C_source.html#l00056">DAObjFuncMassFlowRate::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalPressure_8C_source.html#l00062">DAObjFuncTotalPressure::calcObjFunc()</a>, <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00086">DAObjFuncWallHeatFlux::calcObjFunc()</a>, <a class="el" href="DAObjFuncForce_8C_source.html#l00120">DAObjFuncForce::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalTemperatureRatio_8C_source.html#l00065">DAObjFuncTotalTemperatureRatio::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalPressureRatio_8C_source.html#l00070">DAObjFuncTotalPressureRatio::calcObjFunc()</a>, <a class="el" href="DAIndex_8C_source.html#l00187">DAIndex::calcStateLocalIndexOffset()</a>, <a class="el" href="DAJacCon_8C_source.html#l01089">DAJacCon::combineStateBndCon()</a>, <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, <a class="el" href="DAField_8C_source.html#l01162">DAField::list2OFField()</a>, <a class="el" href="DAField_8C_source.html#l01030">DAField::ofField2List()</a>, <a class="el" href="DAField_8C_source.html#l00036">DAField::ofField2StateVec()</a>, <a class="el" href="DAField_8C_source.html#l00300">DAField::ofResField2ResVec()</a>, <a class="el" href="DAIndex_8C_source.html#l00993">DAIndex::printMatChars()</a>, <a class="el" href="DAField_8C_source.html#l00391">DAField::resVec2OFResField()</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00511">DAPartDeriv::setNormStatePerturbVec()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, <a class="el" href="DAJacCondFdW_8C_source.html#l00115">DAJacCondFdW::setupJacCon()</a>, <a class="el" href="DAJacCon_8C_source.html#l00682">DAJacCon::setupStateBoundaryCon()</a>, <a class="el" href="DAField_8C_source.html#l00126">DAField::stateVec2OFField()</a>, and <a class="el" href="DAIndex_8C_source.html#l01266">DAIndex::writeAdjointIndexing()</a>.</p>
 
 </div>
 </div>
@@ -1290,7 +1501,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00110">110</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAObjFuncMoment_8C_source.html#l00096">DAObjFuncMoment::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalPressure_8C_source.html#l00062">DAObjFuncTotalPressure::calcObjFunc()</a>, <a class="el" href="DAObjFuncMassFlowRate_8C_source.html#l00056">DAObjFuncMassFlowRate::calcObjFunc()</a>, <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00086">DAObjFuncWallHeatFlux::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalPressureRatio_8C_source.html#l00070">DAObjFuncTotalPressureRatio::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalTemperatureRatio_8C_source.html#l00065">DAObjFuncTotalTemperatureRatio::calcObjFunc()</a>, <a class="el" href="DAObjFuncForce_8C_source.html#l00120">DAObjFuncForce::calcObjFunc()</a>, <a class="el" href="DAIndex_8C_source.html#l00187">DAIndex::calcStateLocalIndexOffset()</a>, <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, <a class="el" href="DAField_8C_source.html#l01162">DAField::list2OFField()</a>, <a class="el" href="DAField_8C_source.html#l01030">DAField::ofField2List()</a>, <a class="el" href="DAField_8C_source.html#l00036">DAField::ofField2StateVec()</a>, <a class="el" href="DAField_8C_source.html#l00300">DAField::ofResField2ResVec()</a>, <a class="el" href="DAIndex_8C_source.html#l00866">DAIndex::printMatChars()</a>, <a class="el" href="DAField_8C_source.html#l00391">DAField::resVec2OFResField()</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00511">DAPartDeriv::setNormStatePerturbVec()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, <a class="el" href="DAJacCondFdW_8C_source.html#l00115">DAJacCondFdW::setupJacCon()</a>, <a class="el" href="DAField_8C_source.html#l00126">DAField::stateVec2OFField()</a>, and <a class="el" href="DAIndex_8C_source.html#l01139">DAIndex::writeAdjointIndexing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAObjFuncMoment_8C_source.html#l00096">DAObjFuncMoment::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalPressure_8C_source.html#l00062">DAObjFuncTotalPressure::calcObjFunc()</a>, <a class="el" href="DAObjFuncMassFlowRate_8C_source.html#l00056">DAObjFuncMassFlowRate::calcObjFunc()</a>, <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00086">DAObjFuncWallHeatFlux::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalPressureRatio_8C_source.html#l00070">DAObjFuncTotalPressureRatio::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalTemperatureRatio_8C_source.html#l00065">DAObjFuncTotalTemperatureRatio::calcObjFunc()</a>, <a class="el" href="DAObjFuncForce_8C_source.html#l00120">DAObjFuncForce::calcObjFunc()</a>, <a class="el" href="DAIndex_8C_source.html#l00187">DAIndex::calcStateLocalIndexOffset()</a>, <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, <a class="el" href="DAField_8C_source.html#l01162">DAField::list2OFField()</a>, <a class="el" href="DAField_8C_source.html#l01030">DAField::ofField2List()</a>, <a class="el" href="DAField_8C_source.html#l00036">DAField::ofField2StateVec()</a>, <a class="el" href="DAField_8C_source.html#l00300">DAField::ofResField2ResVec()</a>, <a class="el" href="DAIndex_8C_source.html#l00993">DAIndex::printMatChars()</a>, <a class="el" href="DAField_8C_source.html#l00391">DAField::resVec2OFResField()</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00511">DAPartDeriv::setNormStatePerturbVec()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, <a class="el" href="DAJacCondFdW_8C_source.html#l00115">DAJacCondFdW::setupJacCon()</a>, <a class="el" href="DAField_8C_source.html#l00126">DAField::stateVec2OFField()</a>, and <a class="el" href="DAIndex_8C_source.html#l01266">DAIndex::writeAdjointIndexing()</a>.</p>
 
 </div>
 </div>
@@ -1309,7 +1520,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00116">116</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAObjFuncMoment_8C_source.html#l00096">DAObjFuncMoment::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalPressure_8C_source.html#l00062">DAObjFuncTotalPressure::calcObjFunc()</a>, <a class="el" href="DAObjFuncMassFlowRate_8C_source.html#l00056">DAObjFuncMassFlowRate::calcObjFunc()</a>, <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00086">DAObjFuncWallHeatFlux::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalPressureRatio_8C_source.html#l00070">DAObjFuncTotalPressureRatio::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalTemperatureRatio_8C_source.html#l00065">DAObjFuncTotalTemperatureRatio::calcObjFunc()</a>, <a class="el" href="DAObjFuncForce_8C_source.html#l00120">DAObjFuncForce::calcObjFunc()</a>, <a class="el" href="DAIndex_8C_source.html#l00187">DAIndex::calcStateLocalIndexOffset()</a>, <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, <a class="el" href="DAField_8C_source.html#l01162">DAField::list2OFField()</a>, <a class="el" href="DAField_8C_source.html#l01030">DAField::ofField2List()</a>, <a class="el" href="DAField_8C_source.html#l00036">DAField::ofField2StateVec()</a>, <a class="el" href="DAField_8C_source.html#l00300">DAField::ofResField2ResVec()</a>, <a class="el" href="DAIndex_8C_source.html#l00866">DAIndex::printMatChars()</a>, <a class="el" href="DAField_8C_source.html#l00391">DAField::resVec2OFResField()</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00511">DAPartDeriv::setNormStatePerturbVec()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, <a class="el" href="DAJacCondFdW_8C_source.html#l00115">DAJacCondFdW::setupJacCon()</a>, <a class="el" href="DAField_8C_source.html#l00126">DAField::stateVec2OFField()</a>, and <a class="el" href="DAIndex_8C_source.html#l01139">DAIndex::writeAdjointIndexing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAObjFuncMoment_8C_source.html#l00096">DAObjFuncMoment::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalPressure_8C_source.html#l00062">DAObjFuncTotalPressure::calcObjFunc()</a>, <a class="el" href="DAObjFuncMassFlowRate_8C_source.html#l00056">DAObjFuncMassFlowRate::calcObjFunc()</a>, <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00086">DAObjFuncWallHeatFlux::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalPressureRatio_8C_source.html#l00070">DAObjFuncTotalPressureRatio::calcObjFunc()</a>, <a class="el" href="DAObjFuncTotalTemperatureRatio_8C_source.html#l00065">DAObjFuncTotalTemperatureRatio::calcObjFunc()</a>, <a class="el" href="DAObjFuncForce_8C_source.html#l00120">DAObjFuncForce::calcObjFunc()</a>, <a class="el" href="DAIndex_8C_source.html#l00187">DAIndex::calcStateLocalIndexOffset()</a>, <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, <a class="el" href="DAField_8C_source.html#l01162">DAField::list2OFField()</a>, <a class="el" href="DAField_8C_source.html#l01030">DAField::ofField2List()</a>, <a class="el" href="DAField_8C_source.html#l00036">DAField::ofField2StateVec()</a>, <a class="el" href="DAField_8C_source.html#l00300">DAField::ofResField2ResVec()</a>, <a class="el" href="DAIndex_8C_source.html#l00993">DAIndex::printMatChars()</a>, <a class="el" href="DAField_8C_source.html#l00391">DAField::resVec2OFResField()</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00511">DAPartDeriv::setNormStatePerturbVec()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, <a class="el" href="DAJacCondFdW_8C_source.html#l00115">DAJacCondFdW::setupJacCon()</a>, <a class="el" href="DAField_8C_source.html#l00126">DAField::stateVec2OFField()</a>, and <a class="el" href="DAIndex_8C_source.html#l01266">DAIndex::writeAdjointIndexing()</a>.</p>
 
 </div>
 </div>
@@ -1348,7 +1559,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00125">125</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAJacCon_8C_source.html#l01575">DAJacCon::addBoundaryFaceConnections()</a>, <a class="el" href="DAIndex_8C_source.html#l00768">DAIndex::calcAdjStateID4GlobalAdjIdx()</a>, <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, and <a class="el" href="DAIndex_8C_source.html#l00866">DAIndex::printMatChars()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAJacCon_8C_source.html#l01575">DAJacCon::addBoundaryFaceConnections()</a>, <a class="el" href="DAIndex_8C_source.html#l00895">DAIndex::calcAdjStateID4GlobalAdjIdx()</a>, <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, and <a class="el" href="DAIndex_8C_source.html#l00993">DAIndex::printMatChars()</a>.</p>
 
 </div>
 </div>
@@ -1466,7 +1677,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00145">145</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAJacCondRdW_8C_source.html#l00710">DAJacCondRdW::allocateJacobianConnections()</a>, <a class="el" href="DAIndex_8C_source.html#l00768">DAIndex::calcAdjStateID4GlobalAdjIdx()</a>, <a class="el" href="DAIndex_8C_source.html#l00424">DAIndex::calcLocalIdxLists()</a>, <a class="el" href="DAJacCon_8C_source.html#l02081">DAJacCon::checkSpecialBCs()</a>, <a class="el" href="DAJacCon_8C_source.html#l01089">DAJacCon::combineStateBndCon()</a>, <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, <a class="el" href="DAJacCondFdW_8C_source.html#l00063">DAJacCondFdW::initializeJacCon()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00119">DAJacCondRdW::initializeJacCon()</a>, <a class="el" href="DAPartDerivdRdBC_8C_source.html#l00040">DAPartDerivdRdBC::initializePartDerivMat()</a>, <a class="el" href="DAPartDerivdRdAOA_8C_source.html#l00040">DAPartDerivdRdAOA::initializePartDerivMat()</a>, <a class="el" href="DAPartDerivdRdFFD_8C_source.html#l00040">DAPartDerivdRdFFD::initializePartDerivMat()</a>, <a class="el" href="DAPartDerivdRdW_8C_source.html#l00040">DAPartDerivdRdW::initializePartDerivMat()</a>, <a class="el" href="DAPartDerivdFdW_8C_source.html#l00040">DAPartDerivdFdW::initializePartDerivMat()</a>, <a class="el" href="DAPartDerivdRdACTD_8C_source.html#l00040">DAPartDerivdRdACTD::initializePartDerivMat()</a>, <a class="el" href="DAPartDerivdRdACTL_8C_source.html#l00040">DAPartDerivdRdACTL::initializePartDerivMat()</a>, <a class="el" href="DAPartDerivdRdACTP_8C_source.html#l00040">DAPartDerivdRdACTP::initializePartDerivMat()</a>, <a class="el" href="DAJacCondFdW_8C_source.html#l00047">DAJacCondFdW::initializePetscVecs()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00050">DAJacCondRdW::initializePetscVecs()</a>, <a class="el" href="DAColoring_8C_source.html#l00032">DAColoring::parallelD2Coloring()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00799">DAJacCondRdW::preallocateJacobianMatrix()</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00511">DAPartDeriv::setNormStatePerturbVec()</a>, <a class="el" href="DAJacCon_8C_source.html#l00682">DAJacCon::setupStateBoundaryCon()</a>, and <a class="el" href="DAJacCon_8C_source.html#l01325">DAJacCon::setupStateBoundaryConID()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAJacCondRdW_8C_source.html#l00710">DAJacCondRdW::allocateJacobianConnections()</a>, <a class="el" href="DAIndex_8C_source.html#l00895">DAIndex::calcAdjStateID4GlobalAdjIdx()</a>, <a class="el" href="DAIndex_8C_source.html#l00424">DAIndex::calcLocalIdxLists()</a>, <a class="el" href="DAJacCon_8C_source.html#l02081">DAJacCon::checkSpecialBCs()</a>, <a class="el" href="DAJacCon_8C_source.html#l01089">DAJacCon::combineStateBndCon()</a>, <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, <a class="el" href="DAJacCondFdW_8C_source.html#l00063">DAJacCondFdW::initializeJacCon()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00119">DAJacCondRdW::initializeJacCon()</a>, <a class="el" href="DAPartDerivdRdBC_8C_source.html#l00040">DAPartDerivdRdBC::initializePartDerivMat()</a>, <a class="el" href="DAPartDerivdRdAOA_8C_source.html#l00040">DAPartDerivdRdAOA::initializePartDerivMat()</a>, <a class="el" href="DAPartDerivdRdFFD_8C_source.html#l00040">DAPartDerivdRdFFD::initializePartDerivMat()</a>, <a class="el" href="DAPartDerivdRdW_8C_source.html#l00040">DAPartDerivdRdW::initializePartDerivMat()</a>, <a class="el" href="DAPartDerivdFdW_8C_source.html#l00040">DAPartDerivdFdW::initializePartDerivMat()</a>, <a class="el" href="DAPartDerivdRdACTD_8C_source.html#l00040">DAPartDerivdRdACTD::initializePartDerivMat()</a>, <a class="el" href="DAPartDerivdRdACTL_8C_source.html#l00040">DAPartDerivdRdACTL::initializePartDerivMat()</a>, <a class="el" href="DAPartDerivdRdACTP_8C_source.html#l00040">DAPartDerivdRdACTP::initializePartDerivMat()</a>, <a class="el" href="DAJacCondFdW_8C_source.html#l00047">DAJacCondFdW::initializePetscVecs()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00050">DAJacCondRdW::initializePetscVecs()</a>, <a class="el" href="DAColoring_8C_source.html#l00032">DAColoring::parallelD2Coloring()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00799">DAJacCondRdW::preallocateJacobianMatrix()</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00511">DAPartDeriv::setNormStatePerturbVec()</a>, <a class="el" href="DAJacCon_8C_source.html#l00682">DAJacCon::setupStateBoundaryCon()</a>, and <a class="el" href="DAJacCon_8C_source.html#l01325">DAJacCon::setupStateBoundaryConID()</a>.</p>
 
 </div>
 </div>
@@ -1486,7 +1697,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00148">148</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00768">DAIndex::calcAdjStateID4GlobalAdjIdx()</a>, <a class="el" href="DAJacCon_8C_source.html#l00159">DAJacCon::createConnectionMat()</a>, <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, <a class="el" href="DAColoring_8C_source.html#l00032">DAColoring::parallelD2Coloring()</a>, and <a class="el" href="DAJacCon_8C_source.html#l01325">DAJacCon::setupStateBoundaryConID()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00895">DAIndex::calcAdjStateID4GlobalAdjIdx()</a>, <a class="el" href="DAJacCon_8C_source.html#l00159">DAJacCon::createConnectionMat()</a>, <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, <a class="el" href="DAColoring_8C_source.html#l00032">DAColoring::parallelD2Coloring()</a>, and <a class="el" href="DAJacCon_8C_source.html#l01325">DAJacCon::setupStateBoundaryConID()</a>.</p>
 
 </div>
 </div>
@@ -1622,7 +1833,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00168">168</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, and <a class="el" href="DAIndex_8C_source.html#l00743">DAIndex::getGlobalCellIndex()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, and <a class="el" href="DAIndex_8C_source.html#l00765">DAIndex::getGlobalCellIndex()</a>.</p>
 
 </div>
 </div>
@@ -1640,7 +1851,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00169">169</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, and <a class="el" href="DAIndex_8C_source.html#l00817">DAIndex::getGlobalCellVectorIndex()</a>.</p>
 
 </div>
 </div>
@@ -1658,7 +1869,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00170">170</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>, and <a class="el" href="DAIndex_8C_source.html#l00869">DAIndex::getGlobalFaceIndex()</a>.</p>
 
 </div>
 </div>
@@ -1714,6 +1925,54 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a57078ac3862648f836e8745821719e7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57078ac3862648f836e8745821719e7c">&#9670;&nbsp;</a></span>globalVolScalarFieldNumbering</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">globalIndex globalVolScalarFieldNumbering</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00174">174</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
+
+</div>
+</div>
+<a id="a78b87ab5a7fea9579522f9fd3370196c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78b87ab5a7fea9579522f9fd3370196c">&#9670;&nbsp;</a></span>globalVolVectorFieldNumbering</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">globalIndex globalVolVectorFieldNumbering</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00175">175</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
+
+</div>
+</div>
+<a id="a6179057c8115f3d5d2f2ad9c9d2b875d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6179057c8115f3d5d2f2ad9c9d2b875d">&#9670;&nbsp;</a></span>globalSurfaceScalarFieldNumbering</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">globalIndex globalSurfaceScalarFieldNumbering</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00176">176</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
+
+</div>
+</div>
 <a id="a42948a5492fb8b73b845fbe235505dde"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a42948a5492fb8b73b845fbe235505dde">&#9670;&nbsp;</a></span>pointProcAddressing</h2>
 
@@ -1728,7 +1987,7 @@ Here is the caller graph for this function:</div>
 
 <p>a list to map the point index from decomposed domains to the original un-decomposed domain </p>
 
-<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00177">177</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00180">180</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>.</p>
 
@@ -1748,7 +2007,7 @@ Here is the caller graph for this function:</div>
 
 <p>number of points for the un-decomposed domain </p>
 
-<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00180">180</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00183">183</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>.</p>
 
@@ -1768,7 +2027,7 @@ Here is the caller graph for this function:</div>
 
 <p>for a given face index, return whether this face is a coupled boundary face </p>
 
-<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00183">183</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00186">186</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAJacCon_8C_source.html#l01575">DAJacCon::addBoundaryFaceConnections()</a>, and <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>.</p>
 
@@ -1788,7 +2047,7 @@ Here is the caller graph for this function:</div>
 
 <p>given a local adjoint state index, return its state name </p>
 
-<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00186">186</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00189">189</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>.</p>
 
@@ -1808,7 +2067,7 @@ Here is the caller graph for this function:</div>
 
 <p>given a local adjoint state index, return its cell/face index </p>
 
-<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00189">189</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00192">192</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00017">DAIndex::DAIndex()</a>.</p>
 
@@ -1828,7 +2087,7 @@ Here is the caller graph for this function:</div>
 
 <p>owner cell of a given face </p>
 
-<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00192">192</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00195">195</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00187">DAIndex::calcStateLocalIndexOffset()</a>, and <a class="el" href="DAIndex_8C_source.html#l00499">DAIndex::getLocalAdjointStateIndex()</a>.</p>
 
@@ -1848,7 +2107,7 @@ Here is the caller graph for this function:</div>
 
 <p>the accumulated phi indexing offset for cell-by-cell indexing </p>
 
-<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00195">195</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00198">198</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00187">DAIndex::calcStateLocalIndexOffset()</a>, and <a class="el" href="DAIndex_8C_source.html#l00499">DAIndex::getLocalAdjointStateIndex()</a>.</p>
 
@@ -1868,7 +2127,7 @@ Here is the caller graph for this function:</div>
 
 <p>phi local indexing offset for cell-by-cell indexing </p>
 
-<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00198">198</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAIndex_8H_source.html#l00201">201</a> of file <a class="el" href="DAIndex_8H_source.html">DAIndex.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAIndex_8C_source.html#l00187">DAIndex::calcStateLocalIndexOffset()</a>, and <a class="el" href="DAIndex_8C_source.html#l00499">DAIndex::getLocalAdjointStateIndex()</a>.</p>
 

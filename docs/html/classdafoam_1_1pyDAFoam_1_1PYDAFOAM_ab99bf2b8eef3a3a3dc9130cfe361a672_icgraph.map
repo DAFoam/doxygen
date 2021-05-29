@@ -1,6 +1,7 @@
 <map id="mapVector" name="mapVector">
-<area shape="rect" id="node2" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a66b2fc5e7e096cac91755849fbf6de76" title="__call__" alt="" coords="181,5,251,32"/>
-<area shape="rect" id="node3" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6850fa33c4c3d8412a9d9297146b21be" title="setSurfaceCoordinates" alt="" coords="139,56,293,83"/>
-<area shape="rect" id="node4" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#aaeb1841365e3ac6b6903bab3314e8c76" title="updateVolumePoints" alt="" coords="341,81,484,108"/>
-<area shape="rect" id="node5" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8" title="solveAdjoint" alt="" coords="169,157,263,184"/>
+<area shape="rect" id="node2" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a66b2fc5e7e096cac91755849fbf6de76" title="__call__" alt="" coords="194,5,265,32"/>
+<area shape="rect" id="node3" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6850fa33c4c3d8412a9d9297146b21be" title="setSurfaceCoordinates" alt="" coords="152,56,307,83"/>
+<area shape="rect" id="node4" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#aaeb1841365e3ac6b6903bab3314e8c76" title="updateVolumePoints" alt="" coords="368,95,511,121"/>
+<area shape="rect" id="node5" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8" title="solveAdjoint" alt="" coords="393,171,486,197"/>
+<area shape="rect" id="node6" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab38312f7c1f6cebb0e88ccd0019efd29" title="writeSurfaceSensitivityMap" alt="" coords="139,208,320,235"/>
 </map>

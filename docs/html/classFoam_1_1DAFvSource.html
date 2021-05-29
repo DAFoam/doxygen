@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.3</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.5</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -110,6 +110,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3fa0b2668e6daf1d45bee2783e52cd56"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAFvSource.html#a3fa0b2668e6daf1d45bee2783e52cd56">calcFvSource</a> (volVectorField &amp;<a class="el" href="createRefsSimple_8H.html#a9a0c1fa985c6e79bb4cdc55fa06b9b50">fvSource</a>)</td></tr>
 <tr class="memdesc:a3fa0b2668e6daf1d45bee2783e52cd56"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the FvSource term  <a href="#a3fa0b2668e6daf1d45bee2783e52cd56">More...</a><br /></td></tr>
 <tr class="separator:a3fa0b2668e6daf1d45bee2783e52cd56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f01a7222f3d6f123ca515a80dd2e241"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAFvSource.html#a2f01a7222f3d6f123ca515a80dd2e241">setActuatorDVs</a> (const word diskName, const label dvI, const scalar val)</td></tr>
+<tr class="memdesc:a2f01a7222f3d6f123ca515a80dd2e241"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a new value to the actuator disk design variable  <a href="#a2f01a7222f3d6f123ca515a80dd2e241">More...</a><br /></td></tr>
+<tr class="separator:a2f01a7222f3d6f123ca515a80dd2e241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1532c8b61b2428d6ad26c91394d1ea77"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAFvSource.html#a1532c8b61b2428d6ad26c91394d1ea77">getActuatorDVs</a> (const word diskName, const label dvI)</td></tr>
+<tr class="memdesc:a1532c8b61b2428d6ad26c91394d1ea77"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the value from the actuator disk design variable  <a href="#a1532c8b61b2428d6ad26c91394d1ea77">More...</a><br /></td></tr>
+<tr class="separator:a1532c8b61b2428d6ad26c91394d1ea77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af51073f3ced9d30c37e437d7496a8da3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAFvSource.html#af51073f3ced9d30c37e437d7496a8da3">updateFvSource</a> ()</td></tr>
+<tr class="memdesc:af51073f3ced9d30c37e437d7496a8da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate fvSource based on the latest actuatorDVs  <a href="#af51073f3ced9d30c37e437d7496a8da3">More...</a><br /></td></tr>
+<tr class="separator:af51073f3ced9d30c37e437d7496a8da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c11de10a86223fc289db966ae7ea428"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAFvSource.html#a3c11de10a86223fc289db966ae7ea428">syncDAOptionToActuatorDVs</a> ()</td></tr>
+<tr class="memdesc:a3c11de10a86223fc289db966ae7ea428"><td class="mdescLeft">&#160;</td><td class="mdescRight">synchronize the values in <a class="el" href="classFoam_1_1DAOption.html">DAOption</a> and actuatorDiskDVs_  <a href="#a3c11de10a86223fc289db966ae7ea428">More...</a><br /></td></tr>
+<tr class="separator:a3c11de10a86223fc289db966ae7ea428"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c658e15d7e8f5819cdc0eedbbbeb85e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAFvSource.html#a4c658e15d7e8f5819cdc0eedbbbeb85e">writeData</a> (Ostream &amp;os) const</td></tr>
 <tr class="memdesc:a4c658e15d7e8f5819cdc0eedbbbeb85e"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual function for regIOobject  <a href="#a4c658e15d7e8f5819cdc0eedbbbeb85e">More...</a><br /></td></tr>
 <tr class="separator:a4c658e15d7e8f5819cdc0eedbbbeb85e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,6 +148,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a7d024d56257a6d34c00ff904bc9d1072"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFoam_1_1DAIndex.html">DAIndex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAFvSource.html#a7d024d56257a6d34c00ff904bc9d1072">daIndex_</a></td></tr>
 <tr class="memdesc:a7d024d56257a6d34c00ff904bc9d1072"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classFoam_1_1DAIndex.html">DAIndex</a> object.  <a href="#a7d024d56257a6d34c00ff904bc9d1072">More...</a><br /></td></tr>
 <tr class="separator:a7d024d56257a6d34c00ff904bc9d1072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a656729aa7e051dcbaa5d8781895d9cb3"><td class="memItemLeft" align="right" valign="top">HashTable&lt; List&lt; scalar &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAFvSource.html#a656729aa7e051dcbaa5d8781895d9cb3">actuatorDiskDVs_</a></td></tr>
+<tr class="memdesc:a656729aa7e051dcbaa5d8781895d9cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">the list of design variables for all the actuator disks  <a href="#a656729aa7e051dcbaa5d8781895d9cb3">More...</a><br /></td></tr>
+<tr class="separator:a656729aa7e051dcbaa5d8781895d9cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -212,16 +227,15 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DAFvSource_8H_source.html#l00100">100</a> of file <a class="el" href="DAFvSource_8H_source.html">DAFvSource.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAFvSource_8H_source.html#l00101">101</a> of file <a class="el" href="DAFvSource_8H_source.html">DAFvSource.H</a>.</p>
 
-<p class="reference">References <a class="el" href="DAFvSource_8C_source.html#l00090">DAFvSource::calcFvSource()</a>, <a class="el" href="createRefsPiso_8H_source.html#l00013">fvSource</a>, and <a class="el" href="DAFvSource_8C_source.html#l00104">DAFvSource::writeData()</a>.</p>
+<p class="reference">References <a class="el" href="DAFvSource_8C_source.html#l00090">DAFvSource::calcFvSource()</a>, and <a class="el" href="createRefsPiso_8H_source.html#l00013">fvSource</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAFvSource_a40967f2927ac37eedf465bbc5e312822_cgraph.png" border="0" usemap="#classFoam_1_1DAFvSource_a40967f2927ac37eedf465bbc5e312822_cgraph" alt=""/></div>
 <map name="classFoam_1_1DAFvSource_a40967f2927ac37eedf465bbc5e312822_cgraph" id="classFoam_1_1DAFvSource_a40967f2927ac37eedf465bbc5e312822_cgraph">
 <area shape="rect" id="node2" href="classFoam_1_1DAFvSource.html#a3fa0b2668e6daf1d45bee2783e52cd56" title="compute the FvSource term " alt="" coords="159,5,261,32"/>
-<area shape="rect" id="node3" href="classFoam_1_1DAFvSource.html#a4c658e15d7e8f5819cdc0eedbbbeb85e" title="virtual function for regIOobject " alt="" coords="171,56,249,83"/>
 </map>
 </div>
 
@@ -405,9 +419,9 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAFvSource_8C_source.html#l00090">90</a> of file <a class="el" href="DAFvSource_8C_source.html">DAFvSource.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAFvSource_8H_source.html#l00049">DAFvSource::modelType_</a>.</p>
+<p class="reference">References <a class="el" href="DAFvSource_8H_source.html#l00047">DAFvSource::modelType_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualPisoFoam_8C_source.html#l00062">DAResidualPisoFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">DAResidualSimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleFoam_8C_source.html#l00091">DAResidualRhoSimpleFoam::calcResiduals()</a>, and <a class="el" href="DAFvSource_8H_source.html#l00100">DAFvSource::~DAFvSource()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualPisoFoam_8C_source.html#l00062">DAResidualPisoFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">DAResidualSimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleFoam_8C_source.html#l00091">DAResidualRhoSimpleFoam::calcResiduals()</a>, <a class="el" href="DAFvSource_8H_source.html#l00126">DAFvSource::updateFvSource()</a>, and <a class="el" href="DAFvSource_8H_source.html#l00101">DAFvSource::~DAFvSource()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -416,7 +430,214 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node2" href="classFoam_1_1DAResidualPisoFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="163,5,355,47"/>
 <area shape="rect" id="node3" href="classFoam_1_1DAResidualSimpleFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="156,71,363,112"/>
 <area shape="rect" id="node4" href="classFoam_1_1DAResidualRhoSimpleFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="161,136,358,177"/>
-<area shape="rect" id="node5" href="classFoam_1_1DAFvSource.html#a40967f2927ac37eedf465bbc5e312822" title="~DAFvSource" alt="" coords="207,202,312,229"/>
+<area shape="rect" id="node5" href="classFoam_1_1DAFvSource.html#af51073f3ced9d30c37e437d7496a8da3" title="calculate fvSource based on the latest actuatorDVs " alt="" coords="201,202,318,229"/>
+<area shape="rect" id="node6" href="classFoam_1_1DAFvSource.html#a40967f2927ac37eedf465bbc5e312822" title="~DAFvSource" alt="" coords="207,253,312,279"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2f01a7222f3d6f123ca515a80dd2e241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f01a7222f3d6f123ca515a80dd2e241">&#9670;&nbsp;</a></span>setActuatorDVs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setActuatorDVs </td>
+          <td>(</td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>diskName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const label&#160;</td>
+          <td class="paramname"><em>dvI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const scalar&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set a new value to the actuator disk design variable </p>
+
+<p class="definition">Definition at line <a class="el" href="DAFvSource_8H_source.html#l00109">109</a> of file <a class="el" href="DAFvSource_8H_source.html">DAFvSource.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l03293">DASolver::calcdFdACTAD()</a>, and <a class="el" href="DASolver_8C_source.html#l03462">DASolver::calcdRdActTPsiAD()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAFvSource_a2f01a7222f3d6f123ca515a80dd2e241_icgraph.png" border="0" usemap="#classFoam_1_1DAFvSource_a2f01a7222f3d6f123ca515a80dd2e241_icgraph" alt=""/></div>
+<map name="classFoam_1_1DAFvSource_a2f01a7222f3d6f123ca515a80dd2e241_icgraph" id="classFoam_1_1DAFvSource_a2f01a7222f3d6f123ca515a80dd2e241_icgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DASolver.html#a8a6204fd550fe7a4cefd698679d80177" title="compute dFdACT AD " alt="" coords="168,5,387,32"/>
+<area shape="rect" id="node3" href="classFoam_1_1DASolver.html#a8498afa4f0c54eb78fc381c08b260fb0" title="Foam::DASolver::calcdRdAct\lTPsiAD" alt="" coords="180,57,375,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1532c8b61b2428d6ad26c91394d1ea77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1532c8b61b2428d6ad26c91394d1ea77">&#9670;&nbsp;</a></span>getActuatorDVs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scalar getActuatorDVs </td>
+          <td>(</td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>diskName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const label&#160;</td>
+          <td class="paramname"><em>dvI</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get the value from the actuator disk design variable </p>
+
+<p class="definition">Definition at line <a class="el" href="DAFvSource_8H_source.html#l00118">118</a> of file <a class="el" href="DAFvSource_8H_source.html">DAFvSource.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l03293">DASolver::calcdFdACTAD()</a>, and <a class="el" href="DASolver_8C_source.html#l03462">DASolver::calcdRdActTPsiAD()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAFvSource_a1532c8b61b2428d6ad26c91394d1ea77_icgraph.png" border="0" usemap="#classFoam_1_1DAFvSource_a1532c8b61b2428d6ad26c91394d1ea77_icgraph" alt=""/></div>
+<map name="classFoam_1_1DAFvSource_a1532c8b61b2428d6ad26c91394d1ea77_icgraph" id="classFoam_1_1DAFvSource_a1532c8b61b2428d6ad26c91394d1ea77_icgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DASolver.html#a8a6204fd550fe7a4cefd698679d80177" title="compute dFdACT AD " alt="" coords="168,5,387,32"/>
+<area shape="rect" id="node3" href="classFoam_1_1DASolver.html#a8498afa4f0c54eb78fc381c08b260fb0" title="Foam::DASolver::calcdRdAct\lTPsiAD" alt="" coords="180,57,375,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af51073f3ced9d30c37e437d7496a8da3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af51073f3ced9d30c37e437d7496a8da3">&#9670;&nbsp;</a></span>updateFvSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateFvSource </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>calculate fvSource based on the latest actuatorDVs </p>
+
+<p class="definition">Definition at line <a class="el" href="DAFvSource_8H_source.html#l00126">126</a> of file <a class="el" href="DAFvSource_8H_source.html">DAFvSource.H</a>.</p>
+
+<p class="reference">References <a class="el" href="DAFvSource_8C_source.html#l00090">DAFvSource::calcFvSource()</a>, <a class="el" href="DAFvSource_8C_source.html#l00113">DAFvSource::syncDAOptionToActuatorDVs()</a>, and <a class="el" href="DAFvSource_8C_source.html#l00103">DAFvSource::writeData()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l03293">DASolver::calcdFdACTAD()</a>, and <a class="el" href="DAPartDerivdFdACTD_8C_source.html#l00070">DAPartDerivdFdACTD::calcPartDerivMat()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAFvSource_af51073f3ced9d30c37e437d7496a8da3_cgraph.png" border="0" usemap="#classFoam_1_1DAFvSource_af51073f3ced9d30c37e437d7496a8da3_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAFvSource_af51073f3ced9d30c37e437d7496a8da3_cgraph" id="classFoam_1_1DAFvSource_af51073f3ced9d30c37e437d7496a8da3_cgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAFvSource.html#a3fa0b2668e6daf1d45bee2783e52cd56" title="compute the FvSource term " alt="" coords="218,5,321,32"/>
+<area shape="rect" id="node3" href="classFoam_1_1DAFvSource.html#a3c11de10a86223fc289db966ae7ea428" title="synchronize the values in DAOption and actuatorDiskDVs_ " alt="" coords="171,56,368,83"/>
+<area shape="rect" id="node4" href="classFoam_1_1DAFvSource.html#a4c658e15d7e8f5819cdc0eedbbbeb85e" title="virtual function for regIOobject " alt="" coords="230,107,309,133"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAFvSource_af51073f3ced9d30c37e437d7496a8da3_icgraph.png" border="0" usemap="#classFoam_1_1DAFvSource_af51073f3ced9d30c37e437d7496a8da3_icgraph" alt=""/></div>
+<map name="classFoam_1_1DAFvSource_af51073f3ced9d30c37e437d7496a8da3_icgraph" id="classFoam_1_1DAFvSource_af51073f3ced9d30c37e437d7496a8da3_icgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DASolver.html#a8a6204fd550fe7a4cefd698679d80177" title="compute dFdACT AD " alt="" coords="171,5,389,32"/>
+<area shape="rect" id="node3" href="classFoam_1_1DAPartDerivdFdACTD.html#a3f0269fc7ba18e5fbfe29884960e7402" title="compute the partial derivative matrix " alt="" coords="182,57,378,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3c11de10a86223fc289db966ae7ea428"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c11de10a86223fc289db966ae7ea428">&#9670;&nbsp;</a></span>syncDAOptionToActuatorDVs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void syncDAOptionToActuatorDVs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>synchronize the values in <a class="el" href="classFoam_1_1DAOption.html">DAOption</a> and actuatorDiskDVs_ </p>
+
+<p class="definition">Definition at line <a class="el" href="DAFvSource_8C_source.html#l00113">113</a> of file <a class="el" href="DAFvSource_8C_source.html">DAFvSource.C</a>.</p>
+
+<p class="reference">References <a class="el" href="DAFvSource_8H_source.html#l00062">DAFvSource::actuatorDiskDVs_</a>, <a class="el" href="DAFvSource_8H_source.html#l00053">DAFvSource::daOption_</a>, and <a class="el" href="DAOption_8H_source.html#l00056">DAOption::getAllOptions()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DAPartDerivdFdACTD_8C_source.html#l00070">DAPartDerivdFdACTD::calcPartDerivMat()</a>, <a class="el" href="DAPartDerivdRdACTD_8C_source.html#l00069">DAPartDerivdRdACTD::calcPartDerivMat()</a>, <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00019">DAFvSourceActuatorDisk::DAFvSourceActuatorDisk()</a>, <a class="el" href="DASolver_8H_source.html#l00618">DASolver::syncDAOptionToActuatorDVs()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02999">PYDAFOAM::updateDAOption()</a>, and <a class="el" href="DAFvSource_8H_source.html#l00126">DAFvSource::updateFvSource()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAFvSource_a3c11de10a86223fc289db966ae7ea428_cgraph.png" border="0" usemap="#classFoam_1_1DAFvSource_a3c11de10a86223fc289db966ae7ea428_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAFvSource_a3c11de10a86223fc289db966ae7ea428_cgraph" id="classFoam_1_1DAFvSource_a3c11de10a86223fc289db966ae7ea428_cgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAOption.html#aac22cd38f3d4adc69a4e35329c6abf92" title="return a reference of allOptions_ dictionary " alt="" coords="251,5,457,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAFvSource_a3c11de10a86223fc289db966ae7ea428_icgraph.png" border="0" usemap="#classFoam_1_1DAFvSource_a3c11de10a86223fc289db966ae7ea428_icgraph" alt=""/></div>
+<map name="classFoam_1_1DAFvSource_a3c11de10a86223fc289db966ae7ea428_icgraph" id="classFoam_1_1DAFvSource_a3c11de10a86223fc289db966ae7ea428_icgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAPartDerivdFdACTD.html#a3f0269fc7ba18e5fbfe29884960e7402" title="compute the partial derivative matrix " alt="" coords="541,150,737,192"/>
+<area shape="rect" id="node3" href="classFoam_1_1DAPartDerivdRdACTD.html#a3f0269fc7ba18e5fbfe29884960e7402" title="compute the partial derivative matrix " alt="" coords="257,42,456,84"/>
+<area shape="rect" id="node4" href="classFoam_1_1DAFvSourceActuatorDisk.html#a07a01584d0226f1149c3d78f02a97b19" title="Foam::DAFvSourceActuator\lDisk::DAFvSourceActuatorDisk" alt="" coords="253,108,461,149"/>
+<area shape="rect" id="node5" href="classFoam_1_1DASolver.html#a3c11de10a86223fc289db966ae7ea428" title="synchronize the values in DAOption and actuatorDiskDVs_ " alt="" coords="251,225,463,266"/>
+<area shape="rect" id="node6" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a5134e15b0ef2c043d575c5496ea4b298" title="dafoam.pyDAFoam.PYDAFOAM.update\lDAOption" alt="" coords="511,241,768,282"/>
+<area shape="rect" id="node7" href="classFoam_1_1DAFvSource.html#af51073f3ced9d30c37e437d7496a8da3" title="calculate fvSource based on the latest actuatorDVs " alt="" coords="298,174,415,200"/>
 </map>
 </div>
 
@@ -440,15 +661,15 @@ Here is the caller graph for this function:</div>
 
 <p>virtual function for regIOobject </p>
 
-<p class="definition">Definition at line <a class="el" href="DAFvSource_8C_source.html#l00104">104</a> of file <a class="el" href="DAFvSource_8C_source.html">DAFvSource.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAFvSource_8C_source.html#l00103">103</a> of file <a class="el" href="DAFvSource_8C_source.html">DAFvSource.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAFvSource_8H_source.html#l00100">DAFvSource::~DAFvSource()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAFvSource_8H_source.html#l00126">DAFvSource::updateFvSource()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAFvSource_a4c658e15d7e8f5819cdc0eedbbbeb85e_icgraph.png" border="0" usemap="#classFoam_1_1DAFvSource_a4c658e15d7e8f5819cdc0eedbbbeb85e_icgraph" alt=""/></div>
 <map name="classFoam_1_1DAFvSource_a4c658e15d7e8f5819cdc0eedbbbeb85e_icgraph" id="classFoam_1_1DAFvSource_a4c658e15d7e8f5819cdc0eedbbbeb85e_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DAFvSource.html#a40967f2927ac37eedf465bbc5e312822" title="~DAFvSource" alt="" coords="132,5,237,32"/>
+<area shape="rect" id="node2" href="classFoam_1_1DAFvSource.html#af51073f3ced9d30c37e437d7496a8da3" title="calculate fvSource based on the latest actuatorDVs " alt="" coords="132,5,249,32"/>
 </map>
 </div>
 
@@ -477,7 +698,7 @@ Here is the caller graph for this function:</div>
 
 <p>model name </p>
 
-<p class="definition">Definition at line <a class="el" href="DAFvSource_8H_source.html#l00049">49</a> of file <a class="el" href="DAFvSource_8H_source.html">DAFvSource.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAFvSource_8H_source.html#l00047">47</a> of file <a class="el" href="DAFvSource_8H_source.html">DAFvSource.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAFvSource_8C_source.html#l00090">DAFvSource::calcFvSource()</a>.</p>
 
@@ -505,9 +726,9 @@ Here is the caller graph for this function:</div>
 
 <p>fvMesh </p>
 
-<p class="definition">Definition at line <a class="el" href="DAFvSource_8H_source.html#l00052">52</a> of file <a class="el" href="DAFvSource_8H_source.html">DAFvSource.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAFvSource_8H_source.html#l00050">50</a> of file <a class="el" href="DAFvSource_8H_source.html">DAFvSource.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAFvSourceActuatorLine_8C_source.html#l00031">DAFvSourceActuatorLine::calcFvSource()</a>, <a class="el" href="DAFvSourceActuatorPoint_8C_source.html#l00031">DAFvSourceActuatorPoint::calcFvSource()</a>, <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00033">DAFvSourceActuatorDisk::calcFvSource()</a>, and <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00347">DAFvSourceActuatorDisk::calcFvSourceCellIndices()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAFvSourceActuatorLine_8C_source.html#l00031">DAFvSourceActuatorLine::calcFvSource()</a>, <a class="el" href="DAFvSourceActuatorPoint_8C_source.html#l00031">DAFvSourceActuatorPoint::calcFvSource()</a>, <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00039">DAFvSourceActuatorDisk::calcFvSource()</a>, and <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00448">DAFvSourceActuatorDisk::calcFvSourceCellIndices()</a>.</p>
 
 </div>
 </div>
@@ -533,9 +754,9 @@ Here is the caller graph for this function:</div>
 
 <p><a class="el" href="classFoam_1_1DAOption.html">DAOption</a> object. </p>
 
-<p class="definition">Definition at line <a class="el" href="DAFvSource_8H_source.html#l00055">55</a> of file <a class="el" href="DAFvSource_8H_source.html">DAFvSource.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAFvSource_8H_source.html#l00053">53</a> of file <a class="el" href="DAFvSource_8H_source.html">DAFvSource.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAFvSourceUniformPressureGradient_8C_source.html#l00030">DAFvSourceUniformPressureGradient::calcFvSource()</a>, <a class="el" href="DAFvSourceActuatorPoint_8C_source.html#l00031">DAFvSourceActuatorPoint::calcFvSource()</a>, <a class="el" href="DAFvSourceActuatorLine_8C_source.html#l00031">DAFvSourceActuatorLine::calcFvSource()</a>, <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00033">DAFvSourceActuatorDisk::calcFvSource()</a>, and <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00347">DAFvSourceActuatorDisk::calcFvSourceCellIndices()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAFvSourceUniformPressureGradient_8C_source.html#l00030">DAFvSourceUniformPressureGradient::calcFvSource()</a>, <a class="el" href="DAFvSourceActuatorPoint_8C_source.html#l00031">DAFvSourceActuatorPoint::calcFvSource()</a>, <a class="el" href="DAFvSourceActuatorLine_8C_source.html#l00031">DAFvSourceActuatorLine::calcFvSource()</a>, <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00039">DAFvSourceActuatorDisk::calcFvSource()</a>, <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00448">DAFvSourceActuatorDisk::calcFvSourceCellIndices()</a>, and <a class="el" href="DAFvSource_8C_source.html#l00113">DAFvSource::syncDAOptionToActuatorDVs()</a>.</p>
 
 </div>
 </div>
@@ -561,7 +782,7 @@ Here is the caller graph for this function:</div>
 
 <p><a class="el" href="classFoam_1_1DAModel.html">DAModel</a> object. </p>
 
-<p class="definition">Definition at line <a class="el" href="DAFvSource_8H_source.html#l00058">58</a> of file <a class="el" href="DAFvSource_8H_source.html">DAFvSource.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAFvSource_8H_source.html#l00056">56</a> of file <a class="el" href="DAFvSource_8H_source.html">DAFvSource.H</a>.</p>
 
 </div>
 </div>
@@ -587,7 +808,35 @@ Here is the caller graph for this function:</div>
 
 <p><a class="el" href="classFoam_1_1DAIndex.html">DAIndex</a> object. </p>
 
-<p class="definition">Definition at line <a class="el" href="DAFvSource_8H_source.html#l00061">61</a> of file <a class="el" href="DAFvSource_8H_source.html">DAFvSource.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAFvSource_8H_source.html#l00059">59</a> of file <a class="el" href="DAFvSource_8H_source.html">DAFvSource.H</a>.</p>
+
+</div>
+</div>
+<a id="a656729aa7e051dcbaa5d8781895d9cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a656729aa7e051dcbaa5d8781895d9cb3">&#9670;&nbsp;</a></span>actuatorDiskDVs_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HashTable&lt;List&lt;scalar&gt; &gt; actuatorDiskDVs_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>the list of design variables for all the actuator disks </p>
+
+<p class="definition">Definition at line <a class="el" href="DAFvSource_8H_source.html#l00062">62</a> of file <a class="el" href="DAFvSource_8H_source.html">DAFvSource.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DAFvSourceActuatorDisk_8C_source.html#l00039">DAFvSourceActuatorDisk::calcFvSource()</a>, and <a class="el" href="DAFvSource_8C_source.html#l00113">DAFvSource::syncDAOptionToActuatorDVs()</a>.</p>
 
 </div>
 </div>

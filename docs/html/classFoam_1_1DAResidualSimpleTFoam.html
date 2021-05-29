@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.3</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.5</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -127,6 +127,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:adbe6dc09beec02c11b70ff3ecc0d100e"><td class="memItemLeft" align="right" valign="top">volScalarField &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAResidualSimpleTFoam.html#adbe6dc09beec02c11b70ff3ecc0d100e">alphaPorosity_</a></td></tr>
+<tr class="memdesc:adbe6dc09beec02c11b70ff3ecc0d100e"><td class="mdescLeft">&#160;</td><td class="mdescRight">alpha porosity term  <a href="#adbe6dc09beec02c11b70ff3ecc0d100e">More...</a><br /></td></tr>
+<tr class="separator:adbe6dc09beec02c11b70ff3ecc0d100e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac059867c372a4cabe10bced3632adebf"><td class="memItemLeft" align="right" valign="top">volScalarField &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAResidualSimpleTFoam.html#ac059867c372a4cabe10bced3632adebf">alphat_</a></td></tr>
 <tr class="separator:ac059867c372a4cabe10bced3632adebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af522d259aaff28ef30fdbf68d498e8c7"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAResidualSimpleTFoam.html#af522d259aaff28ef30fdbf68d498e8c7">Pr_</a> = -9999.0</td></tr>
@@ -237,7 +240,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00019">19</a> of file <a class="el" href="DAResidualSimpleTFoam_8C_source.html">DAResidualSimpleTFoam.C</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsPiso_8H_source.html#l00004">mesh</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00053">DAResidualSimpleTFoam::Pr_</a>, and <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00055">DAResidualSimpleTFoam::Prt_</a>.</p>
+<p class="reference">References <a class="el" href="createRefsPiso_8H_source.html#l00004">mesh</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00056">DAResidualSimpleTFoam::Pr_</a>, and <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00058">DAResidualSimpleTFoam::Prt_</a>.</p>
 
 </div>
 </div>
@@ -264,9 +267,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00076">76</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00079">79</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
 
-<p class="reference">References <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00070">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00052">DAResidualSimpleTFoam::clear()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00180">DAResidualSimpleTFoam::correctBoundaryConditions()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00169">DAResidualSimpleTFoam::updateIntermediateVariables()</a>.</p>
+<p class="reference">References <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00054">DAResidualSimpleTFoam::clear()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00183">DAResidualSimpleTFoam::correctBoundaryConditions()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00172">DAResidualSimpleTFoam::updateIntermediateVariables()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -327,11 +330,11 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DAResidual.html#a5eeb94d22b8366d1b68d0614384802fe">DAResidual</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00052">52</a> of file <a class="el" href="DAResidualSimpleTFoam_8C_source.html">DAResidualSimpleTFoam.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00054">54</a> of file <a class="el" href="DAResidualSimpleTFoam_8C_source.html">DAResidualSimpleTFoam.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00047">DAResidualSimpleTFoam::phiRes_</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00048">DAResidualSimpleTFoam::phiResPartDeriv_</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00039">DAResidualSimpleTFoam::pRes_</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00040">DAResidualSimpleTFoam::pResPartDeriv_</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00043">DAResidualSimpleTFoam::TRes_</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00044">DAResidualSimpleTFoam::TResPartDeriv_</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00035">DAResidualSimpleTFoam::URes_</a>, and <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00036">DAResidualSimpleTFoam::UResPartDeriv_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00076">DAResidualSimpleTFoam::~DAResidualSimpleTFoam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00079">DAResidualSimpleTFoam::~DAResidualSimpleTFoam()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -371,11 +374,11 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DAResidual.html#a5f3483c6db30769568050588ede0ca87">DAResidual</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00070">70</a> of file <a class="el" href="DAResidualSimpleTFoam_8C_source.html">DAResidualSimpleTFoam.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">72</a> of file <a class="el" href="DAResidualSimpleTFoam_8C_source.html">DAResidualSimpleTFoam.C</a>.</p>
 
-<p class="reference">References <a class="el" href="pEqnPiso_8H.html#a2763a4e809e5ae1f9caf5fb4bc42a66e">adjustPhi()</a>, <a class="el" href="TEqnSimpleT_8H.html#ad145252fff6dd3b727ad3f1641750383">alphaEff()</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00051">DAResidualSimpleTFoam::alphat_</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00058">DAResidualSimpleTFoam::daTurb_</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00347">DATurbulenceModel::divDevReff()</a>, <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00012">HbyA</a>, <a class="el" href="DAResidual_8H_source.html#l00046">DAResidual::mesh_</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00044">normalizePhiResiduals</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00035">normalizeResiduals</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00262">DATurbulenceModel::nu()</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00038">DAResidualSimpleTFoam::p_</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00046">DAResidualSimpleTFoam::phi_</a>, <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00027">phiHbyA</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00047">DAResidualSimpleTFoam::phiRes_</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00053">DAResidualSimpleTFoam::Pr_</a>, <a class="el" href="createRefsPiso_8H_source.html#l00011">pRefCell</a>, <a class="el" href="createRefsPiso_8H_source.html#l00012">pRefValue</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00039">DAResidualSimpleTFoam::pRes_</a>, <a class="el" href="pEqnRhoSimpleC_8H.html#af0ca220b579a630d505b444580d37b50">rAtU()</a>, <a class="el" href="pEqnPiso_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d">rAU()</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00061">DAResidualSimpleTFoam::simple_</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00042">DAResidualSimpleTFoam::T_</a>, <a class="el" href="TEqnSimpleT_8H.html#a180e328c04d4cb9f2fe2da8ad248622f">TEqn()</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00043">DAResidualSimpleTFoam::TRes_</a>, <a class="el" href="UEqnRhoSimpleC_8H.html#a9049e0a4ec4ba05187c2c500ad21958a">tUEqn()</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00034">DAResidualSimpleTFoam::U_</a>, <a class="el" href="UEqnRhoSimpleC_8H_source.html#l00006">UEqn</a>, and <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00035">DAResidualSimpleTFoam::URes_</a>.</p>
+<p class="reference">References <a class="el" href="pEqnPiso_8H.html#a2763a4e809e5ae1f9caf5fb4bc42a66e">adjustPhi()</a>, <a class="el" href="TEqnSimpleT_8H.html#ad145252fff6dd3b727ad3f1641750383">alphaEff()</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00052">DAResidualSimpleTFoam::alphaPorosity_</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00054">DAResidualSimpleTFoam::alphat_</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00061">DAResidualSimpleTFoam::daTurb_</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00347">DATurbulenceModel::divDevReff()</a>, <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00012">HbyA</a>, <a class="el" href="DAResidual_8H_source.html#l00046">DAResidual::mesh_</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00044">normalizePhiResiduals</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00035">normalizeResiduals</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00262">DATurbulenceModel::nu()</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00038">DAResidualSimpleTFoam::p_</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00046">DAResidualSimpleTFoam::phi_</a>, <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00027">phiHbyA</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00047">DAResidualSimpleTFoam::phiRes_</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00056">DAResidualSimpleTFoam::Pr_</a>, <a class="el" href="createRefsPiso_8H_source.html#l00011">pRefCell</a>, <a class="el" href="createRefsPiso_8H_source.html#l00012">pRefValue</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00039">DAResidualSimpleTFoam::pRes_</a>, <a class="el" href="pEqnRhoSimpleC_8H.html#af0ca220b579a630d505b444580d37b50">rAtU()</a>, <a class="el" href="pEqnPiso_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d">rAU()</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00064">DAResidualSimpleTFoam::simple_</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00042">DAResidualSimpleTFoam::T_</a>, <a class="el" href="TEqnSimpleT_8H.html#a180e328c04d4cb9f2fe2da8ad248622f">TEqn()</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00043">DAResidualSimpleTFoam::TRes_</a>, <a class="el" href="UEqnRhoSimpleC_8H.html#a9049e0a4ec4ba05187c2c500ad21958a">tUEqn()</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00034">DAResidualSimpleTFoam::U_</a>, <a class="el" href="UEqnRhoSimpleC_8H_source.html#l00006">UEqn</a>, and <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00035">DAResidualSimpleTFoam::URes_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00076">DAResidualSimpleTFoam::~DAResidualSimpleTFoam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00079">DAResidualSimpleTFoam::~DAResidualSimpleTFoam()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -429,11 +432,11 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DAResidual.html#a207d7ee6903c709a6306dd883239028b">DAResidual</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00169">169</a> of file <a class="el" href="DAResidualSimpleTFoam_8C_source.html">DAResidualSimpleTFoam.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00172">172</a> of file <a class="el" href="DAResidualSimpleTFoam_8C_source.html">DAResidualSimpleTFoam.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00051">DAResidualSimpleTFoam::alphat_</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00058">DAResidualSimpleTFoam::daTurb_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00230">DATurbulenceModel::getNut()</a>, and <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00055">DAResidualSimpleTFoam::Prt_</a>.</p>
+<p class="reference">References <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00054">DAResidualSimpleTFoam::alphat_</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00061">DAResidualSimpleTFoam::daTurb_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00230">DATurbulenceModel::getNut()</a>, and <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00058">DAResidualSimpleTFoam::Prt_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00076">DAResidualSimpleTFoam::~DAResidualSimpleTFoam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00079">DAResidualSimpleTFoam::~DAResidualSimpleTFoam()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -480,11 +483,11 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DAResidual.html#ac5cf193857b59c2fcaa472ac06847a0d">DAResidual</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00180">180</a> of file <a class="el" href="DAResidualSimpleTFoam_8C_source.html">DAResidualSimpleTFoam.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00183">183</a> of file <a class="el" href="DAResidualSimpleTFoam_8C_source.html">DAResidualSimpleTFoam.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00038">DAResidualSimpleTFoam::p_</a>, <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00042">DAResidualSimpleTFoam::T_</a>, and <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00034">DAResidualSimpleTFoam::U_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00076">DAResidualSimpleTFoam::~DAResidualSimpleTFoam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00079">DAResidualSimpleTFoam::~DAResidualSimpleTFoam()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -519,7 +522,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00034">34</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00070">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00180">DAResidualSimpleTFoam::correctBoundaryConditions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00183">DAResidualSimpleTFoam::correctBoundaryConditions()</a>.</p>
 
 </div>
 </div>
@@ -545,7 +548,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00035">35</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00070">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00052">DAResidualSimpleTFoam::clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00054">DAResidualSimpleTFoam::clear()</a>.</p>
 
 </div>
 </div>
@@ -571,7 +574,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00036">36</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00052">DAResidualSimpleTFoam::clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00054">DAResidualSimpleTFoam::clear()</a>.</p>
 
 </div>
 </div>
@@ -597,7 +600,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00038">38</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00070">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00180">DAResidualSimpleTFoam::correctBoundaryConditions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00183">DAResidualSimpleTFoam::correctBoundaryConditions()</a>.</p>
 
 </div>
 </div>
@@ -623,7 +626,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00039">39</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00070">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00052">DAResidualSimpleTFoam::clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00054">DAResidualSimpleTFoam::clear()</a>.</p>
 
 </div>
 </div>
@@ -649,7 +652,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00040">40</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00052">DAResidualSimpleTFoam::clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00054">DAResidualSimpleTFoam::clear()</a>.</p>
 
 </div>
 </div>
@@ -675,7 +678,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00042">42</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00070">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00180">DAResidualSimpleTFoam::correctBoundaryConditions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00183">DAResidualSimpleTFoam::correctBoundaryConditions()</a>.</p>
 
 </div>
 </div>
@@ -701,7 +704,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00043">43</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00070">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00052">DAResidualSimpleTFoam::clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00054">DAResidualSimpleTFoam::clear()</a>.</p>
 
 </div>
 </div>
@@ -727,7 +730,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00044">44</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00052">DAResidualSimpleTFoam::clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00054">DAResidualSimpleTFoam::clear()</a>.</p>
 
 </div>
 </div>
@@ -753,7 +756,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00046">46</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00070">DAResidualSimpleTFoam::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>.</p>
 
 </div>
 </div>
@@ -779,7 +782,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00047">47</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00070">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00052">DAResidualSimpleTFoam::clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00054">DAResidualSimpleTFoam::clear()</a>.</p>
 
 </div>
 </div>
@@ -805,7 +808,35 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00048">48</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00052">DAResidualSimpleTFoam::clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00054">DAResidualSimpleTFoam::clear()</a>.</p>
+
+</div>
+</div>
+<a id="adbe6dc09beec02c11b70ff3ecc0d100e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbe6dc09beec02c11b70ff3ecc0d100e">&#9670;&nbsp;</a></span>alphaPorosity_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volScalarField&amp; alphaPorosity_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>alpha porosity term </p>
+
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00052">52</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>.</p>
 
 </div>
 </div>
@@ -829,9 +860,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00051">51</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00054">54</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00070">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00169">DAResidualSimpleTFoam::updateIntermediateVariables()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00172">DAResidualSimpleTFoam::updateIntermediateVariables()</a>.</p>
 
 </div>
 </div>
@@ -855,9 +886,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00053">53</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00056">56</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00070">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00019">DAResidualSimpleTFoam::DAResidualSimpleTFoam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00019">DAResidualSimpleTFoam::DAResidualSimpleTFoam()</a>.</p>
 
 </div>
 </div>
@@ -881,9 +912,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00055">55</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00058">58</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00019">DAResidualSimpleTFoam::DAResidualSimpleTFoam()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00169">DAResidualSimpleTFoam::updateIntermediateVariables()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00019">DAResidualSimpleTFoam::DAResidualSimpleTFoam()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00172">DAResidualSimpleTFoam::updateIntermediateVariables()</a>.</p>
 
 </div>
 </div>
@@ -909,9 +940,9 @@ Here is the caller graph for this function:</div>
 
 <p><a class="el" href="classFoam_1_1DATurbulenceModel.html">DATurbulenceModel</a> object. </p>
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00058">58</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00061">61</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00070">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00169">DAResidualSimpleTFoam::updateIntermediateVariables()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>, and <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00172">DAResidualSimpleTFoam::updateIntermediateVariables()</a>.</p>
 
 </div>
 </div>
@@ -937,9 +968,9 @@ Here is the caller graph for this function:</div>
 
 <p>simpleControl object which will be initialized in this class </p>
 
-<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00061">61</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAResidualSimpleTFoam_8H_source.html#l00064">64</a> of file <a class="el" href="DAResidualSimpleTFoam_8H_source.html">DAResidualSimpleTFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00070">DAResidualSimpleTFoam::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>.</p>
 
 </div>
 </div>

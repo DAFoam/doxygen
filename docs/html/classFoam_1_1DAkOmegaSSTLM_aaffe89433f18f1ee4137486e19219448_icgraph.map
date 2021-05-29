@@ -1,0 +1,5 @@
+<map id="correctNut" name="correctNut">
+<area shape="rect" id="node2" href="$classFoam_1_1DAkOmegaSSTLM.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals " alt="" coords="177,5,281,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAkOmegaSSTLM.html#ad713cfc858e9aa34ec0aa7eea15c094c" title="DgammaIntEff" alt="" coords="371,31,477,57"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAkOmegaSSTLM.html#a1de233c7b2a8f92ffe239b5dc36ae2a3" title="update any intermediate variables that are dependent on state variables and are used in calcResiduals..." alt="" coords="136,107,323,133"/>
+</map>

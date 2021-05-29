@@ -14,6 +14,7 @@
 <area shape="rect" id="node14" href="$DAObjFuncTotalPressure_8H.html" title="dafoam/src/adjoint\l/DAObjFunc/DAObjFuncTotalPressure.H" alt="" coords="2091,102,2352,143"/>
 <area shape="rect" id="node15" href="$DAObjFuncTotalPressureRatio_8H.html" title="dafoam/src/adjoint\l/DAObjFunc/DAObjFuncTotalPressure\lRatio.H" alt="" coords="2375,95,2622,151"/>
 <area shape="rect" id="node16" href="$DAObjFuncTotalTemperatureRatio_8H.html" title="dafoam/src/adjoint\l/DAObjFunc/DAObjFuncTotalTemperature\lRatio.H" alt="" coords="2646,95,2914,151"/>
-<area shape="rect" id="node17" href="$DAObjFuncVonMisesStressKS_8H.html" title="dafoam/src/adjoint\l/DAObjFunc/DAObjFuncVonMises\lStressKS.H" alt="" coords="2939,95,3163,151"/>
-<area shape="rect" id="node18" href="$DAObjFuncWallHeatFlux_8H.html" title="dafoam/src/adjoint\l/DAObjFunc/DAObjFuncWallHeat\lFlux.H" alt="" coords="3187,95,3407,151"/>
+<area shape="rect" id="node17" href="$DAObjFuncVariableVolSum_8H.html" title="dafoam/src/adjoint\l/DAObjFunc/DAObjFuncVariable\lVolSum.H" alt="" coords="2939,95,3152,151"/>
+<area shape="rect" id="node18" href="$DAObjFuncVonMisesStressKS_8H.html" title="dafoam/src/adjoint\l/DAObjFunc/DAObjFuncVonMises\lStressKS.H" alt="" coords="3176,95,3400,151"/>
+<area shape="rect" id="node19" href="$DAObjFuncWallHeatFlux_8H.html" title="dafoam/src/adjoint\l/DAObjFunc/DAObjFuncWallHeat\lFlux.H" alt="" coords="3425,95,3645,151"/>
 </map>

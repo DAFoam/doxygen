@@ -26,6 +26,8 @@ var searchData=
   ['debug',['debug',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a398527b3e9e358c345c5047b16871957',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['decomposepardict',['decomposeParDict',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a5f26f4425eb93738159189da1622d25a',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['defaultoptions',['defaultOptions',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ada57d6a1f20902761bd79565ab5ba755',1,'dafoam::pyDAFoam::PYDAFOAM']]],
+  ['deg',['deg',['../namespacedafoam__plot3dtransform.html#a88a2a4969cd245d34bb767944e113f14',1,'dafoam_plot3dtransform.deg()'],['../namespacedafoam__stltransform.html#a88a2a4969cd245d34bb767944e113f14',1,'dafoam_stltransform.deg()']]],
+  ['deltau_5f',['deltaU_',['../classFoam_1_1DAkOmegaSSTLM.html#a614939ca76653b5c387e5a45fe2499d8',1,'Foam::DAkOmegaSSTLM']]],
   ['designfamilygroup',['designFamilyGroup',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#afd117708085d49a18ca6a215a091477b',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['designsurfacefamily',['designSurfaceFamily',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a9c92e3244d627fd687291b6e2626f184',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['designsurfaces',['designSurfaces',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a04f9bc34ea8e77fddff91a1ce8c8c793',1,'dafoam::pyDAFoam::DAOPTION']]],
@@ -46,5 +48,8 @@ var searchData=
   ['drespartderiv_5f',['DResPartDeriv_',['../classFoam_1_1DAResidualSolidDisplacementFoam.html#ae04c559b17eec31cdbb330f7ee198f78',1,'Foam::DAResidualSolidDisplacementFoam']]],
   ['dtype',['dtype',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#acfe99d230e216901bd782cc580e4e815',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['dvgeo',['DVGeo',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ae276a27c8d563580208ef570c2450a05',1,'dafoam.pyDAFoam.PYDAFOAM.DVGeo()'],['../namespacedafoam__plot3d2tecplot.html#ae276a27c8d563580208ef570c2450a05',1,'dafoam_plot3d2tecplot.DVGeo()']]],
-  ['dxvdffdmat_5f',['dXvdFFDMat_',['../classFoam_1_1DAPartDeriv.html#a82f81280ea1d0d4c3ef5729fcaad6d2b',1,'Foam::DAPartDeriv::dXvdFFDMat_()'],['../classFoam_1_1DASolver.html#a82f81280ea1d0d4c3ef5729fcaad6d2b',1,'Foam::DASolver::dXvdFFDMat_()']]]
+  ['dx',['dX',['../namespacedafoam__plot3dtransform.html#a921b80a0245a4f241fc0dda5e364b471',1,'dafoam_plot3dtransform.dX()'],['../namespacedafoam__stltransform.html#a921b80a0245a4f241fc0dda5e364b471',1,'dafoam_stltransform.dX()']]],
+  ['dxvdffdmat_5f',['dXvdFFDMat_',['../classFoam_1_1DAPartDeriv.html#a82f81280ea1d0d4c3ef5729fcaad6d2b',1,'Foam::DAPartDeriv::dXvdFFDMat_()'],['../classFoam_1_1DASolver.html#a82f81280ea1d0d4c3ef5729fcaad6d2b',1,'Foam::DASolver::dXvdFFDMat_()']]],
+  ['dy',['dY',['../namespacedafoam__plot3dtransform.html#a90011e7d69aec5376e286b72ae9e0730',1,'dafoam_plot3dtransform.dY()'],['../namespacedafoam__stltransform.html#a90011e7d69aec5376e286b72ae9e0730',1,'dafoam_stltransform.dY()']]],
+  ['dz',['dZ',['../namespacedafoam__plot3dtransform.html#a7be37d1b549335aab139bebd74b5221a',1,'dafoam_plot3dtransform.dZ()'],['../namespacedafoam__stltransform.html#a7be37d1b549335aab139bebd74b5221a',1,'dafoam_stltransform.dZ()']]]
 ];

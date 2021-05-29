@@ -1,6 +1,6 @@
 <map id="clear" name="clear">
 <area shape="rect" id="node2" href="$classFoam_1_1DAObjFunc.html#af91123718135a59ba6b1ed5ddd32235b" title="calculate the value of objective function " alt="" coords="465,37,560,64"/>
 <area shape="rect" id="node3" href="$classFoam_1_1DAObjFunc.html#a70666f0e99a39d08412c1283e9adb252" title="calculate DAObjFunc::objFuncFaceSources_ and DAObjFunc::objFuncCellSources_ " alt="" coords="104,37,247,64"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAObjFunc.html#a8e844075cdac7c480f1667a1781a38ad" title="calcluate the value of objective function " alt="" coords="295,88,417,114"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAObjFunc.html#a8e844075cdac7c480f1667a1781a38ad" title="calculate the value of objective function " alt="" coords="295,88,417,114"/>
 <area shape="rect" id="node5" href="$classFoam_1_1DAObjFunc.html#a6d5f7f9d48b97ffd5730072be731dbb5" title="the master function to compute objective function given the state and point vectors ..." alt="" coords="119,138,231,165"/>
 </map>

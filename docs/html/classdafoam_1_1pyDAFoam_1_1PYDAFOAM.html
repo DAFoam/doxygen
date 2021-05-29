@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.3</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.5</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -100,6 +100,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa55303979a1a7af84b66f20716dd3acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5308ba6a988c11c88962afa5b446a7e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ac5308ba6a988c11c88962afa5b446a7e">setTimeInstanceField</a> (self, instanceI)</td></tr>
 <tr class="separator:ac5308ba6a988c11c88962afa5b446a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c61912e11450544286fc3af1d2b525"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ad2c61912e11450544286fc3af1d2b525">writeDesignVariable</a> (self, fileName, xDV)</td></tr>
+<tr class="separator:ad2c61912e11450544286fc3af1d2b525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad360dd2202aa03d1da921002215a2d6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#aad360dd2202aa03d1da921002215a2d6">writeDeformedFFDs</a> (self)</td></tr>
+<tr class="separator:aad360dd2202aa03d1da921002215a2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b748b69dbd7813ab7690c5386f309c1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a7b748b69dbd7813ab7690c5386f309c1">writeTotalDeriv</a> (self, fileName, sens, evalFuncs)</td></tr>
+<tr class="separator:a7b748b69dbd7813ab7690c5386f309c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40dd706daa3bf0c4620b783a38be23a4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a40dd706daa3bf0c4620b783a38be23a4">getTimeInstanceObjFunc</a> (self, instanceI, objFuncName)</td></tr>
 <tr class="separator:a40dd706daa3bf0c4620b783a38be23a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6910552f6a1ee9706b3a55712fa8ab63"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6910552f6a1ee9706b3a55712fa8ab63">evalFunctions</a> (self, funcs, evalFuncs=None, ignoreMissing=False)</td></tr>
@@ -122,12 +128,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7c1435e480da1d817f825144532c60cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88600c28636ca6c65230f525fc65eacd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a88600c28636ca6c65230f525fc65eacd">setDesignVars</a> (self, x)</td></tr>
 <tr class="separator:a88600c28636ca6c65230f525fc65eacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe3a1c8a686851fcc5976f828796f17e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#afe3a1c8a686851fcc5976f828796f17e">writeFieldSensitivityMap</a> (self, objFuncName, designVarName, solutionTime, fieldType, sensVec)</td></tr>
+<tr class="separator:afe3a1c8a686851fcc5976f828796f17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38312f7c1f6cebb0e88ccd0019efd29"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab38312f7c1f6cebb0e88ccd0019efd29">writeSurfaceSensitivityMap</a> (self, objFuncName, designVarName, solutionTime)</td></tr>
+<tr class="separator:ab38312f7c1f6cebb0e88ccd0019efd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade6feb15f81bb189b6f25e08be7773b7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ade6feb15f81bb189b6f25e08be7773b7">solvePrimal</a> (self)</td></tr>
 <tr class="separator:ade6feb15f81bb189b6f25e08be7773b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93afb83ae6a96dc3e7f6d520b4b156a8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8">solveAdjoint</a> (self)</td></tr>
 <tr class="separator:a93afb83ae6a96dc3e7f6d520b4b156a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a275c2b4245d183287961ee13c1ca7b7b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a275c2b4245d183287961ee13c1ca7b7b">calcTotalDeriv</a> (self, dRdX, dFdX, <a class="el" href="createRefsTurbo_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a>, totalDeriv)</td></tr>
 <tr class="separator:a275c2b4245d183287961ee13c1ca7b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab45fb76eb2d2ee511788958853bb1083"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab45fb76eb2d2ee511788958853bb1083">calcdFdAOAAnalytical</a> (self, objFuncName, dFdAOA)</td></tr>
+<tr class="separator:ab45fb76eb2d2ee511788958853bb1083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae25f7847fa3d79b54c8f75ea2c5f3cfa"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ae25f7847fa3d79b54c8f75ea2c5f3cfa">runColoring</a> (self)</td></tr>
 <tr class="separator:ae25f7847fa3d79b54c8f75ea2c5f3cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9febb9e350203902a7d973a3e3eb5efc"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a9febb9e350203902a7d973a3e3eb5efc">runDecomposePar</a> (self)</td></tr>
@@ -164,6 +176,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6b17301eac258f3e9309107a42eac008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5134e15b0ef2c043d575c5496ea4b298"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a5134e15b0ef2c043d575c5496ea4b298">updateDAOption</a> (self)</td></tr>
 <tr class="separator:a5134e15b0ef2c043d575c5496ea4b298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2da397f4e1efd8a39b308552a93aed2d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a2da397f4e1efd8a39b308552a93aed2d">syncDAOptionToActuatorDVs</a> (self)</td></tr>
+<tr class="separator:a2da397f4e1efd8a39b308552a93aed2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -261,7 +275,7 @@ comm : mpi4py communicator
 
 options : dictionary
     The list of options to use with pyDAFoam.</pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00549">549</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00572">572</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a533b5897c621a5e90feda08d4fa108c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a533b5897c621a5e90feda08d4fa108c7">&#9670;&nbsp;</a></span>__init__()</h2>
@@ -296,7 +310,7 @@ options : dictionary
 </div><div class="memdoc">
 <pre class="fragment">Initialize class members
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00565">565</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00588">588</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -318,9 +332,9 @@ options : dictionary
 </div><div class="memdoc">
 <pre class="fragment">Solve the primal
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00699">699</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00722">722</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00631">PYDAFOAM.allFamilies</a>, <a class="el" href="pyDAFoam_8py_source.html#l00639">PYDAFOAM.designFamilyGroup</a>, <a class="el" href="pyDAFoam_8py_source.html#l00655">PYDAFOAM.DVGeo</a>, <a class="el" href="pyDAFoam_8py_source.html#l02214">PYDAFOAM.mapVector()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00602">PYDAFOAM.ptSetName</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00650">PYDAFOAM.xs0</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00654">PYDAFOAM.allFamilies</a>, <a class="el" href="pyDAFoam_8py_source.html#l00662">PYDAFOAM.designFamilyGroup</a>, <a class="el" href="pyDAFoam_8py_source.html#l00678">PYDAFOAM.DVGeo</a>, <a class="el" href="pyDAFoam_8py_source.html#l02648">PYDAFOAM.mapVector()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00625">PYDAFOAM.ptSetName</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00673">PYDAFOAM.xs0</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -359,9 +373,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <pre class="fragment">Save the state variable vector to self.wVecMPList
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00837">837</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00860">860</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l02326">PYDAFOAM.wVec</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02338">PYDAFOAM.wVecMPList</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l02760">PYDAFOAM.wVec</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02772">PYDAFOAM.wVecMPList</a>.</p>
 
 </div>
 </div>
@@ -392,9 +406,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <pre class="fragment">Set the state variable vector based on self.wVecMPList
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00851">851</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00874">874</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l02326">PYDAFOAM.wVec</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02338">PYDAFOAM.wVecMPList</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l02760">PYDAFOAM.wVec</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02772">PYDAFOAM.wVecMPList</a>.</p>
 
 </div>
 </div>
@@ -425,9 +439,126 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <pre class="fragment">Set the OpenFOAM state variables based on instance index
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00865">865</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00888">888</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01735">PYDAFOAM.solver</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02326">PYDAFOAM.wVec</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l02168">PYDAFOAM.solver</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02760">PYDAFOAM.wVec</a>.</p>
+
+</div>
+</div>
+<a id="ad2c61912e11450544286fc3af1d2b525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c61912e11450544286fc3af1d2b525">&#9670;&nbsp;</a></span>writeDesignVariable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def writeDesignVariable </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>xDV</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Write the design variable history to files in the json format
+</pre> 
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00900">900</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01366">PYDAFOAM.comm</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00682">PYDAFOAM.nSolveAdjoints</a>.</p>
+
+</div>
+</div>
+<a id="aad360dd2202aa03d1da921002215a2d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad360dd2202aa03d1da921002215a2d6">&#9670;&nbsp;</a></span>writeDeformedFFDs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def writeDeformedFFDs </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Write the deformed FFDs to the disk during optimization
+</pre> 
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00937">937</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00678">PYDAFOAM.DVGeo</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02979">PYDAFOAM.getOption()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00682">PYDAFOAM.nSolveAdjoints</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_aad360dd2202aa03d1da921002215a2d6_cgraph.png" border="0" usemap="#classdafoam_1_1pyDAFoam_1_1PYDAFOAM_aad360dd2202aa03d1da921002215a2d6_cgraph" alt=""/></div>
+<map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_aad360dd2202aa03d1da921002215a2d6_cgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_aad360dd2202aa03d1da921002215a2d6_cgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key " alt="" coords="193,5,377,32"/>
+<area shape="rect" id="node3" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6b17301eac258f3e9309107a42eac008" title="getOption" alt="" coords="246,56,325,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7b748b69dbd7813ab7690c5386f309c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b748b69dbd7813ab7690c5386f309c1">&#9670;&nbsp;</a></span>writeTotalDeriv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def writeTotalDeriv </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>sens</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>evalFuncs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Write the total derivatives history to files in the json format
+This will only write total derivative for evalFuncs
+</pre> 
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00944">944</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01366">PYDAFOAM.comm</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00682">PYDAFOAM.nSolveAdjoints</a>.</p>
 
 </div>
 </div>
@@ -464,9 +595,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <pre class="fragment">Return the value of objective function at the given time instance and name
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00877">877</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00993">993</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01735">PYDAFOAM.solver</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l02168">PYDAFOAM.solver</a>.</p>
 
 </div>
 </div>
@@ -543,9 +674,9 @@ Examples
 &gt;&gt;&gt; # Result will look like:
 &gt;&gt;&gt; # {'CD':0.501, 'CL':0.02750}
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00884">884</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01000">1000</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00668">PYDAFOAM.objFuncValuePrevIter</a>, <a class="el" href="pyDAFoam_8py_source.html#l00662">PYDAFOAM.primalFail</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01735">PYDAFOAM.solver</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00691">PYDAFOAM.objFuncValuePrevIter</a>, <a class="el" href="pyDAFoam_8py_source.html#l00685">PYDAFOAM.primalFail</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02168">PYDAFOAM.solver</a>.</p>
 
 </div>
 </div>
@@ -597,9 +728,9 @@ Examples
 &gt;&gt;&gt; funcSens = {}
 &gt;&gt;&gt; CFDsolver.evalFunctionsSens(funcSens, ['CD', 'CL'])
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00946">946</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01062">1062</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00663">PYDAFOAM.adjointFail</a>, <a class="el" href="pyDAFoam_8py_source.html#l00675">PYDAFOAM.adjTotalDeriv</a>, <a class="el" href="pyDAFoam_8py_source.html#l00596">PYDAFOAM.dtype</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00655">PYDAFOAM.DVGeo</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00686">PYDAFOAM.adjointFail</a>, <a class="el" href="pyDAFoam_8py_source.html#l00698">PYDAFOAM.adjTotalDeriv</a>, <a class="el" href="pyDAFoam_8py_source.html#l00619">PYDAFOAM.dtype</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00678">PYDAFOAM.DVGeo</a>.</p>
 
 </div>
 </div>
@@ -642,9 +773,9 @@ Examples
 &gt;&gt;&gt; CFDsolver = &lt;SOLVER&gt;(comm=comm, options=CFDoptions)
 &gt;&gt;&gt; CFDsolver.setDVGeo(DVGeo)
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00986">986</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01102">1102</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00655">PYDAFOAM.DVGeo</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00678">PYDAFOAM.DVGeo</a>.</p>
 
 </div>
 </div>
@@ -689,9 +820,9 @@ groupName : str
 families : list
     List of string. Family names to combine into the family group
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01005">1005</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01121">1121</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00590">PYDAFOAM.families</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00613">PYDAFOAM.families</a>.</p>
 
 </div>
 </div>
@@ -726,9 +857,9 @@ Parameters
 mesh : MBMesh or USMesh object
     The mesh object for doing the warping
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01043">1043</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01159">1159</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l02196">PYDAFOAM.getSolverMeshIndices()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01073">PYDAFOAM.getSurfaceConnectivity()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02050">PYDAFOAM.getSurfaceCoordinates()</a>, <a class="el" href="DACheckMesh_8H_source.html#l00046">DACheckMesh.mesh</a>, <a class="el" href="pyDAFoam_8py_source.html#l00654">PYDAFOAM.mesh</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00645">PYDAFOAM.meshFamilyGroup</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l02630">PYDAFOAM.getSolverMeshIndices()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01189">PYDAFOAM.getSurfaceConnectivity()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02484">PYDAFOAM.getSurfaceCoordinates()</a>, <a class="el" href="DACheckMesh_8H_source.html#l00046">DACheckMesh.mesh</a>, <a class="el" href="pyDAFoam_8py_source.html#l00677">PYDAFOAM.mesh</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00668">PYDAFOAM.meshFamilyGroup</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -768,9 +899,9 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01064">1064</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01180">1180</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="DAOption_8H_source.html#l00092">DAOption.getOption()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02545">PYDAFOAM.getOption()</a>.</p>
+<p class="reference">References <a class="el" href="DAOption_8H_source.html#l00092">DAOption.getOption()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02979">PYDAFOAM.getOption()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -820,11 +951,11 @@ groupName : str
     group of families. The default is None which corresponds to
     all wall-type surfaces.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01073">1073</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01189">1189</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00634">PYDAFOAM.allWallsGroup</a>, <a class="el" href="pyDAFoam_8py_source.html#l02121">PYDAFOAM.basicFamilies</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00590">PYDAFOAM.families</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00657">PYDAFOAM.allWallsGroup</a>, <a class="el" href="pyDAFoam_8py_source.html#l02555">PYDAFOAM.basicFamilies</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00613">PYDAFOAM.families</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01122">PYDAFOAM.getTriangulatedMeshSurface()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01043">PYDAFOAM.setMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01238">PYDAFOAM.getTriangulatedMeshSurface()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01159">PYDAFOAM.setMesh()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01461">PYDAFOAM.writeSurfaceSensitivityMap()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -832,6 +963,7 @@ Here is the caller graph for this function:</div>
 <map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a8e43a4f1a3f9f54d2ee880c45c639a9b_icgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a8e43a4f1a3f9f54d2ee880c45c639a9b_icgraph">
 <area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ad26ac7f00b7a0b4cd441a7a8086ab9e7" title="getTriangulatedMeshSurface" alt="" coords="212,5,400,32"/>
 <area shape="rect" id="node3" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a9a37af332c46ce5d38b00e0073632e9c" title="setMesh" alt="" coords="270,56,342,83"/>
+<area shape="rect" id="node4" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab38312f7c1f6cebb0e88ccd0019efd29" title="writeSurfaceSensitivityMap" alt="" coords="215,107,397,133"/>
 </map>
 </div>
 
@@ -877,9 +1009,9 @@ surf : list
    List of points and vectors describing the surface. This may
    be passed directly to DVConstraint setSurface() function.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01122">1122</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01238">1238</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00634">PYDAFOAM.allWallsGroup</a>, <a class="el" href="pyDAFoam_8py_source.html#l01250">PYDAFOAM.comm</a>, <a class="el" href="pyDAFoam_8py_source.html#l01073">PYDAFOAM.getSurfaceConnectivity()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02050">PYDAFOAM.getSurfaceCoordinates()</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00657">PYDAFOAM.allWallsGroup</a>, <a class="el" href="pyDAFoam_8py_source.html#l01366">PYDAFOAM.comm</a>, <a class="el" href="pyDAFoam_8py_source.html#l01189">PYDAFOAM.getSurfaceConnectivity()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02484">PYDAFOAM.getSurfaceCoordinates()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -909,9 +1041,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <pre class="fragment">Print a nicely formatted dictionary of the family names
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01188">1188</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01304">1304</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00590">PYDAFOAM.families</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00613">PYDAFOAM.families</a>.</p>
 
 </div>
 </div>
@@ -943,15 +1075,170 @@ Here is the call graph for this function:</div>
 <pre class="fragment">Set the internal design variables.
 At the moment we don't have any internal DVs to set.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01194">1194</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01310">1310</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01915">PYDAFOAM.setdXvdFFDMat()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02349">PYDAFOAM.setdXvdFFDMat()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a88600c28636ca6c65230f525fc65eacd_icgraph.png" border="0" usemap="#classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a88600c28636ca6c65230f525fc65eacd_icgraph" alt=""/></div>
 <map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a88600c28636ca6c65230f525fc65eacd_icgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a88600c28636ca6c65230f525fc65eacd_icgraph">
 <area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a68f7c03d00f03013c856d57d9e6f207e" title="setdXvdFFDMat" alt="" coords="161,5,280,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afe3a1c8a686851fcc5976f828796f17e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe3a1c8a686851fcc5976f828796f17e">&#9670;&nbsp;</a></span>writeFieldSensitivityMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def writeFieldSensitivityMap </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>objFuncName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>designVarName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>solutionTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>fieldType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>sensVec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Save the field sensitivity dObjFunc/dDesignVar map to disk.
+
+Parameters
+----------
+
+objFuncName : str
+    Name of the objective function
+designVarName : str
+    Name of the design variable
+solutionTime : float
+    The solution time where the sensitivity will be save
+fieldType : str
+    The type of the field, either scalar or vector
+sensVec : petsc vec
+    The Petsc vector that contains the sensitivity
+</pre> 
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01389">1389</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_afe3a1c8a686851fcc5976f828796f17e_icgraph.png" border="0" usemap="#classdafoam_1_1pyDAFoam_1_1PYDAFOAM_afe3a1c8a686851fcc5976f828796f17e_icgraph" alt=""/></div>
+<map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_afe3a1c8a686851fcc5976f828796f17e_icgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_afe3a1c8a686851fcc5976f828796f17e_icgraph">
+<area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8" title="solveAdjoint" alt="" coords="217,5,311,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab38312f7c1f6cebb0e88ccd0019efd29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab38312f7c1f6cebb0e88ccd0019efd29">&#9670;&nbsp;</a></span>writeSurfaceSensitivityMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def writeSurfaceSensitivityMap </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>objFuncName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>designVarName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>solutionTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Save the sensitivity dObjFunc/dXs map to disk. where Xs is the wall surface mesh coordinate
+
+Parameters
+----------
+
+objFuncName : str
+    Name of the objective function
+designVarName : str
+    Name of the design variable
+solutionTime : float
+    The solution time where the sensitivity will be save
+</pre> 
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01461">1461</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l03100">PYDAFOAM._writeOpenFoamHeader()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00657">PYDAFOAM.allWallsGroup</a>, <a class="el" href="pyDAFoam_8py_source.html#l01189">PYDAFOAM.getSurfaceConnectivity()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02484">PYDAFOAM.getSurfaceCoordinates()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02648">PYDAFOAM.mapVector()</a>, <a class="el" href="DACheckMesh_8H_source.html#l00046">DACheckMesh.mesh</a>, <a class="el" href="pyDAFoam_8py_source.html#l00677">PYDAFOAM.mesh</a>, <a class="el" href="pyDAFoam_8py_source.html#l00668">PYDAFOAM.meshFamilyGroup</a>, <a class="el" href="pyDAFoam_8py_source.html#l01370">PYDAFOAM.parallel</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01375">PYDAFOAM.rank</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab38312f7c1f6cebb0e88ccd0019efd29_cgraph.png" border="0" usemap="#classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab38312f7c1f6cebb0e88ccd0019efd29_cgraph" alt=""/></div>
+<map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab38312f7c1f6cebb0e88ccd0019efd29_cgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab38312f7c1f6cebb0e88ccd0019efd29_cgraph">
+<area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a0f936922d1d9efa2494fdc8443d01fb8" title="_writeOpenFoamHeader" alt="" coords="235,5,397,32"/>
+<area shape="rect" id="node3" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a8e43a4f1a3f9f54d2ee880c45c639a9b" title="getSurfaceConnectivity" alt="" coords="237,56,395,83"/>
+<area shape="rect" id="node4" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a0df62fe3472c26745359c34ac02663db" title="getSurfaceCoordinates" alt="" coords="239,107,393,133"/>
+<area shape="rect" id="node5" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab99bf2b8eef3a3a3dc9130cfe361a672" title="mapVector" alt="" coords="273,157,359,184"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab38312f7c1f6cebb0e88ccd0019efd29_icgraph.png" border="0" usemap="#classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab38312f7c1f6cebb0e88ccd0019efd29_icgraph" alt=""/></div>
+<map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab38312f7c1f6cebb0e88ccd0019efd29_icgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab38312f7c1f6cebb0e88ccd0019efd29_icgraph">
+<area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8" title="solveAdjoint" alt="" coords="235,5,328,32"/>
 </map>
 </div>
 
@@ -984,7 +1271,17 @@ wVec: vector that contains all the state variables
 
 self.primalFail: if the primal solution fails, assigns 1, otherwise 0
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01273">1273</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01606">1606</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l02271">PYDAFOAM.deletePrevPrimalSolTime()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00681">PYDAFOAM.nSolvePrimals</a>, <a class="el" href="pyDAFoam_8py_source.html#l00685">PYDAFOAM.primalFail</a>, <a class="el" href="pyDAFoam_8py_source.html#l02168">PYDAFOAM.solver</a>, <a class="el" href="pyDAFoam_8py_source.html#l02760">PYDAFOAM.wVec</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02743">PYDAFOAM.xvVec</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ade6feb15f81bb189b6f25e08be7773b7_cgraph.png" border="0" usemap="#classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ade6feb15f81bb189b6f25e08be7773b7_cgraph" alt=""/></div>
+<map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ade6feb15f81bb189b6f25e08be7773b7_cgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ade6feb15f81bb189b6f25e08be7773b7_cgraph">
+<area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#af5292525867356cf3e1e74efa3cf03ee" title="deletePrevPrimalSolTime" alt="" coords="144,5,313,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1023,29 +1320,32 @@ viewerXv(self.xvVec)
 viewerW = PETSc.Viewer().createBinary("wVec_%03d.bin" % self.nSolveAdjoints, mode="w", comm=PETSc.COMM_WORLD)
 viewerW(self.wVec)
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01299">1299</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01632">1632</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00663">PYDAFOAM.adjointFail</a>, <a class="el" href="pyDAFoam_8py_source.html#l00675">PYDAFOAM.adjTotalDeriv</a>, <a class="el" href="pyDAFoam_8py_source.html#l00681">PYDAFOAM.adjVectors</a>, <a class="el" href="pyDAFoam_8py_source.html#l01704">PYDAFOAM.calcTotalDeriv()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01250">PYDAFOAM.comm</a>, <a class="el" href="pyDAFoam_8py_source.html#l00639">PYDAFOAM.designFamilyGroup</a>, <a class="el" href="pyDAFoam_8py_source.html#l00678">PYDAFOAM.dRdWTPC</a>, <a class="el" href="pyDAFoam_8py_source.html#l00596">PYDAFOAM.dtype</a>, <a class="el" href="pyDAFoam_8py_source.html#l00655">PYDAFOAM.DVGeo</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02545">PYDAFOAM.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02214">PYDAFOAM.mapVector()</a>, <a class="el" href="DACheckMesh_8H_source.html#l00046">DACheckMesh.mesh</a>, <a class="el" href="pyDAFoam_8py_source.html#l00654">PYDAFOAM.mesh</a>, <a class="el" href="pyDAFoam_8py_source.html#l00645">PYDAFOAM.meshFamilyGroup</a>, <a class="el" href="pyDAFoam_8py_source.html#l00659">PYDAFOAM.nSolveAdjoints</a>, <a class="el" href="pyDAFoam_8py_source.html#l00671">PYDAFOAM.objFuncNames4Adj</a>, <a class="el" href="pyDAFoam_8py_source.html#l00602">PYDAFOAM.ptSetName</a>, <a class="el" href="pyDAFoam_8py_source.html#l01862">PYDAFOAM.renameSolution()</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00498">DAPartDeriv.setdXvdFFDMat()</a>, <a class="el" href="DASolvers_8H_source.html#l00375">DASolvers.setdXvdFFDMat()</a>, <a class="el" href="DASolver_8C_source.html#l03700">DASolver.setdXvdFFDMat()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01915">PYDAFOAM.setdXvdFFDMat()</a>, <a class="el" href="DAOption_8H_source.html#l00127">DAOption.setOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02418">PYDAFOAM.setOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01735">PYDAFOAM.solver</a>, <a class="el" href="pyDAFoam_8py_source.html#l01741">PYDAFOAM.solverAD</a>, <a class="el" href="DAOption_8C_source.html#l00050">DAOption.updateDAOption()</a>, <a class="el" href="DASolvers_8H_source.html#l00381">DASolvers.updateDAOption()</a>, <a class="el" href="DASolver_8H_source.html#l00577">DASolver.updateDAOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02565">PYDAFOAM.updateDAOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02326">PYDAFOAM.wVec</a>, <a class="el" href="pyDAFoam_8py_source.html#l02017">PYDAFOAM.xv</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02309">PYDAFOAM.xvVec</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00686">PYDAFOAM.adjointFail</a>, <a class="el" href="pyDAFoam_8py_source.html#l00698">PYDAFOAM.adjTotalDeriv</a>, <a class="el" href="pyDAFoam_8py_source.html#l00704">PYDAFOAM.adjVectors</a>, <a class="el" href="pyDAFoam_8py_source.html#l02104">PYDAFOAM.calcdFdAOAAnalytical()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02087">PYDAFOAM.calcTotalDeriv()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01366">PYDAFOAM.comm</a>, <a class="el" href="pyDAFoam_8py_source.html#l00662">PYDAFOAM.designFamilyGroup</a>, <a class="el" href="pyDAFoam_8py_source.html#l00701">PYDAFOAM.dRdWTPC</a>, <a class="el" href="pyDAFoam_8py_source.html#l00619">PYDAFOAM.dtype</a>, <a class="el" href="pyDAFoam_8py_source.html#l00678">PYDAFOAM.DVGeo</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02979">PYDAFOAM.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02648">PYDAFOAM.mapVector()</a>, <a class="el" href="DACheckMesh_8H_source.html#l00046">DACheckMesh.mesh</a>, <a class="el" href="pyDAFoam_8py_source.html#l00677">PYDAFOAM.mesh</a>, <a class="el" href="pyDAFoam_8py_source.html#l00668">PYDAFOAM.meshFamilyGroup</a>, <a class="el" href="pyDAFoam_8py_source.html#l00682">PYDAFOAM.nSolveAdjoints</a>, <a class="el" href="pyDAFoam_8py_source.html#l00694">PYDAFOAM.objFuncNames4Adj</a>, <a class="el" href="pyDAFoam_8py_source.html#l00625">PYDAFOAM.ptSetName</a>, <a class="el" href="pyDAFoam_8py_source.html#l02296">PYDAFOAM.renameSolution()</a>, <a class="el" href="DAPartDeriv_8C_source.html#l00498">DAPartDeriv.setdXvdFFDMat()</a>, <a class="el" href="DASolvers_8H_source.html#l00415">DASolvers.setdXvdFFDMat()</a>, <a class="el" href="DASolver_8C_source.html#l04132">DASolver.setdXvdFFDMat()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02349">PYDAFOAM.setdXvdFFDMat()</a>, <a class="el" href="DAOption_8H_source.html#l00127">DAOption.setOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02852">PYDAFOAM.setOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02168">PYDAFOAM.solver</a>, <a class="el" href="pyDAFoam_8py_source.html#l02174">PYDAFOAM.solverAD</a>, <a class="el" href="DAOption_8C_source.html#l00050">DAOption.updateDAOption()</a>, <a class="el" href="DASolvers_8H_source.html#l00421">DASolvers.updateDAOption()</a>, <a class="el" href="DASolver_8H_source.html#l00594">DASolver.updateDAOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02999">PYDAFOAM.updateDAOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01389">PYDAFOAM.writeFieldSensitivityMap()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01461">PYDAFOAM.writeSurfaceSensitivityMap()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02760">PYDAFOAM.wVec</a>, <a class="el" href="pyDAFoam_8py_source.html#l02451">PYDAFOAM.xv</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02743">PYDAFOAM.xvVec</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a93afb83ae6a96dc3e7f6d520b4b156a8_cgraph.png" border="0" usemap="#classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a93afb83ae6a96dc3e7f6d520b4b156a8_cgraph" alt=""/></div>
 <map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a93afb83ae6a96dc3e7f6d520b4b156a8_cgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a93afb83ae6a96dc3e7f6d520b4b156a8_cgraph">
-<area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a275c2b4245d183287961ee13c1ca7b7b" title="calcTotalDeriv" alt="" coords="209,52,315,79"/>
-<area shape="rect" id="node3" href="classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key " alt="" coords="425,78,609,104"/>
-<area shape="rect" id="node4" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6b17301eac258f3e9309107a42eac008" title="getOption" alt="" coords="478,128,557,155"/>
-<area shape="rect" id="node5" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab99bf2b8eef3a3a3dc9130cfe361a672" title="mapVector" alt="" coords="219,255,305,282"/>
-<area shape="rect" id="node6" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ae6221d846e9f711d9bb4d401fc13360a" title="renameSolution" alt="" coords="206,306,318,332"/>
-<area shape="rect" id="node7" href="classFoam_1_1DAPartDeriv.html#a6ea8ab812cb9b4cb4179c90fa55af27b" title="setup dXvdFFD matrix " alt="" coords="189,357,335,398"/>
-<area shape="rect" id="node8" href="classFoam_1_1DASolvers.html#a6ea8ab812cb9b4cb4179c90fa55af27b" title="set values for dXvdFFDMat " alt="" coords="171,422,353,464"/>
-<area shape="rect" id="node9" href="classFoam_1_1DASolver.html#a6ea8ab812cb9b4cb4179c90fa55af27b" title="set the value for DASolver::dXvdFFDMat_ " alt="" coords="151,488,373,515"/>
-<area shape="rect" id="node10" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a68f7c03d00f03013c856d57d9e6f207e" title="setdXvdFFDMat" alt="" coords="203,103,321,130"/>
-<area shape="rect" id="node11" href="classFoam_1_1DAOption.html#ab24402e6f97ddad5939394dccb53e846" title="set an option to subDict and key " alt="" coords="170,539,354,566"/>
-<area shape="rect" id="node12" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a9114df2b434217a24b6cb1a29c7e35b2" title="setOption" alt="" coords="223,590,301,616"/>
-<area shape="rect" id="node13" href="classFoam_1_1DAOption.html#ae53aae7a251b16cb44331956cbfc2d2e" title="update the allOptions_ dict in DAOption based on the pyOptions from pyDAFoam " alt="" coords="150,640,374,667"/>
-<area shape="rect" id="node14" href="classFoam_1_1DASolvers.html#ae53aae7a251b16cb44331956cbfc2d2e" title="update the allOptions_ dict in DAOption based on the pyOptions from pyDAFoam " alt="" coords="147,691,377,718"/>
-<area shape="rect" id="node15" href="classFoam_1_1DASolver.html#ae53aae7a251b16cb44331956cbfc2d2e" title="update the allOptions_ dict in DAOption based on the pyOptions from pyDAFoam " alt="" coords="151,742,373,768"/>
-<area shape="rect" id="node16" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a5134e15b0ef2c043d575c5496ea4b298" title="updateDAOption" alt="" coords="203,154,321,180"/>
+<area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab45fb76eb2d2ee511788958853bb1083" title="calcdFdAOAAnalytical" alt="" coords="185,55,339,82"/>
+<area shape="rect" id="node3" href="classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key " alt="" coords="425,69,609,95"/>
+<area shape="rect" id="node4" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6b17301eac258f3e9309107a42eac008" title="getOption" alt="" coords="478,145,557,171"/>
+<area shape="rect" id="node5" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a275c2b4245d183287961ee13c1ca7b7b" title="calcTotalDeriv" alt="" coords="209,258,315,285"/>
+<area shape="rect" id="node6" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab99bf2b8eef3a3a3dc9130cfe361a672" title="mapVector" alt="" coords="475,334,560,361"/>
+<area shape="rect" id="node7" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ae6221d846e9f711d9bb4d401fc13360a" title="renameSolution" alt="" coords="206,410,318,437"/>
+<area shape="rect" id="node8" href="classFoam_1_1DAPartDeriv.html#a6ea8ab812cb9b4cb4179c90fa55af27b" title="setup dXvdFFD matrix " alt="" coords="189,461,335,503"/>
+<area shape="rect" id="node9" href="classFoam_1_1DASolvers.html#a6ea8ab812cb9b4cb4179c90fa55af27b" title="set values for dXvdFFDMat " alt="" coords="171,527,353,568"/>
+<area shape="rect" id="node10" href="classFoam_1_1DASolver.html#a6ea8ab812cb9b4cb4179c90fa55af27b" title="set the value for DASolver::dXvdFFDMat_ " alt="" coords="151,593,373,619"/>
+<area shape="rect" id="node11" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a68f7c03d00f03013c856d57d9e6f207e" title="setdXvdFFDMat" alt="" coords="203,106,321,133"/>
+<area shape="rect" id="node12" href="classFoam_1_1DAOption.html#ab24402e6f97ddad5939394dccb53e846" title="set an option to subDict and key " alt="" coords="170,643,354,670"/>
+<area shape="rect" id="node13" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a9114df2b434217a24b6cb1a29c7e35b2" title="setOption" alt="" coords="223,694,301,721"/>
+<area shape="rect" id="node14" href="classFoam_1_1DAOption.html#ae53aae7a251b16cb44331956cbfc2d2e" title="update the allOptions_ dict in DAOption based on the pyOptions from pyDAFoam " alt="" coords="150,745,374,771"/>
+<area shape="rect" id="node15" href="classFoam_1_1DASolvers.html#ae53aae7a251b16cb44331956cbfc2d2e" title="update the allOptions_ dict in DAOption based on the pyOptions from pyDAFoam " alt="" coords="147,795,377,822"/>
+<area shape="rect" id="node16" href="classFoam_1_1DASolver.html#ae53aae7a251b16cb44331956cbfc2d2e" title="update the allOptions_ dict in DAOption based on the pyOptions from pyDAFoam " alt="" coords="151,846,373,873"/>
+<area shape="rect" id="node17" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a5134e15b0ef2c043d575c5496ea4b298" title="updateDAOption" alt="" coords="203,157,321,183"/>
+<area shape="rect" id="node18" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#afe3a1c8a686851fcc5976f828796f17e" title="writeFieldSensitivityMap" alt="" coords="180,897,344,923"/>
+<area shape="rect" id="node19" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab38312f7c1f6cebb0e88ccd0019efd29" title="writeSurfaceSensitivityMap" alt="" coords="171,359,353,386"/>
 </map>
 </div>
 
@@ -1104,26 +1404,80 @@ Output:
 ------
 totalDeriv = dFdX - [dRdX]^T * psi
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01704">1704</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02087">2087</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="DAOption_8H_source.html#l00092">DAOption.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02545">PYDAFOAM.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01263">PYDAFOAM.parallelFlag</a>, <a class="el" href="pyDAFoam_8py_source.html#l00615">PYDAFOAM.solverInitialized</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00693">PYDAFOAM.solverRegistry</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a275c2b4245d183287961ee13c1ca7b7b_cgraph.png" border="0" usemap="#classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a275c2b4245d183287961ee13c1ca7b7b_cgraph" alt=""/></div>
-<map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a275c2b4245d183287961ee13c1ca7b7b_cgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a275c2b4245d183287961ee13c1ca7b7b_cgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key " alt="" coords="160,5,344,32"/>
-<area shape="rect" id="node3" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6b17301eac258f3e9309107a42eac008" title="getOption" alt="" coords="213,56,291,83"/>
-</map>
-</div>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a275c2b4245d183287961ee13c1ca7b7b_icgraph.png" border="0" usemap="#classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a275c2b4245d183287961ee13c1ca7b7b_icgraph" alt=""/></div>
 <map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a275c2b4245d183287961ee13c1ca7b7b_icgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a275c2b4245d183287961ee13c1ca7b7b_icgraph">
 <area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8" title="solveAdjoint" alt="" coords="160,5,253,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab45fb76eb2d2ee511788958853bb1083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab45fb76eb2d2ee511788958853bb1083">&#9670;&nbsp;</a></span>calcdFdAOAAnalytical()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def calcdFdAOAAnalytical </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>objFuncName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>dFdAOA</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">This function computes partials derivatives dFdAlpha with alpha being the angle of attack (AOA)
+We use the analytical method:
+CD = Fx * cos(alpha) + Fy * sin(alpha)
+CL = - Fx * sin(alpha) + Fy * cos(alpha)
+So:
+dCD/dAlpha = - Fx * sin(alpha) + Fy * cos(alpha) = CL
+dCL/dAlpha = - Fx * cos(alpha) - Fy * sin(alpha) = - CD
+NOTE: we need to convert the unit from radian to degree
+</pre> 
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02104">2104</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+
+<p class="reference">References <a class="el" href="DAOption_8H_source.html#l00092">DAOption.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02979">PYDAFOAM.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00691">PYDAFOAM.objFuncValuePrevIter</a>, <a class="el" href="pyDAFoam_8py_source.html#l01379">PYDAFOAM.parallelFlag</a>, <a class="el" href="pyDAFoam_8py_source.html#l00638">PYDAFOAM.solverInitialized</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00716">PYDAFOAM.solverRegistry</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab45fb76eb2d2ee511788958853bb1083_cgraph.png" border="0" usemap="#classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab45fb76eb2d2ee511788958853bb1083_cgraph" alt=""/></div>
+<map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab45fb76eb2d2ee511788958853bb1083_cgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab45fb76eb2d2ee511788958853bb1083_cgraph">
+<area shape="rect" id="node2" href="classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key " alt="" coords="207,5,391,32"/>
+<area shape="rect" id="node3" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6b17301eac258f3e9309107a42eac008" title="getOption" alt="" coords="259,56,338,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab45fb76eb2d2ee511788958853bb1083_icgraph.png" border="0" usemap="#classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab45fb76eb2d2ee511788958853bb1083_icgraph" alt=""/></div>
+<map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab45fb76eb2d2ee511788958853bb1083_icgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab45fb76eb2d2ee511788958853bb1083_icgraph">
+<area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8" title="solveAdjoint" alt="" coords="207,5,300,32"/>
 </map>
 </div>
 
@@ -1146,9 +1500,9 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <pre class="fragment">Run coloring solver
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01779">1779</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02213">2213</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="DAOption_8H_source.html#l00092">DAOption.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02545">PYDAFOAM.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01227">PYDAFOAM.options</a>, <a class="el" href="pyDAFoam_8py_source.html#l01263">PYDAFOAM.parallelFlag</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00693">PYDAFOAM.solverRegistry</a>.</p>
+<p class="reference">References <a class="el" href="DAOption_8H_source.html#l00092">DAOption.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02979">PYDAFOAM.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01343">PYDAFOAM.options</a>, <a class="el" href="pyDAFoam_8py_source.html#l01379">PYDAFOAM.parallelFlag</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00716">PYDAFOAM.solverRegistry</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1178,9 +1532,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <pre class="fragment">Run decomposePar to parallel run
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01816">1816</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02250">2250</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l02606">PYDAFOAM._writeDecomposeParDict()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01250">PYDAFOAM.comm</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l03056">PYDAFOAM._writeDecomposeParDict()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01366">PYDAFOAM.comm</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1209,9 +1563,19 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <pre class="fragment">Delete the previous primal solution time folder
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01837">1837</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02271">2271</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01250">PYDAFOAM.comm</a>, <a class="el" href="pyDAFoam_8py_source.html#l01254">PYDAFOAM.parallel</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01735">PYDAFOAM.solver</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01366">PYDAFOAM.comm</a>, <a class="el" href="pyDAFoam_8py_source.html#l01370">PYDAFOAM.parallel</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02168">PYDAFOAM.solver</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01606">PYDAFOAM.solvePrimal()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_af5292525867356cf3e1e74efa3cf03ee_icgraph.png" border="0" usemap="#classdafoam_1_1pyDAFoam_1_1PYDAFOAM_af5292525867356cf3e1e74efa3cf03ee_icgraph" alt=""/></div>
+<map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_af5292525867356cf3e1e74efa3cf03ee_icgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_af5292525867356cf3e1e74efa3cf03ee_icgraph">
+<area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ade6feb15f81bb189b6f25e08be7773b7" title="solvePrimal" alt="" coords="223,5,313,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1251,11 +1615,11 @@ Parameters
 solIndex: int
     The major interation index
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01862">1862</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02296">2296</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01250">PYDAFOAM.comm</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01254">PYDAFOAM.parallel</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01366">PYDAFOAM.comm</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01370">PYDAFOAM.parallel</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1305,11 +1669,11 @@ Parameters
 ----------
 deltaVPointThreshold: float
     A threshold, any delta volume coordinates smaller than this value will be ignored</pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01915">1915</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02349">2349</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00655">PYDAFOAM.DVGeo</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02545">PYDAFOAM.getOption()</a>, <a class="el" href="DACheckMesh_8H_source.html#l00046">DACheckMesh.mesh</a>, <a class="el" href="pyDAFoam_8py_source.html#l00654">PYDAFOAM.mesh</a>, <a class="el" href="pyDAFoam_8py_source.html#l01194">PYDAFOAM.setDesignVars()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01735">PYDAFOAM.solver</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01987">PYDAFOAM.updateVolumePoints()</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00678">PYDAFOAM.DVGeo</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02979">PYDAFOAM.getOption()</a>, <a class="el" href="DACheckMesh_8H_source.html#l00046">DACheckMesh.mesh</a>, <a class="el" href="pyDAFoam_8py_source.html#l00677">PYDAFOAM.mesh</a>, <a class="el" href="pyDAFoam_8py_source.html#l01310">PYDAFOAM.setDesignVars()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02168">PYDAFOAM.solver</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02421">PYDAFOAM.updateVolumePoints()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1349,11 +1713,11 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <pre class="fragment">Update the vol mesh point coordinates based on the current values of design variables
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01987">1987</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02421">2421</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00631">PYDAFOAM.allFamilies</a>, <a class="el" href="pyDAFoam_8py_source.html#l00639">PYDAFOAM.designFamilyGroup</a>, <a class="el" href="pyDAFoam_8py_source.html#l00655">PYDAFOAM.DVGeo</a>, <a class="el" href="pyDAFoam_8py_source.html#l02214">PYDAFOAM.mapVector()</a>, <a class="el" href="DACheckMesh_8H_source.html#l00046">DACheckMesh.mesh</a>, <a class="el" href="pyDAFoam_8py_source.html#l00654">PYDAFOAM.mesh</a>, <a class="el" href="pyDAFoam_8py_source.html#l00715">PYDAFOAM.pointsSet</a>, <a class="el" href="pyDAFoam_8py_source.html#l00602">PYDAFOAM.ptSetName</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02021">PYDAFOAM.setSurfaceCoordinates()</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00654">PYDAFOAM.allFamilies</a>, <a class="el" href="pyDAFoam_8py_source.html#l00662">PYDAFOAM.designFamilyGroup</a>, <a class="el" href="pyDAFoam_8py_source.html#l00678">PYDAFOAM.DVGeo</a>, <a class="el" href="pyDAFoam_8py_source.html#l02648">PYDAFOAM.mapVector()</a>, <a class="el" href="DACheckMesh_8H_source.html#l00046">DACheckMesh.mesh</a>, <a class="el" href="pyDAFoam_8py_source.html#l00677">PYDAFOAM.mesh</a>, <a class="el" href="pyDAFoam_8py_source.html#l00738">PYDAFOAM.pointsSet</a>, <a class="el" href="pyDAFoam_8py_source.html#l00625">PYDAFOAM.ptSetName</a>, <a class="el" href="pyDAFoam_8py_source.html#l02455">PYDAFOAM.setSurfaceCoordinates()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00673">PYDAFOAM.xs0</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01915">PYDAFOAM.setdXvdFFDMat()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02349">PYDAFOAM.setdXvdFFDMat()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1414,11 +1778,11 @@ coordinates : numpy array
 groupName : str
     Name of family or group of families for which to return coordinates for.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02021">2021</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02455">2455</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00593">PYDAFOAM._updateGeomInfo</a>, <a class="el" href="pyDAFoam_8py_source.html#l00634">PYDAFOAM.allWallsGroup</a>, <a class="el" href="pyDAFoam_8py_source.html#l02050">PYDAFOAM.getSurfaceCoordinates()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02214">PYDAFOAM.mapVector()</a>, <a class="el" href="DACheckMesh_8H_source.html#l00046">DACheckMesh.mesh</a>, <a class="el" href="pyDAFoam_8py_source.html#l00654">PYDAFOAM.mesh</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00645">PYDAFOAM.meshFamilyGroup</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l00616">PYDAFOAM._updateGeomInfo</a>, <a class="el" href="pyDAFoam_8py_source.html#l00657">PYDAFOAM.allWallsGroup</a>, <a class="el" href="pyDAFoam_8py_source.html#l02484">PYDAFOAM.getSurfaceCoordinates()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02648">PYDAFOAM.mapVector()</a>, <a class="el" href="DACheckMesh_8H_source.html#l00046">DACheckMesh.mesh</a>, <a class="el" href="pyDAFoam_8py_source.html#l00677">PYDAFOAM.mesh</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00668">PYDAFOAM.meshFamilyGroup</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01987">PYDAFOAM.updateVolumePoints()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02421">PYDAFOAM.updateVolumePoints()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1478,11 +1842,11 @@ Output
 ------
 xs: numpy array of size nPoints * 3 for surface points
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02050">2050</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02484">2484</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l02086">PYDAFOAM._getSurfaceSize()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00631">PYDAFOAM.allFamilies</a>, <a class="el" href="pyDAFoam_8py_source.html#l00634">PYDAFOAM.allWallsGroup</a>, <a class="el" href="pyDAFoam_8py_source.html#l02121">PYDAFOAM.basicFamilies</a>, <a class="el" href="pyDAFoam_8py_source.html#l00596">PYDAFOAM.dtype</a>, <a class="el" href="pyDAFoam_8py_source.html#l00590">PYDAFOAM.families</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02017">PYDAFOAM.xv</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l02520">PYDAFOAM._getSurfaceSize()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00654">PYDAFOAM.allFamilies</a>, <a class="el" href="pyDAFoam_8py_source.html#l00657">PYDAFOAM.allWallsGroup</a>, <a class="el" href="pyDAFoam_8py_source.html#l02555">PYDAFOAM.basicFamilies</a>, <a class="el" href="pyDAFoam_8py_source.html#l00619">PYDAFOAM.dtype</a>, <a class="el" href="pyDAFoam_8py_source.html#l00613">PYDAFOAM.families</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02451">PYDAFOAM.xv</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01122">PYDAFOAM.getTriangulatedMeshSurface()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01043">PYDAFOAM.setMesh()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02021">PYDAFOAM.setSurfaceCoordinates()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01238">PYDAFOAM.getTriangulatedMeshSurface()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01159">PYDAFOAM.setMesh()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02455">PYDAFOAM.setSurfaceCoordinates()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01461">PYDAFOAM.writeSurfaceSensitivityMap()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1499,6 +1863,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ad26ac7f00b7a0b4cd441a7a8086ab9e7" title="getTriangulatedMeshSurface" alt="" coords="208,5,396,32"/>
 <area shape="rect" id="node3" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a9a37af332c46ce5d38b00e0073632e9c" title="setMesh" alt="" coords="266,56,338,83"/>
 <area shape="rect" id="node4" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6850fa33c4c3d8412a9d9297146b21be" title="setSurfaceCoordinates" alt="" coords="225,107,379,133"/>
+<area shape="rect" id="node5" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab38312f7c1f6cebb0e88ccd0019efd29" title="writeSurfaceSensitivityMap" alt="" coords="211,157,393,184"/>
 </map>
 </div>
 
@@ -1521,7 +1886,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <pre class="fragment">Take the apName and return the mangled point set name.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02190">2190</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02624">2624</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -1543,11 +1908,11 @@ Here is the caller graph for this function:</div>
 <pre class="fragment">Get the list of indices to pass to the mesh object for the
 volume mesh mapping
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02196">2196</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02630">2630</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01250">PYDAFOAM.comm</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01366">PYDAFOAM.comm</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01043">PYDAFOAM.setMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01159">PYDAFOAM.setMesh()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1649,11 +2014,11 @@ Returns
 vec2 : Numpy array
     The input vector mapped to the families defined in groupName2.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02214">2214</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02648">2648</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l02086">PYDAFOAM._getSurfaceSize()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00631">PYDAFOAM.allFamilies</a>, <a class="el" href="pyDAFoam_8py_source.html#l02121">PYDAFOAM.basicFamilies</a>, <a class="el" href="pyDAFoam_8py_source.html#l00596">PYDAFOAM.dtype</a>, <a class="el" href="pyDAFoam_8py_source.html#l00590">PYDAFOAM.families</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02017">PYDAFOAM.xv</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l02520">PYDAFOAM._getSurfaceSize()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00654">PYDAFOAM.allFamilies</a>, <a class="el" href="pyDAFoam_8py_source.html#l02555">PYDAFOAM.basicFamilies</a>, <a class="el" href="pyDAFoam_8py_source.html#l00619">PYDAFOAM.dtype</a>, <a class="el" href="pyDAFoam_8py_source.html#l00613">PYDAFOAM.families</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02451">PYDAFOAM.xv</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00699">PYDAFOAM.__call__()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02021">PYDAFOAM.setSurfaceCoordinates()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01987">PYDAFOAM.updateVolumePoints()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00722">PYDAFOAM.__call__()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02455">PYDAFOAM.setSurfaceCoordinates()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02421">PYDAFOAM.updateVolumePoints()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01461">PYDAFOAM.writeSurfaceSensitivityMap()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1667,10 +2032,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab99bf2b8eef3a3a3dc9130cfe361a672_icgraph.png" border="0" usemap="#classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab99bf2b8eef3a3a3dc9130cfe361a672_icgraph" alt=""/></div>
 <map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab99bf2b8eef3a3a3dc9130cfe361a672_icgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_ab99bf2b8eef3a3a3dc9130cfe361a672_icgraph">
-<area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a66b2fc5e7e096cac91755849fbf6de76" title="__call__" alt="" coords="181,5,251,32"/>
-<area shape="rect" id="node3" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6850fa33c4c3d8412a9d9297146b21be" title="setSurfaceCoordinates" alt="" coords="139,56,293,83"/>
-<area shape="rect" id="node4" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#aaeb1841365e3ac6b6903bab3314e8c76" title="updateVolumePoints" alt="" coords="341,81,484,108"/>
-<area shape="rect" id="node5" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8" title="solveAdjoint" alt="" coords="169,157,263,184"/>
+<area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a66b2fc5e7e096cac91755849fbf6de76" title="__call__" alt="" coords="194,5,265,32"/>
+<area shape="rect" id="node3" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6850fa33c4c3d8412a9d9297146b21be" title="setSurfaceCoordinates" alt="" coords="152,56,307,83"/>
+<area shape="rect" id="node4" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#aaeb1841365e3ac6b6903bab3314e8c76" title="updateVolumePoints" alt="" coords="368,95,511,121"/>
+<area shape="rect" id="node5" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8" title="solveAdjoint" alt="" coords="393,171,486,197"/>
+<area shape="rect" id="node6" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab38312f7c1f6cebb0e88ccd0019efd29" title="writeSurfaceSensitivityMap" alt="" coords="139,208,320,235"/>
 </map>
 </div>
 
@@ -1709,9 +2075,9 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <pre class="fragment">Convert a Nx3 mesh point numpy array to a Petsc xvVec
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02346">2346</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02780">2780</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01735">PYDAFOAM.solver</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l02168">PYDAFOAM.solver</a>.</p>
 
 </div>
 </div>
@@ -1748,9 +2114,9 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <pre class="fragment">Convert a 3Nx1 mesh point numpy array to a Petsc xvVec
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02363">2363</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02797">2797</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01250">PYDAFOAM.comm</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01735">PYDAFOAM.solver</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01366">PYDAFOAM.comm</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02168">PYDAFOAM.solver</a>.</p>
 
 </div>
 </div>
@@ -1842,11 +2208,11 @@ self.options =
     'objFunc': [dict, {'name': 'CL'}]
 }
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02418">2418</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02852">2852</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01222">PYDAFOAM.defaultOptions</a>, <a class="el" href="pyDAFoam_8py_source.html#l01219">PYDAFOAM.imOptions</a>, <a class="el" href="pyDAFoam_8py_source.html#l00581">PYDAFOAM.name</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01227">PYDAFOAM.options</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01338">PYDAFOAM.defaultOptions</a>, <a class="el" href="pyDAFoam_8py_source.html#l01335">PYDAFOAM.imOptions</a>, <a class="el" href="pyDAFoam_8py_source.html#l00604">PYDAFOAM.name</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01343">PYDAFOAM.options</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1917,9 +2283,9 @@ globalCellI : int
    The global cell index to set the value
 compI : int
    The component index to set the value (for vectorField only)</pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02507">2507</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02941">2941</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01735">PYDAFOAM.solver</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l02168">PYDAFOAM.solver</a>.</p>
 
 </div>
 </div>
@@ -1962,9 +2328,9 @@ fieldName : str
    Name of the flow field to update, e.g., U, p, nuTilda
 fieldType : str
    Type of the flow field: scalar or vector</pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02530">2530</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02964">2964</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01735">PYDAFOAM.solver</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l02168">PYDAFOAM.solver</a>.</p>
 
 </div>
 </div>
@@ -2005,22 +2371,24 @@ Returns
 value : varies
    Return the value of the option.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02545">2545</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02979">2979</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01222">PYDAFOAM.defaultOptions</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01227">PYDAFOAM.options</a>.</p>
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l01338">PYDAFOAM.defaultOptions</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01343">PYDAFOAM.options</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01704">PYDAFOAM.calcTotalDeriv()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01779">PYDAFOAM.runColoring()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01915">PYDAFOAM.setdXvdFFDMat()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01064">PYDAFOAM.setEvalFuncs()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02565">PYDAFOAM.updateDAOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02104">PYDAFOAM.calcdFdAOAAnalytical()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02213">PYDAFOAM.runColoring()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02349">PYDAFOAM.setdXvdFFDMat()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01180">PYDAFOAM.setEvalFuncs()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>, <a class="el" href="pyDAFoam_8py_source.html#l03018">PYDAFOAM.syncDAOptionToActuatorDVs()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02999">PYDAFOAM.updateDAOption()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00937">PYDAFOAM.writeDeformedFFDs()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a6b17301eac258f3e9309107a42eac008_icgraph.png" border="0" usemap="#classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a6b17301eac258f3e9309107a42eac008_icgraph" alt=""/></div>
 <map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a6b17301eac258f3e9309107a42eac008_icgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a6b17301eac258f3e9309107a42eac008_icgraph">
-<area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a275c2b4245d183287961ee13c1ca7b7b" title="calcTotalDeriv" alt="" coords="138,5,245,32"/>
-<area shape="rect" id="node3" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8" title="solveAdjoint" alt="" coords="299,107,392,133"/>
-<area shape="rect" id="node4" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ae25f7847fa3d79b54c8f75ea2c5f3cfa" title="runColoring" alt="" coords="147,107,235,133"/>
-<area shape="rect" id="node5" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a68f7c03d00f03013c856d57d9e6f207e" title="setdXvdFFDMat" alt="" coords="132,157,251,184"/>
-<area shape="rect" id="node6" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#afaf983faece233b240fa94f0acb8e7d1" title="setEvalFuncs" alt="" coords="140,208,243,235"/>
-<area shape="rect" id="node7" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a5134e15b0ef2c043d575c5496ea4b298" title="updateDAOption" alt="" coords="132,259,251,285"/>
+<area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab45fb76eb2d2ee511788958853bb1083" title="calcdFdAOAAnalytical" alt="" coords="377,5,531,32"/>
+<area shape="rect" id="node3" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8" title="solveAdjoint" alt="" coords="579,81,672,108"/>
+<area shape="rect" id="node4" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ae25f7847fa3d79b54c8f75ea2c5f3cfa" title="runColoring" alt="" coords="187,107,275,133"/>
+<area shape="rect" id="node5" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a68f7c03d00f03013c856d57d9e6f207e" title="setdXvdFFDMat" alt="" coords="395,132,513,159"/>
+<area shape="rect" id="node6" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#afaf983faece233b240fa94f0acb8e7d1" title="setEvalFuncs" alt="" coords="179,208,282,235"/>
+<area shape="rect" id="node7" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a2da397f4e1efd8a39b308552a93aed2d" title="syncDAOptionToActuatorDVs" alt="" coords="132,259,329,285"/>
+<area shape="rect" id="node8" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a5134e15b0ef2c043d575c5496ea4b298" title="updateDAOption" alt="" coords="395,259,513,285"/>
+<area shape="rect" id="node9" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#aad360dd2202aa03d1da921002215a2d6" title="writeDeformedFFDs" alt="" coords="161,360,301,387"/>
 </map>
 </div>
 
@@ -2046,19 +2414,22 @@ pyDAFoam. This will pass the changes of self.options from pyDAFoam
 to DASolvers. NOTE: need to call this function after calling
 self.initSolver
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02565">2565</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02999">2999</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l02650">PYDAFOAM._writeOpenFoamHeader()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01250">PYDAFOAM.comm</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02545">PYDAFOAM.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01260">PYDAFOAM.nProcs</a>, <a class="el" href="pyDAFoam_8py_source.html#l01227">PYDAFOAM.options</a>, <a class="el" href="pyDAFoam_8py_source.html#l01735">PYDAFOAM.solver</a>, <a class="el" href="pyDAFoam_8py_source.html#l01741">PYDAFOAM.solverAD</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00615">PYDAFOAM.solverInitialized</a>.</p>
+<p class="reference">References <a class="el" href="DAOption_8H_source.html#l00092">DAOption.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02979">PYDAFOAM.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01343">PYDAFOAM.options</a>, <a class="el" href="pyDAFoam_8py_source.html#l02168">PYDAFOAM.solver</a>, <a class="el" href="pyDAFoam_8py_source.html#l02174">PYDAFOAM.solverAD</a>, <a class="el" href="pyDAFoam_8py_source.html#l00638">PYDAFOAM.solverInitialized</a>, <a class="el" href="DAFvSource_8C_source.html#l00113">DAFvSource.syncDAOptionToActuatorDVs()</a>, <a class="el" href="DASolvers_8H_source.html#l00395">DASolvers.syncDAOptionToActuatorDVs()</a>, <a class="el" href="DASolver_8H_source.html#l00618">DASolver.syncDAOptionToActuatorDVs()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l03018">PYDAFOAM.syncDAOptionToActuatorDVs()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a5134e15b0ef2c043d575c5496ea4b298_cgraph.png" border="0" usemap="#classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a5134e15b0ef2c043d575c5496ea4b298_cgraph" alt=""/></div>
 <map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a5134e15b0ef2c043d575c5496ea4b298_cgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a5134e15b0ef2c043d575c5496ea4b298_cgraph">
-<area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a0f936922d1d9efa2494fdc8443d01fb8" title="_writeOpenFoamHeader" alt="" coords="183,5,345,32"/>
-<area shape="rect" id="node3" href="classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key " alt="" coords="172,56,356,83"/>
-<area shape="rect" id="node4" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6b17301eac258f3e9309107a42eac008" title="getOption" alt="" coords="225,107,303,133"/>
+<area shape="rect" id="node2" href="classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key " alt="" coords="462,14,646,40"/>
+<area shape="rect" id="node3" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6b17301eac258f3e9309107a42eac008" title="getOption" alt="" coords="515,90,593,116"/>
+<area shape="rect" id="node4" href="classFoam_1_1DAFvSource.html#a3c11de10a86223fc289db966ae7ea428" title="synchronize the values in DAOption and actuatorDiskDVs_ " alt="" coords="439,248,669,289"/>
+<area shape="rect" id="node5" href="classFoam_1_1DASolvers.html#a3c11de10a86223fc289db966ae7ea428" title="synchronize the values in DAOption and actuatorDiskDVs_ " alt="" coords="172,153,391,194"/>
+<area shape="rect" id="node6" href="classFoam_1_1DASolver.html#a3c11de10a86223fc289db966ae7ea428" title="synchronize the values in DAOption and actuatorDiskDVs_ " alt="" coords="175,218,387,260"/>
+<area shape="rect" id="node7" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a2da397f4e1efd8a39b308552a93aed2d" title="syncDAOptionToActuatorDVs" alt="" coords="183,51,380,78"/>
 </map>
 </div>
 <div class="dynheader">
@@ -2067,6 +2438,52 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a5134e15b0ef2c043d575c5496ea4b298_icgraph.png" border="0" usemap="#classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a5134e15b0ef2c043d575c5496ea4b298_icgraph" alt=""/></div>
 <map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a5134e15b0ef2c043d575c5496ea4b298_icgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a5134e15b0ef2c043d575c5496ea4b298_icgraph">
 <area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8" title="solveAdjoint" alt="" coords="172,5,265,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2da397f4e1efd8a39b308552a93aed2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2da397f4e1efd8a39b308552a93aed2d">&#9670;&nbsp;</a></span>syncDAOptionToActuatorDVs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def syncDAOptionToActuatorDVs </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Synchronize the values in DAOption and actuatorDiskDVs_. We need to synchronize the values
+defined in fvSource from DAOption to actuatorDiskDVs_ in the C++ layer
+NOTE: we need to call this function whenever we change the actuator design variables
+during optimization.
+</pre> 
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l03018">3018</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+
+<p class="reference">References <a class="el" href="pyDAFoam_8py_source.html#l03100">PYDAFOAM._writeOpenFoamHeader()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01366">PYDAFOAM.comm</a>, <a class="el" href="DAOption_8H_source.html#l00092">DAOption.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02979">PYDAFOAM.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01376">PYDAFOAM.nProcs</a>, <a class="el" href="pyDAFoam_8py_source.html#l01343">PYDAFOAM.options</a>, <a class="el" href="pyDAFoam_8py_source.html#l02168">PYDAFOAM.solver</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02174">PYDAFOAM.solverAD</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02999">PYDAFOAM.updateDAOption()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a2da397f4e1efd8a39b308552a93aed2d_cgraph.png" border="0" usemap="#classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a2da397f4e1efd8a39b308552a93aed2d_cgraph" alt=""/></div>
+<map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a2da397f4e1efd8a39b308552a93aed2d_cgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a2da397f4e1efd8a39b308552a93aed2d_cgraph">
+<area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a0f936922d1d9efa2494fdc8443d01fb8" title="_writeOpenFoamHeader" alt="" coords="261,5,424,32"/>
+<area shape="rect" id="node3" href="classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key " alt="" coords="251,56,435,83"/>
+<area shape="rect" id="node4" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6b17301eac258f3e9309107a42eac008" title="getOption" alt="" coords="303,107,382,133"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a2da397f4e1efd8a39b308552a93aed2d_icgraph.png" border="0" usemap="#classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a2da397f4e1efd8a39b308552a93aed2d_icgraph" alt=""/></div>
+<map name="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a2da397f4e1efd8a39b308552a93aed2d_icgraph" id="classdafoam_1_1pyDAFoam_1_1PYDAFOAM_a2da397f4e1efd8a39b308552a93aed2d_icgraph">
+<area shape="rect" id="node2" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a5134e15b0ef2c043d575c5496ea4b298" title="updateDAOption" alt="" coords="251,5,369,32"/>
 </map>
 </div>
 
@@ -2085,7 +2502,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00572">572</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00595">595</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -2101,9 +2518,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00581">581</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00604">604</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02418">PYDAFOAM.setOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02852">PYDAFOAM.setOption()</a>.</p>
 
 </div>
 </div>
@@ -2119,9 +2536,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00590">590</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00613">613</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01005">PYDAFOAM.addFamilyGroup()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01073">PYDAFOAM.getSurfaceConnectivity()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02050">PYDAFOAM.getSurfaceCoordinates()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02214">PYDAFOAM.mapVector()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01188">PYDAFOAM.printFamilyList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01121">PYDAFOAM.addFamilyGroup()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01189">PYDAFOAM.getSurfaceConnectivity()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02484">PYDAFOAM.getSurfaceCoordinates()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02648">PYDAFOAM.mapVector()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01304">PYDAFOAM.printFamilyList()</a>.</p>
 
 </div>
 </div>
@@ -2137,9 +2554,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00596">596</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00619">619</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00946">PYDAFOAM.evalFunctionsSens()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02050">PYDAFOAM.getSurfaceCoordinates()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02214">PYDAFOAM.mapVector()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01062">PYDAFOAM.evalFunctionsSens()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02484">PYDAFOAM.getSurfaceCoordinates()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02648">PYDAFOAM.mapVector()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>.</p>
 
 </div>
 </div>
@@ -2155,9 +2572,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00602">602</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00625">625</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00699">PYDAFOAM.__call__()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01987">PYDAFOAM.updateVolumePoints()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00722">PYDAFOAM.__call__()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02421">PYDAFOAM.updateVolumePoints()</a>.</p>
 
 </div>
 </div>
@@ -2173,9 +2590,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00615">615</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00638">638</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01704">PYDAFOAM.calcTotalDeriv()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02565">PYDAFOAM.updateDAOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02104">PYDAFOAM.calcdFdAOAAnalytical()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02999">PYDAFOAM.updateDAOption()</a>.</p>
 
 </div>
 </div>
@@ -2191,9 +2608,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00631">631</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00654">654</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00699">PYDAFOAM.__call__()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02050">PYDAFOAM.getSurfaceCoordinates()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02214">PYDAFOAM.mapVector()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01987">PYDAFOAM.updateVolumePoints()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00722">PYDAFOAM.__call__()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02484">PYDAFOAM.getSurfaceCoordinates()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02648">PYDAFOAM.mapVector()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02421">PYDAFOAM.updateVolumePoints()</a>.</p>
 
 </div>
 </div>
@@ -2209,9 +2626,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00634">634</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00657">657</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01073">PYDAFOAM.getSurfaceConnectivity()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02050">PYDAFOAM.getSurfaceCoordinates()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01122">PYDAFOAM.getTriangulatedMeshSurface()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02021">PYDAFOAM.setSurfaceCoordinates()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01189">PYDAFOAM.getSurfaceConnectivity()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02484">PYDAFOAM.getSurfaceCoordinates()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01238">PYDAFOAM.getTriangulatedMeshSurface()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02455">PYDAFOAM.setSurfaceCoordinates()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01461">PYDAFOAM.writeSurfaceSensitivityMap()</a>.</p>
 
 </div>
 </div>
@@ -2227,9 +2644,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00639">639</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00662">662</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00699">PYDAFOAM.__call__()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01987">PYDAFOAM.updateVolumePoints()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00722">PYDAFOAM.__call__()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02421">PYDAFOAM.updateVolumePoints()</a>.</p>
 
 </div>
 </div>
@@ -2245,9 +2662,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00645">645</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00668">668</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01043">PYDAFOAM.setMesh()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02021">PYDAFOAM.setSurfaceCoordinates()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01159">PYDAFOAM.setMesh()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02455">PYDAFOAM.setSurfaceCoordinates()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01461">PYDAFOAM.writeSurfaceSensitivityMap()</a>.</p>
 
 </div>
 </div>
@@ -2263,9 +2680,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00650">650</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00673">673</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00699">PYDAFOAM.__call__()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00722">PYDAFOAM.__call__()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02421">PYDAFOAM.updateVolumePoints()</a>.</p>
 
 </div>
 </div>
@@ -2281,9 +2698,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00654">654</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00677">677</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01915">PYDAFOAM.setdXvdFFDMat()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01043">PYDAFOAM.setMesh()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02021">PYDAFOAM.setSurfaceCoordinates()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01987">PYDAFOAM.updateVolumePoints()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02349">PYDAFOAM.setdXvdFFDMat()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01159">PYDAFOAM.setMesh()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02455">PYDAFOAM.setSurfaceCoordinates()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02421">PYDAFOAM.updateVolumePoints()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01461">PYDAFOAM.writeSurfaceSensitivityMap()</a>.</p>
 
 </div>
 </div>
@@ -2299,9 +2716,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00655">655</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00678">678</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00699">PYDAFOAM.__call__()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00946">PYDAFOAM.evalFunctionsSens()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00986">PYDAFOAM.setDVGeo()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01915">PYDAFOAM.setdXvdFFDMat()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01987">PYDAFOAM.updateVolumePoints()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00722">PYDAFOAM.__call__()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01062">PYDAFOAM.evalFunctionsSens()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01102">PYDAFOAM.setDVGeo()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02349">PYDAFOAM.setdXvdFFDMat()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02421">PYDAFOAM.updateVolumePoints()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00937">PYDAFOAM.writeDeformedFFDs()</a>.</p>
 
 </div>
 </div>
@@ -2317,7 +2734,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00658">658</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00681">681</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01606">PYDAFOAM.solvePrimal()</a>.</p>
 
 </div>
 </div>
@@ -2333,9 +2752,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00659">659</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00682">682</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00937">PYDAFOAM.writeDeformedFFDs()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00900">PYDAFOAM.writeDesignVariable()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00944">PYDAFOAM.writeTotalDeriv()</a>.</p>
 
 </div>
 </div>
@@ -2351,9 +2770,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00662">662</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00685">685</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00884">PYDAFOAM.evalFunctions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01000">PYDAFOAM.evalFunctions()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01606">PYDAFOAM.solvePrimal()</a>.</p>
 
 </div>
 </div>
@@ -2369,9 +2788,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00663">663</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00686">686</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00946">PYDAFOAM.evalFunctionsSens()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01062">PYDAFOAM.evalFunctionsSens()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>.</p>
 
 </div>
 </div>
@@ -2387,9 +2806,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00668">668</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00691">691</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00884">PYDAFOAM.evalFunctions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02104">PYDAFOAM.calcdFdAOAAnalytical()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01000">PYDAFOAM.evalFunctions()</a>.</p>
 
 </div>
 </div>
@@ -2405,9 +2824,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00671">671</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00694">694</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>.</p>
 
 </div>
 </div>
@@ -2423,9 +2842,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00675">675</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00698">698</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00946">PYDAFOAM.evalFunctionsSens()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01062">PYDAFOAM.evalFunctionsSens()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>.</p>
 
 </div>
 </div>
@@ -2441,9 +2860,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00678">678</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00701">701</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>.</p>
 
 </div>
 </div>
@@ -2459,9 +2878,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00681">681</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00704">704</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>.</p>
 
 </div>
 </div>
@@ -2477,9 +2896,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00693">693</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00716">716</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01704">PYDAFOAM.calcTotalDeriv()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01779">PYDAFOAM.runColoring()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02104">PYDAFOAM.calcdFdAOAAnalytical()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02213">PYDAFOAM.runColoring()</a>.</p>
 
 </div>
 </div>
@@ -2495,9 +2914,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00715">715</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00738">738</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01987">PYDAFOAM.updateVolumePoints()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02421">PYDAFOAM.updateVolumePoints()</a>.</p>
 
 </div>
 </div>
@@ -2513,9 +2932,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01219">1219</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01335">1335</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02418">PYDAFOAM.setOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02852">PYDAFOAM.setOption()</a>.</p>
 
 </div>
 </div>
@@ -2531,9 +2950,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01222">1222</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01338">1338</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02545">PYDAFOAM.getOption()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02418">PYDAFOAM.setOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02979">PYDAFOAM.getOption()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02852">PYDAFOAM.setOption()</a>.</p>
 
 </div>
 </div>
@@ -2549,9 +2968,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01227">1227</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01343">1343</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02545">PYDAFOAM.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01779">PYDAFOAM.runColoring()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02418">PYDAFOAM.setOption()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02565">PYDAFOAM.updateDAOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02979">PYDAFOAM.getOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02213">PYDAFOAM.runColoring()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02852">PYDAFOAM.setOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l03018">PYDAFOAM.syncDAOptionToActuatorDVs()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02999">PYDAFOAM.updateDAOption()</a>.</p>
 
 </div>
 </div>
@@ -2567,9 +2986,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01250">1250</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01366">1366</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01837">PYDAFOAM.deletePrevPrimalSolTime()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02196">PYDAFOAM.getSolverMeshIndices()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01122">PYDAFOAM.getTriangulatedMeshSurface()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01862">PYDAFOAM.renameSolution()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01816">PYDAFOAM.runDecomposePar()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02565">PYDAFOAM.updateDAOption()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02363">PYDAFOAM.xvFlatten2XvVec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02271">PYDAFOAM.deletePrevPrimalSolTime()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02630">PYDAFOAM.getSolverMeshIndices()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01238">PYDAFOAM.getTriangulatedMeshSurface()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02296">PYDAFOAM.renameSolution()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02250">PYDAFOAM.runDecomposePar()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>, <a class="el" href="pyDAFoam_8py_source.html#l03018">PYDAFOAM.syncDAOptionToActuatorDVs()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00900">PYDAFOAM.writeDesignVariable()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00944">PYDAFOAM.writeTotalDeriv()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02797">PYDAFOAM.xvFlatten2XvVec()</a>.</p>
 
 </div>
 </div>
@@ -2585,9 +3004,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01254">1254</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01370">1370</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01837">PYDAFOAM.deletePrevPrimalSolTime()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01862">PYDAFOAM.renameSolution()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02271">PYDAFOAM.deletePrevPrimalSolTime()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02296">PYDAFOAM.renameSolution()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01461">PYDAFOAM.writeSurfaceSensitivityMap()</a>.</p>
 
 </div>
 </div>
@@ -2603,7 +3022,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01259">1259</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01375">1375</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01461">PYDAFOAM.writeSurfaceSensitivityMap()</a>.</p>
 
 </div>
 </div>
@@ -2619,9 +3040,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01260">1260</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01376">1376</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02565">PYDAFOAM.updateDAOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l03018">PYDAFOAM.syncDAOptionToActuatorDVs()</a>.</p>
 
 </div>
 </div>
@@ -2637,9 +3058,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01263">1263</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01379">1379</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01704">PYDAFOAM.calcTotalDeriv()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01779">PYDAFOAM.runColoring()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02104">PYDAFOAM.calcdFdAOAAnalytical()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02213">PYDAFOAM.runColoring()</a>.</p>
 
 </div>
 </div>
@@ -2655,9 +3076,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01735">1735</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02168">2168</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01837">PYDAFOAM.deletePrevPrimalSolTime()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00884">PYDAFOAM.evalFunctions()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00877">PYDAFOAM.getTimeInstanceObjFunc()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01915">PYDAFOAM.setdXvdFFDMat()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02507">PYDAFOAM.setFieldValue4GlobalCellI()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00865">PYDAFOAM.setTimeInstanceField()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02530">PYDAFOAM.updateBoundaryConditions()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02565">PYDAFOAM.updateDAOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02346">PYDAFOAM.xv2XvVec()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02363">PYDAFOAM.xvFlatten2XvVec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02271">PYDAFOAM.deletePrevPrimalSolTime()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01000">PYDAFOAM.evalFunctions()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00993">PYDAFOAM.getTimeInstanceObjFunc()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02349">PYDAFOAM.setdXvdFFDMat()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02941">PYDAFOAM.setFieldValue4GlobalCellI()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00888">PYDAFOAM.setTimeInstanceField()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01606">PYDAFOAM.solvePrimal()</a>, <a class="el" href="pyDAFoam_8py_source.html#l03018">PYDAFOAM.syncDAOptionToActuatorDVs()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02964">PYDAFOAM.updateBoundaryConditions()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02999">PYDAFOAM.updateDAOption()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02780">PYDAFOAM.xv2XvVec()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02797">PYDAFOAM.xvFlatten2XvVec()</a>.</p>
 
 </div>
 </div>
@@ -2673,9 +3094,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l01741">1741</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02174">2174</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02565">PYDAFOAM.updateDAOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>, <a class="el" href="pyDAFoam_8py_source.html#l03018">PYDAFOAM.syncDAOptionToActuatorDVs()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02999">PYDAFOAM.updateDAOption()</a>.</p>
 
 </div>
 </div>
@@ -2691,7 +3112,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02016">2016</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02450">2450</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -2707,9 +3128,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02017">2017</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02451">2451</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02050">PYDAFOAM.getSurfaceCoordinates()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02214">PYDAFOAM.mapVector()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02484">PYDAFOAM.getSurfaceCoordinates()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02648">PYDAFOAM.mapVector()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>.</p>
 
 </div>
 </div>
@@ -2725,9 +3146,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02121">2121</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02555">2555</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01073">PYDAFOAM.getSurfaceConnectivity()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02050">PYDAFOAM.getSurfaceCoordinates()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02214">PYDAFOAM.mapVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01189">PYDAFOAM.getSurfaceConnectivity()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02484">PYDAFOAM.getSurfaceCoordinates()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l02648">PYDAFOAM.mapVector()</a>.</p>
 
 </div>
 </div>
@@ -2743,7 +3164,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02124">2124</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02558">2558</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -2759,9 +3180,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02309">2309</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02743">2743</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01606">PYDAFOAM.solvePrimal()</a>.</p>
 
 </div>
 </div>
@@ -2777,9 +3198,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02326">2326</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02760">2760</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00837">PYDAFOAM.saveMultiPointField()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00851">PYDAFOAM.setMultiPointField()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00865">PYDAFOAM.setTimeInstanceField()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01299">PYDAFOAM.solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00860">PYDAFOAM.saveMultiPointField()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00874">PYDAFOAM.setMultiPointField()</a>, <a class="el" href="pyDAFoam_8py_source.html#l00888">PYDAFOAM.setTimeInstanceField()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01632">PYDAFOAM.solveAdjoint()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01606">PYDAFOAM.solvePrimal()</a>.</p>
 
 </div>
 </div>
@@ -2795,9 +3216,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02338">2338</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l02772">2772</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00837">PYDAFOAM.saveMultiPointField()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00851">PYDAFOAM.setMultiPointField()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l00860">PYDAFOAM.saveMultiPointField()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l00874">PYDAFOAM.setMultiPointField()</a>.</p>
 
 </div>
 </div>

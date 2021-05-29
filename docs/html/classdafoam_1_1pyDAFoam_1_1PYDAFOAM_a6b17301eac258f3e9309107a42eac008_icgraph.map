@@ -1,8 +1,10 @@
 <map id="getOption" name="getOption">
-<area shape="rect" id="node2" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a275c2b4245d183287961ee13c1ca7b7b" title="calcTotalDeriv" alt="" coords="138,5,245,32"/>
-<area shape="rect" id="node3" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8" title="solveAdjoint" alt="" coords="299,107,392,133"/>
-<area shape="rect" id="node4" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ae25f7847fa3d79b54c8f75ea2c5f3cfa" title="runColoring" alt="" coords="147,107,235,133"/>
-<area shape="rect" id="node5" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a68f7c03d00f03013c856d57d9e6f207e" title="setdXvdFFDMat" alt="" coords="132,157,251,184"/>
-<area shape="rect" id="node6" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#afaf983faece233b240fa94f0acb8e7d1" title="setEvalFuncs" alt="" coords="140,208,243,235"/>
-<area shape="rect" id="node7" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a5134e15b0ef2c043d575c5496ea4b298" title="updateDAOption" alt="" coords="132,259,251,285"/>
+<area shape="rect" id="node2" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab45fb76eb2d2ee511788958853bb1083" title="calcdFdAOAAnalytical" alt="" coords="377,5,531,32"/>
+<area shape="rect" id="node3" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8" title="solveAdjoint" alt="" coords="579,81,672,108"/>
+<area shape="rect" id="node4" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ae25f7847fa3d79b54c8f75ea2c5f3cfa" title="runColoring" alt="" coords="187,107,275,133"/>
+<area shape="rect" id="node5" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a68f7c03d00f03013c856d57d9e6f207e" title="setdXvdFFDMat" alt="" coords="395,132,513,159"/>
+<area shape="rect" id="node6" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#afaf983faece233b240fa94f0acb8e7d1" title="setEvalFuncs" alt="" coords="179,208,282,235"/>
+<area shape="rect" id="node7" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a2da397f4e1efd8a39b308552a93aed2d" title="syncDAOptionToActuatorDVs" alt="" coords="132,259,329,285"/>
+<area shape="rect" id="node8" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a5134e15b0ef2c043d575c5496ea4b298" title="updateDAOption" alt="" coords="395,259,513,285"/>
+<area shape="rect" id="node9" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#aad360dd2202aa03d1da921002215a2d6" title="writeDeformedFFDs" alt="" coords="161,360,301,387"/>
 </map>

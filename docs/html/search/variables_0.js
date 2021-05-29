@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['a1_5f',['a1_',['../classFoam_1_1DAkOmegaSST.html#a92c4906beae60c7c54f7e299a9d064de',1,'Foam::DAkOmegaSST']]],
+  ['a1_5f',['a1_',['../classFoam_1_1DAkOmegaSST.html#a92c4906beae60c7c54f7e299a9d064de',1,'Foam::DAkOmegaSST::a1_()'],['../classFoam_1_1DAkOmegaSSTLM.html#a92c4906beae60c7c54f7e299a9d064de',1,'Foam::DAkOmegaSSTLM::a1_()']]],
+  ['actuatordiskdvs_5f',['actuatorDiskDVs_',['../classFoam_1_1DAFvSource.html#a656729aa7e051dcbaa5d8781895d9cb3',1,'Foam::DAFvSource']]],
   ['adjeqnoption',['adjEqnOption',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#aa2abab9dfb63a60be2eaa9ea8e9392d3',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['adjjacobianoption',['adjJacobianOption',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a8ada8cb8c5574d2b852a912de5b519f3',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['adjointfail',['adjointFail',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#affbdc8ed2a0c4a8430570feff7aaaf1f',1,'dafoam::pyDAFoam::PYDAFOAM']]],
@@ -18,13 +19,15 @@ var searchData=
   ['alloptions',['allOptions',['../createRefsRhoSimpleC_8H.html#a5dda3394a2d970c17cbed23a149ebab2',1,'allOptions():&#160;createRefsRhoSimpleC.H'],['../createRefsRhoSimple_8H.html#a5dda3394a2d970c17cbed23a149ebab2',1,'allOptions():&#160;createRefsRhoSimple.H'],['../createRefsTurbo_8H.html#a5dda3394a2d970c17cbed23a149ebab2',1,'allOptions():&#160;createRefsTurbo.H']]],
   ['alloptions_5f',['allOptions_',['../classFoam_1_1DATurbulenceModel.html#a8fa41d725808cf3b15117c2d48991655',1,'Foam::DATurbulenceModel::allOptions_()'],['../classFoam_1_1DAPartDeriv.html#a8fa41d725808cf3b15117c2d48991655',1,'Foam::DAPartDeriv::allOptions_()']]],
   ['allwallsgroup',['allWallsGroup',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#aa368bbcf303c6eabc3e1ff3793300020',1,'dafoam::pyDAFoam::PYDAFOAM']]],
-  ['alphak1_5f',['alphaK1_',['../classFoam_1_1DAkOmegaSST.html#aa0a97130354c5051d11eea50256cd36d',1,'Foam::DAkOmegaSST']]],
-  ['alphak2_5f',['alphaK2_',['../classFoam_1_1DAkOmegaSST.html#a8fdbfaee1d8f60cddc8a582e2eab7de9',1,'Foam::DAkOmegaSST']]],
-  ['alphaomega1_5f',['alphaOmega1_',['../classFoam_1_1DAkOmegaSST.html#ac13f0f71b9a971cd8ad564c514e55a5c',1,'Foam::DAkOmegaSST']]],
-  ['alphaomega2_5f',['alphaOmega2_',['../classFoam_1_1DAkOmegaSST.html#a3aca6b2b207c9f22f950ed2cceee30c4',1,'Foam::DAkOmegaSST']]],
-  ['alphaporosity',['alphaPorosity',['../createRefsSimple_8H.html#a704f39798ea3228ecacdf7ecd7933fe1',1,'createRefsSimple.H']]],
-  ['alphaporosity_5f',['alphaPorosity_',['../classFoam_1_1DAResidualSimpleFoam.html#adbe6dc09beec02c11b70ff3ecc0d100e',1,'Foam::DAResidualSimpleFoam']]],
-  ['alphaporosityptr_5f',['alphaPorosityPtr_',['../classFoam_1_1DASimpleFoam.html#a0cf5310b23ac5033746577bc0ffda3cb',1,'Foam::DASimpleFoam']]],
+  ['alphak1_5f',['alphaK1_',['../classFoam_1_1DAkOmegaSST.html#aa0a97130354c5051d11eea50256cd36d',1,'Foam::DAkOmegaSST::alphaK1_()'],['../classFoam_1_1DAkOmegaSSTLM.html#aa0a97130354c5051d11eea50256cd36d',1,'Foam::DAkOmegaSSTLM::alphaK1_()']]],
+  ['alphak2_5f',['alphaK2_',['../classFoam_1_1DAkOmegaSST.html#a8fdbfaee1d8f60cddc8a582e2eab7de9',1,'Foam::DAkOmegaSST::alphaK2_()'],['../classFoam_1_1DAkOmegaSSTLM.html#a8fdbfaee1d8f60cddc8a582e2eab7de9',1,'Foam::DAkOmegaSSTLM::alphaK2_()']]],
+  ['alphak_5f',['alphaK_',['../classFoam_1_1DAkOmega.html#af4591c0835368dee5b1cda3f27aed342',1,'Foam::DAkOmega']]],
+  ['alphaomega1_5f',['alphaOmega1_',['../classFoam_1_1DAkOmegaSST.html#ac13f0f71b9a971cd8ad564c514e55a5c',1,'Foam::DAkOmegaSST::alphaOmega1_()'],['../classFoam_1_1DAkOmegaSSTLM.html#ac13f0f71b9a971cd8ad564c514e55a5c',1,'Foam::DAkOmegaSSTLM::alphaOmega1_()']]],
+  ['alphaomega2_5f',['alphaOmega2_',['../classFoam_1_1DAkOmegaSST.html#a3aca6b2b207c9f22f950ed2cceee30c4',1,'Foam::DAkOmegaSST::alphaOmega2_()'],['../classFoam_1_1DAkOmegaSSTLM.html#a3aca6b2b207c9f22f950ed2cceee30c4',1,'Foam::DAkOmegaSSTLM::alphaOmega2_()']]],
+  ['alphaomega_5f',['alphaOmega_',['../classFoam_1_1DAkOmega.html#a3bdecbb44cf4063f1f80e5c3ec9344e2',1,'Foam::DAkOmega']]],
+  ['alphaporosity',['alphaPorosity',['../createRefsSimple_8H.html#a704f39798ea3228ecacdf7ecd7933fe1',1,'alphaPorosity():&#160;createRefsSimple.H'],['../createRefsSimpleT_8H.html#a704f39798ea3228ecacdf7ecd7933fe1',1,'alphaPorosity():&#160;createRefsSimpleT.H']]],
+  ['alphaporosity_5f',['alphaPorosity_',['../classFoam_1_1DAResidualSimpleFoam.html#adbe6dc09beec02c11b70ff3ecc0d100e',1,'Foam::DAResidualSimpleFoam::alphaPorosity_()'],['../classFoam_1_1DAResidualSimpleTFoam.html#adbe6dc09beec02c11b70ff3ecc0d100e',1,'Foam::DAResidualSimpleTFoam::alphaPorosity_()']]],
+  ['alphaporosityptr_5f',['alphaPorosityPtr_',['../classFoam_1_1DASimpleFoam.html#a0cf5310b23ac5033746577bc0ffda3cb',1,'Foam::DASimpleFoam::alphaPorosityPtr_()'],['../classFoam_1_1DASimpleTFoam.html#a0cf5310b23ac5033746577bc0ffda3cb',1,'Foam::DASimpleTFoam::alphaPorosityPtr_()']]],
   ['alphat',['alphat',['../createRefsSimpleT_8H.html#abdcf0c0691d6d9f9aefafb8834c3fbe4',1,'createRefsSimpleT.H']]],
   ['alphat_5f',['alphat_',['../classFoam_1_1DAResidualRhoSimpleCFoam.html#ac059867c372a4cabe10bced3632adebf',1,'Foam::DAResidualRhoSimpleCFoam::alphat_()'],['../classFoam_1_1DAResidualRhoSimpleFoam.html#ac059867c372a4cabe10bced3632adebf',1,'Foam::DAResidualRhoSimpleFoam::alphat_()'],['../classFoam_1_1DAResidualSimpleTFoam.html#ac059867c372a4cabe10bced3632adebf',1,'Foam::DAResidualSimpleTFoam::alphat_()'],['../classFoam_1_1DAResidualTurboFoam.html#ac059867c372a4cabe10bced3632adebf',1,'Foam::DAResidualTurboFoam::alphat_()']]],
   ['alphatptr_5f',['alphatPtr_',['../classFoam_1_1DASimpleTFoam.html#ab6fbf6c23c7b0560bebc841cd9a548cf',1,'Foam::DASimpleTFoam']]],
@@ -37,5 +40,6 @@ var searchData=
   ['argsptr_5f',['argsPtr_',['../classFoam_1_1DASolver.html#a637fe81ead61828a3e66d61524f9094e',1,'Foam::DASolver']]],
   ['argv',['argv',['../setArgs_8H.html#af2efa898e9eed6fe6715279cb1ec35b0',1,'setArgs.H']]],
   ['argvlist',['argvList',['../setArgs_8H.html#adab9b3744f984ea1a4dd169e7faba4dc',1,'setArgs.H']]],
-  ['avgobjfuncvalues_5f',['avgObjFuncValues_',['../classFoam_1_1DASolver.html#a37f7e488b2a1d7638c43ea2648d338ca',1,'Foam::DASolver']]]
+  ['avgobjfuncvalues_5f',['avgObjFuncValues_',['../classFoam_1_1DASolver.html#a37f7e488b2a1d7638c43ea2648d338ca',1,'Foam::DASolver']]],
+  ['axis',['axis',['../namespacedafoam__plot3dtransform.html#accc088009d44c521706aa98d6387ee21',1,'dafoam_plot3dtransform.axis()'],['../namespacedafoam__stltransform.html#accc088009d44c521706aa98d6387ee21',1,'dafoam_stltransform.axis()']]]
 ];

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.3</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.5</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -97,8 +97,8 @@ Functions</h2></td></tr>
 <tr class="separator:a9be0f9dcf5cbcd94dc5ee16c7e5df7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d0818de9ad3ccabf027264507dfdd09"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a0d0818de9ad3ccabf027264507dfdd09">runAdjoint</a> (objFun=<a class="el" href="namespacedafoam_1_1optFuncs.html#a45a34455439fc2923988270f3f678c65">calcObjFuncValues</a>, sensFun=<a class="el" href="namespacedafoam_1_1optFuncs.html#a81c04796dd89d23d15b639a87672f557">calcObjFuncSens</a>, fileName=None)</td></tr>
 <tr class="separator:a0d0818de9ad3ccabf027264507dfdd09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26457d778105aec791d99c701e70a740"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a26457d778105aec791d99c701e70a740">solveCL</a> (CL_star, alphaName, liftName, objFun=<a class="el" href="namespacedafoam_1_1optFuncs.html#a45a34455439fc2923988270f3f678c65">calcObjFuncValues</a>)</td></tr>
-<tr class="separator:a26457d778105aec791d99c701e70a740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53dadff36328994839ccbbabf707661e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a53dadff36328994839ccbbabf707661e">solveCL</a> (CL_star, alphaName, liftName, objFun=<a class="el" href="namespacedafoam_1_1optFuncs.html#a45a34455439fc2923988270f3f678c65">calcObjFuncValues</a>, eps=1e-2, tol=1e-4, maxit=10)</td></tr>
+<tr class="separator:a53dadff36328994839ccbbabf707661e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f43014c275c1c01974c8e3fe2da036a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a9f43014c275c1c01974c8e3fe2da036a">verifySens</a> (objFun=<a class="el" href="namespacedafoam_1_1optFuncs.html#a45a34455439fc2923988270f3f678c65">calcObjFuncValues</a>, sensFun=<a class="el" href="namespacedafoam_1_1optFuncs.html#a81c04796dd89d23d15b639a87672f557">calcObjFuncSens</a>)</td></tr>
 <tr class="separator:a9f43014c275c1c01974c8e3fe2da036a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dadc87e51da949dcb736586822d2bda"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a1dadc87e51da949dcb736586822d2bda">calcFDSens</a> (objFun=<a class="el" href="namespacedafoam_1_1optFuncs.html#a45a34455439fc2923988270f3f678c65">calcObjFuncValues</a>, fileName=None)</td></tr>
@@ -241,7 +241,7 @@ This is the hybrid adjoint version of calcObjFuncValues
 <pre class="fragment">Run the adjoint solver and get objective function sensitivities.
 This is the multipoint version of calcObjFuncSens
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00220">220</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00229">229</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -273,7 +273,7 @@ This is the multipoint version of calcObjFuncSens
 <pre class="fragment">Run the adjoint solver and get objective function sensitivities.
 This is the hybrid adjoint version of calcObjFuncSens
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00287">287</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00302">302</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -294,7 +294,7 @@ This is the hybrid adjoint version of calcObjFuncSens
 </div><div class="memdoc">
 <pre class="fragment">Just run the primal
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00352">352</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00373">373</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -331,9 +331,9 @@ This is the hybrid adjoint version of calcObjFuncSens
 </div><div class="memdoc">
 <pre class="fragment">Just run the primal and adjoint
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00362">362</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00383">383</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="optFuncs_8py_source.html#l00420">dafoam.optFuncs.verifySens()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="optFuncs_8py_source.html#l00450">dafoam.optFuncs.verifySens()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -345,8 +345,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a26457d778105aec791d99c701e70a740"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26457d778105aec791d99c701e70a740">&#9670;&nbsp;</a></span>solveCL()</h2>
+<a id="a53dadff36328994839ccbbabf707661e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53dadff36328994839ccbbabf707661e">&#9670;&nbsp;</a></span>solveCL()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -373,7 +373,25 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>objFun</em> = <code><a class="el" href="namespacedafoam_1_1optFuncs.html#a45a34455439fc2923988270f3f678c65">calcObjFuncValues</a></code>&#160;</td>
+          <td class="paramname"><em>objFun</em> = <code><a class="el" href="namespacedafoam_1_1optFuncs.html#a45a34455439fc2923988270f3f678c65">calcObjFuncValues</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>eps</em> = <code>1e-2</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>tol</em> = <code>1e-4</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>maxit</em> = <code>10</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -382,8 +400,10 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00392">392</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<pre class="fragment">Adjust the angle of attack or pitch to match the target lift.
+This is usually needed for wing aerodynamic optimization
+</pre> 
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00413">413</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -414,9 +434,9 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <pre class="fragment">Verify the FFD sensitivity against finite-difference references
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00420">420</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00450">450</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
-<p class="reference">References <a class="el" href="optFuncs_8py_source.html#l00429">dafoam.optFuncs.calcFDSens()</a>, and <a class="el" href="optFuncs_8py_source.html#l00362">dafoam.optFuncs.runAdjoint()</a>.</p>
+<p class="reference">References <a class="el" href="optFuncs_8py_source.html#l00459">dafoam.optFuncs.calcFDSens()</a>, and <a class="el" href="optFuncs_8py_source.html#l00383">dafoam.optFuncs.runAdjoint()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -456,9 +476,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <pre class="fragment">Compute finite-difference sensitivity
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00429">429</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00459">459</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="optFuncs_8py_source.html#l00420">dafoam.optFuncs.verifySens()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="optFuncs_8py_source.html#l00450">dafoam.optFuncs.verifySens()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
