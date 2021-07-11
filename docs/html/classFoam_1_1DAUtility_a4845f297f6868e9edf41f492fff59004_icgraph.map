@@ -14,7 +14,9 @@
 <area shape="rect" id="node14" href="$classFoam_1_1DASolver.html#a9b44a5f49d078df981e84b554470f540" title="compute dRdAOAAD " alt="" coords="177,629,427,656"/>
 <area shape="rect" id="node15" href="$classFoam_1_1DASolver.html#a47e708c0e138fbccc62a96909d10d6d5" title="compute dRdBCAD " alt="" coords="182,680,422,707"/>
 <area shape="rect" id="node16" href="$classFoam_1_1DASolver.html#a63fb766651888601cbefe9dbe7416b3c" title="compute dRdField^T*Psi " alt="" coords="201,731,403,773"/>
-<area shape="rect" id="node17" href="$classFoam_1_1DAJacCon.html#ab84b12272957c0b7caa1ecde6c904618" title="check if there is special boundary conditions that need special treatment in jacCon_ ..." alt="" coords="183,797,421,824"/>
-<area shape="rect" id="node18" href="$classFoam_1_1DAJacCondRdW.html#a6320c97a80c467a388c3a88fdcd31eb3" title="Foam::DAJacCondRdW\l::setupdRdWCon" alt="" coords="220,849,384,890"/>
-<area shape="rect" id="node19" href="$classFoam_1_1DASolver.html#a4845f297f6868e9edf41f492fff59004" title="write petsc vector in ascii format " alt="" coords="205,914,399,955"/>
+<area shape="rect" id="node17" href="$classFoam_1_1DASolver.html#a20f41818db76a706a581003af4faf454" title="compute dRdWOld^T*Psi " alt="" coords="198,797,406,838"/>
+<area shape="rect" id="node18" href="$classFoam_1_1DASolver.html#a8a41381c0bd6d3b8d89aa0dd62582872" title="compute [dRdW]^T*Psi " alt="" coords="185,863,419,889"/>
+<area shape="rect" id="node19" href="$classFoam_1_1DAJacCon.html#ab84b12272957c0b7caa1ecde6c904618" title="check if there is special boundary conditions that need special treatment in jacCon_ ..." alt="" coords="183,913,421,940"/>
+<area shape="rect" id="node20" href="$classFoam_1_1DAJacCondRdW.html#a6320c97a80c467a388c3a88fdcd31eb3" title="Foam::DAJacCondRdW\l::setupdRdWCon" alt="" coords="220,965,384,1006"/>
+<area shape="rect" id="node21" href="$classFoam_1_1DASolver.html#a4845f297f6868e9edf41f492fff59004" title="write petsc vector in ascii format " alt="" coords="205,1030,399,1071"/>
 </map>

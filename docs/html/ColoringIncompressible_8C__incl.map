@@ -1,9 +1,9 @@
-<map id="dafoam/src/utilities/pyColoringIncompressible/ColoringIncompressible.C" name="dafoam/src/utilities/pyColoringIncompressible/ColoringIncompressible.C">
+<map id="dafoam/src/utilities/coloring/pyColoringIncompressible/ColoringIncompressible.C" name="dafoam/src/utilities/coloring/pyColoringIncompressible/ColoringIncompressible.C">
 <area shape="rect" id="node2" href="$ColoringIncompressible_8H.html" title="ColoringIncompressible.H" alt="" coords="5,109,177,136"/>
 <area shape="rect" id="node3" href="$setArgs_8H.html" title="setArgs.H" alt="" coords="201,109,283,136"/>
 <area shape="rect" id="node4" href="$setRootCasePython_8H.html" title="setRootCasePython.H" alt="" coords="307,109,462,136"/>
 <area shape="rect" id="node5" href="$createTimePython_8H.html" title="createTimePython.H" alt="" coords="487,109,629,136"/>
 <area shape="rect" id="node6" href="$createMeshPython_8H.html" title="createMeshPython.H" alt="" coords="653,109,799,136"/>
-<area shape="rect" id="node7" href="$pyColoringIncompressible_2createFields_8H.html" title="createFields.H" alt="" coords="823,109,930,136"/>
+<area shape="rect" id="node7" href="$coloring_2pyColoringIncompressible_2createFields_8H.html" title="createFields.H" alt="" coords="823,109,930,136"/>
 <area shape="rect" id="node8" href="$pyColoringIncompressible_2createAdjoint_8H.html" title="createAdjoint.H" alt="" coords="954,109,1066,136"/>
 </map>

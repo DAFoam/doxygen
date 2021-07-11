@@ -14,6 +14,8 @@
 <area shape="rect" id="node14" href="$classFoam_1_1DASolver.html#a9b44a5f49d078df981e84b554470f540" title="compute dRdAOAAD " alt="" coords="179,629,428,656"/>
 <area shape="rect" id="node15" href="$classFoam_1_1DASolver.html#a47e708c0e138fbccc62a96909d10d6d5" title="compute dRdBCAD " alt="" coords="183,680,423,707"/>
 <area shape="rect" id="node16" href="$classFoam_1_1DASolver.html#a63fb766651888601cbefe9dbe7416b3c" title="compute dRdField^T*Psi " alt="" coords="202,731,405,773"/>
-<area shape="rect" id="node17" href="$classFoam_1_1DAJacCon.html#a3b9b543bfab2dbda82af01317a9f2ab8" title="compute graph coloring for Jacobian connectivity matrix " alt="" coords="201,797,405,838"/>
-<area shape="rect" id="node18" href="$classFoam_1_1DASolver.html#aaabf5e461685aae1fd388f6fabd43f22" title="write petsc vector in binary format " alt="" coords="207,862,400,903"/>
+<area shape="rect" id="node17" href="$classFoam_1_1DASolver.html#a20f41818db76a706a581003af4faf454" title="compute dRdWOld^T*Psi " alt="" coords="199,797,407,838"/>
+<area shape="rect" id="node18" href="$classFoam_1_1DASolver.html#a8a41381c0bd6d3b8d89aa0dd62582872" title="compute [dRdW]^T*Psi " alt="" coords="186,863,421,889"/>
+<area shape="rect" id="node19" href="$classFoam_1_1DAJacCon.html#a3b9b543bfab2dbda82af01317a9f2ab8" title="compute graph coloring for Jacobian connectivity matrix " alt="" coords="201,914,405,955"/>
+<area shape="rect" id="node20" href="$classFoam_1_1DASolver.html#aaabf5e461685aae1fd388f6fabd43f22" title="write petsc vector in binary format " alt="" coords="207,979,400,1021"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="checkSpecialBCs" name="checkSpecialBCs">
-<area shape="rect" id="node2" href="$classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key " alt="" coords="183,5,367,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAJacCon.html#ad4b03b78021f45b91ad5bd3fcd935b92" title="function used to add connectivity for pressureInletVelocity " alt="" coords="233,56,318,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAUtility.html#a4845f297f6868e9edf41f492fff59004" title="write petsc vector in ascii format " alt="" coords="180,107,371,149"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAOption.html#aac22cd38f3d4adc69a4e35329c6abf92" title="return a reference of allOptions_ dictionary " alt="" coords="180,5,387,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAJacCon.html#ad4b03b78021f45b91ad5bd3fcd935b92" title="function used to add connectivity for pressureInletVelocity " alt="" coords="241,56,326,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAUtility.html#a4845f297f6868e9edf41f492fff59004" title="write petsc vector in ascii format " alt="" coords="188,107,379,149"/>
 </map>

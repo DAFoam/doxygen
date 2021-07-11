@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.5</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.7</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -101,19 +101,19 @@ Functions</h2></td></tr>
 <tr class="separator:a468939cb78ac529f61dc89324860b185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d972f1186e0939b42675a2df621c10e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="UEqnTurbo_8H.html#a867a11e7875fbbf20b7c2a2ae3cc256d">tUEqn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnRhoSimpleC_8H.html#a0d972f1186e0939b42675a2df621c10e">clear</a> ()</td></tr>
 <tr class="separator:a0d972f1186e0939b42675a2df621c10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad99bfccb6a77d9e5285323228b5b1675"><td class="memItemLeft" align="right" valign="top">surfaceScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnRhoSimpleC_8H.html#ad99bfccb6a77d9e5285323228b5b1675">phiHbyA</a> (&quot;phiHbyA&quot;, fvc::interpolate(<a class="el" href="pyColoringCompressible_2createFields_8H.html#a5c94c90bde43f26b8fb11b35115482c6">rho</a>) *fvc::flux(<a class="el" href="pEqnTurbo_8H.html#a468939cb78ac529f61dc89324860b185">HbyA</a>))</td></tr>
+<tr class="memitem:ad99bfccb6a77d9e5285323228b5b1675"><td class="memItemLeft" align="right" valign="top">surfaceScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnRhoSimpleC_8H.html#ad99bfccb6a77d9e5285323228b5b1675">phiHbyA</a> (&quot;phiHbyA&quot;, fvc::interpolate(<a class="el" href="postProcessing_2calcLiftPerSCompressible_2createFields_8H.html#ae46ad1b6d176586d4e63d2b79e8e9a08">rho</a>) *fvc::flux(<a class="el" href="pEqnTurbo_8H.html#a468939cb78ac529f61dc89324860b185">HbyA</a>))</td></tr>
 <tr class="separator:ad99bfccb6a77d9e5285323228b5b1675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a142b9c53809c41ee952c0f8753de25c8"><td class="memItemLeft" align="right" valign="top">volScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnRhoSimpleC_8H.html#a142b9c53809c41ee952c0f8753de25c8">rhorAtU</a> (&quot;rhorAtU&quot;, rho *<a class="el" href="pEqnSimpleT_8H.html#afe01da774d03b179d1e22adc75a3c2fe">rAtU</a>)</td></tr>
 <tr class="separator:a142b9c53809c41ee952c0f8753de25c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb7e6c9b063485a0fb35e16d0e0b84a9"><td class="memItemLeft" align="right" valign="top">surfaceScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnRhoSimpleC_8H.html#afb7e6c9b063485a0fb35e16d0e0b84a9">phid</a> (&quot;phid&quot;,(fvc::interpolate(<a class="el" href="createRefsTurbo_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a>)/fvc::interpolate(<a class="el" href="pyColoringCompressible_2createFields_8H.html#a5c94c90bde43f26b8fb11b35115482c6">rho</a>)) *<a class="el" href="pEqnSimpleT_8H.html#a526a8b78452de0d7f324bd956addf143">phiHbyA</a>)</td></tr>
+<tr class="memitem:afb7e6c9b063485a0fb35e16d0e0b84a9"><td class="memItemLeft" align="right" valign="top">surfaceScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnRhoSimpleC_8H.html#afb7e6c9b063485a0fb35e16d0e0b84a9">phid</a> (&quot;phid&quot;,(fvc::interpolate(<a class="el" href="createRefsTurbo_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a>)/fvc::interpolate(<a class="el" href="postProcessing_2calcLiftPerSCompressible_2createFields_8H.html#ae46ad1b6d176586d4e63d2b79e8e9a08">rho</a>)) *<a class="el" href="pEqnSimpleT_8H.html#a526a8b78452de0d7f324bd956addf143">phiHbyA</a>)</td></tr>
 <tr class="separator:afb7e6c9b063485a0fb35e16d0e0b84a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80a1a15f423dbb405b1a80b4354d5793"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnRhoSimpleC_8H.html#a80a1a15f423dbb405b1a80b4354d5793">while</a> (simple.correctNonOrthogonal())</td></tr>
 <tr class="separator:a80a1a15f423dbb405b1a80b4354d5793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86bf2fd23592bddebbb0cca8c5bbef1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnRhoSimpleC_8H.html#a86bf2fd23592bddebbb0cca8c5bbef1f">if</a> (printToScreen)</td></tr>
 <tr class="separator:a86bf2fd23592bddebbb0cca8c5bbef1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15bfa901ef14c7146d67360f3c63addc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnRhoSimpleC_8H.html#a15bfa901ef14c7146d67360f3c63addc">relax</a> ()</td></tr>
+<tr class="memitem:a15bfa901ef14c7146d67360f3c63addc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnRhoSimpleC_8H.html#a15bfa901ef14c7146d67360f3c63addc">relax</a> ()</td></tr>
 <tr class="separator:a15bfa901ef14c7146d67360f3c63addc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00a7f09fddd305c7a7977494b2a6a952"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnRhoSimpleC_8H.html#a00a7f09fddd305c7a7977494b2a6a952">correctBoundaryConditions</a> ()</td></tr>
+<tr class="memitem:a00a7f09fddd305c7a7977494b2a6a952"><td class="memItemLeft" align="right" valign="top"><a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnRhoSimpleC_8H.html#a00a7f09fddd305c7a7977494b2a6a952">correctBoundaryConditions</a> ()</td></tr>
 <tr class="separator:a00a7f09fddd305c7a7977494b2a6a952"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83c95858e499c38024ce09de13ca697a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnRhoSimpleC_8H.html#a83c95858e499c38024ce09de13ca697a">if</a> (<a class="el" href="pEqnTurbo_8H.html#af53466d2c2afef56f3bfc864aa6b5b77">closedVolume</a>)</td></tr>
 <tr class="separator:a83c95858e499c38024ce09de13ca697a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,9 +130,9 @@ Variables</h2></td></tr>
 <tr class="separator:a6d39b58a92d75b0e7858a12f12214d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72ed40a7e1ed7c436cb38dddc014d9db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnRhoSimpleC_8H.html#a72ed40a7e1ed7c436cb38dddc014d9db">phiHbyA</a></td></tr>
 <tr class="separator:a72ed40a7e1ed7c436cb38dddc014d9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81cf6107131a3583e2b0b762cb9c2862"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnRhoSimpleC_8H.html#a81cf6107131a3583e2b0b762cb9c2862">U</a> = <a class="el" href="pEqnTurbo_8H.html#a468939cb78ac529f61dc89324860b185">HbyA</a> - <a class="el" href="pEqnSimpleT_8H.html#afe01da774d03b179d1e22adc75a3c2fe">rAtU</a> * fvc::grad(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>)</td></tr>
+<tr class="memitem:a81cf6107131a3583e2b0b762cb9c2862"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnRhoSimpleC_8H.html#a81cf6107131a3583e2b0b762cb9c2862">U</a> = <a class="el" href="pEqnTurbo_8H.html#a468939cb78ac529f61dc89324860b185">HbyA</a> - <a class="el" href="pEqnSimpleT_8H.html#afe01da774d03b179d1e22adc75a3c2fe">rAtU</a> * fvc::grad(<a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>)</td></tr>
 <tr class="separator:a81cf6107131a3583e2b0b762cb9c2862"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a823608aeb432ca4506db9c945a329898"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnRhoSimpleC_8H.html#a823608aeb432ca4506db9c945a329898">pLimited</a> = pressureControl.limit(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>)</td></tr>
+<tr class="memitem:a823608aeb432ca4506db9c945a329898"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pEqnRhoSimpleC_8H.html#a823608aeb432ca4506db9c945a329898">pLimited</a> = pressureControl.limit(<a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>)</td></tr>
 <tr class="separator:a823608aeb432ca4506db9c945a329898"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -170,18 +170,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">DAResidualSimpleFoam::calcResiduals()</a>, and <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00079">DAResidualRhoSimpleCFoam::calcResiduals()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="pEqnRhoSimpleC_8H_af0ca220b579a630d505b444580d37b50_icgraph.png" border="0" usemap="#pEqnRhoSimpleC_8H_af0ca220b579a630d505b444580d37b50_icgraph" alt=""/></div>
-<map name="pEqnRhoSimpleC_8H_af0ca220b579a630d505b444580d37b50_icgraph" id="pEqnRhoSimpleC_8H_af0ca220b579a630d505b444580d37b50_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="103,5,317,47"/>
-<area shape="rect" id="node3" href="classFoam_1_1DAResidualSimpleFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="107,71,313,112"/>
-<area shape="rect" id="node4" href="classFoam_1_1DAResidualRhoSimpleCFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="111,136,309,177"/>
-</map>
-</div>
-
 </div>
 </div>
 <a id="a468939cb78ac529f61dc89324860b185"></a>
@@ -199,7 +187,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -244,7 +232,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">fvc::interpolate(<a class="el" href="pyColoringCompressible_2createFields_8H.html#a5c94c90bde43f26b8fb11b35115482c6">rho</a>) *fvc::flux(<a class="el" href="pEqnTurbo_8H.html#a468939cb78ac529f61dc89324860b185">HbyA</a>)&#160;</td>
+          <td class="paramtype">fvc::interpolate(<a class="el" href="postProcessing_2calcLiftPerSCompressible_2createFields_8H.html#ae46ad1b6d176586d4e63d2b79e8e9a08">rho</a>) *fvc::flux(<a class="el" href="pEqnTurbo_8H.html#a468939cb78ac529f61dc89324860b185">HbyA</a>)&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -272,7 +260,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="pyColoringCompressible_2createFields_8H.html#a5c94c90bde43f26b8fb11b35115482c6">rho</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="postProcessing_2calcLiftPerSCompressible_2createFields_8H.html#ae46ad1b6d176586d4e63d2b79e8e9a08">rho</a> *&#160;</td>
           <td class="paramname"><em>rAtU</em>&#160;</td>
         </tr>
         <tr>
@@ -283,7 +271,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00079">DAResidualRhoSimpleCFoam::calcResiduals()</a>, and <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00033">while()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00075">DAResidualRhoSimpleCFoam::calcResiduals()</a>, and <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00033">while()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -311,7 +299,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">(fvc::interpolate(<a class="el" href="createRefsTurbo_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a>)/fvc::interpolate(<a class="el" href="pyColoringCompressible_2createFields_8H.html#a5c94c90bde43f26b8fb11b35115482c6">rho</a>)) *&#160;</td>
+          <td class="paramtype">(fvc::interpolate(<a class="el" href="createRefsTurbo_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a>)/fvc::interpolate(<a class="el" href="postProcessing_2calcLiftPerSCompressible_2createFields_8H.html#ae46ad1b6d176586d4e63d2b79e8e9a08">rho</a>)) *&#160;</td>
           <td class="paramname"><em>phiHbyA</em>&#160;</td>
         </tr>
         <tr>
@@ -322,7 +310,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00079">DAResidualRhoSimpleCFoam::calcResiduals()</a>, <a class="el" href="DAResidualTurboFoam_8C_source.html#l00082">DAResidualTurboFoam::calcResiduals()</a>, <a class="el" href="pEqnTurbo_8H_source.html#l00022">if()</a>, and <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00033">while()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00075">DAResidualRhoSimpleCFoam::calcResiduals()</a>, <a class="el" href="DAResidualTurboFoam_8C_source.html#l00078">DAResidualTurboFoam::calcResiduals()</a>, <a class="el" href="pEqnTurbo_8H_source.html#l00022">if()</a>, and <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00033">while()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -355,7 +343,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00033">33</a> of file <a class="el" href="pEqnRhoSimpleC_8H_source.html">pEqnRhoSimpleC.H</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsPiso_8H_source.html#l00006">p</a>, <a class="el" href="createRefsPiso_8H_source.html#l00008">phi</a>, <a class="el" href="pEqnRhoSimpleC_8H.html#afb7e6c9b063485a0fb35e16d0e0b84a9">phid()</a>, <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00027">phiHbyA</a>, <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00012">pressureControl</a>, <a class="el" href="EEqnRhoSimpleC_8H.html#a78a1c818fefcc4555ddd5afb77ed69c2">primalResidualControl&lt; scalar &gt;()</a>, <a class="el" href="pEqnRhoSimpleC_8H.html#a142b9c53809c41ee952c0f8753de25c8">rhorAtU()</a>, and <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00005">simple</a>.</p>
+<p class="reference">References <a class="el" href="createRefsPimple_8H_source.html#l00006">p</a>, <a class="el" href="createRefsPimple_8H_source.html#l00008">phi</a>, <a class="el" href="pEqnRhoSimpleC_8H.html#afb7e6c9b063485a0fb35e16d0e0b84a9">phid()</a>, <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00027">phiHbyA</a>, <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00012">pressureControl</a>, <a class="el" href="EEqnRhoSimpleC_8H.html#a78a1c818fefcc4555ddd5afb77ed69c2">primalResidualControl&lt; scalar &gt;()</a>, <a class="el" href="pEqnRhoSimpleC_8H.html#a142b9c53809c41ee952c0f8753de25c8">rhorAtU()</a>, and <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00005">simple</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -387,7 +375,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00059">59</a> of file <a class="el" href="pEqnRhoSimpleC_8H_source.html">pEqnRhoSimpleC.H</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, and <a class="el" href="createRefsPiso_8H_source.html#l00006">p</a>.</p>
+<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, and <a class="el" href="createRefsPimple_8H_source.html#l00006">p</a>.</p>
 
 </div>
 </div>
@@ -398,7 +386,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a> relax </td>
+          <td class="memname"><a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a> relax </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -415,7 +403,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a> correctBoundaryConditions </td>
+          <td class="memname"><a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a> correctBoundaryConditions </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -443,7 +431,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00079">79</a> of file <a class="el" href="pEqnRhoSimpleC_8H_source.html">pEqnRhoSimpleC.H</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00013">initialMass_</a>, <a class="el" href="createRefsPiso_8H_source.html#l00006">p</a>, and <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00014">psi</a>.</p>
+<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00013">initialMass_</a>, <a class="el" href="createRefsPimple_8H_source.html#l00006">p</a>, and <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00014">psi</a>.</p>
 
 </div>
 </div>
@@ -465,7 +453,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00085">85</a> of file <a class="el" href="pEqnRhoSimpleC_8H_source.html">pEqnRhoSimpleC.H</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="createRefsPiso_8H_source.html#l00006">p</a>, <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00001">rho</a>, and <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00006">thermo</a>.</p>
+<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="createRefsPimple_8H_source.html#l00006">p</a>, <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00001">rho</a>, and <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00006">thermo</a>.</p>
 
 </div>
 </div>
@@ -502,7 +490,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00012">12</a> of file <a class="el" href="pEqnRhoSimpleC_8H_source.html">pEqnRhoSimpleC.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualPisoFoam_8C_source.html#l00062">DAResidualPisoFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">DAResidualSimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00079">DAResidualRhoSimpleCFoam::calcResiduals()</a>, <a class="el" href="DAResidualTurboFoam_8C_source.html#l00082">DAResidualTurboFoam::calcResiduals()</a>, and <a class="el" href="DAResidualRhoSimpleFoam_8C_source.html#l00091">DAResidualRhoSimpleFoam::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualPimpleFoam_8C_source.html#l00061">DAResidualPimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualPisoFoam_8C_source.html#l00062">DAResidualPisoFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00068">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00062">DAResidualSimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00075">DAResidualRhoSimpleCFoam::calcResiduals()</a>, <a class="el" href="DAResidualTurboFoam_8C_source.html#l00078">DAResidualTurboFoam::calcResiduals()</a>, and <a class="el" href="DAResidualRhoSimpleFoam_8C_source.html#l00087">DAResidualRhoSimpleFoam::calcResiduals()</a>.</p>
 
 </div>
 </div>
@@ -533,17 +521,17 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">    fvc::interpolate(<a class="code" href="pEqnRhoSimpleC_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a> * (<a class="code" href="pEqnRhoSimpleC_8H.html#af0ca220b579a630d505b444580d37b50">rAtU</a> - <a class="code" href="pEqnRhoSimpleC_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d">rAU</a>)) * fvc::snGrad(<a class="code" href="createRefsPiso_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a>) * <a class="code" href="createRefsPiso_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.magSf()</div><div class="line">    - fvc::interpolate(<a class="code" href="createRefsRhoSimpleC_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a> * <a class="code" href="createRefsPiso_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a>) * <a class="code" href="pEqnRhoSimpleC_8H.html#a72ed40a7e1ed7c436cb38dddc014d9db">phiHbyA</a> / fvc::interpolate(<a class="code" href="pEqnRhoSimpleC_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a>)</div><div class="ttc" id="pEqnRhoSimpleC_8H_html_af0ca220b579a630d505b444580d37b50"><div class="ttname"><a href="pEqnRhoSimpleC_8H.html#af0ca220b579a630d505b444580d37b50">rAtU</a></div><div class="ttdeci">volScalarField rAtU(1.0/(1.0/rAU - UEqn.H1()))</div></div>
-<div class="ttc" id="createRefsPiso_8H_html_a334650304cdcdff41898bee9eaf2e3db"><div class="ttname"><a href="createRefsPiso_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a></div><div class="ttdeci">volScalarField &amp; p</div><div class="ttdef"><b>Definition:</b> <a href="createRefsPiso_8H_source.html#l00006">createRefsPiso.H:6</a></div></div>
-<div class="ttc" id="createRefsPiso_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsPiso_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsPiso_8H_source.html#l00004">createRefsPiso.H:4</a></div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">    fvc::interpolate(<a class="code" href="pEqnRhoSimpleC_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a> * (<a class="code" href="pEqnRhoSimpleC_8H.html#af0ca220b579a630d505b444580d37b50">rAtU</a> - <a class="code" href="pEqnRhoSimpleC_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d">rAU</a>)) * fvc::snGrad(<a class="code" href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a>) * <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.magSf()</div><div class="line">    - fvc::interpolate(<a class="code" href="createRefsRhoSimpleC_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a> * <a class="code" href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a>) * <a class="code" href="pEqnRhoSimpleC_8H.html#a72ed40a7e1ed7c436cb38dddc014d9db">phiHbyA</a> / fvc::interpolate(<a class="code" href="pEqnRhoSimpleC_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a>)</div><div class="ttc" id="createRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
+<div class="ttc" id="pEqnRhoSimpleC_8H_html_af0ca220b579a630d505b444580d37b50"><div class="ttname"><a href="pEqnRhoSimpleC_8H.html#af0ca220b579a630d505b444580d37b50">rAtU</a></div><div class="ttdeci">volScalarField rAtU(1.0/(1.0/rAU - UEqn.H1()))</div></div>
 <div class="ttc" id="pEqnRhoSimpleC_8H_html_a72ed40a7e1ed7c436cb38dddc014d9db"><div class="ttname"><a href="pEqnRhoSimpleC_8H.html#a72ed40a7e1ed7c436cb38dddc014d9db">phiHbyA</a></div><div class="ttdeci">phiHbyA</div><div class="ttdef"><b>Definition:</b> <a href="pEqnRhoSimpleC_8H_source.html#l00027">pEqnRhoSimpleC.H:27</a></div></div>
+<div class="ttc" id="createRefsPimple_8H_html_a334650304cdcdff41898bee9eaf2e3db"><div class="ttname"><a href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a></div><div class="ttdeci">volScalarField &amp; p</div><div class="ttdef"><b>Definition:</b> <a href="createRefsPimple_8H_source.html#l00006">createRefsPimple.H:6</a></div></div>
 <div class="ttc" id="pEqnRhoSimpleC_8H_html_a4ae3ff6f0732a8a206a641d7ff2d9f7d"><div class="ttname"><a href="pEqnRhoSimpleC_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d">rAU</a></div><div class="ttdeci">volScalarField rAU(1.0/UEqn.A())</div></div>
 <div class="ttc" id="pEqnRhoSimpleC_8H_html_ab8ec92cc3ea8422c9349409bae98d2a0"><div class="ttname"><a href="pEqnRhoSimpleC_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a></div><div class="ttdeci">rho</div><div class="ttdef"><b>Definition:</b> <a href="pEqnRhoSimpleC_8H_source.html#l00001">pEqnRhoSimpleC.H:1</a></div></div>
 <div class="ttc" id="createRefsRhoSimpleC_8H_html_aba679271c41582099c8ccf4827fdf217"><div class="ttname"><a href="createRefsRhoSimpleC_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a></div><div class="ttdeci">const volScalarField &amp; psi</div><div class="ttdef"><b>Definition:</b> <a href="createRefsRhoSimpleC_8H_source.html#l00014">createRefsRhoSimpleC.H:14</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00027">27</a> of file <a class="el" href="pEqnRhoSimpleC_8H_source.html">pEqnRhoSimpleC.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualPisoFoam_8C_source.html#l00062">DAResidualPisoFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00065">DAResidualSimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00079">DAResidualRhoSimpleCFoam::calcResiduals()</a>, <a class="el" href="DAResidualTurboFoam_8C_source.html#l00082">DAResidualTurboFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleFoam_8C_source.html#l00091">DAResidualRhoSimpleFoam::calcResiduals()</a>, and <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00033">while()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualPimpleFoam_8C_source.html#l00061">DAResidualPimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualPisoFoam_8C_source.html#l00062">DAResidualPisoFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00068">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00062">DAResidualSimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00075">DAResidualRhoSimpleCFoam::calcResiduals()</a>, <a class="el" href="DAResidualTurboFoam_8C_source.html#l00078">DAResidualTurboFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleFoam_8C_source.html#l00087">DAResidualRhoSimpleFoam::calcResiduals()</a>, and <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00033">while()</a>.</p>
 
 </div>
 </div>
@@ -554,7 +542,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">U = <a class="el" href="pEqnTurbo_8H.html#a468939cb78ac529f61dc89324860b185">HbyA</a> - <a class="el" href="pEqnSimpleT_8H.html#afe01da774d03b179d1e22adc75a3c2fe">rAtU</a> * fvc::grad(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>)</td>
+          <td class="memname">U = <a class="el" href="pEqnTurbo_8H.html#a468939cb78ac529f61dc89324860b185">HbyA</a> - <a class="el" href="pEqnSimpleT_8H.html#afe01da774d03b179d1e22adc75a3c2fe">rAtU</a> * fvc::grad(<a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -570,7 +558,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool pLimited = pressureControl.limit(<a class="el" href="pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>)</td>
+          <td class="memname">bool pLimited = pressureControl.limit(<a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">

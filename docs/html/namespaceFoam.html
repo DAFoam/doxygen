@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.5</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.7</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -73,6 +73,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:namespaceFoam_1_1patchDistMethods"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam_1_1patchDistMethods.html">patchDistMethods</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceFoam_1_1RASModels"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam_1_1RASModels.html">RASModels</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -122,6 +124,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAkOmegaSSTLM.html">DAkOmegaSSTLM</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DALaplacianFoam.html">DALaplacianFoam</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DALinearEqn.html">DALinearEqn</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAModel.html">DAModel</a></td></tr>
@@ -133,6 +137,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAObjFuncMass.html">DAObjFuncMass</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAObjFuncMassFlowRate.html">DAObjFuncMassFlowRate</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAObjFuncMeshQualityKS.html">DAObjFuncMeshQualityKS</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAObjFuncMoment.html">DAObjFuncMoment</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,6 +186,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAPartDerivdRdW.html">DAPartDerivdRdW</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAPimpleFoam.html">DAPimpleFoam</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAPisoFoam.html">DAPisoFoam</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DARadiationModel.html">DARadiationModel</a></td></tr>
@@ -198,11 +206,17 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAResidualDummy.html">DAResidualDummy</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAResidualLaplacianFoam.html">DAResidualLaplacianFoam</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAResidualPimpleFoam.html">DAResidualPimpleFoam</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAResidualPisoFoam.html">DAResidualPisoFoam</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAResidualRhoSimpleCFoam.html">DAResidualRhoSimpleCFoam</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAResidualRhoSimpleFoam.html">DAResidualRhoSimpleFoam</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAResidualScalarTransportFoam.html">DAResidualScalarTransportFoam</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAResidualSimpleFoam.html">DAResidualSimpleFoam</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,6 +229,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DARhoSimpleCFoam.html">DARhoSimpleCFoam</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DARhoSimpleFoam.html">DARhoSimpleFoam</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAScalarTransportFoam.html">DAScalarTransportFoam</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASimpleFoam.html">DASimpleFoam</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,11 +250,17 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAStateInfo.html">DAStateInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAStateInfoLaplacianFoam.html">DAStateInfoLaplacianFoam</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAStateInfoPimpleFoam.html">DAStateInfoPimpleFoam</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAStateInfoPisoFoam.html">DAStateInfoPisoFoam</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAStateInfoRhoSimpleCFoam.html">DAStateInfoRhoSimpleCFoam</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAStateInfoRhoSimpleFoam.html">DAStateInfoRhoSimpleFoam</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAStateInfoScalarTransportFoam.html">DAStateInfoScalarTransportFoam</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAStateInfoSimpleFoam.html">DAStateInfoSimpleFoam</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,6 +281,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1multiFreqVectorFvPatchField.html">multiFreqVectorFvPatchField</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1nutUSpaldingWallFunctionFvPatchScalarFieldDF.html">nutUSpaldingWallFunctionFvPatchScalarFieldDF</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1pimpleControlDF.html">pimpleControlDF</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1tractionDisplacementFvPatchVectorField.html">tractionDisplacementFvPatchVectorField</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -298,9 +322,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a388a1593537b94916b107b3c8ba74579"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a388a1593537b94916b107b3c8ba74579">checkCoupledPoints</a> (const polyMesh &amp;, const bool report, labelHashSet *)</td></tr>
 <tr class="memdesc:a388a1593537b94916b107b3c8ba74579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check 0th vertex on coupled faces.  <a href="#a388a1593537b94916b107b3c8ba74579">More...</a><br /></td></tr>
 <tr class="separator:a388a1593537b94916b107b3c8ba74579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39bf1b84b861506d835c4d909b970751"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a39bf1b84b861506d835c4d909b970751">checkGeometry</a> (const polyMesh &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, const autoPtr&lt; surfaceWriter &gt; &amp;surfWriter, const autoPtr&lt; writer&lt; scalar &gt;&gt; &amp;setWriter)</td></tr>
-<tr class="memdesc:a39bf1b84b861506d835c4d909b970751"><td class="mdescLeft">&#160;</td><td class="mdescRight">check mesh quality  <a href="#a39bf1b84b861506d835c4d909b970751">More...</a><br /></td></tr>
-<tr class="separator:a39bf1b84b861506d835c4d909b970751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e4b25d100e8e0099917a7555191692"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a11e4b25d100e8e0099917a7555191692">checkGeometry</a> (const polyMesh &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, const autoPtr&lt; surfaceWriter &gt; &amp;surfWriter, const autoPtr&lt; writer&lt; scalar &gt;&gt; &amp;setWriter, const label maxIncorrectlyOrientedFaces)</td></tr>
+<tr class="memdesc:a11e4b25d100e8e0099917a7555191692"><td class="mdescLeft">&#160;</td><td class="mdescRight">check mesh quality  <a href="#a11e4b25d100e8e0099917a7555191692">More...</a><br /></td></tr>
+<tr class="separator:a11e4b25d100e8e0099917a7555191692"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee7efed69c9cc6a6c54f1bc980e07d4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#aee7efed69c9cc6a6c54f1bc980e07d4b">printMeshStats</a> (const polyMesh &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, const bool allTopology)</td></tr>
 <tr class="separator:aee7efed69c9cc6a6c54f1bc980e07d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac573cc5b59f725e9d56e0b02e49d57da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#ac573cc5b59f725e9d56e0b02e49d57da">mergeAndWrite</a> (const polyMesh &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, const surfaceWriter &amp;writer, const word &amp;name, const indirectPrimitivePatch &amp;setPatch, const fileName &amp;outputDir)</td></tr>
@@ -407,6 +431,10 @@ Functions</h2></td></tr>
 <tr class="separator:a394ab76cc84c77a1bdaa6b6403725549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac79a999723a8cd7a7d2bf19b3265d624"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#ac79a999723a8cd7a7d2bf19b3265d624">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAObjFunc.html">DAObjFunc</a>, <a class="el" href="classFoam_1_1DAObjFuncMassFlowRate.html">DAObjFuncMassFlowRate</a>, dictionary)</td></tr>
 <tr class="separator:ac79a999723a8cd7a7d2bf19b3265d624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7c8f66c959c63a2471b9840c8d6a89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#afd7c8f66c959c63a2471b9840c8d6a89">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1DAObjFuncMeshQualityKS.html">DAObjFuncMeshQualityKS</a>, 0)</td></tr>
+<tr class="separator:afd7c8f66c959c63a2471b9840c8d6a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e912fd89d020072ddf975398473531e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a6e912fd89d020072ddf975398473531e">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAObjFunc.html">DAObjFunc</a>, <a class="el" href="classFoam_1_1DAObjFuncMeshQualityKS.html">DAObjFuncMeshQualityKS</a>, dictionary)</td></tr>
+<tr class="separator:a6e912fd89d020072ddf975398473531e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a95b95ff2f9b38cb7b34a48af21137b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a0a95b95ff2f9b38cb7b34a48af21137b">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1DAObjFuncMoment.html">DAObjFuncMoment</a>, 0)</td></tr>
 <tr class="separator:a0a95b95ff2f9b38cb7b34a48af21137b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6d97dc6553e91e4679623b07ccc3711"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#ad6d97dc6553e91e4679623b07ccc3711">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAObjFunc.html">DAObjFunc</a>, <a class="el" href="classFoam_1_1DAObjFuncMoment.html">DAObjFuncMoment</a>, dictionary)</td></tr>
@@ -499,6 +527,14 @@ Functions</h2></td></tr>
 <tr class="separator:a81e97ec24bc276bea32f06f8ce4bf90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef500e156c173896ddb7855d8bccce26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#aef500e156c173896ddb7855d8bccce26">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAResidual.html">DAResidual</a>, <a class="el" href="classFoam_1_1DAResidualDummy.html">DAResidualDummy</a>, dictionary)</td></tr>
 <tr class="separator:aef500e156c173896ddb7855d8bccce26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21414f4b567bde4aaf2b6c3df68f97f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a21414f4b567bde4aaf2b6c3df68f97f0">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1DAResidualLaplacianFoam.html">DAResidualLaplacianFoam</a>, 0)</td></tr>
+<tr class="separator:a21414f4b567bde4aaf2b6c3df68f97f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93cde4f64fefc4ac9b8313e6378619ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a93cde4f64fefc4ac9b8313e6378619ab">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAResidual.html">DAResidual</a>, <a class="el" href="classFoam_1_1DAResidualLaplacianFoam.html">DAResidualLaplacianFoam</a>, dictionary)</td></tr>
+<tr class="separator:a93cde4f64fefc4ac9b8313e6378619ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e51bbcdbd8eafdb8da4790ab1d05c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a03e51bbcdbd8eafdb8da4790ab1d05c1">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1DAResidualPimpleFoam.html">DAResidualPimpleFoam</a>, 0)</td></tr>
+<tr class="separator:a03e51bbcdbd8eafdb8da4790ab1d05c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4834441a2d07721118cd59edca3df628"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a4834441a2d07721118cd59edca3df628">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAResidual.html">DAResidual</a>, <a class="el" href="classFoam_1_1DAResidualPimpleFoam.html">DAResidualPimpleFoam</a>, dictionary)</td></tr>
+<tr class="separator:a4834441a2d07721118cd59edca3df628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7641453f297752b7e6766440c4f0d6ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a7641453f297752b7e6766440c4f0d6ca">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1DAResidualPisoFoam.html">DAResidualPisoFoam</a>, 0)</td></tr>
 <tr class="separator:a7641453f297752b7e6766440c4f0d6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff2b385bc2cce935d45d08e4e7fc9540"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#aff2b385bc2cce935d45d08e4e7fc9540">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAResidual.html">DAResidual</a>, <a class="el" href="classFoam_1_1DAResidualPisoFoam.html">DAResidualPisoFoam</a>, dictionary)</td></tr>
@@ -511,6 +547,10 @@ Functions</h2></td></tr>
 <tr class="separator:a3721037483ee57865947f80f39fb338d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e32904dca7d8d147226d182aff75390"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a5e32904dca7d8d147226d182aff75390">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAResidual.html">DAResidual</a>, <a class="el" href="classFoam_1_1DAResidualRhoSimpleFoam.html">DAResidualRhoSimpleFoam</a>, dictionary)</td></tr>
 <tr class="separator:a5e32904dca7d8d147226d182aff75390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a562b980f20905ef83e747b68b5234773"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a562b980f20905ef83e747b68b5234773">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1DAResidualScalarTransportFoam.html">DAResidualScalarTransportFoam</a>, 0)</td></tr>
+<tr class="separator:a562b980f20905ef83e747b68b5234773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3984dd0ff4ee445d1bbbd3684c53945"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#ae3984dd0ff4ee445d1bbbd3684c53945">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAResidual.html">DAResidual</a>, <a class="el" href="classFoam_1_1DAResidualScalarTransportFoam.html">DAResidualScalarTransportFoam</a>, dictionary)</td></tr>
+<tr class="separator:ae3984dd0ff4ee445d1bbbd3684c53945"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cc1c6dce24682079c5318c2b939b51f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a8cc1c6dce24682079c5318c2b939b51f">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1DAResidualSimpleFoam.html">DAResidualSimpleFoam</a>, 0)</td></tr>
 <tr class="separator:a8cc1c6dce24682079c5318c2b939b51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a0a6e38e7d5ee6bb17f8c34d7f9c292"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a3a0a6e38e7d5ee6bb17f8c34d7f9c292">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAResidual.html">DAResidual</a>, <a class="el" href="classFoam_1_1DAResidualSimpleFoam.html">DAResidualSimpleFoam</a>, dictionary)</td></tr>
@@ -527,6 +567,14 @@ Functions</h2></td></tr>
 <tr class="separator:ac65bc34587c8c75d5f5f482659d8fe6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04bf4cbfd3085f61b2f3c29b0885b6b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a04bf4cbfd3085f61b2f3c29b0885b6b3">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAResidual.html">DAResidual</a>, <a class="el" href="classFoam_1_1DAResidualTurboFoam.html">DAResidualTurboFoam</a>, dictionary)</td></tr>
 <tr class="separator:a04bf4cbfd3085f61b2f3c29b0885b6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c91222c86887e0ed77f128e4cefefc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a0c91222c86887e0ed77f128e4cefefc7">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1DALaplacianFoam.html">DALaplacianFoam</a>, 0)</td></tr>
+<tr class="separator:a0c91222c86887e0ed77f128e4cefefc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a875046f640b4d5d06bf583bc4dc5c96f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a875046f640b4d5d06bf583bc4dc5c96f">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DASolver.html">DASolver</a>, <a class="el" href="classFoam_1_1DALaplacianFoam.html">DALaplacianFoam</a>, dictionary)</td></tr>
+<tr class="separator:a875046f640b4d5d06bf583bc4dc5c96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04224919d343db516f083656f7a19cd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a04224919d343db516f083656f7a19cd2">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1DAPimpleFoam.html">DAPimpleFoam</a>, 0)</td></tr>
+<tr class="separator:a04224919d343db516f083656f7a19cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d10c9dcbfe2addb6fac1f107a6525a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a56d10c9dcbfe2addb6fac1f107a6525a">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DASolver.html">DASolver</a>, <a class="el" href="classFoam_1_1DAPimpleFoam.html">DAPimpleFoam</a>, dictionary)</td></tr>
+<tr class="separator:a56d10c9dcbfe2addb6fac1f107a6525a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01bd365195384a4a9c2f86f17610482f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a01bd365195384a4a9c2f86f17610482f">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1DAPisoFoam.html">DAPisoFoam</a>, 0)</td></tr>
 <tr class="separator:a01bd365195384a4a9c2f86f17610482f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acecfe9b92ec50d05a8d6722664911d42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#acecfe9b92ec50d05a8d6722664911d42">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DASolver.html">DASolver</a>, <a class="el" href="classFoam_1_1DAPisoFoam.html">DAPisoFoam</a>, dictionary)</td></tr>
@@ -539,6 +587,10 @@ Functions</h2></td></tr>
 <tr class="separator:a06131cf5ff5183a73e1316236822197a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73fe35b1e136b3ad19ddf5e92915e7ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a73fe35b1e136b3ad19ddf5e92915e7ed">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DASolver.html">DASolver</a>, <a class="el" href="classFoam_1_1DARhoSimpleFoam.html">DARhoSimpleFoam</a>, dictionary)</td></tr>
 <tr class="separator:a73fe35b1e136b3ad19ddf5e92915e7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13301dc0c59c21c3d9d40cceeeb6b21c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a13301dc0c59c21c3d9d40cceeeb6b21c">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1DAScalarTransportFoam.html">DAScalarTransportFoam</a>, 0)</td></tr>
+<tr class="separator:a13301dc0c59c21c3d9d40cceeeb6b21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad5fb0b768fded6155e4526f5cedf319"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#aad5fb0b768fded6155e4526f5cedf319">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DASolver.html">DASolver</a>, <a class="el" href="classFoam_1_1DAScalarTransportFoam.html">DAScalarTransportFoam</a>, dictionary)</td></tr>
+<tr class="separator:aad5fb0b768fded6155e4526f5cedf319"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae0ca5f684aee5728b14b8cc4e1d5608"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#aae0ca5f684aee5728b14b8cc4e1d5608">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1DASimpleFoam.html">DASimpleFoam</a>, 0)</td></tr>
 <tr class="separator:aae0ca5f684aee5728b14b8cc4e1d5608"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1ae7cddbe9f20533d01f6c3c2b5d841"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#aa1ae7cddbe9f20533d01f6c3c2b5d841">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DASolver.html">DASolver</a>, <a class="el" href="classFoam_1_1DASimpleFoam.html">DASimpleFoam</a>, dictionary)</td></tr>
@@ -563,6 +615,14 @@ Functions</h2></td></tr>
 <tr class="separator:a0880ac853fe0b64c9aa5489f9f670725"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a267f6a6fdb56d84306660acc1c9d2b8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a267f6a6fdb56d84306660acc1c9d2b8b">defineRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAStateInfo.html">DAStateInfo</a>, dictionary)</td></tr>
 <tr class="separator:a267f6a6fdb56d84306660acc1c9d2b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c23b08ee87181ca89fa64b4059e90a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a1c23b08ee87181ca89fa64b4059e90a4">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1DAStateInfoLaplacianFoam.html">DAStateInfoLaplacianFoam</a>, 0)</td></tr>
+<tr class="separator:a1c23b08ee87181ca89fa64b4059e90a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a403c50e478b4d7cea75c330b8330e1ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a403c50e478b4d7cea75c330b8330e1ff">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAStateInfo.html">DAStateInfo</a>, <a class="el" href="classFoam_1_1DAStateInfoLaplacianFoam.html">DAStateInfoLaplacianFoam</a>, dictionary)</td></tr>
+<tr class="separator:a403c50e478b4d7cea75c330b8330e1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c6be921da37eae7467acd3fb4ada55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#ad0c6be921da37eae7467acd3fb4ada55">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1DAStateInfoPimpleFoam.html">DAStateInfoPimpleFoam</a>, 0)</td></tr>
+<tr class="separator:ad0c6be921da37eae7467acd3fb4ada55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1492031f823f9fa3d6813ee9ddbd8a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#ac1492031f823f9fa3d6813ee9ddbd8a1">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAStateInfo.html">DAStateInfo</a>, <a class="el" href="classFoam_1_1DAStateInfoPimpleFoam.html">DAStateInfoPimpleFoam</a>, dictionary)</td></tr>
+<tr class="separator:ac1492031f823f9fa3d6813ee9ddbd8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2494ccfd8831b1788976b8e491befb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#ad2494ccfd8831b1788976b8e491befb8">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1DAStateInfoPisoFoam.html">DAStateInfoPisoFoam</a>, 0)</td></tr>
 <tr class="separator:ad2494ccfd8831b1788976b8e491befb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef11e1551f274f644d97e67492c97210"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#aef11e1551f274f644d97e67492c97210">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAStateInfo.html">DAStateInfo</a>, <a class="el" href="classFoam_1_1DAStateInfoPisoFoam.html">DAStateInfoPisoFoam</a>, dictionary)</td></tr>
@@ -575,6 +635,10 @@ Functions</h2></td></tr>
 <tr class="separator:a9641c1219686c5085e8115c44400cf0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a347d2275e578ff8bd64dfab53a433f3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a347d2275e578ff8bd64dfab53a433f3c">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAStateInfo.html">DAStateInfo</a>, <a class="el" href="classFoam_1_1DAStateInfoRhoSimpleFoam.html">DAStateInfoRhoSimpleFoam</a>, dictionary)</td></tr>
 <tr class="separator:a347d2275e578ff8bd64dfab53a433f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa51193f47dbe38afc9a76def378c5fac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#aa51193f47dbe38afc9a76def378c5fac">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1DAStateInfoScalarTransportFoam.html">DAStateInfoScalarTransportFoam</a>, 0)</td></tr>
+<tr class="separator:aa51193f47dbe38afc9a76def378c5fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ee3246cdfef44d9ef33221564ccef5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a61ee3246cdfef44d9ef33221564ccef5">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAStateInfo.html">DAStateInfo</a>, <a class="el" href="classFoam_1_1DAStateInfoScalarTransportFoam.html">DAStateInfoScalarTransportFoam</a>, dictionary)</td></tr>
+<tr class="separator:a61ee3246cdfef44d9ef33221564ccef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a15bb458c7ac7699c2edf4b3a44fdd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a3a15bb458c7ac7699c2edf4b3a44fdd9">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1DAStateInfoSimpleFoam.html">DAStateInfoSimpleFoam</a>, 0)</td></tr>
 <tr class="separator:a3a15bb458c7ac7699c2edf4b3a44fdd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c11684debaea1b38e4aea46e2b65a83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a8c11684debaea1b38e4aea46e2b65a83">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAStateInfo.html">DAStateInfo</a>, <a class="el" href="classFoam_1_1DAStateInfoSimpleFoam.html">DAStateInfoSimpleFoam</a>, dictionary)</td></tr>
@@ -591,6 +655,8 @@ Functions</h2></td></tr>
 <tr class="separator:a89523dd250cedd0466e599a510f2f222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaee3be07b51593fd314ef143dd1be1d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#aaee3be07b51593fd314ef143dd1be1d7">addToRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAStateInfo.html">DAStateInfo</a>, <a class="el" href="classFoam_1_1DAStateInfoTurboFoam.html">DAStateInfoTurboFoam</a>, dictionary)</td></tr>
 <tr class="separator:aaee3be07b51593fd314ef143dd1be1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea0bcb81b029812ad895c80d5284e74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a1ea0bcb81b029812ad895c80d5284e74">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1pimpleControlDF.html">pimpleControlDF</a>, 0)</td></tr>
+<tr class="separator:a1ea0bcb81b029812ad895c80d5284e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a4637b0d3a55c1e9e2184dd793f10fe0a"></a>
@@ -920,7 +986,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="checkGeometry_8C_source.html#l00074">74</a> of file <a class="el" href="checkGeometry_8C_source.html">checkGeometry.C</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsPiso_8H_source.html#l00006">p</a>, and <a class="el" href="pEqnTurbo_8H.html#acb2a30f853ebc9d3bb9bc71391f5a47b">p0()</a>.</p>
+<p class="reference">References <a class="el" href="createRefsPimple_8H_source.html#l00006">p</a>, and <a class="el" href="pEqnTurbo_8H.html#acb2a30f853ebc9d3bb9bc71391f5a47b">p0()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="checkGeometry_8C_source.html#l00211">checkGeometry()</a>.</p>
 <div class="dynheader">
@@ -936,14 +1002,14 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceFoam_a388a1593537b94916b107b3c8ba74579_icgraph.png" border="0" usemap="#namespaceFoam_a388a1593537b94916b107b3c8ba74579_icgraph" alt=""/></div>
 <map name="namespaceFoam_a388a1593537b94916b107b3c8ba74579_icgraph" id="namespaceFoam_a388a1593537b94916b107b3c8ba74579_icgraph">
-<area shape="rect" id="node2" href="namespaceFoam.html#a39bf1b84b861506d835c4d909b970751" title="check mesh quality " alt="" coords="196,5,311,32"/>
+<area shape="rect" id="node2" href="namespaceFoam.html#a11e4b25d100e8e0099917a7555191692" title="check mesh quality " alt="" coords="196,5,311,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a39bf1b84b861506d835c4d909b970751"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39bf1b84b861506d835c4d909b970751">&#9670;&nbsp;</a></span>checkGeometry()</h2>
+<a id="a11e4b25d100e8e0099917a7555191692"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11e4b25d100e8e0099917a7555191692">&#9670;&nbsp;</a></span>checkGeometry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -964,7 +1030,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const autoPtr&lt; writer&lt; scalar &gt;&gt; &amp;&#160;</td>
-          <td class="paramname"><em>setWriter</em>&#160;</td>
+          <td class="paramname"><em>setWriter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const label&#160;</td>
+          <td class="paramname"><em>maxIncorrectlyOrientedFaces</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -980,12 +1052,12 @@ Here is the caller graph for this function:</div>
 
 <p class="reference">References <a class="el" href="checkGeometry_8C_source.html#l00074">checkCoupledPoints()</a>, and <a class="el" href="checkTools_8C_source.html#l00181">mergeAndWrite()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DACheckMesh_8C_source.html#l00049">DACheckMesh::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DACheckMesh_8C_source.html#l00052">DACheckMesh::run()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceFoam_a39bf1b84b861506d835c4d909b970751_cgraph.png" border="0" usemap="#namespaceFoam_a39bf1b84b861506d835c4d909b970751_cgraph" alt=""/></div>
-<map name="namespaceFoam_a39bf1b84b861506d835c4d909b970751_cgraph" id="namespaceFoam_a39bf1b84b861506d835c4d909b970751_cgraph">
+<div class="center"><img src="namespaceFoam_a11e4b25d100e8e0099917a7555191692_cgraph.png" border="0" usemap="#namespaceFoam_a11e4b25d100e8e0099917a7555191692_cgraph" alt=""/></div>
+<map name="namespaceFoam_a11e4b25d100e8e0099917a7555191692_cgraph" id="namespaceFoam_a11e4b25d100e8e0099917a7555191692_cgraph">
 <area shape="rect" id="node2" href="namespaceFoam.html#a388a1593537b94916b107b3c8ba74579" title="Check 0th vertex on coupled faces. " alt="" coords="168,5,311,32"/>
 <area shape="rect" id="node3" href="namespaceFoam.html#ac573cc5b59f725e9d56e0b02e49d57da" title="mergeAndWrite" alt="" coords="183,56,295,83"/>
 </map>
@@ -993,8 +1065,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceFoam_a39bf1b84b861506d835c4d909b970751_icgraph.png" border="0" usemap="#namespaceFoam_a39bf1b84b861506d835c4d909b970751_icgraph" alt=""/></div>
-<map name="namespaceFoam_a39bf1b84b861506d835c4d909b970751_icgraph" id="namespaceFoam_a39bf1b84b861506d835c4d909b970751_icgraph">
+<div class="center"><img src="namespaceFoam_a11e4b25d100e8e0099917a7555191692_icgraph.png" border="0" usemap="#namespaceFoam_a11e4b25d100e8e0099917a7555191692_icgraph" alt=""/></div>
+<map name="namespaceFoam_a11e4b25d100e8e0099917a7555191692_icgraph" id="namespaceFoam_a11e4b25d100e8e0099917a7555191692_icgraph">
 <area shape="rect" id="node2" href="classFoam_1_1DACheckMesh.html#a8b9eb0de7bb3319feb4f022327058f19" title="run meshCheck and return meshOK " alt="" coords="168,5,347,32"/>
 </map>
 </div>
@@ -1083,7 +1155,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceFoam_ac573cc5b59f725e9d56e0b02e49d57da_icgraph.png" border="0" usemap="#namespaceFoam_ac573cc5b59f725e9d56e0b02e49d57da_icgraph" alt=""/></div>
 <map name="namespaceFoam_ac573cc5b59f725e9d56e0b02e49d57da_icgraph" id="namespaceFoam_ac573cc5b59f725e9d56e0b02e49d57da_icgraph">
-<area shape="rect" id="node2" href="namespaceFoam.html#a39bf1b84b861506d835c4d909b970751" title="check mesh quality " alt="" coords="165,5,280,32"/>
+<area shape="rect" id="node2" href="namespaceFoam.html#a11e4b25d100e8e0099917a7555191692" title="check mesh quality " alt="" coords="165,5,280,32"/>
 <area shape="rect" id="node3" href="namespaceFoam.html#a95c4d2008745306b3e72b1f383fa7ba6" title="mergeAndWrite" alt="" coords="167,56,279,83"/>
 </map>
 </div>
@@ -1118,7 +1190,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="checkTools_8C_source.html#l00232">232</a> of file <a class="el" href="checkTools_8C_source.html">checkTools.C</a>.</p>
 
-<p class="reference">References <a class="el" href="checkTools_8C_source.html#l00181">mergeAndWrite()</a>, and <a class="el" href="createRefsPiso_8H_source.html#l00004">mesh</a>.</p>
+<p class="reference">References <a class="el" href="checkTools_8C_source.html#l00181">mergeAndWrite()</a>, and <a class="el" href="createRefsLaplacian_8H_source.html#l00004">mesh</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1158,7 +1230,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="checkTools_8C_source.html#l00252">252</a> of file <a class="el" href="checkTools_8C_source.html">checkTools.C</a>.</p>
 
-<p class="reference">References <a class="el" href="checkTools_8C_source.html#l00181">mergeAndWrite()</a>, and <a class="el" href="createRefsPiso_8H_source.html#l00004">mesh</a>.</p>
+<p class="reference">References <a class="el" href="checkTools_8C_source.html#l00181">mergeAndWrite()</a>, and <a class="el" href="createRefsLaplacian_8H_source.html#l00004">mesh</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1198,12 +1270,12 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="checkTools_8C_source.html#l00333">333</a> of file <a class="el" href="checkTools_8C_source.html">checkTools.C</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsPiso_8H_source.html#l00004">mesh</a>.</p>
+<p class="reference">References <a class="el" href="createRefsLaplacian_8H_source.html#l00004">mesh</a>.</p>
 
 </div>
 </div>
 <a id="a90e9cf832b06b5b5afaf78648234b88e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90e9cf832b06b5b5afaf78648234b88e">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[1/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a90e9cf832b06b5b5afaf78648234b88e">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[1/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1259,7 +1331,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a6b2a384741b2469efd21851b1563659a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b2a384741b2469efd21851b1563659a">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[2/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b2a384741b2469efd21851b1563659a">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[2/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1287,7 +1359,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aaa5083928581a9772085b127feb834a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa5083928581a9772085b127feb834a3">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[1/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa5083928581a9772085b127feb834a3">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[1/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1321,7 +1393,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a3f9d352f3e9dc02d7b669929818f03a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f9d352f3e9dc02d7b669929818f03a7">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[3/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f9d352f3e9dc02d7b669929818f03a7">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[3/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1349,7 +1421,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a244381c3917d844fb2c4de81c33a9b2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a244381c3917d844fb2c4de81c33a9b2d">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[2/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a244381c3917d844fb2c4de81c33a9b2d">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[2/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1383,7 +1455,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aed336bae15fd515cc9bf51348eb58080"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed336bae15fd515cc9bf51348eb58080">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[4/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aed336bae15fd515cc9bf51348eb58080">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[4/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1411,7 +1483,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a3046692f417bfa65a93d2e67ad8115ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3046692f417bfa65a93d2e67ad8115ce">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[3/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3046692f417bfa65a93d2e67ad8115ce">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[3/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1445,7 +1517,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ae587603d43fb8da2721626b98ed3aacc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae587603d43fb8da2721626b98ed3aacc">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[5/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae587603d43fb8da2721626b98ed3aacc">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[5/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1473,7 +1545,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a2edad689096e4073e6b9f7083a41f59b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2edad689096e4073e6b9f7083a41f59b">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[4/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2edad689096e4073e6b9f7083a41f59b">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[4/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1507,7 +1579,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a164b60c1ee4e8ede31090f51f6cced20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a164b60c1ee4e8ede31090f51f6cced20">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[6/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a164b60c1ee4e8ede31090f51f6cced20">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[6/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1563,7 +1635,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a1e090daa4081b9ceaf74d6a0d2f8400f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e090daa4081b9ceaf74d6a0d2f8400f">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[7/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e090daa4081b9ceaf74d6a0d2f8400f">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[7/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1591,7 +1663,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a50a62ecbe4086a77ef4ca901ffdc4306"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50a62ecbe4086a77ef4ca901ffdc4306">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[5/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a62ecbe4086a77ef4ca901ffdc4306">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[5/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1625,7 +1697,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aab254ff03e7cdbe747fd5f970f463428"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab254ff03e7cdbe747fd5f970f463428">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[8/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aab254ff03e7cdbe747fd5f970f463428">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[8/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1653,7 +1725,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a5a7235d5f88cacc427dea1969762731e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a7235d5f88cacc427dea1969762731e">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[6/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a7235d5f88cacc427dea1969762731e">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[6/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1687,7 +1759,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a6e84441afa57e10d08c57fda9f2c5b1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e84441afa57e10d08c57fda9f2c5b1f">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[9/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e84441afa57e10d08c57fda9f2c5b1f">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[9/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1715,7 +1787,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="af3d1846af3f8432a64fcd1d44e747551"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3d1846af3f8432a64fcd1d44e747551">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[7/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af3d1846af3f8432a64fcd1d44e747551">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[7/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1749,7 +1821,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a60b3e1ac67d3cc008f8a922b77098d40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60b3e1ac67d3cc008f8a922b77098d40">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[10/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b3e1ac67d3cc008f8a922b77098d40">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[10/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1777,7 +1849,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ad04cdab87d6711e51130fd0f075406d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad04cdab87d6711e51130fd0f075406d0">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[8/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad04cdab87d6711e51130fd0f075406d0">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[8/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1811,7 +1883,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="af2601923b796b1e6264bd55227530b19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2601923b796b1e6264bd55227530b19">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[11/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af2601923b796b1e6264bd55227530b19">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[11/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1867,7 +1939,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a99c4112ee40c06992195130b4103e21b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99c4112ee40c06992195130b4103e21b">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[12/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a99c4112ee40c06992195130b4103e21b">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[12/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1895,7 +1967,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a5c3d993e1323e86a91f4d6b2ce770be7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c3d993e1323e86a91f4d6b2ce770be7">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[9/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c3d993e1323e86a91f4d6b2ce770be7">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[9/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1929,7 +2001,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a6088c956e1f74dada0cb8dd30fb51f07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6088c956e1f74dada0cb8dd30fb51f07">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[13/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6088c956e1f74dada0cb8dd30fb51f07">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[13/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1957,7 +2029,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a930a99871b2c1e9eee0801fb88936c3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a930a99871b2c1e9eee0801fb88936c3f">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[10/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a930a99871b2c1e9eee0801fb88936c3f">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[10/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1991,7 +2063,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a598dde3b66de244efa1124ada2503988"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a598dde3b66de244efa1124ada2503988">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[14/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a598dde3b66de244efa1124ada2503988">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[14/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2019,7 +2091,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aee757c1a3cfcc59ada4baa1ce531a56d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee757c1a3cfcc59ada4baa1ce531a56d">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[11/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aee757c1a3cfcc59ada4baa1ce531a56d">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[11/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2053,7 +2125,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a4409ea250bf9009a8bf63cff260dc050"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4409ea250bf9009a8bf63cff260dc050">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[15/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4409ea250bf9009a8bf63cff260dc050">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[15/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2081,7 +2153,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a949c6829f8bcb789dc5758db8971ffa8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a949c6829f8bcb789dc5758db8971ffa8">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[12/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a949c6829f8bcb789dc5758db8971ffa8">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[12/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2115,7 +2187,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a84e9d2fe1e5a1769437ac547fa5bac13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84e9d2fe1e5a1769437ac547fa5bac13">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[16/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a84e9d2fe1e5a1769437ac547fa5bac13">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[16/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2143,7 +2215,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ac9d2f47216cb8dd405eb258155ea2e07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9d2f47216cb8dd405eb258155ea2e07">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[13/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9d2f47216cb8dd405eb258155ea2e07">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[13/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2177,7 +2249,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a8a241a1b0c8d80bc42226ea11ca50167"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a241a1b0c8d80bc42226ea11ca50167">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[17/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a241a1b0c8d80bc42226ea11ca50167">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[17/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2205,7 +2277,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a737ccdb796187551795afbb48fefda37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a737ccdb796187551795afbb48fefda37">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[14/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a737ccdb796187551795afbb48fefda37">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[14/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2239,7 +2311,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a5710a367f064b7ac19434c6c66b75fc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5710a367f064b7ac19434c6c66b75fc7">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[18/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5710a367f064b7ac19434c6c66b75fc7">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[18/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2267,7 +2339,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aad9a52336b57c008272ba7a670f64c40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad9a52336b57c008272ba7a670f64c40">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[15/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aad9a52336b57c008272ba7a670f64c40">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[15/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2301,7 +2373,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a3ffe9fc284865d7e5d416467d3bb5561"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ffe9fc284865d7e5d416467d3bb5561">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[19/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ffe9fc284865d7e5d416467d3bb5561">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[19/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2329,7 +2401,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a8b3e33f90422290ff496a0a41c0cf0df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b3e33f90422290ff496a0a41c0cf0df">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[16/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b3e33f90422290ff496a0a41c0cf0df">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[16/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2363,7 +2435,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a5ce566299671ece69f4fd635ceea2791"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ce566299671ece69f4fd635ceea2791">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[20/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ce566299671ece69f4fd635ceea2791">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[20/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2419,7 +2491,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ae69186b04c53b93d13d0e830c5c463a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae69186b04c53b93d13d0e830c5c463a7">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[21/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae69186b04c53b93d13d0e830c5c463a7">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[21/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2475,7 +2547,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="addfd695afeb1a8fa3fb3f2279b99582b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addfd695afeb1a8fa3fb3f2279b99582b">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[22/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#addfd695afeb1a8fa3fb3f2279b99582b">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[22/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2503,7 +2575,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ad3743a4bc473d03ecd261c939c0ade88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3743a4bc473d03ecd261c939c0ade88">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[17/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3743a4bc473d03ecd261c939c0ade88">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[17/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2537,7 +2609,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aed87a50fcfbdb7ecbc27e19e5138017f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed87a50fcfbdb7ecbc27e19e5138017f">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[23/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aed87a50fcfbdb7ecbc27e19e5138017f">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[23/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2565,7 +2637,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a74d0add0fd1f4be06d9c6d126396fe86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74d0add0fd1f4be06d9c6d126396fe86">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[18/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a74d0add0fd1f4be06d9c6d126396fe86">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[18/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2599,7 +2671,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a394ab76cc84c77a1bdaa6b6403725549"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a394ab76cc84c77a1bdaa6b6403725549">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[24/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a394ab76cc84c77a1bdaa6b6403725549">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[24/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2627,7 +2699,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ac79a999723a8cd7a7d2bf19b3265d624"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac79a999723a8cd7a7d2bf19b3265d624">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[19/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac79a999723a8cd7a7d2bf19b3265d624">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[19/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2660,8 +2732,70 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="afd7c8f66c959c63a2471b9840c8d6a89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7c8f66c959c63a2471b9840c8d6a89">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[25/81]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::defineTypeNameAndDebug </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAObjFuncMeshQualityKS.html">DAObjFuncMeshQualityKS</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e912fd89d020072ddf975398473531e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e912fd89d020072ddf975398473531e">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[20/71]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::addToRunTimeSelectionTable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAObjFunc.html">DAObjFunc</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAObjFuncMeshQualityKS.html">DAObjFuncMeshQualityKS</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dictionary&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0a95b95ff2f9b38cb7b34a48af21137b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a95b95ff2f9b38cb7b34a48af21137b">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[25/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a95b95ff2f9b38cb7b34a48af21137b">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[26/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2689,7 +2823,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ad6d97dc6553e91e4679623b07ccc3711"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6d97dc6553e91e4679623b07ccc3711">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[20/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6d97dc6553e91e4679623b07ccc3711">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[21/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2723,7 +2857,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aedffa6843d6b15847a9bdf74a4c2b5dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedffa6843d6b15847a9bdf74a4c2b5dd">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[26/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aedffa6843d6b15847a9bdf74a4c2b5dd">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[27/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2751,7 +2885,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ad2b6c2bdbf36c1ad0394e5fa450359f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2b6c2bdbf36c1ad0394e5fa450359f9">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[21/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2b6c2bdbf36c1ad0394e5fa450359f9">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[22/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2785,7 +2919,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="af807b4bc0ef39e8aed6701cb6790ee48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af807b4bc0ef39e8aed6701cb6790ee48">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[27/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af807b4bc0ef39e8aed6701cb6790ee48">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[28/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2813,7 +2947,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aeb4e66a48a006c13eff924ae9c7b0528"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb4e66a48a006c13eff924ae9c7b0528">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[22/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb4e66a48a006c13eff924ae9c7b0528">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[23/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2847,7 +2981,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a798c1a402b11b15eaf9944505a04f818"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a798c1a402b11b15eaf9944505a04f818">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[28/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a798c1a402b11b15eaf9944505a04f818">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[29/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2875,7 +3009,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a15fd48181ff929f6da4b6fb3a4387442"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15fd48181ff929f6da4b6fb3a4387442">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[23/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a15fd48181ff929f6da4b6fb3a4387442">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[24/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2909,7 +3043,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a730d0141b63d05e1cc2d7bcff57ab175"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a730d0141b63d05e1cc2d7bcff57ab175">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[29/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a730d0141b63d05e1cc2d7bcff57ab175">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[30/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2937,7 +3071,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a9d41aa758e935454cd4947de9b4462d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d41aa758e935454cd4947de9b4462d2">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[24/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d41aa758e935454cd4947de9b4462d2">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[25/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2971,7 +3105,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a0eeafcd792f6e195ab3f6a4db2b5d19b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0eeafcd792f6e195ab3f6a4db2b5d19b">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[30/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eeafcd792f6e195ab3f6a4db2b5d19b">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[31/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2999,7 +3133,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aaa37c9bd90e7a57e6192e75654b63847"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa37c9bd90e7a57e6192e75654b63847">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[25/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa37c9bd90e7a57e6192e75654b63847">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[26/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3033,7 +3167,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a8ad276ce532aa19f672f55b666615da2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ad276ce532aa19f672f55b666615da2">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[31/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ad276ce532aa19f672f55b666615da2">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[32/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3061,7 +3195,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a20585990e965e985df231a20d05f3787"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20585990e965e985df231a20d05f3787">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[26/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a20585990e965e985df231a20d05f3787">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[27/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3095,7 +3229,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="afbdc3d0965a87a2deb96961c25de0262"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbdc3d0965a87a2deb96961c25de0262">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[32/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afbdc3d0965a87a2deb96961c25de0262">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[33/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3123,7 +3257,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a3a69e931f6618566642ccd76f16a1a38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a69e931f6618566642ccd76f16a1a38">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[27/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a69e931f6618566642ccd76f16a1a38">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[28/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3157,7 +3291,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a01c768d6055699c90e3d5a4d49c4d5fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01c768d6055699c90e3d5a4d49c4d5fb">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[33/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a01c768d6055699c90e3d5a4d49c4d5fb">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[34/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3213,7 +3347,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="accd051393fdc0622707fb6ff2fd2846b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accd051393fdc0622707fb6ff2fd2846b">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[34/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#accd051393fdc0622707fb6ff2fd2846b">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[35/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3241,7 +3375,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a912bc90a29011236802dd089c458cbc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a912bc90a29011236802dd089c458cbc6">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[28/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a912bc90a29011236802dd089c458cbc6">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[29/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3275,7 +3409,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a50bdb3915bf4e0537b72de33483bc500"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50bdb3915bf4e0537b72de33483bc500">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[35/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a50bdb3915bf4e0537b72de33483bc500">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[36/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3303,7 +3437,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ae7beeb8cb65604805851bcbd0fcb467a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7beeb8cb65604805851bcbd0fcb467a">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[29/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7beeb8cb65604805851bcbd0fcb467a">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[30/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3337,7 +3471,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a5d05e6b63b7a40602a9ba4ea8ee14c4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d05e6b63b7a40602a9ba4ea8ee14c4e">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[36/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d05e6b63b7a40602a9ba4ea8ee14c4e">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[37/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3365,7 +3499,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a7c0f7d2402e7f65b81b87c749fce796a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c0f7d2402e7f65b81b87c749fce796a">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[30/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c0f7d2402e7f65b81b87c749fce796a">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[31/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3399,7 +3533,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a551de5585cb5ade5b5fdd0d51a3dce59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a551de5585cb5ade5b5fdd0d51a3dce59">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[37/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a551de5585cb5ade5b5fdd0d51a3dce59">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[38/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3427,7 +3561,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a824df54bb21617fbe693b898fbcb2b49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a824df54bb21617fbe693b898fbcb2b49">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[31/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a824df54bb21617fbe693b898fbcb2b49">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[32/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3461,7 +3595,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="abd8e9bc4ed857ee2015ea4b52d57f125"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd8e9bc4ed857ee2015ea4b52d57f125">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[38/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abd8e9bc4ed857ee2015ea4b52d57f125">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[39/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3489,7 +3623,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a0cf41b09008e6da80c2e580f038ce9ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cf41b09008e6da80c2e580f038ce9ab">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[32/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cf41b09008e6da80c2e580f038ce9ab">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[33/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3523,7 +3657,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a3c68a4891f0c02af44a6ff60b2a61e39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c68a4891f0c02af44a6ff60b2a61e39">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[39/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c68a4891f0c02af44a6ff60b2a61e39">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[40/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3551,7 +3685,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a06db586aa9d2c490b2945fcc89e024b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06db586aa9d2c490b2945fcc89e024b7">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[33/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a06db586aa9d2c490b2945fcc89e024b7">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[34/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3585,7 +3719,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a4fa4d2991691eb59eee0c28681c6dc61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fa4d2991691eb59eee0c28681c6dc61">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[40/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fa4d2991691eb59eee0c28681c6dc61">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[41/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3613,7 +3747,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="afe8f89b9b2ea6cf123af23b4acdd636e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe8f89b9b2ea6cf123af23b4acdd636e">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[34/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afe8f89b9b2ea6cf123af23b4acdd636e">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[35/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3647,7 +3781,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ab22efbb074de69a0d3446a200d38d068"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab22efbb074de69a0d3446a200d38d068">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[41/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab22efbb074de69a0d3446a200d38d068">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[42/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3675,7 +3809,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ae51ef78810b6e371ceeec1ac1e7e21d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae51ef78810b6e371ceeec1ac1e7e21d3">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[35/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51ef78810b6e371ceeec1ac1e7e21d3">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[36/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3709,7 +3843,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ab1f35ce75347f1fefaa1ad766d8e4632"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1f35ce75347f1fefaa1ad766d8e4632">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[42/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1f35ce75347f1fefaa1ad766d8e4632">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[43/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3737,7 +3871,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ab0d1c3c45c163d4834cc13c1e9f049be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0d1c3c45c163d4834cc13c1e9f049be">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[36/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0d1c3c45c163d4834cc13c1e9f049be">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[37/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3771,7 +3905,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a2dfec6c84c54f810a32f7667b5f1435d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dfec6c84c54f810a32f7667b5f1435d">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[43/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dfec6c84c54f810a32f7667b5f1435d">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[44/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3799,7 +3933,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ae578e6c35d4610a6aa78e82e11ba27b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae578e6c35d4610a6aa78e82e11ba27b3">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[37/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae578e6c35d4610a6aa78e82e11ba27b3">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[38/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3833,7 +3967,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="af1a4ac98895963a1d2368eae567a8333"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1a4ac98895963a1d2368eae567a8333">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[44/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a4ac98895963a1d2368eae567a8333">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[45/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3861,7 +3995,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aac0949fea9938704f944cd3018aa086e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac0949fea9938704f944cd3018aa086e">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[38/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aac0949fea9938704f944cd3018aa086e">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[39/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3895,7 +4029,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a16e710fdc918a66c83545971cc971a0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16e710fdc918a66c83545971cc971a0a">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[45/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a16e710fdc918a66c83545971cc971a0a">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[46/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3923,7 +4057,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ad987ec952cce53a091870d108c168674"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad987ec952cce53a091870d108c168674">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[39/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad987ec952cce53a091870d108c168674">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[40/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3957,7 +4091,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a3eb9ebdeae4016ff393d49342a5d5432"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3eb9ebdeae4016ff393d49342a5d5432">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[46/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eb9ebdeae4016ff393d49342a5d5432">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[47/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4013,7 +4147,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a81e97ec24bc276bea32f06f8ce4bf90c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81e97ec24bc276bea32f06f8ce4bf90c">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[47/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a81e97ec24bc276bea32f06f8ce4bf90c">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[48/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4041,7 +4175,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aef500e156c173896ddb7855d8bccce26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef500e156c173896ddb7855d8bccce26">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[40/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aef500e156c173896ddb7855d8bccce26">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[41/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4074,8 +4208,132 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a21414f4b567bde4aaf2b6c3df68f97f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21414f4b567bde4aaf2b6c3df68f97f0">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[49/81]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::defineTypeNameAndDebug </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAResidualLaplacianFoam.html">DAResidualLaplacianFoam</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a93cde4f64fefc4ac9b8313e6378619ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93cde4f64fefc4ac9b8313e6378619ab">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[42/71]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::addToRunTimeSelectionTable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAResidual.html">DAResidual</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAResidualLaplacianFoam.html">DAResidualLaplacianFoam</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dictionary&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03e51bbcdbd8eafdb8da4790ab1d05c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e51bbcdbd8eafdb8da4790ab1d05c1">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[50/81]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::defineTypeNameAndDebug </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAResidualPimpleFoam.html">DAResidualPimpleFoam</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4834441a2d07721118cd59edca3df628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4834441a2d07721118cd59edca3df628">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[43/71]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::addToRunTimeSelectionTable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAResidual.html">DAResidual</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAResidualPimpleFoam.html">DAResidualPimpleFoam</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dictionary&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7641453f297752b7e6766440c4f0d6ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7641453f297752b7e6766440c4f0d6ca">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[48/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7641453f297752b7e6766440c4f0d6ca">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[51/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4103,7 +4361,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aff2b385bc2cce935d45d08e4e7fc9540"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff2b385bc2cce935d45d08e4e7fc9540">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[41/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aff2b385bc2cce935d45d08e4e7fc9540">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[44/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4137,7 +4395,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ac2c1d29a1bb25b64a99af6ee0821a8b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2c1d29a1bb25b64a99af6ee0821a8b8">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[49/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2c1d29a1bb25b64a99af6ee0821a8b8">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[52/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4165,7 +4423,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a6e537e0e8291b13ec73f6f98d1306642"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e537e0e8291b13ec73f6f98d1306642">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[42/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e537e0e8291b13ec73f6f98d1306642">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[45/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4199,7 +4457,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a3721037483ee57865947f80f39fb338d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3721037483ee57865947f80f39fb338d">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[50/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3721037483ee57865947f80f39fb338d">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[53/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4227,7 +4485,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a5e32904dca7d8d147226d182aff75390"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e32904dca7d8d147226d182aff75390">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[43/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e32904dca7d8d147226d182aff75390">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[46/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4260,8 +4518,70 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a562b980f20905ef83e747b68b5234773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a562b980f20905ef83e747b68b5234773">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[54/81]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::defineTypeNameAndDebug </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAResidualScalarTransportFoam.html">DAResidualScalarTransportFoam</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae3984dd0ff4ee445d1bbbd3684c53945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3984dd0ff4ee445d1bbbd3684c53945">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[47/71]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::addToRunTimeSelectionTable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAResidual.html">DAResidual</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAResidualScalarTransportFoam.html">DAResidualScalarTransportFoam</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dictionary&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8cc1c6dce24682079c5318c2b939b51f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cc1c6dce24682079c5318c2b939b51f">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[51/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cc1c6dce24682079c5318c2b939b51f">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[55/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4289,7 +4609,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a3a0a6e38e7d5ee6bb17f8c34d7f9c292"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a0a6e38e7d5ee6bb17f8c34d7f9c292">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[44/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a0a6e38e7d5ee6bb17f8c34d7f9c292">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[48/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4323,7 +4643,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a6bf978beee1f351b0919487a4a058460"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bf978beee1f351b0919487a4a058460">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[52/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bf978beee1f351b0919487a4a058460">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[56/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4351,7 +4671,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aaefc067d3b09193b6bbd9d1e98fc009e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaefc067d3b09193b6bbd9d1e98fc009e">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[45/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaefc067d3b09193b6bbd9d1e98fc009e">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[49/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4385,7 +4705,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ad16c350fd72f7e3d85920edd9743d1ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad16c350fd72f7e3d85920edd9743d1ca">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[53/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad16c350fd72f7e3d85920edd9743d1ca">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[57/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4413,7 +4733,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="afa24f45ba3cb70f1bd5073f38405f030"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa24f45ba3cb70f1bd5073f38405f030">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[46/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afa24f45ba3cb70f1bd5073f38405f030">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[50/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4447,7 +4767,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ac65bc34587c8c75d5f5f482659d8fe6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac65bc34587c8c75d5f5f482659d8fe6d">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[54/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac65bc34587c8c75d5f5f482659d8fe6d">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[58/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4475,7 +4795,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a04bf4cbfd3085f61b2f3c29b0885b6b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04bf4cbfd3085f61b2f3c29b0885b6b3">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[47/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a04bf4cbfd3085f61b2f3c29b0885b6b3">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[51/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4508,8 +4828,132 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a0c91222c86887e0ed77f128e4cefefc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c91222c86887e0ed77f128e4cefefc7">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[59/81]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::defineTypeNameAndDebug </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DALaplacianFoam.html">DALaplacianFoam</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a875046f640b4d5d06bf583bc4dc5c96f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a875046f640b4d5d06bf583bc4dc5c96f">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[52/71]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::addToRunTimeSelectionTable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DASolver.html">DASolver</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DALaplacianFoam.html">DALaplacianFoam</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dictionary&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04224919d343db516f083656f7a19cd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04224919d343db516f083656f7a19cd2">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[60/81]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::defineTypeNameAndDebug </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAPimpleFoam.html">DAPimpleFoam</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56d10c9dcbfe2addb6fac1f107a6525a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56d10c9dcbfe2addb6fac1f107a6525a">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[53/71]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::addToRunTimeSelectionTable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DASolver.html">DASolver</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAPimpleFoam.html">DAPimpleFoam</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dictionary&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a01bd365195384a4a9c2f86f17610482f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01bd365195384a4a9c2f86f17610482f">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[55/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a01bd365195384a4a9c2f86f17610482f">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[61/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4537,7 +4981,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="acecfe9b92ec50d05a8d6722664911d42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acecfe9b92ec50d05a8d6722664911d42">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[48/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acecfe9b92ec50d05a8d6722664911d42">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[54/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4571,7 +5015,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ad254e3ba218a577a61c8dc6b3addf293"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad254e3ba218a577a61c8dc6b3addf293">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[56/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad254e3ba218a577a61c8dc6b3addf293">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[62/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4599,7 +5043,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ad4772427f1398f012ee933904a549db5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4772427f1398f012ee933904a549db5">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[49/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4772427f1398f012ee933904a549db5">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[55/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4633,7 +5077,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a06131cf5ff5183a73e1316236822197a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06131cf5ff5183a73e1316236822197a">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[57/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a06131cf5ff5183a73e1316236822197a">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[63/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4661,7 +5105,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a73fe35b1e136b3ad19ddf5e92915e7ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73fe35b1e136b3ad19ddf5e92915e7ed">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[50/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a73fe35b1e136b3ad19ddf5e92915e7ed">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[56/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4694,8 +5138,70 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a13301dc0c59c21c3d9d40cceeeb6b21c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13301dc0c59c21c3d9d40cceeeb6b21c">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[64/81]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::defineTypeNameAndDebug </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAScalarTransportFoam.html">DAScalarTransportFoam</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad5fb0b768fded6155e4526f5cedf319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad5fb0b768fded6155e4526f5cedf319">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[57/71]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::addToRunTimeSelectionTable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DASolver.html">DASolver</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAScalarTransportFoam.html">DAScalarTransportFoam</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dictionary&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aae0ca5f684aee5728b14b8cc4e1d5608"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae0ca5f684aee5728b14b8cc4e1d5608">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[58/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aae0ca5f684aee5728b14b8cc4e1d5608">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[65/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4723,7 +5229,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aa1ae7cddbe9f20533d01f6c3c2b5d841"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1ae7cddbe9f20533d01f6c3c2b5d841">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[51/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1ae7cddbe9f20533d01f6c3c2b5d841">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[58/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4757,7 +5263,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a3ac597840a2799cfafe7324502e79c9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ac597840a2799cfafe7324502e79c9c">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[59/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ac597840a2799cfafe7324502e79c9c">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[66/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4785,7 +5291,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a251b7bcd94527bacc169fa536dfa3a83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a251b7bcd94527bacc169fa536dfa3a83">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[52/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a251b7bcd94527bacc169fa536dfa3a83">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[59/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4819,7 +5325,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a0c7e26bc65832e26446ee067963c9bfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c7e26bc65832e26446ee067963c9bfc">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[60/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c7e26bc65832e26446ee067963c9bfc">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[67/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4847,7 +5353,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a718a249b1c653eb513eb0f212af741ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a718a249b1c653eb513eb0f212af741ad">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[53/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a718a249b1c653eb513eb0f212af741ad">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[60/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4881,7 +5387,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ae890e1074f4a546d34dfca838a3f27c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae890e1074f4a546d34dfca838a3f27c5">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[61/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae890e1074f4a546d34dfca838a3f27c5">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[68/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4937,7 +5443,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aff7bd5ba37d90b9df978ef50cde53199"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff7bd5ba37d90b9df978ef50cde53199">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[62/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aff7bd5ba37d90b9df978ef50cde53199">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[69/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4965,7 +5471,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a4224c654aa5baf1004d9531af071d57d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4224c654aa5baf1004d9531af071d57d">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[54/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4224c654aa5baf1004d9531af071d57d">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[61/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4999,7 +5505,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a0880ac853fe0b64c9aa5489f9f670725"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0880ac853fe0b64c9aa5489f9f670725">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[63/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0880ac853fe0b64c9aa5489f9f670725">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[70/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5054,8 +5560,132 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a1c23b08ee87181ca89fa64b4059e90a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c23b08ee87181ca89fa64b4059e90a4">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[71/81]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::defineTypeNameAndDebug </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAStateInfoLaplacianFoam.html">DAStateInfoLaplacianFoam</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a403c50e478b4d7cea75c330b8330e1ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a403c50e478b4d7cea75c330b8330e1ff">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[62/71]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::addToRunTimeSelectionTable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAStateInfo.html">DAStateInfo</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAStateInfoLaplacianFoam.html">DAStateInfoLaplacianFoam</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dictionary&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0c6be921da37eae7467acd3fb4ada55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0c6be921da37eae7467acd3fb4ada55">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[72/81]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::defineTypeNameAndDebug </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAStateInfoPimpleFoam.html">DAStateInfoPimpleFoam</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac1492031f823f9fa3d6813ee9ddbd8a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1492031f823f9fa3d6813ee9ddbd8a1">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[63/71]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::addToRunTimeSelectionTable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAStateInfo.html">DAStateInfo</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAStateInfoPimpleFoam.html">DAStateInfoPimpleFoam</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dictionary&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad2494ccfd8831b1788976b8e491befb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2494ccfd8831b1788976b8e491befb8">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[64/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2494ccfd8831b1788976b8e491befb8">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[73/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5083,7 +5713,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aef11e1551f274f644d97e67492c97210"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef11e1551f274f644d97e67492c97210">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[55/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aef11e1551f274f644d97e67492c97210">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[64/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5117,7 +5747,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ab44da78f7c3bacf04afaa6e753f67dad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab44da78f7c3bacf04afaa6e753f67dad">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[65/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab44da78f7c3bacf04afaa6e753f67dad">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[74/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5145,7 +5775,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ae2729c572b2e5eb880ea13944d71cb9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2729c572b2e5eb880ea13944d71cb9a">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[56/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2729c572b2e5eb880ea13944d71cb9a">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[65/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5179,7 +5809,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a9641c1219686c5085e8115c44400cf0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9641c1219686c5085e8115c44400cf0d">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[66/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9641c1219686c5085e8115c44400cf0d">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[75/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5207,7 +5837,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a347d2275e578ff8bd64dfab53a433f3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a347d2275e578ff8bd64dfab53a433f3c">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[57/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a347d2275e578ff8bd64dfab53a433f3c">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[66/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5240,8 +5870,70 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="aa51193f47dbe38afc9a76def378c5fac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa51193f47dbe38afc9a76def378c5fac">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[76/81]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::defineTypeNameAndDebug </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAStateInfoScalarTransportFoam.html">DAStateInfoScalarTransportFoam</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61ee3246cdfef44d9ef33221564ccef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61ee3246cdfef44d9ef33221564ccef5">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[67/71]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::addToRunTimeSelectionTable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAStateInfo.html">DAStateInfo</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1DAStateInfoScalarTransportFoam.html">DAStateInfoScalarTransportFoam</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dictionary&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3a15bb458c7ac7699c2edf4b3a44fdd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a15bb458c7ac7699c2edf4b3a44fdd9">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[67/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a15bb458c7ac7699c2edf4b3a44fdd9">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[77/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5269,7 +5961,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a8c11684debaea1b38e4aea46e2b65a83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c11684debaea1b38e4aea46e2b65a83">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[58/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c11684debaea1b38e4aea46e2b65a83">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[68/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5303,7 +5995,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a7173137ad5b13e5d8a4d51ff215edd77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7173137ad5b13e5d8a4d51ff215edd77">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[68/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7173137ad5b13e5d8a4d51ff215edd77">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[78/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5331,7 +6023,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a6395b41d44fdcd42fe96237289a48183"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6395b41d44fdcd42fe96237289a48183">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[59/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6395b41d44fdcd42fe96237289a48183">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[69/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5365,7 +6057,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a43db9ecb9105a0fbf12bf16404c16813"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43db9ecb9105a0fbf12bf16404c16813">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[69/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a43db9ecb9105a0fbf12bf16404c16813">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[79/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5393,7 +6085,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a8b8540d7c28161931b7568ae6ce8ef61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b8540d7c28161931b7568ae6ce8ef61">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[60/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b8540d7c28161931b7568ae6ce8ef61">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[70/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5427,7 +6119,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a89523dd250cedd0466e599a510f2f222"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89523dd250cedd0466e599a510f2f222">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[70/70]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a89523dd250cedd0466e599a510f2f222">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[80/81]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5455,7 +6147,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aaee3be07b51593fd314ef143dd1be1d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaee3be07b51593fd314ef143dd1be1d7">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[61/61]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee3be07b51593fd314ef143dd1be1d7">&#9670;&nbsp;</a></span>addToRunTimeSelectionTable() <span class="overload">[71/71]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5476,6 +6168,34 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">dictionary&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ea0bcb81b029812ad895c80d5284e74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ea0bcb81b029812ad895c80d5284e74">&#9670;&nbsp;</a></span>defineTypeNameAndDebug() <span class="overload">[81/81]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Foam::defineTypeNameAndDebug </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFoam_1_1pimpleControlDF.html">pimpleControlDF</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>

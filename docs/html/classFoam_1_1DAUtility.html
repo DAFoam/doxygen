@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.5</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.7</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -68,6 +68,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classFoam_1_1DAUtility-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DAUtility Class Reference</div>  </div>
@@ -130,6 +131,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a60de1987fa392ee6e3780759505035c4"><td class="memItemLeft" align="right" valign="top">static globalIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAUtility.html#a60de1987fa392ee6e3780759505035c4">genGlobalIndex</a> (const label localIndexSize)</td></tr>
 <tr class="memdesc:a60de1987fa392ee6e3780759505035c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">generate global index numbering for local-global index transferring  <a href="#a60de1987fa392ee6e3780759505035c4">More...</a><br /></td></tr>
 <tr class="separator:a60de1987fa392ee6e3780759505035c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ae60b34107c06e0af8ae51634db1720f0"><td class="memItemLeft" align="right" valign="top">static scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAUtility.html#ae60b34107c06e0af8ae51634db1720f0">angleOfAttackRadForwardAD</a> = -9999.0</td></tr>
+<tr class="memdesc:ae60b34107c06e0af8ae51634db1720f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">angle of attack in radian  <a href="#ae60b34107c06e0af8ae51634db1720f0">More...</a><br /></td></tr>
+<tr class="separator:ae60b34107c06e0af8ae51634db1720f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -224,7 +231,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DAUtility_8C_source.html#l00024">24</a> of file <a class="el" href="DAUtility_8C_source.html">DAUtility.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAOption_8C_source.html#l00016">DAOption::DAOption()</a>, <a class="el" href="DASolver_8C_source.html#l00053">DASolver::New()</a>, and <a class="el" href="DAOption_8C_source.html#l00050">DAOption::updateDAOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAOption_8C_source.html#l00016">DAOption::DAOption()</a>, <a class="el" href="DASolver_8C_source.html#l00056">DASolver::New()</a>, and <a class="el" href="DAOption_8C_source.html#l00050">DAOption::updateDAOption()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -274,7 +281,7 @@ Here is the caller graph for this function:</div>
 
 <p>check whether a value is in the list </p>
 
-<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00123">123</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00126">126</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
 
 </div>
 </div>
@@ -320,7 +327,7 @@ Here is the caller graph for this function:</div>
 
 <p>replace a value in the list </p>
 
-<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00153">153</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00156">156</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
 
 </div>
 </div>
@@ -360,7 +367,7 @@ Here is the caller graph for this function:</div>
 
 <p>delete a value in the list </p>
 
-<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00189">189</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00192">192</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
 
 </div>
 </div>
@@ -402,7 +409,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAUtility_8C_source.html#l00354">354</a> of file <a class="el" href="DAUtility_8C_source.html">DAUtility.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l02343">DASolver::calcdRdACT()</a>, <a class="el" href="DASolver_8C_source.html#l01096">DASolver::calcdRdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l00889">DASolver::calcdRdBC()</a>, <a class="el" href="DASolver_8C_source.html#l02140">DASolver::calcdRdFFD()</a>, <a class="el" href="DASolver_8C_source.html#l00609">DASolver::calcdRdWT()</a>, <a class="el" href="DAJacCon_8C_source.html#l00088">DAJacCon::initializeStateBoundaryCon()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, <a class="el" href="DAJacCondFdW_8C_source.html#l00115">DAJacCondFdW::setupJacCon()</a>, and <a class="el" href="DASolver_8H_source.html#l00504">DASolver::writeMatrixBinary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l02401">DASolver::calcdRdACT()</a>, <a class="el" href="DASolver_8C_source.html#l01135">DASolver::calcdRdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l00924">DASolver::calcdRdBC()</a>, <a class="el" href="DASolver_8C_source.html#l02194">DASolver::calcdRdFFD()</a>, <a class="el" href="DASolver_8C_source.html#l00647">DASolver::calcdRdWT()</a>, <a class="el" href="DAJacCon_8C_source.html#l00088">DAJacCon::initializeStateBoundaryCon()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, <a class="el" href="DAJacCondFdW_8C_source.html#l00115">DAJacCondFdW::setupJacCon()</a>, and <a class="el" href="DASolver_8H_source.html#l00564">DASolver::writeMatrixBinary()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -460,7 +467,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAUtility_8C_source.html#l00386">386</a> of file <a class="el" href="DAUtility_8C_source.html">DAUtility.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l02343">DASolver::calcdRdACT()</a>, <a class="el" href="DASolver_8C_source.html#l01096">DASolver::calcdRdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l00889">DASolver::calcdRdBC()</a>, <a class="el" href="DASolver_8C_source.html#l02140">DASolver::calcdRdFFD()</a>, and <a class="el" href="DASolver_8H_source.html#l00512">DASolver::writeMatrixASCII()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l02401">DASolver::calcdRdACT()</a>, <a class="el" href="DASolver_8C_source.html#l01135">DASolver::calcdRdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l00924">DASolver::calcdRdBC()</a>, <a class="el" href="DASolver_8C_source.html#l02194">DASolver::calcdRdFFD()</a>, and <a class="el" href="DASolver_8H_source.html#l00572">DASolver::writeMatrixASCII()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -514,7 +521,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAUtility_8C_source.html#l00321">321</a> of file <a class="el" href="DAUtility_8C_source.html">DAUtility.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00520">DASolver::readMatrixBinary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00580">DASolver::readMatrixBinary()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -564,7 +571,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAUtility_8C_source.html#l00290">290</a> of file <a class="el" href="DAUtility_8C_source.html">DAUtility.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l02417">DASolver::calcdFdACT()</a>, <a class="el" href="DASolver_8C_source.html#l03293">DASolver::calcdFdACTAD()</a>, <a class="el" href="DASolver_8C_source.html#l01623">DASolver::calcdFdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l01745">DASolver::calcdFdAOAAD()</a>, <a class="el" href="DASolver_8C_source.html#l00974">DASolver::calcdFdBC()</a>, <a class="el" href="DASolver_8C_source.html#l01180">DASolver::calcdFdBCAD()</a>, <a class="el" href="DASolver_8C_source.html#l02220">DASolver::calcdFdFFD()</a>, <a class="el" href="DASolver_8C_source.html#l02530">DASolver::calcdFdFieldAD()</a>, <a class="el" href="DASolver_8C_source.html#l00741">DASolver::calcdFdW()</a>, <a class="el" href="DASolver_8C_source.html#l02887">DASolver::calcdFdWAD()</a>, <a class="el" href="DASolver_8C_source.html#l03007">DASolver::calcdFdXvAD()</a>, <a class="el" href="DASolver_8C_source.html#l03462">DASolver::calcdRdActTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l01968">DASolver::calcdRdAOATPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l01429">DASolver::calcdRdBCTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l03217">DASolver::calcdRdFieldTPsiAD()</a>, <a class="el" href="DAJacCon_8C_source.html#l02081">DAJacCon::checkSpecialBCs()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, and <a class="el" href="DASolver_8H_source.html#l00528">DASolver::writeVectorASCII()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l02477">DASolver::calcdFdACT()</a>, <a class="el" href="DASolver_8C_source.html#l03365">DASolver::calcdFdACTAD()</a>, <a class="el" href="DASolver_8C_source.html#l01668">DASolver::calcdFdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l01792">DASolver::calcdFdAOAAD()</a>, <a class="el" href="DASolver_8C_source.html#l01011">DASolver::calcdFdBC()</a>, <a class="el" href="DASolver_8C_source.html#l01221">DASolver::calcdFdBCAD()</a>, <a class="el" href="DASolver_8C_source.html#l02276">DASolver::calcdFdFFD()</a>, <a class="el" href="DASolver_8C_source.html#l02592">DASolver::calcdFdFieldAD()</a>, <a class="el" href="DASolver_8C_source.html#l00781">DASolver::calcdFdW()</a>, <a class="el" href="DASolver_8C_source.html#l02951">DASolver::calcdFdWAD()</a>, <a class="el" href="DASolver_8C_source.html#l03073">DASolver::calcdFdXvAD()</a>, <a class="el" href="DASolver_8C_source.html#l03536">DASolver::calcdRdActTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l02020">DASolver::calcdRdAOATPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l01472">DASolver::calcdRdBCTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l03287">DASolver::calcdRdFieldTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l03733">DASolver::calcdRdWOldTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l03656">DASolver::calcdRdWTPsiAD()</a>, <a class="el" href="DAJacCon_8C_source.html#l02083">DAJacCon::checkSpecialBCs()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, and <a class="el" href="DASolver_8H_source.html#l00588">DASolver::writeVectorASCII()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -585,9 +592,11 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node14" href="classFoam_1_1DASolver.html#a9b44a5f49d078df981e84b554470f540" title="compute dRdAOAAD " alt="" coords="177,629,427,656"/>
 <area shape="rect" id="node15" href="classFoam_1_1DASolver.html#a47e708c0e138fbccc62a96909d10d6d5" title="compute dRdBCAD " alt="" coords="182,680,422,707"/>
 <area shape="rect" id="node16" href="classFoam_1_1DASolver.html#a63fb766651888601cbefe9dbe7416b3c" title="compute dRdField^T*Psi " alt="" coords="201,731,403,773"/>
-<area shape="rect" id="node17" href="classFoam_1_1DAJacCon.html#ab84b12272957c0b7caa1ecde6c904618" title="check if there is special boundary conditions that need special treatment in jacCon_ ..." alt="" coords="183,797,421,824"/>
-<area shape="rect" id="node18" href="classFoam_1_1DAJacCondRdW.html#a6320c97a80c467a388c3a88fdcd31eb3" title="Foam::DAJacCondRdW\l::setupdRdWCon" alt="" coords="220,849,384,890"/>
-<area shape="rect" id="node19" href="classFoam_1_1DASolver.html#a4845f297f6868e9edf41f492fff59004" title="write petsc vector in ascii format " alt="" coords="205,914,399,955"/>
+<area shape="rect" id="node17" href="classFoam_1_1DASolver.html#a20f41818db76a706a581003af4faf454" title="compute dRdWOld^T*Psi " alt="" coords="198,797,406,838"/>
+<area shape="rect" id="node18" href="classFoam_1_1DASolver.html#a8a41381c0bd6d3b8d89aa0dd62582872" title="compute [dRdW]^T*Psi " alt="" coords="185,863,419,889"/>
+<area shape="rect" id="node19" href="classFoam_1_1DAJacCon.html#ab84b12272957c0b7caa1ecde6c904618" title="check if there is special boundary conditions that need special treatment in jacCon_ ..." alt="" coords="183,913,421,940"/>
+<area shape="rect" id="node20" href="classFoam_1_1DAJacCondRdW.html#a6320c97a80c467a388c3a88fdcd31eb3" title="Foam::DAJacCondRdW\l::setupdRdWCon" alt="" coords="220,965,384,1006"/>
+<area shape="rect" id="node21" href="classFoam_1_1DASolver.html#a4845f297f6868e9edf41f492fff59004" title="write petsc vector in ascii format " alt="" coords="205,1030,399,1071"/>
 </map>
 </div>
 
@@ -631,7 +640,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAUtility_8C_source.html#l00225">225</a> of file <a class="el" href="DAUtility_8C_source.html">DAUtility.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAJacCon_8C_source.html#l01862">DAJacCon::readJacConColoring()</a>, and <a class="el" href="DASolver_8H_source.html#l00536">DASolver::readVectorBinary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAJacCon_8C_source.html#l01864">DAJacCon::readJacConColoring()</a>, and <a class="el" href="DASolver_8H_source.html#l00596">DASolver::readVectorBinary()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -682,7 +691,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAUtility_8C_source.html#l00258">258</a> of file <a class="el" href="DAUtility_8C_source.html">DAUtility.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l02417">DASolver::calcdFdACT()</a>, <a class="el" href="DASolver_8C_source.html#l03293">DASolver::calcdFdACTAD()</a>, <a class="el" href="DASolver_8C_source.html#l01623">DASolver::calcdFdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l01745">DASolver::calcdFdAOAAD()</a>, <a class="el" href="DASolver_8C_source.html#l00974">DASolver::calcdFdBC()</a>, <a class="el" href="DASolver_8C_source.html#l01180">DASolver::calcdFdBCAD()</a>, <a class="el" href="DASolver_8C_source.html#l02220">DASolver::calcdFdFFD()</a>, <a class="el" href="DASolver_8C_source.html#l02530">DASolver::calcdFdFieldAD()</a>, <a class="el" href="DASolver_8C_source.html#l00741">DASolver::calcdFdW()</a>, <a class="el" href="DASolver_8C_source.html#l02887">DASolver::calcdFdWAD()</a>, <a class="el" href="DASolver_8C_source.html#l03007">DASolver::calcdFdXvAD()</a>, <a class="el" href="DASolver_8C_source.html#l03462">DASolver::calcdRdActTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l01968">DASolver::calcdRdAOATPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l01429">DASolver::calcdRdBCTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l03217">DASolver::calcdRdFieldTPsiAD()</a>, <a class="el" href="DAJacCon_8C_source.html#l01799">DAJacCon::calcJacConColoring()</a>, and <a class="el" href="DASolver_8H_source.html#l00544">DASolver::writeVectorBinary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l02477">DASolver::calcdFdACT()</a>, <a class="el" href="DASolver_8C_source.html#l03365">DASolver::calcdFdACTAD()</a>, <a class="el" href="DASolver_8C_source.html#l01668">DASolver::calcdFdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l01792">DASolver::calcdFdAOAAD()</a>, <a class="el" href="DASolver_8C_source.html#l01011">DASolver::calcdFdBC()</a>, <a class="el" href="DASolver_8C_source.html#l01221">DASolver::calcdFdBCAD()</a>, <a class="el" href="DASolver_8C_source.html#l02276">DASolver::calcdFdFFD()</a>, <a class="el" href="DASolver_8C_source.html#l02592">DASolver::calcdFdFieldAD()</a>, <a class="el" href="DASolver_8C_source.html#l00781">DASolver::calcdFdW()</a>, <a class="el" href="DASolver_8C_source.html#l02951">DASolver::calcdFdWAD()</a>, <a class="el" href="DASolver_8C_source.html#l03073">DASolver::calcdFdXvAD()</a>, <a class="el" href="DASolver_8C_source.html#l03536">DASolver::calcdRdActTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l02020">DASolver::calcdRdAOATPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l01472">DASolver::calcdRdBCTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l03287">DASolver::calcdRdFieldTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l03733">DASolver::calcdRdWOldTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l03656">DASolver::calcdRdWTPsiAD()</a>, <a class="el" href="DAJacCon_8C_source.html#l01801">DAJacCon::calcJacConColoring()</a>, and <a class="el" href="DASolver_8H_source.html#l00604">DASolver::writeVectorBinary()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -703,8 +712,10 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node14" href="classFoam_1_1DASolver.html#a9b44a5f49d078df981e84b554470f540" title="compute dRdAOAAD " alt="" coords="179,629,428,656"/>
 <area shape="rect" id="node15" href="classFoam_1_1DASolver.html#a47e708c0e138fbccc62a96909d10d6d5" title="compute dRdBCAD " alt="" coords="183,680,423,707"/>
 <area shape="rect" id="node16" href="classFoam_1_1DASolver.html#a63fb766651888601cbefe9dbe7416b3c" title="compute dRdField^T*Psi " alt="" coords="202,731,405,773"/>
-<area shape="rect" id="node17" href="classFoam_1_1DAJacCon.html#a3b9b543bfab2dbda82af01317a9f2ab8" title="compute graph coloring for Jacobian connectivity matrix " alt="" coords="201,797,405,838"/>
-<area shape="rect" id="node18" href="classFoam_1_1DASolver.html#aaabf5e461685aae1fd388f6fabd43f22" title="write petsc vector in binary format " alt="" coords="207,862,400,903"/>
+<area shape="rect" id="node17" href="classFoam_1_1DASolver.html#a20f41818db76a706a581003af4faf454" title="compute dRdWOld^T*Psi " alt="" coords="199,797,407,838"/>
+<area shape="rect" id="node18" href="classFoam_1_1DASolver.html#a8a41381c0bd6d3b8d89aa0dd62582872" title="compute [dRdW]^T*Psi " alt="" coords="186,863,421,889"/>
+<area shape="rect" id="node19" href="classFoam_1_1DAJacCon.html#a3b9b543bfab2dbda82af01317a9f2ab8" title="compute graph coloring for Jacobian connectivity matrix " alt="" coords="201,914,405,955"/>
+<area shape="rect" id="node20" href="classFoam_1_1DASolver.html#aaabf5e461685aae1fd388f6fabd43f22" title="write petsc vector in binary format " alt="" coords="207,979,400,1021"/>
 </map>
 </div>
 
@@ -754,7 +765,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAUtility_8C_source.html#l00418">418</a> of file <a class="el" href="DAUtility_8C_source.html">DAUtility.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00396">DASpalartAllmaras::calcResiduals()</a>, <a class="el" href="DASpalartAllmarasFv3_8C_source.html#l00395">DASpalartAllmarasFv3::calcResiduals()</a>, <a class="el" href="DAkEpsilon_8C_source.html#l00482">DAkEpsilon::calcResiduals()</a>, <a class="el" href="DAkOmega_8C_source.html#l00507">DAkOmega::calcResiduals()</a>, <a class="el" href="DASpalartAllmarasFv3Beta_8C_source.html#l00401">DASpalartAllmarasFv3Beta::calcResiduals()</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00652">DAkOmegaSST::calcResiduals()</a>, and <a class="el" href="DAkOmegaSSTLM_8C_source.html#l01018">DAkOmegaSSTLM::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00388">DASpalartAllmaras::calcResiduals()</a>, <a class="el" href="DASpalartAllmarasFv3_8C_source.html#l00387">DASpalartAllmarasFv3::calcResiduals()</a>, <a class="el" href="DAkEpsilon_8C_source.html#l00482">DAkEpsilon::calcResiduals()</a>, <a class="el" href="DAkOmega_8C_source.html#l00491">DAkOmega::calcResiduals()</a>, <a class="el" href="DASpalartAllmarasFv3Beta_8C_source.html#l00393">DASpalartAllmarasFv3Beta::calcResiduals()</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00636">DAkOmegaSST::calcResiduals()</a>, and <a class="el" href="DAkOmegaSSTLM_8C_source.html#l00986">DAkOmegaSSTLM::calcResiduals()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -862,7 +873,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAUtility_8C_source.html#l00650">650</a> of file <a class="el" href="DAUtility_8C_source.html">DAUtility.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAJacCon_8C_source.html#l02197">DAJacCon::addPhi4PIV()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00710">DAJacCondRdW::allocateJacobianConnections()</a>, <a class="el" href="DAJacCon_8C_source.html#l01948">DAJacCon::calcColoredColumns()</a>, <a class="el" href="DAColoring_8C_source.html#l00032">DAColoring::parallelD2Coloring()</a>, <a class="el" href="DAJacCon_8C_source.html#l01325">DAJacCon::setupStateBoundaryConID()</a>, and <a class="el" href="DAColoring_8C_source.html#l00931">DAColoring::validateColoring()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAJacCon_8C_source.html#l02201">DAJacCon::addPhi4PIV()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00714">DAJacCondRdW::allocateJacobianConnections()</a>, <a class="el" href="DAJacCon_8C_source.html#l01950">DAJacCon::calcColoredColumns()</a>, <a class="el" href="DAColoring_8C_source.html#l00032">DAColoring::parallelD2Coloring()</a>, <a class="el" href="DAJacCon_8C_source.html#l01327">DAJacCon::setupStateBoundaryConID()</a>, and <a class="el" href="DAColoring_8C_source.html#l00931">DAColoring::validateColoring()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -920,8 +931,38 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae60b34107c06e0af8ae51634db1720f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae60b34107c06e0af8ae51634db1720f0">&#9670;&nbsp;</a></span>angleOfAttackRadForwardAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scalar angleOfAttackRadForwardAD = -9999.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>angle of attack in radian </p>
+
+<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00122">122</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DAObjFuncForce_8C_source.html#l00193">DAObjFuncForce::updateForceDir()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>dafoam/src/adjoint/DAUtility/<a class="el" href="DAUtility_8H_source.html">DAUtility.H</a></li>
+<li>dafoam/src/adjoint/DASolver/<a class="el" href="DASolver_8C_source.html">DASolver.C</a></li>
 <li>dafoam/src/adjoint/DAUtility/<a class="el" href="DAUtility_8C_source.html">DAUtility.C</a></li>
 </ul>
 </div><!-- contents -->

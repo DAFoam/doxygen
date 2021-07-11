@@ -1,3 +1,7 @@
 <map id="TEqn" name="TEqn">
-<area shape="rect" id="node2" href="$classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="107,5,321,47"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAResidualLaplacianFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="125,5,313,47"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAResidualScalarTransportFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="107,71,332,112"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="112,136,327,177"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DALaplacianFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="134,201,305,243"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DAScalarTransportFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="116,267,323,308"/>
 </map>

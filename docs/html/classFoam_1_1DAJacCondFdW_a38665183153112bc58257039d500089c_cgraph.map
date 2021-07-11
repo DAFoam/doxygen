@@ -1,8 +1,8 @@
 <map id="setupJacCon" name="setupJacCon">
 <area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#a9dd95e527ffe4ab41fa36bb746e5f2aa" title="a high&#45;level function to add connected state column indices to the connectivity matrix ..." alt="" coords="188,5,375,47"/>
 <area shape="rect" id="node3" href="$classFoam_1_1DAJacCon.html#a6aa22bae0912af41d04a6c69eeb2c57a" title="allocate connectedState matrix " alt="" coords="152,71,411,98"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAJacCondFdW.html#a981d6c09a005c0db6b7d551751a0370c" title="get the global index of geometry element for objective " alt="" coords="190,122,373,149"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key " alt="" coords="189,173,373,199"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAOption.html#aac22cd38f3d4adc69a4e35329c6abf92" title="return a reference of allOptions_ dictionary " alt="" coords="178,122,385,149"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DAJacCondFdW.html#a981d6c09a005c0db6b7d551751a0370c" title="get the global index of geometry element for objective " alt="" coords="190,173,373,199"/>
 <area shape="rect" id="node6" href="$classFoam_1_1DAJacCon.html#a4e2b26f19cb795cd7276b68addbccb01" title="assign values in connections to a specific row idxI in conMat " alt="" coords="172,224,391,265"/>
 <area shape="rect" id="node7" href="$classFoam_1_1DAUtility.html#a7d5db3b1724c116fd1b12443d914b4cc" title="write petsc matrix in binary format " alt="" coords="187,289,375,331"/>
 </map>

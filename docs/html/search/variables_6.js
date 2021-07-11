@@ -6,7 +6,6 @@ var searchData=
   ['gammaint_5f',['gammaInt_',['../classFoam_1_1DAkOmegaSSTLM.html#a51dfba45522e17bb67da4eb467f1bf66',1,'Foam::DAkOmegaSSTLM']]],
   ['gammainteff_5f',['gammaIntEff_',['../classFoam_1_1DAkOmegaSSTLM.html#a19e322f193ad060c8c51cd30eb71d8fe',1,'Foam::DAkOmegaSSTLM']]],
   ['gammaintres_5f',['gammaIntRes_',['../classFoam_1_1DAkOmegaSSTLM.html#a94f2861d310270981ecf42412c18c952',1,'Foam::DAkOmegaSSTLM']]],
-  ['gammaintrespartderiv_5f',['gammaIntResPartDeriv_',['../classFoam_1_1DAkOmegaSSTLM.html#a7e3a350bcf2d7bf078dc0f72fd3d7611',1,'Foam::DAkOmegaSSTLM']]],
   ['globaladjointstatenumbering',['globalAdjointStateNumbering',['../classFoam_1_1DAIndex.html#a75df9147e4815d887684542e0c19d737',1,'Foam::DAIndex']]],
   ['globaladtape4drdwtinitialized',['globalADTape4dRdWTInitialized',['../classFoam_1_1DASolver.html#a37781b9c85ae1feccd485ccc2e2b6c69',1,'Foam::DASolver']]],
   ['globalcellnumbering',['globalCellNumbering',['../classFoam_1_1DAIndex.html#a612291abb9489486ba4fc8a40bca9b33',1,'Foam::DAIndex']]],

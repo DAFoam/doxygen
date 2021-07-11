@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.5</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.7</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -89,7 +89,7 @@ Functions</h2></td></tr>
 <tr class="separator:ac021b09838808301cc86e1695f0f9f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad145252fff6dd3b727ad3f1641750383"><td class="memItemLeft" align="right" valign="top">volScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TEqnSimpleT_8H.html#ad145252fff6dd3b727ad3f1641750383">alphaEff</a> (&quot;alphaEff&quot;, turbulencePtr_-&gt;nu()/<a class="el" href="createRefsSimpleT_8H.html#a15367378f161dcb207524dbba640a612">Pr</a>+<a class="el" href="createRefsSimpleT_8H.html#abdcf0c0691d6d9f9aefafb8834c3fbe4">alphat</a>)</td></tr>
 <tr class="separator:ad145252fff6dd3b727ad3f1641750383"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a180e328c04d4cb9f2fe2da8ad248622f"><td class="memItemLeft" align="right" valign="top">fvScalarMatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TEqnSimpleT_8H.html#a180e328c04d4cb9f2fe2da8ad248622f">TEqn</a> (fvm::div(<a class="el" href="pyColoringCompressible_2createFields_8H.html#a6a231aded4fb2c165cab36375ba435b7">phi</a>, <a class="el" href="createRefsSimpleT_8H.html#ab35c96e5601691f7270cfadc745a12d3">T</a>) - fvm::laplacian(<a class="el" href="TEqnSimpleT_8H.html#ad145252fff6dd3b727ad3f1641750383">alphaEff</a>, <a class="el" href="createRefsSimpleT_8H.html#ab35c96e5601691f7270cfadc745a12d3">T</a>))</td></tr>
+<tr class="memitem:a180e328c04d4cb9f2fe2da8ad248622f"><td class="memItemLeft" align="right" valign="top">fvScalarMatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TEqnSimpleT_8H.html#a180e328c04d4cb9f2fe2da8ad248622f">TEqn</a> (fvm::div(<a class="el" href="coloring_2pyColoringCompressible_2createFields_8H.html#a6a231aded4fb2c165cab36375ba435b7">phi</a>, <a class="el" href="createRefsSimpleT_8H.html#ab35c96e5601691f7270cfadc745a12d3">T</a>) - fvm::laplacian(<a class="el" href="TEqnSimpleT_8H.html#ad145252fff6dd3b727ad3f1641750383">alphaEff</a>, <a class="el" href="createRefsSimpleT_8H.html#ab35c96e5601691f7270cfadc745a12d3">T</a>))</td></tr>
 <tr class="separator:a180e328c04d4cb9f2fe2da8ad248622f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b851e6a5f5a56cc7568ceba2ab7b21f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="TEqnSimpleT_8H.html#a180e328c04d4cb9f2fe2da8ad248622f">TEqn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TEqnSimpleT_8H.html#a8b851e6a5f5a56cc7568ceba2ab7b21f">relax</a> ()</td></tr>
 <tr class="separator:a8b851e6a5f5a56cc7568ceba2ab7b21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,7 +145,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00086">DAObjFuncWallHeatFlux::calcObjFunc()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00079">DAResidualRhoSimpleCFoam::calcResiduals()</a>, <a class="el" href="DAResidualTurboFoam_8C_source.html#l00082">DAResidualTurboFoam::calcResiduals()</a>, and <a class="el" href="DAResidualRhoSimpleFoam_8C_source.html#l00091">DAResidualRhoSimpleFoam::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00086">DAObjFuncWallHeatFlux::calcObjFunc()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00068">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00075">DAResidualRhoSimpleCFoam::calcResiduals()</a>, <a class="el" href="DAResidualTurboFoam_8C_source.html#l00078">DAResidualTurboFoam::calcResiduals()</a>, and <a class="el" href="DAResidualRhoSimpleFoam_8C_source.html#l00087">DAResidualRhoSimpleFoam::calcResiduals()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -170,20 +170,24 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">fvScalarMatrix TEqn </td>
           <td>(</td>
-          <td class="paramtype">fvm::div(<a class="el" href="pyColoringCompressible_2createFields_8H.html#a6a231aded4fb2c165cab36375ba435b7">phi</a>, <a class="el" href="createRefsSimpleT_8H.html#ab35c96e5601691f7270cfadc745a12d3">T</a>) - fvm::laplacian(<a class="el" href="TEqnSimpleT_8H.html#ad145252fff6dd3b727ad3f1641750383">alphaEff</a>, <a class="el" href="createRefsSimpleT_8H.html#ab35c96e5601691f7270cfadc745a12d3">T</a>)&#160;</td>
+          <td class="paramtype">fvm::div(<a class="el" href="coloring_2pyColoringCompressible_2createFields_8H.html#a6a231aded4fb2c165cab36375ba435b7">phi</a>, <a class="el" href="createRefsSimpleT_8H.html#ab35c96e5601691f7270cfadc745a12d3">T</a>) - fvm::laplacian(<a class="el" href="TEqnSimpleT_8H.html#ad145252fff6dd3b727ad3f1641750383">alphaEff</a>, <a class="el" href="createRefsSimpleT_8H.html#ab35c96e5601691f7270cfadc745a12d3">T</a>)&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00072">DAResidualSimpleTFoam::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualLaplacianFoam_8C_source.html#l00055">DAResidualLaplacianFoam::calcResiduals()</a>, <a class="el" href="DAResidualScalarTransportFoam_8C_source.html#l00057">DAResidualScalarTransportFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00068">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DALaplacianFoam_8C_source.html#l00107">DALaplacianFoam::solvePrimal()</a>, and <a class="el" href="DAScalarTransportFoam_8C_source.html#l00109">DAScalarTransportFoam::solvePrimal()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="TEqnSimpleT_8H_a180e328c04d4cb9f2fe2da8ad248622f_icgraph.png" border="0" usemap="#TEqnSimpleT_8H_a180e328c04d4cb9f2fe2da8ad248622f_icgraph" alt=""/></div>
 <map name="TEqnSimpleT_8H_a180e328c04d4cb9f2fe2da8ad248622f_icgraph" id="TEqnSimpleT_8H_a180e328c04d4cb9f2fe2da8ad248622f_icgraph">
-<area shape="rect" id="node2" href="classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="107,5,321,47"/>
+<area shape="rect" id="node2" href="classFoam_1_1DAResidualLaplacianFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="125,5,313,47"/>
+<area shape="rect" id="node3" href="classFoam_1_1DAResidualScalarTransportFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="107,71,332,112"/>
+<area shape="rect" id="node4" href="classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="112,136,327,177"/>
+<area shape="rect" id="node5" href="classFoam_1_1DALaplacianFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="134,201,305,243"/>
+<area shape="rect" id="node6" href="classFoam_1_1DAScalarTransportFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="116,267,323,308"/>
 </map>
 </div>
 
@@ -260,6 +264,8 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="TEqnSimpleT_8H_source.html#l00016">16</a> of file <a class="el" href="TEqnSimpleT_8H_source.html">TEqnSimpleT.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DALaplacianFoam_8C_source.html#l00107">DALaplacianFoam::solvePrimal()</a>, and <a class="el" href="DAScalarTransportFoam_8C_source.html#l00109">DAScalarTransportFoam::solvePrimal()</a>.</p>
 
 </div>
 </div>

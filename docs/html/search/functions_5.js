@@ -7,6 +7,6 @@ var searchData=
   ['epsilonsource',['epsilonSource',['../classFoam_1_1DAkEpsilon.html#a11abcc44df285cf748c77aa0a7cac6b8',1,'Foam::DAkEpsilon']]],
   ['evalfunctions',['evalFunctions',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6910552f6a1ee9706b3a55712fa8ab63',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['evalfunctionssens',['evalFunctionsSens',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a345813ebd2d2af0208e60467ac3812ae',1,'dafoam::pyDAFoam::PYDAFOAM']]],
-  ['evalmatdiffrel',['evalMatDiffRel',['../namespacedafoam__matreldiff.html#af9ba24d80360e8eb75f134d0e0dffc62',1,'dafoam_matreldiff']]],
-  ['evalvecdiff',['evalVecDiff',['../namespacedafoam__vecreldiff.html#af1461259fad81b2fda45300024f79129',1,'dafoam_vecreldiff']]]
+  ['evalmatdiff',['evalMatDiff',['../namespacedafoam__matdiff.html#a42628bf1ae632e277d5199df57a895fb',1,'dafoam_matdiff']]],
+  ['evalvecdiff',['evalVecDiff',['../namespacedafoam__vecdiff.html#a6a23c542bbd062f3aa03e7f0b3020df0',1,'dafoam_vecdiff']]]
 ];

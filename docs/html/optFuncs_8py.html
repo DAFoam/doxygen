@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.5</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.7</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -93,22 +93,20 @@ Functions</h2></td></tr>
 <tr class="separator:a45a34455439fc2923988270f3f678c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0022a2e35dc7a9ab3034db08da11f49"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#ab0022a2e35dc7a9ab3034db08da11f49">calcObjFuncValuesMP</a> (xDV)</td></tr>
 <tr class="separator:ab0022a2e35dc7a9ab3034db08da11f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02c77ac50178dee8714d7243eb502613"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a02c77ac50178dee8714d7243eb502613">calcObjFuncValuesHybridAdjoint</a> (xDV)</td></tr>
-<tr class="separator:a02c77ac50178dee8714d7243eb502613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a478020987053bcebf7f01d68a139ce5c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a478020987053bcebf7f01d68a139ce5c">calcObjFuncValuesUnsteady</a> (xDV)</td></tr>
+<tr class="separator:a478020987053bcebf7f01d68a139ce5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81c04796dd89d23d15b639a87672f557"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a81c04796dd89d23d15b639a87672f557">calcObjFuncSens</a> (xDV, funcs)</td></tr>
 <tr class="separator:a81c04796dd89d23d15b639a87672f557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6781a08588116ed705c951740c90d6ef"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a6781a08588116ed705c951740c90d6ef">calcObjFuncSensMP</a> (xDV, funcs)</td></tr>
 <tr class="separator:a6781a08588116ed705c951740c90d6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad8320f65cd31bd01e50fb6378f8eb4e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#aad8320f65cd31bd01e50fb6378f8eb4e">calcObjFuncSensHybridAdjoint</a> (xDV, funcs)</td></tr>
-<tr class="separator:aad8320f65cd31bd01e50fb6378f8eb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4949fa68dcfe9ddde55176fdee7daf67"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a4949fa68dcfe9ddde55176fdee7daf67">calcObjFuncSensUnsteady</a> (xDV, funcs)</td></tr>
+<tr class="separator:a4949fa68dcfe9ddde55176fdee7daf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9be0f9dcf5cbcd94dc5ee16c7e5df7ab"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a9be0f9dcf5cbcd94dc5ee16c7e5df7ab">runPrimal</a> (objFun=calcObjFuncValues)</td></tr>
 <tr class="separator:a9be0f9dcf5cbcd94dc5ee16c7e5df7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d0818de9ad3ccabf027264507dfdd09"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a0d0818de9ad3ccabf027264507dfdd09">runAdjoint</a> (objFun=calcObjFuncValues, sensFun=calcObjFuncSens, fileName=None)</td></tr>
 <tr class="separator:a0d0818de9ad3ccabf027264507dfdd09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53dadff36328994839ccbbabf707661e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a53dadff36328994839ccbbabf707661e">solveCL</a> (CL_star, alphaName, liftName, objFun=calcObjFuncValues, eps=1e-2, tol=1e-4, maxit=10)</td></tr>
 <tr class="separator:a53dadff36328994839ccbbabf707661e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f43014c275c1c01974c8e3fe2da036a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a9f43014c275c1c01974c8e3fe2da036a">verifySens</a> (objFun=calcObjFuncValues, sensFun=calcObjFuncSens)</td></tr>
-<tr class="separator:a9f43014c275c1c01974c8e3fe2da036a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dadc87e51da949dcb736586822d2bda"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a1dadc87e51da949dcb736586822d2bda">calcFDSens</a> (objFun=calcObjFuncValues, fileName=None)</td></tr>
 <tr class="separator:a1dadc87e51da949dcb736586822d2bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">

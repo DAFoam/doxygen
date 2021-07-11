@@ -16,7 +16,7 @@ var searchData=
   ['objfuncnames4adj',['objFuncNames4Adj',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a33befd1a6c921f1fd958e7fe15008bb8',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['objfuncnames4adj_5f',['objFuncNames4Adj_',['../classFoam_1_1DASolver.html#a6568058fbe79f69b526371cb5936490a',1,'Foam::DASolver']]],
   ['objfuncpart_5f',['objFuncPart_',['../classFoam_1_1DAObjFunc.html#a3c2d9497f16befcc3524537e0150cd47',1,'Foam::DAObjFunc']]],
-  ['objfuncsallinstances_5f',['objFuncsAllInstances_',['../classFoam_1_1DAPisoFoam.html#adc0b1437ae8de5dd3cf1278760b587cb',1,'Foam::DAPisoFoam']]],
+  ['objfuncsallinstances_5f',['objFuncsAllInstances_',['../classFoam_1_1DASolver.html#adc0b1437ae8de5dd3cf1278760b587cb',1,'Foam::DASolver']]],
   ['objfunctype_5f',['objFuncType_',['../classFoam_1_1DAObjFunc.html#a24f15e2a2c4e50f97526588fd99b8a72',1,'Foam::DAObjFunc']]],
   ['objfuncvalue_5f',['objFuncValue_',['../classFoam_1_1DAObjFunc.html#a550f1a35e3f803a23b57fdf16bb50699',1,'Foam::DAObjFunc']]],
   ['objfuncvaluepreviter',['objFuncValuePrevIter',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a9178ee6389a3cbd6f55e164b01c5ba5d',1,'dafoam::pyDAFoam::PYDAFOAM']]],
@@ -24,7 +24,6 @@ var searchData=
   ['omegamin_5f',['omegaMin_',['../classFoam_1_1DATurbulenceModel.html#a57d8cf27ff6c75c9f71fdc7d66740e7b',1,'Foam::DATurbulenceModel']]],
   ['omeganearwall_5f',['omegaNearWall_',['../classFoam_1_1DAkOmega.html#a8be559ccfcba522bb753618cae4934a7',1,'Foam::DAkOmega::omegaNearWall_()'],['../classFoam_1_1DAkOmegaSST.html#a8be559ccfcba522bb753618cae4934a7',1,'Foam::DAkOmegaSST::omegaNearWall_()'],['../classFoam_1_1DAkOmegaSSTLM.html#a8be559ccfcba522bb753618cae4934a7',1,'Foam::DAkOmegaSSTLM::omegaNearWall_()']]],
   ['omegares_5f',['omegaRes_',['../classFoam_1_1DAkOmega.html#ad12b87c732651102da8ca7576a6af5bb',1,'Foam::DAkOmega::omegaRes_()'],['../classFoam_1_1DAkOmegaSST.html#ad12b87c732651102da8ca7576a6af5bb',1,'Foam::DAkOmegaSST::omegaRes_()'],['../classFoam_1_1DAkOmegaSSTLM.html#ad12b87c732651102da8ca7576a6af5bb',1,'Foam::DAkOmegaSSTLM::omegaRes_()']]],
-  ['omegarespartderiv_5f',['omegaResPartDeriv_',['../classFoam_1_1DAkOmega.html#abe0d5091352ae6642afa3ea6f2c55779',1,'Foam::DAkOmega::omegaResPartDeriv_()'],['../classFoam_1_1DAkOmegaSST.html#abe0d5091352ae6642afa3ea6f2c55779',1,'Foam::DAkOmegaSST::omegaResPartDeriv_()'],['../classFoam_1_1DAkOmegaSSTLM.html#abe0d5091352ae6642afa3ea6f2c55779',1,'Foam::DAkOmegaSSTLM::omegaResPartDeriv_()']]],
   ['options',['options',['../classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a02eacfd40be9042ceb0f07547365203d',1,'dafoam::pyDAFoam::PYDAFOAM']]],
   ['outletpatches_5f',['outletPatches_',['../classFoam_1_1DAObjFuncTotalPressureRatio.html#a7a1c18ab6cf353a1697e9c6ab2b8d125',1,'Foam::DAObjFuncTotalPressureRatio::outletPatches_()'],['../classFoam_1_1DAObjFuncTotalTemperatureRatio.html#a7a1c18ab6cf353a1697e9c6ab2b8d125',1,'Foam::DAObjFuncTotalTemperatureRatio::outletPatches_()']]],
   ['outputfilename',['outputFileName',['../namespacedafoam__plot3d2tecplot.html#a9f4734af7b75d1417532ebb13c86cfc3',1,'dafoam_plot3d2tecplot.outputFileName()'],['../namespacedafoam__plot3dtransform.html#a9f4734af7b75d1417532ebb13c86cfc3',1,'dafoam_plot3dtransform.outputFileName()'],['../namespacedafoam__stltransform.html#a9f4734af7b75d1417532ebb13c86cfc3',1,'dafoam_stltransform.outputFileName()']]]

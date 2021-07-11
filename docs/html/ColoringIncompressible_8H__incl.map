@@ -1,4 +1,4 @@
-<map id="dafoam/src/utilities/pyColoringIncompressible/ColoringIncompressible.H" name="dafoam/src/utilities/pyColoringIncompressible/ColoringIncompressible.H">
+<map id="dafoam/src/utilities/coloring/pyColoringIncompressible/ColoringIncompressible.H" name="dafoam/src/utilities/coloring/pyColoringIncompressible/ColoringIncompressible.H">
 <area shape="rect" id="node7" href="$DAUtility_8H.html" title="DAUtility.H" alt="" coords="207,707,297,733"/>
 <area shape="rect" id="node8" href="$DACheckMesh_8H.html" title="DACheckMesh.H" alt="" coords="144,184,269,211"/>
 <area shape="rect" id="node9" href="$DAOption_8H.html" title="DAOption.H" alt="" coords="571,632,664,659"/>
