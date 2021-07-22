@@ -13,7 +13,6 @@ var searchData=
   ['_7edafvsourceactuatorpoint',['~DAFvSourceActuatorPoint',['../classFoam_1_1DAFvSourceActuatorPoint.html#ae1a6174821a15cb01cff6e59bc26f28b',1,'Foam::DAFvSourceActuatorPoint']]],
   ['_7edafvsourceuniformpressuregradient',['~DAFvSourceUniformPressureGradient',['../classFoam_1_1DAFvSourceUniformPressureGradient.html#afe4b18c72f01e977ed17376dc5ad51f9',1,'Foam::DAFvSourceUniformPressureGradient']]],
   ['_7edaindex',['~DAIndex',['../classFoam_1_1DAIndex.html#a4d1246fa2bb7d974facd0e1644b7c5b2',1,'Foam::DAIndex']]],
-  ['_7edaintmdvar',['~DAIntmdVar',['../classFoam_1_1DAIntmdVar.html#a93fcf027c785b9ce99210d8d4e638f28',1,'Foam::DAIntmdVar']]],
   ['_7edajaccon',['~DAJacCon',['../classFoam_1_1DAJacCon.html#aa8de176523634308a67e1e7eaa4e4dbf',1,'Foam::DAJacCon']]],
   ['_7edajaccondfdw',['~DAJacCondFdW',['../classFoam_1_1DAJacCondFdW.html#affa621bbcbc605d6f01f8a545990a961',1,'Foam::DAJacCondFdW']]],
   ['_7edajaccondrdw',['~DAJacCondRdW',['../classFoam_1_1DAJacCondRdW.html#a47bdc666813894199a71872e5d296101',1,'Foam::DAJacCondRdW']]],

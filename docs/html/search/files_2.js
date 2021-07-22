@@ -27,8 +27,6 @@ var searchData=
   ['dafvsourceuniformpressuregradient_2eh',['DAFvSourceUniformPressureGradient.H',['../DAFvSourceUniformPressureGradient_8H.html',1,'']]],
   ['daindex_2ec',['DAIndex.C',['../DAIndex_8C.html',1,'']]],
   ['daindex_2eh',['DAIndex.H',['../DAIndex_8H.html',1,'']]],
-  ['daintmdvar_2ec',['DAIntmdVar.C',['../DAIntmdVar_8C.html',1,'']]],
-  ['daintmdvar_2eh',['DAIntmdVar.H',['../DAIntmdVar_8H.html',1,'']]],
   ['dajaccon_2ec',['DAJacCon.C',['../DAJacCon_8C.html',1,'']]],
   ['dajaccon_2eh',['DAJacCon.H',['../DAJacCon_8H.html',1,'']]],
   ['dajaccondfdw_2ec',['DAJacCondFdW.C',['../DAJacCondFdW_8C.html',1,'']]],

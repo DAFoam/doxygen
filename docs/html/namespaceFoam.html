@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.7</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.8</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -105,8 +105,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAFvSourceUniformPressureGradient.html">DAFvSourceUniformPressureGradient</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAIndex.html">DAIndex</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAIntmdVar.html">DAIntmdVar</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAJacCon.html">DAJacCon</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,16 +323,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a11e4b25d100e8e0099917a7555191692"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a11e4b25d100e8e0099917a7555191692">checkGeometry</a> (const polyMesh &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, const autoPtr&lt; surfaceWriter &gt; &amp;surfWriter, const autoPtr&lt; writer&lt; scalar &gt;&gt; &amp;setWriter, const label maxIncorrectlyOrientedFaces)</td></tr>
 <tr class="memdesc:a11e4b25d100e8e0099917a7555191692"><td class="mdescLeft">&#160;</td><td class="mdescRight">check mesh quality  <a href="#a11e4b25d100e8e0099917a7555191692">More...</a><br /></td></tr>
 <tr class="separator:a11e4b25d100e8e0099917a7555191692"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee7efed69c9cc6a6c54f1bc980e07d4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#aee7efed69c9cc6a6c54f1bc980e07d4b">printMeshStats</a> (const polyMesh &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, const bool allTopology)</td></tr>
-<tr class="separator:aee7efed69c9cc6a6c54f1bc980e07d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac573cc5b59f725e9d56e0b02e49d57da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#ac573cc5b59f725e9d56e0b02e49d57da">mergeAndWrite</a> (const polyMesh &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, const surfaceWriter &amp;writer, const word &amp;name, const indirectPrimitivePatch &amp;setPatch, const fileName &amp;outputDir)</td></tr>
 <tr class="separator:ac573cc5b59f725e9d56e0b02e49d57da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95c4d2008745306b3e72b1f383fa7ba6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a95c4d2008745306b3e72b1f383fa7ba6">mergeAndWrite</a> (const surfaceWriter &amp;, const faceSet &amp;)</td></tr>
 <tr class="separator:a95c4d2008745306b3e72b1f383fa7ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d253a9d5d4a6e6042b9a2101b2578b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a1d253a9d5d4a6e6042b9a2101b2578b7">mergeAndWrite</a> (const surfaceWriter &amp;, const cellSet &amp;)</td></tr>
 <tr class="separator:a1d253a9d5d4a6e6042b9a2101b2578b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ba5e46f543aae4e5ab71a1a42682634"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a3ba5e46f543aae4e5ab71a1a42682634">mergeAndWrite</a> (const writer&lt; scalar &gt; &amp;, const pointSet &amp;)</td></tr>
-<tr class="separator:a3ba5e46f543aae4e5ab71a1a42682634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c04c8f41ca77a94e317b665a3be0ee4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a8c04c8f41ca77a94e317b665a3be0ee4">mergeAndWrite</a> (const writer&lt; scalar &gt; &amp;, const pointSet &amp;)</td></tr>
+<tr class="separator:a8c04c8f41ca77a94e317b665a3be0ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90e9cf832b06b5b5afaf78648234b88e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#a90e9cf832b06b5b5afaf78648234b88e">defineTypeNameAndDebug</a> (<a class="el" href="classFoam_1_1DAFvSource.html">DAFvSource</a>, 0)</td></tr>
 <tr class="separator:a90e9cf832b06b5b5afaf78648234b88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa34f15b750841ec3ef6d97d47bdebfd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFoam.html#aa34f15b750841ec3ef6d97d47bdebfd2">defineRunTimeSelectionTable</a> (<a class="el" href="classFoam_1_1DAFvSource.html">DAFvSource</a>, dictionary)</td></tr>
@@ -1050,7 +1046,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="checkGeometry_8C_source.html#l00211">211</a> of file <a class="el" href="checkGeometry_8C_source.html">checkGeometry.C</a>.</p>
 
-<p class="reference">References <a class="el" href="checkGeometry_8C_source.html#l00074">checkCoupledPoints()</a>, and <a class="el" href="checkTools_8C_source.html#l00181">mergeAndWrite()</a>.</p>
+<p class="reference">References <a class="el" href="checkGeometry_8C_source.html#l00074">checkCoupledPoints()</a>, and <a class="el" href="checkTools_8C_source.html#l00030">mergeAndWrite()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DACheckMesh_8C_source.html#l00052">DACheckMesh::run()</a>.</p>
 <div class="dynheader">
@@ -1070,36 +1066,6 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node2" href="classFoam_1_1DACheckMesh.html#a8b9eb0de7bb3319feb4f022327058f19" title="run meshCheck and return meshOK " alt="" coords="168,5,347,32"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="aee7efed69c9cc6a6c54f1bc980e07d4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee7efed69c9cc6a6c54f1bc980e07d4b">&#9670;&nbsp;</a></span>printMeshStats()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void printMeshStats </td>
-          <td>(</td>
-          <td class="paramtype">const polyMesh &amp;&#160;</td>
-          <td class="paramname"><em>mesh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>allTopology</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="checkTools_8C_source.html#l00030">30</a> of file <a class="el" href="checkTools_8C_source.html">checkTools.C</a>.</p>
 
 </div>
 </div>
@@ -1147,9 +1113,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="checkTools_8C_source.html#l00181">181</a> of file <a class="el" href="checkTools_8C_source.html">checkTools.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="checkTools_8C_source.html#l00030">30</a> of file <a class="el" href="checkTools_8C_source.html">checkTools.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="checkGeometry_8C_source.html#l00211">checkGeometry()</a>, and <a class="el" href="checkTools_8C_source.html#l00232">mergeAndWrite()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="checkGeometry_8C_source.html#l00211">checkGeometry()</a>, and <a class="el" href="checkTools_8C_source.html#l00081">mergeAndWrite()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1188,9 +1154,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="checkTools_8C_source.html#l00232">232</a> of file <a class="el" href="checkTools_8C_source.html">checkTools.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="checkTools_8C_source.html#l00081">81</a> of file <a class="el" href="checkTools_8C_source.html">checkTools.C</a>.</p>
 
-<p class="reference">References <a class="el" href="checkTools_8C_source.html#l00181">mergeAndWrite()</a>, and <a class="el" href="createRefsLaplacian_8H_source.html#l00004">mesh</a>.</p>
+<p class="reference">References <a class="el" href="checkTools_8C_source.html#l00030">mergeAndWrite()</a>, and <a class="el" href="createRefsLaplacian_8H_source.html#l00004">mesh</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1228,9 +1194,9 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="checkTools_8C_source.html#l00252">252</a> of file <a class="el" href="checkTools_8C_source.html">checkTools.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="checkTools_8C_source.html#l00101">101</a> of file <a class="el" href="checkTools_8C_source.html">checkTools.C</a>.</p>
 
-<p class="reference">References <a class="el" href="checkTools_8C_source.html#l00181">mergeAndWrite()</a>, and <a class="el" href="createRefsLaplacian_8H_source.html#l00004">mesh</a>.</p>
+<p class="reference">References <a class="el" href="checkTools_8C_source.html#l00030">mergeAndWrite()</a>, and <a class="el" href="createRefsLaplacian_8H_source.html#l00004">mesh</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1242,23 +1208,23 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a3ba5e46f543aae4e5ab71a1a42682634"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ba5e46f543aae4e5ab71a1a42682634">&#9670;&nbsp;</a></span>mergeAndWrite() <span class="overload">[4/4]</span></h2>
+<a id="a8c04c8f41ca77a94e317b665a3be0ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c04c8f41ca77a94e317b665a3be0ee4">&#9670;&nbsp;</a></span>mergeAndWrite() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mergeAndWrite </td>
+          <td class="memname">void Foam::mergeAndWrite </td>
           <td>(</td>
           <td class="paramtype">const writer&lt; scalar &gt; &amp;&#160;</td>
-          <td class="paramname"><em>writer</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const pointSet &amp;&#160;</td>
-          <td class="paramname"><em>set</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1267,10 +1233,6 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="checkTools_8C_source.html#l00333">333</a> of file <a class="el" href="checkTools_8C_source.html">checkTools.C</a>.</p>
-
-<p class="reference">References <a class="el" href="createRefsLaplacian_8H_source.html#l00004">mesh</a>.</p>
 
 </div>
 </div>

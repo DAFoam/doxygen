@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.7</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.8</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -209,9 +209,6 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a6bc87a1a62ff14754b0f4a4622e4e18b"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a6bc87a1a62ff14754b0f4a4622e4e18b">checkMeshThreshold</a></td></tr>
 <tr class="memdesc:a6bc87a1a62ff14754b0f4a4622e4e18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The threshold for check mesh call.  <a href="#a6bc87a1a62ff14754b0f4a4622e4e18b">More...</a><br /></td></tr>
 <tr class="separator:a6bc87a1a62ff14754b0f4a4622e4e18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcdb8ec376b3302f0936b76f702c9ad3"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#abcdb8ec376b3302f0936b76f702c9ad3">intmdVar</a> = {}</td></tr>
-<tr class="memdesc:abcdb8ec376b3302f0936b76f702c9ad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute intermediate variables such as the mean fields Example: "intmdVar" : { "UMean" : { "operation": "Mean", "fieldType": "volVectorField", "baseField": "U", "restartSteps": 1000 } }.  <a href="#abcdb8ec376b3302f0936b76f702c9ad3">More...</a><br /></td></tr>
-<tr class="separator:abcdb8ec376b3302f0936b76f702c9ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25123103a2225b4980f2f2bcef8b7803"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a25123103a2225b4980f2f2bcef8b7803">writeSensMap</a> = [&quot;NONE&quot;]</td></tr>
 <tr class="memdesc:a25123103a2225b4980f2f2bcef8b7803"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sensitivity map will be saved to disk during optimization for the given design variable names in the list.  <a href="#a25123103a2225b4980f2f2bcef8b7803">More...</a><br /></td></tr>
 <tr class="separator:a25123103a2225b4980f2f2bcef8b7803"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,7 +253,7 @@ NOTE: We group these options into three categories.
 </div><div class="memdoc">
 <pre class="fragment">Nothing needs to be done for initializing DAOPTION
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00591">591</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00579">579</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -1283,32 +1280,6 @@ NOTE: We group these options into three categories.
 
 </div>
 </div>
-<a id="abcdb8ec376b3302f0936b76f702c9ad3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcdb8ec376b3302f0936b76f702c9ad3">&#9670;&nbsp;</a></span>intmdVar</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">dictionary intmdVar = {}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compute intermediate variables such as the mean fields Example: "intmdVar" : { "UMean" : { "operation": "Mean", "fieldType": "volVectorField", "baseField": "U", "restartSteps": 1000 } }. </p>
-
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00574">574</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
-
-</div>
-</div>
 <a id="a25123103a2225b4980f2f2bcef8b7803"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25123103a2225b4980f2f2bcef8b7803">&#9670;&nbsp;</a></span>writeSensMap</h2>
 
@@ -1332,7 +1303,7 @@ NOTE: We group these options into three categories.
 <p>The sensitivity map will be saved to disk during optimization for the given design variable names in the list. </p>
 <p>Currently only support design variable type FFD and Field The surface sensitivity map is separated from the primal solution because they only have surface mesh. They will be saved to folders such as 1e-11, 2e-11, 3e-11, etc, When loading in paraview, you need to uncheck the "internalMesh", and check "allWalls" on the left panel If your design variable is of field type, the sensitivity map will be saved along with the primal solution because they share the same mesh. The sensitivity files read sens_objFuncName_designVarName NOTE: this function only supports adjJacobianOption = JacobianFree Example: "writeSensMap" : ["shapex", "shapey"] </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00586">586</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00574">574</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>
@@ -1358,7 +1329,7 @@ NOTE: We group these options into three categories.
 
 <p>Whether to write deformed FFDs to the disk during optimization. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00589">589</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyDAFoam_8py_source.html#l00577">577</a> of file <a class="el" href="pyDAFoam_8py_source.html">pyDAFoam.py</a>.</p>
 
 </div>
 </div>

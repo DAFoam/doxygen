@@ -81,7 +81,6 @@ var searchData=
   ['printintervalunsteady_5f',['printIntervalUnsteady_',['../classFoam_1_1DAFvSourceActuatorLine.html#a2ec3e123e466f378ef43019b7b6556a9',1,'Foam::DAFvSourceActuatorLine::printIntervalUnsteady_()'],['../classFoam_1_1DAFvSourceActuatorPoint.html#a2ec3e123e466f378ef43019b7b6556a9',1,'Foam::DAFvSourceActuatorPoint::printIntervalUnsteady_()']]],
   ['printmatchars',['printMatChars',['../classFoam_1_1DAIndex.html#a0aa276cc85800b41a2125bcd95032e86',1,'Foam::DAIndex']]],
   ['printmatvalues',['printMatValues',['../namespacedafoam__matgetvalues.html#a08a4bac832af5227e4600c2eaeca586b',1,'dafoam_matgetvalues']]],
-  ['printmeshstats',['printMeshStats',['../namespaceFoam.html#aee7efed69c9cc6a6c54f1bc980e07d4b',1,'Foam']]],
   ['printpydafoamoptions',['printPYDAFOAMOptions',['../classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a461c377898945ebc8e7588ee30a83496',1,'dafoam::pyDAFoam::DAOPTION']]],
   ['printvecvalues',['printVecValues',['../namespacedafoam__vecgetvalues.html#a1e7c818c875264f32c7fccee14129948',1,'dafoam_vecgetvalues']]],
   ['printyplus',['printYPlus',['../classFoam_1_1DATurbulenceModel.html#a45a5b7ae829ea8e200332ce6a19e5a1e',1,'Foam::DATurbulenceModel']]],
