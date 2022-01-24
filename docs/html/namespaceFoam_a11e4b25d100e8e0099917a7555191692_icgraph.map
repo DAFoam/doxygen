@@ -1,3 +1,4 @@
 <map id="checkGeometry" name="checkGeometry">
-<area shape="rect" id="node2" href="$classFoam_1_1DACheckMesh.html#a8b9eb0de7bb3319feb4f022327058f19" title="run meshCheck and return meshOK " alt="" coords="168,5,347,32"/>
+<area shape="rect" id="node1" title="check mesh quality" alt="" coords="243,5,368,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DACheckMesh.html#a8b9eb0de7bb3319feb4f022327058f19" title="run meshCheck and return meshOK" alt="" coords="5,5,195,32"/>
 </map>

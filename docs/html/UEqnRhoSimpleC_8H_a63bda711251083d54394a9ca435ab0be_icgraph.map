@@ -1,4 +1,5 @@
 <map id="primalResidualControl&lt; vector &gt;" name="primalResidualControl&lt; vector &gt;">
-<area shape="rect" id="node2" href="$UEqnPimple_8H.html#a5340a84918449f06669e13812b90f046" title="if" alt="" coords="280,5,319,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="204,57,395,98"/>
+<area shape="rect" id="node1" title=" " alt="" coords="260,27,427,69"/>
+<area shape="rect" id="node2" href="$UEqnPimple_8H.html#a5340a84918449f06669e13812b90f046" title=" " alt="" coords="89,5,128,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="5,57,212,98"/>
 </map>

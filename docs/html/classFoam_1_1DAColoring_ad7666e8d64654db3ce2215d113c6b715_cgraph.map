@@ -1,7 +1,0 @@
-<map id="~DAColoring" name="~DAColoring">
-<area shape="rect" id="node2" href="$classFoam_1_1DAColoring.html#aadb82906897a2a1e3a485300696c2578" title="check if there is non&#45;colored columns " alt="" coords="327,5,449,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAColoring.html#adc05c09e9f68d34f559039d9d150abdb" title="find the index of a prescribed value in an array " alt="" coords="347,68,429,95"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAColoring.html#acd6aa8b9966612ea3cf0d2c0b4e8fb0e" title="number of non&#45;zero elements in a matrix " alt="" coords="329,119,447,145"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAColoring.html#aa2042306c5d253b96c1ff8d7c6f01737" title="a parallel distance&#45;2 graph coloring function " alt="" coords="151,93,279,120"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DAColoring.html#aaa82ef9be42bf3419ba7400c4c5a6ba3" title="validate if there is coloring conflict " alt="" coords="157,195,272,221"/>
-</map>

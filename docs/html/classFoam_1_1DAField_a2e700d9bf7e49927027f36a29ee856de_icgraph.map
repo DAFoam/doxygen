@@ -1,5 +1,5 @@
 <map id="specialBCTreatment" name="specialBCTreatment">
-<area shape="rect" id="node2" href="$classFoam_1_1DAResidual.html#a08d199cacb841a03735df4c9280864c1" title="the master function that compute the residual vector given the state and point vectors ..." alt="" coords="219,5,400,47"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAObjFunc.html#a6d5f7f9d48b97ffd5730072be731dbb5" title="the master function to compute objective function given the state and point vectors ..." alt="" coords="195,71,424,98"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAField.html#abec07ea34bf947452d61d12f02d3c354" title="Destructor. " alt="" coords="271,122,348,149"/>
+<area shape="rect" id="node1" title="apply special treatment for boundary conditions" alt="" coords="300,42,452,69"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAResidual.html#a08d199cacb841a03735df4c9280864c1" title="the master function that compute the residual vector given the state and point vectors" alt="" coords="31,5,226,47"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAObjFunc.html#a6d5f7f9d48b97ffd5730072be731dbb5" title="the master function to compute objective function given the state and point vectors" alt="" coords="5,71,252,98"/>
 </map>

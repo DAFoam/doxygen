@@ -1,3 +1,4 @@
 <map id="getGlobalAdjointStateIndex" name="getGlobalAdjointStateIndex">
-<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a91f26f905486092d25af1c1150e695de" title="get local adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="233,5,408,32"/>
+<area shape="rect" id="node1" title="get global adjoint index for a given state name, cell/face indxI and its component (optional,..." alt="" coords="5,5,207,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a91f26f905486092d25af1c1150e695de" title="get local adjoint index for a given state name, cell/face indxI and its component (optional,..." alt="" coords="255,5,448,32"/>
 </map>

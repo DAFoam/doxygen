@@ -1,8 +1,0 @@
-<map id="tUEqn" name="tUEqn">
-<area shape="rect" id="node2" href="$classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="112,5,327,47"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAResidualSimpleFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="116,71,323,112"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAResidualRhoSimpleCFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="121,136,318,177"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAResidualTurboFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="120,201,319,243"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DAResidualRhoSimpleFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="121,267,318,308"/>
-<area shape="rect" id="node7" href="$pEqnPimple_8H.html#aa19d0471b129dc379d6f06628477ad7d" title="if" alt="" coords="200,333,239,359"/>
-</map>

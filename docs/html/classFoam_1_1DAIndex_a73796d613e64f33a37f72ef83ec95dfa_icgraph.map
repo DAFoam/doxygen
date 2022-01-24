@@ -1,4 +1,4 @@
 <map id="getMatNonZeros" name="getMatNonZeros">
-<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a092b2338b6c6bd5055b5768080bf66a4" title="print all the sizes and indices " alt="" coords="324,5,413,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAIndex.html#a0aa276cc85800b41a2125bcd95032e86" title="print petsc matrix statistics such as the max on/off diagonral ratio " alt="" coords="172,31,276,57"/>
+<area shape="rect" id="node1" title="get number of non zeros for a matrix" alt="" coords="168,5,299,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a0aa276cc85800b41a2125bcd95032e86" title="print petsc matrix statistics such as the max on/off diagonral ratio" alt="" coords="5,5,120,32"/>
 </map>

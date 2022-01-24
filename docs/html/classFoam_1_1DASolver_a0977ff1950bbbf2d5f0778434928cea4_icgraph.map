@@ -1,4 +1,4 @@
 <map id="dRdWTMatVecMultFunction" name="dRdWTMatVecMultFunction">
-<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#aa7ce1e2622846db0a54e4db5b50e64b4" title="initialize matrix free dRdWT " alt="" coords="240,5,416,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#a12ec2b74f32a1640660356872d86a0aa" title="~DASolver" alt="" coords="464,31,551,57"/>
+<area shape="rect" id="node1" title="matrix free matrix&#45;vector product function to compute vecY=dRdWT*vecX" alt="" coords="248,5,448,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#aa7ce1e2622846db0a54e4db5b50e64b4" title="initialize matrix free dRdWT" alt="" coords="5,5,200,32"/>
 </map>

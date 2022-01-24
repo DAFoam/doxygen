@@ -1,4 +1,4 @@
 <map id="getAlpha" name="getAlpha">
-<area shape="rect" id="node2" href="$classFoam_1_1DATurbulenceModel.html#ae11089a7a308de0e24d8fe63f7a579f9" title="return effective thermal diffusivity " alt="" coords="127,5,197,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DATurbulenceModel.html#add7eb11ed6f6a22df0b6e8ffe53cf2a1" title="get the nut field " alt="" coords="245,31,307,57"/>
+<area shape="rect" id="node1" title="get alpha field" alt="" coords="128,5,208,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DATurbulenceModel.html#ae11089a7a308de0e24d8fe63f7a579f9" title="return effective thermal diffusivity" alt="" coords="5,5,80,32"/>
 </map>

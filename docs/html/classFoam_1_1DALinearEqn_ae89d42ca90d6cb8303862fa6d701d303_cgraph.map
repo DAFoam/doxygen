@@ -1,4 +1,5 @@
 <map id="createMLRKSP" name="createMLRKSP">
-<area shape="rect" id="node2" href="$classFoam_1_1DAOption.html#a04e1a06e3ade0e60b8e3a82ad37be74c" title="get an dictionary option from subDict and key " alt="" coords="167,5,360,47"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DALinearEqn.html#a9130e830b837864a8cf17d517bf1b9c7" title="ksp monitor function " alt="" coords="208,71,319,98"/>
+<area shape="rect" id="node1" title="create a multi&#45;level, Richardson KSP object" alt="" coords="5,42,121,69"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAOption.html#a04e1a06e3ade0e60b8e3a82ad37be74c" title="get an dictionary option from subDict and key" alt="" coords="169,5,376,47"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DALinearEqn.html#a9130e830b837864a8cf17d517bf1b9c7" title="ksp monitor function" alt="" coords="213,71,332,98"/>
 </map>

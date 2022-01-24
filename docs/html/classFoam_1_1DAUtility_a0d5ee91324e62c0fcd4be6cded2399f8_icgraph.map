@@ -1,8 +1,9 @@
 <map id="isValueCloseToRef" name="isValueCloseToRef">
-<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#ae1608ec668072edbb7fc76f527b2bcf0" title="add connectivity phi for pressureInletVelocity " alt="" coords="188,5,392,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAJacCondRdW.html#ad689db8802c9bd6e019cce6fdd7ed3ca" title="compute preallocation vectors " alt="" coords="190,57,390,98"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAJacCon.html#aceaf246b1a6b4ebcddc01690045c640c" title="calculate the colored column vector " alt="" coords="188,122,392,163"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAColoring.html#aa2042306c5d253b96c1ff8d7c6f01737" title="a parallel distance&#45;2 graph coloring function " alt="" coords="201,187,379,229"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DAJacCon.html#a68317e286c7c8af7ff7f5a380f8aa0da" title="calculate DAJacCon::stateBoundaryConID_ " alt="" coords="191,253,389,294"/>
-<area shape="rect" id="node7" href="$classFoam_1_1DAColoring.html#aaa82ef9be42bf3419ba7400c4c5a6ba3" title="validate if there is coloring conflict " alt="" coords="199,318,381,359"/>
+<area shape="rect" id="node1" title="check whether a value is close to a reference value by a tolerance" alt="" coords="271,163,412,189"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#ae1608ec668072edbb7fc76f527b2bcf0" title="add connectivity phi for pressureInletVelocity" alt="" coords="9,5,219,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAJacCondRdW.html#ad689db8802c9bd6e019cce6fdd7ed3ca" title="compute preallocation vectors" alt="" coords="5,57,223,98"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAJacCon.html#aceaf246b1a6b4ebcddc01690045c640c" title="calculate the colored column vector" alt="" coords="7,122,221,163"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DAColoring.html#aa2042306c5d253b96c1ff8d7c6f01737" title="a parallel distance&#45;2 graph coloring function" alt="" coords="16,187,212,229"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DAJacCon.html#a68317e286c7c8af7ff7f5a380f8aa0da" title="calculate DAJacCon::stateBoundaryConID_" alt="" coords="11,253,217,294"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DAColoring.html#aaa82ef9be42bf3419ba7400c4c5a6ba3" title="validate if there is coloring conflict" alt="" coords="14,318,214,359"/>
 </map>

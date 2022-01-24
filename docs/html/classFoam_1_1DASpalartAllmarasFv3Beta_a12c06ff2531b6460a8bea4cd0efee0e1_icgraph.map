@@ -1,5 +1,0 @@
-<map id="chi" name="chi">
-<area shape="rect" id="node2" href="$classFoam_1_1DASpalartAllmarasFv3Beta.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals " alt="" coords="263,5,367,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DASpalartAllmarasFv3Beta.html#aaffe89433f18f1ee4137486e19219448" title="update nut based on other turbulence variables and update the BCs " alt="" coords="112,31,195,57"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DASpalartAllmarasFv3Beta.html#acb7f31fc24f75cd3e11915048dd34959" title="return the value of the production term from the turbulence model " alt="" coords="92,81,215,108"/>
-</map>

@@ -1,3 +1,4 @@
 <map id="combineStateBndCon" name="combineStateBndCon">
-<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#aa64c993a0ecb8c97d16142fb38c6ef08" title="add the column index of the (iner&#45;proc) connected states and faces to conMat, given a local face inde..." alt="" coords="203,5,403,32"/>
+<area shape="rect" id="node1" title="combine stateBoundaryCon and stateBoundaryConTmp, this is to ensure including all connected states fo..." alt="" coords="5,5,168,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#aa64c993a0ecb8c97d16142fb38c6ef08" title="add the column index of the (iner&#45;proc) connected states and faces to conMat, given a local face inde..." alt="" coords="216,5,433,32"/>
 </map>

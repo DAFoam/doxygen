@@ -1,4 +1,6 @@
 <map id="updateVolumePoints" name="updateVolumePoints">
-<area shape="rect" id="node2" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab99bf2b8eef3a3a3dc9130cfe361a672" title="mapVector" alt="" coords="399,5,484,32"/>
-<area shape="rect" id="node3" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6850fa33c4c3d8412a9d9297146b21be" title="setSurfaceCoordinates" alt="" coords="196,31,351,57"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,161,107"/>
+<area shape="rect" id="node2" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ac90dbce095447fd1d513670dbb627608" title=" " alt="" coords="261,29,327,56"/>
+<area shape="rect" id="node3" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab99bf2b8eef3a3a3dc9130cfe361a672" title=" " alt="" coords="427,105,519,132"/>
+<area shape="rect" id="node4" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6850fa33c4c3d8412a9d9297146b21be" title=" " alt="" coords="209,131,379,157"/>
 </map>

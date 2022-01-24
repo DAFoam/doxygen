@@ -1,4 +1,5 @@
 <map id="calcUTau" name="calcUTau">
-<area shape="rect" id="node2" href="$classFoam_1_1nutUSpaldingWallFunctionFvPatchScalarFieldDF.html#a770ef88c60cd370e9d4eacc46f774f07" title="calcNut" alt="" coords="132,5,199,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1nutUSpaldingWallFunctionFvPatchScalarFieldDF.html#a0de83d05eb8aabc5f8cf747584ef03c3" title="yPlus" alt="" coords="138,56,193,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="124,31,204,57"/>
+<area shape="rect" id="node2" href="$classFoam_1_1nutUSpaldingWallFunctionFvPatchScalarFieldDF.html#a770ef88c60cd370e9d4eacc46f774f07" title=" " alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1nutUSpaldingWallFunctionFvPatchScalarFieldDF.html#a0de83d05eb8aabc5f8cf747584ef03c3" title=" " alt="" coords="12,56,69,83"/>
 </map>

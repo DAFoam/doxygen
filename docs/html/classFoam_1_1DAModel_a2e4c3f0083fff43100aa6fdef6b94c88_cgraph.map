@@ -1,3 +1,4 @@
 <map id="correctModelStates" name="correctModelStates">
-<area shape="rect" id="node2" href="$classFoam_1_1DATurbulenceModel.html#a2d6fa8c2a7c6ca1a3fd7573de3dbc60b" title="update the turbulence state for DAStateInfo::regStates_ " alt="" coords="188,5,369,47"/>
+<area shape="rect" id="node1" title="update the name in modelStates based on the selected physical model at runtime" alt="" coords="5,13,153,39"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DATurbulenceModel.html#a2d6fa8c2a7c6ca1a3fd7573de3dbc60b" title="update the turbulence state for DAStateInfo::regStates_" alt="" coords="201,5,396,47"/>
 </map>

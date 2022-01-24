@@ -1,10 +1,4 @@
 <map id="rAU" name="rAU">
-<area shape="rect" id="node2" href="$classFoam_1_1DAResidualPimpleFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="103,5,309,47"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAResidualPisoFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="110,71,302,112"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="99,136,313,177"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAResidualSimpleFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="103,201,309,243"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DAResidualRhoSimpleCFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="107,267,305,308"/>
-<area shape="rect" id="node7" href="$classFoam_1_1DAResidualTurboFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="107,332,305,373"/>
-<area shape="rect" id="node8" href="$classFoam_1_1DAResidualRhoSimpleFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="107,397,305,439"/>
-<area shape="rect" id="node9" href="$pEqnPimple_8H.html#a51a6e1697d23e2077ab4d9b2b12f2d54" title="if" alt="" coords="187,463,225,490"/>
+<area shape="rect" id="node1" title=" " alt="" coords="92,5,139,32"/>
+<area shape="rect" id="node2" href="$pEqnPimple_8H.html#a51a6e1697d23e2077ab4d9b2b12f2d54" title=" " alt="" coords="5,5,44,32"/>
 </map>

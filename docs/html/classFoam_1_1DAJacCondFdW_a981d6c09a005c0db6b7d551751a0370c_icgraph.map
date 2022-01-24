@@ -1,3 +1,4 @@
 <map id="getGlobalObjFuncGeoIndex" name="getGlobalObjFuncGeoIndex">
-<area shape="rect" id="node2" href="$classFoam_1_1DAJacCondFdW.html#a38665183153112bc58257039d500089c" title="assign 1 to all non&#45;zero elements for the Jacobian connecitivyt matrix " alt="" coords="236,5,335,32"/>
+<area shape="rect" id="node1" title="get the global index of geometry element for objective" alt="" coords="156,5,355,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAJacCondFdW.html#a38665183153112bc58257039d500089c" title="assign 1 to all non&#45;zero elements for the Jacobian connecitivyt matrix" alt="" coords="5,5,108,32"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="checkSpecialBCs" name="checkSpecialBCs">
-<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#a4cf46f89e91fea3ef7b601ee1cae3470" title="clear members in DAJacCon " alt="" coords="180,5,348,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAJacCon.html#afe0acf55b826f3deebdc4e8bbe013ccf" title="DAJacCon" alt="" coords="221,56,307,83"/>
+<area shape="rect" id="node1" title="check if there is special boundary conditions that need special treatment in jacCon_" alt="" coords="139,5,271,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#afe0acf55b826f3deebdc4e8bbe013ccf" title=" " alt="" coords="5,5,91,32"/>
 </map>

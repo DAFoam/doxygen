@@ -1,6 +1,7 @@
 <map id="primalResidualControl&lt; scalar &gt;" name="primalResidualControl&lt; scalar &gt;">
-<area shape="rect" id="node2" href="$pEqnTurbo_8H.html#ae89c52693c4c26f24fd327b88d3d696a" title="if" alt="" coords="288,5,327,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DALaplacianFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="222,57,393,98"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAScalarTransportFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations " alt="" coords="204,122,411,163"/>
-<area shape="rect" id="node5" href="$pEqnPimple_8H.html#ab13470e79e249d04c443bf59be9ff31d" title="while" alt="" coords="281,188,333,215"/>
+<area shape="rect" id="node1" title=" " alt="" coords="275,90,441,131"/>
+<area shape="rect" id="node2" href="$pEqnTurbo_8H.html#ae89c52693c4c26f24fd327b88d3d696a" title=" " alt="" coords="97,5,135,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DALaplacianFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="25,57,207,98"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAScalarTransportFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="5,122,227,163"/>
+<area shape="rect" id="node5" href="$pEqnPimple_8H.html#ab13470e79e249d04c443bf59be9ff31d" title=" " alt="" coords="87,188,145,215"/>
 </map>

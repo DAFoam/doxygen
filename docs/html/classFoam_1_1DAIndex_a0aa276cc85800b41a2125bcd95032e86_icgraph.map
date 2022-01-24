@@ -1,4 +1,4 @@
 <map id="printMatChars" name="printMatChars">
-<area shape="rect" id="node2" href="$classFoam_1_1DAPartDerivdRdW.html#a3f0269fc7ba18e5fbfe29884960e7402" title="compute the partial derivative matrix " alt="" coords="157,5,332,47"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAIndex.html#a092b2338b6c6bd5055b5768080bf66a4" title="print all the sizes and indices " alt="" coords="200,71,289,98"/>
+<area shape="rect" id="node1" title="print petsc matrix statistics such as the max on/off diagonral ratio" alt="" coords="236,13,351,39"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAPartDerivdRdW.html#a3f0269fc7ba18e5fbfe29884960e7402" title="compute the partial derivative matrix" alt="" coords="5,5,188,47"/>
 </map>

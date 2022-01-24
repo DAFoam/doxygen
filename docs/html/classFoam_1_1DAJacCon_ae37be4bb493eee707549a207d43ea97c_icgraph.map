@@ -1,3 +1,4 @@
 <map id="combineStateBndCon" name="combineStateBndCon">
-<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#aa3634adc32833f151b9489b57320ecd4" title="calculate DAJacCon::stateBoundaryCon_ " alt="" coords="203,5,367,32"/>
+<area shape="rect" id="node1" title="combine stateBoundaryCon and stateBoundaryConTmp, this is to ensure including all connected states fo..." alt="" coords="232,5,395,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#aa3634adc32833f151b9489b57320ecd4" title="calculate DAJacCon::stateBoundaryCon_" alt="" coords="5,5,184,32"/>
 </map>

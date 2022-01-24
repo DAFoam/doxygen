@@ -1,3 +1,4 @@
 <map id="calcAdjStateID4GlobalAdjIdx" name="calcAdjStateID4GlobalAdjIdx">
-<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#a68317e286c7c8af7ff7f5a380f8aa0da" title="calculate DAJacCon::stateBoundaryConID_ " alt="" coords="244,5,443,47"/>
+<area shape="rect" id="node1" title="compute global list adjStateID4GlobalAdjIdx that stores the stateID for a given globalAdjIndx" alt="" coords="260,13,468,39"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#a68317e286c7c8af7ff7f5a380f8aa0da" title="calculate DAJacCon::stateBoundaryConID_" alt="" coords="5,5,212,47"/>
 </map>

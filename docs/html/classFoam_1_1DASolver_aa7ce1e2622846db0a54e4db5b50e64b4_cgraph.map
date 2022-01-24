@@ -1,6 +1,7 @@
 <map id="initializedRdWTMatrixFree" name="initializedRdWTMatrixFree">
-<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#a6cec9caca72b22c3e006bd0fbb9c422a" title="calculate the norms of all residuals and print to screen " alt="" coords="229,5,419,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#a0977ff1950bbbf2d5f0778434928cea4" title="matrix free matrix&#45;vector product function to compute vecY=dRdWT*vecX " alt="" coords="231,56,417,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#a70bbc5360b9de5931a46681648082387" title="Update the OpenFOAM field values (including both internal and boundary fields) based on the state vec..." alt="" coords="271,107,377,133"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DASolver.html#ad2cd4059650064ffe8599777743e9701" title="Update the OpenFoam mesh point coordinates based on the point vector xvVec. " alt="" coords="269,157,379,184"/>
+<area shape="rect" id="node1" title="initialize matrix free dRdWT" alt="" coords="5,81,200,108"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#a6cec9caca72b22c3e006bd0fbb9c422a" title="calculate the norms of all residuals and print to screen" alt="" coords="248,5,455,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#a0977ff1950bbbf2d5f0778434928cea4" title="matrix free matrix&#45;vector product function to compute vecY=dRdWT*vecX" alt="" coords="251,56,451,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#a70bbc5360b9de5931a46681648082387" title="Update the OpenFOAM field values (including both internal and boundary fields) based on the state vec..." alt="" coords="293,107,409,133"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DASolver.html#ad2cd4059650064ffe8599777743e9701" title="Update the OpenFoam mesh point coordinates based on the point vector xvVec." alt="" coords="291,157,411,184"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="addModelResidualCon" name="addModelResidualCon">
-<area shape="rect" id="node2" href="$classFoam_1_1DAModel.html#af4c2bb10de993ad1332df7bd213bc7ab" title="add the model residual connectivity to stateCon " alt="" coords="207,5,463,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DATurbulenceModel.html#a4da443a900be70678681adc3cb584741" title="~DATurbulenceModel" alt="" coords="261,56,409,83"/>
+<area shape="rect" id="node1" title="add the model residual connectivity to stateCon" alt="" coords="332,5,499,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAModel.html#af4c2bb10de993ad1332df7bd213bc7ab" title="add the model residual connectivity to stateCon" alt="" coords="5,5,284,32"/>
 </map>

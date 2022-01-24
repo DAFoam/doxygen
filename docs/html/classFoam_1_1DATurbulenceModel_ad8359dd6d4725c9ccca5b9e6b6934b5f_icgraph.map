@@ -1,7 +1,7 @@
 <map id="divDevReff" name="divDevReff">
-<area shape="rect" id="node2" href="$classFoam_1_1DAResidualPimpleFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="145,5,352,47"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAResidualPisoFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="153,71,345,112"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="141,136,356,177"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAResidualSimpleFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="145,201,352,243"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DATurbulenceModel.html#a4da443a900be70678681adc3cb584741" title="~DATurbulenceModel" alt="" coords="175,267,323,294"/>
+<area shape="rect" id="node1" title="divDev terms" alt="" coords="284,111,379,138"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAResidualPimpleFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="9,5,232,47"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAResidualPisoFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="19,71,223,112"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAResidualSimpleFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="9,136,232,177"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="5,201,236,243"/>
 </map>

@@ -1,6 +1,0 @@
-<map id="~dummyTurbulenceModel" name="~dummyTurbulenceModel">
-<area shape="rect" id="node2" href="$classFoam_1_1RASModels_1_1dummyTurbulenceModel.html#a3ae44b28050c3aa494c1d8e18cf618c1" title="correct" alt="" coords="225,5,288,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1RASModels_1_1dummyTurbulenceModel.html#a7593db4148b0ba5155861a0292ec9c32" title="epsilon" alt="" coords="225,56,288,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1RASModels_1_1dummyTurbulenceModel.html#a2e01d66cd4db498fd5e869ea66925978" title="k" alt="" coords="237,107,276,133"/>
-<area shape="rect" id="node5" href="$classFoam_1_1RASModels_1_1dummyTurbulenceModel.html#af816873151ddb0126e98bb2f914d8ed5" title="read" alt="" coords="233,157,280,184"/>
-</map>

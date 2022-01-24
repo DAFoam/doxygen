@@ -1,4 +1,5 @@
 <map id="solveLinearEqn" name="solveLinearEqn">
-<area shape="rect" id="node2" href="$classFoam_1_1DALinearEqn.html#a9641e50ccc8c39af96c7b124f72f35c5" title="return the runtime for the adjoint solver " alt="" coords="214,5,307,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAOption.html#a04e1a06e3ade0e60b8e3a82ad37be74c" title="get an dictionary option from subDict and key " alt="" coords="164,57,357,98"/>
+<area shape="rect" id="node1" title="solve the linear equation given a ksp and right&#45;hand&#45;side vector" alt="" coords="5,35,127,61"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DALinearEqn.html#a9641e50ccc8c39af96c7b124f72f35c5" title="return the runtime for the adjoint solver" alt="" coords="227,5,329,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAOption.html#a04e1a06e3ade0e60b8e3a82ad37be74c" title="get an dictionary option from subDict and key" alt="" coords="175,57,381,98"/>
 </map>

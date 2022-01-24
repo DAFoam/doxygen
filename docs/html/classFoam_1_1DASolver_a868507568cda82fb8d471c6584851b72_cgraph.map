@@ -1,4 +1,5 @@
 <map id="initializeGlobalADTape4dRdWT" name="initializeGlobalADTape4dRdWT">
-<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#a32dc88eaf93946ee0561bae17d5fa9d0" title="register all residuals as the output for reverse&#45;mode AD " alt="" coords="269,5,450,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#a1e1cfd65c70fb9e0e4c29766a394ed0f" title="register all state variables as the input for reverse&#45;mode AD " alt="" coords="260,56,459,83"/>
+<area shape="rect" id="node1" title="initialize the CoDiPack reverse&#45;mode AD global tape for computing dRdWT*psi" alt="" coords="5,31,228,57"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#a32dc88eaf93946ee0561bae17d5fa9d0" title="register all residuals as the output for reverse&#45;mode AD" alt="" coords="286,5,485,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#a1e1cfd65c70fb9e0e4c29766a394ed0f" title="register all state variables as the input for reverse&#45;mode AD" alt="" coords="276,56,495,83"/>
 </map>

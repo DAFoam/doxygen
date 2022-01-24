@@ -1,4 +1,5 @@
 <map id="addConMatCellFaces" name="addConMatCellFaces">
-<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#a9dd95e527ffe4ab41fa36bb746e5f2aa" title="a high&#45;level function to add connected state column indices to the connectivity matrix ..." alt="" coords="210,5,357,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAJacCon.html#aa3634adc32833f151b9489b57320ecd4" title="calculate DAJacCon::stateBoundaryCon_ " alt="" coords="201,56,365,83"/>
+<area shape="rect" id="node1" title="add val to gRow row in conMat, column indice are the faces (given by stateName) for a given cellI" alt="" coords="232,31,389,57"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#a9dd95e527ffe4ab41fa36bb746e5f2aa" title="a high&#45;level function to add connected state column indices to the connectivity matrix" alt="" coords="15,5,175,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAJacCon.html#aa3634adc32833f151b9489b57320ecd4" title="calculate DAJacCon::stateBoundaryCon_" alt="" coords="5,56,184,83"/>
 </map>

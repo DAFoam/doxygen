@@ -1,6 +1,0 @@
-<map id="getNJacConColors" name="getNJacConColors">
-<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#a3b9b543bfab2dbda82af01317a9f2ab8" title="compute graph coloring for Jacobian connectivity matrix " alt="" coords="187,5,326,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAJacCon.html#a859e1760cb9e9565d66bbc93ddfd1d95" title="whether the coloring file exists " alt="" coords="205,56,309,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAJacCon.html#a23e1ec311a5493e171f57460550bc5f3" title="preallocate dRdW matrix using the preallocVec " alt="" coords="195,107,318,133"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAJacCon.html#ac468336a825acf06f527883fc9bd63f7" title="read colors for JacCon " alt="" coords="187,157,327,184"/>
-</map>

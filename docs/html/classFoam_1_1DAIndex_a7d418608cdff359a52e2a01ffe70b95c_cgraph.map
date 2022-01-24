@@ -1,3 +1,4 @@
 <map id="calcAdjStateID4GlobalAdjIdx" name="calcAdjStateID4GlobalAdjIdx">
-<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a06a1fcb98ee5f377d70e1d04b0e5dd61" title="get global adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="244,5,424,32"/>
+<area shape="rect" id="node1" title="compute global list adjStateID4GlobalAdjIdx that stores the stateID for a given globalAdjIndx" alt="" coords="5,5,213,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a06a1fcb98ee5f377d70e1d04b0e5dd61" title="get global adjoint index for a given state name, cell/face indxI and its component (optional,..." alt="" coords="261,5,463,32"/>
 </map>

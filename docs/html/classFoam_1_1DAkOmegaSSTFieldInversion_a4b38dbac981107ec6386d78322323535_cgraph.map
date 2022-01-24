@@ -1,0 +1,20 @@
+<map id="calcResiduals" name="calcResiduals">
+<area shape="rect" id="node1" title="compute the turbulence residuals" alt="" coords="5,411,116,437"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#afae7408494d5f270a5b8b47ddc75f147" title=" " alt="" coords="261,157,312,184"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#a312d02f8c5b337f556b9e7388dbffdf9" title=" " alt="" coords="512,157,551,184"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAUtility.html#a33a755d4b9029ec00bb1969fc0a193e3" title="bound a volScalar variable based on parametes defined in DAOption::allOptions_" alt="" coords="190,107,383,133"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#aaffe89433f18f1ee4137486e19219448" title="update nut based on other turbulence variables and update the BCs" alt="" coords="241,309,332,336"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#a3d2e2a8cfb1cf35feaf40a0c868c7cd1" title=" " alt="" coords="508,335,555,361"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#a636790623e3921c65f47923b9a21e512" title="specially treatment to correct epsilon BC" alt="" coords="164,411,409,437"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#a7b80937e7907094acf3a9e07947c205f" title="set omegaNearWall_ to near wall omega values" alt="" coords="457,436,605,463"/>
+<area shape="rect" id="node9" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#aca4215d4a8caff4a6d9c5f760482c19f" title=" " alt="" coords="258,259,315,285"/>
+<area shape="rect" id="node10" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#a25c97787db263e1041de915a3ef4fb27" title=" " alt="" coords="239,5,334,32"/>
+<area shape="rect" id="node11" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#ac8891d1ebd5342ae151953407291c254" title=" " alt="" coords="239,461,334,488"/>
+<area shape="rect" id="node12" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#a1a2499a88cd4108564c13f7623765df7" title=" " alt="" coords="251,56,323,83"/>
+<area shape="rect" id="node13" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#a87cefbf14a13e5463aeb7ab314497135" title=" " alt="" coords="253,563,320,589"/>
+<area shape="rect" id="node14" href="$classFoam_1_1DATurbulenceModel.html#adba061b34197deb555c03c4e3ca27ac0" title=" " alt="" coords="189,614,384,655"/>
+<area shape="rect" id="node15" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#abd7aa1bd65c38f9773745c8d98a2fed0" title=" " alt="" coords="249,680,324,707"/>
+<area shape="rect" id="node16" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#aaf8f6ba0b3a39d35811c05789df09119" title=" " alt="" coords="231,731,342,757"/>
+<area shape="rect" id="node17" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#aca22f7dba2768403b9c83d5c19bc01d6" title=" " alt="" coords="267,781,306,808"/>
+<area shape="rect" id="node18" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#aa60c947284ed701b5f5708d25d1808b5" title=" " alt="" coords="259,832,314,859"/>
+</map>

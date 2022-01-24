@@ -1,8 +1,9 @@
 <map id="dafoam/src/utilities/coloring/pyColoringSolid/ColoringSolid.C" name="dafoam/src/utilities/coloring/pyColoringSolid/ColoringSolid.C">
-<area shape="rect" id="node2" href="$ColoringSolid_8H.html" title="ColoringSolid.H" alt="" coords="5,109,119,136"/>
-<area shape="rect" id="node3" href="$setArgs_8H.html" title="setArgs.H" alt="" coords="143,109,224,136"/>
-<area shape="rect" id="node4" href="$setRootCasePython_8H.html" title="setRootCasePython.H" alt="" coords="249,109,403,136"/>
-<area shape="rect" id="node5" href="$createTimePython_8H.html" title="createTimePython.H" alt="" coords="428,109,571,136"/>
-<area shape="rect" id="node6" href="$createMeshPython_8H.html" title="createMeshPython.H" alt="" coords="595,109,740,136"/>
-<area shape="rect" id="node7" href="$pyColoringSolid_2createAdjoint_8H.html" title="createAdjoint.H" alt="" coords="765,109,877,136"/>
+<area shape="rect" id="node1" title=" " alt="" coords="341,5,525,61"/>
+<area shape="rect" id="node2" href="$ColoringSolid_8H.html" title=" " alt="" coords="5,109,128,136"/>
+<area shape="rect" id="node3" href="$setArgs_8H.html" title=" " alt="" coords="152,109,237,136"/>
+<area shape="rect" id="node4" href="$setRootCasePython_8H.html" title=" " alt="" coords="261,109,424,136"/>
+<area shape="rect" id="node5" href="$createTimePython_8H.html" title=" " alt="" coords="448,109,603,136"/>
+<area shape="rect" id="node6" href="$createMeshPython_8H.html" title=" " alt="" coords="627,109,784,136"/>
+<area shape="rect" id="node7" href="$pyColoringSolid_2createAdjoint_8H.html" title=" " alt="" coords="808,109,931,136"/>
 </map>

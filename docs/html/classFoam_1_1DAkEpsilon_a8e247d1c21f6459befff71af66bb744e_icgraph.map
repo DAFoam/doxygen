@@ -1,4 +1,4 @@
 <map id="correctEpsilonBoundaryConditions" name="correctEpsilonBoundaryConditions">
-<area shape="rect" id="node2" href="$classFoam_1_1DAkEpsilon.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals " alt="" coords="276,5,380,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAkEpsilon.html#ac26098b1757306c778f3aa2662687f82" title="~DAkEpsilon" alt="" coords="428,31,527,57"/>
+<area shape="rect" id="node1" title="specially treatment to correct epsilon BC" alt="" coords="164,5,409,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAkEpsilon.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="5,5,116,32"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="calcResiduals" name="calcResiduals">
-<area shape="rect" id="node2" href="$classFoam_1_1DATurbulenceModel.html#a5f3483c6db30769568050588ede0ca87" title="compute the turbulence residuals " alt="" coords="157,5,339,47"/>
+<area shape="rect" id="node1" title="calculate the residuals for model state variables" alt="" coords="5,13,116,39"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DATurbulenceModel.html#a5f3483c6db30769568050588ede0ca87" title="compute the turbulence residuals" alt="" coords="164,5,359,47"/>
 </map>

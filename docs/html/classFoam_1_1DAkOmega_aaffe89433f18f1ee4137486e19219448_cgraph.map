@@ -1,3 +1,4 @@
 <map id="correctNut" name="correctNut">
-<area shape="rect" id="node2" href="$classFoam_1_1DATurbulenceModel.html#a5e8a2c41e3241f18628b18b4aede66ab" title="update alphat " alt="" coords="136,5,317,47"/>
+<area shape="rect" id="node1" title="update nut based on other turbulence variables and update the BCs" alt="" coords="5,13,96,39"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DATurbulenceModel.html#a5e8a2c41e3241f18628b18b4aede66ab" title="update alphat" alt="" coords="144,5,339,47"/>
 </map>

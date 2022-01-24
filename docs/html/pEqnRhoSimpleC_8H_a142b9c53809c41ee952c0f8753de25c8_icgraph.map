@@ -1,4 +1,5 @@
 <map id="rhorAtU" name="rhorAtU">
-<area shape="rect" id="node2" href="$classFoam_1_1DAResidualRhoSimpleCFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual " alt="" coords="120,5,317,47"/>
-<area shape="rect" id="node3" href="$pEqnRhoSimpleC_8H.html#a80a1a15f423dbb405b1a80b4354d5793" title="while" alt="" coords="193,71,245,98"/>
+<area shape="rect" id="node1" title=" " alt="" coords="264,42,336,69"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAResidualRhoSimpleCFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="5,5,216,47"/>
+<area shape="rect" id="node3" href="$pEqnRhoSimpleC_8H.html#a80a1a15f423dbb405b1a80b4354d5793" title=" " alt="" coords="82,71,139,98"/>
 </map>

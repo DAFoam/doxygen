@@ -1,3 +1,4 @@
 <map id="getAlpha" name="getAlpha">
-<area shape="rect" id="node2" href="$classFoam_1_1DATurbulenceModel.html#a8ec0cfa6e40933dad3a642f390950937" title="get the nu field " alt="" coords="127,5,165,32"/>
+<area shape="rect" id="node1" title="get alpha field" alt="" coords="5,5,85,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DATurbulenceModel.html#a8ec0cfa6e40933dad3a642f390950937" title="get the nu field" alt="" coords="133,5,172,32"/>
 </map>

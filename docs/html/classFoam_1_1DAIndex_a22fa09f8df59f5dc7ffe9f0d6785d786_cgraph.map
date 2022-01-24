@@ -1,3 +1,4 @@
 <map id="getGlobalCellIndex" name="getGlobalCellIndex">
-<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a77488f97ca081e117dd6bc563d7141be" title="get local cell index for a local cell index " alt="" coords="185,5,312,32"/>
+<area shape="rect" id="node1" title="get global cell index for a local cell index" alt="" coords="5,5,152,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a77488f97ca081e117dd6bc563d7141be" title="get local cell index for a local cell index" alt="" coords="200,5,339,32"/>
 </map>

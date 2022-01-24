@@ -1,0 +1,10 @@
+<map id="calcResiduals" name="calcResiduals">
+<area shape="rect" id="node1" title="compute the turbulence residuals" alt="" coords="5,157,116,184"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAUtility.html#a33a755d4b9029ec00bb1969fc0a193e3" title="bound a volScalar variable based on parametes defined in DAOption::allOptions_" alt="" coords="190,5,383,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAkOmegaFieldInversionk.html#aaffe89433f18f1ee4137486e19219448" title="update nut based on other turbulence variables and update the BCs" alt="" coords="241,56,332,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAkOmegaFieldInversionk.html#a636790623e3921c65f47923b9a21e512" title="specially treatment to correct epsilon BC" alt="" coords="164,107,409,133"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DAkOmegaFieldInversionk.html#a7b80937e7907094acf3a9e07947c205f" title="set omegaNearWall_ to near wall omega values" alt="" coords="457,132,605,159"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DAkOmegaFieldInversionk.html#a1faa4b448524c4de622637dc51aa4a30" title=" " alt="" coords="258,208,315,235"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DAkOmegaFieldInversionk.html#a20a2301c30b9c071889b1e33f40723d1" title=" " alt="" coords="239,259,334,285"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DATurbulenceModel.html#adba061b34197deb555c03c4e3ca27ac0" title=" " alt="" coords="189,310,384,351"/>
+</map>

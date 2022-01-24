@@ -1,6 +1,8 @@
 <map id="writeSurfaceSensitivityMap" name="writeSurfaceSensitivityMap">
-<area shape="rect" id="node2" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a0f936922d1d9efa2494fdc8443d01fb8" title="_writeOpenFoamHeader" alt="" coords="235,5,397,32"/>
-<area shape="rect" id="node3" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a8e43a4f1a3f9f54d2ee880c45c639a9b" title="getSurfaceConnectivity" alt="" coords="237,56,395,83"/>
-<area shape="rect" id="node4" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a0df62fe3472c26745359c34ac02663db" title="getSurfaceCoordinates" alt="" coords="239,107,393,133"/>
-<area shape="rect" id="node5" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab99bf2b8eef3a3a3dc9130cfe361a672" title="mapVector" alt="" coords="273,157,359,184"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,108,207,134"/>
+<area shape="rect" id="node2" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a0f936922d1d9efa2494fdc8443d01fb8" title=" " alt="" coords="477,20,656,46"/>
+<area shape="rect" id="node3" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ac90dbce095447fd1d513670dbb627608" title=" " alt="" coords="309,57,375,84"/>
+<area shape="rect" id="node4" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a8e43a4f1a3f9f54d2ee880c45c639a9b" title=" " alt="" coords="255,108,429,134"/>
+<area shape="rect" id="node5" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a0df62fe3472c26745359c34ac02663db" title=" " alt="" coords="257,158,427,185"/>
+<area shape="rect" id="node6" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab99bf2b8eef3a3a3dc9130cfe361a672" title=" " alt="" coords="296,209,388,236"/>
 </map>

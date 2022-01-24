@@ -1,4 +1,5 @@
 <map id="addStateConnections" name="addStateConnections">
-<area shape="rect" id="node2" href="$classFoam_1_1DAJacCondRdW.html#a6320c97a80c467a388c3a88fdcd31eb3" title="Foam::DAJacCondRdW\l::setupdRdWCon" alt="" coords="200,5,364,47"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAJacCondFdW.html#a38665183153112bc58257039d500089c" title="assign 1 to all non&#45;zero elements for the Jacobian connecitivyt matrix " alt="" coords="201,71,363,112"/>
+<area shape="rect" id="node1" title="a high&#45;level function to add connected state column indices to the connectivity matrix" alt="" coords="220,46,380,73"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAJacCondRdW.html#a6320c97a80c467a388c3a88fdcd31eb3" title=" " alt="" coords="5,5,172,47"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAJacCondFdW.html#a38665183153112bc58257039d500089c" title="assign 1 to all non&#45;zero elements for the Jacobian connecitivyt matrix" alt="" coords="5,71,172,112"/>
 </map>

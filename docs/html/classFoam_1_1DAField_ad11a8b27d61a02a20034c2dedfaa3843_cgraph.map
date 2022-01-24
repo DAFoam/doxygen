@@ -1,3 +1,4 @@
 <map id="pointVec2OFMesh" name="pointVec2OFMesh">
-<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a54f0942227984b5683264bdc6e53dd8e" title="get local Xv index for a given point index and coordinate component (x, y, or z) " alt="" coords="184,5,371,47"/>
+<area shape="rect" id="node1" title="assign the points in fvMesh of OpenFOAM based on the point vector" alt="" coords="5,13,144,39"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a54f0942227984b5683264bdc6e53dd8e" title="get local Xv index for a given point index and coordinate component (x, y, or z)" alt="" coords="192,5,393,47"/>
 </map>

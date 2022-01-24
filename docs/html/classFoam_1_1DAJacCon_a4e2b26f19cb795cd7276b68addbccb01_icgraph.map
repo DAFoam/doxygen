@@ -1,4 +1,5 @@
 <map id="setupJacobianConnections" name="setupJacobianConnections">
-<area shape="rect" id="node2" href="$classFoam_1_1DAJacCondRdW.html#a6320c97a80c467a388c3a88fdcd31eb3" title="Foam::DAJacCondRdW\l::setupdRdWCon" alt="" coords="232,5,396,47"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAJacCondFdW.html#a38665183153112bc58257039d500089c" title="assign 1 to all non&#45;zero elements for the Jacobian connecitivyt matrix " alt="" coords="233,71,395,112"/>
+<area shape="rect" id="node1" title="assign values in connections to a specific row idxI in conMat" alt="" coords="220,46,413,73"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAJacCondRdW.html#a6320c97a80c467a388c3a88fdcd31eb3" title=" " alt="" coords="5,5,172,47"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAJacCondFdW.html#a38665183153112bc58257039d500089c" title="assign 1 to all non&#45;zero elements for the Jacobian connecitivyt matrix" alt="" coords="5,71,172,112"/>
 </map>

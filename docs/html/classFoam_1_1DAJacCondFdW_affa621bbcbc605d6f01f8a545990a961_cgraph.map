@@ -1,6 +1,0 @@
-<map id="~DAJacCondFdW" name="~DAJacCondFdW">
-<area shape="rect" id="node2" href="$classFoam_1_1DAJacCondFdW.html#ac8bb3912a3ce86b15842e79d0b421204" title="clear members in parent and child objects " alt="" coords="215,5,265,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAJacCondFdW.html#a0d689ecbe7e63c7fdc9926b21df7d6b6" title="initializeJacCon" alt="" coords="183,56,297,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAJacCondFdW.html#a46b31838a7186ee8bb6fffb21d03b3ba" title="assign values for the objective function vector based on the face and cell value lists ..." alt="" coords="184,107,296,133"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAJacCondFdW.html#a38665183153112bc58257039d500089c" title="assign 1 to all non&#45;zero elements for the Jacobian connecitivyt matrix " alt="" coords="191,157,289,184"/>
-</map>

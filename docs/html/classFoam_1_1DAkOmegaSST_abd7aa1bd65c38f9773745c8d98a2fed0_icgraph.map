@@ -1,4 +1,4 @@
 <map id="kSource" name="kSource">
-<area shape="rect" id="node2" href="$classFoam_1_1DAkOmegaSST.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals " alt="" coords="260,5,364,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAkOmegaSST.html#a25c97787db263e1041de915a3ef4fb27" title="DomegaEff" alt="" coords="124,31,212,57"/>
+<area shape="rect" id="node1" title=" " alt="" coords="164,5,239,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAkOmegaSST.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="5,5,116,32"/>
 </map>

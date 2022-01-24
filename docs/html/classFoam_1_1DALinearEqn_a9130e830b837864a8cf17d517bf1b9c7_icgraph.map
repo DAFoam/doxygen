@@ -1,4 +1,4 @@
 <map id="myKSPMonitor" name="myKSPMonitor">
-<area shape="rect" id="node2" href="$classFoam_1_1DALinearEqn.html#ae89d42ca90d6cb8303862fa6d701d303" title="create a multi&#45;level, Richardson KSP object " alt="" coords="164,5,277,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DALinearEqn.html#a6d05df4f45d76502d1f4726e7d09f043" title="Destructor. " alt="" coords="325,31,432,57"/>
+<area shape="rect" id="node1" title="ksp monitor function" alt="" coords="169,5,288,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DALinearEqn.html#ae89d42ca90d6cb8303862fa6d701d303" title="create a multi&#45;level, Richardson KSP object" alt="" coords="5,5,121,32"/>
 </map>

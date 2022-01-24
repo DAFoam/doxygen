@@ -1,14 +1,6 @@
 <map id="DomegaEff" name="DomegaEff">
-<area shape="rect" id="node2" href="$classFoam_1_1DAkOmegaSST.html#a84a3bc9498c8fb66c9f6adab418be6e1" title="alphaOmega" alt="" coords="145,5,240,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAkOmegaSST.html#afae7408494d5f270a5b8b47ddc75f147" title="beta" alt="" coords="169,56,216,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAkOmegaSST.html#ac8891d1ebd5342ae151953407291c254" title="epsilonByk" alt="" coords="149,107,236,133"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAkOmegaSST.html#a312d02f8c5b337f556b9e7388dbffdf9" title="F1" alt="" coords="173,157,212,184"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DATurbulenceModel.html#a8ec0cfa6e40933dad3a642f390950937" title="get the nu field " alt="" coords="292,208,495,235"/>
-<area shape="rect" id="node7" href="$classFoam_1_1DAkOmegaSST.html#a3c753cf60b7d2683953ef4fe93e9e67e" title="F2" alt="" coords="173,259,212,285"/>
-<area shape="rect" id="node8" href="$classFoam_1_1DAkOmegaSST.html#a1a2499a88cd4108564c13f7623765df7" title="gamma" alt="" coords="160,309,225,336"/>
-<area shape="rect" id="node9" href="$classFoam_1_1DAkOmegaSST.html#a87cefbf14a13e5463aeb7ab314497135" title="GbyNu" alt="" coords="161,360,224,387"/>
-<area shape="rect" id="node10" href="$classFoam_1_1DAkOmegaSST.html#abd7aa1bd65c38f9773745c8d98a2fed0" title="kSource" alt="" coords="157,411,228,437"/>
-<area shape="rect" id="node11" href="$classFoam_1_1DAkOmegaSST.html#aaf8f6ba0b3a39d35811c05789df09119" title="omegaSource" alt="" coords="141,461,244,488"/>
-<area shape="rect" id="node12" href="$classFoam_1_1DAkOmegaSST.html#aca22f7dba2768403b9c83d5c19bc01d6" title="Pk" alt="" coords="173,512,212,539"/>
-<area shape="rect" id="node13" href="$classFoam_1_1DAkOmegaSST.html#aa60c947284ed701b5f5708d25d1808b5" title="Qsas" alt="" coords="166,563,219,589"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,100,83"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAkOmegaSST.html#a84a3bc9498c8fb66c9f6adab418be6e1" title=" " alt="" coords="148,5,253,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAkOmegaSST.html#a312d02f8c5b337f556b9e7388dbffdf9" title=" " alt="" coords="301,56,340,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DATurbulenceModel.html#a8ec0cfa6e40933dad3a642f390950937" title="get the nu field" alt="" coords="388,81,607,108"/>
 </map>

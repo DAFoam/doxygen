@@ -1,13 +1,13 @@
 <map id="setDAObjFuncList" name="setDAObjFuncList">
-<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#a8c7101a44780781d4eddd4a724cc954a" title="return the number of local cells " alt="" coords="231,5,341,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DALaplacianFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables " alt="" coords="201,57,371,98"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAScalarTransportFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables " alt="" coords="183,122,389,163"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DARhoSimpleCFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables " alt="" coords="191,187,381,229"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DASolidDisplacementFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables " alt="" coords="191,253,381,294"/>
-<area shape="rect" id="node7" href="$classFoam_1_1DATurboFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables " alt="" coords="208,318,364,359"/>
-<area shape="rect" id="node8" href="$classFoam_1_1DAPimpleFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables " alt="" coords="209,383,363,425"/>
-<area shape="rect" id="node9" href="$classFoam_1_1DAPisoFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables " alt="" coords="185,449,387,476"/>
-<area shape="rect" id="node10" href="$classFoam_1_1DASimpleTFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables " alt="" coords="205,501,367,542"/>
-<area shape="rect" id="node11" href="$classFoam_1_1DASimpleFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables " alt="" coords="209,566,363,607"/>
-<area shape="rect" id="node12" href="$classFoam_1_1DARhoSimpleFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables " alt="" coords="197,631,375,673"/>
+<area shape="rect" id="node1" title="initialize DASolver::daObjFuncPtrList_ one needs to call this before calling printAllObjFuncs" alt="" coords="275,303,411,330"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DALaplacianFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables" alt="" coords="25,5,207,47"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAScalarTransportFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables" alt="" coords="5,71,227,112"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DATurboFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables" alt="" coords="35,136,197,177"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DARhoSimpleCFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables" alt="" coords="16,201,216,243"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DASolidDisplacementFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables" alt="" coords="13,267,219,308"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DAPisoFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables" alt="" coords="7,333,225,359"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DAPimpleFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables" alt="" coords="33,384,199,425"/>
+<area shape="rect" id="node9" href="$classFoam_1_1DASimpleFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables" alt="" coords="33,449,199,491"/>
+<area shape="rect" id="node10" href="$classFoam_1_1DARhoSimpleFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables" alt="" coords="21,515,211,556"/>
+<area shape="rect" id="node11" href="$classFoam_1_1DASimpleTFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6" title="initialize fields and variables" alt="" coords="29,580,203,621"/>
 </map>

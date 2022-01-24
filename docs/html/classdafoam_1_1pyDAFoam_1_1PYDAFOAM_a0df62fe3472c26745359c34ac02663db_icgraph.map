@@ -1,6 +1,7 @@
 <map id="getSurfaceCoordinates" name="getSurfaceCoordinates">
-<area shape="rect" id="node2" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ad26ac7f00b7a0b4cd441a7a8086ab9e7" title="getTriangulatedMeshSurface" alt="" coords="208,5,396,32"/>
-<area shape="rect" id="node3" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a9a37af332c46ce5d38b00e0073632e9c" title="setMesh" alt="" coords="266,56,338,83"/>
-<area shape="rect" id="node4" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6850fa33c4c3d8412a9d9297146b21be" title="setSurfaceCoordinates" alt="" coords="225,107,379,133"/>
-<area shape="rect" id="node5" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab38312f7c1f6cebb0e88ccd0019efd29" title="writeSurfaceSensitivityMap" alt="" coords="211,157,393,184"/>
+<area shape="rect" id="node1" title=" " alt="" coords="260,81,431,108"/>
+<area shape="rect" id="node2" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a439021618c7727775303598328b17605" title=" " alt="" coords="5,5,212,32"/>
+<area shape="rect" id="node3" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a9a37af332c46ce5d38b00e0073632e9c" title=" " alt="" coords="70,56,147,83"/>
+<area shape="rect" id="node4" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6850fa33c4c3d8412a9d9297146b21be" title=" " alt="" coords="24,107,193,133"/>
+<area shape="rect" id="node5" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ab38312f7c1f6cebb0e88ccd0019efd29" title=" " alt="" coords="8,157,209,184"/>
 </map>

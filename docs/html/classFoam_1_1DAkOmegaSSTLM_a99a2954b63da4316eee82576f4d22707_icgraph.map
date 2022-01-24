@@ -1,4 +1,5 @@
 <map id="ReThetac" name="ReThetac">
-<area shape="rect" id="node2" href="$classFoam_1_1DAkOmegaSSTLM.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals " alt="" coords="245,5,349,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAkOmegaSSTLM.html#a1a2499a88cd4108564c13f7623765df7" title="gamma" alt="" coords="132,31,197,57"/>
+<area shape="rect" id="node1" title=" " alt="" coords="277,5,360,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAkOmegaSSTLM.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAkOmegaSSTLM.html#ae79372af5ff4da55c975b3e009efec11" title=" " alt="" coords="164,31,229,57"/>
 </map>

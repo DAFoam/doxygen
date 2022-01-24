@@ -1,5 +1,5 @@
 <map id="correctNut" name="correctNut">
-<area shape="rect" id="node2" href="$classFoam_1_1DASpalartAllmaras.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals " alt="" coords="177,5,281,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DASpalartAllmaras.html#ad8896b591084b5add2954f10e022e4d3" title="~DASpalartAllmaras" alt="" coords="371,56,512,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DASpalartAllmaras.html#a1de233c7b2a8f92ffe239b5dc36ae2a3" title="update any intermediate variables that are dependent on state variables and are used in calcResiduals..." alt="" coords="136,107,323,133"/>
+<area shape="rect" id="node1" title="update nut based on other turbulence variables and update the BCs" alt="" coords="264,31,355,57"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASpalartAllmaras.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="55,5,166,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASpalartAllmaras.html#a1de233c7b2a8f92ffe239b5dc36ae2a3" title="update any intermediate variables that are dependent on state variables and are used in calcResiduals" alt="" coords="5,56,216,83"/>
 </map>

@@ -1,6 +1,0 @@
-<map id="loop" name="loop">
-<area shape="rect" id="node2" href="$classFoam_1_1pimpleControlDF.html#a2ccaff4c460a7c2f5a7ed00ac8aec76d" title="criteriaSatisfied" alt="" coords="100,5,212,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1pimpleControlDF.html#a2f03da4430c98e30af58d425b1661fe7" title="finalIter" alt="" coords="123,56,189,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1pimpleControlDF.html#aaa936da334e29618ece019bd8a9aa06f" title="read" alt="" coords="133,107,179,133"/>
-<area shape="rect" id="node5" href="$classFoam_1_1pimpleControlDF.html#aecd0cd610a7247ca8746dd4435388eff" title="setFirstIterFlag" alt="" coords="101,157,211,184"/>
-</map>

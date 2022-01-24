@@ -1,5 +1,4 @@
 <map id="setOption" name="setOption">
-<area shape="rect" id="node2" href="$classFoam_1_1DAOption.html#aac22cd38f3d4adc69a4e35329c6abf92" title="return a reference of allOptions_ dictionary " alt="" coords="207,5,307,32"/>
-<area shape="rect" id="node3" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8" title="dafoam.pyDAFoam.PYDAFOAM.solve\lAdjoint" alt="" coords="132,57,381,98"/>
-<area shape="rect" id="node4" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a41d1b6acd0391722cd18fef30873cd2b" title="dafoam.pyDAFoam.PYDAFOAM.zero\lTimeAccurateAdjointVectors" alt="" coords="135,122,378,163"/>
+<area shape="rect" id="node1" title="set an option to subDict and key" alt="" coords="317,13,403,39"/>
+<area shape="rect" id="node2" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8" title=" " alt="" coords="5,5,269,47"/>
 </map>

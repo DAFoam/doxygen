@@ -1,3 +1,4 @@
 <map id="nuEff" name="nuEff">
-<area shape="rect" id="node2" href="$classFoam_1_1DATurbulenceModel.html#a8ec0cfa6e40933dad3a642f390950937" title="get the nu field " alt="" coords="107,5,145,32"/>
+<area shape="rect" id="node1" title="return effective viscosity" alt="" coords="5,5,60,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DATurbulenceModel.html#a8ec0cfa6e40933dad3a642f390950937" title="get the nu field" alt="" coords="108,5,147,32"/>
 </map>

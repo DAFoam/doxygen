@@ -1,3 +1,4 @@
 <map id="getLocalFaceIndex" name="getLocalFaceIndex">
-<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a73225f7f7dd1b12c9bc572b41250e11a" title="get global face index for a local face index " alt="" coords="185,5,324,32"/>
+<area shape="rect" id="node1" title="get local face index for a local face index" alt="" coords="204,5,347,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a73225f7f7dd1b12c9bc572b41250e11a" title="get global face index for a local face index" alt="" coords="5,5,156,32"/>
 </map>

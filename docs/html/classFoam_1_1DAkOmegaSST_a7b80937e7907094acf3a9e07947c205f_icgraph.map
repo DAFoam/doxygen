@@ -1,5 +1,5 @@
 <map id="setOmegaNearWall" name="setOmegaNearWall">
-<area shape="rect" id="node2" href="$classFoam_1_1DAkOmegaSST.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals " alt="" coords="459,28,563,54"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAkOmegaSST.html#a204764e3ebd41963c901b4dc646fed49" title="~DAkOmegaSST" alt="" coords="611,28,735,54"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAkOmegaSST.html#a636790623e3921c65f47923b9a21e512" title="specially treatment to correct epsilon BC " alt="" coords="189,78,411,105"/>
+<area shape="rect" id="node1" title="set omegaNearWall_ to near wall omega values" alt="" coords="457,5,605,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAkOmegaSST.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAkOmegaSST.html#a636790623e3921c65f47923b9a21e512" title="specially treatment to correct epsilon BC" alt="" coords="164,31,409,57"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="updateForceDir" name="updateForceDir">
-<area shape="rect" id="node2" href="$classFoam_1_1DAObjFuncForce.html#aff7d67902025442333a1a88cce51695e" title="calculate the value of objective function " alt="" coords="164,5,259,32"/>
+<area shape="rect" id="node1" title="dynamically adjust the force direction" alt="" coords="153,5,275,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAObjFuncForce.html#aff7d67902025442333a1a88cce51695e" title="calculate the value of objective function" alt="" coords="5,5,105,32"/>
 </map>

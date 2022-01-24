@@ -1,3 +1,4 @@
 <map id="syncDAOptionToActuatorDVs" name="syncDAOptionToActuatorDVs">
-<area shape="rect" id="node2" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a5134e15b0ef2c043d575c5496ea4b298" title="dafoam.pyDAFoam.PYDAFOAM.update\lDAOption" alt="" coords="251,5,508,47"/>
+<area shape="rect" id="node1" title="synchronize the values in DAOption and actuatorDiskDVs_" alt="" coords="328,13,537,39"/>
+<area shape="rect" id="node2" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a5134e15b0ef2c043d575c5496ea4b298" title=" " alt="" coords="5,5,280,47"/>
 </map>

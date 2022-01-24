@@ -1,3 +1,4 @@
 <map id="addConMatCell" name="addConMatCell">
-<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a06a1fcb98ee5f377d70e1d04b0e5dd61" title="get global adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="165,5,343,47"/>
+<area shape="rect" id="node1" title="add val to the gRow row in conMat, the column indice are the state (given by stateName) for a given c..." alt="" coords="5,13,127,39"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a06a1fcb98ee5f377d70e1d04b0e5dd61" title="get global adjoint index for a given state name, cell/face indxI and its component (optional,..." alt="" coords="175,5,367,47"/>
 </map>

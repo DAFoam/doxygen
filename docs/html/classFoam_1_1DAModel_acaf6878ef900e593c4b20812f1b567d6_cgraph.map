@@ -1,3 +1,4 @@
 <map id="correctBoundaryConditions" name="correctBoundaryConditions">
-<area shape="rect" id="node2" href="$classFoam_1_1DATurbulenceModel.html#ac5cf193857b59c2fcaa472ac06847a0d" title="update turbulence variable boundary values " alt="" coords="232,5,419,47"/>
+<area shape="rect" id="node1" title="correct boundary conditions for model states" alt="" coords="5,13,204,39"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DATurbulenceModel.html#ac5cf193857b59c2fcaa472ac06847a0d" title="update turbulence variable boundary values" alt="" coords="252,5,459,47"/>
 </map>

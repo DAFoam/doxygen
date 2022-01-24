@@ -1,3 +1,4 @@
 <map id="addConMatCell" name="addConMatCell">
-<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#aa3634adc32833f151b9489b57320ecd4" title="calculate DAJacCon::stateBoundaryCon_ " alt="" coords="165,5,329,32"/>
+<area shape="rect" id="node1" title="add val to the gRow row in conMat, the column indice are the state (given by stateName) for a given c..." alt="" coords="232,5,353,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#aa3634adc32833f151b9489b57320ecd4" title="calculate DAJacCon::stateBoundaryCon_" alt="" coords="5,5,184,32"/>
 </map>

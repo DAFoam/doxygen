@@ -1,3 +1,4 @@
 <map id="updateDAOption" name="updateDAOption">
-<area shape="rect" id="node2" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8" title="dafoam.pyDAFoam.PYDAFOAM.solve\lAdjoint" alt="" coords="172,5,421,47"/>
+<area shape="rect" id="node1" title="update the allOptions_ dict in DAOption based on the pyOptions from pyDAFoam" alt="" coords="317,13,447,39"/>
+<area shape="rect" id="node2" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a93afb83ae6a96dc3e7f6d520b4b156a8" title=" " alt="" coords="5,5,269,47"/>
 </map>

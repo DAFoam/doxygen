@@ -1,6 +1,7 @@
 <map id="assignStateGradient2Vec" name="assignStateGradient2Vec">
-<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#a2ee033358cb8925351994d6881a05042" title="compute dFdW using AD " alt="" coords="249,5,349,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#a12ec2b74f32a1640660356872d86a0aa" title="~DASolver" alt="" coords="421,81,508,108"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#a20f41818db76a706a581003af4faf454" title="compute dRdWOld^T*Psi " alt="" coords="224,107,373,133"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DASolver.html#a8a41381c0bd6d3b8d89aa0dd62582872" title="compute [dRdW]^T*Psi " alt="" coords="234,157,363,184"/>
+<area shape="rect" id="node1" title="set the reverse&#45;mode AD derivatives from the state variables in OpenFOAM to vecY" alt="" coords="208,81,393,108"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#a2ee033358cb8925351994d6881a05042" title="compute dFdW using AD" alt="" coords="31,5,134,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#a95d7090b578fe0387188badfd02afaa3" title=" " alt="" coords="17,56,148,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#a20f41818db76a706a581003af4faf454" title="compute dRdWOld^T*Psi" alt="" coords="5,107,160,133"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DASolver.html#a8a41381c0bd6d3b8d89aa0dd62582872" title="compute [dRdW]^T*Psi" alt="" coords="17,157,149,184"/>
 </map>

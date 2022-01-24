@@ -1,4 +1,4 @@
 <map id="find_index" name="find_index">
-<area shape="rect" id="node2" href="$classFoam_1_1DAColoring.html#aa2042306c5d253b96c1ff8d7c6f01737" title="a parallel distance&#45;2 graph coloring function " alt="" coords="135,5,263,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAColoring.html#ad7666e8d64654db3ce2215d113c6b715" title="Destructor. " alt="" coords="311,31,408,57"/>
+<area shape="rect" id="node1" title="find the index of a prescribed value in an array" alt="" coords="196,5,285,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAColoring.html#aa2042306c5d253b96c1ff8d7c6f01737" title="a parallel distance&#45;2 graph coloring function" alt="" coords="5,5,148,32"/>
 </map>

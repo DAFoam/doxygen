@@ -1,4 +1,5 @@
 <map id="correctEpsilonBoundaryConditions" name="correctEpsilonBoundaryConditions">
-<area shape="rect" id="node2" href="$classFoam_1_1DAkEpsilon.html#a8f290a496113d290b3c0d2b1df6690c8" title="save near wall epsilon values to epsilonNearWall_ " alt="" coords="276,5,423,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAkEpsilon.html#aa4327d4eb9c9e68c2d720fef8feb52f5" title="set epsilonNearWall_ to near wall epsilon values " alt="" coords="281,56,418,83"/>
+<area shape="rect" id="node1" title="specially treatment to correct epsilon BC" alt="" coords="5,31,251,57"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAkEpsilon.html#a8f290a496113d290b3c0d2b1df6690c8" title="save near wall epsilon values to epsilonNearWall_" alt="" coords="299,5,457,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAkEpsilon.html#aa4327d4eb9c9e68c2d720fef8feb52f5" title="set epsilonNearWall_ to near wall epsilon values" alt="" coords="304,56,452,83"/>
 </map>

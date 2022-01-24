@@ -1,5 +1,6 @@
 <map id="F1" name="F1">
-<area shape="rect" id="node2" href="$classFoam_1_1DAkOmegaSSTLM.html#a16fc149a37370861590f3a2480766598" title="F1SST" alt="" coords="92,5,155,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DATurbulenceModel.html#a8ec0cfa6e40933dad3a642f390950937" title="get the nu field " alt="" coords="203,56,405,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAkOmegaSSTLM.html#affbf03d0b7d23966e52280586ff3e312" title="F3" alt="" coords="104,107,143,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,44,83"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAkOmegaSSTLM.html#a16fc149a37370861590f3a2480766598" title=" " alt="" coords="92,5,155,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DATurbulenceModel.html#a8ec0cfa6e40933dad3a642f390950937" title="get the nu field" alt="" coords="203,56,421,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAkOmegaSSTLM.html#affbf03d0b7d23966e52280586ff3e312" title=" " alt="" coords="104,107,143,133"/>
 </map>

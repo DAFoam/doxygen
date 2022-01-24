@@ -1,3 +1,4 @@
 <map id="calcLocalIdxLists" name="calcLocalIdxLists">
-<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a91f26f905486092d25af1c1150e695de" title="get local adjoint index for a given state name, cell/face indxI and its component (optional..." alt="" coords="176,5,351,32"/>
+<area shape="rect" id="node1" title="compute local lists such as adjStateName4LocalAdjIdx and cellIFaceI4LocalAdjIdx;" alt="" coords="5,5,137,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a91f26f905486092d25af1c1150e695de" title="get local adjoint index for a given state name, cell/face indxI and its component (optional,..." alt="" coords="185,5,379,32"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="DnuTildaEff" name="DnuTildaEff">
-<area shape="rect" id="node2" href="$classFoam_1_1DASpalartAllmaras.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals " alt="" coords="144,5,248,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DASpalartAllmaras.html#ad8896b591084b5add2954f10e022e4d3" title="~DASpalartAllmaras" alt="" coords="296,31,437,57"/>
+<area shape="rect" id="node1" title="Return the effective diffusivity for nuTilda." alt="" coords="164,5,261,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASpalartAllmaras.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="5,5,116,32"/>
 </map>
