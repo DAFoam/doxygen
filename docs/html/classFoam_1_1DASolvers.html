@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.10</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -287,6 +287,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae26dff45e21d7b09da92d1036185a2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a063273142c31f59245a45b50390221a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a063273142c31f59245a45b50390221a8">setPrimalBoundaryConditions</a> (const label printInfo=1)</td></tr>
 <tr class="separator:a063273142c31f59245a45b50390221a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d4958a11951162170fa755b9e6797d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a7d4958a11951162170fa755b9e6797d5">calcFvSource</a> (Vec center, Vec radius, Vec force, Vec <a class="el" href="createRefsSimpleT_8H.html#a9a0c1fa985c6e79bb4cdc55fa06b9b50">fvSource</a>)</td></tr>
+<tr class="memdesc:a7d4958a11951162170fa755b9e6797d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate the fvSource based on the force profile  <a href="classFoam_1_1DASolvers.html#a7d4958a11951162170fa755b9e6797d5">More...</a><br /></td></tr>
+<tr class="separator:a7d4958a11951162170fa755b9e6797d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3812a2579887ab1efe9171fcccffb611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a3812a2579887ab1efe9171fcccffb611">calcdFvSourcedInputsTPsiAD</a> (const word mode, Vec center, Vec radius, Vec force, Vec <a class="el" href="createRefsTurbo_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a>, Vec prod)</td></tr>
+<tr class="separator:a3812a2579887ab1efe9171fcccffb611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e7a5f4786f6cdbd9dcb8619bc2a4a52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a2e7a5f4786f6cdbd9dcb8619bc2a4a52">calcForceProfile</a> (Vec xvVec, Vec stateVec, Vec fProfileVec, Vec rProfileVec)</td></tr>
+<tr class="separator:a2e7a5f4786f6cdbd9dcb8619bc2a4a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a534f2996e4ed4a5735e2cc40592cfd1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolvers.html#a534f2996e4ed4a5735e2cc40592cfd1d">calcdForcedStateTPsiAD</a> (const word mode, Vec xvVec, Vec stateVec, Vec psiVec, Vec prodVec)</td></tr>
+<tr class="separator:a534f2996e4ed4a5735e2cc40592cfd1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -2318,7 +2327,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00429">429</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l03477">PYDAFOAM::updateDAOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l03557">PYDAFOAM::updateDAOption()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -2472,7 +2481,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00455">455</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01888">PYDAFOAM::solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01909">PYDAFOAM::solveAdjoint()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -2543,7 +2552,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00467">467</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01888">PYDAFOAM::solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01909">PYDAFOAM::solveAdjoint()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -3288,6 +3297,232 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00615">615</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
+<a id="a7d4958a11951162170fa755b9e6797d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d4958a11951162170fa755b9e6797d5">&#9670;&nbsp;</a></span>calcFvSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calcFvSource </td>
+          <td>(</td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>force</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>fvSource</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>calculate the fvSource based on the force profile </p>
+
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00621">621</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+<p class="reference">References <a class="el" href="createRefsPimple_8H_source.html#l00013">fvSource</a>.</p>
+
+</div>
+</div>
+<a id="a3812a2579887ab1efe9171fcccffb611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3812a2579887ab1efe9171fcccffb611">&#9670;&nbsp;</a></span>calcdFvSourcedInputsTPsiAD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calcdFvSourcedInputsTPsiAD </td>
+          <td>(</td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>force</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>psi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>prod</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00630">630</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+<p class="reference">References <a class="el" href="dafoam__plot3dtransform_8py_source.html#l00021">dafoam_plot3dtransform::mode</a>, and <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00014">psi</a>.</p>
+
+</div>
+</div>
+<a id="a2e7a5f4786f6cdbd9dcb8619bc2a4a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e7a5f4786f6cdbd9dcb8619bc2a4a52">&#9670;&nbsp;</a></span>calcForceProfile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calcForceProfile </td>
+          <td>(</td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>xvVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>stateVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>fProfileVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>rProfileVec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00641">641</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+</div>
+</div>
+<a id="a534f2996e4ed4a5735e2cc40592cfd1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a534f2996e4ed4a5735e2cc40592cfd1d">&#9670;&nbsp;</a></span>calcdForcedStateTPsiAD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calcdForcedStateTPsiAD </td>
+          <td>(</td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>xvVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>stateVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>psiVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>prodVec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DASolvers_8H_source.html#l00650">650</a> of file <a class="el" href="DASolvers_8H_source.html">DASolvers.H</a>.</p>
+
+<p class="reference">References <a class="el" href="dafoam__plot3dtransform_8py_source.html#l00021">dafoam_plot3dtransform::mode</a>.</p>
 
 </div>
 </div>

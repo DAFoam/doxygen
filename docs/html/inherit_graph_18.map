@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classFoam_1_1DASolvers.html" title=" " alt="" coords="5,5,95,32"/>
+<area shape="rect" id="node1" href="$classFoam_1_1DAMotion.html" title=" " alt="" coords="5,56,92,83"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAMotionDummy.html" title=" " alt="" coords="176,5,315,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAMotionTranslation.html" title=" " alt="" coords="167,56,324,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAMotionTranslationCoupled.html" title=" " alt="" coords="140,107,351,133"/>
 </map>

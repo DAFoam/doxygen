@@ -1,5 +1,5 @@
 <map id="solvePrimal" name="solvePrimal">
-<area shape="rect" id="node1" title="solve the primal equations" alt="" coords="5,198,104,225"/>
+<area shape="rect" id="node1" title="solve the primal equations" alt="" coords="5,223,104,250"/>
 <area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#a6cec9caca72b22c3e006bd0fbb9c422a" title="calculate the norms of all residuals and print to screen" alt="" coords="174,5,377,47"/>
 <area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#abb3f34f5634fe617414ce256738e40b4" title="check the mesh quality and return meshOK" alt="" coords="172,71,379,98"/>
 <area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#aab4e3d9fbdff96d71bcf7635a87107a3" title="check whether the min residual in primal satisfy the prescribed tolerance" alt="" coords="152,122,399,149"/>
@@ -8,4 +8,5 @@
 <area shape="rect" id="node7" href="$classFoam_1_1DASolver.html#afe40e08050edfc54026142d6353aa408" title="calculate the values of all objective functions and print them to screen" alt="" coords="447,241,628,283"/>
 <area shape="rect" id="node8" href="$classFoam_1_1DASolver.html#a97b2a938b423ad81fcd6982dd375fd01" title="set the state vector based on the latest fields in OpenFOAM" alt="" coords="182,325,369,367"/>
 <area shape="rect" id="node9" href="$classFoam_1_1DASolver.html#ad11a8b27d61a02a20034c2dedfaa3843" title="assign the points in fvMesh of OpenFOAM based on the point vector" alt="" coords="176,391,375,432"/>
+<area shape="rect" id="node10" href="$classFoam_1_1DASolver.html#a8ea102cc0e78d3d0ac6df4d9562bc327" title="write the failed mesh to disk" alt="" coords="155,457,395,483"/>
 </map>

@@ -1,16 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classFoam_1_1DAObjFunc.html" title=" " alt="" coords="5,309,99,336"/>
-<area shape="rect" id="node2" href="$classFoam_1_1DAObjFuncCenterOfPressure.html" title=" " alt="" coords="151,5,357,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAObjFuncFieldInversion.html" title=" " alt="" coords="162,56,346,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAObjFuncForce.html" title=" " alt="" coords="190,107,318,133"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAObjFuncMass.html" title=" " alt="" coords="191,157,317,184"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DAObjFuncMassFlowRate.html" title=" " alt="" coords="160,208,348,235"/>
-<area shape="rect" id="node7" href="$classFoam_1_1DAObjFuncMeshQualityKS.html" title=" " alt="" coords="158,259,350,285"/>
-<area shape="rect" id="node8" href="$classFoam_1_1DAObjFuncMoment.html" title=" " alt="" coords="181,309,327,336"/>
-<area shape="rect" id="node9" href="$classFoam_1_1DAObjFuncTotalPressure.html" title=" " alt="" coords="164,360,344,387"/>
-<area shape="rect" id="node10" href="$classFoam_1_1DAObjFuncTotalPressureRatio.html" title=" " alt="" coords="147,411,361,437"/>
-<area shape="rect" id="node11" href="$classFoam_1_1DAObjFuncTotalTemperatureRatio.html" title=" " alt="" coords="151,462,357,503"/>
-<area shape="rect" id="node12" href="$classFoam_1_1DAObjFuncVariableVolSum.html" title=" " alt="" coords="157,528,351,555"/>
-<area shape="rect" id="node13" href="$classFoam_1_1DAObjFuncVonMisesStressKS.html" title=" " alt="" coords="148,579,360,605"/>
-<area shape="rect" id="node14" href="$classFoam_1_1DAObjFuncWallHeatFlux.html" title=" " alt="" coords="164,629,344,656"/>
+<area shape="rect" id="node1" href="$classFoam_1_1DAIndex.html" title=" " alt="" coords="5,5,83,32"/>
 </map>

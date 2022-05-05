@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.10</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -106,6 +106,8 @@ Functions</h2></td></tr>
 <tr class="separator:a53dadff36328994839ccbbabf707661e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dadc87e51da949dcb736586822d2bda"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#a1dadc87e51da949dcb736586822d2bda">calcFDSens</a> (objFun=<a class="el" href="namespacedafoam_1_1optFuncs.html#a45a34455439fc2923988270f3f678c65">calcObjFuncValues</a>, fileName=None)</td></tr>
 <tr class="separator:a1dadc87e51da949dcb736586822d2bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa7f547e959921a448d815d98d70161"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedafoam_1_1optFuncs.html#aaaa7f547e959921a448d815d98d70161">runLowOrderPrimal4PC</a> ()</td></tr>
+<tr class="separator:aaaa7f547e959921a448d815d98d70161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -116,7 +118,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">    DAFoam  : Discrete Adjoint with OpenFOAM
-    Version : v2
+    Version : v3
 
     Description:
     Common functions for DAFoam optimization setup.</pre> </div><h2 class="groupheader">Function Documentation</h2>
@@ -137,7 +139,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <pre class="fragment">Update the design surface and run the primal solver to get objective function values.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00026">26</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00027">27</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -159,7 +161,7 @@ Variables</h2></td></tr>
 <pre class="fragment">Update the design surface and run the primal solver to get objective function values.
 This is the multipoint version of calcObjFuncValues
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00068">68</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00069">69</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -181,7 +183,7 @@ This is the multipoint version of calcObjFuncValues
 <pre class="fragment">Update the design surface and run the primal solver to get objective function values.
 This is the unsteady adjoint version of calcObjFuncValues
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00139">139</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00140">140</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -212,7 +214,7 @@ This is the unsteady adjoint version of calcObjFuncValues
 </div><div class="memdoc">
 <pre class="fragment">Run the adjoint solver and get objective function sensitivities.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00186">186</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00187">187</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -244,7 +246,7 @@ This is the unsteady adjoint version of calcObjFuncValues
 <pre class="fragment">Run the adjoint solver and get objective function sensitivities.
 This is the multipoint version of calcObjFuncSens
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00232">232</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00233">233</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -276,7 +278,7 @@ This is the multipoint version of calcObjFuncSens
 <pre class="fragment">Run the adjoint solver and get objective function sensitivities.
 This is the unsteady adjoint version of calcObjFuncSens
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00305">305</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00306">306</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -297,7 +299,7 @@ This is the unsteady adjoint version of calcObjFuncSens
 </div><div class="memdoc">
 <pre class="fragment">Just run the primal
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00394">394</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00395">395</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -334,7 +336,7 @@ This is the unsteady adjoint version of calcObjFuncSens
 </div><div class="memdoc">
 <pre class="fragment">Just run the primal and adjoint
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00406">406</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00407">407</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -366,7 +368,7 @@ This is the unsteady adjoint version of calcObjFuncSens
 <pre class="fragment">Run the forward mode AD for the primal solver to compute the brute force total
 derivative. This is primarily used in verification of the adjoint accuracy
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00437">437</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00439">439</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -428,7 +430,7 @@ derivative. This is primarily used in verification of the adjoint accuracy
 <pre class="fragment">Adjust the angle of attack or pitch to match the target lift.
 This is usually needed for wing aerodynamic optimization
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00451">451</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00454">454</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -459,7 +461,26 @@ This is usually needed for wing aerodynamic optimization
 </div><div class="memdoc">
 <pre class="fragment">Compute finite-difference sensitivity
 </pre> 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00488">488</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00491">491</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+
+</div>
+</div>
+<a id="aaaa7f547e959921a448d815d98d70161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaa7f547e959921a448d815d98d70161">&#9670;&nbsp;</a></span>runLowOrderPrimal4PC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def dafoam.optFuncs.runLowOrderPrimal4PC </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00544">544</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -476,7 +497,7 @@ This is usually needed for wing aerodynamic optimization
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00023">23</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00024">24</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>
@@ -492,7 +513,7 @@ This is usually needed for wing aerodynamic optimization
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00023">23</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optFuncs_8py_source.html#l00024">24</a> of file <a class="el" href="optFuncs_8py_source.html">optFuncs.py</a>.</p>
 
 </div>
 </div>

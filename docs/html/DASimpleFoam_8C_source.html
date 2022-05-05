@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v2.2.10</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -75,7 +75,7 @@ $(function() {
 <a href="DASimpleFoam_8C.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*---------------------------------------------------------------------------*\</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">    DAFoam  : Discrete Adjoint with OpenFOAM</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    Version : v2</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    Version : v3</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    This class is modified from OpenFOAM&#39;s source code</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    applications/solvers/incompressible/simpleFoam</span></div>
@@ -148,7 +148,7 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="classFoam_1_1DASolver.html#ae3c606eef80cef4e7979e2d4db2cac02">daCheckMeshPtr_</a>.reset(<span class="keyword">new</span> <a class="code" href="classFoam_1_1DACheckMesh.html">DACheckMesh</a>(<a class="code" href="classFoam_1_1DASolver.html#ae6f6a82b1e7a710477a72886a1bb3197">daOptionPtr_</a>(), <a class="code" href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>, <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>));</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classFoam_1_1DASolver.html#a98f8b331895b7d0218e1fec776274558">daLinearEqnPtr_</a>.reset(<span class="keyword">new</span> <a class="code" href="classFoam_1_1DALinearEqn.html">DALinearEqn</a>(<a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, <a class="code" href="classFoam_1_1DASolver.html#ae6f6a82b1e7a710477a72886a1bb3197">daOptionPtr_</a>()));</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    this-&gt;<a class="code" href="classFoam_1_1DASolver.html#acdc7ce58473b47ad8ed789877835ca36">setDAObjFuncList</a>();</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// initialize fvSource and compute the source term</span></div>
@@ -199,70 +199,82 @@ $(function() {
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span> (!meshOK)</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">// if the forwardModeAD is active, we need to set the seed here</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="setForwardADSeeds_8H.html">setForwardADSeeds.H</a>&quot;</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="code" href="classFoam_1_1DASolver.html#a21a5148ea30de4e7d65c42aed3b78643">primalMinRes_</a> = 1e10;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    label printInterval = <a class="code" href="classFoam_1_1DASolver.html#ae6f6a82b1e7a710477a72886a1bb3197">daOptionPtr_</a>-&gt;getOption&lt;label&gt;(<span class="stringliteral">&quot;printInterval&quot;</span>);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    label printToScreen = 0;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">while</span> (this-&gt;<a class="code" href="classFoam_1_1DASolver.html#a132776bede8c2b661f995f2b5397b19f">loop</a>(<a class="code" href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>)) <span class="comment">// using simple.loop() will have seg fault in parallel</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    {</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        printToScreen = this-&gt;<a class="code" href="classFoam_1_1DASolver.html#adba061b34197deb555c03c4e3ca27ac0">isPrintTime</a>(<a class="code" href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>, printInterval);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">if</span> (printToScreen)</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            Info &lt;&lt; <span class="stringliteral">&quot;Time = &quot;</span> &lt;&lt; <a class="code" href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>.timeName() &lt;&lt; nl &lt;&lt; endl;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <a class="code" href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a>.storePrevIter();</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="comment">// --- Pressure-velocity SIMPLE corrector</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        {</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="UEqnSimple_8H.html">UEqnSimple.H</a>&quot;</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pEqnSimple_8H.html">pEqnSimple.H</a>&quot;</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        }</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <a class="code" href="createRefsPimple_8H.html#aaa15f2fa61d58ef55036975f0a15cd3d">laminarTransport</a>.correct();</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <a class="code" href="classFoam_1_1DASimpleFoam.html#a7539cf8ad3e7b7c8ef398043d956d8fc">daTurbulenceModelPtr_</a>-&gt;correct();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        this-&gt;<a class="code" href="classFoam_1_1DASolver.html#a8ea102cc0e78d3d0ac6df4d9562bc327">writeFailedMesh</a>();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">// if the forwardModeAD is active, we need to set the seed here</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="setForwardADSeeds_8H.html">setForwardADSeeds.H</a>&quot;</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    word divUScheme = <span class="stringliteral">&quot;div(phi,U)&quot;</span>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classFoam_1_1DASolver.html#ae6f6a82b1e7a710477a72886a1bb3197">daOptionPtr_</a>-&gt;getSubDictOption&lt;label&gt;(<span class="stringliteral">&quot;runLowOrderPrimal4PC&quot;</span>, <span class="stringliteral">&quot;active&quot;</span>))</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classFoam_1_1DASolver.html#ae6f6a82b1e7a710477a72886a1bb3197">daOptionPtr_</a>-&gt;getSubDictOption&lt;label&gt;(<span class="stringliteral">&quot;runLowOrderPrimal4PC&quot;</span>, <span class="stringliteral">&quot;isPC&quot;</span>))</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            Info &lt;&lt; <span class="stringliteral">&quot;Using low order div scheme for primal solution .... &quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            divUScheme = <span class="stringliteral">&quot;div(pc)&quot;</span>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <a class="code" href="classFoam_1_1DASolver.html#a21a5148ea30de4e7d65c42aed3b78643">primalMinRes_</a> = 1e10;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    label printInterval = <a class="code" href="classFoam_1_1DASolver.html#ae6f6a82b1e7a710477a72886a1bb3197">daOptionPtr_</a>-&gt;getOption&lt;label&gt;(<span class="stringliteral">&quot;printInterval&quot;</span>);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    label printToScreen = 0;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">while</span> (this-&gt;<a class="code" href="classFoam_1_1DASolver.html#a132776bede8c2b661f995f2b5397b19f">loop</a>(<a class="code" href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>)) <span class="comment">// using simple.loop() will have seg fault in parallel</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        printToScreen = this-&gt;<a class="code" href="classFoam_1_1DASolver.html#adba061b34197deb555c03c4e3ca27ac0">isPrintTime</a>(<a class="code" href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>, printInterval);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">if</span> (printToScreen)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            Info &lt;&lt; <span class="stringliteral">&quot;Time = &quot;</span> &lt;&lt; <a class="code" href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>.timeName() &lt;&lt; nl &lt;&lt; endl;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">if</span> (printToScreen)</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <a class="code" href="classFoam_1_1DASimpleFoam.html#a7539cf8ad3e7b7c8ef398043d956d8fc">daTurbulenceModelPtr_</a>-&gt;printYPlus();</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            this-&gt;<a class="code" href="classFoam_1_1DASolver.html#afe40e08050edfc54026142d6353aa408">printAllObjFuncs</a>();</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            Info &lt;&lt; <span class="stringliteral">&quot;ExecutionTime = &quot;</span> &lt;&lt; <a class="code" href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>.elapsedCpuTime() &lt;&lt; <span class="stringliteral">&quot; s&quot;</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;  ClockTime = &quot;</span> &lt;&lt; <a class="code" href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>.elapsedClockTime() &lt;&lt; <span class="stringliteral">&quot; s&quot;</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                 &lt;&lt; nl &lt;&lt; endl;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <a class="code" href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a>.storePrevIter();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="comment">// --- Pressure-velocity SIMPLE corrector</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="UEqnSimple_8H.html">UEqnSimple.H</a>&quot;</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pEqnSimple_8H.html">pEqnSimple.H</a>&quot;</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <a class="code" href="createRefsPimple_8H.html#aaa15f2fa61d58ef55036975f0a15cd3d">laminarTransport</a>.correct();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <a class="code" href="classFoam_1_1DASimpleFoam.html#a7539cf8ad3e7b7c8ef398043d956d8fc">daTurbulenceModelPtr_</a>-&gt;correct();</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <a class="code" href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>.write();</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    this-&gt;<a class="code" href="classFoam_1_1DASolver.html#a92272a42a157b775ffa7d17b84f3718f">writeAssociatedFields</a>();</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    this-&gt;<a class="code" href="classFoam_1_1DASolver.html#a6cec9caca72b22c3e006bd0fbb9c422a">calcPrimalResidualStatistics</a>(<span class="stringliteral">&quot;print&quot;</span>);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="comment">// primal converged, assign the OpenFoam fields to the state vec wVec</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    this-&gt;<a class="code" href="classFoam_1_1DASolver.html#a97b2a938b423ad81fcd6982dd375fd01">ofField2StateVec</a>(wVec);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">// write the mesh to files</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.write();</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    Info &lt;&lt; <span class="stringliteral">&quot;End\n&quot;</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;         &lt;&lt; endl;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">if</span> (printToScreen)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <a class="code" href="classFoam_1_1DASimpleFoam.html#a7539cf8ad3e7b7c8ef398043d956d8fc">daTurbulenceModelPtr_</a>-&gt;printYPlus();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            this-&gt;<a class="code" href="classFoam_1_1DASolver.html#afe40e08050edfc54026142d6353aa408">printAllObjFuncs</a>();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            Info &lt;&lt; <span class="stringliteral">&quot;ExecutionTime = &quot;</span> &lt;&lt; <a class="code" href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>.elapsedCpuTime() &lt;&lt; <span class="stringliteral">&quot; s&quot;</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;  ClockTime = &quot;</span> &lt;&lt; <a class="code" href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>.elapsedClockTime() &lt;&lt; <span class="stringliteral">&quot; s&quot;</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                 &lt;&lt; nl &lt;&lt; endl;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        }</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <a class="code" href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>.write();</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    this-&gt;<a class="code" href="classFoam_1_1DASolver.html#a92272a42a157b775ffa7d17b84f3718f">writeAssociatedFields</a>();</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classFoam_1_1DASolver.html#aab4e3d9fbdff96d71bcf7635a87107a3">checkResidualTol</a>();</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;} <span class="comment">// End namespace Foam</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    this-&gt;<a class="code" href="classFoam_1_1DASolver.html#a6cec9caca72b22c3e006bd0fbb9c422a">calcPrimalResidualStatistics</a>(<span class="stringliteral">&quot;print&quot;</span>);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="comment">// primal converged, assign the OpenFoam fields to the state vec wVec</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    this-&gt;<a class="code" href="classFoam_1_1DASolver.html#a97b2a938b423ad81fcd6982dd375fd01">ofField2StateVec</a>(wVec);</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment">// ************************************************************************* //</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="comment">// write the mesh to files</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.write();</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    Info &lt;&lt; <span class="stringliteral">&quot;End\n&quot;</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;         &lt;&lt; endl;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classFoam_1_1DASolver.html#aab4e3d9fbdff96d71bcf7635a87107a3">checkResidualTol</a>();</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;}</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;} <span class="comment">// End namespace Foam</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment">// ************************************************************************* //</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassFoam_1_1DASolver_html_a8ea102cc0e78d3d0ac6df4d9562bc327"><div class="ttname"><a href="classFoam_1_1DASolver.html#a8ea102cc0e78d3d0ac6df4d9562bc327">Foam::DASolver::writeFailedMesh</a></div><div class="ttdeci">void writeFailedMesh()</div><div class="ttdoc">write the failed mesh to disk</div><div class="ttdef"><b>Definition:</b> <a href="DASolver_8C_source.html#l05485">DASolver.C:5485</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DASimpleFoam_html_aec100f6379dde0beff62b0a6cbf063bc"><div class="ttname"><a href="classFoam_1_1DASimpleFoam.html#aec100f6379dde0beff62b0a6cbf063bc">Foam::DASimpleFoam::DASimpleFoam</a></div><div class="ttdeci">DASimpleFoam(char *argsAll, PyObject *pyOptions)</div><div class="ttdef"><b>Definition:</b> <a href="DASimpleFoam_8C_source.html#l00041">DASimpleFoam.C:41</a></div></div>
 <div class="ttc" id="acreateRefsRhoSimpleC_8H_html_a5dda3394a2d970c17cbed23a149ebab2"><div class="ttname"><a href="createRefsRhoSimpleC_8H.html#a5dda3394a2d970c17cbed23a149ebab2">allOptions</a></div><div class="ttdeci">const dictionary &amp; allOptions</div><div class="ttdef"><b>Definition:</b> <a href="createRefsRhoSimpleC_8H_source.html#l00015">createRefsRhoSimpleC.H:15</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DASolver_html_a132776bede8c2b661f995f2b5397b19f"><div class="ttname"><a href="classFoam_1_1DASolver.html#a132776bede8c2b661f995f2b5397b19f">Foam::DASolver::loop</a></div><div class="ttdeci">label loop(Time &amp;runTime)</div><div class="ttdoc">return whether to loop the primal solution, similar to runTime::loop() except we don't do file IO</div><div class="ttdef"><b>Definition:</b> <a href="DASolver_8C_source.html#l00098">DASolver.C:98</a></div></div>
@@ -278,10 +290,10 @@ $(function() {
 <div class="ttc" id="aclassFoam_1_1DASolver_html_ae6f6a82b1e7a710477a72886a1bb3197"><div class="ttname"><a href="classFoam_1_1DASolver.html#ae6f6a82b1e7a710477a72886a1bb3197">Foam::DASolver::daOptionPtr_</a></div><div class="ttdeci">autoPtr&lt; DAOption &gt; daOptionPtr_</div><div class="ttdoc">DAOption pointer.</div><div class="ttdef"><b>Definition:</b> <a href="DASolver_8H_source.html#l00075">DASolver.H:75</a></div></div>
 <div class="ttc" id="aDASimpleFoam_8H_html"><div class="ttname"><a href="DASimpleFoam_8H.html">DASimpleFoam.H</a></div></div>
 <div class="ttc" id="acreateRefsPimple_8H_html_a334650304cdcdff41898bee9eaf2e3db"><div class="ttname"><a href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a></div><div class="ttdeci">volScalarField &amp; p</div><div class="ttdef"><b>Definition:</b> <a href="createRefsPimple_8H_source.html#l00006">createRefsPimple.H:6</a></div></div>
-<div class="ttc" id="aclassFoam_1_1DASolver_html_a6cec9caca72b22c3e006bd0fbb9c422a"><div class="ttname"><a href="classFoam_1_1DASolver.html#a6cec9caca72b22c3e006bd0fbb9c422a">Foam::DASolver::calcPrimalResidualStatistics</a></div><div class="ttdeci">void calcPrimalResidualStatistics(const word mode, const label writeRes=0)</div><div class="ttdoc">calculate the norms of all residuals and print to screen</div><div class="ttdef"><b>Definition:</b> <a href="DASolver_8C_source.html#l00758">DASolver.C:758</a></div></div>
+<div class="ttc" id="aclassFoam_1_1DASolver_html_a6cec9caca72b22c3e006bd0fbb9c422a"><div class="ttname"><a href="classFoam_1_1DASolver.html#a6cec9caca72b22c3e006bd0fbb9c422a">Foam::DASolver::calcPrimalResidualStatistics</a></div><div class="ttdeci">void calcPrimalResidualStatistics(const word mode, const label writeRes=0)</div><div class="ttdoc">calculate the norms of all residuals and print to screen</div><div class="ttdef"><b>Definition:</b> <a href="DASolver_8C_source.html#l00845">DASolver.C:845</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DASimpleFoam_html_abb769e41d9897d1c99612970064ee7d6"><div class="ttname"><a href="classFoam_1_1DASimpleFoam.html#abb769e41d9897d1c99612970064ee7d6">Foam::DASimpleFoam::hasFvSource_</a></div><div class="ttdeci">label hasFvSource_</div><div class="ttdoc">whether to have fvSource term</div><div class="ttdef"><b>Definition:</b> <a href="DASimpleFoam_8H_source.html#l00094">DASimpleFoam.H:94</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DASimpleFoam_html_a0f3f5aa1213e459f4cdfc998d91ef2a6"><div class="ttname"><a href="classFoam_1_1DASimpleFoam.html#a0f3f5aa1213e459f4cdfc998d91ef2a6">Foam::DASimpleFoam::initSolver</a></div><div class="ttdeci">virtual void initSolver()</div><div class="ttdoc">initialize fields and variables</div><div class="ttdef"><b>Definition:</b> <a href="DASimpleFoam_8C_source.html#l00060">DASimpleFoam.C:60</a></div></div>
-<div class="ttc" id="aclassFoam_1_1DASolver_html_adba061b34197deb555c03c4e3ca27ac0"><div class="ttname"><a href="classFoam_1_1DASolver.html#adba061b34197deb555c03c4e3ca27ac0">Foam::DASolver::isPrintTime</a></div><div class="ttdeci">label isPrintTime(const Time &amp;runTime, const label printInterval) const</div><div class="ttdef"><b>Definition:</b> <a href="DASolver_8C_source.html#l04942">DASolver.C:4942</a></div></div>
+<div class="ttc" id="aclassFoam_1_1DASolver_html_adba061b34197deb555c03c4e3ca27ac0"><div class="ttname"><a href="classFoam_1_1DASolver.html#adba061b34197deb555c03c4e3ca27ac0">Foam::DASolver::isPrintTime</a></div><div class="ttdeci">label isPrintTime(const Time &amp;runTime, const label printInterval) const</div><div class="ttdef"><b>Definition:</b> <a href="DASolver_8C_source.html#l05029">DASolver.C:5029</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DASimpleFoam_html_a7c03adc9987a3bf6ade5f5c13250830a"><div class="ttname"><a href="classFoam_1_1DASimpleFoam.html#a7c03adc9987a3bf6ade5f5c13250830a">Foam::DASimpleFoam::daFvSourcePtr_</a></div><div class="ttdeci">autoPtr&lt; DAFvSource &gt; daFvSourcePtr_</div><div class="ttdoc">DASource pointer.</div><div class="ttdef"><b>Definition:</b> <a href="DASimpleFoam_8H_source.html#l00085">DASimpleFoam.H:85</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DASolver_html_a98f8b331895b7d0218e1fec776274558"><div class="ttname"><a href="classFoam_1_1DASolver.html#a98f8b331895b7d0218e1fec776274558">Foam::DASolver::daLinearEqnPtr_</a></div><div class="ttdeci">autoPtr&lt; DALinearEqn &gt; daLinearEqnPtr_</div><div class="ttdoc">DALinearEqn pointer.</div><div class="ttdef"><b>Definition:</b> <a href="DASolver_8H_source.html#l00093">DASolver.H:93</a></div></div>
 <div class="ttc" id="acreateFieldsSimple_8H_html"><div class="ttname"><a href="createFieldsSimple_8H.html">createFieldsSimple.H</a></div></div>
@@ -290,7 +302,7 @@ $(function() {
 <div class="ttc" id="anamespaceFoam_html"><div class="ttname"><a href="namespaceFoam.html">Foam</a></div><div class="ttdef"><b>Definition:</b> <a href="multiFreqScalarFvPatchField_8C_source.html#l00144">multiFreqScalarFvPatchField.C:144</a></div></div>
 <div class="ttc" id="acreateRefsLaplacian_8H_html_a4ee421b6994388e6fb4dceac82ea187c"><div class="ttname"><a href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a></div><div class="ttdeci">Time &amp; runTime</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00001">createRefsLaplacian.H:1</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DASolver_html_acdc7ce58473b47ad8ed789877835ca36"><div class="ttname"><a href="classFoam_1_1DASolver.html#acdc7ce58473b47ad8ed789877835ca36">Foam::DASolver::setDAObjFuncList</a></div><div class="ttdeci">void setDAObjFuncList()</div><div class="ttdoc">initialize DASolver::daObjFuncPtrList_ one needs to call this before calling printAllObjFuncs</div><div class="ttdef"><b>Definition:</b> <a href="DASolver_8C_source.html#l00222">DASolver.C:222</a></div></div>
-<div class="ttc" id="aclassFoam_1_1DASolver_html_a92272a42a157b775ffa7d17b84f3718f"><div class="ttname"><a href="classFoam_1_1DASolver.html#a92272a42a157b775ffa7d17b84f3718f">Foam::DASolver::writeAssociatedFields</a></div><div class="ttdeci">void writeAssociatedFields()</div><div class="ttdoc">write associated fields such as relative velocity</div><div class="ttdef"><b>Definition:</b> <a href="DASolver_8C_source.html#l04960">DASolver.C:4960</a></div></div>
+<div class="ttc" id="aclassFoam_1_1DASolver_html_a92272a42a157b775ffa7d17b84f3718f"><div class="ttname"><a href="classFoam_1_1DASolver.html#a92272a42a157b775ffa7d17b84f3718f">Foam::DASolver::writeAssociatedFields</a></div><div class="ttdeci">void writeAssociatedFields()</div><div class="ttdoc">write associated fields such as relative velocity</div><div class="ttdef"><b>Definition:</b> <a href="DASolver_8C_source.html#l05047">DASolver.C:5047</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DASolver_html_afe40e08050edfc54026142d6353aa408"><div class="ttname"><a href="classFoam_1_1DASolver.html#afe40e08050edfc54026142d6353aa408">Foam::DASolver::printAllObjFuncs</a></div><div class="ttdeci">void printAllObjFuncs()</div><div class="ttdoc">calculate the values of all objective functions and print them to screen</div><div class="ttdef"><b>Definition:</b> <a href="DASolver_8C_source.html#l00147">DASolver.C:147</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DASolver_html_a21a5148ea30de4e7d65c42aed3b78643"><div class="ttname"><a href="classFoam_1_1DASolver.html#a21a5148ea30de4e7d65c42aed3b78643">Foam::DASolver::primalMinRes_</a></div><div class="ttdeci">scalar primalMinRes_</div><div class="ttdoc">the maximal residual for primal solution</div><div class="ttdef"><b>Definition:</b> <a href="DASolver_8H_source.html#l00138">DASolver.H:138</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DASolver_html_a0778b303fd1c2aa751bbe7b753d699ee"><div class="ttname"><a href="classFoam_1_1DASolver.html#a0778b303fd1c2aa751bbe7b753d699ee">Foam::DASolver::runTimePtr_</a></div><div class="ttdeci">autoPtr&lt; Time &gt; runTimePtr_</div><div class="ttdoc">runTime pointer</div><div class="ttdef"><b>Definition:</b> <a href="DASolver_8H_source.html#l00069">DASolver.H:69</a></div></div>
@@ -299,7 +311,7 @@ $(function() {
 <div class="ttc" id="anamespaceFoam_html_aaa5083928581a9772085b127feb834a3"><div class="ttname"><a href="namespaceFoam.html#aaa5083928581a9772085b127feb834a3">Foam::addToRunTimeSelectionTable</a></div><div class="ttdeci">addToRunTimeSelectionTable(DAFvSource, DAFvSourceActuatorDisk, dictionary)</div></div>
 <div class="ttc" id="aclassFoam_1_1DASolver_html_a97b2a938b423ad81fcd6982dd375fd01"><div class="ttname"><a href="classFoam_1_1DASolver.html#a97b2a938b423ad81fcd6982dd375fd01">Foam::DASolver::ofField2StateVec</a></div><div class="ttdeci">void ofField2StateVec(Vec stateVec) const</div><div class="ttdoc">set the state vector based on the latest fields in OpenFOAM</div><div class="ttdef"><b>Definition:</b> <a href="DASolver_8H_source.html#l00531">DASolver.H:531</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DASolver_html_abb3f34f5634fe617414ce256738e40b4"><div class="ttname"><a href="classFoam_1_1DASolver.html#abb3f34f5634fe617414ce256738e40b4">Foam::DASolver::checkMesh</a></div><div class="ttdeci">label checkMesh() const</div><div class="ttdoc">check the mesh quality and return meshOK</div><div class="ttdef"><b>Definition:</b> <a href="DASolver_8H_source.html#l00639">DASolver.H:639</a></div></div>
-<div class="ttc" id="aclassFoam_1_1DASolver_html_aab4e3d9fbdff96d71bcf7635a87107a3"><div class="ttname"><a href="classFoam_1_1DASolver.html#aab4e3d9fbdff96d71bcf7635a87107a3">Foam::DASolver::checkResidualTol</a></div><div class="ttdeci">label checkResidualTol()</div><div class="ttdoc">check whether the min residual in primal satisfy the prescribed tolerance</div><div class="ttdef"><b>Definition:</b> <a href="DASolver_8C_source.html#l04914">DASolver.C:4914</a></div></div>
+<div class="ttc" id="aclassFoam_1_1DASolver_html_aab4e3d9fbdff96d71bcf7635a87107a3"><div class="ttname"><a href="classFoam_1_1DASolver.html#aab4e3d9fbdff96d71bcf7635a87107a3">Foam::DASolver::checkResidualTol</a></div><div class="ttdeci">label checkResidualTol()</div><div class="ttdoc">check whether the min residual in primal satisfy the prescribed tolerance</div><div class="ttdef"><b>Definition:</b> <a href="DASolver_8C_source.html#l05001">DASolver.C:5001</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DALinearEqn_html"><div class="ttname"><a href="classFoam_1_1DALinearEqn.html">Foam::DALinearEqn</a></div><div class="ttdef"><b>Definition:</b> <a href="DALinearEqn_8H_source.html#l00031">DALinearEqn.H:31</a></div></div>
 <div class="ttc" id="acreateRefsSimple_8H_html"><div class="ttname"><a href="createRefsSimple_8H.html">createRefsSimple.H</a></div></div>
 <div class="ttc" id="aUEqnSimple_8H_html"><div class="ttname"><a href="UEqnSimple_8H.html">UEqnSimple.H</a></div></div>
