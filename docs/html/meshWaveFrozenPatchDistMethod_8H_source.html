@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -167,7 +167,7 @@ $(function() {
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">//  and fixed-value patch set</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="classFoam_1_1patchDistMethods_1_1meshWaveFrozen.html">meshWaveFrozen</a>(</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keyword">const</span> dictionary&amp; dict,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keyword">const</span> labelHashSet&amp; patchIDs);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">//- Construct from mesh, fixed-value patch set and flag specifying</span></div>
@@ -175,7 +175,7 @@ $(function() {
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">//  Calculate for all cells. correctWalls : correct wall (face&amp;point)</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">//  cells for correct distance, searching neighbours.</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="classFoam_1_1patchDistMethods_1_1meshWaveFrozen.html">meshWaveFrozen</a>(</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keyword">const</span> labelHashSet&amp; patchIDs,</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> correctWalls = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
@@ -205,8 +205,8 @@ $(function() {
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">// ************************************************************************* //</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassFoam_1_1patchDistMethods_1_1meshWaveFrozen_html_a78e653d596ede2acbf2a8fe9cab836f6"><div class="ttname"><a href="classFoam_1_1patchDistMethods_1_1meshWaveFrozen.html#a78e653d596ede2acbf2a8fe9cab836f6">Foam::patchDistMethods::meshWaveFrozen::nUnset</a></div><div class="ttdeci">label nUnset() const</div><div class="ttdef"><b>Definition:</b> <a href="meshWaveFrozenPatchDistMethod_8H_source.html#l00113">meshWaveFrozenPatchDistMethod.H:113</a></div></div>
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1patchDistMethods_1_1meshWaveFrozen_html_a8b3588a44bb07da99052f84f7453fd23"><div class="ttname"><a href="classFoam_1_1patchDistMethods_1_1meshWaveFrozen.html#a8b3588a44bb07da99052f84f7453fd23">Foam::patchDistMethods::meshWaveFrozen::TypeName</a></div><div class="ttdeci">TypeName(&quot;meshWaveFrozen&quot;)</div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1patchDistMethods_1_1meshWaveFrozen_html"><div class="ttname"><a href="classFoam_1_1patchDistMethods_1_1meshWaveFrozen.html">Foam::patchDistMethods::meshWaveFrozen</a></div><div class="ttdef"><b>Definition:</b> <a href="meshWaveFrozenPatchDistMethod_8H_source.html#l00061">meshWaveFrozenPatchDistMethod.H:61</a></div></div>
 <div class="ttc" id="anamespaceFoam_html"><div class="ttname"><a href="namespaceFoam.html">Foam</a></div><div class="ttdef"><b>Definition:</b> <a href="multiFreqScalarFvPatchField_8C_source.html#l00144">multiFreqScalarFvPatchField.C:144</a></div></div>
 <div class="ttc" id="aclassFoam_1_1patchDistMethods_1_1meshWaveFrozen_html_a91b707ef3ea3cd7eaafec5c8ab91275e"><div class="ttname"><a href="classFoam_1_1patchDistMethods_1_1meshWaveFrozen.html#a91b707ef3ea3cd7eaafec5c8ab91275e">Foam::patchDistMethods::meshWaveFrozen::correct</a></div><div class="ttdeci">virtual bool correct(volScalarField &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="meshWaveFrozenPatchDistMethod_8C_source.html#l00088">meshWaveFrozenPatchDistMethod.C:88</a></div></div>

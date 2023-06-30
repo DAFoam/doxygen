@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -91,7 +91,7 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classFoam_1_1DAObjFuncTotalPressure.html#af578ad44de6d076497bde39f84d09f85">   19</a></span>&#160;<a class="code" href="classFoam_1_1DAObjFuncTotalPressure.html#af578ad44de6d076497bde39f84d09f85">DAObjFuncTotalPressure::DAObjFuncTotalPressure</a>(</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAOption.html">DAOption</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>,</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAModel.html">DAModel</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel</a>,</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAIndex.html">DAIndex</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#aa36f358f32c8a00956e7ca31e30c906c">daIndex</a>,</div>
@@ -100,7 +100,7 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">const</span> word objFuncPart,</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">const</span> dictionary&amp; objFuncDict)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    : <a class="code" href="classFoam_1_1DAObjFunc.html">DAObjFunc</a>(</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>,</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel</a>,</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#aa36f358f32c8a00956e7ca31e30c906c">daIndex</a>,</div>
@@ -162,7 +162,7 @@ $(function() {
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classFoam_1_1DAObjFuncTotalPressure.html#a533568ffbc38f94e3602b9c6af054bdd">areaSum_</a> &lt; 0.0)</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    {</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="classFoam_1_1DAObjFuncTotalPressure.html#a533568ffbc38f94e3602b9c6af054bdd">areaSum_</a> = 0.0;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        forAll(objFuncFaceSources, idxI)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(objFuncFaceSources, idxI)</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keyword">const</span> label&amp; objFuncFaceI = objFuncFaceSources[idxI];</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            label bFaceI = objFuncFaceI - <a class="code" href="classFoam_1_1DAObjFunc.html#a7d024d56257a6d34c00ff904bc9d1072">daIndex_</a>.<a class="code" href="classFoam_1_1DAIndex.html#a0da52ae9dbe896e5eb4dd59145e2a4aa">nLocalInternalFaces</a>;</div>
@@ -174,7 +174,7 @@ $(function() {
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">// initialize faceValues to zero</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    forAll(objFuncFaceValues, idxI)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(objFuncFaceValues, idxI)</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    {</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        objFuncFaceValues[idxI] = 0.0;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
@@ -190,7 +190,7 @@ $(function() {
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">const</span> volScalarField::Boundary&amp; rhoBf = <a class="code" href="classFoam_1_1DAObjFuncTotalPressure.html#a074e4dd0196964d1c3865f6a96d9551b">rho_</a>.boundaryField();</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// calculate area weighted heat flux</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    forAll(objFuncFaceSources, idxI)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(objFuncFaceSources, idxI)</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keyword">const</span> label&amp; objFuncFaceI = objFuncFaceSources[idxI];</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        label bFaceI = objFuncFaceI - <a class="code" href="classFoam_1_1DAObjFunc.html#a7d024d56257a6d34c00ff904bc9d1072">daIndex_</a>.<a class="code" href="classFoam_1_1DAIndex.html#a0da52ae9dbe896e5eb4dd59145e2a4aa">nLocalInternalFaces</a>;</div>
@@ -219,13 +219,14 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassFoam_1_1DAObjFunc_html_a24f15e2a2c4e50f97526588fd99b8a72"><div class="ttname"><a href="classFoam_1_1DAObjFunc.html#a24f15e2a2c4e50f97526588fd99b8a72">Foam::DAObjFunc::objFuncType_</a></div><div class="ttdeci">word objFuncType_</div><div class="ttdoc">the type of the objective function</div><div class="ttdef"><b>Definition:</b> <a href="DAObjFunc_8H_source.html#l00066">DAObjFunc.H:66</a></div></div>
 <div class="ttc" id="apEqnPimpleDyM_8H_html_a81cf6107131a3583e2b0b762cb9c2862"><div class="ttname"><a href="pEqnPimpleDyM_8H.html#a81cf6107131a3583e2b0b762cb9c2862">U</a></div><div class="ttdeci">U</div><div class="ttdef"><b>Definition:</b> <a href="pEqnPimpleDyM_8H_source.html#l00060">pEqnPimpleDyM.H:60</a></div></div>
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
+<div class="ttc" id="asolvePseudoPEqn_8H_html_ab75e9df95d3e8982118b376691e49ceb"><div class="ttname"><a href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a></div><div class="ttdeci">forAll(pseudoP.boundaryField(), patchI)</div><div class="ttdef"><b>Definition:</b> <a href="solvePseudoPEqn_8H_source.html#l00010">solvePseudoPEqn.H:10</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAIndex_html_a88df06e7b85e76b30f70f3474ccdcc75"><div class="ttname"><a href="classFoam_1_1DAIndex.html#a88df06e7b85e76b30f70f3474ccdcc75">Foam::DAIndex::bFacePatchI</a></div><div class="ttdeci">labelList bFacePatchI</div><div class="ttdef"><b>Definition:</b> <a href="DAIndex_8H_source.html#l00110">DAIndex.H:110</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html"><div class="ttname"><a href="classFoam_1_1DAOption.html">Foam::DAOption</a></div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8H_source.html#l00029">DAOption.H:29</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAObjFunc_html_a7d024d56257a6d34c00ff904bc9d1072"><div class="ttname"><a href="classFoam_1_1DAObjFunc.html#a7d024d56257a6d34c00ff904bc9d1072">Foam::DAObjFunc::daIndex_</a></div><div class="ttdeci">const DAIndex &amp; daIndex_</div><div class="ttdoc">DAIndex object.</div><div class="ttdef"><b>Definition:</b> <a href="DAObjFunc_8H_source.html#l00054">DAObjFunc.H:54</a></div></div>
 <div class="ttc" id="apyColoringCompressible_2createAdjoint_8H_html_a75fa363c8e8a3229461183017dd17311"><div class="ttname"><a href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a></div><div class="ttdeci">DAOption daOption(mesh, pyOptions_)</div></div>
 <div class="ttc" id="acreateRefsPimple_8H_html_a334650304cdcdff41898bee9eaf2e3db"><div class="ttname"><a href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a></div><div class="ttdeci">volScalarField &amp; p</div><div class="ttdef"><b>Definition:</b> <a href="createRefsPimple_8H_source.html#l00006">createRefsPimple.H:6</a></div></div>
 <div class="ttc" id="aDAObjFuncTotalPressure_8H_html"><div class="ttname"><a href="DAObjFuncTotalPressure_8H.html">DAObjFuncTotalPressure.H</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAObjFunc_html_a23edeeeecebcef11921a33dd5d990570"><div class="ttname"><a href="classFoam_1_1DAObjFunc.html#a23edeeeecebcef11921a33dd5d990570">Foam::DAObjFunc::mesh_</a></div><div class="ttdeci">const fvMesh &amp; mesh_</div><div class="ttdoc">fvMesh</div><div class="ttdef"><b>Definition:</b> <a href="DAObjFunc_8H_source.html#l00045">DAObjFunc.H:45</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAObjFuncTotalPressure_html_a074e4dd0196964d1c3865f6a96d9551b"><div class="ttname"><a href="classFoam_1_1DAObjFuncTotalPressure.html#a074e4dd0196964d1c3865f6a96d9551b">Foam::DAObjFuncTotalPressure::rho_</a></div><div class="ttdeci">volScalarField rho_</div><div class="ttdoc">density</div><div class="ttdef"><b>Definition:</b> <a href="DAObjFuncTotalPressure_8H_source.html#l00036">DAObjFuncTotalPressure.H:36</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAIndex_html"><div class="ttname"><a href="classFoam_1_1DAIndex.html">Foam::DAIndex</a></div><div class="ttdef"><b>Definition:</b> <a href="DAIndex_8H_source.html#l00032">DAIndex.H:32</a></div></div>

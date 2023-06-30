@@ -1,5 +1,5 @@
 <map id="calcPrimalResidualStatistics" name="calcPrimalResidualStatistics">
-<area shape="rect" id="node1" title="calculate the norms of all residuals and print to screen" alt="" coords="549,664,756,691"/>
+<area shape="rect" id="node1" title="calculate the norms of all residuals and print to screen" alt="" coords="549,689,756,716"/>
 <area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#a50dc6d32e0097f9c301d4ce08d2feecf" title="compute dFdACT" alt="" coords="345,5,443,32"/>
 <area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#a8a6204fd550fe7a4cefd698679d80177" title="compute dFdACT AD" alt="" coords="336,56,452,83"/>
 <area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#a05d01f66a396018762a09b5a4f037c15" title="compute dFdAOA" alt="" coords="344,107,444,133"/>
@@ -21,10 +21,11 @@
 <area shape="rect" id="node20" href="$classFoam_1_1DAScalarTransportFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="11,877,233,918"/>
 <area shape="rect" id="node21" href="$classFoam_1_1DAPisoFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="5,945,239,972"/>
 <area shape="rect" id="node22" href="$classFoam_1_1DAPimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="39,1002,205,1043"/>
-<area shape="rect" id="node23" href="$classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="313,1070,475,1111"/>
-<area shape="rect" id="node24" href="$classFoam_1_1DARhoSimpleCFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="294,1135,494,1177"/>
-<area shape="rect" id="node25" href="$classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="291,1201,497,1242"/>
-<area shape="rect" id="node26" href="$classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="311,1266,477,1307"/>
+<area shape="rect" id="node23" href="$classFoam_1_1DAHeatTransferFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="292,1070,496,1111"/>
+<area shape="rect" id="node24" href="$classFoam_1_1DATurboFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="313,1135,475,1177"/>
+<area shape="rect" id="node25" href="$classFoam_1_1DARhoSimpleCFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="294,1201,494,1242"/>
+<area shape="rect" id="node26" href="$classFoam_1_1DASolidDisplacementFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="291,1266,497,1307"/>
 <area shape="rect" id="node27" href="$classFoam_1_1DARhoSimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="299,1331,489,1373"/>
 <area shape="rect" id="node28" href="$classFoam_1_1DASimpleTFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="307,1397,481,1438"/>
+<area shape="rect" id="node29" href="$classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="311,1462,477,1503"/>
 </map>

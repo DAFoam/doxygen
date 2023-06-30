@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -156,6 +156,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a22a2dbad4a549076221783b5e3c0c965"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAObjFuncWallHeatFlux.html#a22a2dbad4a549076221783b5e3c0c965">Cp_</a> = -9999.0</td></tr>
+<tr class="memdesc:a22a2dbad4a549076221783b5e3c0c965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cp used in incompressible heatFlux calculation.  <a href="classFoam_1_1DAObjFuncWallHeatFlux.html#a22a2dbad4a549076221783b5e3c0c965">More...</a><br /></td></tr>
+<tr class="separator:a22a2dbad4a549076221783b5e3c0c965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9318b3b4b15953fd69279b759efedd57"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAObjFuncWallHeatFlux.html#a9318b3b4b15953fd69279b759efedd57">k_</a> = -9999.0</td></tr>
+<tr class="memdesc:a9318b3b4b15953fd69279b759efedd57"><td class="mdescLeft">&#160;</td><td class="mdescRight">thermal conductivity for solid heatFlux calculation  <a href="classFoam_1_1DAObjFuncWallHeatFlux.html#a9318b3b4b15953fd69279b759efedd57">More...</a><br /></td></tr>
+<tr class="separator:a9318b3b4b15953fd69279b759efedd57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd32262eebd62ba006d0aae2202d663e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFoam_1_1DATurbulenceModel.html">DATurbulenceModel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAObjFuncWallHeatFlux.html#afd32262eebd62ba006d0aae2202d663e">daTurb_</a></td></tr>
 <tr class="memdesc:afd32262eebd62ba006d0aae2202d663e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classFoam_1_1DATurbulenceModel.html">DATurbulenceModel</a> object.  <a href="classFoam_1_1DAObjFuncWallHeatFlux.html#afd32262eebd62ba006d0aae2202d663e">More...</a><br /></td></tr>
 <tr class="separator:afd32262eebd62ba006d0aae2202d663e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -299,7 +305,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00019">19</a> of file <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html">DAObjFuncWallHeatFlux.C</a>.</p>
 
-<p class="reference">References <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel()</a>, <a class="el" href="createRefsLaplacian_8H_source.html#l00004">mesh</a>, <a class="el" href="DAObjFunc_8H_source.html#l00093">DAObjFunc::objFuncConInfo_</a>, <a class="el" href="DAObjFunc_8H_source.html#l00069">DAObjFunc::objFuncDict_</a>, <a class="el" href="DAObjFunc_8H_source.html#l00066">DAObjFunc::objFuncType_</a>, and <a class="el" href="DAObjFunc_8H_source.html#l00087">DAObjFunc::scale_</a>.</p>
+<p class="reference">References <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00037">DAObjFuncWallHeatFlux::Cp_</a>, <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel()</a>, <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00040">DAObjFuncWallHeatFlux::k_</a>, <a class="el" href="createRefsHeatTransfer_8H_source.html#l00004">mesh</a>, <a class="el" href="DAObjFunc_8H_source.html#l00093">DAObjFunc::objFuncConInfo_</a>, <a class="el" href="DAObjFunc_8H_source.html#l00069">DAObjFunc::objFuncDict_</a>, <a class="el" href="DAObjFunc_8H_source.html#l00066">DAObjFunc::objFuncType_</a>, and <a class="el" href="DAObjFunc_8H_source.html#l00087">DAObjFunc::scale_</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -335,7 +341,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00065">65</a> of file <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html">DAObjFuncWallHeatFlux.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00069">69</a> of file <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html">DAObjFuncWallHeatFlux.H</a>.</p>
 
 </div>
 </div>
@@ -414,23 +420,80 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DAObjFunc.html#af91123718135a59ba6b1ed5ddd32235b">DAObjFunc</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00086">86</a> of file <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html">DAObjFuncWallHeatFlux.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00138">138</a> of file <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html">DAObjFuncWallHeatFlux.C</a>.</p>
 
-<p class="reference">References <a class="el" href="TEqnSimpleT_8H.html#ad145252fff6dd3b727ad3f1641750383">alphaEff()</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00236">DATurbulenceModel::alphaEff()</a>, <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00047">DAObjFuncWallHeatFlux::areaSum_</a>, <a class="el" href="DAIndex_8H_source.html#l00116">DAIndex::bFaceFaceI</a>, <a class="el" href="DAIndex_8H_source.html#l00110">DAIndex::bFacePatchI</a>, <a class="el" href="DAObjFunc_8H_source.html#l00054">DAObjFunc::daIndex_</a>, <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00041">DAObjFuncWallHeatFlux::daTurb_</a>, <a class="el" href="DAObjFunc_8H_source.html#l00045">DAObjFunc::mesh_</a>, <a class="el" href="DAIndex_8H_source.html#l00098">DAIndex::nLocalInternalFaces</a>, <a class="el" href="DAObjFunc_8H_source.html#l00087">DAObjFunc::scale_</a>, <a class="el" href="createRefsLaplacian_8H_source.html#l00005">T</a>, and <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00044">DAObjFuncWallHeatFlux::wallHeatFlux_</a>.</p>
+<p class="reference">References <a class="el" href="TEqnSimpleT_8H.html#ad145252fff6dd3b727ad3f1641750383">alphaEff()</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00236">DATurbulenceModel::alphaEff()</a>, <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00051">DAObjFuncWallHeatFlux::areaSum_</a>, <a class="el" href="DAIndex_8H_source.html#l00116">DAIndex::bFaceFaceI</a>, <a class="el" href="DAIndex_8H_source.html#l00110">DAIndex::bFacePatchI</a>, <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00037">DAObjFuncWallHeatFlux::Cp_</a>, <a class="el" href="DAObjFunc_8H_source.html#l00054">DAObjFunc::daIndex_</a>, <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00044">DAObjFuncWallHeatFlux::daTurb_</a>, <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, <a class="el" href="EEqnRhoSimple_8H_source.html#l00005">he</a>, <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00040">DAObjFuncWallHeatFlux::k_</a>, <a class="el" href="DAObjFunc_8H_source.html#l00045">DAObjFunc::mesh_</a>, <a class="el" href="DAIndex_8H_source.html#l00098">DAIndex::nLocalInternalFaces</a>, <a class="el" href="DAObjFunc_8H_source.html#l00087">DAObjFunc::scale_</a>, <a class="el" href="createRefsHeatTransfer_8H_source.html#l00005">T</a>, and <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00048">DAObjFuncWallHeatFlux::wallHeatFlux_</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAObjFuncWallHeatFlux_aff7d67902025442333a1a88cce51695e_cgraph.png" border="0" usemap="#classFoam_1_1DAObjFuncWallHeatFlux_aff7d67902025442333a1a88cce51695e_cgraph" alt=""/></div>
 <map name="classFoam_1_1DAObjFuncWallHeatFlux_aff7d67902025442333a1a88cce51695e_cgraph" id="classFoam_1_1DAObjFuncWallHeatFlux_aff7d67902025442333a1a88cce51695e_cgraph">
-<area shape="rect" title="calculate the value of objective function" alt="" coords="5,35,105,61"/>
+<area shape="rect" title="calculate the value of objective function" alt="" coords="5,64,105,91"/>
 <area shape="rect" href="TEqnSimpleT_8H.html#ad145252fff6dd3b727ad3f1641750383" title=" " alt="" coords="213,5,288,32"/>
 <area shape="rect" href="classFoam_1_1DATurbulenceModel.html#ae11089a7a308de0e24d8fe63f7a579f9" title="return effective thermal diffusivity" alt="" coords="153,57,348,98"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="222,123,279,149"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a22a2dbad4a549076221783b5e3c0c965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a2dbad4a549076221783b5e3c0c965">&#9670;&nbsp;</a></span>Cp_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scalar Cp_ = -9999.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cp used in incompressible heatFlux calculation. </p>
+
+<p class="definition">Definition at line <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00037">37</a> of file <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html">DAObjFuncWallHeatFlux.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00138">DAObjFuncWallHeatFlux::calcObjFunc()</a>, and <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00019">DAObjFuncWallHeatFlux::DAObjFuncWallHeatFlux()</a>.</p>
+
+</div>
+</div>
+<a id="a9318b3b4b15953fd69279b759efedd57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9318b3b4b15953fd69279b759efedd57">&#9670;&nbsp;</a></span>k_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scalar k_ = -9999.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>thermal conductivity for solid heatFlux calculation </p>
+
+<p class="definition">Definition at line <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00040">40</a> of file <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html">DAObjFuncWallHeatFlux.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00138">DAObjFuncWallHeatFlux::calcObjFunc()</a>, and <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00019">DAObjFuncWallHeatFlux::DAObjFuncWallHeatFlux()</a>.</p>
+
+</div>
+</div>
 <a id="afd32262eebd62ba006d0aae2202d663e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd32262eebd62ba006d0aae2202d663e">&#9670;&nbsp;</a></span>daTurb_</h2>
 
@@ -453,9 +516,9 @@ Here is the call graph for this function:</div>
 
 <p><a class="el" href="classFoam_1_1DATurbulenceModel.html">DATurbulenceModel</a> object. </p>
 
-<p class="definition">Definition at line <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00041">41</a> of file <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html">DAObjFuncWallHeatFlux.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00044">44</a> of file <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html">DAObjFuncWallHeatFlux.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00086">DAObjFuncWallHeatFlux::calcObjFunc()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00138">DAObjFuncWallHeatFlux::calcObjFunc()</a>.</p>
 
 </div>
 </div>
@@ -481,9 +544,9 @@ Here is the call graph for this function:</div>
 
 <p>wall heat flux field </p>
 
-<p class="definition">Definition at line <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00044">44</a> of file <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html">DAObjFuncWallHeatFlux.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00048">48</a> of file <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html">DAObjFuncWallHeatFlux.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00086">DAObjFuncWallHeatFlux::calcObjFunc()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00138">DAObjFuncWallHeatFlux::calcObjFunc()</a>.</p>
 
 </div>
 </div>
@@ -509,9 +572,9 @@ Here is the call graph for this function:</div>
 
 <p>the area of all heat flux patches </p>
 
-<p class="definition">Definition at line <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00047">47</a> of file <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html">DAObjFuncWallHeatFlux.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html#l00051">51</a> of file <a class="el" href="DAObjFuncWallHeatFlux_8H_source.html">DAObjFuncWallHeatFlux.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00086">DAObjFuncWallHeatFlux::calcObjFunc()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00138">DAObjFuncWallHeatFlux::calcObjFunc()</a>.</p>
 
 </div>
 </div>

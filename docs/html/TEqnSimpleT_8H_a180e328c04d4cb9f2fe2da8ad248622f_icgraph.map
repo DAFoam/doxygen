@@ -1,8 +1,10 @@
 <map id="TEqn" name="TEqn">
-<area shape="rect" id="node1" title=" " alt="" coords="295,143,349,170"/>
+<area shape="rect" id="node1" title=" " alt="" coords="295,209,349,235"/>
 <area shape="rect" id="node2" href="$classFoam_1_1DAResidualLaplacianFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="25,5,227,47"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAResidualScalarTransportFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="5,71,247,112"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="11,136,241,177"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DALaplacianFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="35,201,217,243"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DAScalarTransportFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="15,267,237,308"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAResidualHeatTransferFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="14,71,238,112"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAResidualScalarTransportFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="5,136,247,177"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="11,201,241,243"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DAHeatTransferFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="24,267,228,308"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DALaplacianFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="35,332,217,373"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DAScalarTransportFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="15,397,237,439"/>
 </map>

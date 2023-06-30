@@ -1,4 +1,6 @@
 <map id="fv2" name="fv2">
-<area shape="rect" id="node1" title=" " alt="" coords="164,5,207,32"/>
-<area shape="rect" id="node2" href="$classFoam_1_1DASpalartAllmarasFv3.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="256,56,299,83"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASpalartAllmarasFv3.html#a7caa27588a8f12dbb13b3776ebfc316e" title="calculate the turbulence residual using LDU matrix" alt="" coords="29,5,184,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASpalartAllmarasFv3.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="51,56,162,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DASpalartAllmarasFv3.html#aeb8074903cad0d57bbefbf8ddcdafbc3" title="construct pseudoNuTildaEqn_, which is nuTildaEqn with swapped upper and lower arrays" alt="" coords="5,107,208,133"/>
 </map>

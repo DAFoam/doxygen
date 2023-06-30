@@ -1,0 +1,4 @@
+<map id="getLocalCoupledBFaceIndex" name="getLocalCoupledBFaceIndex">
+<area shape="rect" id="node1" title="given a local face index, return the local index of the coupled boundary face" alt="" coords="5,5,209,32"/>
+<area shape="rect" id="node2" href="$solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="257,5,315,32"/>
+</map>

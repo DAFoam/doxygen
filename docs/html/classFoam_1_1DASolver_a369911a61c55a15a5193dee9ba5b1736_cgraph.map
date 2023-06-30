@@ -1,0 +1,13 @@
+<map id="calcdAcousticsdWAD" name="calcdAcousticsdWAD">
+<area shape="rect" id="node1" title=" " alt="" coords="5,233,163,260"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#acdcae307fac7a1a49515db53d0d24bed" title="set the reverse&#45;mode AD derivatives from the state variables in OpenFOAM to vecY" alt="" coords="227,5,413,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#aa0d7aa564d2440e2b689b0e747d57927" title="assign the reverse&#45;mode AD input seeds from fBarVec to the acoustic vectors in OpenFOAM" alt="" coords="217,56,423,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#a6d1981a9e77d642c01518822034ef52f" title="compute the positions, normals, areas, and forces of the desired acoustic patches" alt="" coords="231,107,409,133"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DASolver.html#ab2b8a55494e9b1e208efdd908a71d886" title="return the coupling patch list if any scenario is active on couplingInfo dict otherwise return design..." alt="" coords="241,157,399,184"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DASolver.html#a473b52b1518c034864bcd534c299127b" title="return the number of points and faces for MDO patches" alt="" coords="269,208,371,235"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DASolver.html#a1c41aebdabd484a1b5fb5ca7f50417ff" title="normalize the reverse&#45;mode AD derivatives stored in vecY" alt="" coords="237,259,403,285"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DASolver.html#a97227e39806b61f5ef6107f99d90b0cd" title="register acoustic as the ouptut for referse&#45;mod AD" alt="" coords="221,309,419,336"/>
+<area shape="rect" id="node9" href="$classFoam_1_1DASolver.html#a1e1cfd65c70fb9e0e4c29766a394ed0f" title="register all state variables as the input for reverse&#45;mode AD" alt="" coords="211,360,429,387"/>
+<area shape="rect" id="node10" href="$classFoam_1_1DASolver.html#a70bbc5360b9de5931a46681648082387" title="Update the OpenFOAM field values (including both internal and boundary fields) based on the state vec..." alt="" coords="262,411,378,437"/>
+<area shape="rect" id="node11" href="$classFoam_1_1DASolver.html#ad2cd4059650064ffe8599777743e9701" title="Update the OpenFoam mesh point coordinates based on the point vector xvVec." alt="" coords="260,461,380,488"/>
+</map>

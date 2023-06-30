@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -114,9 +114,9 @@ $(function() {
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classFoam_1_1DASpalartAllmaras.html#a755379b605fa5d20a0ef7c183290d4cb">   41</a></span>&#160;<a class="code" href="classFoam_1_1DASpalartAllmaras.html#a755379b605fa5d20a0ef7c183290d4cb">DASpalartAllmaras::DASpalartAllmaras</a>(</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> word modelType,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAOption.html">DAOption</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    : <a class="code" href="classFoam_1_1DATurbulenceModel.html">DATurbulenceModel</a>(modelType, <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>),</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    : <a class="code" href="classFoam_1_1DATurbulenceModel.html">DATurbulenceModel</a>(modelType, <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>),</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="comment">// SA parameters</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      sigmaNut_(dimensioned&lt;scalar&gt;::lookupOrAddToDict(</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;          <span class="stringliteral">&quot;sigmaNut&quot;</span>,</div>
@@ -154,15 +154,15 @@ $(function() {
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;          0.3)),</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="comment">// Augmented variables</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      nuTilda_(const_cast&lt;volScalarField&amp;&gt;(</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;          <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.thisDb().lookupObject&lt;volScalarField&gt;(<span class="stringliteral">&quot;nuTilda&quot;</span>))),</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;          <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.thisDb().lookupObject&lt;volScalarField&gt;(<span class="stringliteral">&quot;nuTilda&quot;</span>))),</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      nuTildaRes_(</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;          IOobject(</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;              <span class="stringliteral">&quot;nuTildaRes&quot;</span>,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;              <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.time().timeName(),</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;              <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;              <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.time().timeName(),</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;              <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;              IOobject::NO_READ,</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;              IOobject::NO_WRITE),</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;          <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;          <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;#ifdef CompressibleFlow</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;          dimensionedScalar(<span class="stringliteral">&quot;nuTildaRes&quot;</span>, dimensionSet(1, -1, -2, 0, 0, 0, 0), 0.0),</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;#endif</div>
@@ -170,7 +170,7 @@ $(function() {
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;          dimensionedScalar(<span class="stringliteral">&quot;nuTildaRes&quot;</span>, dimensionSet(0, 2, -2, 0, 0, 0, 0), 0.0),</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;#endif</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;          zeroGradientFvPatchField&lt;scalar&gt;::typeName),</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      y_(<a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.thisDb().lookupObject&lt;volScalarField&gt;(<span class="stringliteral">&quot;yWall&quot;</span>))</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      y_(<a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.thisDb().lookupObject&lt;volScalarField&gt;(<span class="stringliteral">&quot;yWall&quot;</span>))</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// initialize printInterval_ we need to check whether it is a steady state</span></div>
@@ -178,8 +178,8 @@ $(function() {
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    IOdictionary fvSchemes(</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        IOobject(</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="stringliteral">&quot;fvSchemes&quot;</span>,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.time().system(),</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.time().system(),</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            IOobject::MUST_READ,</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            IOobject::NO_WRITE,</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keyword">false</span>));</div>
@@ -281,7 +281,7 @@ $(function() {
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment">    */</span></div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="comment">// replace nut with nuTilda</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    forAll(modelStates, idxI)</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(modelStates, idxI)</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    {</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        word stateName = modelStates[idxI];</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <span class="keywordflow">if</span> (stateName == <span class="stringliteral">&quot;nut&quot;</span>)</div>
@@ -370,9 +370,9 @@ $(function() {
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">        related to grad(U), k, and omega in SST!</span></div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">    */</span></div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    forAll(stateCon, idxI)</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(stateCon, idxI)</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    {</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        forAll(stateCon[idxI], idxJ)</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(stateCon[idxI], idxJ)</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        {</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            word conStateName = stateCon[idxI][idxJ];</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            <span class="keywordflow">if</span> (conStateName == <span class="stringliteral">&quot;nut&quot;</span>)</div>
@@ -539,7 +539,7 @@ $(function() {
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160; </div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        <span class="comment">// get the solver performance info such as initial</span></div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        <span class="comment">// and final residuals</span></div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        SolverPerformance&lt;scalar&gt; solverNuTilda = solve(nuTildaEqn);</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        SolverPerformance&lt;scalar&gt; solverNuTilda = <a class="code" href="solvePseudoPEqn_8H.html#ae6958b9677b193eb5a911af0345fb4ee">solve</a>(nuTildaEqn);</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        <span class="keywordflow">if</span> (printToScreen)</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;        {</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            Info &lt;&lt; <span class="stringliteral">&quot;nuTilda Initial residual: &quot;</span> &lt;&lt; solverNuTilda.initialResidual() &lt;&lt; endl</div>
@@ -572,7 +572,7 @@ $(function() {
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;<span class="comment">// ************************************************************************* //</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassFoam_1_1DASpalartAllmaras_html_aa8372eaafe5ae1f5354808ef3cd56a9d"><div class="ttname"><a href="classFoam_1_1DASpalartAllmaras.html#aa8372eaafe5ae1f5354808ef3cd56a9d">Foam::DASpalartAllmaras::sigmaNut_</a></div><div class="ttdeci">dimensionedScalar sigmaNut_</div><div class="ttdef"><b>Definition:</b> <a href="DASpalartAllmaras_8H_source.html#l00055">DASpalartAllmaras.H:55</a></div></div>
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
+<div class="ttc" id="asolvePseudoPEqn_8H_html_ab75e9df95d3e8982118b376691e49ceb"><div class="ttname"><a href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a></div><div class="ttdeci">forAll(pseudoP.boundaryField(), patchI)</div><div class="ttdef"><b>Definition:</b> <a href="solvePseudoPEqn_8H_source.html#l00010">solvePseudoPEqn.H:10</a></div></div>
 <div class="ttc" id="aDASpalartAllmaras_8H_html"><div class="ttname"><a href="DASpalartAllmaras_8H.html">DASpalartAllmaras.H</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DASpalartAllmaras_html_a4b5863d7438b3df4f496976fa3e02d90"><div class="ttname"><a href="classFoam_1_1DASpalartAllmaras.html#a4b5863d7438b3df4f496976fa3e02d90">Foam::DASpalartAllmaras::Cw1_</a></div><div class="ttdeci">dimensionedScalar Cw1_</div><div class="ttdef"><b>Definition:</b> <a href="DASpalartAllmaras_8H_source.html#l00059">DASpalartAllmaras.H:59</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DASpalartAllmaras_html_a755379b605fa5d20a0ef7c183290d4cb"><div class="ttname"><a href="classFoam_1_1DASpalartAllmaras.html#a755379b605fa5d20a0ef7c183290d4cb">Foam::DASpalartAllmaras::DASpalartAllmaras</a></div><div class="ttdeci">DASpalartAllmaras(const word modelType, const fvMesh &amp;mesh, const DAOption &amp;daOption)</div><div class="ttdef"><b>Definition:</b> <a href="DASpalartAllmaras_8C_source.html#l00041">DASpalartAllmaras.C:41</a></div></div>
@@ -588,6 +588,7 @@ $(function() {
 <div class="ttc" id="aclassFoam_1_1DATurbulenceModel_html_a8fa41d725808cf3b15117c2d48991655"><div class="ttname"><a href="classFoam_1_1DATurbulenceModel.html#a8fa41d725808cf3b15117c2d48991655">Foam::DATurbulenceModel::allOptions_</a></div><div class="ttdeci">const dictionary &amp; allOptions_</div><div class="ttdoc">all DAFoam options</div><div class="ttdef"><b>Definition:</b> <a href="DATurbulenceModel_8H_source.html#l00080">DATurbulenceModel.H:80</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DASpalartAllmaras_html_a89bd6764223091de90cd0a85d40ac446"><div class="ttname"><a href="classFoam_1_1DASpalartAllmaras.html#a89bd6764223091de90cd0a85d40ac446">Foam::DASpalartAllmaras::Cw2_</a></div><div class="ttdeci">dimensionedScalar Cw2_</div><div class="ttdef"><b>Definition:</b> <a href="DASpalartAllmaras_8H_source.html#l00060">DASpalartAllmaras.H:60</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DASpalartAllmaras_html_a4ddd9bd801f70201f884bfb2e2840544"><div class="ttname"><a href="classFoam_1_1DASpalartAllmaras.html#a4ddd9bd801f70201f884bfb2e2840544">Foam::DASpalartAllmaras::kappa_</a></div><div class="ttdeci">dimensionedScalar kappa_</div><div class="ttdef"><b>Definition:</b> <a href="DASpalartAllmaras_8H_source.html#l00056">DASpalartAllmaras.H:56</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAUtility_html_a33a755d4b9029ec00bb1969fc0a193e3"><div class="ttname"><a href="classFoam_1_1DAUtility.html#a33a755d4b9029ec00bb1969fc0a193e3">Foam::DAUtility::boundVar</a></div><div class="ttdeci">static void boundVar(const dictionary &amp;allOptions, volScalarField &amp;var, const label printToScreen)</div><div class="ttdoc">bound a volScalar variable based on parametes defined in DAOption::allOptions_</div><div class="ttdef"><b>Definition:</b> <a href="DAUtility_8C_source.html#l00419">DAUtility.C:419</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DASpalartAllmaras_html_a534c81c18b282df8a4814b99093f493a"><div class="ttname"><a href="classFoam_1_1DASpalartAllmaras.html#a534c81c18b282df8a4814b99093f493a">Foam::DASpalartAllmaras::printInterval_</a></div><div class="ttdeci">label printInterval_</div><div class="ttdoc">time step interval to print residual</div><div class="ttdef"><b>Definition:</b> <a href="DASpalartAllmaras_8H_source.html#l00097">DASpalartAllmaras.H:97</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DATurbulenceModel_html_a0f997832b53f19d6d34b069052e011d8"><div class="ttname"><a href="classFoam_1_1DATurbulenceModel.html#a0f997832b53f19d6d34b069052e011d8">Foam::DATurbulenceModel::U_</a></div><div class="ttdeci">volVectorField &amp; U_</div><div class="ttdoc">velocity</div><div class="ttdef"><b>Definition:</b> <a href="DATurbulenceModel_8H_source.html#l00086">DATurbulenceModel.H:86</a></div></div>
@@ -602,6 +603,7 @@ $(function() {
 <div class="ttc" id="aclassFoam_1_1DASpalartAllmaras_html_af4c2bb10de993ad1332df7bd213bc7ab"><div class="ttname"><a href="classFoam_1_1DASpalartAllmaras.html#af4c2bb10de993ad1332df7bd213bc7ab">Foam::DASpalartAllmaras::addModelResidualCon</a></div><div class="ttdeci">virtual void addModelResidualCon(HashTable&lt; List&lt; List&lt; word &gt;&gt;&gt; &amp;allCon) const</div><div class="ttdoc">add the model residual connectivity to stateCon</div><div class="ttdef"><b>Definition:</b> <a href="DASpalartAllmaras_8C_source.html#l00312">DASpalartAllmaras.C:312</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DATurbulenceModel_html_a5e8a2c41e3241f18628b18b4aede66ab"><div class="ttname"><a href="classFoam_1_1DATurbulenceModel.html#a5e8a2c41e3241f18628b18b4aede66ab">Foam::DATurbulenceModel::correctAlphat</a></div><div class="ttdeci">void correctAlphat()</div><div class="ttdoc">update alphat</div><div class="ttdef"><b>Definition:</b> <a href="DATurbulenceModel_8C_source.html#l00206">DATurbulenceModel.C:206</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DASpalartAllmaras_html_ab5a8f9620a6d4ee9f315142b8ce11f34"><div class="ttname"><a href="classFoam_1_1DASpalartAllmaras.html#ab5a8f9620a6d4ee9f315142b8ce11f34">Foam::DASpalartAllmaras::nuTilda_</a></div><div class="ttdeci">volScalarField &amp; nuTilda_</div><div class="ttdef"><b>Definition:</b> <a href="DASpalartAllmaras_8H_source.html#l00086">DASpalartAllmaras.H:86</a></div></div>
+<div class="ttc" id="asolvePseudoPEqn_8H_html_ae6958b9677b193eb5a911af0345fb4ee"><div class="ttname"><a href="solvePseudoPEqn_8H.html#ae6958b9677b193eb5a911af0345fb4ee">solve</a></div><div class="ttdeci">pseudoPEqn solve(solverDictP_)</div></div>
 <div class="ttc" id="aclassFoam_1_1DATurbulenceModel_html"><div class="ttname"><a href="classFoam_1_1DATurbulenceModel.html">Foam::DATurbulenceModel</a></div><div class="ttdef"><b>Definition:</b> <a href="DATurbulenceModel_8H_source.html#l00061">DATurbulenceModel.H:61</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DASpalartAllmaras_html_a0761a5b6b1cdbe3bb89ab6d07e7220d4"><div class="ttname"><a href="classFoam_1_1DASpalartAllmaras.html#a0761a5b6b1cdbe3bb89ab6d07e7220d4">Foam::DASpalartAllmaras::Cw3_</a></div><div class="ttdeci">dimensionedScalar Cw3_</div><div class="ttdef"><b>Definition:</b> <a href="DASpalartAllmaras_8H_source.html#l00061">DASpalartAllmaras.H:61</a></div></div>
 <div class="ttc" id="anamespaceFoam_html_a90e9cf832b06b5b5afaf78648234b88e"><div class="ttname"><a href="namespaceFoam.html#a90e9cf832b06b5b5afaf78648234b88e">Foam::defineTypeNameAndDebug</a></div><div class="ttdeci">defineTypeNameAndDebug(DAFvSource, 0)</div></div>

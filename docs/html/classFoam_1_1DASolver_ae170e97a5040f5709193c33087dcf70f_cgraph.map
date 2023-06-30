@@ -1,0 +1,9 @@
+<map id="getThermal" name="getThermal">
+<area shape="rect" id="node1" title="compute the temperature on the conjugate heat transfer patches" alt="" coords="5,148,103,175"/>
+<area shape="rect" id="node2" href="$TEqnSimpleT_8H.html#ad145252fff6dd3b727ad3f1641750383" title=" " alt="" coords="211,5,285,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DATurbulenceModel.html#ae11089a7a308de0e24d8fe63f7a579f9" title="return effective thermal diffusivity" alt="" coords="151,57,345,98"/>
+<area shape="rect" id="node4" href="$solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="393,148,451,175"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DASolver.html#ab2b8a55494e9b1e208efdd908a71d886" title="return the coupling patch list if any scenario is active on couplingInfo dict otherwise return design..." alt="" coords="169,173,327,200"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DASolver.html#a70bbc5360b9de5931a46681648082387" title="Update the OpenFOAM field values (including both internal and boundary fields) based on the state vec..." alt="" coords="190,224,306,251"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DASolver.html#ad2cd4059650064ffe8599777743e9701" title="Update the OpenFoam mesh point coordinates based on the point vector xvVec." alt="" coords="188,275,308,301"/>
+</map>

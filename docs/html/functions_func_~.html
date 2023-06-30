@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -103,6 +103,9 @@ $(function() {
 <li>~DAFvSourceUniformPressureGradient()
 : <a class="el" href="classFoam_1_1DAFvSourceUniformPressureGradient.html#afe4b18c72f01e977ed17376dc5ad51f9">DAFvSourceUniformPressureGradient</a>
 </li>
+<li>~DAHeatTransferFoam()
+: <a class="el" href="classFoam_1_1DAHeatTransferFoam.html#accb00dfd9c9826d25299bb41495b5c27">DAHeatTransferFoam</a>
+</li>
 <li>~DAIndex()
 : <a class="el" href="classFoam_1_1DAIndex.html#a4d1246fa2bb7d974facd0e1644b7c5b2">DAIndex</a>
 </li>
@@ -124,12 +127,6 @@ $(function() {
 <li>~DAkOmega()
 : <a class="el" href="classFoam_1_1DAkOmega.html#a51fedce318e44bfb1edf9d0bda1a92c8">DAkOmega</a>
 </li>
-<li>~DAkOmegaFieldInversion()
-: <a class="el" href="classFoam_1_1DAkOmegaFieldInversion.html#a1985813604ef0b77037c38695ab75adb">DAkOmegaFieldInversion</a>
-</li>
-<li>~DAkOmegaFieldInversionk()
-: <a class="el" href="classFoam_1_1DAkOmegaFieldInversionk.html#a9cca1e96134509798eb3068086c64a81">DAkOmegaFieldInversionk</a>
-</li>
 <li>~DAkOmegaFieldInversionOmega()
 : <a class="el" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a2e9dc36e16b6ce7b426e94c87415c7b6">DAkOmegaFieldInversionOmega</a>
 </li>
@@ -138,6 +135,9 @@ $(function() {
 </li>
 <li>~DAkOmegaSSTFieldInversion()
 : <a class="el" href="classFoam_1_1DAkOmegaSSTFieldInversion.html#a657a2114969d6346cbb880cc38778cd5">DAkOmegaSSTFieldInversion</a>
+</li>
+<li>~DAkOmegaSSTFIML()
+: <a class="el" href="classFoam_1_1DAkOmegaSSTFIML.html#aca5e1cfa8dce9bf21b87362cff3f9496">DAkOmegaSSTFIML</a>
 </li>
 <li>~DAkOmegaSSTLM()
 : <a class="el" href="classFoam_1_1DAkOmegaSSTLM.html#a9ed2dba12c84dea1dfd7d141a5939def">DAkOmegaSSTLM</a>
@@ -186,6 +186,12 @@ $(function() {
 </li>
 <li>~DAObjFuncMoment()
 : <a class="el" href="classFoam_1_1DAObjFuncMoment.html#ae115b064f84ab922a882b657d9636597">DAObjFuncMoment</a>
+</li>
+<li>~DAObjFuncPatchMean()
+: <a class="el" href="classFoam_1_1DAObjFuncPatchMean.html#aff2474df6def1c5c28cafa2622baffcf">DAObjFuncPatchMean</a>
+</li>
+<li>~DAObjFuncPower()
+: <a class="el" href="classFoam_1_1DAObjFuncPower.html#a2ee1ea4d76767ff16bb33d21d7b6c27a">DAObjFuncPower</a>
 </li>
 <li>~DAObjFuncTotalPressure()
 : <a class="el" href="classFoam_1_1DAObjFuncTotalPressure.html#a5da31bf74937978a1a774648840aaacf">DAObjFuncTotalPressure</a>
@@ -283,6 +289,9 @@ $(function() {
 <li>~DAResidualDummy()
 : <a class="el" href="classFoam_1_1DAResidualDummy.html#a19915b2720f1ee5e7b2b5dde22eee6bc">DAResidualDummy</a>
 </li>
+<li>~DAResidualHeatTransferFoam()
+: <a class="el" href="classFoam_1_1DAResidualHeatTransferFoam.html#a122522e209101b63906dcd127c556ef9">DAResidualHeatTransferFoam</a>
+</li>
 <li>~DAResidualLaplacianFoam()
 : <a class="el" href="classFoam_1_1DAResidualLaplacianFoam.html#a286f662ada63f0a174b9f2e0eff2771c">DAResidualLaplacianFoam</a>
 </li>
@@ -349,6 +358,9 @@ $(function() {
 <li>~DAStateInfo()
 : <a class="el" href="classFoam_1_1DAStateInfo.html#a3d348f02d73307b22023b81b0e8ddbba">DAStateInfo</a>
 </li>
+<li>~DAStateInfoHeatTransferFoam()
+: <a class="el" href="classFoam_1_1DAStateInfoHeatTransferFoam.html#a102b5e95590bcdd592d2164c41f649c9">DAStateInfoHeatTransferFoam</a>
+</li>
 <li>~DAStateInfoLaplacianFoam()
 : <a class="el" href="classFoam_1_1DAStateInfoLaplacianFoam.html#a6eaf630b8d8a7a73f6f9e9be21827d1a">DAStateInfoLaplacianFoam</a>
 </li>
@@ -394,17 +406,14 @@ $(function() {
 <li>~IOMRFZoneListDF()
 : <a class="el" href="classFoam_1_1IOMRFZoneListDF.html#a1cbdd39bc3f784a5dce26514c8252287">IOMRFZoneListDF</a>
 </li>
-<li>~kOmegaFieldInversion()
-: <a class="el" href="classFoam_1_1RASModels_1_1kOmegaFieldInversion.html#a92d57d60b08379e095b4ad356be17424">kOmegaFieldInversion&lt; BasicTurbulenceModel &gt;</a>
-</li>
-<li>~kOmegaFieldInversionk()
-: <a class="el" href="classFoam_1_1RASModels_1_1kOmegaFieldInversionk.html#aa6a4f6f36dbcec431222009fdd915c75">kOmegaFieldInversionk&lt; BasicTurbulenceModel &gt;</a>
-</li>
 <li>~kOmegaFieldInversionOmega()
 : <a class="el" href="classFoam_1_1RASModels_1_1kOmegaFieldInversionOmega.html#a54884f225f49bf47e0477d0c46d98374">kOmegaFieldInversionOmega&lt; BasicTurbulenceModel &gt;</a>
 </li>
 <li>~kOmegaSSTFieldInversion()
 : <a class="el" href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a0d153280d0f55ceb40d42a6fd8f06934">kOmegaSSTFieldInversion&lt; BasicTurbulenceModel &gt;</a>
+</li>
+<li>~kOmegaSSTFIML()
+: <a class="el" href="classFoam_1_1RASModels_1_1kOmegaSSTFIML.html#a7f49f61911498852a74fa40be3658188">kOmegaSSTFIML&lt; BasicTurbulenceModel &gt;</a>
 </li>
 <li>~MRFZoneListDF()
 : <a class="el" href="classFoam_1_1MRFZoneListDF.html#a8bb70337c0708ab2dc4dfeb5becc00ef">MRFZoneListDF</a>

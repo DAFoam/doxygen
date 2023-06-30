@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -140,10 +140,19 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:ae60b34107c06e0af8ae51634db1720f0"><td class="memItemLeft" align="right" valign="top">static scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAUtility.html#ae60b34107c06e0af8ae51634db1720f0">angleOfAttackRadForwardAD</a> = -9999.0</td></tr>
 <tr class="memdesc:ae60b34107c06e0af8ae51634db1720f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">angle of attack in radian used in forward mode AD  <a href="classFoam_1_1DAUtility.html#ae60b34107c06e0af8ae51634db1720f0">More...</a><br /></td></tr>
 <tr class="separator:ae60b34107c06e0af8ae51634db1720f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c9b456952d5de079140d2aa9a2aef61"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAUtility.html#a0c9b456952d5de079140d2aa9a2aef61">pyCalcBeta</a> = NULL</td></tr>
+<tr class="memdesc:a0c9b456952d5de079140d2aa9a2aef61"><td class="mdescLeft">&#160;</td><td class="mdescRight">define a function pointer template for Python call back  <a href="classFoam_1_1DAUtility.html#a0c9b456952d5de079140d2aa9a2aef61">More...</a><br /></td></tr>
+<tr class="separator:a0c9b456952d5de079140d2aa9a2aef61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a974a9cc69b0aacdebb37c450b11df26f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceFoam.html#a2ec31282908b3ceece9cdc9c59b41c46">pyComputeInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAUtility.html#a974a9cc69b0aacdebb37c450b11df26f">pyCalcBetaInterface</a> = NULL</td></tr>
+<tr class="separator:a974a9cc69b0aacdebb37c450b11df26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae787488fe250805c329e22d72580d793"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAUtility.html#ae787488fe250805c329e22d72580d793">pyCalcBetaJacVecProd</a> = NULL</td></tr>
+<tr class="separator:ae787488fe250805c329e22d72580d793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9abc944f28bb9fea43ba9c4ac4a35d7e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceFoam.html#a95468b48848d3c129aa237bf22dcb998">pyJacVecProdInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAUtility.html#a9abc944f28bb9fea43ba9c4ac4a35d7e">pyCalcBetaJacVecProdInterface</a> = NULL</td></tr>
+<tr class="separator:a9abc944f28bb9fea43ba9c4ac4a35d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00030">30</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00033">33</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4fd43d5e8cef74766a0a86a312559b81"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4fd43d5e8cef74766a0a86a312559b81">&#9670;&nbsp;</a></span>DAUtility()</h2>
@@ -234,7 +243,7 @@ Static Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DAUtility_8C_source.html#l00024">24</a> of file <a class="el" href="DAUtility_8C_source.html">DAUtility.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAOption_8C_source.html#l00016">DAOption::DAOption()</a>, <a class="el" href="DASolver_8C_source.html#l00055">DASolver::New()</a>, and <a class="el" href="DAOption_8C_source.html#l00050">DAOption::updateDAOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAOption_8C_source.html#l00016">DAOption::DAOption()</a>, <a class="el" href="DASolver_8C_source.html#l00069">DASolver::New()</a>, and <a class="el" href="DAOption_8C_source.html#l00050">DAOption::updateDAOption()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -285,7 +294,18 @@ Here is the caller graph for this function:</div>
 
 <p>check whether a value is in the list </p>
 
-<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00127">127</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00137">137</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
+
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAUtility_a1ad7714eab637d50e92c402b0db6bb3f_cgraph.png" border="0" usemap="#classFoam_1_1DAUtility_a1ad7714eab637d50e92c402b0db6bb3f_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAUtility_a1ad7714eab637d50e92c402b0db6bb3f_cgraph" id="classFoam_1_1DAUtility_a1ad7714eab637d50e92c402b0db6bb3f_cgraph">
+<area shape="rect" title="check whether a value is in the list" alt="" coords="5,5,73,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="121,5,179,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -331,7 +351,18 @@ Here is the caller graph for this function:</div>
 
 <p>replace a value in the list </p>
 
-<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00157">157</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00167">167</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
+
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAUtility_a3831fc83d816fa94491150fb3554687f_cgraph.png" border="0" usemap="#classFoam_1_1DAUtility_a3831fc83d816fa94491150fb3554687f_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAUtility_a3831fc83d816fa94491150fb3554687f_cgraph" id="classFoam_1_1DAUtility_a3831fc83d816fa94491150fb3554687f_cgraph">
+<area shape="rect" title="replace a value in the list" alt="" coords="5,5,120,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="168,5,225,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -371,7 +402,18 @@ Here is the caller graph for this function:</div>
 
 <p>delete a value in the list </p>
 
-<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00193">193</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00203">203</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
+
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAUtility_abc2dd7606f5f282056e842da36a3836a_cgraph.png" border="0" usemap="#classFoam_1_1DAUtility_abc2dd7606f5f282056e842da36a3836a_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAUtility_abc2dd7606f5f282056e842da36a3836a_cgraph" id="classFoam_1_1DAUtility_abc2dd7606f5f282056e842da36a3836a_cgraph">
+<area shape="rect" title="delete a value in the list" alt="" coords="5,5,111,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="159,5,216,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -413,7 +455,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAUtility_8C_source.html#l00355">355</a> of file <a class="el" href="DAUtility_8C_source.html">DAUtility.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l02603">DASolver::calcdRdACT()</a>, <a class="el" href="DASolver_8C_source.html#l01526">DASolver::calcdRdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l01315">DASolver::calcdRdBC()</a>, <a class="el" href="DASolver_8C_source.html#l02396">DASolver::calcdRdFFD()</a>, <a class="el" href="DASolver_8C_source.html#l01038">DASolver::calcdRdWT()</a>, <a class="el" href="DAJacCon_8C_source.html#l00088">DAJacCon::initializeStateBoundaryCon()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, <a class="el" href="DAJacCondFdW_8C_source.html#l00115">DAJacCondFdW::setupJacCon()</a>, and <a class="el" href="DASolver_8H_source.html#l00567">DASolver::writeMatrixBinary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l04358">DASolver::calcdRdACT()</a>, <a class="el" href="DASolver_8C_source.html#l03240">DASolver::calcdRdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l03029">DASolver::calcdRdBC()</a>, <a class="el" href="DASolver_8C_source.html#l04151">DASolver::calcdRdFFD()</a>, <a class="el" href="DASolver_8C_source.html#l02752">DASolver::calcdRdWT()</a>, <a class="el" href="DAJacCon_8C_source.html#l00088">DAJacCon::initializeStateBoundaryCon()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, <a class="el" href="DAJacCondFdW_8C_source.html#l00115">DAJacCondFdW::setupJacCon()</a>, and <a class="el" href="DASolver_8H_source.html#l00632">DASolver::writeMatrixBinary()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -472,7 +514,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAUtility_8C_source.html#l00387">387</a> of file <a class="el" href="DAUtility_8C_source.html">DAUtility.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l02603">DASolver::calcdRdACT()</a>, <a class="el" href="DASolver_8C_source.html#l01526">DASolver::calcdRdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l01315">DASolver::calcdRdBC()</a>, <a class="el" href="DASolver_8C_source.html#l02396">DASolver::calcdRdFFD()</a>, and <a class="el" href="DASolver_8H_source.html#l00575">DASolver::writeMatrixASCII()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l04358">DASolver::calcdRdACT()</a>, <a class="el" href="DASolver_8C_source.html#l03240">DASolver::calcdRdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l03029">DASolver::calcdRdBC()</a>, <a class="el" href="DASolver_8C_source.html#l04151">DASolver::calcdRdFFD()</a>, and <a class="el" href="DASolver_8H_source.html#l00640">DASolver::writeMatrixASCII()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -527,7 +569,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAUtility_8C_source.html#l00322">322</a> of file <a class="el" href="DAUtility_8C_source.html">DAUtility.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00583">DASolver::readMatrixBinary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00648">DASolver::readMatrixBinary()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -578,7 +620,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAUtility_8C_source.html#l00291">291</a> of file <a class="el" href="DAUtility_8C_source.html">DAUtility.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l02679">DASolver::calcdFdACT()</a>, <a class="el" href="DASolver_8C_source.html#l03658">DASolver::calcdFdACTAD()</a>, <a class="el" href="DASolver_8C_source.html#l02098">DASolver::calcdFdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l01402">DASolver::calcdFdBC()</a>, <a class="el" href="DASolver_8C_source.html#l01829">DASolver::calcdFdBCAD()</a>, <a class="el" href="DASolver_8C_source.html#l02478">DASolver::calcdFdFFD()</a>, <a class="el" href="DASolver_8C_source.html#l02794">DASolver::calcdFdFieldAD()</a>, <a class="el" href="DASolver_8C_source.html#l01172">DASolver::calcdFdW()</a>, <a class="el" href="DASolver_8C_source.html#l03162">DASolver::calcdFdWAD()</a>, <a class="el" href="DASolver_8C_source.html#l03284">DASolver::calcdFdXvAD()</a>, <a class="el" href="DASolver_8C_source.html#l03829">DASolver::calcdRdActTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l02222">DASolver::calcdRdAOATPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l01612">DASolver::calcdRdBCTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l03580">DASolver::calcdRdFieldTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l04099">DASolver::calcdRdWOldTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l04022">DASolver::calcdRdWTPsiAD()</a>, <a class="el" href="DAJacCon_8C_source.html#l02083">DAJacCon::checkSpecialBCs()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, and <a class="el" href="DASolver_8H_source.html#l00591">DASolver::writeVectorASCII()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l04434">DASolver::calcdFdACT()</a>, <a class="el" href="DASolver_8C_source.html#l05739">DASolver::calcdFdACTAD()</a>, <a class="el" href="DASolver_8C_source.html#l03853">DASolver::calcdFdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l03116">DASolver::calcdFdBC()</a>, <a class="el" href="DASolver_8C_source.html#l03562">DASolver::calcdFdBCAD()</a>, <a class="el" href="DASolver_8C_source.html#l04233">DASolver::calcdFdFFD()</a>, <a class="el" href="DASolver_8C_source.html#l04549">DASolver::calcdFdFieldAD()</a>, <a class="el" href="DASolver_8C_source.html#l02886">DASolver::calcdFdW()</a>, <a class="el" href="DASolver_8C_source.html#l04986">DASolver::calcdFdWAD()</a>, <a class="el" href="DASolver_8C_source.html#l05108">DASolver::calcdFdXvAD()</a>, <a class="el" href="DASolver_8C_source.html#l05910">DASolver::calcdRdActTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l03977">DASolver::calcdRdAOATPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l03326">DASolver::calcdRdBCTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l05661">DASolver::calcdRdFieldTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l06370">DASolver::calcdRdWOldTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l06293">DASolver::calcdRdWTPsiAD()</a>, <a class="el" href="DAJacCon_8C_source.html#l02083">DAJacCon::checkSpecialBCs()</a>, <a class="el" href="DAJacCondRdW_8C_source.html#l00151">DAJacCondRdW::setupdRdWCon()</a>, and <a class="el" href="DASolver_8H_source.html#l00656">DASolver::writeVectorASCII()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -647,7 +689,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAUtility_8C_source.html#l00226">226</a> of file <a class="el" href="DAUtility_8C_source.html">DAUtility.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAJacCon_8C_source.html#l01864">DAJacCon::readJacConColoring()</a>, and <a class="el" href="DASolver_8H_source.html#l00599">DASolver::readVectorBinary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAJacCon_8C_source.html#l01864">DAJacCon::readJacConColoring()</a>, and <a class="el" href="DASolver_8H_source.html#l00664">DASolver::readVectorBinary()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -699,7 +741,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAUtility_8C_source.html#l00259">259</a> of file <a class="el" href="DAUtility_8C_source.html">DAUtility.C</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l02679">DASolver::calcdFdACT()</a>, <a class="el" href="DASolver_8C_source.html#l03658">DASolver::calcdFdACTAD()</a>, <a class="el" href="DASolver_8C_source.html#l02098">DASolver::calcdFdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l01402">DASolver::calcdFdBC()</a>, <a class="el" href="DASolver_8C_source.html#l01829">DASolver::calcdFdBCAD()</a>, <a class="el" href="DASolver_8C_source.html#l02478">DASolver::calcdFdFFD()</a>, <a class="el" href="DASolver_8C_source.html#l02794">DASolver::calcdFdFieldAD()</a>, <a class="el" href="DASolver_8C_source.html#l01172">DASolver::calcdFdW()</a>, <a class="el" href="DASolver_8C_source.html#l03162">DASolver::calcdFdWAD()</a>, <a class="el" href="DASolver_8C_source.html#l03284">DASolver::calcdFdXvAD()</a>, <a class="el" href="DASolver_8C_source.html#l03829">DASolver::calcdRdActTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l02222">DASolver::calcdRdAOATPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l01612">DASolver::calcdRdBCTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l03580">DASolver::calcdRdFieldTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l04099">DASolver::calcdRdWOldTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l04022">DASolver::calcdRdWTPsiAD()</a>, <a class="el" href="DAJacCon_8C_source.html#l01801">DAJacCon::calcJacConColoring()</a>, and <a class="el" href="DASolver_8H_source.html#l00607">DASolver::writeVectorBinary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l04434">DASolver::calcdFdACT()</a>, <a class="el" href="DASolver_8C_source.html#l05739">DASolver::calcdFdACTAD()</a>, <a class="el" href="DASolver_8C_source.html#l03853">DASolver::calcdFdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l03116">DASolver::calcdFdBC()</a>, <a class="el" href="DASolver_8C_source.html#l03562">DASolver::calcdFdBCAD()</a>, <a class="el" href="DASolver_8C_source.html#l04233">DASolver::calcdFdFFD()</a>, <a class="el" href="DASolver_8C_source.html#l04549">DASolver::calcdFdFieldAD()</a>, <a class="el" href="DASolver_8C_source.html#l02886">DASolver::calcdFdW()</a>, <a class="el" href="DASolver_8C_source.html#l04986">DASolver::calcdFdWAD()</a>, <a class="el" href="DASolver_8C_source.html#l05108">DASolver::calcdFdXvAD()</a>, <a class="el" href="DASolver_8C_source.html#l05910">DASolver::calcdRdActTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l03977">DASolver::calcdRdAOATPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l03326">DASolver::calcdRdBCTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l05661">DASolver::calcdRdFieldTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l06370">DASolver::calcdRdWOldTPsiAD()</a>, <a class="el" href="DASolver_8C_source.html#l06293">DASolver::calcdRdWTPsiAD()</a>, <a class="el" href="DAJacCon_8C_source.html#l01801">DAJacCon::calcJacConColoring()</a>, and <a class="el" href="DASolver_8H_source.html#l00672">DASolver::writeVectorBinary()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -773,26 +815,34 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAUtility_8C_source.html#l00419">419</a> of file <a class="el" href="DAUtility_8C_source.html">DAUtility.C</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>.</p>
+<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, and <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00410">DASpalartAllmaras::calcResiduals()</a>, <a class="el" href="DASpalartAllmarasFv3_8C_source.html#l00409">DASpalartAllmarasFv3::calcResiduals()</a>, <a class="el" href="DAkEpsilon_8C_source.html#l00504">DAkEpsilon::calcResiduals()</a>, <a class="el" href="DAkOmega_8C_source.html#l00513">DAkOmega::calcResiduals()</a>, <a class="el" href="DAkOmegaFieldInversionk_8C_source.html#l00520">DAkOmegaFieldInversionk::calcResiduals()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00520">DAkOmegaFieldInversionOmega::calcResiduals()</a>, <a class="el" href="DAkOmegaFieldInversion_8C_source.html#l00520">DAkOmegaFieldInversion::calcResiduals()</a>, <a class="el" href="DASpalartAllmarasFv3FieldInversion_8C_source.html#l00433">DASpalartAllmarasFv3FieldInversion::calcResiduals()</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00658">DAkOmegaSST::calcResiduals()</a>, <a class="el" href="DAkOmegaSSTFieldInversion_8C_source.html#l00713">DAkOmegaSSTFieldInversion::calcResiduals()</a>, and <a class="el" href="DAkOmegaSSTLM_8C_source.html#l01008">DAkOmegaSSTLM::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASpalartAllmaras_8C_source.html#l00410">DASpalartAllmaras::calcResiduals()</a>, <a class="el" href="DAkEpsilon_8C_source.html#l00504">DAkEpsilon::calcResiduals()</a>, <a class="el" href="DASpalartAllmarasFv3_8C_source.html#l00433">DASpalartAllmarasFv3::calcResiduals()</a>, <a class="el" href="DAkOmega_8C_source.html#l00513">DAkOmega::calcResiduals()</a>, <a class="el" href="DASpalartAllmarasFv3FieldInversion_8C_source.html#l00429">DASpalartAllmarasFv3FieldInversion::calcResiduals()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00527">DAkOmegaFieldInversionOmega::calcResiduals()</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00658">DAkOmegaSST::calcResiduals()</a>, <a class="el" href="DAkOmegaSSTFieldInversion_8C_source.html#l00719">DAkOmegaSSTFieldInversion::calcResiduals()</a>, <a class="el" href="DAkOmegaSSTFIML_8C_source.html#l00972">DAkOmegaSSTFIML::calcResiduals()</a>, and <a class="el" href="DAkOmegaSSTLM_8C_source.html#l01008">DAkOmegaSSTLM::calcResiduals()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAUtility_a33a755d4b9029ec00bb1969fc0a193e3_cgraph.png" border="0" usemap="#classFoam_1_1DAUtility_a33a755d4b9029ec00bb1969fc0a193e3_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAUtility_a33a755d4b9029ec00bb1969fc0a193e3_cgraph" id="classFoam_1_1DAUtility_a33a755d4b9029ec00bb1969fc0a193e3_cgraph">
+<area shape="rect" title="bound a volScalar variable based on parametes defined in DAOption::allOptions_" alt="" coords="5,5,88,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="136,5,193,32"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAUtility_a33a755d4b9029ec00bb1969fc0a193e3_icgraph.png" border="0" usemap="#classFoam_1_1DAUtility_a33a755d4b9029ec00bb1969fc0a193e3_icgraph" alt=""/></div>
 <map name="classFoam_1_1DAUtility_a33a755d4b9029ec00bb1969fc0a193e3_icgraph" id="classFoam_1_1DAUtility_a33a755d4b9029ec00bb1969fc0a193e3_icgraph">
-<area shape="rect" title="bound a volScalar variable based on parametes defined in DAOption::allOptions_" alt="" coords="308,311,391,338"/>
+<area shape="rect" title="bound a volScalar variable based on parametes defined in DAOption::allOptions_" alt="" coords="308,281,391,307"/>
 <area shape="rect" href="classFoam_1_1DASpalartAllmaras.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="38,5,227,47"/>
-<area shape="rect" href="classFoam_1_1DASpalartAllmarasFv3.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="26,71,239,112"/>
-<area shape="rect" href="classFoam_1_1DAkEpsilon.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="14,137,251,163"/>
-<area shape="rect" href="classFoam_1_1DAkOmega.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="14,187,251,214"/>
-<area shape="rect" href="classFoam_1_1DAkOmegaFieldInversionk.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="13,239,252,280"/>
-<area shape="rect" href="classFoam_1_1DAkOmegaFieldInversion.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="17,304,248,345"/>
-<area shape="rect" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="17,369,248,411"/>
-<area shape="rect" href="classFoam_1_1DASpalartAllmarasFv3FieldInversion.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="26,435,239,476"/>
-<area shape="rect" href="classFoam_1_1DAkOmegaSST.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="47,500,218,541"/>
-<area shape="rect" href="classFoam_1_1DAkOmegaSSTFieldInversion.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="5,565,260,607"/>
-<area shape="rect" href="classFoam_1_1DAkOmegaSSTLM.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="41,631,224,672"/>
+<area shape="rect" href="classFoam_1_1DAkEpsilon.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="14,71,251,98"/>
+<area shape="rect" href="classFoam_1_1DASpalartAllmarasFv3.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="26,123,239,164"/>
+<area shape="rect" href="classFoam_1_1DAkOmega.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="14,189,251,215"/>
+<area shape="rect" href="classFoam_1_1DASpalartAllmarasFv3FieldInversion.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="26,240,239,281"/>
+<area shape="rect" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="17,305,248,347"/>
+<area shape="rect" href="classFoam_1_1DAkOmegaSST.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="47,371,218,412"/>
+<area shape="rect" href="classFoam_1_1DAkOmegaSSTFieldInversion.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="5,436,260,477"/>
+<area shape="rect" href="classFoam_1_1DAkOmegaSSTFIML.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="35,501,230,543"/>
+<area shape="rect" href="classFoam_1_1DAkOmegaSSTLM.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="41,567,224,608"/>
 </map>
 </div>
 
@@ -842,7 +892,16 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAUtility_8C_source.html#l00506">506</a> of file <a class="el" href="DAUtility_8C_source.html">DAUtility.C</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>.</p>
+<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, and <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAUtility_aabf2f7526d785c6bb6fcfcc3cbdc73c2_cgraph.png" border="0" usemap="#classFoam_1_1DAUtility_aabf2f7526d785c6bb6fcfcc3cbdc73c2_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAUtility_aabf2f7526d785c6bb6fcfcc3cbdc73c2_cgraph" id="classFoam_1_1DAUtility_aabf2f7526d785c6bb6fcfcc3cbdc73c2_cgraph">
+<area shape="rect" title="bound a volVector variable based on parametes defined in DAOption::allOptions_" alt="" coords="5,5,88,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="136,5,193,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -972,9 +1031,115 @@ Here is the caller graph for this function:</div>
 
 <p>angle of attack in radian used in forward mode AD </p>
 
-<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00123">123</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00126">126</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAObjFuncForce_8C_source.html#l00196">DAObjFuncForce::updateForceDir()</a>.</p>
+
+</div>
+</div>
+<a id="a0c9b456952d5de079140d2aa9a2aef61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c9b456952d5de079140d2aa9a2aef61">&#9670;&nbsp;</a></span>pyCalcBeta</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * pyCalcBeta = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>define a function pointer template for Python call back </p>
+
+<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00129">129</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DAkOmegaSSTFIML_8C_source.html#l00827">DAkOmegaSSTFIML::calcBetaField()</a>, and <a class="el" href="DASolver_8H_source.html#l00983">DASolver::initTensorFlowFuncs()</a>.</p>
+
+</div>
+</div>
+<a id="a974a9cc69b0aacdebb37c450b11df26f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a974a9cc69b0aacdebb37c450b11df26f">&#9670;&nbsp;</a></span>pyCalcBetaInterface</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceFoam.html#a2ec31282908b3ceece9cdc9c59b41c46">pyComputeInterface</a> pyCalcBetaInterface = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00130">130</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DAkOmegaSSTFIML_8C_source.html#l00827">DAkOmegaSSTFIML::calcBetaField()</a>, and <a class="el" href="DASolver_8H_source.html#l00983">DASolver::initTensorFlowFuncs()</a>.</p>
+
+</div>
+</div>
+<a id="ae787488fe250805c329e22d72580d793"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae787488fe250805c329e22d72580d793">&#9670;&nbsp;</a></span>pyCalcBetaJacVecProd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * pyCalcBetaJacVecProd = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00132">132</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00983">DASolver::initTensorFlowFuncs()</a>.</p>
+
+</div>
+</div>
+<a id="a9abc944f28bb9fea43ba9c4ac4a35d7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9abc944f28bb9fea43ba9c4ac4a35d7e">&#9670;&nbsp;</a></span>pyCalcBetaJacVecProdInterface</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceFoam.html#a95468b48848d3c129aa237bf22dcb998">pyJacVecProdInterface</a> pyCalcBetaJacVecProdInterface = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DAUtility_8H_source.html#l00133">133</a> of file <a class="el" href="DAUtility_8H_source.html">DAUtility.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DASolver_8H_source.html#l00983">DASolver::initTensorFlowFuncs()</a>.</p>
 
 </div>
 </div>

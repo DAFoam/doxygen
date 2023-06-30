@@ -1,0 +1,4 @@
+<map id="calcCouplingFaceCoords" name="calcCouplingFaceCoords">
+<area shape="rect" id="node1" title="return the face coordinates based on vol coords" alt="" coords="252,5,431,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#ae0bcce926e1dd0bf108ed423b83b4390" title="calc matrix&#45;vector products for calcCouplingFaceCoords" alt="" coords="5,5,204,32"/>
+</map>

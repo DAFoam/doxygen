@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -68,7 +68,8 @@ $(function() {
 
 <h3><a id="index_p"></a>- p -</h3><ul>
 <li>p_
-: <a class="el" href="classFoam_1_1DAResidualPimpleFoam.html#a9328e381d10c3b775291e42b677bebe1">DAResidualPimpleFoam</a>
+: <a class="el" href="classFoam_1_1DAkOmegaSSTFIML.html#a9328e381d10c3b775291e42b677bebe1">DAkOmegaSSTFIML</a>
+, <a class="el" href="classFoam_1_1DAResidualPimpleFoam.html#a9328e381d10c3b775291e42b677bebe1">DAResidualPimpleFoam</a>
 , <a class="el" href="classFoam_1_1DAResidualPisoFoam.html#a9328e381d10c3b775291e42b677bebe1">DAResidualPisoFoam</a>
 , <a class="el" href="classFoam_1_1DAResidualRhoSimpleCFoam.html#a9328e381d10c3b775291e42b677bebe1">DAResidualRhoSimpleCFoam</a>
 , <a class="el" href="classFoam_1_1DAResidualRhoSimpleFoam.html#a9328e381d10c3b775291e42b677bebe1">DAResidualRhoSimpleFoam</a>
@@ -84,10 +85,20 @@ $(function() {
 </li>
 <li>patchNames_
 : <a class="el" href="classFoam_1_1DAMotion.html#a65ff7f3d0db01fa5c600366c6c52d7d2">DAMotion</a>
-, <a class="el" href="classFoam_1_1DAObjFuncFieldInversion.html#a65ff7f3d0db01fa5c600366c6c52d7d2">DAObjFuncFieldInversion</a>
+</li>
+<li>pData_
+: <a class="el" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a0aa2069dcd3031414665e1046951b8c6">DAkOmegaFieldInversionOmega</a>
+, <a class="el" href="classFoam_1_1DAkOmegaSSTFieldInversion.html#a0aa2069dcd3031414665e1046951b8c6">DAkOmegaSSTFieldInversion</a>
+, <a class="el" href="classFoam_1_1DASpalartAllmarasFv3FieldInversion.html#a0aa2069dcd3031414665e1046951b8c6">DASpalartAllmarasFv3FieldInversion</a>
+, <a class="el" href="classFoam_1_1RASModels_1_1kOmegaFieldInversionOmega.html#a0aa2069dcd3031414665e1046951b8c6">kOmegaFieldInversionOmega&lt; BasicTurbulenceModel &gt;</a>
+, <a class="el" href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a0aa2069dcd3031414665e1046951b8c6">kOmegaSSTFieldInversion&lt; BasicTurbulenceModel &gt;</a>
+, <a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3FieldInversion.html#a0aa2069dcd3031414665e1046951b8c6">SpalartAllmarasFv3FieldInversion&lt; BasicTurbulenceModel &gt;</a>
 </li>
 <li>periodicity_
 : <a class="el" href="classFoam_1_1DASolver.html#a18461c5b858df6eae20795394bcbb2f2">DASolver</a>
+</li>
+<li>pGradAlongStream_
+: <a class="el" href="classFoam_1_1DAkOmegaSSTFIML.html#a717772e49f901ff5f7a55698a02bd0b2">DAkOmegaSSTFIML</a>
 </li>
 <li>phase_
 : <a class="el" href="classFoam_1_1DAMotionTranslation.html#a84f8c3e93b42216082d0db61a9abb53b">DAMotionTranslation</a>
@@ -163,9 +174,6 @@ $(function() {
 : <a class="el" href="classFoam_1_1DAResidualSimpleTFoam.html#af522d259aaff28ef30fdbf68d498e8c7">DAResidualSimpleTFoam</a>
 , <a class="el" href="classFoam_1_1DATurbulenceModel.html#af522d259aaff28ef30fdbf68d498e8c7">DATurbulenceModel</a>
 </li>
-<li>pRef_
-: <a class="el" href="classFoam_1_1DAObjFuncFieldInversion.html#af12d6b219d12545bad916dbd9f5ccdd2">DAObjFuncFieldInversion</a>
-</li>
 <li>pRefCell_
 : <a class="el" href="classFoam_1_1DAPimpleFoam.html#a0bd6a80f2ef015bf6724b541e8df7f36">DAPimpleFoam</a>
 , <a class="el" href="classFoam_1_1DAPisoFoam.html#a0bd6a80f2ef015bf6724b541e8df7f36">DAPisoFoam</a>
@@ -197,6 +205,9 @@ $(function() {
 , <a class="el" href="classFoam_1_1DARhoSimpleFoam.html#ae6030afc327e48085bba22be5cb1cb84">DARhoSimpleFoam</a>
 , <a class="el" href="classFoam_1_1DATurboFoam.html#ae6030afc327e48085bba22be5cb1cb84">DATurboFoam</a>
 </li>
+<li>pressureStress_
+: <a class="el" href="classFoam_1_1DAkOmegaSSTFIML.html#a3860310e02c2510a561a8ea265f2849b">DAkOmegaSSTFIML</a>
+</li>
 <li>prevPrimalSolTime_
 : <a class="el" href="classFoam_1_1DASolver.html#acf707fcd9a9470de00bbb5bd56c7d7b9">DASolver</a>
 </li>
@@ -206,11 +217,20 @@ $(function() {
 <li>primalFail
 : <a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a84032a81df433c8a9e6ebe2503ac6fb4">PYDAFOAM</a>
 </li>
+<li>primalMinIters
+: <a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a5bb2e9d65c32a7904144f2c5e2ab8463">DAOPTION</a>
+</li>
+<li>primalMinIters_
+: <a class="el" href="classFoam_1_1DASolver.html#aba55269ad6d18949602a0372c8c8fcdc">DASolver</a>
+</li>
 <li>primalMinRes_
 : <a class="el" href="classFoam_1_1DASolver.html#a21a5148ea30de4e7d65c42aed3b78643">DASolver</a>
 </li>
 <li>primalMinResTol
 : <a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a86d3f1c01b1aead58daf77201958ce1d">DAOPTION</a>
+</li>
+<li>primalMinResTol_
+: <a class="el" href="classFoam_1_1DASolver.html#aaaeca7ab8a84143ac3ee3214bd34831f">DASolver</a>
 </li>
 <li>primalMinResTolDiff
 : <a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a25a55341792927d5007a516857cb94b5">DAOPTION</a>
@@ -231,11 +251,10 @@ $(function() {
 : <a class="el" href="classFoam_1_1DAFvSourceActuatorDisk.html#a534c81c18b282df8a4814b99093f493a">DAFvSourceActuatorDisk</a>
 , <a class="el" href="classFoam_1_1DAkEpsilon.html#a534c81c18b282df8a4814b99093f493a">DAkEpsilon</a>
 , <a class="el" href="classFoam_1_1DAkOmega.html#a534c81c18b282df8a4814b99093f493a">DAkOmega</a>
-, <a class="el" href="classFoam_1_1DAkOmegaFieldInversion.html#a534c81c18b282df8a4814b99093f493a">DAkOmegaFieldInversion</a>
-, <a class="el" href="classFoam_1_1DAkOmegaFieldInversionk.html#a534c81c18b282df8a4814b99093f493a">DAkOmegaFieldInversionk</a>
 , <a class="el" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a534c81c18b282df8a4814b99093f493a">DAkOmegaFieldInversionOmega</a>
 , <a class="el" href="classFoam_1_1DAkOmegaSST.html#a534c81c18b282df8a4814b99093f493a">DAkOmegaSST</a>
 , <a class="el" href="classFoam_1_1DAkOmegaSSTFieldInversion.html#a534c81c18b282df8a4814b99093f493a">DAkOmegaSSTFieldInversion</a>
+, <a class="el" href="classFoam_1_1DAkOmegaSSTFIML.html#a534c81c18b282df8a4814b99093f493a">DAkOmegaSSTFIML</a>
 , <a class="el" href="classFoam_1_1DAkOmegaSSTLM.html#a534c81c18b282df8a4814b99093f493a">DAkOmegaSSTLM</a>
 , <a class="el" href="classFoam_1_1DASpalartAllmaras.html#a534c81c18b282df8a4814b99093f493a">DASpalartAllmaras</a>
 , <a class="el" href="classFoam_1_1DASpalartAllmarasFv3.html#a534c81c18b282df8a4814b99093f493a">DASpalartAllmarasFv3</a>
@@ -251,10 +270,6 @@ $(function() {
 <li>printPYDAFOAMOptions
 : <a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#ae455ba2edd6c7ea0578402456e5df6c3">DAOPTION</a>
 </li>
-<li>profileRefFieldInversion_
-: <a class="el" href="classFoam_1_1DASpalartAllmarasFv3FieldInversion.html#ae17df8ed167e8f7e95d5b9dbde6af56e">DASpalartAllmarasFv3FieldInversion</a>
-, <a class="el" href="classFoam_1_1RASModels_1_1SpalartAllmarasFv3FieldInversion.html#ae17df8ed167e8f7e95d5b9dbde6af56e">SpalartAllmarasFv3FieldInversion&lt; BasicTurbulenceModel &gt;</a>
-</li>
 <li>prop_coupling
 : <a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamBuilder.html#a22224bd69929fb2200d32d47a93e55c8">DAFoamBuilder</a>
 , <a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamGroup.html#a22224bd69929fb2200d32d47a93e55c8">DAFoamGroup</a>
@@ -269,6 +284,12 @@ $(function() {
 </li>
 <li>PrtPtr_
 : <a class="el" href="classFoam_1_1DASimpleTFoam.html#afcf93c1b1a2c24b5b947a4715ce0a011">DASimpleTFoam</a>
+</li>
+<li>pseudoNuTilda_
+: <a class="el" href="classFoam_1_1DASpalartAllmarasFv3.html#ad34b3e586050c531cc6bcb25673f0af3">DASpalartAllmarasFv3</a>
+</li>
+<li>pseudoNuTildaEqn_
+: <a class="el" href="classFoam_1_1DASpalartAllmarasFv3.html#a53bb87d5a92e06dd320a763ba879e389">DASpalartAllmarasFv3</a>
 </li>
 <li>psi
 : <a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamSolver.html#a73a5d800476bf082e385a029a3ef3a84">DAFoamSolver</a>
@@ -288,6 +309,18 @@ $(function() {
 </li>
 <li>ptSetName
 : <a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#aad40a9d19417e00cfb194407a8d84064">PYDAFOAM</a>
+</li>
+<li>pyCalcBeta
+: <a class="el" href="classFoam_1_1DAUtility.html#a0c9b456952d5de079140d2aa9a2aef61">DAUtility</a>
+</li>
+<li>pyCalcBetaInterface
+: <a class="el" href="classFoam_1_1DAUtility.html#a974a9cc69b0aacdebb37c450b11df26f">DAUtility</a>
+</li>
+<li>pyCalcBetaJacVecProd
+: <a class="el" href="classFoam_1_1DAUtility.html#ae787488fe250805c329e22d72580d793">DAUtility</a>
+</li>
+<li>pyCalcBetaJacVecProdInterface
+: <a class="el" href="classFoam_1_1DAUtility.html#a9abc944f28bb9fea43ba9c4ac4a35d7e">DAUtility</a>
 </li>
 <li>pyOptions_
 : <a class="el" href="classFoam_1_1DASolver.html#a51bf89755448def5b0c3da68a10749f8">DASolver</a>

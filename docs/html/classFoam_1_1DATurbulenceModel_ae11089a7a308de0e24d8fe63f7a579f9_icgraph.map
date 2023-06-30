@@ -1,4 +1,6 @@
 <map id="alphaEff" name="alphaEff">
-<area shape="rect" id="node1" title="return effective thermal diffusivity" alt="" coords="277,13,352,39"/>
+<area shape="rect" id="node1" title="return effective thermal diffusivity" alt="" coords="277,71,352,98"/>
 <area shape="rect" id="node2" href="$classFoam_1_1DAObjFuncWallHeatFlux.html#aff7d67902025442333a1a88cce51695e" title="calculate the value of objective function" alt="" coords="5,5,229,47"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#ae170e97a5040f5709193c33087dcf70f" title="compute the temperature on the conjugate heat transfer patches" alt="" coords="13,71,222,98"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#a78d75bdaf913cfcc71c44a1b9557fc5f" title="assign temperature values to the conjugate heat transfer patches" alt="" coords="13,122,221,149"/>
 </map>

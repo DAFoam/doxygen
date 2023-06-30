@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -215,7 +215,7 @@ $(function() {
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="comment">//- Construct from fvMesh</span></div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <a class="code" href="classFoam_1_1MRFZoneDF.html">MRFZoneDF</a>(</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keyword">const</span> word&amp; <a class="code" href="classFoam_1_1MRFZoneDF.html#ade4113569ef0db70665fded275a5e38e">name</a>,</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keyword">const</span> dictionary&amp; dict,</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keyword">const</span> word&amp; cellZoneName = word::null);</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
@@ -278,41 +278,39 @@ $(function() {
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFoam_1_1MRFZoneDF.html#a960791e328f9950647e53a56cded2e31">correctBoundaryVelocity</a>(volVectorField&amp; <a class="code" href="pEqnPimpleDyM_8H.html#a81cf6107131a3583e2b0b762cb9c2862">U</a>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="comment">//- Update MRFZoneDF faces if the mesh topology changes</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFoam_1_1MRFZoneDF.html#ac5c54df7ed3b930268c8d7752c101725">update</a>();</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="comment">//void update();</span></div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="comment">// I-O</span></div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="comment">//- Write</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFoam_1_1MRFZoneDF.html#a4a9a5e81ef203c89a365d47f0acc39b9">writeData</a>(Ostream&amp; os) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="comment">//void writeData(Ostream&amp; os) const;</span></div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="comment">//- Read MRF dictionary</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classFoam_1_1MRFZoneDF.html#a6ce0c64db98eb6144d363dbfc86104eb">read</a>(<span class="keyword">const</span> dictionary&amp; dict);</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;};</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;} <span class="comment">// End namespace Foam</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment">// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //</span></div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#ifdef NoRepository</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="MRFZoneTemplatesDF_8C.html">MRFZoneTemplatesDF.C</a>&quot;</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="MRFZoneIDF_8H.html">MRFZoneIDF.H</a>&quot;</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment">// ************************************************************************* //</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="comment">//bool read(const dictionary&amp; dict);</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;};</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;} <span class="comment">// End namespace Foam</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment">// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor">#ifdef NoRepository</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="MRFZoneTemplatesDF_8C.html">MRFZoneTemplatesDF.C</a>&quot;</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="MRFZoneIDF_8H.html">MRFZoneIDF.H</a>&quot;</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment">// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="comment">// ************************************************************************* //</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassFoam_1_1MRFZoneDF_html_ade4113569ef0db70665fded275a5e38e"><div class="ttname"><a href="classFoam_1_1MRFZoneDF.html#ade4113569ef0db70665fded275a5e38e">Foam::MRFZoneDF::name</a></div><div class="ttdeci">const word &amp; name() const</div><div class="ttdef"><b>Definition:</b> <a href="MRFZoneIDF_8H_source.html#l00034">MRFZoneIDF.H:34</a></div></div>
 <div class="ttc" id="apEqnPimpleDyM_8H_html_a81cf6107131a3583e2b0b762cb9c2862"><div class="ttname"><a href="pEqnPimpleDyM_8H.html#a81cf6107131a3583e2b0b762cb9c2862">U</a></div><div class="ttdeci">U</div><div class="ttdef"><b>Definition:</b> <a href="pEqnPimpleDyM_8H_source.html#l00060">pEqnPimpleDyM.H:60</a></div></div>
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1MRFZoneDF_html_ad9735e23cb0888fb98e1c5893aecff7e"><div class="ttname"><a href="classFoam_1_1MRFZoneDF.html#ad9735e23cb0888fb98e1c5893aecff7e">Foam::MRFZoneDF::active</a></div><div class="ttdeci">bool active() const</div><div class="ttdef"><b>Definition:</b> <a href="MRFZoneIDF_8H_source.html#l00039">MRFZoneIDF.H:39</a></div></div>
 <div class="ttc" id="aclassFoam_1_1MRFZoneDF_html_a425654be32327d1338162c689d1f4beb"><div class="ttname"><a href="classFoam_1_1MRFZoneDF.html#a425654be32327d1338162c689d1f4beb">Foam::MRFZoneDF::Omega</a></div><div class="ttdeci">vector Omega() const</div><div class="ttdef"><b>Definition:</b> <a href="MRFZoneDF_8C_source.html#l00262">MRFZoneDF.C:262</a></div></div>
 <div class="ttc" id="aclassFoam_1_1MRFZoneDF_html"><div class="ttname"><a href="classFoam_1_1MRFZoneDF.html">Foam::MRFZoneDF</a></div><div class="ttdef"><b>Definition:</b> <a href="MRFZoneDF_8H_source.html#l00061">MRFZoneDF.H:61</a></div></div>
@@ -321,15 +319,13 @@ $(function() {
 <div class="ttc" id="aclassFoam_1_1MRFZoneDF_html_a960791e328f9950647e53a56cded2e31"><div class="ttname"><a href="classFoam_1_1MRFZoneDF.html#a960791e328f9950647e53a56cded2e31">Foam::MRFZoneDF::correctBoundaryVelocity</a></div><div class="ttdeci">void correctBoundaryVelocity(volVectorField &amp;U) const</div><div class="ttdef"><b>Definition:</b> <a href="MRFZoneDF_8C_source.html#l00356">MRFZoneDF.C:356</a></div></div>
 <div class="ttc" id="aclassFoam_1_1MRFZoneDF_html_aaa0b627878c53a843733aa3c37306d9a"><div class="ttname"><a href="classFoam_1_1MRFZoneDF.html#aaa0b627878c53a843733aa3c37306d9a">Foam::MRFZoneDF::makeRelative</a></div><div class="ttdeci">void makeRelative(volVectorField &amp;U) const</div><div class="ttdef"><b>Definition:</b> <a href="MRFZoneDF_8C_source.html#l00289">MRFZoneDF.C:289</a></div></div>
 <div class="ttc" id="aMRFZoneIDF_8H_html"><div class="ttname"><a href="MRFZoneIDF_8H.html">MRFZoneIDF.H</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="acreateRefsPimple_8H_html_a1a97abcf6c141f539994c8a21c8daca7"><div class="ttname"><a href="createRefsPimple_8H.html#a1a97abcf6c141f539994c8a21c8daca7">phi</a></div><div class="ttdeci">surfaceScalarField &amp; phi</div><div class="ttdef"><b>Definition:</b> <a href="createRefsPimple_8H_source.html#l00008">createRefsPimple.H:8</a></div></div>
 <div class="ttc" id="anamespaceFoam_html"><div class="ttname"><a href="namespaceFoam.html">Foam</a></div><div class="ttdef"><b>Definition:</b> <a href="multiFreqScalarFvPatchField_8C_source.html#l00144">multiFreqScalarFvPatchField.C:144</a></div></div>
-<div class="ttc" id="aclassFoam_1_1MRFZoneDF_html_a6ce0c64db98eb6144d363dbfc86104eb"><div class="ttname"><a href="classFoam_1_1MRFZoneDF.html#a6ce0c64db98eb6144d363dbfc86104eb">Foam::MRFZoneDF::read</a></div><div class="ttdeci">bool read(const dictionary &amp;dict)</div><div class="ttdef"><b>Definition:</b> <a href="MRFZoneDF_8C_source.html#l00390">MRFZoneDF.C:390</a></div></div>
 <div class="ttc" id="aclassFoam_1_1MRFZoneDF_html_ad34ca5a7d926a60e061d288e019a56a4"><div class="ttname"><a href="classFoam_1_1MRFZoneDF.html#ad34ca5a7d926a60e061d288e019a56a4">Foam::MRFZoneDF::addCoriolis</a></div><div class="ttdeci">void addCoriolis(const volVectorField &amp;U, volVectorField &amp;ddtU) const</div><div class="ttdef"><b>Definition:</b> <a href="MRFZoneDF_8C_source.html#l00267">MRFZoneDF.C:267</a></div></div>
 <div class="ttc" id="aclassFoam_1_1MRFZoneDF_html_a9c8cde0b192708d622d874f8cc2df66d"><div class="ttname"><a href="classFoam_1_1MRFZoneDF.html#a9c8cde0b192708d622d874f8cc2df66d">Foam::MRFZoneDF::updateMesh</a></div><div class="ttdeci">void updateMesh(const mapPolyMesh &amp;mpm)</div><div class="ttdef"><b>Definition:</b> <a href="MRFZoneDF_8H_source.html#l00173">MRFZoneDF.H:173</a></div></div>
 <div class="ttc" id="aclassFoam_1_1MRFZoneDF_html_a183b81b3008399d7f667065bfb1b91d9"><div class="ttname"><a href="classFoam_1_1MRFZoneDF.html#a183b81b3008399d7f667065bfb1b91d9">Foam::MRFZoneDF::clone</a></div><div class="ttdeci">autoPtr&lt; MRFZoneDF &gt; clone() const</div><div class="ttdef"><b>Definition:</b> <a href="MRFZoneDF_8H_source.html#l00149">MRFZoneDF.H:149</a></div></div>
-<div class="ttc" id="aclassFoam_1_1MRFZoneDF_html_ac5c54df7ed3b930268c8d7752c101725"><div class="ttname"><a href="classFoam_1_1MRFZoneDF.html#ac5c54df7ed3b930268c8d7752c101725">Foam::MRFZoneDF::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition:</b> <a href="MRFZoneDF_8C_source.html#l00396">MRFZoneDF.C:396</a></div></div>
 <div class="ttc" id="aclassFoam_1_1MRFZoneDF_html_ae47d24dc7117972153eac638f0583d19"><div class="ttname"><a href="classFoam_1_1MRFZoneDF.html#ae47d24dc7117972153eac638f0583d19">Foam::MRFZoneDF::ClassName</a></div><div class="ttdeci">ClassName(&quot;MRFZoneDF&quot;)</div></div>
-<div class="ttc" id="aclassFoam_1_1MRFZoneDF_html_a4a9a5e81ef203c89a365d47f0acc39b9"><div class="ttname"><a href="classFoam_1_1MRFZoneDF.html#a4a9a5e81ef203c89a365d47f0acc39b9">Foam::MRFZoneDF::writeData</a></div><div class="ttdeci">void writeData(Ostream &amp;os) const</div><div class="ttdef"><b>Definition:</b> <a href="MRFZoneDF_8C_source.html#l00385">MRFZoneDF.C:385</a></div></div>
 <div class="ttc" id="acreateRefsRhoSimpleC_8H_html_a35a380efe757eb30c5cb8349ddbe0710"><div class="ttname"><a href="createRefsRhoSimpleC_8H.html#a35a380efe757eb30c5cb8349ddbe0710">rho</a></div><div class="ttdeci">volScalarField &amp; rho</div><div class="ttdef"><b>Definition:</b> <a href="createRefsRhoSimpleC_8H_source.html#l00008">createRefsRhoSimpleC.H:8</a></div></div>
 <!-- HTML footer for doxygen 1.8.11-->
 <!-- start footer part -->

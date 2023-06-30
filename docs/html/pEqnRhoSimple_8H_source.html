@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -135,28 +135,29 @@ $(function() {
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// bound U</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;DAUtility::boundVar(<a class="code" href="createRefsRhoSimpleC_8H.html#a5dda3394a2d970c17cbed23a149ebab2">allOptions</a>, <a class="code" href="pEqnRhoSimple_8H.html#a81cf6107131a3583e2b0b762cb9c2862">U</a>, printToScreen);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="pEqnRhoSimple_8H.html#a81cf6107131a3583e2b0b762cb9c2862">U</a>.correctBoundaryConditions();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="pEqnRhoSimple_8H.html#a823608aeb432ca4506db9c945a329898">   65</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="pEqnRhoSimple_8H.html#a823608aeb432ca4506db9c945a329898">pLimited</a> = <a class="code" href="createRefsRhoSimpleC_8H.html#afd37d1d292a50e4395f46ebfa8186e02">pressureControl</a>.limit(<a class="code" href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">// For closed-volume cases adjust the pressure and density levels</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">// to obey overall mass continuity</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="pEqnRhoSimple_8H.html#a83c95858e499c38024ce09de13ca697a">   69</a></span>&#160;<span class="keywordflow">if</span> (<a class="code" href="pEqnRhoSimple_8H.html#af53466d2c2afef56f3bfc864aa6b5b77">closedVolume</a>)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a> += (<a class="code" href="createRefsRhoSimpleC_8H.html#a314c00905651b613232846307a4cc3aa">initialMass_</a> - fvc::domainIntegrate(<a class="code" href="createRefsRhoSimpleC_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a> * <a class="code" href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a>))</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        / fvc::domainIntegrate(<a class="code" href="createRefsRhoSimpleC_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a>);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="pEqnRhoSimple_8H.html#a98c15b8b113b89330140452b58cd6e53">   75</a></span>&#160;<span class="keywordflow">if</span> (<a class="code" href="pEqnRhoSimple_8H.html#a823608aeb432ca4506db9c945a329898">pLimited</a> || <a class="code" href="pEqnRhoSimple_8H.html#af53466d2c2afef56f3bfc864aa6b5b77">closedVolume</a>)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a>.correctBoundaryConditions();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="pEqnRhoSimple_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">   80</a></span>&#160;<a class="code" href="pEqnRhoSimple_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a> = <a class="code" href="createRefsRhoSimpleC_8H.html#aa5e3ff4fac3be479f0aef5960e14f55a">thermo</a>.rho();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<a class="code" href="pEqnRhoSimple_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a>.relax();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">// bound rho</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;DAUtility::boundVar(<a class="code" href="createRefsRhoSimpleC_8H.html#a5dda3394a2d970c17cbed23a149ebab2">allOptions</a>, <a class="code" href="pEqnRhoSimple_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a>, printToScreen);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;fvOptions.correct(<a class="code" href="pEqnRhoSimple_8H.html#a81cf6107131a3583e2b0b762cb9c2862">U</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="pEqnRhoSimple_8H.html#a823608aeb432ca4506db9c945a329898">   66</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="pEqnRhoSimple_8H.html#a823608aeb432ca4506db9c945a329898">pLimited</a> = <a class="code" href="createRefsRhoSimpleC_8H.html#afd37d1d292a50e4395f46ebfa8186e02">pressureControl</a>.limit(<a class="code" href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">// For closed-volume cases adjust the pressure and density levels</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">// to obey overall mass continuity</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="pEqnRhoSimple_8H.html#a83c95858e499c38024ce09de13ca697a">   70</a></span>&#160;<span class="keywordflow">if</span> (<a class="code" href="pEqnRhoSimple_8H.html#af53466d2c2afef56f3bfc864aa6b5b77">closedVolume</a>)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a> += (<a class="code" href="createRefsRhoSimpleC_8H.html#a314c00905651b613232846307a4cc3aa">initialMass_</a> - fvc::domainIntegrate(<a class="code" href="createRefsRhoSimpleC_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a> * <a class="code" href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a>))</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        / fvc::domainIntegrate(<a class="code" href="createRefsRhoSimpleC_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="pEqnRhoSimple_8H.html#a98c15b8b113b89330140452b58cd6e53">   76</a></span>&#160;<span class="keywordflow">if</span> (<a class="code" href="pEqnRhoSimple_8H.html#a823608aeb432ca4506db9c945a329898">pLimited</a> || <a class="code" href="pEqnRhoSimple_8H.html#af53466d2c2afef56f3bfc864aa6b5b77">closedVolume</a>)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a>.correctBoundaryConditions();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="pEqnRhoSimple_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">   81</a></span>&#160;<a class="code" href="pEqnRhoSimple_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a> = <a class="code" href="createRefsRhoSimpleC_8H.html#aa5e3ff4fac3be479f0aef5960e14f55a">thermo</a>.rho();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<a class="code" href="pEqnRhoSimple_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a>.relax();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">// bound rho</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;DAUtility::boundVar(<a class="code" href="createRefsRhoSimpleC_8H.html#a5dda3394a2d970c17cbed23a149ebab2">allOptions</a>, <a class="code" href="pEqnRhoSimple_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a>, printToScreen);</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="apEqnRhoSimple_8H_html_af53466d2c2afef56f3bfc864aa6b5b77"><div class="ttname"><a href="pEqnRhoSimple_8H.html#af53466d2c2afef56f3bfc864aa6b5b77">closedVolume</a></div><div class="ttdeci">bool closedVolume</div><div class="ttdef"><b>Definition:</b> <a href="pEqnRhoSimple_8H_source.html#l00013">pEqnRhoSimple.H:13</a></div></div>
 <div class="ttc" id="aUEqnPimpleDyM_8H_html_abfd7ec7c6b77ca91e9ea40a193ae2069"><div class="ttname"><a href="UEqnPimpleDyM_8H.html#abfd7ec7c6b77ca91e9ea40a193ae2069">tUEqn</a></div><div class="ttdeci">tmp&lt; fvVectorMatrix &gt; tUEqn(fvm::ddt(U)+fvm::div(phi, U)+MRF.DDt(U)+turbulence-&gt;divDevReff(U)==fvOptions(U))</div></div>
@@ -168,12 +169,12 @@ $(function() {
 <div class="ttc" id="apEqnRhoSimple_8H_html_a4ae3ff6f0732a8a206a641d7ff2d9f7d"><div class="ttname"><a href="pEqnRhoSimple_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d">rAU</a></div><div class="ttdeci">volScalarField rAU(1.0/UEqn.A())</div></div>
 <div class="ttc" id="aUEqnPimpleDyM_8H_html_aeeb518d883492fb109c93a7959833ffb"><div class="ttname"><a href="UEqnPimpleDyM_8H.html#aeeb518d883492fb109c93a7959833ffb">UEqn</a></div><div class="ttdeci">fvVectorMatrix &amp; UEqn</div><div class="ttdef"><b>Definition:</b> <a href="UEqnPimpleDyM_8H_source.html#l00013">UEqnPimpleDyM.H:13</a></div></div>
 <div class="ttc" id="acreateRefsRhoSimple_8H_html_a81fdd304814204dc4f4eccc63aaed11d"><div class="ttname"><a href="createRefsRhoSimple_8H.html#a81fdd304814204dc4f4eccc63aaed11d">MRF</a></div><div class="ttdeci">IOMRFZoneListDF &amp; MRF</div><div class="ttdef"><b>Definition:</b> <a href="createRefsRhoSimple_8H_source.html#l00018">createRefsRhoSimple.H:18</a></div></div>
-<div class="ttc" id="apEqnRhoSimple_8H_html_ab8ec92cc3ea8422c9349409bae98d2a0"><div class="ttname"><a href="pEqnRhoSimple_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a></div><div class="ttdeci">rho</div><div class="ttdef"><b>Definition:</b> <a href="pEqnRhoSimple_8H_source.html#l00080">pEqnRhoSimple.H:80</a></div></div>
+<div class="ttc" id="apEqnRhoSimple_8H_html_ab8ec92cc3ea8422c9349409bae98d2a0"><div class="ttname"><a href="pEqnRhoSimple_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a></div><div class="ttdeci">rho</div><div class="ttdef"><b>Definition:</b> <a href="pEqnRhoSimple_8H_source.html#l00081">pEqnRhoSimple.H:81</a></div></div>
 <div class="ttc" id="acreateRefsPimple_8H_html_a334650304cdcdff41898bee9eaf2e3db"><div class="ttname"><a href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a></div><div class="ttdeci">volScalarField &amp; p</div><div class="ttdef"><b>Definition:</b> <a href="createRefsPimple_8H_source.html#l00006">createRefsPimple.H:6</a></div></div>
 <div class="ttc" id="acontinuityErrsPython_8H_html"><div class="ttname"><a href="continuityErrsPython_8H.html">continuityErrsPython.H</a></div></div>
 <div class="ttc" id="aEEqnRhoSimpleC_8H_html_a78a1c818fefcc4555ddd5afb77ed69c2"><div class="ttname"><a href="EEqnRhoSimpleC_8H.html#a78a1c818fefcc4555ddd5afb77ed69c2">primalResidualControl&lt; scalar &gt;</a></div><div class="ttdeci">this primalResidualControl&lt; scalar &gt;(solverE, printToScreen, printInterval, &quot;he&quot;)</div></div>
 <div class="ttc" id="acreateRefsPimple_8H_html_a1a97abcf6c141f539994c8a21c8daca7"><div class="ttname"><a href="createRefsPimple_8H.html#a1a97abcf6c141f539994c8a21c8daca7">phi</a></div><div class="ttdeci">surfaceScalarField &amp; phi</div><div class="ttdef"><b>Definition:</b> <a href="createRefsPimple_8H_source.html#l00008">createRefsPimple.H:8</a></div></div>
-<div class="ttc" id="apEqnRhoSimple_8H_html_a823608aeb432ca4506db9c945a329898"><div class="ttname"><a href="pEqnRhoSimple_8H.html#a823608aeb432ca4506db9c945a329898">pLimited</a></div><div class="ttdeci">bool pLimited</div><div class="ttdef"><b>Definition:</b> <a href="pEqnRhoSimple_8H_source.html#l00065">pEqnRhoSimple.H:65</a></div></div>
+<div class="ttc" id="apEqnRhoSimple_8H_html_a823608aeb432ca4506db9c945a329898"><div class="ttname"><a href="pEqnRhoSimple_8H.html#a823608aeb432ca4506db9c945a329898">pLimited</a></div><div class="ttdeci">bool pLimited</div><div class="ttdef"><b>Definition:</b> <a href="pEqnRhoSimple_8H_source.html#l00066">pEqnRhoSimple.H:66</a></div></div>
 <div class="ttc" id="apEqnRhoSimple_8H_html_ad99bfccb6a77d9e5285323228b5b1675"><div class="ttname"><a href="pEqnRhoSimple_8H.html#ad99bfccb6a77d9e5285323228b5b1675">phiHbyA</a></div><div class="ttdeci">surfaceScalarField phiHbyA(&quot;phiHbyA&quot;, fvc::interpolate(rho) *fvc::flux(HbyA))</div></div>
 <div class="ttc" id="apEqnRhoSimple_8H_html_a81cf6107131a3583e2b0b762cb9c2862"><div class="ttname"><a href="pEqnRhoSimple_8H.html#a81cf6107131a3583e2b0b762cb9c2862">U</a></div><div class="ttdeci">U</div><div class="ttdef"><b>Definition:</b> <a href="pEqnRhoSimple_8H_source.html#l00060">pEqnRhoSimple.H:60</a></div></div>
 <div class="ttc" id="apEqnRhoSimple_8H_html_affe2e7d9698e1696c0560477b426c722"><div class="ttname"><a href="pEqnRhoSimple_8H.html#affe2e7d9698e1696c0560477b426c722">HbyA</a></div><div class="ttdeci">HbyA</div><div class="ttdef"><b>Definition:</b> <a href="pEqnRhoSimple_8H_source.html#l00010">pEqnRhoSimple.H:10</a></div></div>

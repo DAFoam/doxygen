@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -494,7 +494,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00012">12</a> of file <a class="el" href="pEqnRhoSimpleC_8H_source.html">pEqnRhoSimpleC.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualPimpleFoam_8C_source.html#l00061">DAResidualPimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualPisoFoam_8C_source.html#l00062">DAResidualPisoFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00064">DAResidualSimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00080">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00075">DAResidualRhoSimpleCFoam::calcResiduals()</a>, <a class="el" href="DAResidualTurboFoam_8C_source.html#l00079">DAResidualTurboFoam::calcResiduals()</a>, and <a class="el" href="DAResidualRhoSimpleFoam_8C_source.html#l00089">DAResidualRhoSimpleFoam::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASimpleFoam_8C_source.html#l01172">DASimpleFoam::calcLduResiduals()</a>, <a class="el" href="DAResidualPimpleFoam_8C_source.html#l00061">DAResidualPimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualPisoFoam_8C_source.html#l00062">DAResidualPisoFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00072">DAResidualSimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00088">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00075">DAResidualRhoSimpleCFoam::calcResiduals()</a>, <a class="el" href="DAResidualTurboFoam_8C_source.html#l00079">DAResidualTurboFoam::calcResiduals()</a>, and <a class="el" href="DAResidualRhoSimpleFoam_8C_source.html#l00097">DAResidualRhoSimpleFoam::calcResiduals()</a>.</p>
 
 </div>
 </div>
@@ -526,12 +526,12 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">    fvc::interpolate(<a class="code" href="pEqnRhoSimpleC_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a> * (<a class="code" href="pEqnRhoSimpleC_8H.html#af0ca220b579a630d505b444580d37b50">rAtU</a> - <a class="code" href="pEqnRhoSimpleC_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d">rAU</a>)) * fvc::snGrad(<a class="code" href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a>) * <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.magSf()</div>
+<div class="line">    fvc::interpolate(<a class="code" href="pEqnRhoSimpleC_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a> * (<a class="code" href="pEqnRhoSimpleC_8H.html#af0ca220b579a630d505b444580d37b50">rAtU</a> - <a class="code" href="pEqnRhoSimpleC_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d">rAU</a>)) * fvc::snGrad(<a class="code" href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a>) * <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.magSf()</div>
 <div class="line">    - fvc::interpolate(<a class="code" href="createRefsRhoSimpleC_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a> * <a class="code" href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a>) * <a class="code" href="pEqnRhoSimpleC_8H.html#a72ed40a7e1ed7c436cb38dddc014d9db">phiHbyA</a> / fvc::interpolate(<a class="code" href="pEqnRhoSimpleC_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a>)</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00027">27</a> of file <a class="el" href="pEqnRhoSimpleC_8H_source.html">pEqnRhoSimpleC.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAResidualPimpleFoam_8C_source.html#l00061">DAResidualPimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualPisoFoam_8C_source.html#l00062">DAResidualPisoFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00064">DAResidualSimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00080">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00075">DAResidualRhoSimpleCFoam::calcResiduals()</a>, <a class="el" href="DAResidualTurboFoam_8C_source.html#l00079">DAResidualTurboFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleFoam_8C_source.html#l00089">DAResidualRhoSimpleFoam::calcResiduals()</a>, and <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00033">while()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASimpleFoam_8C_source.html#l01172">DASimpleFoam::calcLduResiduals()</a>, <a class="el" href="DAResidualPimpleFoam_8C_source.html#l00061">DAResidualPimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualPisoFoam_8C_source.html#l00062">DAResidualPisoFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleFoam_8C_source.html#l00072">DAResidualSimpleFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00088">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00075">DAResidualRhoSimpleCFoam::calcResiduals()</a>, <a class="el" href="DAResidualTurboFoam_8C_source.html#l00079">DAResidualTurboFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleFoam_8C_source.html#l00097">DAResidualRhoSimpleFoam::calcResiduals()</a>, and <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00033">while()</a>.</p>
 
 </div>
 </div>
@@ -568,9 +568,9 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
 <div class="ttc" id="apEqnRhoSimpleC_8H_html_ab8ec92cc3ea8422c9349409bae98d2a0"><div class="ttname"><a href="pEqnRhoSimpleC_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a></div><div class="ttdeci">rho</div><div class="ttdef"><b>Definition:</b> <a href="pEqnRhoSimpleC_8H_source.html#l00001">pEqnRhoSimpleC.H:1</a></div></div>
 <div class="ttc" id="acreateRefsPimple_8H_html_a334650304cdcdff41898bee9eaf2e3db"><div class="ttname"><a href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a></div><div class="ttdeci">volScalarField &amp; p</div><div class="ttdef"><b>Definition:</b> <a href="createRefsPimple_8H_source.html#l00006">createRefsPimple.H:6</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="apEqnRhoSimpleC_8H_html_a4ae3ff6f0732a8a206a641d7ff2d9f7d"><div class="ttname"><a href="pEqnRhoSimpleC_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d">rAU</a></div><div class="ttdeci">volScalarField rAU(1.0/UEqn.A())</div></div>
 <div class="ttc" id="apEqnRhoSimpleC_8H_html_a72ed40a7e1ed7c436cb38dddc014d9db"><div class="ttname"><a href="pEqnRhoSimpleC_8H.html#a72ed40a7e1ed7c436cb38dddc014d9db">phiHbyA</a></div><div class="ttdeci">phiHbyA</div><div class="ttdef"><b>Definition:</b> <a href="pEqnRhoSimpleC_8H_source.html#l00027">pEqnRhoSimpleC.H:27</a></div></div>
 <div class="ttc" id="acreateRefsRhoSimpleC_8H_html_aba679271c41582099c8ccf4827fdf217"><div class="ttname"><a href="createRefsRhoSimpleC_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a></div><div class="ttdeci">const volScalarField &amp; psi</div><div class="ttdef"><b>Definition:</b> <a href="createRefsRhoSimpleC_8H_source.html#l00014">createRefsRhoSimpleC.H:14</a></div></div>

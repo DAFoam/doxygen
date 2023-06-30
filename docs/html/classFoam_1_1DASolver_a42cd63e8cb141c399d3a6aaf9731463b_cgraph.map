@@ -1,0 +1,5 @@
+<map id="getNCouplingFaces" name="getNCouplingFaces">
+<area shape="rect" id="node1" title="Get the number of faces for the MDO coupling patches." alt="" coords="5,31,152,57"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#ab2b8a55494e9b1e208efdd908a71d886" title="return the coupling patch list if any scenario is active on couplingInfo dict otherwise return design..." alt="" coords="200,5,359,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#a473b52b1518c034864bcd534c299127b" title="return the number of points and faces for MDO patches" alt="" coords="228,56,331,83"/>
+</map>

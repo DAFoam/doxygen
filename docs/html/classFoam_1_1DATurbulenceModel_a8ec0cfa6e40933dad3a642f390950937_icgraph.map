@@ -1,45 +1,47 @@
 <map id="nu" name="nu">
-<area shape="rect" id="node1" title="get the nu field" alt="" coords="1096,1138,1135,1165"/>
-<area shape="rect" id="node2" href="$classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="793,5,1024,47"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAkOmegaSSTLM.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="5,340,188,381"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DASpalartAllmaras.html#a12c06ff2531b6460a8bea4cd0efee0e1" title=" " alt="" coords="801,645,1017,671"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DASpalartAllmarasFv3.html#a12c06ff2531b6460a8bea4cd0efee0e1" title=" " alt="" coords="789,695,1029,722"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DASpalartAllmarasFv3FieldInversion.html#a12c06ff2531b6460a8bea4cd0efee0e1" title=" " alt="" coords="802,747,1015,788"/>
-<area shape="rect" id="node7" href="$classFoam_1_1DAkEpsilon.html#a7985d7c6a12298c40d68503c22e97780" title=" " alt="" coords="797,813,1020,839"/>
-<area shape="rect" id="node8" href="$classFoam_1_1DAkOmegaSSTLM.html#ad713cfc858e9aa34ec0aa7eea15c094c" title=" " alt="" coords="236,140,419,181"/>
-<area shape="rect" id="node9" href="$classFoam_1_1DAkOmegaFieldInversionOmega.html#a1faa4b448524c4de622637dc51aa4a30" title=" " alt="" coords="793,864,1024,905"/>
-<area shape="rect" id="node10" href="$classFoam_1_1DAkOmegaFieldInversion.html#a1faa4b448524c4de622637dc51aa4a30" title=" " alt="" coords="793,929,1024,971"/>
+<area shape="rect" id="node1" title="get the nu field" alt="" coords="1096,1173,1135,1199"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAkOmegaSSTFIML.html#adc4b4bca487ad53db2926f90dbd39415" title="calculate the beta field using the trained model" alt="" coords="811,5,1006,47"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="793,71,1024,112"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DAkOmegaSSTLM.html#a4b38dbac981107ec6386d78322323535" title="compute the turbulence residuals" alt="" coords="5,399,188,440"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DASpalartAllmarasFv3.html#a12c06ff2531b6460a8bea4cd0efee0e1" title=" " alt="" coords="789,710,1029,737"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DASpalartAllmaras.html#a12c06ff2531b6460a8bea4cd0efee0e1" title=" " alt="" coords="801,761,1017,787"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DASpalartAllmarasFv3FieldInversion.html#a12c06ff2531b6460a8bea4cd0efee0e1" title=" " alt="" coords="802,812,1015,853"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DAkEpsilon.html#a7985d7c6a12298c40d68503c22e97780" title=" " alt="" coords="797,878,1020,905"/>
+<area shape="rect" id="node9" href="$classFoam_1_1DAkOmegaSSTLM.html#ad713cfc858e9aa34ec0aa7eea15c094c" title=" " alt="" coords="236,201,419,243"/>
+<area shape="rect" id="node10" href="$classFoam_1_1DAkOmegaFieldInversionOmega.html#a1faa4b448524c4de622637dc51aa4a30" title=" " alt="" coords="793,929,1024,971"/>
 <area shape="rect" id="node11" href="$classFoam_1_1DAkOmega.html#a1faa4b448524c4de622637dc51aa4a30" title=" " alt="" coords="817,995,1000,1022"/>
-<area shape="rect" id="node12" href="$classFoam_1_1DAkOmegaFieldInversionk.html#a1faa4b448524c4de622637dc51aa4a30" title=" " alt="" coords="789,1047,1028,1088"/>
-<area shape="rect" id="node13" href="$classFoam_1_1DAkEpsilon.html#afa968c8e26ddbc10cb14bff5ee93a069" title=" " alt="" coords="817,1113,1000,1139"/>
-<area shape="rect" id="node14" href="$classFoam_1_1DAkOmegaSST.html#aca4215d4a8caff4a6d9c5f760482c19f" title=" " alt="" coords="509,1173,679,1215"/>
-<area shape="rect" id="node15" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#aca4215d4a8caff4a6d9c5f760482c19f" title=" " alt="" coords="467,1324,721,1365"/>
-<area shape="rect" id="node16" href="$classFoam_1_1DAkOmegaSSTLM.html#aca4215d4a8caff4a6d9c5f760482c19f" title=" " alt="" coords="236,223,419,264"/>
-<area shape="rect" id="node17" href="$classFoam_1_1DASpalartAllmaras.html#a3db17e0612d3f43dfc21d593b7f7a942" title="Return the effective diffusivity for nuTilda." alt="" coords="814,1468,1003,1509"/>
-<area shape="rect" id="node18" href="$classFoam_1_1DASpalartAllmarasFv3.html#a3db17e0612d3f43dfc21d593b7f7a942" title="Return the effective diffusivity for nuTilda." alt="" coords="802,1533,1015,1575"/>
-<area shape="rect" id="node19" href="$classFoam_1_1DASpalartAllmarasFv3FieldInversion.html#a3db17e0612d3f43dfc21d593b7f7a942" title="Return the effective diffusivity for nuTilda." alt="" coords="802,1599,1015,1640"/>
-<area shape="rect" id="node20" href="$classFoam_1_1DAkOmegaFieldInversionk.html#a20a2301c30b9c071889b1e33f40723d1" title=" " alt="" coords="789,1664,1028,1705"/>
-<area shape="rect" id="node21" href="$classFoam_1_1DAkOmegaFieldInversionOmega.html#a20a2301c30b9c071889b1e33f40723d1" title=" " alt="" coords="793,1729,1024,1771"/>
-<area shape="rect" id="node22" href="$classFoam_1_1DAkOmegaFieldInversion.html#a20a2301c30b9c071889b1e33f40723d1" title=" " alt="" coords="793,1795,1024,1836"/>
-<area shape="rect" id="node23" href="$classFoam_1_1DAkOmega.html#a20a2301c30b9c071889b1e33f40723d1" title=" " alt="" coords="799,1861,1019,1887"/>
-<area shape="rect" id="node24" href="$classFoam_1_1DAkOmegaSST.html#a25c97787db263e1041de915a3ef4fb27" title=" " alt="" coords="509,1248,679,1289"/>
-<area shape="rect" id="node25" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#a25c97787db263e1041de915a3ef4fb27" title=" " alt="" coords="467,1400,721,1441"/>
-<area shape="rect" id="node26" href="$classFoam_1_1DAkOmegaSSTLM.html#a25c97787db263e1041de915a3ef4fb27" title=" " alt="" coords="236,340,419,381"/>
-<area shape="rect" id="node27" href="$classFoam_1_1DAkOmegaSSTLM.html#a6a55db82c43814497f758da2d937d0b9" title=" " alt="" coords="236,405,419,447"/>
-<area shape="rect" id="node28" href="$classFoam_1_1DAkOmegaSST.html#a312d02f8c5b337f556b9e7388dbffdf9" title=" " alt="" coords="815,1214,1002,1241"/>
-<area shape="rect" id="node29" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#a312d02f8c5b337f556b9e7388dbffdf9" title=" " alt="" coords="769,1366,1048,1393"/>
-<area shape="rect" id="node30" href="$classFoam_1_1DAkOmegaSSTLM.html#a312d02f8c5b337f556b9e7388dbffdf9" title=" " alt="" coords="491,285,697,311"/>
-<area shape="rect" id="node31" href="$classFoam_1_1DAkOmegaSSTLM.html#a16fc149a37370861590f3a2480766598" title=" " alt="" coords="817,275,1000,316"/>
-<area shape="rect" id="node32" href="$classFoam_1_1DAkOmegaSST.html#a3c753cf60b7d2683953ef4fe93e9e67e" title=" " alt="" coords="815,1911,1002,1938"/>
-<area shape="rect" id="node33" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#a3c753cf60b7d2683953ef4fe93e9e67e" title=" " alt="" coords="769,1962,1048,1989"/>
-<area shape="rect" id="node34" href="$classFoam_1_1DAkOmegaSSTLM.html#a3c753cf60b7d2683953ef4fe93e9e67e" title=" " alt="" coords="805,2013,1012,2039"/>
-<area shape="rect" id="node35" href="$classFoam_1_1DAkOmegaSST.html#affbf03d0b7d23966e52280586ff3e312" title=" " alt="" coords="815,2063,1002,2090"/>
-<area shape="rect" id="node36" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#affbf03d0b7d23966e52280586ff3e312" title=" " alt="" coords="769,2114,1048,2141"/>
-<area shape="rect" id="node37" href="$classFoam_1_1DAkOmegaSSTLM.html#affbf03d0b7d23966e52280586ff3e312" title=" " alt="" coords="805,341,1012,367"/>
-<area shape="rect" id="node38" href="$classFoam_1_1DAkOmegaSSTLM.html#a21047f8ee53eee9fe622f2842110ea64" title=" " alt="" coords="236,471,419,512"/>
-<area shape="rect" id="node39" href="$classFoam_1_1DAkOmegaSSTLM.html#a4c896c9cc7ce73a2aa06d04a94102265" title=" " alt="" coords="236,536,419,577"/>
-<area shape="rect" id="node40" href="$classFoam_1_1DATurbulenceModel.html#a6ccb345346c8f358d12d90933980a559" title="get alpha field" alt="" coords="869,2165,949,2191"/>
-<area shape="rect" id="node41" href="$classFoam_1_1DATurbulenceModel.html#a8ab26f302189e92dac1700b9c30d0b13" title="return effective viscosity" alt="" coords="881,2266,936,2293"/>
-<area shape="rect" id="node42" href="$classFoam_1_1DATurbulenceModel.html#a45a5b7ae829ea8e200332ce6a19e5a1e" title="print the min max and mean yPlus to screen" alt="" coords="551,2241,637,2267"/>
-<area shape="rect" id="node43" href="$classFoam_1_1DAkOmegaSSTLM.html#af48ae17eb4352dddefae281fbafd0487" title=" " alt="" coords="503,595,685,636"/>
+<area shape="rect" id="node12" href="$classFoam_1_1DAkEpsilon.html#afa968c8e26ddbc10cb14bff5ee93a069" title=" " alt="" coords="817,1046,1000,1073"/>
+<area shape="rect" id="node13" href="$classFoam_1_1DAkOmegaSST.html#aca4215d4a8caff4a6d9c5f760482c19f" title=" " alt="" coords="509,1107,679,1148"/>
+<area shape="rect" id="node14" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#aca4215d4a8caff4a6d9c5f760482c19f" title=" " alt="" coords="467,1257,721,1299"/>
+<area shape="rect" id="node15" href="$classFoam_1_1DAkOmegaSSTFIML.html#aca4215d4a8caff4a6d9c5f760482c19f" title=" " alt="" coords="497,1409,691,1451"/>
+<area shape="rect" id="node16" href="$classFoam_1_1DAkOmegaSSTLM.html#aca4215d4a8caff4a6d9c5f760482c19f" title=" " alt="" coords="236,281,419,323"/>
+<area shape="rect" id="node17" href="$classFoam_1_1DASpalartAllmaras.html#a3db17e0612d3f43dfc21d593b7f7a942" title="Return the effective diffusivity for nuTilda." alt="" coords="814,1553,1003,1595"/>
+<area shape="rect" id="node18" href="$classFoam_1_1DASpalartAllmarasFv3.html#a3db17e0612d3f43dfc21d593b7f7a942" title="Return the effective diffusivity for nuTilda." alt="" coords="802,1619,1015,1660"/>
+<area shape="rect" id="node19" href="$classFoam_1_1DASpalartAllmarasFv3FieldInversion.html#a3db17e0612d3f43dfc21d593b7f7a942" title="Return the effective diffusivity for nuTilda." alt="" coords="802,1684,1015,1725"/>
+<area shape="rect" id="node20" href="$classFoam_1_1DAkOmega.html#a20a2301c30b9c071889b1e33f40723d1" title=" " alt="" coords="799,1750,1019,1777"/>
+<area shape="rect" id="node21" href="$classFoam_1_1DAkOmegaFieldInversionOmega.html#a20a2301c30b9c071889b1e33f40723d1" title=" " alt="" coords="793,1801,1024,1843"/>
+<area shape="rect" id="node22" href="$classFoam_1_1DAkOmegaSST.html#a25c97787db263e1041de915a3ef4fb27" title=" " alt="" coords="509,1181,679,1223"/>
+<area shape="rect" id="node23" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#a25c97787db263e1041de915a3ef4fb27" title=" " alt="" coords="467,1333,721,1375"/>
+<area shape="rect" id="node24" href="$classFoam_1_1DAkOmegaSSTFIML.html#a25c97787db263e1041de915a3ef4fb27" title=" " alt="" coords="497,1485,691,1527"/>
+<area shape="rect" id="node25" href="$classFoam_1_1DAkOmegaSSTLM.html#a25c97787db263e1041de915a3ef4fb27" title=" " alt="" coords="236,399,419,440"/>
+<area shape="rect" id="node26" href="$classFoam_1_1DAkOmegaSSTLM.html#a6a55db82c43814497f758da2d937d0b9" title=" " alt="" coords="236,464,419,505"/>
+<area shape="rect" id="node27" href="$classFoam_1_1DAkOmegaSST.html#a312d02f8c5b337f556b9e7388dbffdf9" title=" " alt="" coords="815,1147,1002,1174"/>
+<area shape="rect" id="node28" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#a312d02f8c5b337f556b9e7388dbffdf9" title=" " alt="" coords="769,1299,1048,1326"/>
+<area shape="rect" id="node29" href="$classFoam_1_1DAkOmegaSSTFIML.html#a312d02f8c5b337f556b9e7388dbffdf9" title=" " alt="" coords="799,1451,1018,1478"/>
+<area shape="rect" id="node30" href="$classFoam_1_1DAkOmegaSSTLM.html#a312d02f8c5b337f556b9e7388dbffdf9" title=" " alt="" coords="491,347,697,374"/>
+<area shape="rect" id="node31" href="$classFoam_1_1DAkOmegaSSTLM.html#a16fc149a37370861590f3a2480766598" title=" " alt="" coords="817,340,1000,381"/>
+<area shape="rect" id="node32" href="$classFoam_1_1DAkOmegaSST.html#a3c753cf60b7d2683953ef4fe93e9e67e" title=" " alt="" coords="815,1867,1002,1894"/>
+<area shape="rect" id="node33" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#a3c753cf60b7d2683953ef4fe93e9e67e" title=" " alt="" coords="769,1918,1048,1945"/>
+<area shape="rect" id="node34" href="$classFoam_1_1DAkOmegaSSTFIML.html#a3c753cf60b7d2683953ef4fe93e9e67e" title=" " alt="" coords="799,1969,1018,1995"/>
+<area shape="rect" id="node35" href="$classFoam_1_1DAkOmegaSSTLM.html#a3c753cf60b7d2683953ef4fe93e9e67e" title=" " alt="" coords="805,2019,1012,2046"/>
+<area shape="rect" id="node36" href="$classFoam_1_1DAkOmegaSST.html#affbf03d0b7d23966e52280586ff3e312" title=" " alt="" coords="815,2070,1002,2097"/>
+<area shape="rect" id="node37" href="$classFoam_1_1DAkOmegaSSTFieldInversion.html#affbf03d0b7d23966e52280586ff3e312" title=" " alt="" coords="769,2121,1048,2147"/>
+<area shape="rect" id="node38" href="$classFoam_1_1DAkOmegaSSTLM.html#affbf03d0b7d23966e52280586ff3e312" title=" " alt="" coords="805,406,1012,433"/>
+<area shape="rect" id="node39" href="$classFoam_1_1DAkOmegaSSTFIML.html#affbf03d0b7d23966e52280586ff3e312" title=" " alt="" coords="799,2171,1018,2198"/>
+<area shape="rect" id="node40" href="$classFoam_1_1DAkOmegaSSTLM.html#a21047f8ee53eee9fe622f2842110ea64" title=" " alt="" coords="236,529,419,571"/>
+<area shape="rect" id="node41" href="$classFoam_1_1DAkOmegaSSTLM.html#a4c896c9cc7ce73a2aa06d04a94102265" title=" " alt="" coords="236,595,419,636"/>
+<area shape="rect" id="node42" href="$classFoam_1_1DATurbulenceModel.html#a6ccb345346c8f358d12d90933980a559" title="get alpha field" alt="" coords="869,2222,949,2249"/>
+<area shape="rect" id="node43" href="$classFoam_1_1DATurbulenceModel.html#a8ab26f302189e92dac1700b9c30d0b13" title="return effective viscosity" alt="" coords="881,2323,936,2350"/>
+<area shape="rect" id="node44" href="$classFoam_1_1DATurbulenceModel.html#a45a5b7ae829ea8e200332ce6a19e5a1e" title="print the min max and mean yPlus to screen" alt="" coords="551,2298,637,2325"/>
+<area shape="rect" id="node45" href="$classFoam_1_1DAkOmegaSSTLM.html#af48ae17eb4352dddefae281fbafd0487" title=" " alt="" coords="236,660,419,701"/>
 </map>

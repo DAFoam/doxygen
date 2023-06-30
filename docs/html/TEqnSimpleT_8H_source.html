@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -79,8 +79,8 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    volScalarField <a class="code" href="TEqnSimpleT_8H.html#ad145252fff6dd3b727ad3f1641750383">alphaEff</a>(<span class="stringliteral">&quot;alphaEff&quot;</span>, turbulencePtr_-&gt;nu() / <a class="code" href="createRefsSimpleT_8H.html#a15367378f161dcb207524dbba640a612">Pr</a> + <a class="code" href="createRefsSimpleT_8H.html#abdcf0c0691d6d9f9aefafb8834c3fbe4">alphat</a>);</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    fvScalarMatrix <a class="code" href="TEqnSimpleT_8H.html#a180e328c04d4cb9f2fe2da8ad248622f">TEqn</a>(</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        fvm::div(<a class="code" href="createRefsPimple_8H.html#a1a97abcf6c141f539994c8a21c8daca7">phi</a>, <a class="code" href="createRefsLaplacian_8H.html#ab35c96e5601691f7270cfadc745a12d3">T</a>)</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        - fvm::laplacian(<a class="code" href="TEqnSimpleT_8H.html#ad145252fff6dd3b727ad3f1641750383">alphaEff</a>, <a class="code" href="createRefsLaplacian_8H.html#ab35c96e5601691f7270cfadc745a12d3">T</a>)</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        fvm::div(<a class="code" href="createRefsPimple_8H.html#a1a97abcf6c141f539994c8a21c8daca7">phi</a>, <a class="code" href="createRefsHeatTransfer_8H.html#ab35c96e5601691f7270cfadc745a12d3">T</a>)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        - fvm::laplacian(<a class="code" href="TEqnSimpleT_8H.html#ad145252fff6dd3b727ad3f1641750383">alphaEff</a>, <a class="code" href="createRefsHeatTransfer_8H.html#ab35c96e5601691f7270cfadc745a12d3">T</a>)</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    );</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="TEqnSimpleT_8H.html#a180e328c04d4cb9f2fe2da8ad248622f">TEqn</a>.relax();</div>
@@ -95,8 +95,8 @@ $(function() {
 <div class="ttc" id="acreateRefsSimpleT_8H_html_a15367378f161dcb207524dbba640a612"><div class="ttname"><a href="createRefsSimpleT_8H.html#a15367378f161dcb207524dbba640a612">Pr</a></div><div class="ttdeci">dimensionedScalar Pr</div><div class="ttdef"><b>Definition:</b> <a href="createRefsSimpleT_8H_source.html#l00017">createRefsSimpleT.H:17</a></div></div>
 <div class="ttc" id="aTEqnSimpleT_8H_html_a180e328c04d4cb9f2fe2da8ad248622f"><div class="ttname"><a href="TEqnSimpleT_8H.html#a180e328c04d4cb9f2fe2da8ad248622f">TEqn</a></div><div class="ttdeci">fvScalarMatrix TEqn(fvm::div(phi, T) - fvm::laplacian(alphaEff, T))</div></div>
 <div class="ttc" id="acreateRefsPimple_8H_html_a1a97abcf6c141f539994c8a21c8daca7"><div class="ttname"><a href="createRefsPimple_8H.html#a1a97abcf6c141f539994c8a21c8daca7">phi</a></div><div class="ttdeci">surfaceScalarField &amp; phi</div><div class="ttdef"><b>Definition:</b> <a href="createRefsPimple_8H_source.html#l00008">createRefsPimple.H:8</a></div></div>
-<div class="ttc" id="acreateRefsLaplacian_8H_html_ab35c96e5601691f7270cfadc745a12d3"><div class="ttname"><a href="createRefsLaplacian_8H.html#ab35c96e5601691f7270cfadc745a12d3">T</a></div><div class="ttdeci">volScalarField &amp; T</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00005">createRefsLaplacian.H:5</a></div></div>
 <div class="ttc" id="aTEqnSimpleT_8H_html_a12e0d863ab8d8a13385a5eebd9834b99"><div class="ttname"><a href="TEqnSimpleT_8H.html#a12e0d863ab8d8a13385a5eebd9834b99">primalResidualControl&lt; scalar &gt;</a></div><div class="ttdeci">this primalResidualControl&lt; scalar &gt;(solverT, printToScreen, printInterval, &quot;T&quot;)</div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_ab35c96e5601691f7270cfadc745a12d3"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#ab35c96e5601691f7270cfadc745a12d3">T</a></div><div class="ttdeci">volScalarField &amp; T</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00005">createRefsHeatTransfer.H:5</a></div></div>
 <div class="ttc" id="aTEqnSimpleT_8H_html_ad145252fff6dd3b727ad3f1641750383"><div class="ttname"><a href="TEqnSimpleT_8H.html#ad145252fff6dd3b727ad3f1641750383">alphaEff</a></div><div class="ttdeci">volScalarField alphaEff(&quot;alphaEff&quot;, turbulencePtr_-&gt;nu()/Pr+alphat)</div></div>
 <div class="ttc" id="acreateRefsSimpleT_8H_html_aa5e64c23410ef6cfb1e080acf15ccba8"><div class="ttname"><a href="createRefsSimpleT_8H.html#aa5e64c23410ef6cfb1e080acf15ccba8">Prt</a></div><div class="ttdeci">dimensionedScalar Prt</div><div class="ttdef"><b>Definition:</b> <a href="createRefsSimpleT_8H_source.html#l00018">createRefsSimpleT.H:18</a></div></div>
 <div class="ttc" id="acreateRefsSimpleT_8H_html_abdcf0c0691d6d9f9aefafb8834c3fbe4"><div class="ttname"><a href="createRefsSimpleT_8H.html#abdcf0c0691d6d9f9aefafb8834c3fbe4">alphat</a></div><div class="ttdeci">volScalarField &amp; alphat</div><div class="ttdef"><b>Definition:</b> <a href="createRefsSimpleT_8H_source.html#l00019">createRefsSimpleT.H:19</a></div></div>

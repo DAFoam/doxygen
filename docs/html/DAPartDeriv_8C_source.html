@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -95,14 +95,14 @@ $(function() {
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classFoam_1_1DAPartDeriv.html#a924e381605ad653129202eb329072391">   22</a></span>&#160;DAPartDeriv::DAPartDeriv(</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> word modelType,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAOption.html">DAOption</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>,</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAModel.html">DAModel</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel</a>,</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAIndex.html">DAIndex</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#aa36f358f32c8a00956e7ca31e30c906c">daIndex</a>,</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAJacCon.html">DAJacCon</a>&amp; daJacCon,</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAResidual.html">DAResidual</a>&amp; daResidual)</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    : modelType_(modelType),</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      mesh_(<a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>),</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      mesh_(<a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>),</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      daOption_(<a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>),</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      daModel_(<a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel</a>),</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      daIndex_(<a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#aa36f358f32c8a00956e7ca31e30c906c">daIndex</a>),</div>
@@ -112,7 +112,7 @@ $(function() {
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// initialize stateInfo_</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    word <a class="code" href="createAdjointCompressible_8H.html#ac9ba06ed262d6a8aaa3b35b6eeac88ce">solverName</a> = <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>.getOption&lt;word&gt;(<span class="stringliteral">&quot;solverName&quot;</span>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    autoPtr&lt;DAStateInfo&gt; daStateInfo(<a class="code" href="classFoam_1_1DAStateInfo.html#a437855c825edfcbd543fa18c6be0a095">DAStateInfo::New</a>(<a class="code" href="createAdjointCompressible_8H.html#ac9ba06ed262d6a8aaa3b35b6eeac88ce">solverName</a>, <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>, <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel</a>));</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    autoPtr&lt;DAStateInfo&gt; daStateInfo(<a class="code" href="classFoam_1_1DAStateInfo.html#a437855c825edfcbd543fa18c6be0a095">DAStateInfo::New</a>(<a class="code" href="createAdjointCompressible_8H.html#ac9ba06ed262d6a8aaa3b35b6eeac88ce">solverName</a>, <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>, <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel</a>));</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classFoam_1_1DAPartDeriv.html#a339de4c9f10c46fd0f4deaa85dea6f67">stateInfo_</a> = daStateInfo-&gt;getStateInfo();</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
@@ -120,7 +120,7 @@ $(function() {
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classFoam_1_1DAPartDeriv.html#a50d8a6cc4f58027f78fa3c3d7f000a83">   47</a></span>&#160;autoPtr&lt;DAPartDeriv&gt; <a class="code" href="classFoam_1_1DAPartDeriv.html#a50d8a6cc4f58027f78fa3c3d7f000a83">DAPartDeriv::New</a>(</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">const</span> word modelType,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAOption.html">DAOption</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>,</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAModel.html">DAModel</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel</a>,</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAIndex.html">DAIndex</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#aa36f358f32c8a00956e7ca31e30c906c">daIndex</a>,</div>
@@ -159,7 +159,7 @@ $(function() {
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// child class found</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> autoPtr&lt;DAPartDeriv&gt;(</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        cstrIter()(modelType,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                   <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                   <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                   <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>,</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                   <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel</a>,</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                   <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#aa36f358f32c8a00956e7ca31e30c906c">daIndex</a>,</div>
@@ -364,7 +364,7 @@ $(function() {
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    options.readEntry&lt;label&gt;(<span class="stringliteral">&quot;comp&quot;</span>, comp);</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="comment">// loop over all patches</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    forAll(patches, idxI)</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(patches, idxI)</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    {</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        word patchName = patches[idxI];</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
@@ -380,7 +380,7 @@ $(function() {
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            {</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                <span class="keywordflow">if</span> (state.boundaryFieldRef()[patchI].type() == <span class="stringliteral">&quot;fixedValue&quot;</span>)</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                {</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                    forAll(state.boundaryField()[patchI], faceI)</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(state.boundaryField()[patchI], faceI)</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                    {</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                        state.boundaryFieldRef()[patchI][faceI][comp] += delta;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                    }</div>
@@ -414,7 +414,7 @@ $(function() {
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            {</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                <span class="keywordflow">if</span> (state.boundaryFieldRef()[patchI].type() == <span class="stringliteral">&quot;fixedValue&quot;</span>)</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                {</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                    forAll(state.boundaryField()[patchI], faceI)</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(state.boundaryField()[patchI], faceI)</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                    {</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                        state.boundaryFieldRef()[patchI][faceI] += delta;</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                    }</div>
@@ -494,7 +494,7 @@ $(function() {
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    label normalAxisIndex = axisIndices[normalAxis];</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="comment">// loop over all patches</span></div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    forAll(patches, idxI)</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(patches, idxI)</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    {</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        word patchName = patches[idxI];</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
@@ -522,7 +522,7 @@ $(function() {
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;                    scalar UxNew = UmagIn / sqrt(1 + tan(aoaNewArc) * tan(aoaNewArc));</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;                    scalar UyNew = UxNew * tan(aoaNewArc);</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160; </div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;                    forAll(state.boundaryField()[patchI], faceI)</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;                    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(state.boundaryField()[patchI], faceI)</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                    {</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                        state.boundaryFieldRef()[patchI][faceI][flowAxisIndex] = UxNew;</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                        state.boundaryFieldRef()[patchI][faceI][normalAxisIndex] = UyNew;</div>
@@ -604,7 +604,7 @@ $(function() {
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160; </div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    wordList normStateNames = normStateDict.toc();</div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160; </div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    forAll(<a class="code" href="classFoam_1_1DAPartDeriv.html#a339de4c9f10c46fd0f4deaa85dea6f67">stateInfo_</a>[<span class="stringliteral">&quot;volVectorStates&quot;</span>], idxI)</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(<a class="code" href="classFoam_1_1DAPartDeriv.html#a339de4c9f10c46fd0f4deaa85dea6f67">stateInfo_</a>[<span class="stringliteral">&quot;volVectorStates&quot;</span>], idxI)</div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    {</div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        word stateName = <a class="code" href="classFoam_1_1DAPartDeriv.html#a339de4c9f10c46fd0f4deaa85dea6f67">stateInfo_</a>[<span class="stringliteral">&quot;volVectorStates&quot;</span>][idxI];</div>
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        <span class="keywordflow">if</span> (DAUtility::isInList&lt;word&gt;(stateName, normStateNames))</div>
@@ -612,7 +612,7 @@ $(function() {
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;            scalar scale = normStateDict.getScalar(stateName);</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;            PetscScalar scaleValue = 0.0;</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;            <a class="code" href="DAMacroFunctions_8H.html#a66f7d32895db1b88499a84dae000a034">assignValueCheckAD</a>(scaleValue, scale);</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;            forAll(<a class="code" href="classFoam_1_1DAPartDeriv.html#a23edeeeecebcef11921a33dd5d990570">mesh_</a>.cells(), idxI)</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;            <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(<a class="code" href="classFoam_1_1DAPartDeriv.html#a23edeeeecebcef11921a33dd5d990570">mesh_</a>.cells(), idxI)</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;            {</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;                <span class="keywordflow">for</span> (label comp = 0; comp &lt; 3; comp++)</div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;                {</div>
@@ -623,7 +623,7 @@ $(function() {
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        }</div>
 <div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    }</div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160; </div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    forAll(<a class="code" href="classFoam_1_1DAPartDeriv.html#a339de4c9f10c46fd0f4deaa85dea6f67">stateInfo_</a>[<span class="stringliteral">&quot;volScalarStates&quot;</span>], idxI)</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(<a class="code" href="classFoam_1_1DAPartDeriv.html#a339de4c9f10c46fd0f4deaa85dea6f67">stateInfo_</a>[<span class="stringliteral">&quot;volScalarStates&quot;</span>], idxI)</div>
 <div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    {</div>
 <div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;        <span class="keyword">const</span> word stateName = <a class="code" href="classFoam_1_1DAPartDeriv.html#a339de4c9f10c46fd0f4deaa85dea6f67">stateInfo_</a>[<span class="stringliteral">&quot;volScalarStates&quot;</span>][idxI];</div>
 <div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;        <span class="keywordflow">if</span> (DAUtility::isInList&lt;word&gt;(stateName, normStateNames))</div>
@@ -631,7 +631,7 @@ $(function() {
 <div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;            scalar scale = normStateDict.getScalar(stateName);</div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;            PetscScalar scaleValue = 0.0;</div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;            <a class="code" href="DAMacroFunctions_8H.html#a66f7d32895db1b88499a84dae000a034">assignValueCheckAD</a>(scaleValue, scale);</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;            forAll(<a class="code" href="classFoam_1_1DAPartDeriv.html#a23edeeeecebcef11921a33dd5d990570">mesh_</a>.cells(), idxI)</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;            <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(<a class="code" href="classFoam_1_1DAPartDeriv.html#a23edeeeecebcef11921a33dd5d990570">mesh_</a>.cells(), idxI)</div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;            {</div>
 <div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;                label glbIdx = <a class="code" href="classFoam_1_1DAPartDeriv.html#a7d024d56257a6d34c00ff904bc9d1072">daIndex_</a>.<a class="code" href="classFoam_1_1DAIndex.html#a06a1fcb98ee5f377d70e1d04b0e5dd61">getGlobalAdjointStateIndex</a>(stateName, idxI);</div>
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;                VecSetValue(*normStatePerturbVec, glbIdx, scaleValue, INSERT_VALUES);</div>
@@ -639,7 +639,7 @@ $(function() {
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;        }</div>
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    }</div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160; </div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    forAll(<a class="code" href="classFoam_1_1DAPartDeriv.html#a339de4c9f10c46fd0f4deaa85dea6f67">stateInfo_</a>[<span class="stringliteral">&quot;modelStates&quot;</span>], idxI)</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(<a class="code" href="classFoam_1_1DAPartDeriv.html#a339de4c9f10c46fd0f4deaa85dea6f67">stateInfo_</a>[<span class="stringliteral">&quot;modelStates&quot;</span>], idxI)</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    {</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        <span class="keyword">const</span> word stateName = <a class="code" href="classFoam_1_1DAPartDeriv.html#a339de4c9f10c46fd0f4deaa85dea6f67">stateInfo_</a>[<span class="stringliteral">&quot;modelStates&quot;</span>][idxI];</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        <span class="keywordflow">if</span> (DAUtility::isInList&lt;word&gt;(stateName, normStateNames))</div>
@@ -647,7 +647,7 @@ $(function() {
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;            scalar scale = normStateDict.getScalar(stateName);</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;            PetscScalar scaleValue = 0.0;</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;            <a class="code" href="DAMacroFunctions_8H.html#a66f7d32895db1b88499a84dae000a034">assignValueCheckAD</a>(scaleValue, scale);</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;            forAll(<a class="code" href="classFoam_1_1DAPartDeriv.html#a23edeeeecebcef11921a33dd5d990570">mesh_</a>.cells(), idxI)</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;            <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(<a class="code" href="classFoam_1_1DAPartDeriv.html#a23edeeeecebcef11921a33dd5d990570">mesh_</a>.cells(), idxI)</div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;            {</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;                label glbIdx = <a class="code" href="classFoam_1_1DAPartDeriv.html#a7d024d56257a6d34c00ff904bc9d1072">daIndex_</a>.<a class="code" href="classFoam_1_1DAIndex.html#a06a1fcb98ee5f377d70e1d04b0e5dd61">getGlobalAdjointStateIndex</a>(stateName, idxI);</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;                VecSetValue(*normStatePerturbVec, glbIdx, scaleValue, INSERT_VALUES);</div>
@@ -655,7 +655,7 @@ $(function() {
 <div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        }</div>
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    }</div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160; </div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    forAll(<a class="code" href="classFoam_1_1DAPartDeriv.html#a339de4c9f10c46fd0f4deaa85dea6f67">stateInfo_</a>[<span class="stringliteral">&quot;surfaceScalarStates&quot;</span>], idxI)</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(<a class="code" href="classFoam_1_1DAPartDeriv.html#a339de4c9f10c46fd0f4deaa85dea6f67">stateInfo_</a>[<span class="stringliteral">&quot;surfaceScalarStates&quot;</span>], idxI)</div>
 <div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    {</div>
 <div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;        <span class="keyword">const</span> word stateName = <a class="code" href="classFoam_1_1DAPartDeriv.html#a339de4c9f10c46fd0f4deaa85dea6f67">stateInfo_</a>[<span class="stringliteral">&quot;surfaceScalarStates&quot;</span>][idxI];</div>
 <div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        <span class="keywordflow">if</span> (DAUtility::isInList&lt;word&gt;(stateName, normStateNames))</div>
@@ -663,7 +663,7 @@ $(function() {
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;            scalar scale = normStateDict.getScalar(stateName);</div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;            PetscScalar scaleValue = 0.0;</div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160; </div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;            forAll(<a class="code" href="classFoam_1_1DAPartDeriv.html#a23edeeeecebcef11921a33dd5d990570">mesh_</a>.faces(), faceI)</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;            <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(<a class="code" href="classFoam_1_1DAPartDeriv.html#a23edeeeecebcef11921a33dd5d990570">mesh_</a>.faces(), faceI)</div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;            {</div>
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;                <span class="keywordflow">if</span> (faceI &lt; <a class="code" href="classFoam_1_1DAPartDeriv.html#a7d024d56257a6d34c00ff904bc9d1072">daIndex_</a>.<a class="code" href="classFoam_1_1DAIndex.html#a0da52ae9dbe896e5eb4dd59145e2a4aa">nLocalInternalFaces</a>)</div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;                {</div>
@@ -695,17 +695,18 @@ $(function() {
 <div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;<span class="comment">// ************************************************************************* //</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassFoam_1_1DAJacCon_html"><div class="ttname"><a href="classFoam_1_1DAJacCon.html">Foam::DAJacCon</a></div><div class="ttdef"><b>Definition:</b> <a href="DAJacCon_8H_source.html#l00034">DAJacCon.H:34</a></div></div>
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
+<div class="ttc" id="asolvePseudoPEqn_8H_html_ab75e9df95d3e8982118b376691e49ceb"><div class="ttname"><a href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a></div><div class="ttdeci">forAll(pseudoP.boundaryField(), patchI)</div><div class="ttdef"><b>Definition:</b> <a href="solvePseudoPEqn_8H_source.html#l00010">solvePseudoPEqn.H:10</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAStateInfo_html_a437855c825edfcbd543fa18c6be0a095"><div class="ttname"><a href="classFoam_1_1DAStateInfo.html#a437855c825edfcbd543fa18c6be0a095">Foam::DAStateInfo::New</a></div><div class="ttdeci">static autoPtr&lt; DAStateInfo &gt; New(const word modelType, const fvMesh &amp;mesh, const DAOption &amp;daOption, const DAModel &amp;daModel)</div><div class="ttdef"><b>Definition:</b> <a href="DAStateInfo_8C_source.html#l00043">DAStateInfo.C:43</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAIndex_html_a88df06e7b85e76b30f70f3474ccdcc75"><div class="ttname"><a href="classFoam_1_1DAIndex.html#a88df06e7b85e76b30f70f3474ccdcc75">Foam::DAIndex::bFacePatchI</a></div><div class="ttdeci">labelList bFacePatchI</div><div class="ttdef"><b>Definition:</b> <a href="DAIndex_8H_source.html#l00110">DAIndex.H:110</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html"><div class="ttname"><a href="classFoam_1_1DAOption.html">Foam::DAOption</a></div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8H_source.html#l00029">DAOption.H:29</a></div></div>
-<div class="ttc" id="aclassFoam_1_1DAIndex_html_a06a1fcb98ee5f377d70e1d04b0e5dd61"><div class="ttname"><a href="classFoam_1_1DAIndex.html#a06a1fcb98ee5f377d70e1d04b0e5dd61">Foam::DAIndex::getGlobalAdjointStateIndex</a></div><div class="ttdeci">label getGlobalAdjointStateIndex(const word stateName, const label idxI, const label comp=-1) const</div><div class="ttdoc">get global adjoint index for a given state name, cell/face indxI and its component (optional,...</div><div class="ttdef"><b>Definition:</b> <a href="DAIndex_8C_source.html#l00647">DAIndex.C:647</a></div></div>
+<div class="ttc" id="aclassFoam_1_1DAIndex_html_a06a1fcb98ee5f377d70e1d04b0e5dd61"><div class="ttname"><a href="classFoam_1_1DAIndex.html#a06a1fcb98ee5f377d70e1d04b0e5dd61">Foam::DAIndex::getGlobalAdjointStateIndex</a></div><div class="ttdeci">label getGlobalAdjointStateIndex(const word stateName, const label idxI, const label comp=-1) const</div><div class="ttdoc">get global adjoint index for a given state name, cell/face indxI and its component (optional,...</div><div class="ttdef"><b>Definition:</b> <a href="DAIndex_8C_source.html#l00661">DAIndex.C:661</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAPartDeriv_html_a7d024d56257a6d34c00ff904bc9d1072"><div class="ttname"><a href="classFoam_1_1DAPartDeriv.html#a7d024d56257a6d34c00ff904bc9d1072">Foam::DAPartDeriv::daIndex_</a></div><div class="ttdeci">const DAIndex &amp; daIndex_</div><div class="ttdoc">DAIndex object.</div><div class="ttdef"><b>Definition:</b> <a href="DAPartDeriv_8H_source.html#l00060">DAPartDeriv.H:60</a></div></div>
 <div class="ttc" id="apyColoringCompressible_2createAdjoint_8H_html_a75fa363c8e8a3229461183017dd17311"><div class="ttname"><a href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a></div><div class="ttdeci">DAOption daOption(mesh, pyOptions_)</div></div>
 <div class="ttc" id="aclassFoam_1_1DAPartDeriv_html_a6cbafd7a71858b14d34116e89407c999"><div class="ttname"><a href="classFoam_1_1DAPartDeriv.html#a6cbafd7a71858b14d34116e89407c999">Foam::DAPartDeriv::setPartDerivMat</a></div><div class="ttdeci">void setPartDerivMat(const Vec resVec, const Vec coloredColumn, const label transposed, Mat jacMat, const scalar jacLowerBound=1e-30) const</div><div class="ttdoc">set values for the partial derivative matrix</div><div class="ttdef"><b>Definition:</b> <a href="DAPartDeriv_8C_source.html#l00165">DAPartDeriv.C:165</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAPartDeriv_html_a23edeeeecebcef11921a33dd5d990570"><div class="ttname"><a href="classFoam_1_1DAPartDeriv.html#a23edeeeecebcef11921a33dd5d990570">Foam::DAPartDeriv::mesh_</a></div><div class="ttdeci">const fvMesh &amp; mesh_</div><div class="ttdoc">fvMesh</div><div class="ttdef"><b>Definition:</b> <a href="DAPartDeriv_8H_source.html#l00051">DAPartDeriv.H:51</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="anamespaceFoam_html_aa34f15b750841ec3ef6d97d47bdebfd2"><div class="ttname"><a href="namespaceFoam.html#aa34f15b750841ec3ef6d97d47bdebfd2">Foam::defineRunTimeSelectionTable</a></div><div class="ttdeci">defineRunTimeSelectionTable(DAFvSource, dictionary)</div></div>
-<div class="ttc" id="acreateAdjointCompressible_8H_html_ac9ba06ed262d6a8aaa3b35b6eeac88ce"><div class="ttname"><a href="createAdjointCompressible_8H.html#ac9ba06ed262d6a8aaa3b35b6eeac88ce">solverName</a></div><div class="ttdeci">word solverName</div><div class="ttdef"><b>Definition:</b> <a href="createAdjointCompressible_8H_source.html#l00032">createAdjointCompressible.H:32</a></div></div>
+<div class="ttc" id="acreateAdjointCompressible_8H_html_ac9ba06ed262d6a8aaa3b35b6eeac88ce"><div class="ttname"><a href="createAdjointCompressible_8H.html#ac9ba06ed262d6a8aaa3b35b6eeac88ce">solverName</a></div><div class="ttdeci">word solverName</div><div class="ttdef"><b>Definition:</b> <a href="createAdjointCompressible_8H_source.html#l00030">createAdjointCompressible.H:30</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAPartDeriv_html_a339de4c9f10c46fd0f4deaa85dea6f67"><div class="ttname"><a href="classFoam_1_1DAPartDeriv.html#a339de4c9f10c46fd0f4deaa85dea6f67">Foam::DAPartDeriv::stateInfo_</a></div><div class="ttdeci">HashTable&lt; wordList &gt; stateInfo_</div><div class="ttdoc">the stateInfo_ list from DAStateInfo object</div><div class="ttdef"><b>Definition:</b> <a href="DAPartDeriv_8H_source.html#l00072">DAPartDeriv.H:72</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAIndex_html"><div class="ttname"><a href="classFoam_1_1DAIndex.html">Foam::DAIndex</a></div><div class="ttdef"><b>Definition:</b> <a href="DAIndex_8H_source.html#l00032">DAIndex.H:32</a></div></div>
 <div class="ttc" id="aDAMacroFunctions_8H_html_a66f7d32895db1b88499a84dae000a034"><div class="ttname"><a href="DAMacroFunctions_8H.html#a66f7d32895db1b88499a84dae000a034">assignValueCheckAD</a></div><div class="ttdeci">#define assignValueCheckAD(valA, valB)</div><div class="ttdef"><b>Definition:</b> <a href="DAMacroFunctions_8H_source.html#l00103">DAMacroFunctions.H:103</a></div></div>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -338,6 +338,16 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a45a5b7ae829ea8e200332ce6a19e5a1e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adba061b34197deb555c03c4e3ca27ac0 inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#adba061b34197deb555c03c4e3ca27ac0">isPrintTime</a> (const Time &amp;<a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>, const label printInterval) const</td></tr>
 <tr class="separator:adba061b34197deb555c03c4e3ca27ac0 inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a04fbbb317fdd37808530154ffa1e7b inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#a4a04fbbb317fdd37808530154ffa1e7b">invTranProdNuTildaEqn</a> (const volScalarField &amp;mySource, volScalarField &amp;<a class="el" href="pseudoEqns_8H.html#a1b5796585bba4c791f4609d4bbbe8dcb">pseudoNuTilda</a>)</td></tr>
+<tr class="memdesc:a4a04fbbb317fdd37808530154ffa1e7b inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse transpose product, M_nuTilda^(-T)  <a href="classFoam_1_1DATurbulenceModel.html#a4a04fbbb317fdd37808530154ffa1e7b">More...</a><br /></td></tr>
+<tr class="separator:a4a04fbbb317fdd37808530154ffa1e7b inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8074903cad0d57bbefbf8ddcdafbc3 inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#aeb8074903cad0d57bbefbf8ddcdafbc3">constructPseudoNuTildaEqn</a> ()</td></tr>
+<tr class="separator:aeb8074903cad0d57bbefbf8ddcdafbc3 inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e1f74f2d4e8221dabccf266b31f4cc inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#ac9e1f74f2d4e8221dabccf266b31f4cc">rhsSolvePseudoNuTildaEqn</a> (const volScalarField &amp;nuTildaSource)</td></tr>
+<tr class="separator:ac9e1f74f2d4e8221dabccf266b31f4cc inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7caa27588a8f12dbb13b3776ebfc316e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#a7caa27588a8f12dbb13b3776ebfc316e">calcLduResidualTurb</a> (volScalarField &amp;nuTildaRes)</td></tr>
+<tr class="memdesc:a7caa27588a8f12dbb13b3776ebfc316e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate the turbulence residual using LDU matrix  <a href="classFoam_1_1DATurbulenceModel.html#a7caa27588a8f12dbb13b3776ebfc316e">More...</a><br /></td></tr>
+<tr class="separator:a7caa27588a8f12dbb13b3776ebfc316e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classFoam_1_1DATurbulenceModel"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classFoam_1_1DATurbulenceModel')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classFoam_1_1DATurbulenceModel.html">DATurbulenceModel</a></td></tr>
 <tr class="memitem:afc567272043189c3e8a59470135bdab2 inherit pub_static_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">static autoPtr&lt; <a class="el" href="classFoam_1_1DATurbulenceModel.html">DATurbulenceModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#afc567272043189c3e8a59470135bdab2">New</a> (const word modelType, const fvMesh &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, const <a class="el" href="classFoam_1_1DAOption.html">DAOption</a> &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>)</td></tr>
 <tr class="separator:afc567272043189c3e8a59470135bdab2 inherit pub_static_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -380,14 +390,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaSST_8C_source.html#l00041">41</a> of file <a class="el" href="DAkOmegaSST_8C_source.html">DAkOmegaSST.C</a>.</p>
 
-<p class="reference">References <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption()</a>, <a class="el" href="createRefsLaplacian_8H_source.html#l00004">mesh</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00164">DAkOmegaSST::omega_</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00177">DAkOmegaSST::omegaNearWall_</a>, and <a class="el" href="DAkOmegaSST_8H_source.html#l00183">DAkOmegaSST::printInterval_</a>.</p>
+<p class="reference">References <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption()</a>, <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, <a class="el" href="createRefsHeatTransfer_8H_source.html#l00004">mesh</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00164">DAkOmegaSST::omega_</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00177">DAkOmegaSST::omegaNearWall_</a>, and <a class="el" href="DAkOmegaSST_8H_source.html#l00183">DAkOmegaSST::printInterval_</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAkOmegaSST_a79202a2f30a8b3f8a3ab6a71f97a9dd8_cgraph.png" border="0" usemap="#classFoam_1_1DAkOmegaSST_a79202a2f30a8b3f8a3ab6a71f97a9dd8_cgraph" alt=""/></div>
 <map name="classFoam_1_1DAkOmegaSST_a79202a2f30a8b3f8a3ab6a71f97a9dd8_cgraph" id="classFoam_1_1DAkOmegaSST_a79202a2f30a8b3f8a3ab6a71f97a9dd8_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,125,32"/>
+<area shape="rect" title=" " alt="" coords="5,31,125,57"/>
 <area shape="rect" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311" title=" " alt="" coords="173,5,255,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="185,56,243,83"/>
 </map>
 </div>
 
@@ -1403,6 +1414,17 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaSST_8C_source.html#l00289">289</a> of file <a class="el" href="DAkOmegaSST_8C_source.html">DAkOmegaSST.C</a>.</p>
 
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAkOmegaSST_a2e4c3f0083fff43100aa6fdef6b94c88_cgraph.png" border="0" usemap="#classFoam_1_1DAkOmegaSST_a2e4c3f0083fff43100aa6fdef6b94c88_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAkOmegaSST_a2e4c3f0083fff43100aa6fdef6b94c88_cgraph" id="classFoam_1_1DAkOmegaSST_a2e4c3f0083fff43100aa6fdef6b94c88_cgraph">
+<area shape="rect" title="update the turbulence state for DAStateInfo::regStates_" alt="" coords="5,5,153,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="201,5,259,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="aaffe89433f18f1ee4137486e19219448"></a>
@@ -1565,6 +1587,17 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaSST_8C_source.html#l00447">447</a> of file <a class="el" href="DAkOmegaSST_8C_source.html">DAkOmegaSST.C</a>.</p>
 
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAkOmegaSST_a3891f6f54f45b436988faf46ca15f23b_cgraph.png" border="0" usemap="#classFoam_1_1DAkOmegaSST_a3891f6f54f45b436988faf46ca15f23b_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAkOmegaSST_a3891f6f54f45b436988faf46ca15f23b_cgraph" id="classFoam_1_1DAkOmegaSST_a3891f6f54f45b436988faf46ca15f23b_cgraph">
+<area shape="rect" title="update the original variable connectivity for the adjoint state residuals in stateCon" alt="" coords="5,5,228,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="276,5,333,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="af4c2bb10de993ad1332df7bd213bc7ab"></a>
@@ -1631,7 +1664,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaSST_8C_source.html#l00658">658</a> of file <a class="el" href="DAkOmegaSST_8C_source.html">DAkOmegaSST.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DATurbulenceModel_8H_source.html#l00080">DATurbulenceModel::allOptions_</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00059">DAkOmegaSST::alphaOmega2_</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00109">DAkOmegaSST::beta()</a>, <a class="el" href="DAUtility_8C_source.html#l00419">DAUtility::boundVar()</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00325">DAkOmegaSST::correctNut()</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00359">DAkOmegaSST::correctOmegaBoundaryConditions()</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00122">DAkOmegaSST::DkEff()</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00129">DAkOmegaSST::DomegaEff()</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00251">DAkOmegaSST::epsilonByk()</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00181">DAkOmegaSST::F1()</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00222">DAkOmegaSST::F23()</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00115">DAkOmegaSST::gamma()</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00234">DAkOmegaSST::GbyNu()</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00464">DATurbulenceModel::isPrintTime()</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00166">DAkOmegaSST::k_</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00167">DAkOmegaSST::kRes_</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00258">DAkOmegaSST::kSource()</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00028">normalizeResiduals</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00083">DATurbulenceModel::nut_</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00164">DAkOmegaSST::omega_</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00165">DAkOmegaSST::omegaRes_</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00267">DAkOmegaSST::omegaSource()</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00092">DATurbulenceModel::phase_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00095">DATurbulenceModel::phaseRhoPhi_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00089">DATurbulenceModel::phi_</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00245">DAkOmegaSST::Pk()</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00183">DAkOmegaSST::printInterval_</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00276">DAkOmegaSST::Qsas()</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00410">DAkOmegaSST::setOmegaNearWall()</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00180">DAkOmegaSST::solveTurbState_</a>, and <a class="el" href="DATurbulenceModel_8H_source.html#l00086">DATurbulenceModel::U_</a>.</p>
+<p class="reference">References <a class="el" href="DATurbulenceModel_8H_source.html#l00080">DATurbulenceModel::allOptions_</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00059">DAkOmegaSST::alphaOmega2_</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00109">DAkOmegaSST::beta()</a>, <a class="el" href="DAUtility_8C_source.html#l00419">DAUtility::boundVar()</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00325">DAkOmegaSST::correctNut()</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00359">DAkOmegaSST::correctOmegaBoundaryConditions()</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00122">DAkOmegaSST::DkEff()</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00129">DAkOmegaSST::DomegaEff()</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00251">DAkOmegaSST::epsilonByk()</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00181">DAkOmegaSST::F1()</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00222">DAkOmegaSST::F23()</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00115">DAkOmegaSST::gamma()</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00234">DAkOmegaSST::GbyNu()</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00464">DATurbulenceModel::isPrintTime()</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00166">DAkOmegaSST::k_</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00167">DAkOmegaSST::kRes_</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00258">DAkOmegaSST::kSource()</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00028">normalizeResiduals</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00083">DATurbulenceModel::nut_</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00164">DAkOmegaSST::omega_</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00165">DAkOmegaSST::omegaRes_</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00267">DAkOmegaSST::omegaSource()</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00092">DATurbulenceModel::phase_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00095">DATurbulenceModel::phaseRhoPhi_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00089">DATurbulenceModel::phi_</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00245">DAkOmegaSST::Pk()</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00183">DAkOmegaSST::printInterval_</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00276">DAkOmegaSST::Qsas()</a>, <a class="el" href="DAkOmegaSST_8C_source.html#l00410">DAkOmegaSST::setOmegaNearWall()</a>, <a class="el" href="solvePseudoPEqn_8H.html#ae6958b9677b193eb5a911af0345fb4ee">solve()</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00180">DAkOmegaSST::solveTurbState_</a>, and <a class="el" href="DATurbulenceModel_8H_source.html#l00086">DATurbulenceModel::U_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAkOmegaSST_8C_source.html#l00638">DAkOmegaSST::correct()</a>.</p>
 <div class="dynheader">
@@ -1639,24 +1672,25 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAkOmegaSST_a4b38dbac981107ec6386d78322323535_cgraph.png" border="0" usemap="#classFoam_1_1DAkOmegaSST_a4b38dbac981107ec6386d78322323535_cgraph" alt=""/></div>
 <map name="classFoam_1_1DAkOmegaSST_a4b38dbac981107ec6386d78322323535_cgraph" id="classFoam_1_1DAkOmegaSST_a4b38dbac981107ec6386d78322323535_cgraph">
-<area shape="rect" title="compute the turbulence residuals" alt="" coords="5,411,116,437"/>
-<area shape="rect" href="classFoam_1_1DAkOmegaSST.html#afae7408494d5f270a5b8b47ddc75f147" title=" " alt="" coords="261,157,312,184"/>
+<area shape="rect" title="compute the turbulence residuals" alt="" coords="5,436,116,463"/>
+<area shape="rect" href="classFoam_1_1DAkOmegaSST.html#afae7408494d5f270a5b8b47ddc75f147" title=" " alt="" coords="261,208,312,235"/>
 <area shape="rect" href="classFoam_1_1DAkOmegaSST.html#a312d02f8c5b337f556b9e7388dbffdf9" title=" " alt="" coords="512,157,551,184"/>
 <area shape="rect" href="classFoam_1_1DAUtility.html#a33a755d4b9029ec00bb1969fc0a193e3" title="bound a volScalar variable based on parametes defined in DAOption::allOptions_" alt="" coords="190,107,383,133"/>
-<area shape="rect" href="classFoam_1_1DAkOmegaSST.html#aaffe89433f18f1ee4137486e19219448" title="update nut based on other turbulence variables and update the BCs" alt="" coords="241,309,332,336"/>
+<area shape="rect" href="classFoam_1_1DAkOmegaSST.html#aaffe89433f18f1ee4137486e19219448" title="update nut based on other turbulence variables and update the BCs" alt="" coords="241,360,332,387"/>
 <area shape="rect" href="classFoam_1_1DAkOmegaSST.html#a3d2e2a8cfb1cf35feaf40a0c868c7cd1" title=" " alt="" coords="508,335,555,361"/>
-<area shape="rect" href="classFoam_1_1DAkOmegaSST.html#a636790623e3921c65f47923b9a21e512" title="specially treatment to correct epsilon BC" alt="" coords="164,411,409,437"/>
-<area shape="rect" href="classFoam_1_1DAkOmegaSST.html#a7b80937e7907094acf3a9e07947c205f" title="set omegaNearWall_ to near wall omega values" alt="" coords="457,436,605,463"/>
-<area shape="rect" href="classFoam_1_1DAkOmegaSST.html#aca4215d4a8caff4a6d9c5f760482c19f" title=" " alt="" coords="258,259,315,285"/>
-<area shape="rect" href="classFoam_1_1DAkOmegaSST.html#a25c97787db263e1041de915a3ef4fb27" title=" " alt="" coords="239,5,334,32"/>
+<area shape="rect" href="classFoam_1_1DAkOmegaSST.html#a636790623e3921c65f47923b9a21e512" title="specially treatment to correct epsilon BC" alt="" coords="164,512,409,539"/>
+<area shape="rect" href="classFoam_1_1DAkOmegaSST.html#a7b80937e7907094acf3a9e07947c205f" title="set omegaNearWall_ to near wall omega values" alt="" coords="457,461,605,488"/>
+<area shape="rect" href="classFoam_1_1DAkOmegaSST.html#aca4215d4a8caff4a6d9c5f760482c19f" title=" " alt="" coords="258,5,315,32"/>
+<area shape="rect" href="classFoam_1_1DAkOmegaSST.html#a25c97787db263e1041de915a3ef4fb27" title=" " alt="" coords="239,56,334,83"/>
 <area shape="rect" href="classFoam_1_1DAkOmegaSST.html#ac8891d1ebd5342ae151953407291c254" title=" " alt="" coords="239,461,334,488"/>
-<area shape="rect" href="classFoam_1_1DAkOmegaSST.html#a1a2499a88cd4108564c13f7623765df7" title=" " alt="" coords="251,56,323,83"/>
+<area shape="rect" href="classFoam_1_1DAkOmegaSST.html#a1a2499a88cd4108564c13f7623765df7" title=" " alt="" coords="251,157,323,184"/>
 <area shape="rect" href="classFoam_1_1DAkOmegaSST.html#a87cefbf14a13e5463aeb7ab314497135" title=" " alt="" coords="253,563,320,589"/>
 <area shape="rect" href="classFoam_1_1DATurbulenceModel.html#adba061b34197deb555c03c4e3ca27ac0" title=" " alt="" coords="189,614,384,655"/>
 <area shape="rect" href="classFoam_1_1DAkOmegaSST.html#abd7aa1bd65c38f9773745c8d98a2fed0" title=" " alt="" coords="249,680,324,707"/>
 <area shape="rect" href="classFoam_1_1DAkOmegaSST.html#aaf8f6ba0b3a39d35811c05789df09119" title=" " alt="" coords="231,731,342,757"/>
 <area shape="rect" href="classFoam_1_1DAkOmegaSST.html#aca22f7dba2768403b9c83d5c19bc01d6" title=" " alt="" coords="267,781,306,808"/>
 <area shape="rect" href="classFoam_1_1DAkOmegaSST.html#aa60c947284ed701b5f5708d25d1808b5" title=" " alt="" coords="259,832,314,859"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ae6958b9677b193eb5a911af0345fb4ee" title=" " alt="" coords="258,883,315,909"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1733,9 +1767,18 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaSST_8C_source.html#l00386">386</a> of file <a class="el" href="DAkOmegaSST_8C_source.html">DAkOmegaSST.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00164">DAkOmegaSST::omega_</a>, and <a class="el" href="DAkOmegaSST_8H_source.html#l00177">DAkOmegaSST::omegaNearWall_</a>.</p>
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00164">DAkOmegaSST::omega_</a>, and <a class="el" href="DAkOmegaSST_8H_source.html#l00177">DAkOmegaSST::omegaNearWall_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAkOmegaSST_8C_source.html#l00359">DAkOmegaSST::correctOmegaBoundaryConditions()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAkOmegaSST_a0d0a248baa9dcea7ca4626c497a61def_cgraph.png" border="0" usemap="#classFoam_1_1DAkOmegaSST_a0d0a248baa9dcea7ca4626c497a61def_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAkOmegaSST_a0d0a248baa9dcea7ca4626c497a61def_cgraph" id="classFoam_1_1DAkOmegaSST_a0d0a248baa9dcea7ca4626c497a61def_cgraph">
+<area shape="rect" title="save near wall omega values to omegaNearWall_" alt="" coords="5,5,164,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="212,5,269,32"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1767,9 +1810,18 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaSST_8C_source.html#l00410">410</a> of file <a class="el" href="DAkOmegaSST_8C_source.html">DAkOmegaSST.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00164">DAkOmegaSST::omega_</a>, and <a class="el" href="DAkOmegaSST_8H_source.html#l00177">DAkOmegaSST::omegaNearWall_</a>.</p>
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>, <a class="el" href="DAkOmegaSST_8H_source.html#l00164">DAkOmegaSST::omega_</a>, and <a class="el" href="DAkOmegaSST_8H_source.html#l00177">DAkOmegaSST::omegaNearWall_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAkOmegaSST_8C_source.html#l00658">DAkOmegaSST::calcResiduals()</a>, and <a class="el" href="DAkOmegaSST_8C_source.html#l00359">DAkOmegaSST::correctOmegaBoundaryConditions()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAkOmegaSST_a7b80937e7907094acf3a9e07947c205f_cgraph.png" border="0" usemap="#classFoam_1_1DAkOmegaSST_a7b80937e7907094acf3a9e07947c205f_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAkOmegaSST_a7b80937e7907094acf3a9e07947c205f_cgraph" id="classFoam_1_1DAkOmegaSST_a7b80937e7907094acf3a9e07947c205f_cgraph">
+<area shape="rect" title="set omegaNearWall_ to near wall omega values" alt="" coords="5,5,153,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="201,5,259,32"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

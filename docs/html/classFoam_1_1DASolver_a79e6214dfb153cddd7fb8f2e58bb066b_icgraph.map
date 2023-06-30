@@ -1,0 +1,6 @@
+<map id="resetOFSeeds" name="resetOFSeeds">
+<area shape="rect" id="node1" title="reset the seeds (gradient to zeros) for all OpenFOAM variables" alt="" coords="252,56,363,83"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#ae0bcce926e1dd0bf108ed423b83b4390" title="calc matrix&#45;vector products for calcCouplingFaceCoords" alt="" coords="5,5,204,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#ad65d231cc7708d0fc25fa8195f847ce6" title=" " alt="" coords="18,56,191,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#a2ef74c5bd8b386fb9d6d0e16337b9cd9" title="compute the temperature on the conjugate heat transfer patches AD" alt="" coords="47,107,163,133"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="getThermalAD" name="getThermalAD">
+<area shape="rect" id="node1" title="compute the temperature on the conjugate heat transfer patches AD" alt="" coords="5,56,121,83"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#a42cd63e8cb141c399d3a6aaf9731463b" title="Get the number of faces for the MDO coupling patches." alt="" coords="169,5,316,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#ae170e97a5040f5709193c33087dcf70f" title="compute the temperature on the conjugate heat transfer patches" alt="" coords="194,56,291,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#a79e6214dfb153cddd7fb8f2e58bb066b" title="reset the seeds (gradient to zeros) for all OpenFOAM variables" alt="" coords="187,107,298,133"/>
+</map>

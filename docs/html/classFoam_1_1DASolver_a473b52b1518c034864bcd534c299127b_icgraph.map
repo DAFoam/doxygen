@@ -1,0 +1,12 @@
+<map id="getPatchInfo" name="getPatchInfo">
+<area shape="rect" id="node1" title="return the number of points and faces for MDO patches" alt="" coords="232,208,335,235"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#a524e16ac73d7bf197bba48c036c234b4" title="return the face coordinates based on vol coords" alt="" coords="5,5,184,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#a369911a61c55a15a5193dee9ba5b1736" title=" " alt="" coords="16,56,173,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#af4ea2301dcda6c86c90b77d2a68fbd42" title="compute dAcoudXv" alt="" coords="13,107,176,133"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DASolver.html#a95d7090b578fe0387188badfd02afaa3" title=" " alt="" coords="29,157,160,184"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DASolver.html#a052d2054fc7b77cbf1ade7ecd0574b5d" title="compute dForcedXv" alt="" coords="27,208,162,235"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DASolver.html#a7fec29365f57f25e36eedfa408c60d32" title="return the positions, normals, areas, and forces of the desired acoustic patches" alt="" coords="30,259,159,285"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DASolver.html#a3551eeb1c802d76c20a557598f04685f" title="return the forces of the desired fluid&#45;structure&#45;interaction patches" alt="" coords="52,309,137,336"/>
+<area shape="rect" id="node9" href="$classFoam_1_1DASolver.html#a42cd63e8cb141c399d3a6aaf9731463b" title="Get the number of faces for the MDO coupling patches." alt="" coords="21,360,168,387"/>
+<area shape="rect" id="node10" href="$classFoam_1_1DASolver.html#a9407f4c957e9b4fa69c9eb09b3b4be20" title="Get the number of points for the MDO coupling patches." alt="" coords="19,411,170,437"/>
+</map>

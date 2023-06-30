@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -122,7 +122,7 @@ $(function() {
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//- Construct from components</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classFoam_1_1DAObjFuncForce.html#ade85dd28830b977e8576edb2ee02c44a">DAObjFuncForce</a>(</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAOption.html">DAOption</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>,</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAModel.html">DAModel</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel</a>,</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAIndex.html">DAIndex</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#aa36f358f32c8a00956e7ca31e30c906c">daIndex</a>,</div>
@@ -154,7 +154,6 @@ $(function() {
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">// ************************************************************************* //</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAObjFuncForce_html"><div class="ttname"><a href="classFoam_1_1DAObjFuncForce.html">Foam::DAObjFuncForce</a></div><div class="ttdef"><b>Definition:</b> <a href="DAObjFuncForce_8H_source.html#l00026">DAObjFuncForce.H:26</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html"><div class="ttname"><a href="classFoam_1_1DAOption.html">Foam::DAOption</a></div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8H_source.html#l00029">DAOption.H:29</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAObjFuncForce_html_af9cc4c03ec8d850a64c4940dec74f657"><div class="ttname"><a href="classFoam_1_1DAObjFuncForce.html#af9cc4c03ec8d850a64c4940dec74f657">Foam::DAObjFuncForce::~DAObjFuncForce</a></div><div class="ttdeci">virtual ~DAObjFuncForce()</div><div class="ttdef"><b>Definition:</b> <a href="DAObjFuncForce_8H_source.html#l00068">DAObjFuncForce.H:68</a></div></div>
@@ -164,6 +163,7 @@ $(function() {
 <div class="ttc" id="apyColoringCompressible_2createAdjoint_8H_html_a75fa363c8e8a3229461183017dd17311"><div class="ttname"><a href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a></div><div class="ttdeci">DAOption daOption(mesh, pyOptions_)</div></div>
 <div class="ttc" id="aclassFoam_1_1DAObjFuncForce_html_a535a876457dfbb468d813a58bfef2429"><div class="ttname"><a href="classFoam_1_1DAObjFuncForce.html#a535a876457dfbb468d813a58bfef2429">Foam::DAObjFuncForce::forceDir_</a></div><div class="ttdeci">vector forceDir_</div><div class="ttdoc">the direction of the force</div><div class="ttdef"><b>Definition:</b> <a href="DAObjFuncForce_8H_source.html#l00032">DAObjFuncForce.H:32</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAObjFuncForce_html_a28690a679fcd35d301812f8cb943ffd0"><div class="ttname"><a href="classFoam_1_1DAObjFuncForce.html#a28690a679fcd35d301812f8cb943ffd0">Foam::DAObjFuncForce::updateForceDir</a></div><div class="ttdeci">void updateForceDir(vector &amp;forceDir)</div><div class="ttdoc">dynamically adjust the force direction</div><div class="ttdef"><b>Definition:</b> <a href="DAObjFuncForce_8C_source.html#l00196">DAObjFuncForce.C:196</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAObjFuncForce_html_a398909ae16f8e5cca4a60e129b30702b"><div class="ttname"><a href="classFoam_1_1DAObjFuncForce.html#a398909ae16f8e5cca4a60e129b30702b">Foam::DAObjFuncForce::inoutRefPatchName_</a></div><div class="ttdeci">word inoutRefPatchName_</div><div class="ttdoc">the reference patch name from the alpha design variable dict patches[0] from which we compute the flo...</div><div class="ttdef"><b>Definition:</b> <a href="DAObjFuncForce_8H_source.html#l00038">DAObjFuncForce.H:38</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAIndex_html"><div class="ttname"><a href="classFoam_1_1DAIndex.html">Foam::DAIndex</a></div><div class="ttdef"><b>Definition:</b> <a href="DAIndex_8H_source.html#l00032">DAIndex.H:32</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAModel_html"><div class="ttname"><a href="classFoam_1_1DAModel.html">Foam::DAModel</a></div><div class="ttdef"><b>Definition:</b> <a href="DAModel_8H_source.html#l00059">DAModel.H:59</a></div></div>

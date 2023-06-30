@@ -1,0 +1,10 @@
+<map id="calcLduResidualTurb" name="calcLduResidualTurb">
+<area shape="rect" id="node1" title="calculate the turbulence residual using LDU matrix" alt="" coords="5,131,160,158"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASpalartAllmarasFv3.html#a12c06ff2531b6460a8bea4cd0efee0e1" title=" " alt="" coords="444,156,485,183"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASpalartAllmarasFv3.html#a3db17e0612d3f43dfc21d593b7f7a942" title="Return the effective diffusivity for nuTilda." alt="" coords="208,30,305,56"/>
+<area shape="rect" id="node4" href="$solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="228,80,285,107"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DASpalartAllmarasFv3.html#a6019fba94a532ff3113b408f9c0bd685" title=" " alt="" coords="353,131,396,158"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DASpalartAllmarasFv3.html#ace33ecb2edd6dad7cd44fa1ac058a582" title=" " alt="" coords="353,232,396,259"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DASpalartAllmarasFv3.html#ad98800930a0bbe7b918b105dbd07158c" title=" " alt="" coords="235,182,278,208"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DASpalartAllmarasFv3.html#a1a89e202067cd2b71d9036eb74f49a65" title=" " alt="" coords="237,283,276,310"/>
+</map>

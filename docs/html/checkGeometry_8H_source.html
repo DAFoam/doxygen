@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -140,7 +140,7 @@ $(function() {
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespaceFoam.html#a388a1593537b94916b107b3c8ba74579">checkCoupledPoints</a>(<span class="keyword">const</span> polyMesh&amp;, <span class="keyword">const</span> <span class="keywordtype">bool</span> report, labelHashSet*);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;label <a class="code" href="namespaceFoam.html#a11e4b25d100e8e0099917a7555191692">checkGeometry</a>(</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">const</span> polyMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">const</span> polyMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">const</span> autoPtr&lt;surfaceWriter&gt;&amp; surfWriter,</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">const</span> autoPtr&lt;writer&lt;scalar&gt;&gt;&amp; setWriter,</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">const</span> label maxIncorrectlyOrientedFaces);</div>
@@ -148,9 +148,9 @@ $(function() {
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespaceFoam_html_a9421642175ea96a8f223aaff3ce488f0"><div class="ttname"><a href="namespaceFoam.html#a9421642175ea96a8f223aaff3ce488f0">Foam::checkWedges</a></div><div class="ttdeci">bool checkWedges(const polyMesh &amp;, const bool report, const Vector&lt; label &gt; &amp;, labelHashSet *)</div><div class="ttdoc">Check wedge orientation.</div></div>
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
 <div class="ttc" id="anamespaceFoam_html_a27959527ae80998435e26099b08d398d"><div class="ttname"><a href="namespaceFoam.html#a27959527ae80998435e26099b08d398d">Foam::findOppositeWedge</a></div><div class="ttdeci">label findOppositeWedge(const polyMesh &amp;, const wedgePolyPatch &amp;)</div></div>
 <div class="ttc" id="anamespaceFoam_html_a388a1593537b94916b107b3c8ba74579"><div class="ttname"><a href="namespaceFoam.html#a388a1593537b94916b107b3c8ba74579">Foam::checkCoupledPoints</a></div><div class="ttdeci">bool checkCoupledPoints(const polyMesh &amp;, const bool report, labelHashSet *)</div><div class="ttdoc">Check 0th vertex on coupled faces.</div><div class="ttdef"><b>Definition:</b> <a href="checkGeometry_8C_source.html#l00096">checkGeometry.C:96</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="anamespaceFoam_html"><div class="ttname"><a href="namespaceFoam.html">Foam</a></div><div class="ttdef"><b>Definition:</b> <a href="multiFreqScalarFvPatchField_8C_source.html#l00144">multiFreqScalarFvPatchField.C:144</a></div></div>
 <div class="ttc" id="anamespaceFoam_html_a11e4b25d100e8e0099917a7555191692"><div class="ttname"><a href="namespaceFoam.html#a11e4b25d100e8e0099917a7555191692">Foam::checkGeometry</a></div><div class="ttdeci">label checkGeometry(const polyMesh &amp;mesh, const autoPtr&lt; surfaceWriter &gt; &amp;surfWriter, const autoPtr&lt; writer&lt; scalar &gt;&gt; &amp;setWriter, const label maxIncorrectlyOrientedFaces)</div><div class="ttdoc">check mesh quality</div><div class="ttdef"><b>Definition:</b> <a href="checkGeometry_8C_source.html#l00233">checkGeometry.C:233</a></div></div>
 <div class="ttc" id="acheckTools_8H_html"><div class="ttname"><a href="checkTools_8H.html">checkTools.H</a></div></div>

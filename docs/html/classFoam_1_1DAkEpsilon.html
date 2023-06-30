@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -296,6 +296,16 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a45a5b7ae829ea8e200332ce6a19e5a1e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adba061b34197deb555c03c4e3ca27ac0 inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#adba061b34197deb555c03c4e3ca27ac0">isPrintTime</a> (const Time &amp;<a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>, const label printInterval) const</td></tr>
 <tr class="separator:adba061b34197deb555c03c4e3ca27ac0 inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a04fbbb317fdd37808530154ffa1e7b inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#a4a04fbbb317fdd37808530154ffa1e7b">invTranProdNuTildaEqn</a> (const volScalarField &amp;mySource, volScalarField &amp;<a class="el" href="pseudoEqns_8H.html#a1b5796585bba4c791f4609d4bbbe8dcb">pseudoNuTilda</a>)</td></tr>
+<tr class="memdesc:a4a04fbbb317fdd37808530154ffa1e7b inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse transpose product, M_nuTilda^(-T)  <a href="classFoam_1_1DATurbulenceModel.html#a4a04fbbb317fdd37808530154ffa1e7b">More...</a><br /></td></tr>
+<tr class="separator:a4a04fbbb317fdd37808530154ffa1e7b inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8074903cad0d57bbefbf8ddcdafbc3 inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#aeb8074903cad0d57bbefbf8ddcdafbc3">constructPseudoNuTildaEqn</a> ()</td></tr>
+<tr class="separator:aeb8074903cad0d57bbefbf8ddcdafbc3 inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e1f74f2d4e8221dabccf266b31f4cc inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#ac9e1f74f2d4e8221dabccf266b31f4cc">rhsSolvePseudoNuTildaEqn</a> (const volScalarField &amp;nuTildaSource)</td></tr>
+<tr class="separator:ac9e1f74f2d4e8221dabccf266b31f4cc inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7caa27588a8f12dbb13b3776ebfc316e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#a7caa27588a8f12dbb13b3776ebfc316e">calcLduResidualTurb</a> (volScalarField &amp;nuTildaRes)</td></tr>
+<tr class="memdesc:a7caa27588a8f12dbb13b3776ebfc316e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate the turbulence residual using LDU matrix  <a href="classFoam_1_1DATurbulenceModel.html#a7caa27588a8f12dbb13b3776ebfc316e">More...</a><br /></td></tr>
+<tr class="separator:a7caa27588a8f12dbb13b3776ebfc316e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classFoam_1_1DATurbulenceModel"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classFoam_1_1DATurbulenceModel')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classFoam_1_1DATurbulenceModel.html">DATurbulenceModel</a></td></tr>
 <tr class="memitem:afc567272043189c3e8a59470135bdab2 inherit pub_static_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">static autoPtr&lt; <a class="el" href="classFoam_1_1DATurbulenceModel.html">DATurbulenceModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#afc567272043189c3e8a59470135bdab2">New</a> (const word modelType, const fvMesh &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, const <a class="el" href="classFoam_1_1DAOption.html">DAOption</a> &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>)</td></tr>
 <tr class="separator:afc567272043189c3e8a59470135bdab2 inherit pub_static_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -338,14 +348,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DAkEpsilon_8C_source.html#l00041">41</a> of file <a class="el" href="DAkEpsilon_8C_source.html">DAkEpsilon.C</a>.</p>
 
-<p class="reference">References <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption()</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00086">DAkEpsilon::epsilon_</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00096">DAkEpsilon::epsilonNearWall_</a>, <a class="el" href="createRefsLaplacian_8H_source.html#l00004">mesh</a>, and <a class="el" href="DAkEpsilon_8H_source.html#l00102">DAkEpsilon::printInterval_</a>.</p>
+<p class="reference">References <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption()</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00086">DAkEpsilon::epsilon_</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00096">DAkEpsilon::epsilonNearWall_</a>, <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, <a class="el" href="createRefsHeatTransfer_8H_source.html#l00004">mesh</a>, and <a class="el" href="DAkEpsilon_8H_source.html#l00102">DAkEpsilon::printInterval_</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAkEpsilon_ab90c0849dac1af720a8faa643f19dbb6_cgraph.png" border="0" usemap="#classFoam_1_1DAkEpsilon_ab90c0849dac1af720a8faa643f19dbb6_cgraph" alt=""/></div>
 <map name="classFoam_1_1DAkEpsilon_ab90c0849dac1af720a8faa643f19dbb6_cgraph" id="classFoam_1_1DAkEpsilon_ab90c0849dac1af720a8faa643f19dbb6_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,101,32"/>
+<area shape="rect" title=" " alt="" coords="5,31,101,57"/>
 <area shape="rect" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311" title=" " alt="" coords="149,5,231,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="161,56,219,83"/>
 </map>
 </div>
 
@@ -663,6 +674,17 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkEpsilon_8C_source.html#l00187">187</a> of file <a class="el" href="DAkEpsilon_8C_source.html">DAkEpsilon.C</a>.</p>
 
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAkEpsilon_a2e4c3f0083fff43100aa6fdef6b94c88_cgraph.png" border="0" usemap="#classFoam_1_1DAkEpsilon_a2e4c3f0083fff43100aa6fdef6b94c88_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAkEpsilon_a2e4c3f0083fff43100aa6fdef6b94c88_cgraph" id="classFoam_1_1DAkEpsilon_a2e4c3f0083fff43100aa6fdef6b94c88_cgraph">
+<area shape="rect" title="update the turbulence state for DAStateInfo::regStates_" alt="" coords="5,5,153,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="201,5,259,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="aaffe89433f18f1ee4137486e19219448"></a>
@@ -824,6 +846,17 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkEpsilon_8C_source.html#l00341">341</a> of file <a class="el" href="DAkEpsilon_8C_source.html">DAkEpsilon.C</a>.</p>
 
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAkEpsilon_a3891f6f54f45b436988faf46ca15f23b_cgraph.png" border="0" usemap="#classFoam_1_1DAkEpsilon_a3891f6f54f45b436988faf46ca15f23b_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAkEpsilon_a3891f6f54f45b436988faf46ca15f23b_cgraph" id="classFoam_1_1DAkEpsilon_a3891f6f54f45b436988faf46ca15f23b_cgraph">
+<area shape="rect" title="update the original variable connectivity for the adjoint state residuals in stateCon" alt="" coords="5,5,228,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="276,5,333,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="af4c2bb10de993ad1332df7bd213bc7ab"></a>
@@ -890,7 +923,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkEpsilon_8C_source.html#l00504">504</a> of file <a class="el" href="DAkEpsilon_8C_source.html">DAkEpsilon.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DATurbulenceModel_8H_source.html#l00080">DATurbulenceModel::allOptions_</a>, <a class="el" href="DAUtility_8C_source.html#l00419">DAUtility::boundVar()</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00056">DAkEpsilon::C1_</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00057">DAkEpsilon::C2_</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00058">DAkEpsilon::C3_</a>, <a class="el" href="DAkEpsilon_8C_source.html#l00253">DAkEpsilon::correctEpsilonBoundaryConditions()</a>, <a class="el" href="DAkEpsilon_8C_source.html#l00223">DAkEpsilon::correctNut()</a>, <a class="el" href="DAkEpsilon_8C_source.html#l00178">DAkEpsilon::DepsilonEff()</a>, <a class="el" href="DAkEpsilon_8C_source.html#l00170">DAkEpsilon::DkEff()</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00086">DAkEpsilon::epsilon_</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00087">DAkEpsilon::epsilonRes_</a>, <a class="el" href="DAkEpsilon_8C_source.html#l00161">DAkEpsilon::epsilonSource()</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00464">DATurbulenceModel::isPrintTime()</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00088">DAkEpsilon::k_</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00089">DAkEpsilon::kRes_</a>, <a class="el" href="DAkEpsilon_8C_source.html#l00152">DAkEpsilon::kSource()</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00028">normalizeResiduals</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00083">DATurbulenceModel::nut_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00092">DATurbulenceModel::phase_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00095">DATurbulenceModel::phaseRhoPhi_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00089">DATurbulenceModel::phi_</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00102">DAkEpsilon::printInterval_</a>, <a class="el" href="DAkEpsilon_8C_source.html#l00304">DAkEpsilon::setEpsilonNearWall()</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00099">DAkEpsilon::solveTurbState_</a>, and <a class="el" href="DATurbulenceModel_8H_source.html#l00086">DATurbulenceModel::U_</a>.</p>
+<p class="reference">References <a class="el" href="DATurbulenceModel_8H_source.html#l00080">DATurbulenceModel::allOptions_</a>, <a class="el" href="DAUtility_8C_source.html#l00419">DAUtility::boundVar()</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00056">DAkEpsilon::C1_</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00057">DAkEpsilon::C2_</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00058">DAkEpsilon::C3_</a>, <a class="el" href="DAkEpsilon_8C_source.html#l00253">DAkEpsilon::correctEpsilonBoundaryConditions()</a>, <a class="el" href="DAkEpsilon_8C_source.html#l00223">DAkEpsilon::correctNut()</a>, <a class="el" href="DAkEpsilon_8C_source.html#l00178">DAkEpsilon::DepsilonEff()</a>, <a class="el" href="DAkEpsilon_8C_source.html#l00170">DAkEpsilon::DkEff()</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00086">DAkEpsilon::epsilon_</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00087">DAkEpsilon::epsilonRes_</a>, <a class="el" href="DAkEpsilon_8C_source.html#l00161">DAkEpsilon::epsilonSource()</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00464">DATurbulenceModel::isPrintTime()</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00088">DAkEpsilon::k_</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00089">DAkEpsilon::kRes_</a>, <a class="el" href="DAkEpsilon_8C_source.html#l00152">DAkEpsilon::kSource()</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00028">normalizeResiduals</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00083">DATurbulenceModel::nut_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00092">DATurbulenceModel::phase_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00095">DATurbulenceModel::phaseRhoPhi_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00089">DATurbulenceModel::phi_</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00102">DAkEpsilon::printInterval_</a>, <a class="el" href="DAkEpsilon_8C_source.html#l00304">DAkEpsilon::setEpsilonNearWall()</a>, <a class="el" href="solvePseudoPEqn_8H.html#ae6958b9677b193eb5a911af0345fb4ee">solve()</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00099">DAkEpsilon::solveTurbState_</a>, and <a class="el" href="DATurbulenceModel_8H_source.html#l00086">DATurbulenceModel::U_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAkEpsilon_8C_source.html#l00484">DAkEpsilon::correct()</a>.</p>
 <div class="dynheader">
@@ -898,7 +931,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAkEpsilon_a4b38dbac981107ec6386d78322323535_cgraph.png" border="0" usemap="#classFoam_1_1DAkEpsilon_a4b38dbac981107ec6386d78322323535_cgraph" alt=""/></div>
 <map name="classFoam_1_1DAkEpsilon_a4b38dbac981107ec6386d78322323535_cgraph" id="classFoam_1_1DAkEpsilon_a4b38dbac981107ec6386d78322323535_cgraph">
-<area shape="rect" title="compute the turbulence residuals" alt="" coords="5,208,116,235"/>
+<area shape="rect" title="compute the turbulence residuals" alt="" coords="5,233,116,260"/>
 <area shape="rect" href="classFoam_1_1DAUtility.html#a33a755d4b9029ec00bb1969fc0a193e3" title="bound a volScalar variable based on parametes defined in DAOption::allOptions_" alt="" coords="190,5,383,32"/>
 <area shape="rect" href="classFoam_1_1DAkEpsilon.html#a8e247d1c21f6459befff71af66bb744e" title="specially treatment to correct epsilon BC" alt="" coords="164,56,409,83"/>
 <area shape="rect" href="classFoam_1_1DAkEpsilon.html#aa4327d4eb9c9e68c2d720fef8feb52f5" title="set epsilonNearWall_ to near wall epsilon values" alt="" coords="457,81,605,108"/>
@@ -908,6 +941,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classFoam_1_1DAkEpsilon.html#a11abcc44df285cf748c77aa0a7cac6b8" title=" " alt="" coords="230,309,343,336"/>
 <area shape="rect" href="classFoam_1_1DATurbulenceModel.html#adba061b34197deb555c03c4e3ca27ac0" title=" " alt="" coords="189,361,384,402"/>
 <area shape="rect" href="classFoam_1_1DAkEpsilon.html#abd7aa1bd65c38f9773745c8d98a2fed0" title=" " alt="" coords="249,427,324,453"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ae6958b9677b193eb5a911af0345fb4ee" title=" " alt="" coords="258,477,315,504"/>
 </map>
 </div>
 <div class="dynheader">
@@ -983,9 +1017,18 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkEpsilon_8C_source.html#l00280">280</a> of file <a class="el" href="DAkEpsilon_8C_source.html">DAkEpsilon.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAkEpsilon_8H_source.html#l00086">DAkEpsilon::epsilon_</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00096">DAkEpsilon::epsilonNearWall_</a>, and <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>.</p>
+<p class="reference">References <a class="el" href="DAkEpsilon_8H_source.html#l00086">DAkEpsilon::epsilon_</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00096">DAkEpsilon::epsilonNearWall_</a>, <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, and <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAkEpsilon_8C_source.html#l00253">DAkEpsilon::correctEpsilonBoundaryConditions()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAkEpsilon_a8f290a496113d290b3c0d2b1df6690c8_cgraph.png" border="0" usemap="#classFoam_1_1DAkEpsilon_a8f290a496113d290b3c0d2b1df6690c8_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAkEpsilon_a8f290a496113d290b3c0d2b1df6690c8_cgraph" id="classFoam_1_1DAkEpsilon_a8f290a496113d290b3c0d2b1df6690c8_cgraph">
+<area shape="rect" title="save near wall epsilon values to epsilonNearWall_" alt="" coords="5,5,164,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="212,5,269,32"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1017,9 +1060,18 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkEpsilon_8C_source.html#l00304">304</a> of file <a class="el" href="DAkEpsilon_8C_source.html">DAkEpsilon.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAkEpsilon_8H_source.html#l00086">DAkEpsilon::epsilon_</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00096">DAkEpsilon::epsilonNearWall_</a>, and <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>.</p>
+<p class="reference">References <a class="el" href="DAkEpsilon_8H_source.html#l00086">DAkEpsilon::epsilon_</a>, <a class="el" href="DAkEpsilon_8H_source.html#l00096">DAkEpsilon::epsilonNearWall_</a>, <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, and <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAkEpsilon_8C_source.html#l00504">DAkEpsilon::calcResiduals()</a>, and <a class="el" href="DAkEpsilon_8C_source.html#l00253">DAkEpsilon::correctEpsilonBoundaryConditions()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAkEpsilon_aa4327d4eb9c9e68c2d720fef8feb52f5_cgraph.png" border="0" usemap="#classFoam_1_1DAkEpsilon_aa4327d4eb9c9e68c2d720fef8feb52f5_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAkEpsilon_aa4327d4eb9c9e68c2d720fef8feb52f5_cgraph" id="classFoam_1_1DAkEpsilon_aa4327d4eb9c9e68c2d720fef8feb52f5_cgraph">
+<area shape="rect" title="set epsilonNearWall_ to near wall epsilon values" alt="" coords="5,5,153,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="201,5,259,32"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

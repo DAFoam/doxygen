@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -101,12 +101,14 @@ Functions</h2></td></tr>
 <tr class="separator:ad9a6816dbc9c62129d40af3784545b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63bda711251083d54394a9ca435ab0be"><td class="memItemLeft" align="right" valign="top">this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnRhoSimple_8H.html#a63bda711251083d54394a9ca435ab0be">primalResidualControl&lt; vector &gt;</a> (<a class="el" href="UEqnTurbo_8H.html#a9eca2e2fd635ad2c06910b502c347b5c">solverU</a>, printToScreen, printInterval, &quot;U&quot;)</td></tr>
 <tr class="separator:a63bda711251083d54394a9ca435ab0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a139f25a7d5ee64548c7fd514755e4842"><td class="memItemLeft" align="right" valign="top">fvOptions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnRhoSimple_8H.html#a139f25a7d5ee64548c7fd514755e4842">correct</a> (<a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>)</td></tr>
+<tr class="separator:a139f25a7d5ee64548c7fd514755e4842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:aeeb518d883492fb109c93a7959833ffb"><td class="memItemLeft" align="right" valign="top">fvVectorMatrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnRhoSimple_8H.html#aeeb518d883492fb109c93a7959833ffb">UEqn</a> = tUEqn.ref()</td></tr>
 <tr class="separator:aeeb518d883492fb109c93a7959833ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9eca2e2fd635ad2c06910b502c347b5c"><td class="memItemLeft" align="right" valign="top">SolverPerformance&lt; vector &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnRhoSimple_8H.html#a9eca2e2fd635ad2c06910b502c347b5c">solverU</a> = solve(<a class="el" href="UEqnPiso_8H.html#a365ee7492f2b66108e5621187d82542a">UEqn</a> == -fvc::grad(<a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>))</td></tr>
+<tr class="memitem:a9eca2e2fd635ad2c06910b502c347b5c"><td class="memItemLeft" align="right" valign="top">SolverPerformance&lt; vector &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UEqnRhoSimple_8H.html#a9eca2e2fd635ad2c06910b502c347b5c">solverU</a> = <a class="el" href="solvePseudoUEqn_8H.html#ab9ef2e69e875e301767ceb3ec0c6bcce">solve</a>(<a class="el" href="UEqnPiso_8H.html#a365ee7492f2b66108e5621187d82542a">UEqn</a> == -fvc::grad(<a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>))</td></tr>
 <tr class="separator:a9eca2e2fd635ad2c06910b502c347b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -146,7 +148,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="UEqnRhoSimple_8H_source.html#l00005">5</a> of file <a class="el" href="UEqnRhoSimple_8H_source.html">UEqnRhoSimple.H</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsPimple_8H_source.html#l00013">fvSource</a>.</p>
+<p class="reference">References <a class="el" href="createRefsHeatTransfer_8H_source.html#l00007">fvSource</a>.</p>
 
 </div>
 </div>
@@ -243,6 +245,24 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a139f25a7d5ee64548c7fd514755e4842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a139f25a7d5ee64548c7fd514755e4842">&#9670;&nbsp;</a></span>correct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fvOptions correct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="aeeb518d883492fb109c93a7959833ffb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeeb518d883492fb109c93a7959833ffb">&#9670;&nbsp;</a></span>UEqn</h2>
@@ -267,7 +287,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SolverPerformance&lt;vector&gt; solverU = solve(<a class="el" href="UEqnPiso_8H.html#a365ee7492f2b66108e5621187d82542a">UEqn</a> == -fvc::grad(<a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>))</td>
+          <td class="memname">SolverPerformance&lt;vector&gt; solverU = <a class="el" href="solvePseudoUEqn_8H.html#ab9ef2e69e875e301767ceb3ec0c6bcce">solve</a>(<a class="el" href="UEqnPiso_8H.html#a365ee7492f2b66108e5621187d82542a">UEqn</a> == -fvc::grad(<a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a22d7c57d4543327225910deaf8bbcb1e">p</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -102,7 +102,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aafe1af6f1e2824e5b55f51b1e66e143c"><td class="memItemLeft" align="right" valign="top">SolverPerformance&lt; scalar &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TEqnSimpleT_8H.html#aafe1af6f1e2824e5b55f51b1e66e143c">solverT</a> = TEqn.solve()</td></tr>
+<tr class="memitem:aafe1af6f1e2824e5b55f51b1e66e143c"><td class="memItemLeft" align="right" valign="top">SolverPerformance&lt; scalar &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TEqnSimpleT_8H.html#aafe1af6f1e2824e5b55f51b1e66e143c">solverT</a> = <a class="el" href="solvePseudoUEqn_8H.html#ab9ef2e69e875e301767ceb3ec0c6bcce">TEqn.solve</a>()</td></tr>
 <tr class="separator:aafe1af6f1e2824e5b55f51b1e66e143c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -149,18 +149,20 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00086">DAObjFuncWallHeatFlux::calcObjFunc()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00080">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00075">DAResidualRhoSimpleCFoam::calcResiduals()</a>, <a class="el" href="DAResidualTurboFoam_8C_source.html#l00079">DAResidualTurboFoam::calcResiduals()</a>, and <a class="el" href="DAResidualRhoSimpleFoam_8C_source.html#l00089">DAResidualRhoSimpleFoam::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAObjFuncWallHeatFlux_8C_source.html#l00138">DAObjFuncWallHeatFlux::calcObjFunc()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00088">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleCFoam_8C_source.html#l00075">DAResidualRhoSimpleCFoam::calcResiduals()</a>, <a class="el" href="DAResidualTurboFoam_8C_source.html#l00079">DAResidualTurboFoam::calcResiduals()</a>, <a class="el" href="DAResidualRhoSimpleFoam_8C_source.html#l00097">DAResidualRhoSimpleFoam::calcResiduals()</a>, <a class="el" href="DASolver_8C_source.html#l00731">DASolver::getThermal()</a>, and <a class="el" href="DASolver_8C_source.html#l00550">DASolver::setThermal()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="TEqnSimpleT_8H_ad145252fff6dd3b727ad3f1641750383_icgraph.png" border="0" usemap="#TEqnSimpleT_8H_ad145252fff6dd3b727ad3f1641750383_icgraph" alt=""/></div>
 <map name="TEqnSimpleT_8H_ad145252fff6dd3b727ad3f1641750383_icgraph" id="TEqnSimpleT_8H_ad145252fff6dd3b727ad3f1641750383_icgraph">
-<area shape="rect" title=" " alt="" coords="284,143,359,170"/>
+<area shape="rect" title=" " alt="" coords="284,209,359,235"/>
 <area shape="rect" href="classFoam_1_1DAObjFuncWallHeatFlux.html#aff7d67902025442333a1a88cce51695e" title="calculate the value of objective function" alt="" coords="9,5,233,47"/>
 <area shape="rect" href="classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="5,71,236,112"/>
 <area shape="rect" href="classFoam_1_1DAResidualRhoSimpleCFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="15,136,226,177"/>
 <area shape="rect" href="classFoam_1_1DAResidualTurboFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="15,201,227,243"/>
 <area shape="rect" href="classFoam_1_1DAResidualRhoSimpleFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="15,267,226,308"/>
+<area shape="rect" href="classFoam_1_1DASolver.html#ae170e97a5040f5709193c33087dcf70f" title="compute the temperature on the conjugate heat transfer patches" alt="" coords="16,333,225,359"/>
+<area shape="rect" href="classFoam_1_1DASolver.html#a78d75bdaf913cfcc71c44a1b9557fc5f" title="assign temperature values to the conjugate heat transfer patches" alt="" coords="17,383,225,410"/>
 </map>
 </div>
 
@@ -182,18 +184,20 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="DAResidualLaplacianFoam_8C_source.html#l00055">DAResidualLaplacianFoam::calcResiduals()</a>, <a class="el" href="DAResidualScalarTransportFoam_8C_source.html#l00057">DAResidualScalarTransportFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00080">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DALaplacianFoam_8C_source.html#l00126">DALaplacianFoam::solvePrimal()</a>, and <a class="el" href="DAScalarTransportFoam_8C_source.html#l00128">DAScalarTransportFoam::solvePrimal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAResidualLaplacianFoam_8C_source.html#l00055">DAResidualLaplacianFoam::calcResiduals()</a>, <a class="el" href="DAResidualHeatTransferFoam_8C_source.html#l00059">DAResidualHeatTransferFoam::calcResiduals()</a>, <a class="el" href="DAResidualScalarTransportFoam_8C_source.html#l00057">DAResidualScalarTransportFoam::calcResiduals()</a>, <a class="el" href="DAResidualSimpleTFoam_8C_source.html#l00088">DAResidualSimpleTFoam::calcResiduals()</a>, <a class="el" href="DAHeatTransferFoam_8C_source.html#l00050">DAHeatTransferFoam::solvePrimal()</a>, <a class="el" href="DALaplacianFoam_8C_source.html#l00126">DALaplacianFoam::solvePrimal()</a>, and <a class="el" href="DAScalarTransportFoam_8C_source.html#l00128">DAScalarTransportFoam::solvePrimal()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="TEqnSimpleT_8H_a180e328c04d4cb9f2fe2da8ad248622f_icgraph.png" border="0" usemap="#TEqnSimpleT_8H_a180e328c04d4cb9f2fe2da8ad248622f_icgraph" alt=""/></div>
 <map name="TEqnSimpleT_8H_a180e328c04d4cb9f2fe2da8ad248622f_icgraph" id="TEqnSimpleT_8H_a180e328c04d4cb9f2fe2da8ad248622f_icgraph">
-<area shape="rect" title=" " alt="" coords="295,143,349,170"/>
+<area shape="rect" title=" " alt="" coords="295,209,349,235"/>
 <area shape="rect" href="classFoam_1_1DAResidualLaplacianFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="25,5,227,47"/>
-<area shape="rect" href="classFoam_1_1DAResidualScalarTransportFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="5,71,247,112"/>
-<area shape="rect" href="classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="11,136,241,177"/>
-<area shape="rect" href="classFoam_1_1DALaplacianFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="35,201,217,243"/>
-<area shape="rect" href="classFoam_1_1DAScalarTransportFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="15,267,237,308"/>
+<area shape="rect" href="classFoam_1_1DAResidualHeatTransferFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="14,71,238,112"/>
+<area shape="rect" href="classFoam_1_1DAResidualScalarTransportFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="5,136,247,177"/>
+<area shape="rect" href="classFoam_1_1DAResidualSimpleTFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="11,201,241,243"/>
+<area shape="rect" href="classFoam_1_1DAHeatTransferFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="24,267,228,308"/>
+<area shape="rect" href="classFoam_1_1DALaplacianFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="35,332,217,373"/>
+<area shape="rect" href="classFoam_1_1DAScalarTransportFoam.html#a5c0c6289530112c8badaa81d933bef5c" title="solve the primal equations" alt="" coords="15,397,237,439"/>
 </map>
 </div>
 
@@ -264,14 +268,14 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SolverPerformance&lt;scalar&gt; solverT = TEqn.solve()</td>
+          <td class="memname">SolverPerformance&lt;scalar&gt; solverT = <a class="el" href="solvePseudoUEqn_8H.html#ab9ef2e69e875e301767ceb3ec0c6bcce">TEqn.solve</a>()</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="TEqnSimpleT_8H_source.html#l00016">16</a> of file <a class="el" href="TEqnSimpleT_8H_source.html">TEqnSimpleT.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DALaplacianFoam_8C_source.html#l00126">DALaplacianFoam::solvePrimal()</a>, and <a class="el" href="DAScalarTransportFoam_8C_source.html#l00128">DAScalarTransportFoam::solvePrimal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAHeatTransferFoam_8C_source.html#l00050">DAHeatTransferFoam::solvePrimal()</a>, <a class="el" href="DALaplacianFoam_8C_source.html#l00126">DALaplacianFoam::solvePrimal()</a>, and <a class="el" href="DAScalarTransportFoam_8C_source.html#l00128">DAScalarTransportFoam::solvePrimal()</a>.</p>
 
 </div>
 </div>

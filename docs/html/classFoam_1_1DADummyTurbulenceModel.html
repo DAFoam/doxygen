@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -188,6 +188,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a45a5b7ae829ea8e200332ce6a19e5a1e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adba061b34197deb555c03c4e3ca27ac0 inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#adba061b34197deb555c03c4e3ca27ac0">isPrintTime</a> (const Time &amp;<a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>, const label printInterval) const</td></tr>
 <tr class="separator:adba061b34197deb555c03c4e3ca27ac0 inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a04fbbb317fdd37808530154ffa1e7b inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#a4a04fbbb317fdd37808530154ffa1e7b">invTranProdNuTildaEqn</a> (const volScalarField &amp;mySource, volScalarField &amp;<a class="el" href="pseudoEqns_8H.html#a1b5796585bba4c791f4609d4bbbe8dcb">pseudoNuTilda</a>)</td></tr>
+<tr class="memdesc:a4a04fbbb317fdd37808530154ffa1e7b inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse transpose product, M_nuTilda^(-T)  <a href="classFoam_1_1DATurbulenceModel.html#a4a04fbbb317fdd37808530154ffa1e7b">More...</a><br /></td></tr>
+<tr class="separator:a4a04fbbb317fdd37808530154ffa1e7b inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8074903cad0d57bbefbf8ddcdafbc3 inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#aeb8074903cad0d57bbefbf8ddcdafbc3">constructPseudoNuTildaEqn</a> ()</td></tr>
+<tr class="separator:aeb8074903cad0d57bbefbf8ddcdafbc3 inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e1f74f2d4e8221dabccf266b31f4cc inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#ac9e1f74f2d4e8221dabccf266b31f4cc">rhsSolvePseudoNuTildaEqn</a> (const volScalarField &amp;nuTildaSource)</td></tr>
+<tr class="separator:ac9e1f74f2d4e8221dabccf266b31f4cc inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7caa27588a8f12dbb13b3776ebfc316e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#a7caa27588a8f12dbb13b3776ebfc316e">calcLduResidualTurb</a> (volScalarField &amp;nuTildaRes)</td></tr>
+<tr class="memdesc:a7caa27588a8f12dbb13b3776ebfc316e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate the turbulence residual using LDU matrix  <a href="classFoam_1_1DATurbulenceModel.html#a7caa27588a8f12dbb13b3776ebfc316e">More...</a><br /></td></tr>
+<tr class="separator:a7caa27588a8f12dbb13b3776ebfc316e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -484,6 +494,17 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classFoam_1_1DATurbulenceModel.html#a0878ae196c9a0dcc497b0e0da7c7af62">DATurbulenceModel</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="DADummyTurbulenceModel_8C_source.html#l00066">66</a> of file <a class="el" href="DADummyTurbulenceModel_8C_source.html">DADummyTurbulenceModel.C</a>.</p>
+
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DADummyTurbulenceModel_a3891f6f54f45b436988faf46ca15f23b_cgraph.png" border="0" usemap="#classFoam_1_1DADummyTurbulenceModel_a3891f6f54f45b436988faf46ca15f23b_cgraph" alt=""/></div>
+<map name="classFoam_1_1DADummyTurbulenceModel_a3891f6f54f45b436988faf46ca15f23b_cgraph" id="classFoam_1_1DADummyTurbulenceModel_a3891f6f54f45b436988faf46ca15f23b_cgraph">
+<area shape="rect" title="update the original variable connectivity for the adjoint state residuals in stateCon" alt="" coords="5,5,228,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="276,5,333,32"/>
+</map>
+</div>
 
 </div>
 </div>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -109,6 +109,31 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5c0c6289530112c8badaa81d933bef5c"><td class="memItemLeft" align="right" valign="top">virtual label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c">solvePrimal</a> (const Vec xvVec, Vec wVec)</td></tr>
 <tr class="memdesc:a5c0c6289530112c8badaa81d933bef5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">solve the primal equations  <a href="classFoam_1_1DASimpleFoam.html#a5c0c6289530112c8badaa81d933bef5c">More...</a><br /></td></tr>
 <tr class="separator:a5c0c6289530112c8badaa81d933bef5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad48fc87d4825c1c5418e98c8ea76de69"><td class="memItemLeft" align="right" valign="top">virtual label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASimpleFoam.html#ad48fc87d4825c1c5418e98c8ea76de69">runFPAdj</a> (const Vec xvVec, const Vec wVec, Vec dFdW, Vec <a class="el" href="createRefsTurbo_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a>)</td></tr>
+<tr class="memdesc:ad48fc87d4825c1c5418e98c8ea76de69"><td class="mdescLeft">&#160;</td><td class="mdescRight">solve the adjoint equation using the fixed-point iteration method  <a href="classFoam_1_1DASimpleFoam.html#ad48fc87d4825c1c5418e98c8ea76de69">More...</a><br /></td></tr>
+<tr class="separator:ad48fc87d4825c1c5418e98c8ea76de69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a55a6e3f341039226c004f6d5c78332"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASimpleFoam.html#a0a55a6e3f341039226c004f6d5c78332">invTranProdUEqn</a> (const volVectorField &amp;mySource, volVectorField &amp;<a class="el" href="pseudoEqns_8H.html#afdc334a6fff02c34618c5066b7a12025">pseudoU</a>)</td></tr>
+<tr class="memdesc:a0a55a6e3f341039226c004f6d5c78332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse transpose product, MU^(-T)  <a href="classFoam_1_1DASimpleFoam.html#a0a55a6e3f341039226c004f6d5c78332">More...</a><br /></td></tr>
+<tr class="separator:a0a55a6e3f341039226c004f6d5c78332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba30fb073224dfc6df3007bccb23896a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASimpleFoam.html#aba30fb073224dfc6df3007bccb23896a">invTranProdPEqn</a> (const volScalarField &amp;mySource, volScalarField &amp;<a class="el" href="pseudoEqns_8H.html#a88e590167fd1b51113f5ecbb48e0d2b1">pseudoP</a>)</td></tr>
+<tr class="memdesc:aba30fb073224dfc6df3007bccb23896a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse transpose product, Mp^(-T)  <a href="classFoam_1_1DASimpleFoam.html#aba30fb073224dfc6df3007bccb23896a">More...</a><br /></td></tr>
+<tr class="separator:aba30fb073224dfc6df3007bccb23896a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4d2b7e6fbea9885b5ed3e81fe4e780"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASimpleFoam.html#a1c4d2b7e6fbea9885b5ed3e81fe4e780">calcLduResiduals</a> (volVectorField &amp;URes, volScalarField &amp;pRes, surfaceScalarField &amp;phiRes)</td></tr>
+<tr class="memdesc:a1c4d2b7e6fbea9885b5ed3e81fe4e780"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate all the flow residuals except for the turbulence one  <a href="classFoam_1_1DASimpleFoam.html#a1c4d2b7e6fbea9885b5ed3e81fe4e780">More...</a><br /></td></tr>
+<tr class="separator:a1c4d2b7e6fbea9885b5ed3e81fe4e780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3205aa5bef688ff7749d02ee4a70124c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASimpleFoam.html#a3205aa5bef688ff7749d02ee4a70124c">vec2Fields</a> (const word mode, Vec cVec, volVectorField &amp;UField, volScalarField &amp;pField, surfaceScalarField &amp;phiField, volScalarField &amp;nuTildaField)</td></tr>
+<tr class="memdesc:a3205aa5bef688ff7749d02ee4a70124c"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign coupled petsc vec to fields or vice versa  <a href="classFoam_1_1DASimpleFoam.html#a3205aa5bef688ff7749d02ee4a70124c">More...</a><br /></td></tr>
+<tr class="separator:a3205aa5bef688ff7749d02ee4a70124c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15067522a03b22a96661677549c2425b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASimpleFoam.html#a15067522a03b22a96661677549c2425b">calcAdjointResidual</a> (volVectorField &amp;URes, volScalarField &amp;pRes, surfaceScalarField &amp;phiRes, volScalarField &amp;nuTildaRes, Vec dFdW, volVectorField &amp;UPsi, volScalarField &amp;pPsi, surfaceScalarField &amp;phiPsi, volScalarField &amp;nuTildaPsi, volVectorField &amp;adjURes, volScalarField &amp;adjPRes, surfaceScalarField &amp;adjPhiRes, volScalarField &amp;adjNuTildaRes, label &amp;cnt)</td></tr>
+<tr class="separator:a15067522a03b22a96661677549c2425b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91130b882aeb6cc6df12352deb21c0cc"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASimpleFoam.html#a91130b882aeb6cc6df12352deb21c0cc">L2norm</a> (const volScalarField &amp;v)</td></tr>
+<tr class="separator:a91130b882aeb6cc6df12352deb21c0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2b2502aa72014d6a48af86d5b2fdb52"><td class="memItemLeft" align="right" valign="top">vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASimpleFoam.html#ae2b2502aa72014d6a48af86d5b2fdb52">L2norm</a> (const volVectorField &amp;<a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a502c1f07c7fb98ef84d321a79dd972e3">U</a>)</td></tr>
+<tr class="separator:ae2b2502aa72014d6a48af86d5b2fdb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab7196dad5accd22eec2817cd466154d"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASimpleFoam.html#aab7196dad5accd22eec2817cd466154d">L2norm</a> (const surfaceScalarField &amp;Phi)</td></tr>
+<tr class="separator:aab7196dad5accd22eec2817cd466154d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc86d0ecf88994d83e76cf4308b2fe3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASimpleFoam.html#a9cc86d0ecf88994d83e76cf4308b2fe3">swap</a> (List&lt; scalar &gt; &amp;a, List&lt; scalar &gt; &amp;b)</td></tr>
+<tr class="separator:a9cc86d0ecf88994d83e76cf4308b2fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classFoam_1_1DASolver"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classFoam_1_1DASolver')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classFoam_1_1DASolver.html">DASolver</a></td></tr>
 <tr class="memitem:a6b3416a9d52e23cfd2e5ae1e32090a7d inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a6b3416a9d52e23cfd2e5ae1e32090a7d">TypeName</a> (&quot;DASolver&quot;)</td></tr>
 <tr class="memdesc:a6b3416a9d52e23cfd2e5ae1e32090a7d inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime type information.  <a href="classFoam_1_1DASolver.html#a6b3416a9d52e23cfd2e5ae1e32090a7d">More...</a><br /></td></tr>
@@ -137,6 +162,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8a41381c0bd6d3b8d89aa0dd62582872 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a8a41381c0bd6d3b8d89aa0dd62582872">calcdRdWTPsiAD</a> (const Vec xvVec, const Vec wVec, const Vec <a class="el" href="createRefsTurbo_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a>, Vec dRdWTPsi)</td></tr>
 <tr class="memdesc:a8a41381c0bd6d3b8d89aa0dd62582872 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute [dRdW]^T*Psi  <a href="classFoam_1_1DASolver.html#a8a41381c0bd6d3b8d89aa0dd62582872">More...</a><br /></td></tr>
 <tr class="separator:a8a41381c0bd6d3b8d89aa0dd62582872 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae207e296b9f7e82ba9f15206c52c3b09 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#ae207e296b9f7e82ba9f15206c52c3b09">calcdRdWTPsiAD</a> (const label isInit, const Vec <a class="el" href="createRefsTurbo_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a>, Vec dRdWTPsi)</td></tr>
+<tr class="memdesc:ae207e296b9f7e82ba9f15206c52c3b09 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute [dRdW]^T*Psi but without updating xvVec and wVec to the OF fields  <a href="classFoam_1_1DASolver.html#ae207e296b9f7e82ba9f15206c52c3b09">More...</a><br /></td></tr>
+<tr class="separator:ae207e296b9f7e82ba9f15206c52c3b09 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac468e16ab0351c4fc493b320fdbe4e2a inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#ac468e16ab0351c4fc493b320fdbe4e2a">calcdFdW</a> (const Vec xvVec, const Vec wVec, const word objFuncName, Vec dFdW)</td></tr>
 <tr class="memdesc:ac468e16ab0351c4fc493b320fdbe4e2a inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dFdW  <a href="classFoam_1_1DASolver.html#ac468e16ab0351c4fc493b320fdbe4e2a">More...</a><br /></td></tr>
 <tr class="separator:ac468e16ab0351c4fc493b320fdbe4e2a inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,6 +183,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad2cd4059650064ffe8599777743e9701 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#ad2cd4059650064ffe8599777743e9701">updateOFMesh</a> (const Vec xvVec)</td></tr>
 <tr class="memdesc:ad2cd4059650064ffe8599777743e9701 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the OpenFoam mesh point coordinates based on the point vector xvVec.  <a href="classFoam_1_1DASolver.html#ad2cd4059650064ffe8599777743e9701">More...</a><br /></td></tr>
 <tr class="separator:ad2cd4059650064ffe8599777743e9701 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7adfcb6c3698e996074e9d8df5bcc0d inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#af7adfcb6c3698e996074e9d8df5bcc0d">updateOFField</a> (const scalar *volCoords)</td></tr>
+<tr class="memdesc:af7adfcb6c3698e996074e9d8df5bcc0d inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the OpenFOAM field values (including both internal and boundary fields) based on the state array.  <a href="classFoam_1_1DASolver.html#af7adfcb6c3698e996074e9d8df5bcc0d">More...</a><br /></td></tr>
+<tr class="separator:af7adfcb6c3698e996074e9d8df5bcc0d inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe1148073099666cb5a1ae009e5ea4e5 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#afe1148073099666cb5a1ae009e5ea4e5">updateOFMesh</a> (const scalar *states)</td></tr>
+<tr class="memdesc:afe1148073099666cb5a1ae009e5ea4e5 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the OpenFoam mesh point coordinates based on the volume point coords array.  <a href="classFoam_1_1DASolver.html#afe1148073099666cb5a1ae009e5ea4e5">More...</a><br /></td></tr>
+<tr class="separator:afe1148073099666cb5a1ae009e5ea4e5 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e6214dfb153cddd7fb8f2e58bb066b inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a79e6214dfb153cddd7fb8f2e58bb066b">resetOFSeeds</a> ()</td></tr>
+<tr class="memdesc:a79e6214dfb153cddd7fb8f2e58bb066b inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset the seeds (gradient to zeros) for all OpenFOAM variables  <a href="classFoam_1_1DASolver.html#a79e6214dfb153cddd7fb8f2e58bb066b">More...</a><br /></td></tr>
+<tr class="separator:a79e6214dfb153cddd7fb8f2e58bb066b inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87ce51418f77f253885c95b81c7c1d9d inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a87ce51418f77f253885c95b81c7c1d9d">calcdRdBC</a> (const Vec xvVec, const Vec wVec, const word designVarName, Mat dRdBC)</td></tr>
 <tr class="memdesc:a87ce51418f77f253885c95b81c7c1d9d inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dRdBC  <a href="classFoam_1_1DASolver.html#a87ce51418f77f253885c95b81c7c1d9d">More...</a><br /></td></tr>
 <tr class="separator:a87ce51418f77f253885c95b81c7c1d9d inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,12 +237,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2ee033358cb8925351994d6881a05042 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a2ee033358cb8925351994d6881a05042">calcdFdWAD</a> (const Vec xvVec, const Vec wVec, const word objFuncName, Vec dFdW)</td></tr>
 <tr class="memdesc:a2ee033358cb8925351994d6881a05042 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dFdW using AD  <a href="classFoam_1_1DASolver.html#a2ee033358cb8925351994d6881a05042">More...</a><br /></td></tr>
 <tr class="separator:a2ee033358cb8925351994d6881a05042 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad65d231cc7708d0fc25fa8195f847ce6 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#ad65d231cc7708d0fc25fa8195f847ce6">calcdRdThermalTPsiAD</a> (const double *volCoords, const double *states, const double *thermal, const double *seeds, double *product)</td></tr>
+<tr class="separator:ad65d231cc7708d0fc25fa8195f847ce6 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9efc63b2cbf192eea8a3dc667e112d1b inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a9efc63b2cbf192eea8a3dc667e112d1b">calcdRdXvTPsiAD</a> (const Vec xvVec, const Vec wVec, const Vec <a class="el" href="createRefsTurbo_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a>, Vec dRdXvTPsi)</td></tr>
 <tr class="memdesc:a9efc63b2cbf192eea8a3dc667e112d1b inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dRdXv^T*Psi  <a href="classFoam_1_1DASolver.html#a9efc63b2cbf192eea8a3dc667e112d1b">More...</a><br /></td></tr>
 <tr class="separator:a9efc63b2cbf192eea8a3dc667e112d1b inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a052d2054fc7b77cbf1ade7ecd0574b5d inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a052d2054fc7b77cbf1ade7ecd0574b5d">calcdForcedXvAD</a> (const Vec xvVec, const Vec wVec, const Vec fBarVec, Vec dForcedXv)</td></tr>
 <tr class="memdesc:a052d2054fc7b77cbf1ade7ecd0574b5d inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dForcedXv  <a href="classFoam_1_1DASolver.html#a052d2054fc7b77cbf1ade7ecd0574b5d">More...</a><br /></td></tr>
 <tr class="separator:a052d2054fc7b77cbf1ade7ecd0574b5d inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ea2301dcda6c86c90b77d2a68fbd42 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#af4ea2301dcda6c86c90b77d2a68fbd42">calcdAcousticsdXvAD</a> (const Vec xvVec, const Vec wVec, const Vec fBarVec, Vec dForcedXv, word varName, word groupName)</td></tr>
+<tr class="memdesc:af4ea2301dcda6c86c90b77d2a68fbd42 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dAcoudXv  <a href="classFoam_1_1DASolver.html#af4ea2301dcda6c86c90b77d2a68fbd42">More...</a><br /></td></tr>
+<tr class="separator:af4ea2301dcda6c86c90b77d2a68fbd42 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a681db2bd5ba6c81fe049988ad319343c inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a681db2bd5ba6c81fe049988ad319343c">calcdFdXvAD</a> (const Vec xvVec, const Vec wVec, const word objFuncName, const word designVarName, Vec dFdXv)</td></tr>
 <tr class="memdesc:a681db2bd5ba6c81fe049988ad319343c inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dFdXv AD  <a href="classFoam_1_1DASolver.html#a681db2bd5ba6c81fe049988ad319343c">More...</a><br /></td></tr>
 <tr class="separator:a681db2bd5ba6c81fe049988ad319343c inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,12 +255,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8498afa4f0c54eb78fc381c08b260fb0 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95d7090b578fe0387188badfd02afaa3 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a95d7090b578fe0387188badfd02afaa3">calcdForcedWAD</a> (const Vec xvVec, const Vec wVec, const Vec fBarVec, Vec dForcedW)</td></tr>
 <tr class="separator:a95d7090b578fe0387188badfd02afaa3 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a369911a61c55a15a5193dee9ba5b1736 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a369911a61c55a15a5193dee9ba5b1736">calcdAcousticsdWAD</a> (const Vec xvVec, const Vec wVec, const Vec fBarVec, Vec dForcedW, word varName, word groupName)</td></tr>
+<tr class="separator:a369911a61c55a15a5193dee9ba5b1736 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a6204fd550fe7a4cefd698679d80177 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a8a6204fd550fe7a4cefd698679d80177">calcdFdACTAD</a> (const Vec xvVec, const Vec wVec, const word objFuncName, const word designVarName, Vec dFdACT)</td></tr>
 <tr class="memdesc:a8a6204fd550fe7a4cefd698679d80177 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dFdACT AD  <a href="classFoam_1_1DASolver.html#a8a6204fd550fe7a4cefd698679d80177">More...</a><br /></td></tr>
 <tr class="separator:a8a6204fd550fe7a4cefd698679d80177 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20f41818db76a706a581003af4faf454 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a20f41818db76a706a581003af4faf454">calcdRdWOldTPsiAD</a> (const label oldTimeLevel, const Vec <a class="el" href="createRefsTurbo_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a>, Vec dRdWOldTPsi)</td></tr>
 <tr class="memdesc:a20f41818db76a706a581003af4faf454 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute dRdWOld^T*Psi  <a href="classFoam_1_1DASolver.html#a20f41818db76a706a581003af4faf454">More...</a><br /></td></tr>
 <tr class="separator:a20f41818db76a706a581003af4faf454 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2b8a55494e9b1e208efdd908a71d886 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#ab2b8a55494e9b1e208efdd908a71d886">getCouplingPatchList</a> (wordList &amp;patchList, word groupName=&quot;NONE&quot;)</td></tr>
+<tr class="memdesc:ab2b8a55494e9b1e208efdd908a71d886 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the coupling patch list if any scenario is active on couplingInfo dict otherwise return design surface  <a href="classFoam_1_1DASolver.html#ab2b8a55494e9b1e208efdd908a71d886">More...</a><br /></td></tr>
+<tr class="separator:ab2b8a55494e9b1e208efdd908a71d886 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7ce1e2622846db0a54e4db5b50e64b4 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#aa7ce1e2622846db0a54e4db5b50e64b4">initializedRdWTMatrixFree</a> (const Vec xvVec, const Vec wVec)</td></tr>
 <tr class="memdesc:aa7ce1e2622846db0a54e4db5b50e64b4 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize matrix free dRdWT  <a href="classFoam_1_1DASolver.html#aa7ce1e2622846db0a54e4db5b50e64b4">More...</a><br /></td></tr>
 <tr class="separator:aa7ce1e2622846db0a54e4db5b50e64b4 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,12 +284,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af15be79cdfada23a2fdbf59b9782552a inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#af15be79cdfada23a2fdbf59b9782552a">registerForceOutput4AD</a> (List&lt; scalar &gt; &amp;fX, List&lt; scalar &gt; &amp;fY, List&lt; scalar &gt; &amp;fZ)</td></tr>
 <tr class="memdesc:af15be79cdfada23a2fdbf59b9782552a inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">register all force as the ouptut for referse-mod AD  <a href="classFoam_1_1DASolver.html#af15be79cdfada23a2fdbf59b9782552a">More...</a><br /></td></tr>
 <tr class="separator:af15be79cdfada23a2fdbf59b9782552a inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97227e39806b61f5ef6107f99d90b0cd inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a97227e39806b61f5ef6107f99d90b0cd">registerAcousticOutput4AD</a> (List&lt; scalar &gt; &amp;a)</td></tr>
+<tr class="memdesc:a97227e39806b61f5ef6107f99d90b0cd inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">register acoustic as the ouptut for referse-mod AD  <a href="classFoam_1_1DASolver.html#a97227e39806b61f5ef6107f99d90b0cd">More...</a><br /></td></tr>
+<tr class="separator:a97227e39806b61f5ef6107f99d90b0cd inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a653f246e12168912ade302efc8c6155e inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a653f246e12168912ade302efc8c6155e">assignVec2ResidualGradient</a> (Vec vecX)</td></tr>
 <tr class="memdesc:a653f246e12168912ade302efc8c6155e inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign the reverse-mode AD input seeds from vecX to the residuals in OpenFOAM  <a href="classFoam_1_1DASolver.html#a653f246e12168912ade302efc8c6155e">More...</a><br /></td></tr>
 <tr class="separator:a653f246e12168912ade302efc8c6155e inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5caa890b8dbae183454663e7404fcbad inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a5caa890b8dbae183454663e7404fcbad">assignSeeds2ResidualGradient</a> (const double *seeds)</td></tr>
+<tr class="memdesc:a5caa890b8dbae183454663e7404fcbad inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign the reverse-mode AD input seeds from vecX to the residuals in OpenFOAM  <a href="classFoam_1_1DASolver.html#a5caa890b8dbae183454663e7404fcbad">More...</a><br /></td></tr>
+<tr class="separator:a5caa890b8dbae183454663e7404fcbad inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaf9d8eaa3bf97d298ae4f5decad8398 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#adaf9d8eaa3bf97d298ae4f5decad8398">assignVec2ForceGradient</a> (Vec fBarVec, List&lt; scalar &gt; &amp;fX, List&lt; scalar &gt; &amp;fY, List&lt; scalar &gt; &amp;fZ)</td></tr>
 <tr class="memdesc:adaf9d8eaa3bf97d298ae4f5decad8398 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign the reverse-mode AD input seeds from fBarVec to the force vectors in OpenFOAM  <a href="classFoam_1_1DASolver.html#adaf9d8eaa3bf97d298ae4f5decad8398">More...</a><br /></td></tr>
 <tr class="separator:adaf9d8eaa3bf97d298ae4f5decad8398 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d7aa564d2440e2b689b0e747d57927 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#aa0d7aa564d2440e2b689b0e747d57927">assignVec2AcousticGradient</a> (Vec fBarVec, List&lt; scalar &gt; &amp;a, label offset, label step)</td></tr>
+<tr class="memdesc:aa0d7aa564d2440e2b689b0e747d57927 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign the reverse-mode AD input seeds from fBarVec to the acoustic vectors in OpenFOAM  <a href="classFoam_1_1DASolver.html#aa0d7aa564d2440e2b689b0e747d57927">More...</a><br /></td></tr>
+<tr class="separator:aa0d7aa564d2440e2b689b0e747d57927 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdcae307fac7a1a49515db53d0d24bed inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#acdcae307fac7a1a49515db53d0d24bed">assignStateGradient2Vec</a> (Vec vecY, const label oldTimeLevel=0)</td></tr>
 <tr class="memdesc:acdcae307fac7a1a49515db53d0d24bed inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the reverse-mode AD derivatives from the state variables in OpenFOAM to vecY  <a href="classFoam_1_1DASolver.html#acdcae307fac7a1a49515db53d0d24bed">More...</a><br /></td></tr>
 <tr class="separator:acdcae307fac7a1a49515db53d0d24bed inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -306,6 +362,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8c7101a44780781d4eddd4a724cc954a inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a8c7101a44780781d4eddd4a724cc954a">getNLocalCells</a> () const</td></tr>
 <tr class="memdesc:a8c7101a44780781d4eddd4a724cc954a inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the number of local cells  <a href="classFoam_1_1DASolver.html#a8c7101a44780781d4eddd4a724cc954a">More...</a><br /></td></tr>
 <tr class="separator:a8c7101a44780781d4eddd4a724cc954a inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf3342d873e4eee0fe5b8b7ac6aa39d3 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#adf3342d873e4eee0fe5b8b7ac6aa39d3">getNLocalPoints</a> () const</td></tr>
+<tr class="memdesc:adf3342d873e4eee0fe5b8b7ac6aa39d3 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the number of local points  <a href="classFoam_1_1DASolver.html#adf3342d873e4eee0fe5b8b7ac6aa39d3">More...</a><br /></td></tr>
+<tr class="separator:adf3342d873e4eee0fe5b8b7ac6aa39d3 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdc7ce58473b47ad8ed789877835ca36 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#acdc7ce58473b47ad8ed789877835ca36">setDAObjFuncList</a> ()</td></tr>
 <tr class="memdesc:acdc7ce58473b47ad8ed789877835ca36 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize <a class="el" href="classFoam_1_1DASolver.html#a9ca5cc51f76ca984bdfc62af8760e2b6" title="a list of DAObjFunc pointers">DASolver::daObjFuncPtrList_</a> one needs to call this before calling printAllObjFuncs  <a href="classFoam_1_1DASolver.html#acdc7ce58473b47ad8ed789877835ca36">More...</a><br /></td></tr>
 <tr class="separator:acdc7ce58473b47ad8ed789877835ca36 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -318,29 +377,56 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a22bdd2a534a166b3a21496f6e45bf409 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a22bdd2a534a166b3a21496f6e45bf409">getObjFuncValue</a> (const word objFuncName)</td></tr>
 <tr class="memdesc:a22bdd2a534a166b3a21496f6e45bf409 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the value of the objective function  <a href="classFoam_1_1DASolver.html#a22bdd2a534a166b3a21496f6e45bf409">More...</a><br /></td></tr>
 <tr class="separator:a22bdd2a534a166b3a21496f6e45bf409 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a293b0dbfafafa884d30e9a1940a563cf inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a293b0dbfafafa884d30e9a1940a563cf">getForces</a> (Vec fX, Vec fY, Vec fZ, Vec pointList)</td></tr>
-<tr class="memdesc:a293b0dbfafafa884d30e9a1940a563cf inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the forces of the desired fluid-structure-interaction patches  <a href="classFoam_1_1DASolver.html#a293b0dbfafafa884d30e9a1940a563cf">More...</a><br /></td></tr>
-<tr class="separator:a293b0dbfafafa884d30e9a1940a563cf inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaa7bb018d69934dd9bd8a26713a5323 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#aaaa7bb018d69934dd9bd8a26713a5323">getForcesInfo</a> (label &amp;nPoints, List&lt; word &gt; &amp;patchList)</td></tr>
-<tr class="memdesc:aaaa7bb018d69934dd9bd8a26713a5323 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the number of points used for force calculation  <a href="classFoam_1_1DASolver.html#aaaa7bb018d69934dd9bd8a26713a5323">More...</a><br /></td></tr>
-<tr class="separator:aaaa7bb018d69934dd9bd8a26713a5323 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94556c42a158c1dc54df0b006934c81d inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a94556c42a158c1dc54df0b006934c81d">getForcesInternal</a> (List&lt; scalar &gt; &amp;fX, List&lt; scalar &gt; &amp;fY, List&lt; scalar &gt; &amp;fZ, List&lt; label &gt; &amp;pointList, List&lt; word &gt; &amp;patchList)</td></tr>
-<tr class="memdesc:a94556c42a158c1dc54df0b006934c81d inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the forces of the desired fluid-structure-interation patches  <a href="classFoam_1_1DASolver.html#a94556c42a158c1dc54df0b006934c81d">More...</a><br /></td></tr>
-<tr class="separator:a94556c42a158c1dc54df0b006934c81d inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e7a5f4786f6cdbd9dcb8619bc2a4a52 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a2e7a5f4786f6cdbd9dcb8619bc2a4a52">calcForceProfile</a> (Vec xvVec, Vec stateVec, Vec fProfileVec, Vec rProfileVec)</td></tr>
-<tr class="memdesc:a2e7a5f4786f6cdbd9dcb8619bc2a4a52 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate the radial profile of the force on the propeller surface  <a href="classFoam_1_1DASolver.html#a2e7a5f4786f6cdbd9dcb8619bc2a4a52">More...</a><br /></td></tr>
-<tr class="separator:a2e7a5f4786f6cdbd9dcb8619bc2a4a52 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a589469aa80c581dc1fc002f60ca64323 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a589469aa80c581dc1fc002f60ca64323">calcForceProfileInternal</a> (scalarList &amp;xv, scalarList &amp;state, scalarList &amp;fProfile, scalarList &amp;rProfile)</td></tr>
-<tr class="separator:a589469aa80c581dc1fc002f60ca64323 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3551eeb1c802d76c20a557598f04685f inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a3551eeb1c802d76c20a557598f04685f">getForces</a> (Vec fX, Vec fY, Vec fZ)</td></tr>
+<tr class="memdesc:a3551eeb1c802d76c20a557598f04685f inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the forces of the desired fluid-structure-interaction patches  <a href="classFoam_1_1DASolver.html#a3551eeb1c802d76c20a557598f04685f">More...</a><br /></td></tr>
+<tr class="separator:a3551eeb1c802d76c20a557598f04685f inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fec29365f57f25e36eedfa408c60d32 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a7fec29365f57f25e36eedfa408c60d32">getAcousticData</a> (Vec x, Vec y, Vec z, Vec nX, Vec nY, Vec nZ, Vec a, Vec fX, Vec fY, Vec fZ, word groupName)</td></tr>
+<tr class="memdesc:a7fec29365f57f25e36eedfa408c60d32 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the positions, normals, areas, and forces of the desired acoustic patches  <a href="classFoam_1_1DASolver.html#a7fec29365f57f25e36eedfa408c60d32">More...</a><br /></td></tr>
+<tr class="separator:a7fec29365f57f25e36eedfa408c60d32 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a473b52b1518c034864bcd534c299127b inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a473b52b1518c034864bcd534c299127b">getPatchInfo</a> (label &amp;nPoints, label &amp;nFaces, List&lt; word &gt; &amp;patchList)</td></tr>
+<tr class="memdesc:a473b52b1518c034864bcd534c299127b inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the number of points and faces for MDO patches  <a href="classFoam_1_1DASolver.html#a473b52b1518c034864bcd534c299127b">More...</a><br /></td></tr>
+<tr class="separator:a473b52b1518c034864bcd534c299127b inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28b92eb67b5874f7753f1ba5db53e3de inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a28b92eb67b5874f7753f1ba5db53e3de">getForcesInternal</a> (List&lt; scalar &gt; &amp;fX, List&lt; scalar &gt; &amp;fY, List&lt; scalar &gt; &amp;fZ, List&lt; word &gt; &amp;patchList)</td></tr>
+<tr class="memdesc:a28b92eb67b5874f7753f1ba5db53e3de inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the forces of the desired fluid-structure-interation patches  <a href="classFoam_1_1DASolver.html#a28b92eb67b5874f7753f1ba5db53e3de">More...</a><br /></td></tr>
+<tr class="separator:a28b92eb67b5874f7753f1ba5db53e3de inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42cd63e8cb141c399d3a6aaf9731463b inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a42cd63e8cb141c399d3a6aaf9731463b">getNCouplingFaces</a> ()</td></tr>
+<tr class="memdesc:a42cd63e8cb141c399d3a6aaf9731463b inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of faces for the MDO coupling patches.  <a href="classFoam_1_1DASolver.html#a42cd63e8cb141c399d3a6aaf9731463b">More...</a><br /></td></tr>
+<tr class="separator:a42cd63e8cb141c399d3a6aaf9731463b inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9407f4c957e9b4fa69c9eb09b3b4be20 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a9407f4c957e9b4fa69c9eb09b3b4be20">getNCouplingPoints</a> ()</td></tr>
+<tr class="memdesc:a9407f4c957e9b4fa69c9eb09b3b4be20 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of points for the MDO coupling patches.  <a href="classFoam_1_1DASolver.html#a9407f4c957e9b4fa69c9eb09b3b4be20">More...</a><br /></td></tr>
+<tr class="separator:a9407f4c957e9b4fa69c9eb09b3b4be20 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a524e16ac73d7bf197bba48c036c234b4 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a524e16ac73d7bf197bba48c036c234b4">calcCouplingFaceCoords</a> (const scalar *volCoords, scalar *surfCoords)</td></tr>
+<tr class="memdesc:a524e16ac73d7bf197bba48c036c234b4 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the face coordinates based on vol coords  <a href="classFoam_1_1DASolver.html#a524e16ac73d7bf197bba48c036c234b4">More...</a><br /></td></tr>
+<tr class="separator:a524e16ac73d7bf197bba48c036c234b4 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0bcce926e1dd0bf108ed423b83b4390 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#ae0bcce926e1dd0bf108ed423b83b4390">calcCouplingFaceCoordsAD</a> (const double *volCoords, const double *seeds, double *product)</td></tr>
+<tr class="memdesc:ae0bcce926e1dd0bf108ed423b83b4390 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">calc matrix-vector products for calcCouplingFaceCoords  <a href="classFoam_1_1DASolver.html#ae0bcce926e1dd0bf108ed423b83b4390">More...</a><br /></td></tr>
+<tr class="separator:ae0bcce926e1dd0bf108ed423b83b4390 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae170e97a5040f5709193c33087dcf70f inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#ae170e97a5040f5709193c33087dcf70f">getThermal</a> (const scalar *volCoords, const scalar *states, scalar *thermal)</td></tr>
+<tr class="memdesc:ae170e97a5040f5709193c33087dcf70f inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the temperature on the conjugate heat transfer patches  <a href="classFoam_1_1DASolver.html#ae170e97a5040f5709193c33087dcf70f">More...</a><br /></td></tr>
+<tr class="separator:ae170e97a5040f5709193c33087dcf70f inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ef74c5bd8b386fb9d6d0e16337b9cd9 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a2ef74c5bd8b386fb9d6d0e16337b9cd9">getThermalAD</a> (const word inputName, const double *volCoords, const double *states, const double *seeds, double *product)</td></tr>
+<tr class="memdesc:a2ef74c5bd8b386fb9d6d0e16337b9cd9 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the temperature on the conjugate heat transfer patches AD  <a href="classFoam_1_1DASolver.html#a2ef74c5bd8b386fb9d6d0e16337b9cd9">More...</a><br /></td></tr>
+<tr class="separator:a2ef74c5bd8b386fb9d6d0e16337b9cd9 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78d75bdaf913cfcc71c44a1b9557fc5f inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a78d75bdaf913cfcc71c44a1b9557fc5f">setThermal</a> (scalar *thermal)</td></tr>
+<tr class="memdesc:a78d75bdaf913cfcc71c44a1b9557fc5f inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign temperature values to the conjugate heat transfer patches  <a href="classFoam_1_1DASolver.html#a78d75bdaf913cfcc71c44a1b9557fc5f">More...</a><br /></td></tr>
+<tr class="separator:a78d75bdaf913cfcc71c44a1b9557fc5f inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d1981a9e77d642c01518822034ef52f inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a6d1981a9e77d642c01518822034ef52f">getAcousticDataInternal</a> (List&lt; scalar &gt; &amp;x, List&lt; scalar &gt; &amp;y, List&lt; scalar &gt; &amp;z, List&lt; scalar &gt; &amp;nX, List&lt; scalar &gt; &amp;nY, List&lt; scalar &gt; &amp;nZ, List&lt; scalar &gt; &amp;a, List&lt; scalar &gt; &amp;fX, List&lt; scalar &gt; &amp;fY, List&lt; scalar &gt; &amp;fZ, List&lt; word &gt; &amp;patchList)</td></tr>
+<tr class="memdesc:a6d1981a9e77d642c01518822034ef52f inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the positions, normals, areas, and forces of the desired acoustic patches  <a href="classFoam_1_1DASolver.html#a6d1981a9e77d642c01518822034ef52f">More...</a><br /></td></tr>
+<tr class="separator:a6d1981a9e77d642c01518822034ef52f inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f5a9085423ecc10c2c4d091fac49ce8 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a2f5a9085423ecc10c2c4d091fac49ce8">calcForceProfile</a> (Vec center, Vec aForceL, Vec tForceL, Vec rDistL)</td></tr>
+<tr class="memdesc:a2f5a9085423ecc10c2c4d091fac49ce8 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate the radial profile of the force on the propeller surface  <a href="classFoam_1_1DASolver.html#a2f5a9085423ecc10c2c4d091fac49ce8">More...</a><br /></td></tr>
+<tr class="separator:a2f5a9085423ecc10c2c4d091fac49ce8 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d6c9b9e3fef158cf4c684dc9a97f40b inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a8d6c9b9e3fef158cf4c684dc9a97f40b">calcForceProfileInternal</a> (fvMesh &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, const vector &amp;center, scalarList &amp;aForceL, scalarList &amp;tForceL, scalarList &amp;rDistL)</td></tr>
+<tr class="separator:a8d6c9b9e3fef158cf4c684dc9a97f40b inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a534f2996e4ed4a5735e2cc40592cfd1d inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a534f2996e4ed4a5735e2cc40592cfd1d">calcdForcedStateTPsiAD</a> (const word mode, Vec xvVec, Vec stateVec, Vec psiVec, Vec prodVec)</td></tr>
 <tr class="separator:a534f2996e4ed4a5735e2cc40592cfd1d inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46bcb19dcb7c1d6829ce7a2cffba495d inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a46bcb19dcb7c1d6829ce7a2cffba495d">calcFvSourceInternal</a> (const scalarList &amp;center, const scalarList &amp;radius, const scalarList &amp;forcce, volVectorField &amp;<a class="el" href="createRefsSimpleT_8H.html#a9a0c1fa985c6e79bb4cdc55fa06b9b50">fvSource</a>)</td></tr>
-<tr class="memdesc:a46bcb19dcb7c1d6829ce7a2cffba495d inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate the fvSource based on the radial force profile  <a href="classFoam_1_1DASolver.html#a46bcb19dcb7c1d6829ce7a2cffba495d">More...</a><br /></td></tr>
-<tr class="separator:a46bcb19dcb7c1d6829ce7a2cffba495d inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a9db70ddef012faf23d38b617083275 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a6a9db70ddef012faf23d38b617083275">calcFvSource</a> (Vec centerVec, Vec radiusVec, Vec forceVec, Vec <a class="el" href="createRefsSimpleT_8H.html#a9a0c1fa985c6e79bb4cdc55fa06b9b50">fvSource</a>)</td></tr>
-<tr class="separator:a6a9db70ddef012faf23d38b617083275 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b9ed6275ce688b69ba78182216e5ceb inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a4b9ed6275ce688b69ba78182216e5ceb">calcdFvSourcedInputsTPsiAD</a> (const word mode, Vec centerVec, Vec radiusVec, Vec forceVec, Vec psiVec, Vec prodVec)</td></tr>
-<tr class="separator:a4b9ed6275ce688b69ba78182216e5ceb inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c601993bf5e847f8b2652125c315f8 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a59c601993bf5e847f8b2652125c315f8">calcFvSourceInternal</a> (const word propName, const scalarField &amp;aForce, const scalarField &amp;tForce, const scalarField &amp;rDistList, const scalarList &amp;targetForce, const vector &amp;center, volVectorField &amp;<a class="el" href="createRefsSimpleT_8H.html#a9a0c1fa985c6e79bb4cdc55fa06b9b50">fvSource</a>)</td></tr>
+<tr class="memdesc:a59c601993bf5e847f8b2652125c315f8 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate the fvSource based on the radial force profile  <a href="classFoam_1_1DASolver.html#a59c601993bf5e847f8b2652125c315f8">More...</a><br /></td></tr>
+<tr class="separator:a59c601993bf5e847f8b2652125c315f8 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac11aa1ab427453717cf30805316ed555 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#ac11aa1ab427453717cf30805316ed555">calcFvSource</a> (const word propName, Vec aForce, Vec tForce, Vec rDist, Vec targetForce, Vec center, Vec <a class="el" href="createRefsSimpleT_8H.html#a9a0c1fa985c6e79bb4cdc55fa06b9b50">fvSource</a>)</td></tr>
+<tr class="separator:ac11aa1ab427453717cf30805316ed555 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ebc6b41e38bdbabbff24aeee3a7842f inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a7ebc6b41e38bdbabbff24aeee3a7842f">calcdFvSourcedInputsTPsiAD</a> (const word propName, const word mode, Vec aForce, Vec tForce, Vec rDist, Vec targetForce, Vec center, Vec <a class="el" href="createRefsTurbo_8H.html#aba679271c41582099c8ccf4827fdf217">psi</a>, Vec dFvSource)</td></tr>
+<tr class="separator:a7ebc6b41e38bdbabbff24aeee3a7842f inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a967a69a9c61b3b15bc5419be87fcff08 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a967a69a9c61b3b15bc5419be87fcff08">printAllOptions</a> ()</td></tr>
 <tr class="memdesc:a967a69a9c61b3b15bc5419be87fcff08 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">print all <a class="el" href="classFoam_1_1DAOption.html">DAOption</a>  <a href="classFoam_1_1DASolver.html#a967a69a9c61b3b15bc5419be87fcff08">More...</a><br /></td></tr>
 <tr class="separator:a967a69a9c61b3b15bc5419be87fcff08 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -362,6 +448,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5d441dcc885643d362ffc6c49c784d3a inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a5d441dcc885643d362ffc6c49c784d3a">setFieldValue4GlobalCellI</a> (const word fieldName, const scalar val, const label globalCellI, const label compI=0)</td></tr>
 <tr class="memdesc:a5d441dcc885643d362ffc6c49c784d3a inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the field value  <a href="classFoam_1_1DASolver.html#a5d441dcc885643d362ffc6c49c784d3a">More...</a><br /></td></tr>
 <tr class="separator:a5d441dcc885643d362ffc6c49c784d3a inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca139e972328e4233949ba7f7fa85bb4 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#aca139e972328e4233949ba7f7fa85bb4">setFieldValue4LocalCellI</a> (const word fieldName, const scalar val, const label localCellI, const label compI=0)</td></tr>
+<tr class="separator:aca139e972328e4233949ba7f7fa85bb4 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab16fce6c3740102b5dbc28cf34f9193 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#aab16fce6c3740102b5dbc28cf34f9193">updateBoundaryConditions</a> (const word fieldName, const word fieldType)</td></tr>
 <tr class="memdesc:aab16fce6c3740102b5dbc28cf34f9193 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">update the boundary condition for a field  <a href="classFoam_1_1DASolver.html#aab16fce6c3740102b5dbc28cf34f9193">More...</a><br /></td></tr>
 <tr class="separator:aab16fce6c3740102b5dbc28cf34f9193 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -409,6 +497,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8ea102cc0e78d3d0ac6df4d9562bc327 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a8ea102cc0e78d3d0ac6df4d9562bc327">writeFailedMesh</a> ()</td></tr>
 <tr class="memdesc:a8ea102cc0e78d3d0ac6df4d9562bc327 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">write the failed mesh to disk  <a href="classFoam_1_1DASolver.html#a8ea102cc0e78d3d0ac6df4d9562bc327">More...</a><br /></td></tr>
 <tr class="separator:a8ea102cc0e78d3d0ac6df4d9562bc327 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd5997800ec390e7074842c3f08ce810 inherit pub_methods_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#abd5997800ec390e7074842c3f08ce810">initTensorFlowFuncs</a> (<a class="el" href="namespaceFoam.html#a2ec31282908b3ceece9cdc9c59b41c46">pyComputeInterface</a> computeInterface, void *compute, <a class="el" href="namespaceFoam.html#a95468b48848d3c129aa237bf22dcb998">pyJacVecProdInterface</a> jacVecProdInterface, void *jacVecProd)</td></tr>
+<tr class="memdesc:abd5997800ec390e7074842c3f08ce810 inherit pub_methods_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize tensorflow functions and interfaces for callback  <a href="classFoam_1_1DASolver.html#abd5997800ec390e7074842c3f08ce810">More...</a><br /></td></tr>
+<tr class="separator:abd5997800ec390e7074842c3f08ce810 inherit pub_methods_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -457,6 +548,13 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:acfd7a5d62b16b07054fb81aecb54b887"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASimpleFoam.html#acfd7a5d62b16b07054fb81aecb54b887">pRefValue_</a> = 0.0</td></tr>
 <tr class="memdesc:acfd7a5d62b16b07054fb81aecb54b887"><td class="mdescLeft">&#160;</td><td class="mdescRight">pressure reference value  <a href="classFoam_1_1DASimpleFoam.html#acfd7a5d62b16b07054fb81aecb54b887">More...</a><br /></td></tr>
 <tr class="separator:acfd7a5d62b16b07054fb81aecb54b887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a109f2e57183a64d9b8f3356d7aeabbaf"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASimpleFoam.html#a109f2e57183a64d9b8f3356d7aeabbaf">relaxUEqn_</a> = 1.0</td></tr>
+<tr class="memdesc:a109f2e57183a64d9b8f3356d7aeabbaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">fvSolution parameters for fixed-point adjoint  <a href="classFoam_1_1DASimpleFoam.html#a109f2e57183a64d9b8f3356d7aeabbaf">More...</a><br /></td></tr>
+<tr class="separator:a109f2e57183a64d9b8f3356d7aeabbaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac89f34c9b718e10e8bd84860b5d7535e"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASimpleFoam.html#ac89f34c9b718e10e8bd84860b5d7535e">solverDictU_</a></td></tr>
+<tr class="separator:ac89f34c9b718e10e8bd84860b5d7535e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59efebff759299b5741c21cf45f68dcb"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASimpleFoam.html#a59efebff759299b5741c21cf45f68dcb">solverDictP_</a></td></tr>
+<tr class="separator:a59efebff759299b5741c21cf45f68dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classFoam_1_1DASolver"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classFoam_1_1DASolver')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classFoam_1_1DASolver.html">DASolver</a></td></tr>
 <tr class="memitem:a078ba18bdeda17746e9cee13c6116f88 inherit pro_attribs_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a078ba18bdeda17746e9cee13c6116f88">argsAll_</a></td></tr>
 <tr class="memdesc:a078ba18bdeda17746e9cee13c6116f88 inherit pro_attribs_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">all the arguments  <a href="classFoam_1_1DASolver.html#a078ba18bdeda17746e9cee13c6116f88">More...</a><br /></td></tr>
@@ -569,6 +667,12 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a18461c5b858df6eae20795394bcbb2f2 inherit pro_attribs_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#a18461c5b858df6eae20795394bcbb2f2">periodicity_</a> = 0.0</td></tr>
 <tr class="memdesc:a18461c5b858df6eae20795394bcbb2f2 inherit pro_attribs_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">periodicity of oscillating flow variables (unsteady)  <a href="classFoam_1_1DASolver.html#a18461c5b858df6eae20795394bcbb2f2">More...</a><br /></td></tr>
 <tr class="separator:a18461c5b858df6eae20795394bcbb2f2 inherit pro_attribs_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaeca7ab8a84143ac3ee3214bd34831f inherit pro_attribs_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#aaaeca7ab8a84143ac3ee3214bd34831f">primalMinResTol_</a> = 0.0</td></tr>
+<tr class="memdesc:aaaeca7ab8a84143ac3ee3214bd34831f inherit pro_attribs_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">primal residual tolerance  <a href="classFoam_1_1DASolver.html#aaaeca7ab8a84143ac3ee3214bd34831f">More...</a><br /></td></tr>
+<tr class="separator:aaaeca7ab8a84143ac3ee3214bd34831f inherit pro_attribs_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba55269ad6d18949602a0372c8c8fcdc inherit pro_attribs_classFoam_1_1DASolver"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DASolver.html#aba55269ad6d18949602a0372c8c8fcdc">primalMinIters_</a> = -1</td></tr>
+<tr class="memdesc:aba55269ad6d18949602a0372c8c8fcdc inherit pro_attribs_classFoam_1_1DASolver"><td class="mdescLeft">&#160;</td><td class="mdescRight">primal min number of iterations  <a href="classFoam_1_1DASolver.html#aba55269ad6d18949602a0372c8c8fcdc">More...</a><br /></td></tr>
+<tr class="separator:aba55269ad6d18949602a0372c8c8fcdc inherit pro_attribs_classFoam_1_1DASolver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -633,6 +737,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DASimpleFoam_8C_source.html#l00041">41</a> of file <a class="el" href="DASimpleFoam_8C_source.html">DASimpleFoam.C</a>.</p>
 
+<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00073">DASolver::meshPtr_</a>, <a class="el" href="DASimpleFoam_8H_source.html#l00120">DASimpleFoam::relaxUEqn_</a>, <a class="el" href="DASimpleFoam_8H_source.html#l00122">DASimpleFoam::solverDictP_</a>, and <a class="el" href="DASimpleFoam_8H_source.html#l00121">DASimpleFoam::solverDictU_</a>.</p>
+
 </div>
 </div>
 <a id="a1a0ae06aafd67db1459100d439de6e9f"></a>
@@ -658,7 +764,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00116">116</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00134">134</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
 
 </div>
 </div>
@@ -708,9 +814,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classFoam_1_1DASolver.html#af82bf1550fee8a84516c90c17d105352">DASolver</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8C_source.html#l00060">60</a> of file <a class="el" href="DASimpleFoam_8C_source.html">DASimpleFoam.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8C_source.html#l00074">74</a> of file <a class="el" href="DASimpleFoam_8C_source.html">DASimpleFoam.C</a>.</p>
 
-<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="DASolver_8H_source.html#l00090">DASolver::daCheckMeshPtr_</a>, <a class="el" href="DASimpleFoam_8H_source.html#l00085">DASimpleFoam::daFvSourcePtr_</a>, <a class="el" href="DASolver_8H_source.html#l00081">DASolver::daIndexPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00093">DASolver::daLinearEqnPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00078">DASolver::daModelPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00075">DASolver::daOptionPtr_</a>, <a class="el" href="DASimpleFoam_8H_source.html#l00094">DASimpleFoam::hasFvSource_</a>, <a class="el" href="createRefsLaplacian_8H_source.html#l00004">mesh</a>, <a class="el" href="DASolver_8H_source.html#l00072">DASolver::meshPtr_</a>, <a class="el" href="DAFvSource_8C_source.html#l00047">DAFvSource::New()</a>, <a class="el" href="createRefsLaplacian_8H_source.html#l00001">runTime</a>, <a class="el" href="DASolver_8H_source.html#l00069">DASolver::runTimePtr_</a>, and <a class="el" href="DASolver_8C_source.html#l00222">DASolver::setDAObjFuncList()</a>.</p>
+<p class="reference">References <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00015">allOptions</a>, <a class="el" href="DASolver_8H_source.html#l00091">DASolver::daCheckMeshPtr_</a>, <a class="el" href="DASimpleFoam_8H_source.html#l00084">DASimpleFoam::daFvSourcePtr_</a>, <a class="el" href="DASolver_8H_source.html#l00082">DASolver::daIndexPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00094">DASolver::daLinearEqnPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00079">DASolver::daModelPtr_</a>, <a class="el" href="DASolver_8H_source.html#l00076">DASolver::daOptionPtr_</a>, <a class="el" href="DASimpleFoam_8H_source.html#l00093">DASimpleFoam::hasFvSource_</a>, <a class="el" href="createRefsHeatTransfer_8H_source.html#l00004">mesh</a>, <a class="el" href="DASolver_8H_source.html#l00073">DASolver::meshPtr_</a>, <a class="el" href="DAFvSource_8C_source.html#l00047">DAFvSource::New()</a>, <a class="el" href="createRefsHeatTransfer_8H_source.html#l00001">runTime</a>, <a class="el" href="DASolver_8H_source.html#l00070">DASolver::runTimePtr_</a>, and <a class="el" href="DASolver_8C_source.html#l00235">DASolver::setDAObjFuncList()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -762,9 +868,9 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DASolver.html#a9ce2c3a325b52ede4d6dfbd9e6c5b9ac">DASolver</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8C_source.html#l00093">93</a> of file <a class="el" href="DASimpleFoam_8C_source.html">DASimpleFoam.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8C_source.html#l00107">107</a> of file <a class="el" href="DASimpleFoam_8C_source.html">DASimpleFoam.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DASolver_8C_source.html#l00845">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DASolver_8H_source.html#l00639">DASolver::checkMesh()</a>, <a class="el" href="DASolver_8C_source.html#l05001">DASolver::checkResidualTol()</a>, <a class="el" href="DASolver_8H_source.html#l00075">DASolver::daOptionPtr_</a>, <a class="el" href="DASimpleFoam_8H_source.html#l00082">DASimpleFoam::daTurbulenceModelPtr_</a>, <a class="el" href="DASolver_8C_source.html#l05029">DASolver::isPrintTime()</a>, <a class="el" href="createRefsPimple_8H_source.html#l00009">laminarTransport</a>, <a class="el" href="DASolver_8C_source.html#l00098">DASolver::loop()</a>, <a class="el" href="createRefsLaplacian_8H_source.html#l00004">mesh</a>, <a class="el" href="DASolver_8H_source.html#l00531">DASolver::ofField2StateVec()</a>, <a class="el" href="createRefsPimple_8H_source.html#l00006">p</a>, <a class="el" href="DASolver_8H_source.html#l00543">DASolver::pointVec2OFMesh()</a>, <a class="el" href="DASolver_8H_source.html#l00138">DASolver::primalMinRes_</a>, <a class="el" href="DASolver_8C_source.html#l00147">DASolver::printAllObjFuncs()</a>, <a class="el" href="createRefsLaplacian_8H_source.html#l00001">runTime</a>, <a class="el" href="DASolver_8C_source.html#l05047">DASolver::writeAssociatedFields()</a>, and <a class="el" href="DASolver_8C_source.html#l05485">DASolver::writeFailedMesh()</a>.</p>
+<p class="reference">References <a class="el" href="DASolver_8C_source.html#l02559">DASolver::calcPrimalResidualStatistics()</a>, <a class="el" href="DASolver_8H_source.html#l00710">DASolver::checkMesh()</a>, <a class="el" href="DASolver_8C_source.html#l07432">DASolver::checkResidualTol()</a>, <a class="el" href="DASolver_8H_source.html#l00076">DASolver::daOptionPtr_</a>, <a class="el" href="DASimpleFoam_8H_source.html#l00081">DASimpleFoam::daTurbulenceModelPtr_</a>, <a class="el" href="DASolver_8C_source.html#l07460">DASolver::isPrintTime()</a>, <a class="el" href="createRefsPimple_8H_source.html#l00009">laminarTransport</a>, <a class="el" href="DASolver_8C_source.html#l00112">DASolver::loop()</a>, <a class="el" href="createRefsHeatTransfer_8H_source.html#l00004">mesh</a>, <a class="el" href="DASolver_8H_source.html#l00596">DASolver::ofField2StateVec()</a>, <a class="el" href="createRefsPimple_8H_source.html#l00006">p</a>, <a class="el" href="DASolver_8H_source.html#l00608">DASolver::pointVec2OFMesh()</a>, <a class="el" href="DASolver_8H_source.html#l00139">DASolver::primalMinRes_</a>, <a class="el" href="DASolver_8C_source.html#l00160">DASolver::printAllObjFuncs()</a>, <a class="el" href="createRefsHeatTransfer_8H_source.html#l00001">runTime</a>, <a class="el" href="DASolver_8C_source.html#l07478">DASolver::writeAssociatedFields()</a>, and <a class="el" href="DASolver_8C_source.html#l07955">DASolver::writeFailedMesh()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -783,6 +889,544 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classFoam_1_1DASolver.html#a8ea102cc0e78d3d0ac6df4d9562bc327" title="write the failed mesh to disk" alt="" coords="155,522,395,549"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="ad48fc87d4825c1c5418e98c8ea76de69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad48fc87d4825c1c5418e98c8ea76de69">&#9670;&nbsp;</a></span>runFPAdj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">label runFPAdj </td>
+          <td>(</td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>xvVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Vec&#160;</td>
+          <td class="paramname"><em>wVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>dFdW</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>psi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>solve the adjoint equation using the fixed-point iteration method </p>
+
+<p>Reimplemented from <a class="el" href="classFoam_1_1DASolver.html#ad48fc87d4825c1c5418e98c8ea76de69">DASolver</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8C_source.html#l00215">215</a> of file <a class="el" href="DASimpleFoam_8C_source.html">DASimpleFoam.C</a>.</p>
+
+<p class="reference">References <a class="el" href="DASimpleFoam_8C_source.html#l01271">DASimpleFoam::calcAdjointResidual()</a>, <a class="el" href="DASolver_8H_source.html#l00076">DASolver::daOptionPtr_</a>, <a class="el" href="DASimpleFoam_8H_source.html#l00081">DASimpleFoam::daTurbulenceModelPtr_</a>, <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l01460">DASimpleFoam::L2norm()</a>, <a class="el" href="DASolver_8H_source.html#l00073">DASolver::meshPtr_</a>, <a class="el" href="createRefsPimple_8H_source.html#l00006">p</a>, <a class="el" href="createRefsPimple_8H_source.html#l00008">phi</a>, <a class="el" href="pseudoEqns_8H_source.html#l00034">pseudoNuTilda</a>, <a class="el" href="pseudoEqns_8H.html#a88e590167fd1b51113f5ecbb48e0d2b1">pseudoP()</a>, <a class="el" href="pseudoEqns_8H.html#afdc334a6fff02c34618c5066b7a12025">pseudoU()</a>, <a class="el" href="pseudoEqns_8H.html#a7153f7449e665a9e4e882eafbfe1c683">pseudoUEqn()</a>, <a class="el" href="pEqnPimpleDyM_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d">rAU()</a>, <a class="el" href="pEqnPimpleDyM_8H_source.html#l00060">U</a>, <a class="el" href="pseudoEqns_8H_source.html#l00018">UDiag</a>, <a class="el" href="DASolver_8C_source.html#l04765">DASolver::updateOFField()</a>, <a class="el" href="DASolver_8C_source.html#l04823">DASolver::updateOFMesh()</a>, and <a class="el" href="DASimpleFoam_8C_source.html#l00942">DASimpleFoam::vec2Fields()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASimpleFoam_ad48fc87d4825c1c5418e98c8ea76de69_cgraph.png" border="0" usemap="#classFoam_1_1DASimpleFoam_ad48fc87d4825c1c5418e98c8ea76de69_cgraph" alt=""/></div>
+<map name="classFoam_1_1DASimpleFoam_ad48fc87d4825c1c5418e98c8ea76de69_cgraph" id="classFoam_1_1DASimpleFoam_ad48fc87d4825c1c5418e98c8ea76de69_cgraph">
+<area shape="rect" title="solve the adjoint equation using the fixed&#45;point iteration method" alt="" coords="5,241,84,267"/>
+<area shape="rect" href="classFoam_1_1DASimpleFoam.html#a15067522a03b22a96661677549c2425b" title=" " alt="" coords="173,63,323,90"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="551,114,608,141"/>
+<area shape="rect" href="pseudoEqns_8H.html#a88e590167fd1b51113f5ecbb48e0d2b1" title=" " alt="" coords="656,165,733,191"/>
+<area shape="rect" href="classFoam_1_1DASimpleFoam.html#a3205aa5bef688ff7749d02ee4a70124c" title="assign coupled petsc vec to fields or vice versa" alt="" coords="412,114,503,141"/>
+<area shape="rect" href="classFoam_1_1DASimpleFoam.html#a91130b882aeb6cc6df12352deb21c0cc" title=" " alt="" coords="422,13,493,39"/>
+<area shape="rect" href="pseudoEqns_8H.html#afdc334a6fff02c34618c5066b7a12025" title=" " alt="" coords="209,266,287,293"/>
+<area shape="rect" href="pseudoEqns_8H.html#a7153f7449e665a9e4e882eafbfe1c683" title=" " alt="" coords="197,317,299,343"/>
+<area shape="rect" href="pEqnPimpleDyM_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d" title=" " alt="" coords="225,367,271,394"/>
+<area shape="rect" href="classFoam_1_1DASolver.html#a70bbc5360b9de5931a46681648082387" title="Update the OpenFOAM field values (including both internal and boundary fields) based on the state vec..." alt="" coords="134,418,362,445"/>
+<area shape="rect" href="classFoam_1_1DASolver.html#ad2cd4059650064ffe8599777743e9701" title="Update the OpenFoam mesh point coordinates based on the point vector xvVec." alt="" coords="132,469,364,495"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0a55a6e3f341039226c004f6d5c78332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a55a6e3f341039226c004f6d5c78332">&#9670;&nbsp;</a></span>invTranProdUEqn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void invTranProdUEqn </td>
+          <td>(</td>
+          <td class="paramtype">const volVectorField &amp;&#160;</td>
+          <td class="paramname"><em>mySource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">volVectorField &amp;&#160;</td>
+          <td class="paramname"><em>pseudoU</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inverse transpose product, MU^(-T) </p>
+
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8C_source.html#l01049">1049</a> of file <a class="el" href="DASimpleFoam_8C_source.html">DASimpleFoam.C</a>.</p>
+
+</div>
+</div>
+<a id="aba30fb073224dfc6df3007bccb23896a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba30fb073224dfc6df3007bccb23896a">&#9670;&nbsp;</a></span>invTranProdPEqn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void invTranProdPEqn </td>
+          <td>(</td>
+          <td class="paramtype">const volScalarField &amp;&#160;</td>
+          <td class="paramname"><em>mySource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">volScalarField &amp;&#160;</td>
+          <td class="paramname"><em>pseudoP</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inverse transpose product, Mp^(-T) </p>
+
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8C_source.html#l01105">1105</a> of file <a class="el" href="DASimpleFoam_8C_source.html">DASimpleFoam.C</a>.</p>
+
+</div>
+</div>
+<a id="a1c4d2b7e6fbea9885b5ed3e81fe4e780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c4d2b7e6fbea9885b5ed3e81fe4e780">&#9670;&nbsp;</a></span>calcLduResiduals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calcLduResiduals </td>
+          <td>(</td>
+          <td class="paramtype">volVectorField &amp;&#160;</td>
+          <td class="paramname"><em>URes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">volScalarField &amp;&#160;</td>
+          <td class="paramname"><em>pRes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">surfaceScalarField &amp;&#160;</td>
+          <td class="paramname"><em>phiRes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>calculate all the flow residuals except for the turbulence one </p>
+
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8C_source.html#l01172">1172</a> of file <a class="el" href="DASimpleFoam_8C_source.html">DASimpleFoam.C</a>.</p>
+
+<p class="reference">References <a class="el" href="DASimpleFoam_8H_source.html#l00081">DASimpleFoam::daTurbulenceModelPtr_</a>, <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00012">HbyA</a>, <a class="el" href="DASolver_8H_source.html#l00073">DASolver::meshPtr_</a>, <a class="el" href="createRefsPimple_8H_source.html#l00006">p</a>, <a class="el" href="createRefsPimple_8H_source.html#l00008">phi</a>, <a class="el" href="pEqnRhoSimpleC_8H_source.html#l00027">phiHbyA</a>, <a class="el" href="pEqnPimpleDyM_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d">rAU()</a>, <a class="el" href="createRefsHeatTransfer_8H_source.html#l00005">T</a>, <a class="el" href="pEqnPimpleDyM_8H_source.html#l00060">U</a>, <a class="el" href="pseudoEqns_8H_source.html#l00018">UDiag</a>, and <a class="el" href="UEqnPimpleDyM_8H_source.html#l00013">UEqn</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DASimpleFoam_8C_source.html#l01271">DASimpleFoam::calcAdjointResidual()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASimpleFoam_a1c4d2b7e6fbea9885b5ed3e81fe4e780_cgraph.png" border="0" usemap="#classFoam_1_1DASimpleFoam_a1c4d2b7e6fbea9885b5ed3e81fe4e780_cgraph" alt=""/></div>
+<map name="classFoam_1_1DASimpleFoam_a1c4d2b7e6fbea9885b5ed3e81fe4e780_cgraph" id="classFoam_1_1DASimpleFoam_a1c4d2b7e6fbea9885b5ed3e81fe4e780_cgraph">
+<area shape="rect" title="calculate all the flow residuals except for the turbulence one" alt="" coords="5,31,140,57"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="188,5,245,32"/>
+<area shape="rect" href="pEqnPimpleDyM_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d" title=" " alt="" coords="193,56,240,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASimpleFoam_a1c4d2b7e6fbea9885b5ed3e81fe4e780_icgraph.png" border="0" usemap="#classFoam_1_1DASimpleFoam_a1c4d2b7e6fbea9885b5ed3e81fe4e780_icgraph" alt=""/></div>
+<map name="classFoam_1_1DASimpleFoam_a1c4d2b7e6fbea9885b5ed3e81fe4e780_icgraph" id="classFoam_1_1DASimpleFoam_a1c4d2b7e6fbea9885b5ed3e81fe4e780_icgraph">
+<area shape="rect" title="calculate all the flow residuals except for the turbulence one" alt="" coords="204,5,339,32"/>
+<area shape="rect" href="classFoam_1_1DASimpleFoam.html#a15067522a03b22a96661677549c2425b" title=" " alt="" coords="5,5,156,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3205aa5bef688ff7749d02ee4a70124c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3205aa5bef688ff7749d02ee4a70124c">&#9670;&nbsp;</a></span>vec2Fields()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vec2Fields </td>
+          <td>(</td>
+          <td class="paramtype">const word&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>cVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">volVectorField &amp;&#160;</td>
+          <td class="paramname"><em>UField</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">volScalarField &amp;&#160;</td>
+          <td class="paramname"><em>pField</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">surfaceScalarField &amp;&#160;</td>
+          <td class="paramname"><em>phiField</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">volScalarField &amp;&#160;</td>
+          <td class="paramname"><em>nuTildaField</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>assign coupled petsc vec to fields or vice versa </p>
+
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8C_source.html#l00942">942</a> of file <a class="el" href="DASimpleFoam_8C_source.html">DASimpleFoam.C</a>.</p>
+
+<p class="reference">References <a class="el" href="DASolver_8H_source.html#l00082">DASolver::daIndexPtr_</a>, <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, <a class="el" href="DASolver_8H_source.html#l00073">DASolver::meshPtr_</a>, and <a class="el" href="dafoam__plot3dtransform_8py_source.html#l00021">dafoam_plot3dtransform::mode</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DASimpleFoam_8C_source.html#l01271">DASimpleFoam::calcAdjointResidual()</a>, and <a class="el" href="DASimpleFoam_8C_source.html#l00215">DASimpleFoam::runFPAdj()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASimpleFoam_a3205aa5bef688ff7749d02ee4a70124c_cgraph.png" border="0" usemap="#classFoam_1_1DASimpleFoam_a3205aa5bef688ff7749d02ee4a70124c_cgraph" alt=""/></div>
+<map name="classFoam_1_1DASimpleFoam_a3205aa5bef688ff7749d02ee4a70124c_cgraph" id="classFoam_1_1DASimpleFoam_a3205aa5bef688ff7749d02ee4a70124c_cgraph">
+<area shape="rect" title="assign coupled petsc vec to fields or vice versa" alt="" coords="5,5,96,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="144,5,201,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASimpleFoam_a3205aa5bef688ff7749d02ee4a70124c_icgraph.png" border="0" usemap="#classFoam_1_1DASimpleFoam_a3205aa5bef688ff7749d02ee4a70124c_icgraph" alt=""/></div>
+<map name="classFoam_1_1DASimpleFoam_a3205aa5bef688ff7749d02ee4a70124c_icgraph" id="classFoam_1_1DASimpleFoam_a3205aa5bef688ff7749d02ee4a70124c_icgraph">
+<area shape="rect" title="assign coupled petsc vec to fields or vice versa" alt="" coords="331,31,421,57"/>
+<area shape="rect" href="classFoam_1_1DASimpleFoam.html#a15067522a03b22a96661677549c2425b" title=" " alt="" coords="132,5,283,32"/>
+<area shape="rect" href="classFoam_1_1DASimpleFoam.html#ad48fc87d4825c1c5418e98c8ea76de69" title="solve the adjoint equation using the fixed&#45;point iteration method" alt="" coords="5,31,84,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a15067522a03b22a96661677549c2425b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15067522a03b22a96661677549c2425b">&#9670;&nbsp;</a></span>calcAdjointResidual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calcAdjointResidual </td>
+          <td>(</td>
+          <td class="paramtype">volVectorField &amp;&#160;</td>
+          <td class="paramname"><em>URes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">volScalarField &amp;&#160;</td>
+          <td class="paramname"><em>pRes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">surfaceScalarField &amp;&#160;</td>
+          <td class="paramname"><em>phiRes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">volScalarField &amp;&#160;</td>
+          <td class="paramname"><em>nuTildaRes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>dFdW</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">volVectorField &amp;&#160;</td>
+          <td class="paramname"><em>UPsi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">volScalarField &amp;&#160;</td>
+          <td class="paramname"><em>pPsi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">surfaceScalarField &amp;&#160;</td>
+          <td class="paramname"><em>phiPsi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">volScalarField &amp;&#160;</td>
+          <td class="paramname"><em>nuTildaPsi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">volVectorField &amp;&#160;</td>
+          <td class="paramname"><em>adjURes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">volScalarField &amp;&#160;</td>
+          <td class="paramname"><em>adjPRes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">surfaceScalarField &amp;&#160;</td>
+          <td class="paramname"><em>adjPhiRes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">volScalarField &amp;&#160;</td>
+          <td class="paramname"><em>adjNuTildaRes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">label &amp;&#160;</td>
+          <td class="paramname"><em>cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8C_source.html#l01271">1271</a> of file <a class="el" href="DASimpleFoam_8C_source.html">DASimpleFoam.C</a>.</p>
+
+<p class="reference">References <a class="el" href="DASimpleFoam_8C_source.html#l01172">DASimpleFoam::calcLduResiduals()</a>, <a class="el" href="DASimpleFoam_8H_source.html#l00081">DASimpleFoam::daTurbulenceModelPtr_</a>, <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, <a class="el" href="DASolver_8H_source.html#l00073">DASolver::meshPtr_</a>, <a class="el" href="createRefsPimple_8H_source.html#l00006">p</a>, <a class="el" href="createRefsPimple_8H_source.html#l00008">phi</a>, <a class="el" href="pEqnPimpleDyM_8H_source.html#l00060">U</a>, and <a class="el" href="DASimpleFoam_8C_source.html#l00942">DASimpleFoam::vec2Fields()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DASimpleFoam_8C_source.html#l00215">DASimpleFoam::runFPAdj()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASimpleFoam_a15067522a03b22a96661677549c2425b_cgraph.png" border="0" usemap="#classFoam_1_1DASimpleFoam_a15067522a03b22a96661677549c2425b_cgraph" alt=""/></div>
+<map name="classFoam_1_1DASimpleFoam_a15067522a03b22a96661677549c2425b_cgraph" id="classFoam_1_1DASimpleFoam_a15067522a03b22a96661677549c2425b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,56,156,83"/>
+<area shape="rect" href="classFoam_1_1DASimpleFoam.html#a1c4d2b7e6fbea9885b5ed3e81fe4e780" title="calculate all the flow residuals except for the turbulence one" alt="" coords="204,5,339,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="387,56,444,83"/>
+<area shape="rect" href="classFoam_1_1DASimpleFoam.html#a3205aa5bef688ff7749d02ee4a70124c" title="assign coupled petsc vec to fields or vice versa" alt="" coords="226,107,317,133"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASimpleFoam_a15067522a03b22a96661677549c2425b_icgraph.png" border="0" usemap="#classFoam_1_1DASimpleFoam_a15067522a03b22a96661677549c2425b_icgraph" alt=""/></div>
+<map name="classFoam_1_1DASimpleFoam_a15067522a03b22a96661677549c2425b_icgraph" id="classFoam_1_1DASimpleFoam_a15067522a03b22a96661677549c2425b_icgraph">
+<area shape="rect" title=" " alt="" coords="132,5,283,32"/>
+<area shape="rect" href="classFoam_1_1DASimpleFoam.html#ad48fc87d4825c1c5418e98c8ea76de69" title="solve the adjoint equation using the fixed&#45;point iteration method" alt="" coords="5,5,84,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a91130b882aeb6cc6df12352deb21c0cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91130b882aeb6cc6df12352deb21c0cc">&#9670;&nbsp;</a></span>L2norm() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">scalar L2norm </td>
+          <td>(</td>
+          <td class="paramtype">const volScalarField &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8C_source.html#l01460">1460</a> of file <a class="el" href="DASimpleFoam_8C_source.html">DASimpleFoam.C</a>.</p>
+
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, and <a class="el" href="DASolver_8H_source.html#l00073">DASolver::meshPtr_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DASimpleFoam_8C_source.html#l00215">DASimpleFoam::runFPAdj()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASimpleFoam_a91130b882aeb6cc6df12352deb21c0cc_cgraph.png" border="0" usemap="#classFoam_1_1DASimpleFoam_a91130b882aeb6cc6df12352deb21c0cc_cgraph" alt=""/></div>
+<map name="classFoam_1_1DASimpleFoam_a91130b882aeb6cc6df12352deb21c0cc_cgraph" id="classFoam_1_1DASimpleFoam_a91130b882aeb6cc6df12352deb21c0cc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,76,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="124,5,181,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASimpleFoam_a91130b882aeb6cc6df12352deb21c0cc_icgraph.png" border="0" usemap="#classFoam_1_1DASimpleFoam_a91130b882aeb6cc6df12352deb21c0cc_icgraph" alt=""/></div>
+<map name="classFoam_1_1DASimpleFoam_a91130b882aeb6cc6df12352deb21c0cc_icgraph" id="classFoam_1_1DASimpleFoam_a91130b882aeb6cc6df12352deb21c0cc_icgraph">
+<area shape="rect" title=" " alt="" coords="132,5,203,32"/>
+<area shape="rect" href="classFoam_1_1DASimpleFoam.html#ad48fc87d4825c1c5418e98c8ea76de69" title="solve the adjoint equation using the fixed&#45;point iteration method" alt="" coords="5,5,84,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae2b2502aa72014d6a48af86d5b2fdb52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2b2502aa72014d6a48af86d5b2fdb52">&#9670;&nbsp;</a></span>L2norm() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector L2norm </td>
+          <td>(</td>
+          <td class="paramtype">const volVectorField &amp;&#160;</td>
+          <td class="paramname"><em>U</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8C_source.html#l01474">1474</a> of file <a class="el" href="DASimpleFoam_8C_source.html">DASimpleFoam.C</a>.</p>
+
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, <a class="el" href="DASolver_8H_source.html#l00073">DASolver::meshPtr_</a>, and <a class="el" href="pEqnPimpleDyM_8H_source.html#l00060">U</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASimpleFoam_ae2b2502aa72014d6a48af86d5b2fdb52_cgraph.png" border="0" usemap="#classFoam_1_1DASimpleFoam_ae2b2502aa72014d6a48af86d5b2fdb52_cgraph" alt=""/></div>
+<map name="classFoam_1_1DASimpleFoam_ae2b2502aa72014d6a48af86d5b2fdb52_cgraph" id="classFoam_1_1DASimpleFoam_ae2b2502aa72014d6a48af86d5b2fdb52_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,76,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="124,5,181,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aab7196dad5accd22eec2817cd466154d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab7196dad5accd22eec2817cd466154d">&#9670;&nbsp;</a></span>L2norm() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">scalar L2norm </td>
+          <td>(</td>
+          <td class="paramtype">const surfaceScalarField &amp;&#160;</td>
+          <td class="paramname"><em>Phi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8C_source.html#l01492">1492</a> of file <a class="el" href="DASimpleFoam_8C_source.html">DASimpleFoam.C</a>.</p>
+
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DASimpleFoam_aab7196dad5accd22eec2817cd466154d_cgraph.png" border="0" usemap="#classFoam_1_1DASimpleFoam_aab7196dad5accd22eec2817cd466154d_cgraph" alt=""/></div>
+<map name="classFoam_1_1DASimpleFoam_aab7196dad5accd22eec2817cd466154d_cgraph" id="classFoam_1_1DASimpleFoam_aab7196dad5accd22eec2817cd466154d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,76,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="124,5,181,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9cc86d0ecf88994d83e76cf4308b2fe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cc86d0ecf88994d83e76cf4308b2fe3">&#9670;&nbsp;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void swap </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; scalar &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; scalar &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8C_source.html#l01513">1513</a> of file <a class="el" href="DASimpleFoam_8C_source.html">DASimpleFoam.C</a>.</p>
 
 </div>
 </div>
@@ -809,7 +1453,7 @@ Here is the call graph for this function:</div>
 
 <p>simple pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00061">61</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00060">60</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
 
 </div>
 </div>
@@ -835,7 +1479,7 @@ Here is the call graph for this function:</div>
 
 <p>pressure field pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00064">64</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00063">63</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
 
 </div>
 </div>
@@ -861,7 +1505,7 @@ Here is the call graph for this function:</div>
 
 <p>velocity field pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00067">67</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00066">66</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
 
 </div>
 </div>
@@ -887,7 +1531,7 @@ Here is the call graph for this function:</div>
 
 <p>surface flux field pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00070">70</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00069">69</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
 
 </div>
 </div>
@@ -913,7 +1557,7 @@ Here is the call graph for this function:</div>
 
 <p>alpha porosity </p>
 
-<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00073">73</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00072">72</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
 
 </div>
 </div>
@@ -939,7 +1583,7 @@ Here is the call graph for this function:</div>
 
 <p>laminar transport properties pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00076">76</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00075">75</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
 
 </div>
 </div>
@@ -965,7 +1609,7 @@ Here is the call graph for this function:</div>
 
 <p>turbulence pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00079">79</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00078">78</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
 
 </div>
 </div>
@@ -991,9 +1635,9 @@ Here is the call graph for this function:</div>
 
 <p><a class="el" href="classFoam_1_1DATurbulenceModel.html">DATurbulenceModel</a> pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00082">82</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00081">81</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASimpleFoam_8C_source.html#l00093">DASimpleFoam::solvePrimal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASimpleFoam_8C_source.html#l01271">DASimpleFoam::calcAdjointResidual()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l01172">DASimpleFoam::calcLduResiduals()</a>, <a class="el" href="DASimpleFoam_8C_source.html#l00215">DASimpleFoam::runFPAdj()</a>, and <a class="el" href="DASimpleFoam_8C_source.html#l00107">DASimpleFoam::solvePrimal()</a>.</p>
 
 </div>
 </div>
@@ -1019,9 +1663,9 @@ Here is the call graph for this function:</div>
 
 <p>DASource pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00085">85</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00084">84</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASimpleFoam_8C_source.html#l00060">DASimpleFoam::initSolver()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASimpleFoam_8C_source.html#l00074">DASimpleFoam::initSolver()</a>.</p>
 
 </div>
 </div>
@@ -1047,7 +1691,7 @@ Here is the call graph for this function:</div>
 
 <p>fvSource term </p>
 
-<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00088">88</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00087">87</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
 
 </div>
 </div>
@@ -1073,7 +1717,7 @@ Here is the call graph for this function:</div>
 
 <p>MRF pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00091">91</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00090">90</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
 
 </div>
 </div>
@@ -1099,9 +1743,9 @@ Here is the call graph for this function:</div>
 
 <p>whether to have fvSource term </p>
 
-<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00094">94</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00093">93</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASimpleFoam_8C_source.html#l00060">DASimpleFoam::initSolver()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASimpleFoam_8C_source.html#l00074">DASimpleFoam::initSolver()</a>.</p>
 
 </div>
 </div>
@@ -1127,7 +1771,7 @@ Here is the call graph for this function:</div>
 
 <p>continuity error </p>
 
-<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00097">97</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00096">96</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
 
 </div>
 </div>
@@ -1153,7 +1797,7 @@ Here is the call graph for this function:</div>
 
 <p>pressure referefence cell id </p>
 
-<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00100">100</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00099">99</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
 
 </div>
 </div>
@@ -1179,7 +1823,87 @@ Here is the call graph for this function:</div>
 
 <p>pressure reference value </p>
 
-<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00103">103</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00102">102</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+
+</div>
+</div>
+<a id="a109f2e57183a64d9b8f3356d7aeabbaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a109f2e57183a64d9b8f3356d7aeabbaf">&#9670;&nbsp;</a></span>relaxUEqn_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scalar relaxUEqn_ = 1.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>fvSolution parameters for fixed-point adjoint </p>
+
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00120">120</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DASimpleFoam_8C_source.html#l00041">DASimpleFoam::DASimpleFoam()</a>.</p>
+
+</div>
+</div>
+<a id="ac89f34c9b718e10e8bd84860b5d7535e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac89f34c9b718e10e8bd84860b5d7535e">&#9670;&nbsp;</a></span>solverDictU_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dictionary solverDictU_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00121">121</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DASimpleFoam_8C_source.html#l00041">DASimpleFoam::DASimpleFoam()</a>.</p>
+
+</div>
+</div>
+<a id="a59efebff759299b5741c21cf45f68dcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59efebff759299b5741c21cf45f68dcb">&#9670;&nbsp;</a></span>solverDictP_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dictionary solverDictP_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DASimpleFoam_8H_source.html#l00122">122</a> of file <a class="el" href="DASimpleFoam_8H_source.html">DASimpleFoam.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DASimpleFoam_8C_source.html#l00041">DASimpleFoam::DASimpleFoam()</a>.</p>
 
 </div>
 </div>

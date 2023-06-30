@@ -1,0 +1,7 @@
+<map id="getForces" name="getForces">
+<area shape="rect" id="node1" title="return the forces of the desired fluid&#45;structure&#45;interaction patches" alt="" coords="5,57,91,84"/>
+<area shape="rect" id="node2" href="$solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="345,57,403,84"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#ab2b8a55494e9b1e208efdd908a71d886" title="return the coupling patch list if any scenario is active on couplingInfo dict otherwise return design..." alt="" coords="139,32,297,59"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#a28b92eb67b5874f7753f1ba5db53e3de" title="compute the forces of the desired fluid&#45;structure&#45;interation patches" alt="" coords="151,83,285,109"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DASolver.html#a473b52b1518c034864bcd534c299127b" title="return the number of points and faces for MDO patches" alt="" coords="167,133,269,160"/>
+</map>

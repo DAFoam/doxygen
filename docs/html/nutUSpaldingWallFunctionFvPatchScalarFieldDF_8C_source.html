@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -147,7 +147,7 @@ $(function() {
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">// tolerance.</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        scalarField&amp; nutw = tnutw.ref();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        forAll(err, facei)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(err, facei)</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        {</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">if</span> (err[facei] &lt; <a class="code" href="classFoam_1_1nutUSpaldingWallFunctionFvPatchScalarFieldDF.html#a867b0d23fbb0a52ce46fb680b17b482f">tolerance_</a>)</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            {</div>
@@ -192,7 +192,7 @@ $(function() {
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    err.setSize(uTau.size());</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    err = 0.0;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    forAll(uTau, facei)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(uTau, facei)</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    {</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        scalar ut = sqrt((nutw[facei] + nuw[facei]) * magGradU[facei]);</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="comment">// Note: for exact restart seed with laminar viscosity only:</span></div>
@@ -335,6 +335,7 @@ $(function() {
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment">// ************************************************************************* //</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="asolvePseudoPEqn_8H_html_ab75e9df95d3e8982118b376691e49ceb"><div class="ttname"><a href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a></div><div class="ttdeci">forAll(pseudoP.boundaryField(), patchI)</div><div class="ttdef"><b>Definition:</b> <a href="solvePseudoPEqn_8H_source.html#l00010">solvePseudoPEqn.H:10</a></div></div>
 <div class="ttc" id="aclassFoam_1_1nutUSpaldingWallFunctionFvPatchScalarFieldDF_html_a770ef88c60cd370e9d4eacc46f774f07"><div class="ttname"><a href="classFoam_1_1nutUSpaldingWallFunctionFvPatchScalarFieldDF.html#a770ef88c60cd370e9d4eacc46f774f07">Foam::nutUSpaldingWallFunctionFvPatchScalarFieldDF::calcNut</a></div><div class="ttdeci">virtual tmp&lt; scalarField &gt; calcNut() const</div><div class="ttdef"><b>Definition:</b> <a href="nutUSpaldingWallFunctionFvPatchScalarFieldDF_8C_source.html#l00044">nutUSpaldingWallFunctionFvPatchScalarFieldDF.C:44</a></div></div>
 <div class="ttc" id="aclassFoam_1_1nutUSpaldingWallFunctionFvPatchScalarFieldDF_html_a24807ec3405a761fb6380573614a3040"><div class="ttname"><a href="classFoam_1_1nutUSpaldingWallFunctionFvPatchScalarFieldDF.html#a24807ec3405a761fb6380573614a3040">Foam::nutUSpaldingWallFunctionFvPatchScalarFieldDF::calcUTau</a></div><div class="ttdeci">virtual tmp&lt; scalarField &gt; calcUTau(const scalarField &amp;magGradU) const</div><div class="ttdef"><b>Definition:</b> <a href="nutUSpaldingWallFunctionFvPatchScalarFieldDF_8C_source.html#l00087">nutUSpaldingWallFunctionFvPatchScalarFieldDF.C:87</a></div></div>
 <div class="ttc" id="aclassFoam_1_1nutUSpaldingWallFunctionFvPatchScalarFieldDF_html_a78cec3e4ecac4a89a3ad8d38f2ad21f5"><div class="ttname"><a href="classFoam_1_1nutUSpaldingWallFunctionFvPatchScalarFieldDF.html#a78cec3e4ecac4a89a3ad8d38f2ad21f5">Foam::nutUSpaldingWallFunctionFvPatchScalarFieldDF::write</a></div><div class="ttdeci">virtual void write(Ostream &amp;os) const</div><div class="ttdef"><b>Definition:</b> <a href="nutUSpaldingWallFunctionFvPatchScalarFieldDF_8C_source.html#l00245">nutUSpaldingWallFunctionFvPatchScalarFieldDF.C:245</a></div></div>

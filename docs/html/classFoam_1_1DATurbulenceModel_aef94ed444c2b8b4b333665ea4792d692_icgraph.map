@@ -1,8 +1,10 @@
 <map id="devRhoReff" name="devRhoReff">
-<area shape="rect" id="node1" title="dev terms" alt="" coords="281,143,379,170"/>
+<area shape="rect" id="node1" title="dev terms" alt="" coords="281,209,379,235"/>
 <area shape="rect" id="node2" href="$classFoam_1_1DAObjFuncMoment.html#aff7d67902025442333a1a88cce51695e" title="calculate the value of objective function" alt="" coords="24,5,215,47"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAObjFuncForce.html#aff7d67902025442333a1a88cce51695e" title="calculate the value of objective function" alt="" coords="33,71,205,112"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAObjFuncPower.html#aff7d67902025442333a1a88cce51695e" title="calculate the value of objective function" alt="" coords="31,71,208,112"/>
 <area shape="rect" id="node4" href="$classFoam_1_1DAObjFuncFieldInversion.html#aff7d67902025442333a1a88cce51695e" title="calculate the value of objective function" alt="" coords="5,136,233,177"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DAResidualTurboFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="13,201,225,243"/>
-<area shape="rect" id="node6" href="$classFoam_1_1DASolver.html#a94556c42a158c1dc54df0b006934c81d" title="compute the forces of the desired fluid&#45;structure&#45;interation patches" alt="" coords="21,267,218,308"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DAObjFuncForce.html#aff7d67902025442333a1a88cce51695e" title="calculate the value of objective function" alt="" coords="33,201,205,243"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DAResidualTurboFoam.html#a4b38dbac981107ec6386d78322323535" title="compute residual" alt="" coords="13,267,225,308"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DASolver.html#a6d1981a9e77d642c01518822034ef52f" title="compute the positions, normals, areas, and forces of the desired acoustic patches" alt="" coords="14,332,225,373"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DASolver.html#a28b92eb67b5874f7753f1ba5db53e3de" title="compute the forces of the desired fluid&#45;structure&#45;interation patches" alt="" coords="21,397,218,439"/>
 </map>

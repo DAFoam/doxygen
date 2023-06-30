@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -115,7 +115,7 @@ $(function() {
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classFoam_1_1DAOption.html">DAOption</a>(</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        PyObject* pyOptions);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classFoam_1_1DAOption.html#a24e75f7e5859982f32a28b1d7e823a7d">~DAOption</a>();</div>
@@ -306,7 +306,6 @@ $(function() {
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment">// ************************************************************************* //</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html_a99427f88992525f781b7ecf0c03acf81"><div class="ttname"><a href="classFoam_1_1DAOption.html#a99427f88992525f781b7ecf0c03acf81">Foam::DAOption::setSubDictOption</a></div><div class="ttdeci">void setSubDictOption(const word subDict, const word subDictKey, const classType value)</div><div class="ttdoc">set an dictionary option to subDict and key</div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8H_source.html#l00201">DAOption.H:201</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html_a24e75f7e5859982f32a28b1d7e823a7d"><div class="ttname"><a href="classFoam_1_1DAOption.html#a24e75f7e5859982f32a28b1d7e823a7d">Foam::DAOption::~DAOption</a></div><div class="ttdeci">virtual ~DAOption()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8C_source.html#l00046">DAOption.C:46</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html"><div class="ttname"><a href="classFoam_1_1DAOption.html">Foam::DAOption</a></div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8H_source.html#l00029">DAOption.H:29</a></div></div>
@@ -314,6 +313,7 @@ $(function() {
 <div class="ttc" id="aclassFoam_1_1DAOption_html_a4d6d2622f32c466e367526f5cc05d0fb"><div class="ttname"><a href="classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb">Foam::DAOption::getOption</a></div><div class="ttdeci">classType getOption(const word key) const</div><div class="ttdoc">get an option from subDict and key</div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8H_source.html#l00092">DAOption.H:92</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html_ae53aae7a251b16cb44331956cbfc2d2e"><div class="ttname"><a href="classFoam_1_1DAOption.html#ae53aae7a251b16cb44331956cbfc2d2e">Foam::DAOption::updateDAOption</a></div><div class="ttdeci">void updateDAOption(PyObject *pyOptions)</div><div class="ttdoc">update the allOptions_ dict in DAOption based on the pyOptions from pyDAFoam</div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8C_source.html#l00050">DAOption.C:50</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html_aac22cd38f3d4adc69a4e35329c6abf92"><div class="ttname"><a href="classFoam_1_1DAOption.html#aac22cd38f3d4adc69a4e35329c6abf92">Foam::DAOption::getAllOptions</a></div><div class="ttdeci">const dictionary &amp; getAllOptions() const</div><div class="ttdoc">return a reference of allOptions_ dictionary</div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8H_source.html#l00056">DAOption.H:56</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html_a04e1a06e3ade0e60b8e3a82ad37be74c"><div class="ttname"><a href="classFoam_1_1DAOption.html#a04e1a06e3ade0e60b8e3a82ad37be74c">Foam::DAOption::getSubDictOption</a></div><div class="ttdeci">classType getSubDictOption(const word subDict, const word subDictKey) const</div><div class="ttdoc">get an dictionary option from subDict and key</div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8H_source.html#l00165">DAOption.H:165</a></div></div>
 <div class="ttc" id="anamespaceFoam_html"><div class="ttname"><a href="namespaceFoam.html">Foam</a></div><div class="ttdef"><b>Definition:</b> <a href="multiFreqScalarFvPatchField_8C_source.html#l00144">multiFreqScalarFvPatchField.C:144</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html_a4c658e15d7e8f5819cdc0eedbbbeb85e"><div class="ttname"><a href="classFoam_1_1DAOption.html#a4c658e15d7e8f5819cdc0eedbbbeb85e">Foam::DAOption::writeData</a></div><div class="ttdeci">bool writeData(Ostream &amp;os) const</div><div class="ttdoc">this is a virtual function for regIOobject</div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8C_source.html#l00066">DAOption.C:66</a></div></div>

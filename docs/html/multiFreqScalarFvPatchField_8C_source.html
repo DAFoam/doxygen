@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -195,8 +195,8 @@ $(function() {
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    scalarField&amp; thisPatchRef = *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    scalarField thisPatch = thisPatchRef;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    forAll(thisPatch, idxI) thisPatch[idxI] = refValue_;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    forAll(thisPatch, idxI) thisPatch[idxI] += bcVal;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(thisPatch, idxI) thisPatch[idxI] = refValue_;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(thisPatch, idxI) thisPatch[idxI] += bcVal;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    fvPatchScalarField::operator==(thisPatch);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
@@ -224,6 +224,7 @@ $(function() {
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">// ************************************************************************* //</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="asolvePseudoPEqn_8H_html_ab75e9df95d3e8982118b376691e49ceb"><div class="ttname"><a href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a></div><div class="ttdeci">forAll(pseudoP.boundaryField(), patchI)</div><div class="ttdef"><b>Definition:</b> <a href="solvePseudoPEqn_8H_source.html#l00010">solvePseudoPEqn.H:10</a></div></div>
 <div class="ttc" id="aclassFoam_1_1multiFreqScalarFvPatchField_html_a293fdfec8bdfbd5c3913ab4c9f3454ff"><div class="ttname"><a href="classFoam_1_1multiFreqScalarFvPatchField.html#a293fdfec8bdfbd5c3913ab4c9f3454ff">Foam::multiFreqScalarFvPatchField::write</a></div><div class="ttdeci">virtual void write(Ostream &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="multiFreqScalarFvPatchField_8C_source.html#l00132">multiFreqScalarFvPatchField.C:132</a></div></div>
 <div class="ttc" id="aclassFoam_1_1multiFreqScalarFvPatchField_html_a7e24eafac629d3733181cd942d4c902f"><div class="ttname"><a href="classFoam_1_1multiFreqScalarFvPatchField.html#a7e24eafac629d3733181cd942d4c902f">Foam::multiFreqScalarFvPatchField::updateCoeffs</a></div><div class="ttdeci">virtual void updateCoeffs()</div><div class="ttdef"><b>Definition:</b> <a href="multiFreqScalarFvPatchField_8C_source.html#l00107">multiFreqScalarFvPatchField.C:107</a></div></div>
 <div class="ttc" id="acreateRefsPimple_8H_html_a334650304cdcdff41898bee9eaf2e3db"><div class="ttname"><a href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a></div><div class="ttdeci">volScalarField &amp; p</div><div class="ttdef"><b>Definition:</b> <a href="createRefsPimple_8H_source.html#l00006">createRefsPimple.H:6</a></div></div>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -124,16 +124,16 @@ $(function() {
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classFoam_1_1DARadiationModel.html">DARadiationModel</a>,</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        dictionary,</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        (<span class="keyword">const</span> word modelType, </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;         <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;         <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;         <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAOption.html">DAOption</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>),</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        (modelType, <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>));</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        (modelType, <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>));</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// Constructors</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">//- Construct from components</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classFoam_1_1DARadiationModel.html">DARadiationModel</a>(</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">const</span> word modelType,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAOption.html">DAOption</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Selectors</span></div>
@@ -141,7 +141,7 @@ $(function() {
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//- Return a reference to the selected model</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">static</span> autoPtr&lt;DARadiationModel&gt; <a class="code" href="classFoam_1_1DARadiationModel.html#a7a13c0006404eb763a74286e703e7e66">New</a>(</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">const</span> word modelType,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAOption.html">DAOption</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//- Destructor</span></div>
@@ -168,12 +168,12 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassFoam_1_1DARadiationModel_html_a582cd36c7470ee61350f126866919b45"><div class="ttname"><a href="classFoam_1_1DARadiationModel.html#a582cd36c7470ee61350f126866919b45">Foam::DARadiationModel::addModelResidualCon</a></div><div class="ttdeci">virtual void addModelResidualCon(HashTable&lt; List&lt; List&lt; word &gt;&gt;&gt; &amp;allCon) const =0</div></div>
 <div class="ttc" id="aDAOption_8H_html"><div class="ttname"><a href="DAOption_8H.html">DAOption.H</a></div></div>
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html"><div class="ttname"><a href="classFoam_1_1DAOption.html">Foam::DAOption</a></div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8H_source.html#l00029">DAOption.H:29</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DARadiationModel_html_a1d68f8e5e0a425426f1d5d2bd9bc14ee"><div class="ttname"><a href="classFoam_1_1DARadiationModel.html#a1d68f8e5e0a425426f1d5d2bd9bc14ee">Foam::DARadiationModel::~DARadiationModel</a></div><div class="ttdeci">virtual ~DARadiationModel()</div><div class="ttdef"><b>Definition:</b> <a href="DARadiationModel_8H_source.html#l00074">DARadiationModel.H:74</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DARadiationModel_html_a807bf71abc1e195369a402a601a3a9a4"><div class="ttname"><a href="classFoam_1_1DARadiationModel.html#a807bf71abc1e195369a402a601a3a9a4">Foam::DARadiationModel::daOption_</a></div><div class="ttdeci">const DAOption &amp; daOption_</div><div class="ttdef"><b>Definition:</b> <a href="DARadiationModel_8H_source.html#l00041">DARadiationModel.H:41</a></div></div>
 <div class="ttc" id="apyColoringCompressible_2createAdjoint_8H_html_a75fa363c8e8a3229461183017dd17311"><div class="ttname"><a href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a></div><div class="ttdeci">DAOption daOption(mesh, pyOptions_)</div></div>
 <div class="ttc" id="aclassFoam_1_1DARadiationModel_html_a23edeeeecebcef11921a33dd5d990570"><div class="ttname"><a href="classFoam_1_1DARadiationModel.html#a23edeeeecebcef11921a33dd5d990570">Foam::DARadiationModel::mesh_</a></div><div class="ttdeci">const fvMesh &amp; mesh_</div><div class="ttdef"><b>Definition:</b> <a href="DARadiationModel_8H_source.html#l00039">DARadiationModel.H:39</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DARadiationModel_html_a7954e31efb69d1ea6caaa62d2d9136a4"><div class="ttname"><a href="classFoam_1_1DARadiationModel.html#a7954e31efb69d1ea6caaa62d2d9136a4">Foam::DARadiationModel::declareRunTimeSelectionTable</a></div><div class="ttdeci">declareRunTimeSelectionTable(autoPtr, DARadiationModel, dictionary,(const word modelType, const fvMesh &amp;mesh, const DAOption &amp;daOption),(modelType, mesh, daOption))</div></div>
 <div class="ttc" id="anamespaceFoam_html"><div class="ttname"><a href="namespaceFoam.html">Foam</a></div><div class="ttdef"><b>Definition:</b> <a href="multiFreqScalarFvPatchField_8C_source.html#l00144">multiFreqScalarFvPatchField.C:144</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DARadiationModel_html_a7a13c0006404eb763a74286e703e7e66"><div class="ttname"><a href="classFoam_1_1DARadiationModel.html#a7a13c0006404eb763a74286e703e7e66">Foam::DARadiationModel::New</a></div><div class="ttdeci">static autoPtr&lt; DARadiationModel &gt; New(const word modelType, const fvMesh &amp;mesh, const DAOption &amp;daOption)</div><div class="ttdef"><b>Definition:</b> <a href="DARadiationModel_8C_source.html#l00042">DARadiationModel.C:42</a></div></div>

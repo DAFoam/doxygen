@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -88,18 +88,18 @@ $(function() {
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// Constructors</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classFoam_1_1DAOption.html#a03d348cf66b03a3caba54c1ca7b01a29">   16</a></span>&#160;DAOption::DAOption(</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    PyObject* pyOptions)</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    : regIOobject(</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        IOobject(</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="stringliteral">&quot;DAOption&quot;</span>, <span class="comment">// always use DAOption for the db name</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.time().timeName(),</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, <span class="comment">// register to mesh</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.time().timeName(),</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, <span class="comment">// register to mesh</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            IOobject::NO_READ,</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            IOobject::NO_WRITE,</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            true <span class="comment">// always register object</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            )),</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      mesh_(<a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      mesh_(<a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>)</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">    Description:</span></div>
@@ -150,9 +150,9 @@ $(function() {
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">// ************************************************************************* //</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aDAOption_8H_html"><div class="ttname"><a href="DAOption_8H.html">DAOption.H</a></div></div>
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html_a24e75f7e5859982f32a28b1d7e823a7d"><div class="ttname"><a href="classFoam_1_1DAOption.html#a24e75f7e5859982f32a28b1d7e823a7d">Foam::DAOption::~DAOption</a></div><div class="ttdeci">virtual ~DAOption()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8C_source.html#l00046">DAOption.C:46</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html_ae53aae7a251b16cb44331956cbfc2d2e"><div class="ttname"><a href="classFoam_1_1DAOption.html#ae53aae7a251b16cb44331956cbfc2d2e">Foam::DAOption::updateDAOption</a></div><div class="ttdeci">void updateDAOption(PyObject *pyOptions)</div><div class="ttdoc">update the allOptions_ dict in DAOption based on the pyOptions from pyDAFoam</div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8C_source.html#l00050">DAOption.C:50</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAUtility_html_af306374cb235e020b27d24bd1e9ada1b"><div class="ttname"><a href="classFoam_1_1DAUtility.html#af306374cb235e020b27d24bd1e9ada1b">Foam::DAUtility::pyDict2OFDict</a></div><div class="ttdeci">static void pyDict2OFDict(PyObject *pyDict, dictionary &amp;ofDict)</div><div class="ttdoc">convert a python dictionary object to OpenFoam dictionary</div><div class="ttdef"><b>Definition:</b> <a href="DAUtility_8C_source.html#l00024">DAUtility.C:24</a></div></div>
 <div class="ttc" id="anamespaceFoam_html"><div class="ttname"><a href="namespaceFoam.html">Foam</a></div><div class="ttdef"><b>Definition:</b> <a href="multiFreqScalarFvPatchField_8C_source.html#l00144">multiFreqScalarFvPatchField.C:144</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html_a4c658e15d7e8f5819cdc0eedbbbeb85e"><div class="ttname"><a href="classFoam_1_1DAOption.html#a4c658e15d7e8f5819cdc0eedbbbeb85e">Foam::DAOption::writeData</a></div><div class="ttdeci">bool writeData(Ostream &amp;os) const</div><div class="ttdoc">this is a virtual function for regIOobject</div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8C_source.html#l00066">DAOption.C:66</a></div></div>

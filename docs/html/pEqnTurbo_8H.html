@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -345,7 +345,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="pEqnTurbo_8H_source.html#l00022">22</a> of file <a class="el" href="pEqnTurbo_8H_source.html">pEqnTurbo.H</a>.</p>
 
-<p class="reference">References <a class="el" href="pEqnTurbo_8H_source.html#l00015">HbyA</a>, <a class="el" href="createRefsLaplacian_8H_source.html#l00004">mesh</a>, <a class="el" href="createRefsRhoSimple_8H_source.html#l00018">MRF</a>, <a class="el" href="createRefsPimple_8H_source.html#l00006">p</a>, <a class="el" href="createRefsPimple_8H_source.html#l00008">phi</a>, <a class="el" href="pEqnRhoSimpleC_8H.html#afb7e6c9b063485a0fb35e16d0e0b84a9">phid()</a>, <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00012">pressureControl</a>, <a class="el" href="EEqnRhoSimpleC_8H.html#a78a1c818fefcc4555ddd5afb77ed69c2">primalResidualControl&lt; scalar &gt;()</a>, <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00014">psi</a>, <a class="el" href="pEqnTurbo_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d">rAU()</a>, <a class="el" href="pEqnTurbo_8H_source.html#l00001">rho</a>, and <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00005">simple</a>.</p>
+<p class="reference">References <a class="el" href="pEqnTurbo_8H_source.html#l00015">HbyA</a>, <a class="el" href="createRefsHeatTransfer_8H_source.html#l00004">mesh</a>, <a class="el" href="createRefsRhoSimple_8H_source.html#l00018">MRF</a>, <a class="el" href="createRefsPimple_8H_source.html#l00006">p</a>, <a class="el" href="createRefsPimple_8H_source.html#l00008">phi</a>, <a class="el" href="pEqnRhoSimpleC_8H.html#afb7e6c9b063485a0fb35e16d0e0b84a9">phid()</a>, <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00012">pressureControl</a>, <a class="el" href="EEqnRhoSimpleC_8H.html#a78a1c818fefcc4555ddd5afb77ed69c2">primalResidualControl&lt; scalar &gt;()</a>, <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00014">psi</a>, <a class="el" href="pEqnTurbo_8H.html#a4ae3ff6f0732a8a206a641d7ff2d9f7d">rAU()</a>, <a class="el" href="pEqnTurbo_8H_source.html#l00001">rho</a>, and <a class="el" href="createRefsRhoSimpleC_8H_source.html#l00005">simple</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -563,7 +563,7 @@ Here is the call graph for this function:</div>
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
 <div class="line">    surfaceScalarField <a class="code" href="pEqnTurbo_8H.html#a72ed40a7e1ed7c436cb38dddc014d9db">phiHbyA</a>(</div>
 <div class="line">        <span class="stringliteral">&quot;phiHbyA&quot;</span>,</div>
-<div class="line">        fvc::interpolate(<a class="code" href="pEqnTurbo_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a> * <a class="code" href="pEqnTurbo_8H.html#affe2e7d9698e1696c0560477b426c722">HbyA</a>) &amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.Sf())</div>
+<div class="line">        fvc::interpolate(<a class="code" href="pEqnTurbo_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a> * <a class="code" href="pEqnTurbo_8H.html#affe2e7d9698e1696c0560477b426c722">HbyA</a>) &amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.Sf())</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="pEqnTurbo_8H_source.html#l00057">57</a> of file <a class="el" href="pEqnTurbo_8H_source.html">pEqnTurbo.H</a>.</p>
 
@@ -604,8 +604,8 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
 <div class="ttc" id="apEqnTurbo_8H_html_affe2e7d9698e1696c0560477b426c722"><div class="ttname"><a href="pEqnTurbo_8H.html#affe2e7d9698e1696c0560477b426c722">HbyA</a></div><div class="ttdeci">HbyA</div><div class="ttdef"><b>Definition:</b> <a href="pEqnTurbo_8H_source.html#l00015">pEqnTurbo.H:15</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="apEqnTurbo_8H_html_ab8ec92cc3ea8422c9349409bae98d2a0"><div class="ttname"><a href="pEqnTurbo_8H.html#ab8ec92cc3ea8422c9349409bae98d2a0">rho</a></div><div class="ttdeci">rho</div><div class="ttdef"><b>Definition:</b> <a href="pEqnTurbo_8H_source.html#l00001">pEqnTurbo.H:1</a></div></div>
 <div class="ttc" id="apEqnTurbo_8H_html_a72ed40a7e1ed7c436cb38dddc014d9db"><div class="ttname"><a href="pEqnTurbo_8H.html#a72ed40a7e1ed7c436cb38dddc014d9db">phiHbyA</a></div><div class="ttdeci">phiHbyA</div><div class="ttdef"><b>Definition:</b> <a href="pEqnTurbo_8H_source.html#l00065">pEqnTurbo.H:65</a></div></div>
 <!-- HTML footer for doxygen 1.8.11-->

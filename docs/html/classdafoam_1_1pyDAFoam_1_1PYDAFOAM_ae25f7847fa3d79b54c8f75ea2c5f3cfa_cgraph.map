@@ -1,6 +1,5 @@
 <map id="runColoring" name="runColoring">
-<area shape="rect" id="node1" title=" " alt="" coords="5,48,103,75"/>
-<area shape="rect" id="node2" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ac90dbce095447fd1d513670dbb627608" title=" " alt="" coords="151,48,217,75"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key" alt="" coords="265,23,465,49"/>
-<area shape="rect" id="node4" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6b17301eac258f3e9309107a42eac008" title=" " alt="" coords="322,85,409,112"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,103,57"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAOption.html#a4d6d2622f32c466e367526f5cc05d0fb" title="get an option from subDict and key" alt="" coords="151,5,351,32"/>
+<area shape="rect" id="node3" href="$classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#a6b17301eac258f3e9309107a42eac008" title=" " alt="" coords="207,56,294,83"/>
 </map>

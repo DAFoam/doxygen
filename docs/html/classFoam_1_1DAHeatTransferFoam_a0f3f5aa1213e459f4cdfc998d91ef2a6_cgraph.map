@@ -1,0 +1,4 @@
+<map id="initSolver" name="initSolver">
+<area shape="rect" id="node1" title="initialize fields and variables" alt="" coords="5,13,89,39"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#acdc7ce58473b47ad8ed789877835ca36" title="initialize DASolver::daObjFuncPtrList_ one needs to call this before calling printAllObjFuncs" alt="" coords="137,5,332,47"/>
+</map>

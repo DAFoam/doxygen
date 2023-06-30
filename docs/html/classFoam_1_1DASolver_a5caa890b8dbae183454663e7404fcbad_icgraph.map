@@ -1,0 +1,4 @@
+<map id="assignSeeds2ResidualGradient" name="assignSeeds2ResidualGradient">
+<area shape="rect" id="node1" title="assign the reverse&#45;mode AD input seeds from vecX to the residuals in OpenFOAM" alt="" coords="227,5,449,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#ad65d231cc7708d0fc25fa8195f847ce6" title=" " alt="" coords="5,5,179,32"/>
+</map>

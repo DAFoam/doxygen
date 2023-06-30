@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -80,10 +80,11 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="createAdjointSolid_8H__dep__incl.png" border="0" usemap="#dafoam_2src_2include_2createAdjointSolid_8Hdep" alt=""/></div>
 <map name="dafoam_2src_2include_2createAdjointSolid_8Hdep" id="dafoam_2src_2include_2createAdjointSolid_8Hdep">
-<area shape="rect" title=" " alt="" coords="272,5,431,47"/>
-<area shape="rect" href="DALaplacianFoam_8C.html" title=" " alt="" coords="5,95,212,151"/>
-<area shape="rect" href="DAScalarTransportFoam_8C.html" title=" " alt="" coords="236,95,467,151"/>
-<area shape="rect" href="DASolidDisplacementFoam_8C.html" title=" " alt="" coords="491,95,743,151"/>
+<area shape="rect" title=" " alt="" coords="403,5,561,47"/>
+<area shape="rect" href="DAHeatTransferFoam_8C.html" title=" " alt="" coords="5,95,233,151"/>
+<area shape="rect" href="DALaplacianFoam_8C.html" title=" " alt="" coords="257,95,464,151"/>
+<area shape="rect" href="DAScalarTransportFoam_8C.html" title=" " alt="" coords="488,95,719,151"/>
+<area shape="rect" href="DASolidDisplacementFoam_8C.html" title=" " alt="" coords="743,95,995,151"/>
 </map>
 </div>
 </div>
@@ -91,8 +92,6 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a671c48686eae0e7a105c9e6889050dfd"><td class="memItemLeft" align="right" valign="top">daOptionPtr_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="createAdjointSolid_8H.html#a671c48686eae0e7a105c9e6889050dfd">reset</a> (new DAOption(<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, pyOptions_))</td></tr>
-<tr class="separator:a671c48686eae0e7a105c9e6889050dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e476bfa860d09199c57a03b2e6fe2f8"><td class="memItemLeft" align="right" valign="top">daModelPtr_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="createAdjointSolid_8H.html#a7e476bfa860d09199c57a03b2e6fe2f8">reset</a> (new DAModel(<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, daOptionPtr_()))</td></tr>
 <tr class="separator:a7e476bfa860d09199c57a03b2e6fe2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a371b7400fdc59d7d016edaf12b6f2b26"><td class="memItemLeft" align="right" valign="top">daStateInfoPtr_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="createAdjointSolid_8H.html#a371b7400fdc59d7d016edaf12b6f2b26">reset</a> (DAStateInfo::New(<a class="el" href="createAdjointSolid_8H.html#ac9ba06ed262d6a8aaa3b35b6eeac88ce">solverName</a>, <a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, daOptionPtr_(), daModelPtr_()))</td></tr>
@@ -114,26 +113,8 @@ Variables</h2></td></tr>
 <tr class="separator:a413c2cc0bc0d50977b9d8ec3225b5a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a671c48686eae0e7a105c9e6889050dfd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a671c48686eae0e7a105c9e6889050dfd">&#9670;&nbsp;</a></span>reset() <span class="overload">[1/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">daOptionPtr_ reset </td>
-          <td>(</td>
-          <td class="paramtype">new &#160;</td>
-          <td class="paramname"><em>DAOption</em>mesh, pyOptions_</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a7e476bfa860d09199c57a03b2e6fe2f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e476bfa860d09199c57a03b2e6fe2f8">&#9670;&nbsp;</a></span>reset() <span class="overload">[2/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e476bfa860d09199c57a03b2e6fe2f8">&#9670;&nbsp;</a></span>reset() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,7 +132,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a371b7400fdc59d7d016edaf12b6f2b26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a371b7400fdc59d7d016edaf12b6f2b26">&#9670;&nbsp;</a></span>reset() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a371b7400fdc59d7d016edaf12b6f2b26">&#9670;&nbsp;</a></span>reset() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,7 +150,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ad2f2711aef9129ddec6a16540ad2c1e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2f2711aef9129ddec6a16540ad2c1e1">&#9670;&nbsp;</a></span>reset() <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2f2711aef9129ddec6a16540ad2c1e1">&#9670;&nbsp;</a></span>reset() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,7 +185,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a3d0de3db2c60ebc18860eae620072ac2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d0de3db2c60ebc18860eae620072ac2">&#9670;&nbsp;</a></span>reset() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d0de3db2c60ebc18860eae620072ac2">&#9670;&nbsp;</a></span>reset() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,7 +203,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a5d1333553c7e3091311f5a28a0aa4db3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d1333553c7e3091311f5a28a0aa4db3">&#9670;&nbsp;</a></span>reset() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d1333553c7e3091311f5a28a0aa4db3">&#9670;&nbsp;</a></span>reset() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +233,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="createAdjointSolid_8H_source.html#l00014">14</a> of file <a class="el" href="createAdjointSolid_8H_source.html">createAdjointSolid.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="createAdjointSolid_8H_source.html#l00012">12</a> of file <a class="el" href="createAdjointSolid_8H_source.html">createAdjointSolid.H</a>.</p>
 
 </div>
 </div>
@@ -268,7 +249,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="createAdjointSolid_8H_source.html#l00016">16</a> of file <a class="el" href="createAdjointSolid_8H_source.html">createAdjointSolid.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="createAdjointSolid_8H_source.html#l00014">14</a> of file <a class="el" href="createAdjointSolid_8H_source.html">createAdjointSolid.H</a>.</p>
 
 </div>
 </div>

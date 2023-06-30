@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -114,9 +114,9 @@ $(function() {
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classFoam_1_1DAkOmega.html#a79ba4df87205e57d4311b9dfa86f30c2">   41</a></span>&#160;<a class="code" href="classFoam_1_1DAkOmega.html#a79ba4df87205e57d4311b9dfa86f30c2">DAkOmega::DAkOmega</a>(</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> word modelType,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAOption.html">DAOption</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    : <a class="code" href="classFoam_1_1DATurbulenceModel.html">DATurbulenceModel</a>(modelType, <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>),</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    : <a class="code" href="classFoam_1_1DATurbulenceModel.html">DATurbulenceModel</a>(modelType, <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>),</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="comment">// kOmega parameters</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      Cmu_(dimensioned&lt;scalar&gt;::lookupOrAddToDict(</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;          <span class="stringliteral">&quot;betaStar&quot;</span>,</div>
@@ -144,11 +144,11 @@ $(function() {
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      omegaRes_(</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;          IOobject(</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;              <span class="stringliteral">&quot;omegaRes&quot;</span>,</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;              <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.time().timeName(),</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;              <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;              <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.time().timeName(),</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;              <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;              IOobject::NO_READ,</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;              IOobject::NO_WRITE),</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;          <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;          <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;#ifdef CompressibleFlow</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;          dimensionedScalar(<span class="stringliteral">&quot;omegaRes&quot;</span>, dimensionSet(1, -3, -2, 0, 0, 0, 0), 0.0),</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;#endif</div>
@@ -162,11 +162,11 @@ $(function() {
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      kRes_(</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;          IOobject(</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;              <span class="stringliteral">&quot;kRes&quot;</span>,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;              <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.time().timeName(),</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;              <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;              <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.time().timeName(),</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;              <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;              IOobject::NO_READ,</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;              IOobject::NO_WRITE),</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;          <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;          <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;#ifdef CompressibleFlow</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;          dimensionedScalar(<span class="stringliteral">&quot;kRes&quot;</span>, dimensionSet(1, -1, -3, 0, 0, 0, 0), 0.0),</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;#endif</div>
@@ -181,8 +181,8 @@ $(function() {
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    IOdictionary fvSchemes(</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        IOobject(</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="stringliteral">&quot;fvSchemes&quot;</span>,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.time().system(),</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.time().system(),</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            IOobject::MUST_READ,</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            IOobject::NO_WRITE,</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keyword">false</span>));</div>
@@ -200,12 +200,12 @@ $(function() {
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">// calculate the size of omegaWallFunction faces</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    label nWallFaces = 0;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    forAll(<a class="code" href="classFoam_1_1DAkOmega.html#af46dbf55b9a60400db289a89ac445ecb">omega_</a>.boundaryField(), patchI)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(<a class="code" href="classFoam_1_1DAkOmega.html#af46dbf55b9a60400db289a89ac445ecb">omega_</a>.boundaryField(), patchI)</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    {</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classFoam_1_1DAkOmega.html#af46dbf55b9a60400db289a89ac445ecb">omega_</a>.boundaryField()[patchI].type() == <span class="stringliteral">&quot;omegaWallFunction&quot;</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            &amp;&amp; <a class="code" href="classFoam_1_1DAkOmega.html#af46dbf55b9a60400db289a89ac445ecb">omega_</a>.boundaryField()[patchI].size() &gt; 0)</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            forAll(<a class="code" href="classFoam_1_1DAkOmega.html#af46dbf55b9a60400db289a89ac445ecb">omega_</a>.boundaryField()[patchI], faceI)</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(<a class="code" href="classFoam_1_1DAkOmega.html#af46dbf55b9a60400db289a89ac445ecb">omega_</a>.boundaryField()[patchI], faceI)</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            {</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                nWallFaces++;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            }</div>
@@ -244,7 +244,7 @@ $(function() {
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="comment">// For SST model, we need to replace nut with k, omega</span></div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    forAll(modelStates, idxI)</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(modelStates, idxI)</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    {</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        word stateName = modelStates[idxI];</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">if</span> (stateName == <span class="stringliteral">&quot;nut&quot;</span>)</div>
@@ -319,13 +319,13 @@ $(function() {
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment">        Save the current near wall omega values to omegaNearWall_</span></div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment">    */</span></div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    label counterI = 0;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    forAll(<a class="code" href="classFoam_1_1DAkOmega.html#af46dbf55b9a60400db289a89ac445ecb">omega_</a>.boundaryField(), patchI)</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(<a class="code" href="classFoam_1_1DAkOmega.html#af46dbf55b9a60400db289a89ac445ecb">omega_</a>.boundaryField(), patchI)</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    {</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classFoam_1_1DAkOmega.html#af46dbf55b9a60400db289a89ac445ecb">omega_</a>.boundaryField()[patchI].type() == <span class="stringliteral">&quot;omegaWallFunction&quot;</span></div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            and <a class="code" href="classFoam_1_1DAkOmega.html#af46dbf55b9a60400db289a89ac445ecb">omega_</a>.boundaryField()[patchI].size() &gt; 0)</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        {</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <span class="keyword">const</span> UList&lt;label&gt;&amp; faceCells = <a class="code" href="classFoam_1_1DATurbulenceModel.html#a23edeeeecebcef11921a33dd5d990570">mesh_</a>.boundaryMesh()[patchI].faceCells();</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            forAll(faceCells, faceI)</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(faceCells, faceI)</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            {</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                <span class="comment">//Info&lt;&lt;&quot;Near Wall cellI: &quot;&lt;&lt;faceCells[faceI]&lt;&lt;endl;</span></div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                <a class="code" href="classFoam_1_1DAkOmega.html#a8be559ccfcba522bb753618cae4934a7">omegaNearWall_</a>[counterI] = <a class="code" href="classFoam_1_1DAkOmega.html#af46dbf55b9a60400db289a89ac445ecb">omega_</a>[faceCells[faceI]];</div>
@@ -344,13 +344,13 @@ $(function() {
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">        Here we also apply a zeroGradient BC to the wall faces</span></div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">    */</span></div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    label counterI = 0;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    forAll(<a class="code" href="classFoam_1_1DAkOmega.html#af46dbf55b9a60400db289a89ac445ecb">omega_</a>.boundaryField(), patchI)</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(<a class="code" href="classFoam_1_1DAkOmega.html#af46dbf55b9a60400db289a89ac445ecb">omega_</a>.boundaryField(), patchI)</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    {</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classFoam_1_1DAkOmega.html#af46dbf55b9a60400db289a89ac445ecb">omega_</a>.boundaryField()[patchI].type() == <span class="stringliteral">&quot;omegaWallFunction&quot;</span></div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            &amp;&amp; <a class="code" href="classFoam_1_1DAkOmega.html#af46dbf55b9a60400db289a89ac445ecb">omega_</a>.boundaryField()[patchI].size() &gt; 0)</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        {</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            <span class="keyword">const</span> UList&lt;label&gt;&amp; faceCells = <a class="code" href="classFoam_1_1DATurbulenceModel.html#a23edeeeecebcef11921a33dd5d990570">mesh_</a>.boundaryMesh()[patchI].faceCells();</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            forAll(faceCells, faceI)</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(faceCells, faceI)</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            {</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                <a class="code" href="classFoam_1_1DAkOmega.html#af46dbf55b9a60400db289a89ac445ecb">omega_</a>[faceCells[faceI]] = <a class="code" href="classFoam_1_1DAkOmega.html#a8be559ccfcba522bb753618cae4934a7">omegaNearWall_</a>[counterI];</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                <span class="comment">// zeroGradient BC</span></div>
@@ -411,10 +411,10 @@ $(function() {
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment">    */</span></div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    label stateConSize = stateCon.size();</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    forAll(stateCon, idxI)</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(stateCon, idxI)</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    {</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        label addUCon = 0;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        forAll(stateCon[idxI], idxJ)</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(stateCon[idxI], idxJ)</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        {</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            word conStateName = stateCon[idxI][idxJ];</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            <span class="keywordflow">if</span> (conStateName == <span class="stringliteral">&quot;nut&quot;</span>)</div>
@@ -430,7 +430,7 @@ $(function() {
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        {</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            <span class="comment">// first add U for the current level</span></div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            isU = 0;</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            forAll(stateCon[idxI], idxJ)</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(stateCon[idxI], idxJ)</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            {</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                word conStateName = stateCon[idxI][idxJ];</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                <span class="keywordflow">if</span> (conStateName == <span class="stringliteral">&quot;U&quot;</span>)</div>
@@ -448,7 +448,7 @@ $(function() {
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            <span class="keywordflow">if</span> (idxI != stateConSize - 1)</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;            {</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                isU = 0;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                forAll(stateCon[idxI + 1], idxJ)</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                <a class="code" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a>(stateCon[idxI + 1], idxJ)</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                {</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                    word conStateName = stateCon[idxI + 1][idxJ];</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                    <span class="keywordflow">if</span> (conStateName == <span class="stringliteral">&quot;U&quot;</span>)</div>
@@ -662,7 +662,7 @@ $(function() {
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160; </div>
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        <span class="comment">// get the solver performance info such as initial</span></div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        <span class="comment">// and final residuals</span></div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        SolverPerformance&lt;scalar&gt; solverOmega = solve(omegaEqn);</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        SolverPerformance&lt;scalar&gt; solverOmega = <a class="code" href="solvePseudoPEqn_8H.html#ae6958b9677b193eb5a911af0345fb4ee">solve</a>(omegaEqn);</div>
 <div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        <span class="keywordflow">if</span> (printToScreen)</div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        {</div>
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;            Info &lt;&lt; <span class="stringliteral">&quot;omega Initial residual: &quot;</span> &lt;&lt; solverOmega.initialResidual() &lt;&lt; endl</div>
@@ -698,7 +698,7 @@ $(function() {
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160; </div>
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;        <span class="comment">// get the solver performance info such as initial</span></div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;        <span class="comment">// and final residuals</span></div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;        SolverPerformance&lt;scalar&gt; solverK = solve(kEqn);</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;        SolverPerformance&lt;scalar&gt; solverK = <a class="code" href="solvePseudoPEqn_8H.html#ae6958b9677b193eb5a911af0345fb4ee">solve</a>(kEqn);</div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;        <span class="keywordflow">if</span> (printToScreen)</div>
 <div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        {</div>
 <div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;            Info &lt;&lt; <span class="stringliteral">&quot;k Initial residual: &quot;</span> &lt;&lt; solverK.initialResidual() &lt;&lt; endl</div>
@@ -725,7 +725,7 @@ $(function() {
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160; </div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;<span class="comment">// ************************************************************************* //</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
+<div class="ttc" id="asolvePseudoPEqn_8H_html_ab75e9df95d3e8982118b376691e49ceb"><div class="ttname"><a href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb">forAll</a></div><div class="ttdeci">forAll(pseudoP.boundaryField(), patchI)</div><div class="ttdef"><b>Definition:</b> <a href="solvePseudoPEqn_8H_source.html#l00010">solvePseudoPEqn.H:10</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DATurbulenceModel_html_aa132d8ed3cd0b8db86689342f20437a3"><div class="ttname"><a href="classFoam_1_1DATurbulenceModel.html#aa132d8ed3cd0b8db86689342f20437a3">Foam::DATurbulenceModel::phi_</a></div><div class="ttdeci">surfaceScalarField &amp; phi_</div><div class="ttdoc">face flux</div><div class="ttdef"><b>Definition:</b> <a href="DATurbulenceModel_8H_source.html#l00089">DATurbulenceModel.H:89</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAkOmega_html_a0d0a248baa9dcea7ca4626c497a61def"><div class="ttname"><a href="classFoam_1_1DAkOmega.html#a0d0a248baa9dcea7ca4626c497a61def">Foam::DAkOmega::saveOmegaNearWall</a></div><div class="ttdeci">void saveOmegaNearWall()</div><div class="ttdoc">save near wall omega values to omegaNearWall_</div><div class="ttdef"><b>Definition:</b> <a href="DAkOmega_8C_source.html#l00241">DAkOmega.C:241</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html"><div class="ttname"><a href="classFoam_1_1DAOption.html">Foam::DAOption</a></div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8H_source.html#l00029">DAOption.H:29</a></div></div>
@@ -737,6 +737,7 @@ $(function() {
 <div class="ttc" id="aclassFoam_1_1DAkOmega_html_ad12b87c732651102da8ca7576a6af5bb"><div class="ttname"><a href="classFoam_1_1DAkOmega.html#ad12b87c732651102da8ca7576a6af5bb">Foam::DAkOmega::omegaRes_</a></div><div class="ttdeci">volScalarField omegaRes_</div><div class="ttdef"><b>Definition:</b> <a href="DAkOmega_8H_source.html#l00094">DAkOmega.H:94</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAkOmega_html_a3ae44b28050c3aa494c1d8e18cf618c1"><div class="ttname"><a href="classFoam_1_1DAkOmega.html#a3ae44b28050c3aa494c1d8e18cf618c1">Foam::DAkOmega::correct</a></div><div class="ttdeci">virtual void correct()</div><div class="ttdoc">solve the residual equations and update the state</div><div class="ttdef"><b>Definition:</b> <a href="DAkOmega_8C_source.html#l00493">DAkOmega.C:493</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAkOmega_html_a20a2301c30b9c071889b1e33f40723d1"><div class="ttname"><a href="classFoam_1_1DAkOmega.html#a20a2301c30b9c071889b1e33f40723d1">Foam::DAkOmega::DomegaEff</a></div><div class="ttdeci">tmp&lt; volScalarField &gt; DomegaEff() const</div><div class="ttdef"><b>Definition:</b> <a href="DAkOmega_8H_source.html#l00078">DAkOmega.H:78</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAkOmega_html_ae3107b89db466c70d20bdb3472ed24d6"><div class="ttname"><a href="classFoam_1_1DAkOmega.html#ae3107b89db466c70d20bdb3472ed24d6">Foam::DAkOmega::kRes_</a></div><div class="ttdeci">volScalarField kRes_</div><div class="ttdef"><b>Definition:</b> <a href="DAkOmega_8H_source.html#l00096">DAkOmega.H:96</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAUtility_html_a33a755d4b9029ec00bb1969fc0a193e3"><div class="ttname"><a href="classFoam_1_1DAUtility.html#a33a755d4b9029ec00bb1969fc0a193e3">Foam::DAUtility::boundVar</a></div><div class="ttdeci">static void boundVar(const dictionary &amp;allOptions, volScalarField &amp;var, const label printToScreen)</div><div class="ttdoc">bound a volScalar variable based on parametes defined in DAOption::allOptions_</div><div class="ttdef"><b>Definition:</b> <a href="DAUtility_8C_source.html#l00419">DAUtility.C:419</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAkOmega_html_a8be559ccfcba522bb753618cae4934a7"><div class="ttname"><a href="classFoam_1_1DAkOmega.html#a8be559ccfcba522bb753618cae4934a7">Foam::DAkOmega::omegaNearWall_</a></div><div class="ttdeci">scalarList omegaNearWall_</div><div class="ttdef"><b>Definition:</b> <a href="DAkOmega_8H_source.html#l00103">DAkOmega.H:103</a></div></div>
@@ -752,6 +753,7 @@ $(function() {
 <div class="ttc" id="aclassFoam_1_1DAkOmega_html_aaffe89433f18f1ee4137486e19219448"><div class="ttname"><a href="classFoam_1_1DAkOmega.html#aaffe89433f18f1ee4137486e19219448">Foam::DAkOmega::correctNut</a></div><div class="ttdeci">virtual void correctNut()</div><div class="ttdoc">update nut based on other turbulence variables and update the BCs</div><div class="ttdef"><b>Definition:</b> <a href="DAkOmega_8C_source.html#l00184">DAkOmega.C:184</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DATurbulenceModel_html_a5e8a2c41e3241f18628b18b4aede66ab"><div class="ttname"><a href="classFoam_1_1DATurbulenceModel.html#a5e8a2c41e3241f18628b18b4aede66ab">Foam::DATurbulenceModel::correctAlphat</a></div><div class="ttdeci">void correctAlphat()</div><div class="ttdoc">update alphat</div><div class="ttdef"><b>Definition:</b> <a href="DATurbulenceModel_8C_source.html#l00206">DATurbulenceModel.C:206</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAkOmega_html_af4c2bb10de993ad1332df7bd213bc7ab"><div class="ttname"><a href="classFoam_1_1DAkOmega.html#af4c2bb10de993ad1332df7bd213bc7ab">Foam::DAkOmega::addModelResidualCon</a></div><div class="ttdeci">virtual void addModelResidualCon(HashTable&lt; List&lt; List&lt; word &gt;&gt;&gt; &amp;allCon) const</div><div class="ttdoc">add the model residual connectivity to stateCon</div><div class="ttdef"><b>Definition:</b> <a href="DAkOmega_8C_source.html#l00401">DAkOmega.C:401</a></div></div>
+<div class="ttc" id="asolvePseudoPEqn_8H_html_ae6958b9677b193eb5a911af0345fb4ee"><div class="ttname"><a href="solvePseudoPEqn_8H.html#ae6958b9677b193eb5a911af0345fb4ee">solve</a></div><div class="ttdeci">pseudoPEqn solve(solverDictP_)</div></div>
 <div class="ttc" id="aclassFoam_1_1DATurbulenceModel_html"><div class="ttname"><a href="classFoam_1_1DATurbulenceModel.html">Foam::DATurbulenceModel</a></div><div class="ttdef"><b>Definition:</b> <a href="DATurbulenceModel_8H_source.html#l00061">DATurbulenceModel.H:61</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAkOmega_html_afaf8907dbec3ae78ed43568747fdea4c"><div class="ttname"><a href="classFoam_1_1DAkOmega.html#afaf8907dbec3ae78ed43568747fdea4c">Foam::DAkOmega::beta_</a></div><div class="ttdeci">dimensionedScalar beta_</div><div class="ttdef"><b>Definition:</b> <a href="DAkOmega_8H_source.html#l00056">DAkOmega.H:56</a></div></div>
 <div class="ttc" id="anamespaceFoam_html_a90e9cf832b06b5b5afaf78648234b88e"><div class="ttname"><a href="namespaceFoam.html#a90e9cf832b06b5b5afaf78648234b88e">Foam::defineTypeNameAndDebug</a></div><div class="ttdeci">defineTypeNameAndDebug(DAFvSource, 0)</div></div>

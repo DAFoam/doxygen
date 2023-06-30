@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -107,6 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afb306106c8d582b080a0609ea9c8a57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc43d64cedeb420ceebf1a32f444e1c3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamMesh.html#acc43d64cedeb420ceebf1a32f444e1c3">mphys_get_triangulated_surface</a> (self, groupName=None)</td></tr>
 <tr class="separator:acc43d64cedeb420ceebf1a32f444e1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf00dcd7f08b5debc6fa3886efc4d7ed"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamMesh.html#aaf00dcd7f08b5debc6fa3886efc4d7ed">mphys_get_surface_size</a> (self, groupName)</td></tr>
+<tr class="separator:aaf00dcd7f08b5debc6fa3886efc4d7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe7a49a5805737c378c21f381d0c82b9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamMesh.html#abe7a49a5805737c378c21f381d0c82b9">compute</a> (self, inputs, outputs)</td></tr>
 <tr class="separator:abe7a49a5805737c378c21f381d0c82b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a945be9a25912389680cb04de01f59540"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamMesh.html#a945be9a25912389680cb04de01f59540">compute_jacvec_product</a> (self, inputs, d_inputs, d_outputs, mode)</td></tr>
@@ -116,13 +118,15 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a962b3b0bc03bca14f76b6f930cf35308"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamMesh.html#a962b3b0bc03bca14f76b6f930cf35308">DASolver</a></td></tr>
 <tr class="separator:a962b3b0bc03bca14f76b6f930cf35308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a231c3a9524c4cace73486f8a08f0af22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamMesh.html#a231c3a9524c4cace73486f8a08f0af22">discipline</a></td></tr>
+<tr class="separator:a231c3a9524c4cace73486f8a08f0af22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a303ea69d96f4410f7d08580abd634174"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamMesh.html#a303ea69d96f4410f7d08580abd634174">x_a0</a></td></tr>
 <tr class="separator:a303ea69d96f4410f7d08580abd634174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">Component to get the partitioned initial surface mesh coordinates
 </pre> 
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l00569">569</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01030">1030</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac56fbc7b556bcd16388c80f8761eb296"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac56fbc7b556bcd16388c80f8761eb296">&#9670;&nbsp;</a></span>initialize()</h2>
@@ -140,9 +144,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l00574">574</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01035">1035</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="mphys__dafoam_8py_source.html#l00022">DAFoamBuilder.options</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01584">PYDAFOAM.options</a>.</p>
+<p class="reference">References <a class="el" href="mphys__dafoam_8py_source.html#l00025">DAFoamBuilder.options</a>, <a class="el" href="pyDAFoam_8py_source.html#l01683">PYDAFOAM.options</a>, and <a class="el" href="pyDAFoam_8py_source.html#l04089">TensorFlowHelper.options</a>.</p>
 
 </div>
 </div>
@@ -162,7 +166,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l00577">577</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01038">1038</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
 
 </div>
 </div>
@@ -182,9 +186,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l00594">594</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01057">1057</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="mphys__dafoam_8py_source.html#l00582">DAFoamMesh.x_a0</a>.</p>
+<p class="reference">References <a class="el" href="mphys__dafoam_8py_source.html#l00162">DAFoamGroup.discipline</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00397">DAFoamPrecouplingGroup.discipline</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00558">DAFoamSolver.discipline</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01011">DAFoamMeshGroup.discipline</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01042">DAFoamMesh.discipline</a>, and <a class="el" href="mphys__dafoam_8py_source.html#l01045">DAFoamMesh.x_a0</a>.</p>
 
 </div>
 </div>
@@ -204,9 +208,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l00602">602</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01068">1068</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="mphys__dafoam_8py_source.html#l00582">DAFoamMesh.x_a0</a>.</p>
+<p class="reference">References <a class="el" href="mphys__dafoam_8py_source.html#l01045">DAFoamMesh.x_a0</a>.</p>
 
 </div>
 </div>
@@ -236,9 +240,41 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l00605">605</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01071">1071</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="mphys__dafoam_8py_source.html#l00063">DAFoamBuilder.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00129">DAFoamGroup.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00203">DAFoamSolver.DASolver</a>, and <a class="el" href="mphys__dafoam_8py_source.html#l00579">DAFoamMesh.DASolver</a>.</p>
+<p class="reference">References <a class="el" href="mphys__dafoam_8py_source.html#l00078">DAFoamBuilder.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00156">DAFoamGroup.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00394">DAFoamPrecouplingGroup.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00515">DAFoamPostcouplingGroup.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00553">DAFoamSolver.DASolver</a>, and <a class="el" href="mphys__dafoam_8py_source.html#l01040">DAFoamMesh.DASolver</a>.</p>
+
+</div>
+</div>
+<a id="aaf00dcd7f08b5debc6fa3886efc4d7ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf00dcd7f08b5debc6fa3886efc4d7ed">&#9670;&nbsp;</a></span>mphys_get_surface_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def mphys_get_surface_size </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>groupName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01077">1077</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+
+<p class="reference">References <a class="el" href="mphys__dafoam_8py_source.html#l00078">DAFoamBuilder.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00156">DAFoamGroup.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00394">DAFoamPrecouplingGroup.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00515">DAFoamPostcouplingGroup.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00553">DAFoamSolver.DASolver</a>, and <a class="el" href="mphys__dafoam_8py_source.html#l01040">DAFoamMesh.DASolver</a>.</p>
 
 </div>
 </div>
@@ -274,9 +310,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l00611">611</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01080">1080</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="mphys__dafoam_8py_source.html#l00582">DAFoamMesh.x_a0</a>.</p>
+<p class="reference">References <a class="el" href="mphys__dafoam_8py_source.html#l00162">DAFoamGroup.discipline</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00397">DAFoamPrecouplingGroup.discipline</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00558">DAFoamSolver.discipline</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01011">DAFoamMeshGroup.discipline</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01042">DAFoamMesh.discipline</a>, and <a class="el" href="mphys__dafoam_8py_source.html#l01045">DAFoamMesh.x_a0</a>.</p>
 
 </div>
 </div>
@@ -324,7 +360,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l00618">618</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01087">1087</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+
+<p class="reference">References <a class="el" href="mphys__dafoam_8py_source.html#l00162">DAFoamGroup.discipline</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00397">DAFoamPrecouplingGroup.discipline</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00558">DAFoamSolver.discipline</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01011">DAFoamMeshGroup.discipline</a>, and <a class="el" href="mphys__dafoam_8py_source.html#l01042">DAFoamMesh.discipline</a>.</p>
 
 </div>
 </div>
@@ -341,9 +379,27 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l00579">579</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01040">1040</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mphys__dafoam_8py_source.html#l00709">DAFoamFunctions.apply_options()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00718">DAFoamFunctions.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00879">DAFoamWarper.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00929">DAFoamForces.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00979">DAFoamPropForce.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01067">DAFoamFvSource.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00733">DAFoamFunctions.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00893">DAFoamWarper.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00935">DAFoamForces.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01000">DAFoamPropForce.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01088">DAFoamFvSource.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00679">DAFoamFunctions.mphys_add_funcs()</a>, and <a class="el" href="mphys__dafoam_8py_source.html#l00605">DAFoamMesh.mphys_get_triangulated_surface()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mphys__dafoam_8py_source.html#l01191">DAFoamFunctions.apply_options()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01200">DAFoamFunctions.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01385">DAFoamWarper.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01449">DAFoamThermal.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01541">DAFoamFaceCoords.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01595">DAFoamForces.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01658">DAFoamAcoustics.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01835">DAFoamFvSource.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01215">DAFoamFunctions.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01399">DAFoamWarper.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01473">DAFoamThermal.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01551">DAFoamFaceCoords.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01601">DAFoamForces.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01669">DAFoamAcoustics.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01877">DAFoamFvSource.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01161">DAFoamFunctions.mphys_add_funcs()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01077">DAFoamMesh.mphys_get_surface_size()</a>, and <a class="el" href="mphys__dafoam_8py_source.html#l01071">DAFoamMesh.mphys_get_triangulated_surface()</a>.</p>
+
+</div>
+</div>
+<a id="a231c3a9524c4cace73486f8a08f0af22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a231c3a9524c4cace73486f8a08f0af22">&#9670;&nbsp;</a></span>discipline</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">discipline</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01042">1042</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mphys__dafoam_8py_source.html#l01080">DAFoamMesh.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01200">DAFoamFunctions.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01385">DAFoamWarper.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01449">DAFoamThermal.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01541">DAFoamFaceCoords.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01595">DAFoamForces.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01658">DAFoamAcoustics.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01087">DAFoamMesh.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01215">DAFoamFunctions.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01399">DAFoamWarper.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01473">DAFoamThermal.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01551">DAFoamFaceCoords.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01601">DAFoamForces.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01669">DAFoamAcoustics.compute_jacvec_product()</a>, and <a class="el" href="mphys__dafoam_8py_source.html#l01057">DAFoamMesh.mphys_add_coordinate_input()</a>.</p>
 
 </div>
 </div>
@@ -359,9 +415,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l00582">582</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01045">1045</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mphys__dafoam_8py_source.html#l00611">DAFoamMesh.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00594">DAFoamMesh.mphys_add_coordinate_input()</a>, and <a class="el" href="mphys__dafoam_8py_source.html#l00602">DAFoamMesh.mphys_get_surface_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mphys__dafoam_8py_source.html#l01080">DAFoamMesh.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01057">DAFoamMesh.mphys_add_coordinate_input()</a>, and <a class="el" href="mphys__dafoam_8py_source.html#l01068">DAFoamMesh.mphys_get_surface_mesh()</a>.</p>
 
 </div>
 </div>

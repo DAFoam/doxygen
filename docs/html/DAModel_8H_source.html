@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -148,7 +148,7 @@ $(function() {
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="classFoam_1_1DAModel.html">DAModel</a>(</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAOption.html">DAOption</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classFoam_1_1DAModel.html#af48a80824287c228520e70a8a7e3d9d4">~DAModel</a>();</div>
@@ -189,12 +189,12 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassFoam_1_1DAModel_html_acb7f31fc24f75cd3e11915048dd34959"><div class="ttname"><a href="classFoam_1_1DAModel.html#acb7f31fc24f75cd3e11915048dd34959">Foam::DAModel::getTurbProdTerm</a></div><div class="ttdeci">void getTurbProdTerm(scalarList &amp;prodTerm) const</div><div class="ttdoc">return the value of the production term from the turbulence model</div><div class="ttdef"><b>Definition:</b> <a href="DAModel_8C_source.html#l00273">DAModel.C:273</a></div></div>
 <div class="ttc" id="aDAOption_8H_html"><div class="ttname"><a href="DAOption_8H.html">DAOption.H</a></div></div>
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAModel_html_a3891f6f54f45b436988faf46ca15f23b"><div class="ttname"><a href="classFoam_1_1DAModel.html#a3891f6f54f45b436988faf46ca15f23b">Foam::DAModel::correctStateResidualModelCon</a></div><div class="ttdeci">void correctStateResidualModelCon(List&lt; List&lt; word &gt;&gt; &amp;stateCon) const</div><div class="ttdoc">update the original variable connectivity for the adjoint state residuals in stateCon</div><div class="ttdef"><b>Definition:</b> <a href="DAModel_8C_source.html#l00073">DAModel.C:73</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAModel_html_a4b38dbac981107ec6386d78322323535"><div class="ttname"><a href="classFoam_1_1DAModel.html#a4b38dbac981107ec6386d78322323535">Foam::DAModel::calcResiduals</a></div><div class="ttdeci">void calcResiduals(const dictionary &amp;options)</div><div class="ttdoc">calculate the residuals for model state variables</div><div class="ttdef"><b>Definition:</b> <a href="DAModel_8C_source.html#l00200">DAModel.C:200</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html"><div class="ttname"><a href="classFoam_1_1DAOption.html">Foam::DAOption</a></div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8H_source.html#l00029">DAOption.H:29</a></div></div>
 <div class="ttc" id="apyColoringCompressible_2createAdjoint_8H_html_a75fa363c8e8a3229461183017dd17311"><div class="ttname"><a href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a></div><div class="ttdeci">DAOption daOption(mesh, pyOptions_)</div></div>
 <div class="ttc" id="aclassFoam_1_1DAModel_html_af48a80824287c228520e70a8a7e3d9d4"><div class="ttname"><a href="classFoam_1_1DAModel.html#af48a80824287c228520e70a8a7e3d9d4">Foam::DAModel::~DAModel</a></div><div class="ttdeci">virtual ~DAModel()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> <a href="DAModel_8C_source.html#l00029">DAModel.C:29</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAModel_html_af4c2bb10de993ad1332df7bd213bc7ab"><div class="ttname"><a href="classFoam_1_1DAModel.html#af4c2bb10de993ad1332df7bd213bc7ab">Foam::DAModel::addModelResidualCon</a></div><div class="ttdeci">void addModelResidualCon(HashTable&lt; List&lt; List&lt; word &gt;&gt;&gt; &amp;allCon) const</div><div class="ttdoc">add the model residual connectivity to stateCon</div><div class="ttdef"><b>Definition:</b> <a href="DAModel_8C_source.html#l00127">DAModel.C:127</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAModel_html"><div class="ttname"><a href="classFoam_1_1DAModel.html">Foam::DAModel</a></div><div class="ttdef"><b>Definition:</b> <a href="DAModel_8H_source.html#l00059">DAModel.H:59</a></div></div>
 <div class="ttc" id="anamespaceFoam_html"><div class="ttname"><a href="namespaceFoam.html">Foam</a></div><div class="ttdef"><b>Definition:</b> <a href="multiFreqScalarFvPatchField_8C_source.html#l00144">multiFreqScalarFvPatchField.C:144</a></div></div>

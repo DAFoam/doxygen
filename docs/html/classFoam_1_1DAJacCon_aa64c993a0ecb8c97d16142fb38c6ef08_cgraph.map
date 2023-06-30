@@ -1,4 +1,5 @@
 <map id="addBoundaryFaceConnections" name="addBoundaryFaceConnections">
 <area shape="rect" id="node1" title="add the column index of the (iner&#45;proc) connected states and faces to conMat, given a local face inde..." alt="" coords="5,5,223,32"/>
-<area shape="rect" id="node2" href="$classFoam_1_1DAJacCon.html#aa726e30a9a46d3d6dc365e53b485dce3" title="given a local face index, return the local index of the coupled boundary face" alt="" coords="271,5,475,32"/>
+<area shape="rect" id="node2" href="$solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="523,5,580,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAJacCon.html#aa726e30a9a46d3d6dc365e53b485dce3" title="given a local face index, return the local index of the coupled boundary face" alt="" coords="271,31,475,57"/>
 </map>

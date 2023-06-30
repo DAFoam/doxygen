@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -185,12 +185,21 @@ Augmented variables for adjoint residuals</h2></td></tr>
 <tr class="memitem:aba9f9c01ec7a27ed1397df9e2c6d7741"><td class="memItemLeft" align="right" valign="top">volScalarField &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#aba9f9c01ec7a27ed1397df9e2c6d7741">betaFieldInversion_</a></td></tr>
 <tr class="memdesc:aba9f9c01ec7a27ed1397df9e2c6d7741"><td class="mdescLeft">&#160;</td><td class="mdescRight">A beta field multiplying to the production term.  <a href="classFoam_1_1DAkOmegaFieldInversionOmega.html#aba9f9c01ec7a27ed1397df9e2c6d7741">More...</a><br /></td></tr>
 <tr class="separator:aba9f9c01ec7a27ed1397df9e2c6d7741"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a741b0c61e738dbd40e6fc9c3b6cf0159"><td class="memItemLeft" align="right" valign="top">volScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a741b0c61e738dbd40e6fc9c3b6cf0159">betaRefFieldInversion_</a></td></tr>
-<tr class="memdesc:a741b0c61e738dbd40e6fc9c3b6cf0159"><td class="mdescLeft">&#160;</td><td class="mdescRight">a reference beta field  <a href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a741b0c61e738dbd40e6fc9c3b6cf0159">More...</a><br /></td></tr>
-<tr class="separator:a741b0c61e738dbd40e6fc9c3b6cf0159"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a368078477e80dc90087102dea2409f78"><td class="memItemLeft" align="right" valign="top">volVectorField &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a368078477e80dc90087102dea2409f78">varRefFieldInversion_</a></td></tr>
-<tr class="memdesc:a368078477e80dc90087102dea2409f78"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference field (e.g. velocity for DNS)  <a href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a368078477e80dc90087102dea2409f78">More...</a><br /></td></tr>
-<tr class="separator:a368078477e80dc90087102dea2409f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9154b2fe519aa40f57857593386dc2e"><td class="memItemLeft" align="right" valign="top">volScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#ad9154b2fe519aa40f57857593386dc2e">surfaceFriction_</a></td></tr>
+<tr class="memdesc:ad9154b2fe519aa40f57857593386dc2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">a surface friction 'field' when using skin friction data for field inversion  <a href="classFoam_1_1DAkOmegaFieldInversionOmega.html#ad9154b2fe519aa40f57857593386dc2e">More...</a><br /></td></tr>
+<tr class="separator:ad9154b2fe519aa40f57857593386dc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7249e6a39092fd720f1f87b38a98b892"><td class="memItemLeft" align="right" valign="top">volScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a7249e6a39092fd720f1f87b38a98b892">surfaceFrictionData_</a></td></tr>
+<tr class="memdesc:a7249e6a39092fd720f1f87b38a98b892"><td class="mdescLeft">&#160;</td><td class="mdescRight">the reference field for surfaceFriction  <a href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a7249e6a39092fd720f1f87b38a98b892">More...</a><br /></td></tr>
+<tr class="separator:a7249e6a39092fd720f1f87b38a98b892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa2069dcd3031414665e1046951b8c6"><td class="memItemLeft" align="right" valign="top">volScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a0aa2069dcd3031414665e1046951b8c6">pData_</a></td></tr>
+<tr class="memdesc:a0aa2069dcd3031414665e1046951b8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">the reference field for surfacePressure  <a href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a0aa2069dcd3031414665e1046951b8c6">More...</a><br /></td></tr>
+<tr class="separator:a0aa2069dcd3031414665e1046951b8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03576604ffe1a7a3b1906a4b285eb6cf"><td class="memItemLeft" align="right" valign="top">volVectorField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a03576604ffe1a7a3b1906a4b285eb6cf">UData_</a></td></tr>
+<tr class="memdesc:a03576604ffe1a7a3b1906a4b285eb6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference field (e.g. velocity for DNS)  <a href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a03576604ffe1a7a3b1906a4b285eb6cf">More...</a><br /></td></tr>
+<tr class="separator:a03576604ffe1a7a3b1906a4b285eb6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47fe28bd9339b4bf742940c18e925443"><td class="memItemLeft" align="right" valign="top">volScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a47fe28bd9339b4bf742940c18e925443">USingleComponentData_</a></td></tr>
+<tr class="memdesc:a47fe28bd9339b4bf742940c18e925443"><td class="mdescLeft">&#160;</td><td class="mdescRight">the reference pressure field data  <a href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a47fe28bd9339b4bf742940c18e925443">More...</a><br /></td></tr>
+<tr class="separator:a47fe28bd9339b4bf742940c18e925443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7347d210d8f13b518b1ddff5184d92d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#af7347d210d8f13b518b1ddff5184d92d">TypeName</a> (&quot;kOmegaFieldInversionOmega&quot;)</td></tr>
 <tr class="separator:af7347d210d8f13b518b1ddff5184d92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1895c3fce81c24f2f506830df2ac00e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a1895c3fce81c24f2f506830df2ac00e3">DAkOmegaFieldInversionOmega</a> (const word modelType, const fvMesh &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, const <a class="el" href="classFoam_1_1DAOption.html">DAOption</a> &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>)</td></tr>
@@ -295,6 +304,16 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a45a5b7ae829ea8e200332ce6a19e5a1e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adba061b34197deb555c03c4e3ca27ac0 inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#adba061b34197deb555c03c4e3ca27ac0">isPrintTime</a> (const Time &amp;<a class="el" href="coloring_2pyColoringIncompressible_2createFields_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>, const label printInterval) const</td></tr>
 <tr class="separator:adba061b34197deb555c03c4e3ca27ac0 inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a04fbbb317fdd37808530154ffa1e7b inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#a4a04fbbb317fdd37808530154ffa1e7b">invTranProdNuTildaEqn</a> (const volScalarField &amp;mySource, volScalarField &amp;<a class="el" href="pseudoEqns_8H.html#a1b5796585bba4c791f4609d4bbbe8dcb">pseudoNuTilda</a>)</td></tr>
+<tr class="memdesc:a4a04fbbb317fdd37808530154ffa1e7b inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse transpose product, M_nuTilda^(-T)  <a href="classFoam_1_1DATurbulenceModel.html#a4a04fbbb317fdd37808530154ffa1e7b">More...</a><br /></td></tr>
+<tr class="separator:a4a04fbbb317fdd37808530154ffa1e7b inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8074903cad0d57bbefbf8ddcdafbc3 inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#aeb8074903cad0d57bbefbf8ddcdafbc3">constructPseudoNuTildaEqn</a> ()</td></tr>
+<tr class="separator:aeb8074903cad0d57bbefbf8ddcdafbc3 inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e1f74f2d4e8221dabccf266b31f4cc inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#ac9e1f74f2d4e8221dabccf266b31f4cc">rhsSolvePseudoNuTildaEqn</a> (const volScalarField &amp;nuTildaSource)</td></tr>
+<tr class="separator:ac9e1f74f2d4e8221dabccf266b31f4cc inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7caa27588a8f12dbb13b3776ebfc316e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#a7caa27588a8f12dbb13b3776ebfc316e">calcLduResidualTurb</a> (volScalarField &amp;nuTildaRes)</td></tr>
+<tr class="memdesc:a7caa27588a8f12dbb13b3776ebfc316e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate the turbulence residual using LDU matrix  <a href="classFoam_1_1DATurbulenceModel.html#a7caa27588a8f12dbb13b3776ebfc316e">More...</a><br /></td></tr>
+<tr class="separator:a7caa27588a8f12dbb13b3776ebfc316e inherit pub_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classFoam_1_1DATurbulenceModel"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classFoam_1_1DATurbulenceModel')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classFoam_1_1DATurbulenceModel.html">DATurbulenceModel</a></td></tr>
 <tr class="memitem:afc567272043189c3e8a59470135bdab2 inherit pub_static_methods_classFoam_1_1DATurbulenceModel"><td class="memItemLeft" align="right" valign="top">static autoPtr&lt; <a class="el" href="classFoam_1_1DATurbulenceModel.html">DATurbulenceModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1DATurbulenceModel.html#afc567272043189c3e8a59470135bdab2">New</a> (const word modelType, const fvMesh &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>, const <a class="el" href="classFoam_1_1DAOption.html">DAOption</a> &amp;<a class="el" href="pyColoringSolid_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>)</td></tr>
 <tr class="separator:afc567272043189c3e8a59470135bdab2 inherit pub_static_methods_classFoam_1_1DATurbulenceModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -334,17 +353,19 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>field inversion parameters </p>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00041">41</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
 
-<p class="reference">References <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption()</a>, <a class="el" href="createRefsLaplacian_8H_source.html#l00004">mesh</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00093">DAkOmegaFieldInversionOmega::omega_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00103">DAkOmegaFieldInversionOmega::omegaNearWall_</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00109">DAkOmegaFieldInversionOmega::printInterval_</a>.</p>
+<p class="reference">References <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption()</a>, <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, <a class="el" href="createRefsHeatTransfer_8H_source.html#l00004">mesh</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00093">DAkOmegaFieldInversionOmega::omega_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00103">DAkOmegaFieldInversionOmega::omegaNearWall_</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00109">DAkOmegaFieldInversionOmega::printInterval_</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAkOmegaFieldInversionOmega_a1895c3fce81c24f2f506830df2ac00e3_cgraph.png" border="0" usemap="#classFoam_1_1DAkOmegaFieldInversionOmega_a1895c3fce81c24f2f506830df2ac00e3_cgraph" alt=""/></div>
 <map name="classFoam_1_1DAkOmegaFieldInversionOmega_a1895c3fce81c24f2f506830df2ac00e3_cgraph" id="classFoam_1_1DAkOmegaFieldInversionOmega_a1895c3fce81c24f2f506830df2ac00e3_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,240,32"/>
+<area shape="rect" title=" " alt="" coords="5,31,240,57"/>
 <area shape="rect" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311" title=" " alt="" coords="288,5,369,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="300,56,357,83"/>
 </map>
 </div>
 
@@ -373,7 +394,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00133">133</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00140">140</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
 
 </div>
 </div>
@@ -405,7 +426,7 @@ Here is the call graph for this function:</div>
 
 <p class="reference">References <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00058">DAkOmegaFieldInversionOmega::alphaK_</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00262">DATurbulenceModel::nu()</a>, and <a class="el" href="DATurbulenceModel_8H_source.html#l00083">DATurbulenceModel::nut_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00520">DAkOmegaFieldInversionOmega::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00527">DAkOmegaFieldInversionOmega::calcResiduals()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -454,7 +475,7 @@ Here is the caller graph for this function:</div>
 
 <p class="reference">References <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00059">DAkOmegaFieldInversionOmega::alphaOmega_</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00262">DATurbulenceModel::nu()</a>, and <a class="el" href="DATurbulenceModel_8H_source.html#l00083">DATurbulenceModel::nut_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00520">DAkOmegaFieldInversionOmega::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00527">DAkOmegaFieldInversionOmega::calcResiduals()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -522,7 +543,18 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DATurbulenceModel.html#a2d6fa8c2a7c6ca1a3fd7573de3dbc60b">DATurbulenceModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00155">155</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00162">162</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
+
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAkOmegaFieldInversionOmega_a2e4c3f0083fff43100aa6fdef6b94c88_cgraph.png" border="0" usemap="#classFoam_1_1DAkOmegaFieldInversionOmega_a2e4c3f0083fff43100aa6fdef6b94c88_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAkOmegaFieldInversionOmega_a2e4c3f0083fff43100aa6fdef6b94c88_cgraph" id="classFoam_1_1DAkOmegaFieldInversionOmega_a2e4c3f0083fff43100aa6fdef6b94c88_cgraph">
+<area shape="rect" title="update the turbulence state for DAStateInfo::regStates_" alt="" coords="5,5,153,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="201,5,259,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -553,11 +585,11 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DATurbulenceModel.html#a9c4c709ed37715b872b8011bd1ead80c">DATurbulenceModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00191">191</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00198">198</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DATurbulenceModel_8C_source.html#l00206">DATurbulenceModel::correctAlphat()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00095">DAkOmegaFieldInversionOmega::k_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00083">DATurbulenceModel::nut_</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00093">DAkOmegaFieldInversionOmega::omega_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00520">DAkOmegaFieldInversionOmega::calcResiduals()</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00298">DAkOmegaFieldInversionOmega::updateIntermediateVariables()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00527">DAkOmegaFieldInversionOmega::calcResiduals()</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00305">DAkOmegaFieldInversionOmega::updateIntermediateVariables()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -607,7 +639,7 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DATurbulenceModel.html#ac5cf193857b59c2fcaa472ac06847a0d">DATurbulenceModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00209">209</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00216">216</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00095">DAkOmegaFieldInversionOmega::k_</a>.</p>
 
@@ -640,9 +672,9 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DATurbulenceModel.html#a207d7ee6903c709a6306dd883239028b">DATurbulenceModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00298">298</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00305">305</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00191">DAkOmegaFieldInversionOmega::correctNut()</a>.</p>
+<p class="reference">References <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00198">DAkOmegaFieldInversionOmega::correctNut()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -683,7 +715,18 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DATurbulenceModel.html#a0878ae196c9a0dcc497b0e0da7c7af62">DATurbulenceModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00309">309</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00316">316</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
+
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAkOmegaFieldInversionOmega_a3891f6f54f45b436988faf46ca15f23b_cgraph.png" border="0" usemap="#classFoam_1_1DAkOmegaFieldInversionOmega_a3891f6f54f45b436988faf46ca15f23b_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAkOmegaFieldInversionOmega_a3891f6f54f45b436988faf46ca15f23b_cgraph" id="classFoam_1_1DAkOmegaFieldInversionOmega_a3891f6f54f45b436988faf46ca15f23b_cgraph">
+<area shape="rect" title="update the original variable connectivity for the adjoint state residuals in stateCon" alt="" coords="5,5,228,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="276,5,333,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -715,7 +758,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DATurbulenceModel.html#a582cd36c7470ee61350f126866919b45">DATurbulenceModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00408">408</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00415">415</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
 
 <p class="reference">References <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>.</p>
 
@@ -749,17 +792,17 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DATurbulenceModel.html#a5f3483c6db30769568050588ede0ca87">DATurbulenceModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00520">520</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00527">527</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DATurbulenceModel_8H_source.html#l00080">DATurbulenceModel::allOptions_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00056">DAkOmegaFieldInversionOmega::beta_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00112">DAkOmegaFieldInversionOmega::betaFieldInversion_</a>, <a class="el" href="DAUtility_8C_source.html#l00419">DAUtility::boundVar()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00055">DAkOmegaFieldInversionOmega::Cmu_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00191">DAkOmegaFieldInversionOmega::correctNut()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00221">DAkOmegaFieldInversionOmega::correctOmegaBoundaryConditions()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00065">DAkOmegaFieldInversionOmega::DkEff()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00078">DAkOmegaFieldInversionOmega::DomegaEff()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00057">DAkOmegaFieldInversionOmega::gamma_</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00464">DATurbulenceModel::isPrintTime()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00095">DAkOmegaFieldInversionOmega::k_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00096">DAkOmegaFieldInversionOmega::kRes_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00028">normalizeResiduals</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00083">DATurbulenceModel::nut_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00093">DAkOmegaFieldInversionOmega::omega_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00094">DAkOmegaFieldInversionOmega::omegaRes_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00092">DATurbulenceModel::phase_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00095">DATurbulenceModel::phaseRhoPhi_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00089">DATurbulenceModel::phi_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00109">DAkOmegaFieldInversionOmega::printInterval_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00272">DAkOmegaFieldInversionOmega::setOmegaNearWall()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00106">DAkOmegaFieldInversionOmega::solveTurbState_</a>, and <a class="el" href="DATurbulenceModel_8H_source.html#l00086">DATurbulenceModel::U_</a>.</p>
+<p class="reference">References <a class="el" href="DATurbulenceModel_8H_source.html#l00080">DATurbulenceModel::allOptions_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00056">DAkOmegaFieldInversionOmega::beta_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00112">DAkOmegaFieldInversionOmega::betaFieldInversion_</a>, <a class="el" href="DAUtility_8C_source.html#l00419">DAUtility::boundVar()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00055">DAkOmegaFieldInversionOmega::Cmu_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00198">DAkOmegaFieldInversionOmega::correctNut()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00228">DAkOmegaFieldInversionOmega::correctOmegaBoundaryConditions()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00065">DAkOmegaFieldInversionOmega::DkEff()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00078">DAkOmegaFieldInversionOmega::DomegaEff()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00057">DAkOmegaFieldInversionOmega::gamma_</a>, <a class="el" href="DATurbulenceModel_8C_source.html#l00464">DATurbulenceModel::isPrintTime()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00095">DAkOmegaFieldInversionOmega::k_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00096">DAkOmegaFieldInversionOmega::kRes_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00028">normalizeResiduals</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00083">DATurbulenceModel::nut_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00093">DAkOmegaFieldInversionOmega::omega_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00094">DAkOmegaFieldInversionOmega::omegaRes_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00092">DATurbulenceModel::phase_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00095">DATurbulenceModel::phaseRhoPhi_</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00089">DATurbulenceModel::phi_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00109">DAkOmegaFieldInversionOmega::printInterval_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00279">DAkOmegaFieldInversionOmega::setOmegaNearWall()</a>, <a class="el" href="solvePseudoPEqn_8H.html#ae6958b9677b193eb5a911af0345fb4ee">solve()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00106">DAkOmegaFieldInversionOmega::solveTurbState_</a>, and <a class="el" href="DATurbulenceModel_8H_source.html#l00086">DATurbulenceModel::U_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00500">DAkOmegaFieldInversionOmega::correct()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00507">DAkOmegaFieldInversionOmega::correct()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAkOmegaFieldInversionOmega_a4b38dbac981107ec6386d78322323535_cgraph.png" border="0" usemap="#classFoam_1_1DAkOmegaFieldInversionOmega_a4b38dbac981107ec6386d78322323535_cgraph" alt=""/></div>
 <map name="classFoam_1_1DAkOmegaFieldInversionOmega_a4b38dbac981107ec6386d78322323535_cgraph" id="classFoam_1_1DAkOmegaFieldInversionOmega_a4b38dbac981107ec6386d78322323535_cgraph">
-<area shape="rect" title="compute the turbulence residuals" alt="" coords="5,157,116,184"/>
+<area shape="rect" title="compute the turbulence residuals" alt="" coords="5,183,116,209"/>
 <area shape="rect" href="classFoam_1_1DAUtility.html#a33a755d4b9029ec00bb1969fc0a193e3" title="bound a volScalar variable based on parametes defined in DAOption::allOptions_" alt="" coords="190,5,383,32"/>
 <area shape="rect" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#aaffe89433f18f1ee4137486e19219448" title="update nut based on other turbulence variables and update the BCs" alt="" coords="241,56,332,83"/>
 <area shape="rect" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a636790623e3921c65f47923b9a21e512" title="specially treatment to correct epsilon BC" alt="" coords="164,107,409,133"/>
@@ -767,6 +810,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a1faa4b448524c4de622637dc51aa4a30" title=" " alt="" coords="258,208,315,235"/>
 <area shape="rect" href="classFoam_1_1DAkOmegaFieldInversionOmega.html#a20a2301c30b9c071889b1e33f40723d1" title=" " alt="" coords="239,259,334,285"/>
 <area shape="rect" href="classFoam_1_1DATurbulenceModel.html#adba061b34197deb555c03c4e3ca27ac0" title=" " alt="" coords="189,310,384,351"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ae6958b9677b193eb5a911af0345fb4ee" title=" " alt="" coords="258,376,315,403"/>
 </map>
 </div>
 <div class="dynheader">
@@ -808,9 +852,9 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classFoam_1_1DATurbulenceModel.html#a7e204aa62fa1c1f527e8f1c62dc62061">DATurbulenceModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00500">500</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00507">507</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00520">DAkOmegaFieldInversionOmega::calcResiduals()</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00106">DAkOmegaFieldInversionOmega::solveTurbState_</a>.</p>
+<p class="reference">References <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00527">DAkOmegaFieldInversionOmega::calcResiduals()</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00106">DAkOmegaFieldInversionOmega::solveTurbState_</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -840,11 +884,20 @@ Here is the call graph for this function:</div>
 
 <p>save near wall omega values to omegaNearWall_ </p>
 
-<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00248">248</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00255">255</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00093">DAkOmegaFieldInversionOmega::omega_</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00103">DAkOmegaFieldInversionOmega::omegaNearWall_</a>.</p>
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00093">DAkOmegaFieldInversionOmega::omega_</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00103">DAkOmegaFieldInversionOmega::omegaNearWall_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00221">DAkOmegaFieldInversionOmega::correctOmegaBoundaryConditions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00228">DAkOmegaFieldInversionOmega::correctOmegaBoundaryConditions()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAkOmegaFieldInversionOmega_a0d0a248baa9dcea7ca4626c497a61def_cgraph.png" border="0" usemap="#classFoam_1_1DAkOmegaFieldInversionOmega_a0d0a248baa9dcea7ca4626c497a61def_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAkOmegaFieldInversionOmega_a0d0a248baa9dcea7ca4626c497a61def_cgraph" id="classFoam_1_1DAkOmegaFieldInversionOmega_a0d0a248baa9dcea7ca4626c497a61def_cgraph">
+<area shape="rect" title="save near wall omega values to omegaNearWall_" alt="" coords="5,5,164,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="212,5,269,32"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -874,11 +927,20 @@ Here is the caller graph for this function:</div>
 
 <p>set omegaNearWall_ to near wall omega values </p>
 
-<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00272">272</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00279">279</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00093">DAkOmegaFieldInversionOmega::omega_</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00103">DAkOmegaFieldInversionOmega::omegaNearWall_</a>.</p>
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, <a class="el" href="DATurbulenceModel_8H_source.html#l00074">DATurbulenceModel::mesh_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00093">DAkOmegaFieldInversionOmega::omega_</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00103">DAkOmegaFieldInversionOmega::omegaNearWall_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00520">DAkOmegaFieldInversionOmega::calcResiduals()</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00221">DAkOmegaFieldInversionOmega::correctOmegaBoundaryConditions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00527">DAkOmegaFieldInversionOmega::calcResiduals()</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00228">DAkOmegaFieldInversionOmega::correctOmegaBoundaryConditions()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAkOmegaFieldInversionOmega_a7b80937e7907094acf3a9e07947c205f_cgraph.png" border="0" usemap="#classFoam_1_1DAkOmegaFieldInversionOmega_a7b80937e7907094acf3a9e07947c205f_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAkOmegaFieldInversionOmega_a7b80937e7907094acf3a9e07947c205f_cgraph" id="classFoam_1_1DAkOmegaFieldInversionOmega_a7b80937e7907094acf3a9e07947c205f_cgraph">
+<area shape="rect" title="set omegaNearWall_ to near wall omega values" alt="" coords="5,5,153,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="201,5,259,32"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -909,11 +971,11 @@ Here is the caller graph for this function:</div>
 
 <p>specially treatment to correct epsilon BC </p>
 
-<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00221">221</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00228">228</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html">DAkOmegaFieldInversionOmega.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00093">DAkOmegaFieldInversionOmega::omega_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00248">DAkOmegaFieldInversionOmega::saveOmegaNearWall()</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00272">DAkOmegaFieldInversionOmega::setOmegaNearWall()</a>.</p>
+<p class="reference">References <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00093">DAkOmegaFieldInversionOmega::omega_</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00255">DAkOmegaFieldInversionOmega::saveOmegaNearWall()</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00279">DAkOmegaFieldInversionOmega::setOmegaNearWall()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00520">DAkOmegaFieldInversionOmega::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00527">DAkOmegaFieldInversionOmega::calcResiduals()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -959,7 +1021,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00055">55</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00520">DAkOmegaFieldInversionOmega::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00527">DAkOmegaFieldInversionOmega::calcResiduals()</a>.</p>
 
 </div>
 </div>
@@ -985,7 +1047,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00056">56</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00520">DAkOmegaFieldInversionOmega::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00527">DAkOmegaFieldInversionOmega::calcResiduals()</a>.</p>
 
 </div>
 </div>
@@ -1011,7 +1073,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00057">57</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00520">DAkOmegaFieldInversionOmega::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00527">DAkOmegaFieldInversionOmega::calcResiduals()</a>.</p>
 
 </div>
 </div>
@@ -1089,7 +1151,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00093">93</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00520">DAkOmegaFieldInversionOmega::calcResiduals()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00191">DAkOmegaFieldInversionOmega::correctNut()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00221">DAkOmegaFieldInversionOmega::correctOmegaBoundaryConditions()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00041">DAkOmegaFieldInversionOmega::DAkOmegaFieldInversionOmega()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00248">DAkOmegaFieldInversionOmega::saveOmegaNearWall()</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00272">DAkOmegaFieldInversionOmega::setOmegaNearWall()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00527">DAkOmegaFieldInversionOmega::calcResiduals()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00198">DAkOmegaFieldInversionOmega::correctNut()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00228">DAkOmegaFieldInversionOmega::correctOmegaBoundaryConditions()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00041">DAkOmegaFieldInversionOmega::DAkOmegaFieldInversionOmega()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00255">DAkOmegaFieldInversionOmega::saveOmegaNearWall()</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00279">DAkOmegaFieldInversionOmega::setOmegaNearWall()</a>.</p>
 
 </div>
 </div>
@@ -1115,7 +1177,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00094">94</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00520">DAkOmegaFieldInversionOmega::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00527">DAkOmegaFieldInversionOmega::calcResiduals()</a>.</p>
 
 </div>
 </div>
@@ -1141,7 +1203,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00095">95</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00520">DAkOmegaFieldInversionOmega::calcResiduals()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00209">DAkOmegaFieldInversionOmega::correctBoundaryConditions()</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00191">DAkOmegaFieldInversionOmega::correctNut()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00527">DAkOmegaFieldInversionOmega::calcResiduals()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00216">DAkOmegaFieldInversionOmega::correctBoundaryConditions()</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00198">DAkOmegaFieldInversionOmega::correctNut()</a>.</p>
 
 </div>
 </div>
@@ -1167,7 +1229,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00096">96</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00520">DAkOmegaFieldInversionOmega::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00527">DAkOmegaFieldInversionOmega::calcResiduals()</a>.</p>
 
 </div>
 </div>
@@ -1194,7 +1256,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00103">103</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00041">DAkOmegaFieldInversionOmega::DAkOmegaFieldInversionOmega()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00248">DAkOmegaFieldInversionOmega::saveOmegaNearWall()</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00272">DAkOmegaFieldInversionOmega::setOmegaNearWall()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00041">DAkOmegaFieldInversionOmega::DAkOmegaFieldInversionOmega()</a>, <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00255">DAkOmegaFieldInversionOmega::saveOmegaNearWall()</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00279">DAkOmegaFieldInversionOmega::setOmegaNearWall()</a>.</p>
 
 </div>
 </div>
@@ -1222,7 +1284,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00106">106</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00520">DAkOmegaFieldInversionOmega::calcResiduals()</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00500">DAkOmegaFieldInversionOmega::correct()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00527">DAkOmegaFieldInversionOmega::calcResiduals()</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00507">DAkOmegaFieldInversionOmega::correct()</a>.</p>
 
 </div>
 </div>
@@ -1250,7 +1312,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00109">109</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00520">DAkOmegaFieldInversionOmega::calcResiduals()</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00041">DAkOmegaFieldInversionOmega::DAkOmegaFieldInversionOmega()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00527">DAkOmegaFieldInversionOmega::calcResiduals()</a>, and <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00041">DAkOmegaFieldInversionOmega::DAkOmegaFieldInversionOmega()</a>.</p>
 
 </div>
 </div>
@@ -1278,12 +1340,12 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00112">112</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00520">DAkOmegaFieldInversionOmega::calcResiduals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DAkOmegaFieldInversionOmega_8C_source.html#l00527">DAkOmegaFieldInversionOmega::calcResiduals()</a>.</p>
 
 </div>
 </div>
-<a id="a741b0c61e738dbd40e6fc9c3b6cf0159"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a741b0c61e738dbd40e6fc9c3b6cf0159">&#9670;&nbsp;</a></span>betaRefFieldInversion_</h2>
+<a id="ad9154b2fe519aa40f57857593386dc2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9154b2fe519aa40f57857593386dc2e">&#9670;&nbsp;</a></span>surfaceFriction_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1292,7 +1354,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">volScalarField betaRefFieldInversion_</td>
+          <td class="memname">volScalarField surfaceFriction_</td>
         </tr>
       </table>
   </td>
@@ -1302,14 +1364,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>a reference beta field </p>
+<p>a surface friction 'field' when using skin friction data for field inversion </p>
 
 <p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00115">115</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
 
 </div>
 </div>
-<a id="a368078477e80dc90087102dea2409f78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a368078477e80dc90087102dea2409f78">&#9670;&nbsp;</a></span>varRefFieldInversion_</h2>
+<a id="a7249e6a39092fd720f1f87b38a98b892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7249e6a39092fd720f1f87b38a98b892">&#9670;&nbsp;</a></span>surfaceFrictionData_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1318,7 +1380,59 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">volVectorField&amp; varRefFieldInversion_</td>
+          <td class="memname">volScalarField surfaceFrictionData_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>the reference field for surfaceFriction </p>
+
+<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00118">118</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
+
+</div>
+</div>
+<a id="a0aa2069dcd3031414665e1046951b8c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aa2069dcd3031414665e1046951b8c6">&#9670;&nbsp;</a></span>pData_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volScalarField pData_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>the reference field for surfacePressure </p>
+
+<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00121">121</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
+
+</div>
+</div>
+<a id="a03576604ffe1a7a3b1906a4b285eb6cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03576604ffe1a7a3b1906a4b285eb6cf">&#9670;&nbsp;</a></span>UData_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volVectorField UData_</td>
         </tr>
       </table>
   </td>
@@ -1330,7 +1444,33 @@ Here is the caller graph for this function:</div>
 
 <p>reference field (e.g. velocity for DNS) </p>
 
-<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00118">118</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00124">124</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
+
+</div>
+</div>
+<a id="a47fe28bd9339b4bf742940c18e925443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47fe28bd9339b4bf742940c18e925443">&#9670;&nbsp;</a></span>USingleComponentData_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volScalarField USingleComponentData_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>the reference pressure field data </p>
+
+<p class="definition">Definition at line <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html#l00127">127</a> of file <a class="el" href="DAkOmegaFieldInversionOmega_8H_source.html">DAkOmegaFieldInversionOmega.H</a>.</p>
 
 </div>
 </div>

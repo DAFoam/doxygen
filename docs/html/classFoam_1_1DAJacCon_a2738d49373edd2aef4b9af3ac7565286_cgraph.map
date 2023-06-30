@@ -1,4 +1,5 @@
 <map id="addConMatNeighbourCells" name="addConMatNeighbourCells">
-<area shape="rect" id="node1" title="add val to gRow row in conMat, column indice are the neighbouring states (given by stateName) for a g..." alt="" coords="5,13,200,39"/>
-<area shape="rect" id="node2" href="$classFoam_1_1DAIndex.html#a06a1fcb98ee5f377d70e1d04b0e5dd61" title="get global adjoint index for a given state name, cell/face indxI and its component (optional,..." alt="" coords="248,5,440,47"/>
+<area shape="rect" id="node1" title="add val to gRow row in conMat, column indice are the neighbouring states (given by stateName) for a g..." alt="" coords="5,35,200,61"/>
+<area shape="rect" id="node2" href="$solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="315,5,373,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAIndex.html#a06a1fcb98ee5f377d70e1d04b0e5dd61" title="get global adjoint index for a given state name, cell/face indxI and its component (optional,..." alt="" coords="248,57,440,98"/>
 </map>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -92,8 +92,8 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">const</span> Time&amp; runTime1,</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">const</span> fvMesh&amp; mesh1)</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    : daOption_(<a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>),</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>(runTime1),</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>(mesh1),</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="createRefsHeatTransfer_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>(runTime1),</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>(mesh1),</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      surfWriter(nullptr),</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      setWriter(nullptr)</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
@@ -160,15 +160,15 @@ $(function() {
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">// ************************************************************************* //</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html"><div class="ttname"><a href="classFoam_1_1DAOption.html">Foam::DAOption</a></div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8H_source.html#l00029">DAOption.H:29</a></div></div>
 <div class="ttc" id="aDACheckMesh_8H_html"><div class="ttname"><a href="DACheckMesh_8H.html">DACheckMesh.H</a></div></div>
 <div class="ttc" id="apyColoringCompressible_2createAdjoint_8H_html_a75fa363c8e8a3229461183017dd17311"><div class="ttname"><a href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a></div><div class="ttdeci">DAOption daOption(mesh, pyOptions_)</div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html_a04e1a06e3ade0e60b8e3a82ad37be74c"><div class="ttname"><a href="classFoam_1_1DAOption.html#a04e1a06e3ade0e60b8e3a82ad37be74c">Foam::DAOption::getSubDictOption</a></div><div class="ttdeci">classType getSubDictOption(const word subDict, const word subDictKey) const</div><div class="ttdoc">get an dictionary option from subDict and key</div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8H_source.html#l00165">DAOption.H:165</a></div></div>
 <div class="ttc" id="anamespaceFoam_html"><div class="ttname"><a href="namespaceFoam.html">Foam</a></div><div class="ttdef"><b>Definition:</b> <a href="multiFreqScalarFvPatchField_8C_source.html#l00144">multiFreqScalarFvPatchField.C:144</a></div></div>
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a4ee421b6994388e6fb4dceac82ea187c"><div class="ttname"><a href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a></div><div class="ttdeci">Time &amp; runTime</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00001">createRefsLaplacian.H:1</a></div></div>
 <div class="ttc" id="anamespaceFoam_html_a11e4b25d100e8e0099917a7555191692"><div class="ttname"><a href="namespaceFoam.html#a11e4b25d100e8e0099917a7555191692">Foam::checkGeometry</a></div><div class="ttdeci">label checkGeometry(const polyMesh &amp;mesh, const autoPtr&lt; surfaceWriter &gt; &amp;surfWriter, const autoPtr&lt; writer&lt; scalar &gt;&gt; &amp;setWriter, const label maxIncorrectlyOrientedFaces)</div><div class="ttdoc">check mesh quality</div><div class="ttdef"><b>Definition:</b> <a href="checkGeometry_8C_source.html#l00233">checkGeometry.C:233</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DACheckMesh_html_a88c8a058b6a2c1b01501aee1fc75bafe"><div class="ttname"><a href="classFoam_1_1DACheckMesh.html#a88c8a058b6a2c1b01501aee1fc75bafe">Foam::DACheckMesh::~DACheckMesh</a></div><div class="ttdeci">virtual ~DACheckMesh()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> <a href="DACheckMesh_8C_source.html#l00048">DACheckMesh.C:48</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a4ee421b6994388e6fb4dceac82ea187c"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a></div><div class="ttdeci">Time &amp; runTime</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00001">createRefsHeatTransfer.H:1</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DACheckMesh_html_a8b9eb0de7bb3319feb4f022327058f19"><div class="ttname"><a href="classFoam_1_1DACheckMesh.html#a8b9eb0de7bb3319feb4f022327058f19">Foam::DACheckMesh::run</a></div><div class="ttdeci">label run() const</div><div class="ttdoc">run meshCheck and return meshOK</div><div class="ttdef"><b>Definition:</b> <a href="DACheckMesh_8C_source.html#l00052">DACheckMesh.C:52</a></div></div>
 <!-- HTML footer for doxygen 1.8.11-->
 <!-- start footer part -->

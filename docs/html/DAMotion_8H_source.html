@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -124,24 +124,24 @@ $(function() {
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="classFoam_1_1DAMotion.html">DAMotion</a>,</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        dictionary,</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        (</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keyword">const</span> dynamicFvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keyword">const</span> dynamicFvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAOption.html">DAOption</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>),</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        (</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>));</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Constructors</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//- Construct from components</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classFoam_1_1DAMotion.html">DAMotion</a>(</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">const</span> dynamicFvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">const</span> dynamicFvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAOption.html">DAOption</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// Selectors</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//- Return a reference to the selected model</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">static</span> autoPtr&lt;DAMotion&gt; <a class="code" href="classFoam_1_1DAMotion.html#a312e9a86827856e5e725afbaecd7edbc">New</a>(</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">const</span> dynamicFvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">const</span> dynamicFvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAOption.html">DAOption</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//- Destructor</span></div>
@@ -151,7 +151,7 @@ $(function() {
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classFoam_1_1DAMotion.html#a7e204aa62fa1c1f527e8f1c62dc62061">correct</a>() = 0;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    vector <a class="code" href="classFoam_1_1DAMotion.html#a5bf634bf343565966ea099833a22b97a">getForce</a>(<span class="keyword">const</span> dynamicFvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    vector <a class="code" href="classFoam_1_1DAMotion.html#a5bf634bf343565966ea099833a22b97a">getForce</a>(<span class="keyword">const</span> dynamicFvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //</span></div>
@@ -165,7 +165,6 @@ $(function() {
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">// ************************************************************************* //</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aDAOption_8H_html"><div class="ttname"><a href="DAOption_8H.html">DAOption.H</a></div></div>
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAMotion_html_a070f8039bf48a53c04b5b2d24749008f"><div class="ttname"><a href="classFoam_1_1DAMotion.html#a070f8039bf48a53c04b5b2d24749008f">Foam::DAMotion::mesh_</a></div><div class="ttdeci">const dynamicFvMesh &amp; mesh_</div><div class="ttdoc">fvMesh</div><div class="ttdef"><b>Definition:</b> <a href="DAMotion_8H_source.html#l00041">DAMotion.H:41</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAOption_html"><div class="ttname"><a href="classFoam_1_1DAOption.html">Foam::DAOption</a></div><div class="ttdef"><b>Definition:</b> <a href="DAOption_8H_source.html#l00029">DAOption.H:29</a></div></div>
 <div class="ttc" id="apyColoringCompressible_2createAdjoint_8H_html_a75fa363c8e8a3229461183017dd17311"><div class="ttname"><a href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a></div><div class="ttdeci">DAOption daOption(mesh, pyOptions_)</div></div>
@@ -173,6 +172,7 @@ $(function() {
 <div class="ttc" id="aclassFoam_1_1DAMotion_html_a312e9a86827856e5e725afbaecd7edbc"><div class="ttname"><a href="classFoam_1_1DAMotion.html#a312e9a86827856e5e725afbaecd7edbc">Foam::DAMotion::New</a></div><div class="ttdeci">static autoPtr&lt; DAMotion &gt; New(const dynamicFvMesh &amp;mesh, const DAOption &amp;daOption)</div><div class="ttdef"><b>Definition:</b> <a href="DAMotion_8C_source.html#l00032">DAMotion.C:32</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAMotion_html_a807bf71abc1e195369a402a601a3a9a4"><div class="ttname"><a href="classFoam_1_1DAMotion.html#a807bf71abc1e195369a402a601a3a9a4">Foam::DAMotion::daOption_</a></div><div class="ttdeci">const DAOption &amp; daOption_</div><div class="ttdoc">DAOption object.</div><div class="ttdef"><b>Definition:</b> <a href="DAMotion_8H_source.html#l00044">DAMotion.H:44</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAMotion_html_a7e204aa62fa1c1f527e8f1c62dc62061"><div class="ttname"><a href="classFoam_1_1DAMotion.html#a7e204aa62fa1c1f527e8f1c62dc62061">Foam::DAMotion::correct</a></div><div class="ttdeci">virtual void correct()=0</div><div class="ttdoc">update the cell displacement</div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAMotion_html_a2e26b9ed7dace52ddf2ce0a2c5f85cf9"><div class="ttname"><a href="classFoam_1_1DAMotion.html#a2e26b9ed7dace52ddf2ce0a2c5f85cf9">Foam::DAMotion::declareRunTimeSelectionTable</a></div><div class="ttdeci">declareRunTimeSelectionTable(autoPtr, DAMotion, dictionary,(const dynamicFvMesh &amp;mesh, const DAOption &amp;daOption),(mesh, daOption))</div></div>
 <div class="ttc" id="aclassFoam_1_1DAMotion_html_a65ff7f3d0db01fa5c600366c6c52d7d2"><div class="ttname"><a href="classFoam_1_1DAMotion.html#a65ff7f3d0db01fa5c600366c6c52d7d2">Foam::DAMotion::patchNames_</a></div><div class="ttdeci">wordList patchNames_</div><div class="ttdoc">patch names for the moving body</div><div class="ttdef"><b>Definition:</b> <a href="DAMotion_8H_source.html#l00047">DAMotion.H:47</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAMotion_html"><div class="ttname"><a href="classFoam_1_1DAMotion.html">Foam::DAMotion</a></div><div class="ttdef"><b>Definition:</b> <a href="DAMotion_8H_source.html#l00029">DAMotion.H:29</a></div></div>

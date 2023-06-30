@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -121,7 +121,7 @@ $(function() {
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classFoam_1_1DAColoring.html">DAColoring</a>(</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAOption.html">DAOption</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>,</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAModel.html">DAModel</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel</a>,</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAIndex.html">DAIndex</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#aa36f358f32c8a00956e7ca31e30c906c">daIndex</a>);</div>
@@ -168,7 +168,6 @@ $(function() {
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">// ************************************************************************* //</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aDAOption_8H_html"><div class="ttname"><a href="DAOption_8H.html">DAOption.H</a></div></div>
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAColoring_html_ad7666e8d64654db3ce2215d113c6b715"><div class="ttname"><a href="classFoam_1_1DAColoring.html#ad7666e8d64654db3ce2215d113c6b715">Foam::DAColoring::~DAColoring</a></div><div class="ttdeci">virtual ~DAColoring()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> <a href="DAColoring_8H_source.html#l00062">DAColoring.H:62</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAColoring_html_a7d024d56257a6d34c00ff904bc9d1072"><div class="ttname"><a href="classFoam_1_1DAColoring.html#a7d024d56257a6d34c00ff904bc9d1072">Foam::DAColoring::daIndex_</a></div><div class="ttdeci">const DAIndex &amp; daIndex_</div><div class="ttdoc">DAIndex object.</div><div class="ttdef"><b>Definition:</b> <a href="DAColoring_8H_source.html#l00051">DAColoring.H:51</a></div></div>
 <div class="ttc" id="aDAIndex_8H_html"><div class="ttname"><a href="DAIndex_8H.html">DAIndex.H</a></div></div>
@@ -183,6 +182,7 @@ $(function() {
 <div class="ttc" id="aclassFoam_1_1DAColoring_html_acd6aa8b9966612ea3cf0d2c0b4e8fb0e"><div class="ttname"><a href="classFoam_1_1DAColoring.html#acd6aa8b9966612ea3cf0d2c0b4e8fb0e">Foam::DAColoring::getMatNonZeros</a></div><div class="ttdeci">void getMatNonZeros(const Mat conMat, label &amp;maxCols, scalar &amp;allNonZeros) const</div><div class="ttdoc">number of non-zero elements in a matrix</div><div class="ttdef"><b>Definition:</b> <a href="DAColoring_8C_source.html#l00786">DAColoring.C:786</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAColoring_html_aadb82906897a2a1e3a485300696c2578"><div class="ttname"><a href="classFoam_1_1DAColoring.html#aadb82906897a2a1e3a485300696c2578">Foam::DAColoring::coloringComplete</a></div><div class="ttdeci">void coloringComplete(const Vec colors, label &amp;colorCounter, label &amp;notColored) const</div><div class="ttdoc">check if there is non-colored columns</div><div class="ttdef"><b>Definition:</b> <a href="DAColoring_8C_source.html#l00881">DAColoring.C:881</a></div></div>
 <div class="ttc" id="aDAModel_8H_html"><div class="ttname"><a href="DAModel_8H.html">DAModel.H</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAIndex_html"><div class="ttname"><a href="classFoam_1_1DAIndex.html">Foam::DAIndex</a></div><div class="ttdef"><b>Definition:</b> <a href="DAIndex_8H_source.html#l00032">DAIndex.H:32</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAModel_html"><div class="ttname"><a href="classFoam_1_1DAModel.html">Foam::DAModel</a></div><div class="ttdef"><b>Definition:</b> <a href="DAModel_8H_source.html#l00059">DAModel.H:59</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DAColoring_html"><div class="ttname"><a href="classFoam_1_1DAColoring.html">Foam::DAColoring</a></div><div class="ttdef"><b>Definition:</b> <a href="DAColoring_8H_source.html#l00032">DAColoring.H:32</a></div></div>

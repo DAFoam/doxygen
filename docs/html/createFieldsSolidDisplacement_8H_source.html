@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -80,11 +80,11 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keyword">new</span> volVectorField(</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        IOobject(</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;            <span class="stringliteral">&quot;D&quot;</span>,</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;            <a class="code" href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>.timeName(),</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;            <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;            <a class="code" href="createRefsHeatTransfer_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>.timeName(),</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;            <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;            IOobject::MUST_READ,</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            IOobject::AUTO_WRITE),</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>));</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>));</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;volVectorField&amp; <a class="code" href="createRefsSolidDisplacement_8H.html#aea3321692cbed88b269264ee9c0066fb">D</a> = DPtr_();</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;Info &lt;&lt; <span class="stringliteral">&quot;Calculating stress field sigmaD\n&quot;</span></div>
@@ -94,8 +94,8 @@ $(function() {
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">new</span> volSymmTensorField(</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        IOobject(</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="stringliteral">&quot;sigmaD&quot;</span>,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <a class="code" href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>.timeName(),</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <a class="code" href="createRefsHeatTransfer_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>.timeName(),</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            IOobject::NO_READ,</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            IOobject::NO_WRITE),</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        muPtr_() * twoSymm(fvc::grad(<a class="code" href="createRefsSolidDisplacement_8H.html#aea3321692cbed88b269264ee9c0066fb">D</a>)) + lambdaPtr_() * (I * tr(fvc::grad(<a class="code" href="createRefsSolidDisplacement_8H.html#aea3321692cbed88b269264ee9c0066fb">D</a>)))));</div>
@@ -106,8 +106,8 @@ $(function() {
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">new</span> volTensorField(</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        IOobject(</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="stringliteral">&quot;gradD&quot;</span>,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>.timeName(),</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="createRefsHeatTransfer_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>.timeName(),</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            IOobject::NO_READ,</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            IOobject::NO_WRITE),</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        fvc::grad(<a class="code" href="createRefsSolidDisplacement_8H.html#aea3321692cbed88b269264ee9c0066fb">D</a>)));</div>
@@ -118,8 +118,8 @@ $(function() {
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">new</span> volVectorField(</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    IOobject(</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="stringliteral">&quot;divSigmaExp&quot;</span>,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>.timeName(),</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="createRefsHeatTransfer_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a>.timeName(),</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        IOobject::NO_READ,</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        IOobject::NO_WRITE),</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    fvc::div(<a class="code" href="createRefsSolidDisplacement_8H.html#ae0e75a2981d60a2c4c7619ff7b20cb1c">sigmaD</a>)));</div>
@@ -134,14 +134,14 @@ $(function() {
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="createRefsSolidDisplacement_8H.html#a3f84ce6315d088bbf8db9fa027e77ca6">divSigmaExp</a> -= fvc::div((2 * muPtr_() + lambdaPtr_()) * fvc::grad(<a class="code" href="createRefsSolidDisplacement_8H.html#aea3321692cbed88b269264ee9c0066fb">D</a>), <span class="stringliteral">&quot;div(sigmaD)&quot;</span>);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.setFluxRequired(<a class="code" href="createRefsSolidDisplacement_8H.html#aea3321692cbed88b269264ee9c0066fb">D</a>.name());</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>.setFluxRequired(<a class="code" href="createRefsSolidDisplacement_8H.html#aea3321692cbed88b269264ee9c0066fb">D</a>.name());</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="acreateRefsSolidDisplacement_8H_html_a3f84ce6315d088bbf8db9fa027e77ca6"><div class="ttname"><a href="createRefsSolidDisplacement_8H.html#a3f84ce6315d088bbf8db9fa027e77ca6">divSigmaExp</a></div><div class="ttdeci">volVectorField &amp; divSigmaExp</div><div class="ttdef"><b>Definition:</b> <a href="createRefsSolidDisplacement_8H_source.html#l00011">createRefsSolidDisplacement.H:11</a></div></div>
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
 <div class="ttc" id="areadMechanicalPropertiesSolidDisplacement_8H_html"><div class="ttname"><a href="readMechanicalPropertiesSolidDisplacement_8H.html">readMechanicalPropertiesSolidDisplacement.H</a></div></div>
 <div class="ttc" id="acreateRefsSolidDisplacement_8H_html_aea3321692cbed88b269264ee9c0066fb"><div class="ttname"><a href="createRefsSolidDisplacement_8H.html#aea3321692cbed88b269264ee9c0066fb">D</a></div><div class="ttdeci">volVectorField &amp; D</div><div class="ttdef"><b>Definition:</b> <a href="createRefsSolidDisplacement_8H_source.html#l00008">createRefsSolidDisplacement.H:8</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="acreateRefsSolidDisplacement_8H_html_ae0e75a2981d60a2c4c7619ff7b20cb1c"><div class="ttname"><a href="createRefsSolidDisplacement_8H.html#ae0e75a2981d60a2c4c7619ff7b20cb1c">sigmaD</a></div><div class="ttdeci">volSymmTensorField &amp; sigmaD</div><div class="ttdef"><b>Definition:</b> <a href="createRefsSolidDisplacement_8H_source.html#l00009">createRefsSolidDisplacement.H:9</a></div></div>
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a4ee421b6994388e6fb4dceac82ea187c"><div class="ttname"><a href="createRefsLaplacian_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a></div><div class="ttdeci">Time &amp; runTime</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00001">createRefsLaplacian.H:1</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a4ee421b6994388e6fb4dceac82ea187c"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a4ee421b6994388e6fb4dceac82ea187c">runTime</a></div><div class="ttdeci">Time &amp; runTime</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00001">createRefsHeatTransfer.H:1</a></div></div>
 <!-- HTML footer for doxygen 1.8.11-->
 <!-- start footer part -->
 <hr class="footer"/>

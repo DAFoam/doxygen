@@ -1,0 +1,11 @@
+<map id="calcdAcousticsdXvAD" name="calcdAcousticsdXvAD">
+<area shape="rect" id="node1" title="compute dAcoudXv" alt="" coords="5,183,168,209"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#aa0d7aa564d2440e2b689b0e747d57927" title="assign the reverse&#45;mode AD input seeds from fBarVec to the acoustic vectors in OpenFOAM" alt="" coords="216,5,423,32"/>
+<area shape="rect" id="node3" href="$solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="471,132,528,159"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#a6d1981a9e77d642c01518822034ef52f" title="compute the positions, normals, areas, and forces of the desired acoustic patches" alt="" coords="230,107,409,133"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DASolver.html#ab2b8a55494e9b1e208efdd908a71d886" title="return the coupling patch list if any scenario is active on couplingInfo dict otherwise return design..." alt="" coords="240,157,399,184"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DASolver.html#a473b52b1518c034864bcd534c299127b" title="return the number of points and faces for MDO patches" alt="" coords="268,208,371,235"/>
+<area shape="rect" id="node7" href="$classFoam_1_1DASolver.html#a97227e39806b61f5ef6107f99d90b0cd" title="register acoustic as the ouptut for referse&#45;mod AD" alt="" coords="220,259,419,285"/>
+<area shape="rect" id="node8" href="$classFoam_1_1DASolver.html#a70bbc5360b9de5931a46681648082387" title="Update the OpenFOAM field values (including both internal and boundary fields) based on the state vec..." alt="" coords="261,309,377,336"/>
+<area shape="rect" id="node9" href="$classFoam_1_1DASolver.html#ad2cd4059650064ffe8599777743e9701" title="Update the OpenFoam mesh point coordinates based on the point vector xvVec." alt="" coords="259,360,379,387"/>
+</map>

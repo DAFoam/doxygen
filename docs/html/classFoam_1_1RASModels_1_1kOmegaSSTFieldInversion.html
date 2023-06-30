@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -136,14 +136,23 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a2166e9ffd139700fb0f21c44414e3545"><td class="memItemLeft" align="right" valign="top">volScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a2166e9ffd139700fb0f21c44414e3545">k_</a></td></tr>
 <tr class="separator:a2166e9ffd139700fb0f21c44414e3545"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9329e1a8006c4b3b7a3be1a4a7a7a4fa"><td class="memItemLeft" align="right" valign="top">volScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a9329e1a8006c4b3b7a3be1a4a7a7a4fa">betaFieldInversion_</a></td></tr>
-<tr class="memdesc:a9329e1a8006c4b3b7a3be1a4a7a7a4fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">beta field that will be multiplied to the omega production term  <a href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a9329e1a8006c4b3b7a3be1a4a7a7a4fa">More...</a><br /></td></tr>
+<tr class="memdesc:a9329e1a8006c4b3b7a3be1a4a7a7a4fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">A beta field multiplying to the production term.  <a href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a9329e1a8006c4b3b7a3be1a4a7a7a4fa">More...</a><br /></td></tr>
 <tr class="separator:a9329e1a8006c4b3b7a3be1a4a7a7a4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a741b0c61e738dbd40e6fc9c3b6cf0159"><td class="memItemLeft" align="right" valign="top">volScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a741b0c61e738dbd40e6fc9c3b6cf0159">betaRefFieldInversion_</a></td></tr>
-<tr class="memdesc:a741b0c61e738dbd40e6fc9c3b6cf0159"><td class="mdescLeft">&#160;</td><td class="mdescRight">the prior beta field, usually 1  <a href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a741b0c61e738dbd40e6fc9c3b6cf0159">More...</a><br /></td></tr>
-<tr class="separator:a741b0c61e738dbd40e6fc9c3b6cf0159"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34e1b72983df6c4d5d1a4b37c60723a9"><td class="memItemLeft" align="right" valign="top">volVectorField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a34e1b72983df6c4d5d1a4b37c60723a9">varRefFieldInversion_</a></td></tr>
-<tr class="memdesc:a34e1b72983df6c4d5d1a4b37c60723a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">the reference velocity field, usually from experiment or higher fidelity sims  <a href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a34e1b72983df6c4d5d1a4b37c60723a9">More...</a><br /></td></tr>
-<tr class="separator:a34e1b72983df6c4d5d1a4b37c60723a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9154b2fe519aa40f57857593386dc2e"><td class="memItemLeft" align="right" valign="top">volScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#ad9154b2fe519aa40f57857593386dc2e">surfaceFriction_</a></td></tr>
+<tr class="memdesc:ad9154b2fe519aa40f57857593386dc2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">a surface friction 'field' when using skin friction data for field inversion  <a href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#ad9154b2fe519aa40f57857593386dc2e">More...</a><br /></td></tr>
+<tr class="separator:ad9154b2fe519aa40f57857593386dc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7249e6a39092fd720f1f87b38a98b892"><td class="memItemLeft" align="right" valign="top">volScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a7249e6a39092fd720f1f87b38a98b892">surfaceFrictionData_</a></td></tr>
+<tr class="memdesc:a7249e6a39092fd720f1f87b38a98b892"><td class="mdescLeft">&#160;</td><td class="mdescRight">the reference field for surfaceFriction  <a href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a7249e6a39092fd720f1f87b38a98b892">More...</a><br /></td></tr>
+<tr class="separator:a7249e6a39092fd720f1f87b38a98b892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa2069dcd3031414665e1046951b8c6"><td class="memItemLeft" align="right" valign="top">volScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a0aa2069dcd3031414665e1046951b8c6">pData_</a></td></tr>
+<tr class="memdesc:a0aa2069dcd3031414665e1046951b8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">the reference field for surfacePressure  <a href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a0aa2069dcd3031414665e1046951b8c6">More...</a><br /></td></tr>
+<tr class="separator:a0aa2069dcd3031414665e1046951b8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03576604ffe1a7a3b1906a4b285eb6cf"><td class="memItemLeft" align="right" valign="top">volVectorField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a03576604ffe1a7a3b1906a4b285eb6cf">UData_</a></td></tr>
+<tr class="memdesc:a03576604ffe1a7a3b1906a4b285eb6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference field (e.g. velocity for DNS)  <a href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a03576604ffe1a7a3b1906a4b285eb6cf">More...</a><br /></td></tr>
+<tr class="separator:a03576604ffe1a7a3b1906a4b285eb6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47fe28bd9339b4bf742940c18e925443"><td class="memItemLeft" align="right" valign="top">volScalarField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a47fe28bd9339b4bf742940c18e925443">USingleComponentData_</a></td></tr>
+<tr class="memdesc:a47fe28bd9339b4bf742940c18e925443"><td class="mdescLeft">&#160;</td><td class="mdescRight">the reference pressure field data  <a href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a47fe28bd9339b4bf742940c18e925443">More...</a><br /></td></tr>
+<tr class="separator:a47fe28bd9339b4bf742940c18e925443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90fbd39fc2752645786d3b9e2b51dd40"><td class="memItemLeft" align="right" valign="top">const volScalarField &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFoam_1_1RASModels_1_1kOmegaSSTFieldInversion.html#a90fbd39fc2752645786d3b9e2b51dd40">y_</a></td></tr>
 <tr class="separator:a90fbd39fc2752645786d3b9e2b51dd40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -166,7 +175,7 @@ class Foam::RASModels::kOmegaSSTFieldInversion&lt; BasicTurbulenceModel &gt;</h3
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8H_source.html#l00067">67</a> of file <a class="el" href="kOmegaSSTFieldInversion_8H_source.html">kOmegaSSTFieldInversion.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8H_source.html#l00075">75</a> of file <a class="el" href="kOmegaSSTFieldInversion_8H_source.html">kOmegaSSTFieldInversion.H</a>.</p>
 
 </div>
 </div>
@@ -182,7 +191,7 @@ class Foam::RASModels::kOmegaSSTFieldInversion&lt; BasicTurbulenceModel &gt;</h3
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8H_source.html#l00068">68</a> of file <a class="el" href="kOmegaSSTFieldInversion_8H_source.html">kOmegaSSTFieldInversion.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8H_source.html#l00076">76</a> of file <a class="el" href="kOmegaSSTFieldInversion_8H_source.html">kOmegaSSTFieldInversion.H</a>.</p>
 
 </div>
 </div>
@@ -198,7 +207,7 @@ class Foam::RASModels::kOmegaSSTFieldInversion&lt; BasicTurbulenceModel &gt;</h3
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8H_source.html#l00069">69</a> of file <a class="el" href="kOmegaSSTFieldInversion_8H_source.html">kOmegaSSTFieldInversion.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8H_source.html#l00077">77</a> of file <a class="el" href="kOmegaSSTFieldInversion_8H_source.html">kOmegaSSTFieldInversion.H</a>.</p>
 
 </div>
 </div>
@@ -292,7 +301,7 @@ class Foam::RASModels::kOmegaSSTFieldInversion&lt; BasicTurbulenceModel &gt;</h3
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8H_source.html#l00088">88</a> of file <a class="el" href="kOmegaSSTFieldInversion_8H_source.html">kOmegaSSTFieldInversion.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8H_source.html#l00096">96</a> of file <a class="el" href="kOmegaSSTFieldInversion_8H_source.html">kOmegaSSTFieldInversion.H</a>.</p>
 
 </div>
 </div>
@@ -359,7 +368,7 @@ class Foam::RASModels::kOmegaSSTFieldInversion&lt; BasicTurbulenceModel &gt;</h3
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8C_source.html#l00096">96</a> of file <a class="el" href="kOmegaSSTFieldInversion_8C_source.html">kOmegaSSTFieldInversion.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8C_source.html#l00130">130</a> of file <a class="el" href="kOmegaSSTFieldInversion_8C_source.html">kOmegaSSTFieldInversion.C</a>.</p>
 
 </div>
 </div>
@@ -383,7 +392,7 @@ class Foam::RASModels::kOmegaSSTFieldInversion&lt; BasicTurbulenceModel &gt;</h3
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8C_source.html#l00103">103</a> of file <a class="el" href="kOmegaSSTFieldInversion_8C_source.html">kOmegaSSTFieldInversion.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8C_source.html#l00137">137</a> of file <a class="el" href="kOmegaSSTFieldInversion_8C_source.html">kOmegaSSTFieldInversion.C</a>.</p>
 
 </div>
 </div>
@@ -407,7 +416,7 @@ class Foam::RASModels::kOmegaSSTFieldInversion&lt; BasicTurbulenceModel &gt;</h3
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8C_source.html#l00109">109</a> of file <a class="el" href="kOmegaSSTFieldInversion_8C_source.html">kOmegaSSTFieldInversion.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8C_source.html#l00143">143</a> of file <a class="el" href="kOmegaSSTFieldInversion_8C_source.html">kOmegaSSTFieldInversion.C</a>.</p>
 
 </div>
 </div>
@@ -431,7 +440,7 @@ class Foam::RASModels::kOmegaSSTFieldInversion&lt; BasicTurbulenceModel &gt;</h3
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8C_source.html#l00115">115</a> of file <a class="el" href="kOmegaSSTFieldInversion_8C_source.html">kOmegaSSTFieldInversion.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8C_source.html#l00149">149</a> of file <a class="el" href="kOmegaSSTFieldInversion_8C_source.html">kOmegaSSTFieldInversion.C</a>.</p>
 
 </div>
 </div>
@@ -506,14 +515,14 @@ class Foam::RASModels::kOmegaSSTFieldInversion&lt; BasicTurbulenceModel &gt;</h3
 </table>
 </div><div class="memdoc">
 
-<p>beta field that will be multiplied to the omega production term </p>
+<p>A beta field multiplying to the production term. </p>
 
 <p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8H_source.html#l00050">50</a> of file <a class="el" href="kOmegaSSTFieldInversion_8H_source.html">kOmegaSSTFieldInversion.H</a>.</p>
 
 </div>
 </div>
-<a id="a741b0c61e738dbd40e6fc9c3b6cf0159"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a741b0c61e738dbd40e6fc9c3b6cf0159">&#9670;&nbsp;</a></span>betaRefFieldInversion_</h2>
+<a id="ad9154b2fe519aa40f57857593386dc2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9154b2fe519aa40f57857593386dc2e">&#9670;&nbsp;</a></span>surfaceFriction_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -522,7 +531,7 @@ class Foam::RASModels::kOmegaSSTFieldInversion&lt; BasicTurbulenceModel &gt;</h3
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">volScalarField betaRefFieldInversion_</td>
+          <td class="memname">volScalarField surfaceFriction_</td>
         </tr>
       </table>
   </td>
@@ -532,14 +541,14 @@ class Foam::RASModels::kOmegaSSTFieldInversion&lt; BasicTurbulenceModel &gt;</h3
 </table>
 </div><div class="memdoc">
 
-<p>the prior beta field, usually 1 </p>
+<p>a surface friction 'field' when using skin friction data for field inversion </p>
 
 <p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8H_source.html#l00053">53</a> of file <a class="el" href="kOmegaSSTFieldInversion_8H_source.html">kOmegaSSTFieldInversion.H</a>.</p>
 
 </div>
 </div>
-<a id="a34e1b72983df6c4d5d1a4b37c60723a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34e1b72983df6c4d5d1a4b37c60723a9">&#9670;&nbsp;</a></span>varRefFieldInversion_</h2>
+<a id="a7249e6a39092fd720f1f87b38a98b892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7249e6a39092fd720f1f87b38a98b892">&#9670;&nbsp;</a></span>surfaceFrictionData_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -548,7 +557,7 @@ class Foam::RASModels::kOmegaSSTFieldInversion&lt; BasicTurbulenceModel &gt;</h3
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">volVectorField varRefFieldInversion_</td>
+          <td class="memname">volScalarField surfaceFrictionData_</td>
         </tr>
       </table>
   </td>
@@ -558,9 +567,87 @@ class Foam::RASModels::kOmegaSSTFieldInversion&lt; BasicTurbulenceModel &gt;</h3
 </table>
 </div><div class="memdoc">
 
-<p>the reference velocity field, usually from experiment or higher fidelity sims </p>
+<p>the reference field for surfaceFriction </p>
 
 <p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8H_source.html#l00056">56</a> of file <a class="el" href="kOmegaSSTFieldInversion_8H_source.html">kOmegaSSTFieldInversion.H</a>.</p>
+
+</div>
+</div>
+<a id="a0aa2069dcd3031414665e1046951b8c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aa2069dcd3031414665e1046951b8c6">&#9670;&nbsp;</a></span>pData_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volScalarField pData_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>the reference field for surfacePressure </p>
+
+<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8H_source.html#l00059">59</a> of file <a class="el" href="kOmegaSSTFieldInversion_8H_source.html">kOmegaSSTFieldInversion.H</a>.</p>
+
+</div>
+</div>
+<a id="a03576604ffe1a7a3b1906a4b285eb6cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03576604ffe1a7a3b1906a4b285eb6cf">&#9670;&nbsp;</a></span>UData_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volVectorField UData_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>reference field (e.g. velocity for DNS) </p>
+
+<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8H_source.html#l00062">62</a> of file <a class="el" href="kOmegaSSTFieldInversion_8H_source.html">kOmegaSSTFieldInversion.H</a>.</p>
+
+</div>
+</div>
+<a id="a47fe28bd9339b4bf742940c18e925443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47fe28bd9339b4bf742940c18e925443">&#9670;&nbsp;</a></span>USingleComponentData_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volScalarField USingleComponentData_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>the reference pressure field data </p>
+
+<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8H_source.html#l00065">65</a> of file <a class="el" href="kOmegaSSTFieldInversion_8H_source.html">kOmegaSSTFieldInversion.H</a>.</p>
 
 </div>
 </div>
@@ -584,7 +671,7 @@ class Foam::RASModels::kOmegaSSTFieldInversion&lt; BasicTurbulenceModel &gt;</h3
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8H_source.html#l00061">61</a> of file <a class="el" href="kOmegaSSTFieldInversion_8H_source.html">kOmegaSSTFieldInversion.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kOmegaSSTFieldInversion_8H_source.html#l00070">70</a> of file <a class="el" href="kOmegaSSTFieldInversion_8H_source.html">kOmegaSSTFieldInversion.H</a>.</p>
 
 </div>
 </div>

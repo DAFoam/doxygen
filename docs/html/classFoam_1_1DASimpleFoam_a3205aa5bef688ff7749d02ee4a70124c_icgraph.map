@@ -1,0 +1,5 @@
+<map id="vec2Fields" name="vec2Fields">
+<area shape="rect" id="node1" title="assign coupled petsc vec to fields or vice versa" alt="" coords="331,31,421,57"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASimpleFoam.html#a15067522a03b22a96661677549c2425b" title=" " alt="" coords="132,5,283,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASimpleFoam.html#ad48fc87d4825c1c5418e98c8ea76de69" title="solve the adjoint equation using the fixed&#45;point iteration method" alt="" coords="5,31,84,57"/>
+</map>

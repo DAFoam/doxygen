@@ -1,0 +1,6 @@
+<map id="DomegaEff" name="DomegaEff">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,100,83"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DAkOmegaSSTFIML.html#a84a3bc9498c8fb66c9f6adab418be6e1" title=" " alt="" coords="148,5,253,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DAkOmegaSSTFIML.html#a312d02f8c5b337f556b9e7388dbffdf9" title=" " alt="" coords="301,56,340,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DATurbulenceModel.html#a8ec0cfa6e40933dad3a642f390950937" title="get the nu field" alt="" coords="388,81,607,108"/>
+</map>

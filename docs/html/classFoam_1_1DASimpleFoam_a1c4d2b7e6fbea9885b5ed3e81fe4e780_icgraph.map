@@ -1,0 +1,4 @@
+<map id="calcLduResiduals" name="calcLduResiduals">
+<area shape="rect" id="node1" title="calculate all the flow residuals except for the turbulence one" alt="" coords="204,5,339,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASimpleFoam.html#a15067522a03b22a96661677549c2425b" title=" " alt="" coords="5,5,156,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="calcAdjointResidual" name="calcAdjointResidual">
+<area shape="rect" id="node1" title=" " alt="" coords="132,5,283,32"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASimpleFoam.html#ad48fc87d4825c1c5418e98c8ea76de69" title="solve the adjoint equation using the fixed&#45;point iteration method" alt="" coords="5,5,84,32"/>
+</map>

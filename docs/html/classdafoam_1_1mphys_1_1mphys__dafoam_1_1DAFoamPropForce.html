@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -68,10 +68,6 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamPropForce-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DAFoamPropForce Class Reference</div>  </div>
 </div><!--header-->
@@ -94,198 +90,95 @@ Collaboration diagram for DAFoamPropForce:</div>
 <area shape="rect" title=" " alt="" coords="5,5,151,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ac56fbc7b556bcd16388c80f8761eb296"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamPropForce.html#ac56fbc7b556bcd16388c80f8761eb296">initialize</a> (self)</td></tr>
-<tr class="separator:ac56fbc7b556bcd16388c80f8761eb296"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade41f93307784822f8bc17e85964d427"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamPropForce.html#ade41f93307784822f8bc17e85964d427">setup</a> (self)</td></tr>
-<tr class="separator:ade41f93307784822f8bc17e85964d427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe7a49a5805737c378c21f381d0c82b9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamPropForce.html#abe7a49a5805737c378c21f381d0c82b9">compute</a> (self, inputs, outputs)</td></tr>
-<tr class="separator:abe7a49a5805737c378c21f381d0c82b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a945be9a25912389680cb04de01f59540"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamPropForce.html#a945be9a25912389680cb04de01f59540">compute_jacvec_product</a> (self, inputs, d_inputs, d_outputs, mode)</td></tr>
-<tr class="separator:a945be9a25912389680cb04de01f59540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a962b3b0bc03bca14f76b6f930cf35308"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamPropForce.html#a962b3b0bc03bca14f76b6f930cf35308">DASolver</a></td></tr>
-<tr class="separator:a962b3b0bc03bca14f76b6f930cf35308"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a0804282e10ae580928ed0839619e87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamPropForce.html#a1a0804282e10ae580928ed0839619e87">nForceSections</a></td></tr>
-<tr class="separator:a1a0804282e10ae580928ed0839619e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">DAFoam component that computes the propeller force and radius profile based on the CFD surface states
+</pre><pre class="fragment">def initialize(self):
+    self.options.declare("solver", recordable=False)
+
+def setup(self):
+
+    self.DASolver = self.options["solver"]
+
+    self.discipline = self.DASolver.getOption("discipline")
+
+    self.add_input("%s_states" % self.discipline, distributed=True, shape_by_conn=True, tags=["mphys_coupling"])
+    self.add_input("%s_vol_coords" % self.discipline, distributed=True, shape_by_conn=True, tags=["mphys_coupling"])
+
+    self.nForceSections = self.DASolver.getOption("wingProp")["nForceSections"]
+    self.add_output("force_profile", distributed=False, shape=3 * self.nForceSections, tags=["mphys_coupling"])
+    self.add_output("radial_location", distributed=False, shape=self.nForceSections, tags=["mphys_coupling"])
+
+def compute(self, inputs, outputs):
+
+    DASolver = self.DASolver
+
+    dafoam_states = inputs["%s_states" % self.discipline]
+    dafoam_xv = inputs["%s_vol_coords" % self.discipline]
+
+    stateVec = DASolver.array2Vec(dafoam_states)
+    xvVec = DASolver.array2Vec(dafoam_xv)
+
+    fProfileVec = PETSc.Vec().createSeq(3 * self.nForceSections, bsize=1, comm=PETSc.COMM_SELF)
+    fProfileVec.zeroEntries()
+
+    sRadiusVec = PETSc.Vec().createSeq(self.nForceSections, bsize=1, comm=PETSc.COMM_SELF)
+    sRadiusVec.zeroEntries()
+
+    DASolver.solver.calcForceProfile(xvVec, stateVec, fProfileVec, sRadiusVec)
+
+    outputs["force_profile"] = DASolver.vec2ArraySeq(fProfileVec)
+    outputs["radial_location"] = DASolver.vec2ArraySeq(sRadiusVec)
+
+def compute_jacvec_product(self, inputs, d_inputs, d_outputs, mode):
+    DASolver = self.DASolver
+
+    dafoam_states = inputs["%s_states" % self.discipline]
+    dafoam_xv = inputs["%s_vol_coords" % self.discipline]
+
+    stateVec = DASolver.array2Vec(dafoam_states)
+    xvVec = DASolver.array2Vec(dafoam_xv)
+
+    if mode == "fwd":
+        raise AnalysisError("fwd not implemented!")
+
+    if "force_profile" in d_outputs:
+        fBar = d_outputs["force_profile"]
+        fBarVec = DASolver.array2VecSeq(fBar)
+
+        if "%s_states" % self.discipline in d_inputs:
+            prodVec = self.DASolver.wVec.duplicate()
+            prodVec.zeroEntries()
+            DASolver.solverAD.calcdForcedStateTPsiAD("dFdW".encode(), xvVec, stateVec, fBarVec, prodVec)
+            pBar = DASolver.vec2Array(prodVec)
+            d_inputs["%s_states" % self.discipline] += pBar
+
+        # xv has no contribution to the force profile
+        if "%s_vol_coords" % self.discipline in d_inputs:
+            prodVec = self.DASolver.xvVec.duplicate()
+            prodVec.zeroEntries()
+            pBar = DASolver.vec2Array(prodVec)
+            d_inputs["%s_vol_coords" % self.discipline] += pBar
+
+    if "radial_location" in d_outputs:
+        rBar = d_outputs["radial_location"]
+        rBarVec = DASolver.array2VecSeq(rBar)
+
+        # states have no effect on the radius
+        if "%s_states" % self.discipline in d_inputs:
+            prodVec = self.DASolver.wVec.duplicate()
+            prodVec.zeroEntries()
+            pBar = DASolver.vec2Array(prodVec)
+            d_inputs["%s_states" % self.discipline] += pBar
+
+        if "%s_vol_coords" % self.discipline in d_inputs:
+            prodVec = self.DASolver.xvVec.duplicate()
+            DASolver.solverAD.calcdForcedStateTPsiAD("dRdX".encode(), xvVec, stateVec, rBarVec, prodVec)
+            prodVec.zeroEntries()
+            pBar = DASolver.vec2Array(prodVec)
+            d_inputs["%s_vol_coords" % self.discipline] += pBar
 </pre> 
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l00960">960</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac56fbc7b556bcd16388c80f8761eb296"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac56fbc7b556bcd16388c80f8761eb296">&#9670;&nbsp;</a></span>initialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def initialize </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l00965">965</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
-
-<p class="reference">References <a class="el" href="mphys__dafoam_8py_source.html#l00022">DAFoamBuilder.options</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01584">PYDAFOAM.options</a>.</p>
-
-</div>
-</div>
-<a id="ade41f93307784822f8bc17e85964d427"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade41f93307784822f8bc17e85964d427">&#9670;&nbsp;</a></span>setup()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def setup </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l00968">968</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
-
-</div>
-</div>
-<a id="abe7a49a5805737c378c21f381d0c82b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe7a49a5805737c378c21f381d0c82b9">&#9670;&nbsp;</a></span>compute()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def compute </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>inputs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>outputs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l00979">979</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
-
-<p class="reference">References <a class="el" href="mphys__dafoam_8py_source.html#l00063">DAFoamBuilder.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00129">DAFoamGroup.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00203">DAFoamSolver.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00579">DAFoamMesh.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00641">DAFoamFunctions.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00870">DAFoamWarper.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00921">DAFoamForces.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00970">DAFoamPropForce.DASolver</a>, and <a class="el" href="mphys__dafoam_8py_source.html#l00975">DAFoamPropForce.nForceSections</a>.</p>
-
-</div>
-</div>
-<a id="a945be9a25912389680cb04de01f59540"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a945be9a25912389680cb04de01f59540">&#9670;&nbsp;</a></span>compute_jacvec_product()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def compute_jacvec_product </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>inputs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>d_inputs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>d_outputs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>mode</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01000">1000</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
-
-<p class="reference">References <a class="el" href="mphys__dafoam_8py_source.html#l00063">DAFoamBuilder.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00129">DAFoamGroup.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00203">DAFoamSolver.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00579">DAFoamMesh.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00641">DAFoamFunctions.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00870">DAFoamWarper.DASolver</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00921">DAFoamForces.DASolver</a>, and <a class="el" href="mphys__dafoam_8py_source.html#l00970">DAFoamPropForce.DASolver</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a962b3b0bc03bca14f76b6f930cf35308"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a962b3b0bc03bca14f76b6f930cf35308">&#9670;&nbsp;</a></span>DASolver</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DASolver</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l00970">970</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="mphys__dafoam_8py_source.html#l00979">DAFoamPropForce.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01067">DAFoamFvSource.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01000">DAFoamPropForce.compute_jacvec_product()</a>, and <a class="el" href="mphys__dafoam_8py_source.html#l01088">DAFoamFvSource.compute_jacvec_product()</a>.</p>
-
-</div>
-</div>
-<a id="a1a0804282e10ae580928ed0839619e87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a0804282e10ae580928ed0839619e87">&#9670;&nbsp;</a></span>nForceSections</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">nForceSections</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l00975">975</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="mphys__dafoam_8py_source.html#l00979">DAFoamPropForce.compute()</a>, and <a class="el" href="mphys__dafoam_8py_source.html#l01088">DAFoamFvSource.compute_jacvec_product()</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01704">1704</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>dafoam/dafoam/mphys/<a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a></li>
 </ul>
 </div><!-- contents -->

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -78,7 +78,7 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="UEqnSimple_8H.html#a09a97cbb46f9091a4ffdbfdaed5cc998">    5</a></span>&#160;<span class="keywordflow">if</span> (hasFvSource_)</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    daFvSourcePtr_-&gt;calcFvSource(<a class="code" href="createRefsPimple_8H.html#a9a0c1fa985c6e79bb4cdc55fa06b9b50">fvSource</a>);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    daFvSourcePtr_-&gt;calcFvSource(<a class="code" href="createRefsHeatTransfer_8H.html#abd2e1040ed9a9b1c49d16c6117939b30">fvSource</a>);</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;tmp&lt;fvVectorMatrix&gt; <a class="code" href="UEqnSimple_8H.html#aba9e8d19088bb385aa14b6ab7ad6e844">tUEqn</a>(</div>
@@ -86,7 +86,7 @@ $(function() {
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    + fvm::Sp(<a class="code" href="createRefsSimple_8H.html#a704f39798ea3228ecacdf7ecd7933fe1">alphaPorosity</a>, <a class="code" href="pEqnPimpleDyM_8H.html#a81cf6107131a3583e2b0b762cb9c2862">U</a>)</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    + <a class="code" href="createRefsRhoSimple_8H.html#a81fdd304814204dc4f4eccc63aaed11d">MRF</a>.DDt(<a class="code" href="pEqnPimpleDyM_8H.html#a81cf6107131a3583e2b0b762cb9c2862">U</a>)</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    + turbulencePtr_-&gt;divDevReff(<a class="code" href="pEqnPimpleDyM_8H.html#a81cf6107131a3583e2b0b762cb9c2862">U</a>)</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    - <a class="code" href="createRefsPimple_8H.html#a9a0c1fa985c6e79bb4cdc55fa06b9b50">fvSource</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    - <a class="code" href="createRefsHeatTransfer_8H.html#abd2e1040ed9a9b1c49d16c6117939b30">fvSource</a></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    - fvOptions(<a class="code" href="pEqnPimpleDyM_8H.html#a81cf6107131a3583e2b0b762cb9c2862">U</a>));</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="UEqnSimple_8H.html#aeeb518d883492fb109c93a7959833ffb">   17</a></span>&#160;fvVectorMatrix&amp; <a class="code" href="UEqnSimple_8H.html#aeeb518d883492fb109c93a7959833ffb">UEqn</a> = <a class="code" href="UEqnSimple_8H.html#aba9e8d19088bb385aa14b6ab7ad6e844">tUEqn</a>.ref();</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
@@ -98,19 +98,22 @@ $(function() {
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// get the solver performance info such as initial</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// and final residuals</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    SolverPerformance&lt;vector&gt; <a class="code" href="UEqnRhoSimpleC_8H.html#a9eca2e2fd635ad2c06910b502c347b5c">solverU</a> = solve(<a class="code" href="UEqnSimple_8H.html#aeeb518d883492fb109c93a7959833ffb">UEqn</a> == -fvc::grad(<a class="code" href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a>));</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    SolverPerformance&lt;vector&gt; <a class="code" href="UEqnRhoSimpleC_8H.html#a9eca2e2fd635ad2c06910b502c347b5c">solverU</a> = <a class="code" href="solvePseudoPEqn_8H.html#ae6958b9677b193eb5a911af0345fb4ee">solve</a>(<a class="code" href="UEqnSimple_8H.html#aeeb518d883492fb109c93a7959833ffb">UEqn</a> == -fvc::grad(<a class="code" href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a>));</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    this-&gt;<a class="code" href="UEqnRhoSimpleC_8H.html#a63bda711251083d54394a9ca435ab0be">primalResidualControl&lt;vector&gt;</a>(solverU, printToScreen, printInterval, <span class="stringliteral">&quot;U&quot;</span>);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    fvOptions.correct(<a class="code" href="pEqnPimpleDyM_8H.html#a81cf6107131a3583e2b0b762cb9c2862">U</a>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="apEqnPimpleDyM_8H_html_a81cf6107131a3583e2b0b762cb9c2862"><div class="ttname"><a href="pEqnPimpleDyM_8H.html#a81cf6107131a3583e2b0b762cb9c2862">U</a></div><div class="ttdeci">U</div><div class="ttdef"><b>Definition:</b> <a href="pEqnPimpleDyM_8H_source.html#l00060">pEqnPimpleDyM.H:60</a></div></div>
 <div class="ttc" id="acreateRefsRhoSimpleC_8H_html_a82526f24e51c9e5d2f36f062267ef570"><div class="ttname"><a href="createRefsRhoSimpleC_8H.html#a82526f24e51c9e5d2f36f062267ef570">simple</a></div><div class="ttdeci">simpleControl &amp; simple</div><div class="ttdef"><b>Definition:</b> <a href="createRefsRhoSimpleC_8H_source.html#l00005">createRefsRhoSimpleC.H:5</a></div></div>
 <div class="ttc" id="aUEqnSimple_8H_html_aba9e8d19088bb385aa14b6ab7ad6e844"><div class="ttname"><a href="UEqnSimple_8H.html#aba9e8d19088bb385aa14b6ab7ad6e844">tUEqn</a></div><div class="ttdeci">tmp&lt; fvVectorMatrix &gt; tUEqn(fvm::div(phi, U, divUScheme)+fvm::Sp(alphaPorosity, U)+MRF.DDt(U)+turbulencePtr_-&gt;divDevReff(U) - fvSource - fvOptions(U))</div></div>
 <div class="ttc" id="acreateRefsRhoSimple_8H_html_a81fdd304814204dc4f4eccc63aaed11d"><div class="ttname"><a href="createRefsRhoSimple_8H.html#a81fdd304814204dc4f4eccc63aaed11d">MRF</a></div><div class="ttdeci">IOMRFZoneListDF &amp; MRF</div><div class="ttdef"><b>Definition:</b> <a href="createRefsRhoSimple_8H_source.html#l00018">createRefsRhoSimple.H:18</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_abd2e1040ed9a9b1c49d16c6117939b30"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#abd2e1040ed9a9b1c49d16c6117939b30">fvSource</a></div><div class="ttdeci">volScalarField &amp; fvSource</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00007">createRefsHeatTransfer.H:7</a></div></div>
 <div class="ttc" id="acreateRefsPimple_8H_html_a334650304cdcdff41898bee9eaf2e3db"><div class="ttname"><a href="createRefsPimple_8H.html#a334650304cdcdff41898bee9eaf2e3db">p</a></div><div class="ttdeci">volScalarField &amp; p</div><div class="ttdef"><b>Definition:</b> <a href="createRefsPimple_8H_source.html#l00006">createRefsPimple.H:6</a></div></div>
 <div class="ttc" id="acreateRefsPimple_8H_html_a1a97abcf6c141f539994c8a21c8daca7"><div class="ttname"><a href="createRefsPimple_8H.html#a1a97abcf6c141f539994c8a21c8daca7">phi</a></div><div class="ttdeci">surfaceScalarField &amp; phi</div><div class="ttdef"><b>Definition:</b> <a href="createRefsPimple_8H_source.html#l00008">createRefsPimple.H:8</a></div></div>
 <div class="ttc" id="aUEqnRhoSimpleC_8H_html_a63bda711251083d54394a9ca435ab0be"><div class="ttname"><a href="UEqnRhoSimpleC_8H.html#a63bda711251083d54394a9ca435ab0be">primalResidualControl&lt; vector &gt;</a></div><div class="ttdeci">this primalResidualControl&lt; vector &gt;(solverU, printToScreen, printInterval, &quot;U&quot;)</div></div>
-<div class="ttc" id="acreateRefsPimple_8H_html_a9a0c1fa985c6e79bb4cdc55fa06b9b50"><div class="ttname"><a href="createRefsPimple_8H.html#a9a0c1fa985c6e79bb4cdc55fa06b9b50">fvSource</a></div><div class="ttdeci">volVectorField &amp; fvSource</div><div class="ttdef"><b>Definition:</b> <a href="createRefsPimple_8H_source.html#l00013">createRefsPimple.H:13</a></div></div>
+<div class="ttc" id="asolvePseudoPEqn_8H_html_ae6958b9677b193eb5a911af0345fb4ee"><div class="ttname"><a href="solvePseudoPEqn_8H.html#ae6958b9677b193eb5a911af0345fb4ee">solve</a></div><div class="ttdeci">pseudoPEqn solve(solverDictP_)</div></div>
 <div class="ttc" id="acreateRefsSimple_8H_html_a704f39798ea3228ecacdf7ecd7933fe1"><div class="ttname"><a href="createRefsSimple_8H.html#a704f39798ea3228ecacdf7ecd7933fe1">alphaPorosity</a></div><div class="ttdeci">volScalarField &amp; alphaPorosity</div><div class="ttdef"><b>Definition:</b> <a href="createRefsSimple_8H_source.html#l00009">createRefsSimple.H:9</a></div></div>
 <div class="ttc" id="aUEqnRhoSimpleC_8H_html_a9eca2e2fd635ad2c06910b502c347b5c"><div class="ttname"><a href="UEqnRhoSimpleC_8H.html#a9eca2e2fd635ad2c06910b502c347b5c">solverU</a></div><div class="ttdeci">SolverPerformance&lt; vector &gt; solverU</div><div class="ttdef"><b>Definition:</b> <a href="UEqnRhoSimpleC_8H_source.html#l00012">UEqnRhoSimpleC.H:12</a></div></div>
 <div class="ttc" id="aUEqnSimple_8H_html_aeeb518d883492fb109c93a7959833ffb"><div class="ttname"><a href="UEqnSimple_8H.html#aeeb518d883492fb109c93a7959833ffb">UEqn</a></div><div class="ttdeci">fvVectorMatrix &amp; UEqn</div><div class="ttdef"><b>Definition:</b> <a href="UEqnSimple_8H_source.html#l00017">UEqnSimple.H:17</a></div></div>

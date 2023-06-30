@@ -1,16 +1,17 @@
 <map id="dafoam/src/adjoint/DASolver/DASolver.H" name="dafoam/src/adjoint/DASolver/DASolver.H">
-<area shape="rect" id="node1" title=" " alt="" coords="1413,5,1575,47"/>
-<area shape="rect" id="node2" href="$DALaplacianFoam_8H.html" title=" " alt="" coords="5,95,212,151"/>
-<area shape="rect" id="node3" href="$DAPimpleDyMFoam_8H.html" title=" " alt="" coords="236,95,456,151"/>
-<area shape="rect" id="node4" href="$DAPimpleFoam_8H.html" title=" " alt="" coords="480,95,671,151"/>
-<area shape="rect" id="node5" href="$DAPisoFoam_8H.html" title=" " alt="" coords="695,95,867,151"/>
-<area shape="rect" id="node6" href="$DARhoSimpleCFoam_8H.html" title=" " alt="" coords="891,95,1115,151"/>
-<area shape="rect" id="node7" href="$DARhoSimpleFoam_8H.html" title=" " alt="" coords="1140,95,1355,151"/>
-<area shape="rect" id="node8" href="$DAScalarTransportFoam_8H.html" title=" " alt="" coords="1379,95,1609,151"/>
-<area shape="rect" id="node9" href="$DASimpleFoam_8H.html" title=" " alt="" coords="1633,95,1824,151"/>
-<area shape="rect" id="node10" href="$DASimpleTFoam_8H.html" title=" " alt="" coords="1848,95,2047,151"/>
-<area shape="rect" id="node11" href="$DASolidDisplacementFoam_8H.html" title=" " alt="" coords="2071,95,2325,151"/>
-<area shape="rect" id="node12" href="$DASolver_8C.html" title=" " alt="" coords="2349,102,2511,143"/>
-<area shape="rect" id="node13" href="$DATurboFoam_8H.html" title=" " alt="" coords="2535,95,2714,151"/>
-<area shape="rect" id="node14" href="$DASolvers_8H.html" title=" " alt="" coords="2739,102,2921,143"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1541,5,1703,47"/>
+<area shape="rect" id="node2" href="$DAHeatTransferFoam_8H.html" title=" " alt="" coords="5,95,233,151"/>
+<area shape="rect" id="node3" href="$DALaplacianFoam_8H.html" title=" " alt="" coords="257,95,464,151"/>
+<area shape="rect" id="node4" href="$DAPimpleDyMFoam_8H.html" title=" " alt="" coords="488,95,708,151"/>
+<area shape="rect" id="node5" href="$DAPimpleFoam_8H.html" title=" " alt="" coords="732,95,923,151"/>
+<area shape="rect" id="node6" href="$DAPisoFoam_8H.html" title=" " alt="" coords="947,95,1119,151"/>
+<area shape="rect" id="node7" href="$DARhoSimpleCFoam_8H.html" title=" " alt="" coords="1143,95,1367,151"/>
+<area shape="rect" id="node8" href="$DARhoSimpleFoam_8H.html" title=" " alt="" coords="1392,95,1607,151"/>
+<area shape="rect" id="node9" href="$DAScalarTransportFoam_8H.html" title=" " alt="" coords="1631,95,1861,151"/>
+<area shape="rect" id="node10" href="$DASimpleFoam_8H.html" title=" " alt="" coords="1885,95,2076,151"/>
+<area shape="rect" id="node11" href="$DASimpleTFoam_8H.html" title=" " alt="" coords="2100,95,2299,151"/>
+<area shape="rect" id="node12" href="$DASolidDisplacementFoam_8H.html" title=" " alt="" coords="2323,95,2577,151"/>
+<area shape="rect" id="node13" href="$DASolver_8C.html" title=" " alt="" coords="2601,102,2763,143"/>
+<area shape="rect" id="node14" href="$DATurboFoam_8H.html" title=" " alt="" coords="2787,95,2966,151"/>
+<area shape="rect" id="node15" href="$DASolvers_8H.html" title=" " alt="" coords="2991,102,3173,143"/>
 </map>

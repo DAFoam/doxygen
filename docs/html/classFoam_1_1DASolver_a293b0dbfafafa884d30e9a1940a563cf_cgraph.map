@@ -1,5 +1,0 @@
-<map id="getForces" name="getForces">
-<area shape="rect" id="node1" title="return the forces of the desired fluid&#45;structure&#45;interaction patches" alt="" coords="5,31,91,57"/>
-<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#aaaa7bb018d69934dd9bd8a26713a5323" title="return the number of points used for force calculation" alt="" coords="151,5,261,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#a94556c42a158c1dc54df0b006934c81d" title="compute the forces of the desired fluid&#45;structure&#45;interation patches" alt="" coords="139,56,273,83"/>
-</map>

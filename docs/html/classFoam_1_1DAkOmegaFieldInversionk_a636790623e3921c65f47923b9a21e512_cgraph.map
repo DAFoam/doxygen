@@ -1,5 +1,0 @@
-<map id="correctOmegaBoundaryConditions" name="correctOmegaBoundaryConditions">
-<area shape="rect" id="node1" title="specially treatment to correct epsilon BC" alt="" coords="5,31,251,57"/>
-<area shape="rect" id="node2" href="$classFoam_1_1DAkOmegaFieldInversionk.html#a0d0a248baa9dcea7ca4626c497a61def" title="save near wall omega values to omegaNearWall_" alt="" coords="299,5,457,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DAkOmegaFieldInversionk.html#a7b80937e7907094acf3a9e07947c205f" title="set omegaNearWall_ to near wall omega values" alt="" coords="304,56,452,83"/>
-</map>

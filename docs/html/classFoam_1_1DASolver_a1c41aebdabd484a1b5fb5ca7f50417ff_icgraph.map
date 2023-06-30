@@ -1,7 +1,8 @@
 <map id="normalizeGradientVec" name="normalizeGradientVec">
-<area shape="rect" id="node1" title="normalize the reverse&#45;mode AD derivatives stored in vecY" alt="" coords="208,81,375,108"/>
-<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#a2ee033358cb8925351994d6881a05042" title="compute dFdW using AD" alt="" coords="31,5,134,32"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#a95d7090b578fe0387188badfd02afaa3" title=" " alt="" coords="17,56,148,83"/>
-<area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#a20f41818db76a706a581003af4faf454" title="compute dRdWOld^T*Psi" alt="" coords="5,107,160,133"/>
-<area shape="rect" id="node5" href="$classFoam_1_1DASolver.html#a8a41381c0bd6d3b8d89aa0dd62582872" title="compute [dRdW]^T*Psi" alt="" coords="17,157,149,184"/>
+<area shape="rect" id="node1" title="normalize the reverse&#45;mode AD derivatives stored in vecY" alt="" coords="211,107,377,133"/>
+<area shape="rect" id="node2" href="$classFoam_1_1DASolver.html#a369911a61c55a15a5193dee9ba5b1736" title=" " alt="" coords="5,5,163,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1DASolver.html#a2ee033358cb8925351994d6881a05042" title="compute dFdW using AD" alt="" coords="33,56,135,83"/>
+<area shape="rect" id="node4" href="$classFoam_1_1DASolver.html#a95d7090b578fe0387188badfd02afaa3" title=" " alt="" coords="19,107,149,133"/>
+<area shape="rect" id="node5" href="$classFoam_1_1DASolver.html#a20f41818db76a706a581003af4faf454" title="compute dRdWOld^T*Psi" alt="" coords="7,157,161,184"/>
+<area shape="rect" id="node6" href="$classFoam_1_1DASolver.html#a8a41381c0bd6d3b8d89aa0dd62582872" title="compute [dRdW]^T*Psi" alt="" coords="18,208,150,235"/>
 </map>

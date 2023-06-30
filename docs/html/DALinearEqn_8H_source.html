@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -117,7 +117,7 @@ $(function() {
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classFoam_1_1DALinearEqn.html">DALinearEqn</a>(</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">const</span> fvMesh&amp; <a class="code" href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a>,</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">const</span> <a class="code" href="classFoam_1_1DAOption.html">DAOption</a>&amp; <a class="code" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a>);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classFoam_1_1DALinearEqn.html#a6d05df4f45d76502d1f4726e7d09f043">   55</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classFoam_1_1DALinearEqn.html#a6d05df4f45d76502d1f4726e7d09f043">~DALinearEqn</a>()</div>
@@ -158,7 +158,6 @@ $(function() {
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">// ************************************************************************* //</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aDAOption_8H_html"><div class="ttname"><a href="DAOption_8H.html">DAOption.H</a></div></div>
-<div class="ttc" id="acreateRefsLaplacian_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsLaplacian_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsLaplacian_8H_source.html#l00004">createRefsLaplacian.H:4</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DALinearEqn_html_a6d05df4f45d76502d1f4726e7d09f043"><div class="ttname"><a href="classFoam_1_1DALinearEqn.html#a6d05df4f45d76502d1f4726e7d09f043">Foam::DALinearEqn::~DALinearEqn</a></div><div class="ttdeci">virtual ~DALinearEqn()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> <a href="DALinearEqn_8H_source.html#l00055">DALinearEqn.H:55</a></div></div>
 <div class="ttc" id="aDAIndex_8H_html"><div class="ttname"><a href="DAIndex_8H.html">DAIndex.H</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DALinearEqn_html_ad418053a9be461caecbb9109506d2e4e"><div class="ttname"><a href="classFoam_1_1DALinearEqn.html#ad418053a9be461caecbb9109506d2e4e">Foam::DALinearEqn::solveLinearEqn</a></div><div class="ttdeci">label solveLinearEqn(const KSP ksp, const Vec rhsVec, Vec solVec)</div><div class="ttdoc">solve the linear equation given a ksp and right-hand-side vector</div><div class="ttdef"><b>Definition:</b> <a href="DALinearEqn_8C_source.html#l00335">DALinearEqn.C:335</a></div></div>
@@ -166,6 +165,7 @@ $(function() {
 <div class="ttc" id="aDAUtility_8H_html"><div class="ttname"><a href="DAUtility_8H.html">DAUtility.H</a></div></div>
 <div class="ttc" id="apyColoringCompressible_2createAdjoint_8H_html_a75fa363c8e8a3229461183017dd17311"><div class="ttname"><a href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption</a></div><div class="ttdeci">DAOption daOption(mesh, pyOptions_)</div></div>
 <div class="ttc" id="aDAModel_8H_html"><div class="ttname"><a href="DAModel_8H.html">DAModel.H</a></div></div>
+<div class="ttc" id="acreateRefsHeatTransfer_8H_html_a8bb1e58291d2d2b653e024a4f4bffe38"><div class="ttname"><a href="createRefsHeatTransfer_8H.html#a8bb1e58291d2d2b653e024a4f4bffe38">mesh</a></div><div class="ttdeci">fvMesh &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="createRefsHeatTransfer_8H_source.html#l00004">createRefsHeatTransfer.H:4</a></div></div>
 <div class="ttc" id="anamespaceFoam_html"><div class="ttname"><a href="namespaceFoam.html">Foam</a></div><div class="ttdef"><b>Definition:</b> <a href="multiFreqScalarFvPatchField_8C_source.html#l00144">multiFreqScalarFvPatchField.C:144</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DALinearEqn_html_a23edeeeecebcef11921a33dd5d990570"><div class="ttname"><a href="classFoam_1_1DALinearEqn.html#a23edeeeecebcef11921a33dd5d990570">Foam::DALinearEqn::mesh_</a></div><div class="ttdeci">const fvMesh &amp; mesh_</div><div class="ttdoc">Foam::fvMesh object.</div><div class="ttdef"><b>Definition:</b> <a href="DALinearEqn_8H_source.html#l00043">DALinearEqn.H:43</a></div></div>
 <div class="ttc" id="aclassFoam_1_1DALinearEqn_html_ab07141822aa5dce75a1b216d8db8eaa0"><div class="ttname"><a href="classFoam_1_1DALinearEqn.html#ab07141822aa5dce75a1b216d8db8eaa0">Foam::DALinearEqn::getPrintInterval</a></div><div class="ttdeci">label getPrintInterval()</div><div class="ttdoc">return printInterval from DAOption</div><div class="ttdef"><b>Definition:</b> <a href="DALinearEqn_8C_source.html#l00450">DALinearEqn.C:450</a></div></div>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -254,7 +254,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DAPartDeriv_8C_source.html#l00022">22</a> of file <a class="el" href="DAPartDeriv_8C_source.html">DAPartDeriv.C</a>.</p>
 
-<p class="reference">References <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel()</a>, <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption()</a>, <a class="el" href="createRefsLaplacian_8H_source.html#l00004">mesh</a>, <a class="el" href="DAStateInfo_8C_source.html#l00043">DAStateInfo::New()</a>, <a class="el" href="createAdjointCompressible_8H_source.html#l00032">solverName</a>, and <a class="el" href="DAPartDeriv_8H_source.html#l00072">DAPartDeriv::stateInfo_</a>.</p>
+<p class="reference">References <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel()</a>, <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption()</a>, <a class="el" href="createRefsHeatTransfer_8H_source.html#l00004">mesh</a>, <a class="el" href="DAStateInfo_8C_source.html#l00043">DAStateInfo::New()</a>, <a class="el" href="createAdjointCompressible_8H_source.html#l00030">solverName</a>, and <a class="el" href="DAPartDeriv_8H_source.html#l00072">DAPartDeriv::stateInfo_</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -407,9 +407,18 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAPartDeriv_8C_source.html#l00266">266</a> of file <a class="el" href="DAPartDeriv_8C_source.html">DAPartDeriv.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAPartDeriv_8H_source.html#l00051">DAPartDeriv::mesh_</a>.</p>
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, and <a class="el" href="DAPartDeriv_8H_source.html#l00051">DAPartDeriv::mesh_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAPartDerivdRdBC_8C_source.html#l00072">DAPartDerivdRdBC::calcPartDerivMat()</a>, and <a class="el" href="DAPartDerivdFdBC_8C_source.html#l00069">DAPartDerivdFdBC::calcPartDerivMat()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAPartDeriv_a4526debde1206c4b3d910acba799d67c_cgraph.png" border="0" usemap="#classFoam_1_1DAPartDeriv_a4526debde1206c4b3d910acba799d67c_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAPartDeriv_a4526debde1206c4b3d910acba799d67c_cgraph" id="classFoam_1_1DAPartDeriv_a4526debde1206c4b3d910acba799d67c_cgraph">
+<area shape="rect" title="perturb the values in the boundary condition" alt="" coords="5,5,92,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="140,5,197,32"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -531,9 +540,18 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAPartDeriv_8C_source.html#l00375">375</a> of file <a class="el" href="DAPartDeriv_8C_source.html">DAPartDeriv.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAPartDeriv_8H_source.html#l00051">DAPartDeriv::mesh_</a>.</p>
+<p class="reference">References <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, and <a class="el" href="DAPartDeriv_8H_source.html#l00051">DAPartDeriv::mesh_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAPartDerivdRdAOA_8C_source.html#l00072">DAPartDerivdRdAOA::calcPartDerivMat()</a>, and <a class="el" href="DAPartDerivdFdAOA_8C_source.html#l00069">DAPartDerivdFdAOA::calcPartDerivMat()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFoam_1_1DAPartDeriv_a9faccc249cfda1207884bf378e3fb68b_cgraph.png" border="0" usemap="#classFoam_1_1DAPartDeriv_a9faccc249cfda1207884bf378e3fb68b_cgraph" alt=""/></div>
+<map name="classFoam_1_1DAPartDeriv_a9faccc249cfda1207884bf378e3fb68b_cgraph" id="classFoam_1_1DAPartDeriv_a9faccc249cfda1207884bf378e3fb68b_cgraph">
+<area shape="rect" title="perturb the angle of attack" alt="" coords="5,5,103,32"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="151,5,208,32"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -679,9 +697,9 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAPartDeriv_8C_source.html#l00047">47</a> of file <a class="el" href="DAPartDeriv_8C_source.html">DAPartDeriv.C</a>.</p>
 
-<p class="reference">References <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#aa36f358f32c8a00956e7ca31e30c906c">daIndex()</a>, <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel()</a>, <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption()</a>, and <a class="el" href="createRefsLaplacian_8H_source.html#l00004">mesh</a>.</p>
+<p class="reference">References <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#aa36f358f32c8a00956e7ca31e30c906c">daIndex()</a>, <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#adc28e15eebd1fcd331c1edad4145dc49">daModel()</a>, <a class="el" href="pyColoringCompressible_2createAdjoint_8H.html#a75fa363c8e8a3229461183017dd17311">daOption()</a>, and <a class="el" href="createRefsHeatTransfer_8H_source.html#l00004">mesh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l02679">DASolver::calcdFdACT()</a>, <a class="el" href="DASolver_8C_source.html#l02098">DASolver::calcdFdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l01402">DASolver::calcdFdBC()</a>, <a class="el" href="DASolver_8C_source.html#l02478">DASolver::calcdFdFFD()</a>, <a class="el" href="DASolver_8C_source.html#l01172">DASolver::calcdFdW()</a>, <a class="el" href="DASolver_8C_source.html#l02603">DASolver::calcdRdACT()</a>, <a class="el" href="DASolver_8C_source.html#l01526">DASolver::calcdRdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l01315">DASolver::calcdRdBC()</a>, <a class="el" href="DASolver_8C_source.html#l02396">DASolver::calcdRdFFD()</a>, and <a class="el" href="DASolver_8C_source.html#l01038">DASolver::calcdRdWT()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DASolver_8C_source.html#l04434">DASolver::calcdFdACT()</a>, <a class="el" href="DASolver_8C_source.html#l03853">DASolver::calcdFdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l03116">DASolver::calcdFdBC()</a>, <a class="el" href="DASolver_8C_source.html#l04233">DASolver::calcdFdFFD()</a>, <a class="el" href="DASolver_8C_source.html#l02886">DASolver::calcdFdW()</a>, <a class="el" href="DASolver_8C_source.html#l04358">DASolver::calcdRdACT()</a>, <a class="el" href="DASolver_8C_source.html#l03240">DASolver::calcdRdAOA()</a>, <a class="el" href="DASolver_8C_source.html#l03029">DASolver::calcdRdBC()</a>, <a class="el" href="DASolver_8C_source.html#l04151">DASolver::calcdRdFFD()</a>, and <a class="el" href="DASolver_8C_source.html#l02752">DASolver::calcdRdWT()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -859,7 +877,7 @@ Here is the caller graph for this function:</div>
 
 <p class="reference">References <a class="el" href="DAPartDeriv_8H_source.html#l00101">DAPartDeriv::dXvdFFDMat_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l01909">PYDAFOAM::solveAdjoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyDAFoam_8py_source.html#l02004">PYDAFOAM::solveAdjoint()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -892,7 +910,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DAPartDeriv_8C_source.html#l00511">511</a> of file <a class="el" href="DAPartDeriv_8C_source.html">DAPartDeriv.C</a>.</p>
 
-<p class="reference">References <a class="el" href="DAPartDeriv_8H_source.html#l00069">DAPartDeriv::allOptions_</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00103">assignValueCheckAD</a>, <a class="el" href="DAIndex_8H_source.html#l00116">DAIndex::bFaceFaceI</a>, <a class="el" href="DAIndex_8H_source.html#l00110">DAIndex::bFacePatchI</a>, <a class="el" href="DAPartDeriv_8H_source.html#l00060">DAPartDeriv::daIndex_</a>, <a class="el" href="DAIndex_8C_source.html#l00647">DAIndex::getGlobalAdjointStateIndex()</a>, <a class="el" href="DAPartDeriv_8H_source.html#l00051">DAPartDeriv::mesh_</a>, <a class="el" href="DAIndex_8H_source.html#l00145">DAIndex::nLocalAdjointStates</a>, <a class="el" href="DAIndex_8H_source.html#l00098">DAIndex::nLocalInternalFaces</a>, and <a class="el" href="DAPartDeriv_8H_source.html#l00072">DAPartDeriv::stateInfo_</a>.</p>
+<p class="reference">References <a class="el" href="DAPartDeriv_8H_source.html#l00069">DAPartDeriv::allOptions_</a>, <a class="el" href="DAMacroFunctions_8H_source.html#l00103">assignValueCheckAD</a>, <a class="el" href="DAIndex_8H_source.html#l00116">DAIndex::bFaceFaceI</a>, <a class="el" href="DAIndex_8H_source.html#l00110">DAIndex::bFacePatchI</a>, <a class="el" href="DAPartDeriv_8H_source.html#l00060">DAPartDeriv::daIndex_</a>, <a class="el" href="solvePseudoPEqn_8H_source.html#l00010">forAll()</a>, <a class="el" href="DAIndex_8C_source.html#l00661">DAIndex::getGlobalAdjointStateIndex()</a>, <a class="el" href="DAPartDeriv_8H_source.html#l00051">DAPartDeriv::mesh_</a>, <a class="el" href="DAIndex_8H_source.html#l00145">DAIndex::nLocalAdjointStates</a>, <a class="el" href="DAIndex_8H_source.html#l00098">DAIndex::nLocalInternalFaces</a>, and <a class="el" href="DAPartDeriv_8H_source.html#l00072">DAPartDeriv::stateInfo_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="DAPartDerivdRdW_8C_source.html#l00073">DAPartDerivdRdW::calcPartDerivMat()</a>, and <a class="el" href="DAPartDerivdFdW_8C_source.html#l00079">DAPartDerivdFdW::calcPartDerivMat()</a>.</p>
 <div class="dynheader">
@@ -900,8 +918,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFoam_1_1DAPartDeriv_aec174241eed03bdc90978bef82cf9666_cgraph.png" border="0" usemap="#classFoam_1_1DAPartDeriv_aec174241eed03bdc90978bef82cf9666_cgraph" alt=""/></div>
 <map name="classFoam_1_1DAPartDeriv_aec174241eed03bdc90978bef82cf9666_cgraph" id="classFoam_1_1DAPartDeriv_aec174241eed03bdc90978bef82cf9666_cgraph">
-<area shape="rect" title="setup the state normalization vector" alt="" coords="5,13,188,39"/>
-<area shape="rect" href="classFoam_1_1DAIndex.html#a06a1fcb98ee5f377d70e1d04b0e5dd61" title="get global adjoint index for a given state name, cell/face indxI and its component (optional,..." alt="" coords="236,5,428,47"/>
+<area shape="rect" title="setup the state normalization vector" alt="" coords="5,35,188,61"/>
+<area shape="rect" href="solvePseudoPEqn_8H.html#ab75e9df95d3e8982118b376691e49ceb" title=" " alt="" coords="303,5,361,32"/>
+<area shape="rect" href="classFoam_1_1DAIndex.html#a06a1fcb98ee5f377d70e1d04b0e5dd61" title="get global adjoint index for a given state name, cell/face indxI and its component (optional,..." alt="" coords="236,57,428,98"/>
 </map>
 </div>
 <div class="dynheader">

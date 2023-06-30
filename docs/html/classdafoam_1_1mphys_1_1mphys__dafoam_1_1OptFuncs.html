@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -114,7 +114,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">Some utility functions
 </pre> 
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01133">1133</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l02121">2121</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1095612746aa950c18a91da866701d09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1095612746aa950c18a91da866701d09">&#9670;&nbsp;</a></span>__init__()</h2>
@@ -147,8 +147,13 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">daOptions: dict or list
+    The daOptions dict from runScript.py. Support more than two dicts
 
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01138">1138</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+om_prob:
+    The om.Problem() object
+</pre> 
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l02126">2126</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
 
 </div>
 </div>
@@ -232,9 +237,9 @@ tail rotation angle that give the target lift and pitching moment. The sizes of 
 designvars have to be the same.
 NOTE: we use the Newton method to find the feasible design.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01160">1160</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l02164">2164</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
 
-<p class="reference">References <a class="el" href="mphys__dafoam_8py_source.html#l01141">OptFuncs.comm</a>, and <a class="el" href="mphys__dafoam_8py_source.html#l01140">OptFuncs.om_prob</a>.</p>
+<p class="reference">References <a class="el" href="mphys__dafoam_8py_source.html#l00074">DAFoamBuilder.comm</a>, <a class="el" href="mphys__dafoam_8py_source.html#l02137">OptFuncs.comm</a>, and <a class="el" href="mphys__dafoam_8py_source.html#l02136">OptFuncs.om_prob</a>.</p>
 
 </div>
 </div>
@@ -251,7 +256,7 @@ NOTE: we use the Newton method to find the feasible design.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01139">1139</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l02135">2135</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
 
 </div>
 </div>
@@ -267,9 +272,9 @@ NOTE: we use the Newton method to find the feasible design.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01140">1140</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l02136">2136</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mphys__dafoam_8py_source.html#l01160">OptFuncs.findFeasibleDesign()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mphys__dafoam_8py_source.html#l02164">OptFuncs.findFeasibleDesign()</a>.</p>
 
 </div>
 </div>
@@ -285,9 +290,9 @@ NOTE: we use the Newton method to find the feasible design.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l01141">1141</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mphys__dafoam_8py_source.html#l02137">2137</a> of file <a class="el" href="mphys__dafoam_8py_source.html">mphys_dafoam.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mphys__dafoam_8py_source.html#l00336">DAFoamSolver.apply_linear()</a>, <a class="el" href="pyDAFoam_8py_source.html#l03741">PYDAFOAM.cdRoot()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01067">DAFoamFvSource.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00733">DAFoamFunctions.compute_jacvec_product()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02713">PYDAFOAM.deletePrevPrimalSolTime()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01160">OptFuncs.findFeasibleDesign()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02428">PYDAFOAM.getForces()</a>, <a class="el" href="pyDAFoam_8py_source.html#l03134">PYDAFOAM.getSolverMeshIndices()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01479">PYDAFOAM.getTriangulatedMeshSurface()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02396">PYDAFOAM.mapdXvTodFFD()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02739">PYDAFOAM.renameSolution()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02692">PYDAFOAM.runDecomposePar()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00450">DAFoamSolver.solve_linear()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01132">PYDAFOAM.writeDesignVariable()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01179">PYDAFOAM.writeTotalDeriv()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l03301">PYDAFOAM.xvFlatten2XvVec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mphys__dafoam_8py_source.html#l00722">DAFoamSolver.apply_linear()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01835">DAFoamFvSource.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l02004">DAFoamPropNodes.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l02086">DAFoamActuator.compute()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01215">DAFoamFunctions.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l01877">DAFoamFvSource.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l02044">DAFoamPropNodes.compute_jacvec_product()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l02099">DAFoamActuator.compute_jacvec_product()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02900">PYDAFOAM.deletePrevPrimalSolTime()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l02164">OptFuncs.findFeasibleDesign()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02521">PYDAFOAM.getForces()</a>, <a class="el" href="pyDAFoam_8py_source.html#l03318">PYDAFOAM.getSolverMeshIndices()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01578">PYDAFOAM.getTriangulatedMeshSurface()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02489">PYDAFOAM.mapdXvTodFFD()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00238">DAFoamGroup.mphys_compute_nodes()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00263">DAFoamGroup.mphys_set_masking()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00320">DAFoamGroup.mphys_set_unmasking()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02925">PYDAFOAM.renameSolution()</a>, <a class="el" href="pyDAFoam_8py_source.html#l02879">PYDAFOAM.runDecomposePar()</a>, <a class="el" href="mphys__dafoam_8py_source.html#l00867">DAFoamSolver.solve_linear()</a>, <a class="el" href="pyDAFoam_8py_source.html#l03939">PYDAFOAM.vec2ArraySeq()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01262">PYDAFOAM.writeDeformedFFDs()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01225">PYDAFOAM.writeDesignVariable()</a>, <a class="el" href="pyDAFoam_8py_source.html#l01278">PYDAFOAM.writeTotalDeriv()</a>, <a class="el" href="pyDAFoam_8py_source.html#l03485">PYDAFOAM.xvFlatten2XvVec()</a>, and <a class="el" href="pyDAFoam_8py_source.html#l01040">PYDAFOAM.zeroTimeAccurateAdjointVectors()</a>.</p>
 
 </div>
 </div>

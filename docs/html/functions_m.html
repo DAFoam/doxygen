@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://openfoam.com">DAFoam</a>
-   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.0</a></span>
+   &#160;<span id="projectnumber"><a href="http://openfoam.com/download/source">v3.0.6</a></span>
    </div>
    <div id="projectbrief"><a href="https://develop.openfoam.com">Discrete Adjoint with OpenFOAM</a></div>
   </td>
@@ -124,9 +124,6 @@ $(function() {
 <li>mesh_options
 : <a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamBuilder.html#a318768a5fd316b1fb8aa73a8a37a53e0">DAFoamBuilder</a>
 </li>
-<li>meshFamilyGroup
-: <a class="el" href="classdafoam_1_1pyDAFoam_1_1PYDAFOAM.html#ac3f542437a4d79a35a78ee0adf097b4e">PYDAFOAM</a>
-</li>
 <li>meshPtr_
 : <a class="el" href="classFoam_1_1DASolver.html#a415629ebda4c8863ed9cb2fa9ca68002">DASolver</a>
 </li>
@@ -147,6 +144,9 @@ $(function() {
 , <a class="el" href="classFoam_1_1DAResidualPisoFoam.html#aa6d441b29ce12ebfb6bcc6d87afac09b">DAResidualPisoFoam</a>
 , <a class="el" href="classFoam_1_1DAScalarTransportFoam.html#aa6d441b29ce12ebfb6bcc6d87afac09b">DAScalarTransportFoam</a>
 </li>
+<li>model
+: <a class="el" href="classdafoam_1_1pyDAFoam_1_1TensorFlowHelper.html#a508cc3106d2c29fe07dc87cbe3ea6927">TensorFlowHelper</a>
+</li>
 <li>modelType_
 : <a class="el" href="classFoam_1_1DAFvSource.html#ac66c33567077e7389d3db60993a763e4">DAFvSource</a>
 , <a class="el" href="classFoam_1_1DAJacCon.html#a0fa98896b124773e5be466277d58121c">DAJacCon</a>
@@ -159,9 +159,11 @@ $(function() {
 </li>
 <li>momentCenter_
 : <a class="el" href="classFoam_1_1DAObjFuncMoment.html#a73808257910208d4d1de36bc5d5cd6ac">DAObjFuncMoment</a>
+, <a class="el" href="classFoam_1_1DAObjFuncPower.html#a73808257910208d4d1de36bc5d5cd6ac">DAObjFuncPower</a>
 </li>
 <li>momentDir_
 : <a class="el" href="classFoam_1_1DAObjFuncMoment.html#aefe5c820943804915273804f47b045ac">DAObjFuncMoment</a>
+, <a class="el" href="classFoam_1_1DAObjFuncPower.html#aefe5c820943804915273804f47b045ac">DAObjFuncPower</a>
 </li>
 <li>mphys_add_coordinate_input()
 : <a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamMesh.html#a62e6386db33eb6f7f0bdba97e39eb791">DAFoamMesh</a>
@@ -169,17 +171,31 @@ $(function() {
 </li>
 <li>mphys_add_funcs()
 : <a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamFunctions.html#a8abe5f65e68681a26c7a2a422d17a545">DAFoamFunctions</a>
+, <a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamPostcouplingGroup.html#a8abe5f65e68681a26c7a2a422d17a545">DAFoamPostcouplingGroup</a>
+</li>
+<li>mphys_compute_nodes()
+: <a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamGroup.html#acb53cec36985776d34c81398c0e00b0a">DAFoamGroup</a>
 </li>
 <li>mphys_get_surface_mesh()
 : <a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamMesh.html#afb306106c8d582b080a0609ea9c8a57d">DAFoamMesh</a>
+</li>
+<li>mphys_get_surface_size()
+: <a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamMesh.html#aaf00dcd7f08b5debc6fa3886efc4d7ed">DAFoamMesh</a>
 </li>
 <li>mphys_get_triangulated_surface()
 : <a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamMesh.html#acc43d64cedeb420ceebf1a32f444e1c3">DAFoamMesh</a>
 , <a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamMeshGroup.html#aa5296d0226b5ee5d3cdc43ca175bfc94">DAFoamMeshGroup</a>
 </li>
+<li>mphys_set_masking()
+: <a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamGroup.html#a459d03e27dcf7a35af2503667664651b">DAFoamGroup</a>
+</li>
 <li>mphys_set_options()
 : <a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamFunctions.html#a54da6d1903aefa7e0890690814b6357c">DAFoamFunctions</a>
 , <a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamGroup.html#a54da6d1903aefa7e0890690814b6357c">DAFoamGroup</a>
+, <a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamPostcouplingGroup.html#a3cd96d849915f87f566d113a53270ca7">DAFoamPostcouplingGroup</a>
+</li>
+<li>mphys_set_unmasking()
+: <a class="el" href="classdafoam_1_1mphys_1_1mphys__dafoam_1_1DAFoamGroup.html#a515f3208e1bd07acd50c4b92425f389d">DAFoamGroup</a>
 </li>
 <li>MRF_
 : <a class="el" href="classFoam_1_1DAResidualRhoSimpleFoam.html#a093ec46a92df188237c65b7f0dcf39aa">DAResidualRhoSimpleFoam</a>
@@ -203,10 +219,10 @@ $(function() {
 : <a class="el" href="classFoam_1_1DAResidualSolidDisplacementFoam.html#a54ae6e87674f0944a01a9c7b446eb377">DAResidualSolidDisplacementFoam</a>
 </li>
 <li>multiFreqScalarFvPatchField()
-: <a class="el" href="classFoam_1_1multiFreqScalarFvPatchField.html#aa6b07fe52c13e2e291db34ae31da147f">multiFreqScalarFvPatchField</a>
+: <a class="el" href="classFoam_1_1multiFreqScalarFvPatchField.html#a71812fd89c96ab009a40e1be4b047b70">multiFreqScalarFvPatchField</a>
 </li>
 <li>multiFreqVectorFvPatchField()
-: <a class="el" href="classFoam_1_1multiFreqVectorFvPatchField.html#a319ebffa14aaffa20f56007914f11584">multiFreqVectorFvPatchField</a>
+: <a class="el" href="classFoam_1_1multiFreqVectorFvPatchField.html#a3262e715e4c67046d00b145e53ef3b7c">multiFreqVectorFvPatchField</a>
 </li>
 <li>multiPoint
 : <a class="el" href="classdafoam_1_1pyDAFoam_1_1DAOPTION.html#a6dbf2d67e7a19f0b7d3b30ee313a3f15">DAOPTION</a>
